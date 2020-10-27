@@ -1,0 +1,55 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV2', 2, 151, 213, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/yoga_CV2/yoga_CV2_euclidean_normed_CID_tree.txt', './cv_output/yoga_CV2/yoga_CV2_euclidean_normed_CID_time.txt']
+
+rand seed=1502276555
+num_class=2, num_obj=151, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/yoga_CV2/yoga_CV2_euclidean_normed_CID_tree.txt  time_file=./cv_output/yoga_CV2/yoga_CV2_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................................................................
+Len=169  @[ 10, 30]  d_th= 6.23 gap=0.001928 gain= 0.10388 (81 )==>  39  77  /  30   5 
+
+=== Node 2 ===
+.........................................................................................................
+Len=37   @[  0, 14]  d_th= 0.31 gap=0.000273 gain= 0.10228 (96 )==>  10   0  /  29  77 
+
+=== Node 3 ===
+.........................................................................................................
+Len=35   @[  0,225]  d_th= 0.69 gap=0.004436 gain= 0.21207 (15 )==>  25   0  /   5   5 
+
+=== Node 5 ===
+.........................................................................................................
+Len=79   @[  0,108]  d_th= 0.26 gap=0.000610 gain= 0.13623 (86 )==>  10   0  /  19  77 
+
+=== Node 7 ===
+.........................................................................................................
+Len=117  @[  6,278]  d_th= 2.38 gap=0.017875 gain= 0.69315 (0  )==>   0   5  /   5   0 
+
+=== Node 11 ===
+.........................................................................................................
+Len=13   @[  0, 69]  d_th= 0.12 gap=0.000160 gain= 0.13087 (82 )==>   7   0  /  12  77 
+
+num_class=2, num_obj=96, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     5.59 sec
+  Time Rand Project =    24.03 sec
+  Time Score Matrix =     2.71 sec
+  Time Compute Gain =   197.31 sec
+Running  Time for this Shapelet=   231.97 sec <<
+
+
+Total Running  Time =   231.97 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV1', 2, 149, 'euclidean', 1, 1, './cv_output/yoga_CV2/yoga_CV2_euclidean_normed_CID_tree.txt', './cv_output/yoga_CV2/yoga_CV2_euclidean_normed_CID_acc.txt']
+; accuracy= 59.732   Correct:89 , Wrong: 60
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  33   25 
+;   p  2 |  35   56 
+
+num_class=2, num_obj=149  distance=euclidean CID=true normalize=true ./cv_output/yoga_CV2/yoga_CV2_euclidean_normed_CID_tree.txt  ./cv_output/yoga_CV2/yoga_CV2_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 24
+

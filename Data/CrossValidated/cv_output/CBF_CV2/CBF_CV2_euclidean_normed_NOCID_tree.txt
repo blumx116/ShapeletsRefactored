@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1502274346, rand()=601834659, rand()=316799634
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/CBF_TRAIN_CV2 3 15 64 1 2 10 euclidean 0 1 10 ./cv_output/CBF_CV2/CBF_CV2_euclidean_normed_NOCID_tree.txt ./cv_output/CBF_CV2/CBF_CV2_euclidean_normed_NOCID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --      1   17   19   2.4966 ==>   5   0   4  /   0   6   0 
+NonL  2    --      0   19   63   7.0091 ==>   5   0   0  /   0   0   4 
+Leaf  3     2    
+Leaf  4     1    
+Leaf  5     3    
+
+;Shapelet id   <data>
+Shapelet   1  -1.309000 -1.124400 -1.246200 -1.636000 -1.476000 -1.277800 -1.144200 -1.399300 -0.867510 -1.446200 -1.902200 -1.530200  0.325360  0.469050  0.565200  0.714420  1.104200  0.617420  0.739110 
+Shapelet   2  -1.595800 -1.413600 -1.694200 -1.950200 -2.300200  0.748080 -0.577600 -0.424460  0.944320  0.295220 -0.149630  0.875510  0.090401  0.486250  0.121400  0.159680  0.287730  0.225820  0.841690  1.189300 -0.104400  0.681410  0.896650  1.325100 -0.069253  0.689250 -0.038613  0.417650  0.821920  0.459050  0.753000  0.388000  0.275180  0.949570  1.434400  0.328260  0.535200 -0.078509  0.770990  0.371130  0.656940  0.433130  1.351500  1.081800  0.638530  0.624640  0.832080  0.010783  0.646510  0.135970  0.962900  1.192100  0.351380  1.112100  0.107530  0.348660  0.244460  0.081090  0.509830  0.855770  0.786890  0.659350  0.594080 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/CBF_TRAIN_CV2 3 15 64 1 2 10 euclidean 0 1 10 ./cv_output/CBF_CV2/CBF_CV2_euclidean_normed_NOCID_tree.txt ./cv_output/CBF_CV2/CBF_CV2_euclidean_normed_NOCID_time.txt
+; time =>    0.497   0.034   0.227   0.024   0.188 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/CBF_TRAIN_CV1 3 15 euclidean 0 1 ./cv_output/CBF_CV2/CBF_CV2_euclidean_normed_NOCID_tree.txt ./cv_output/CBF_CV2/CBF_CV2_euclidean_normed_NOCID_acc.txt
+; accuracy= 93.333   Correct:14 , Wrong: 1
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   4    0    0 
+;   p  2 |   0    6    0 
+;   p  3 |   1    0    4 
+

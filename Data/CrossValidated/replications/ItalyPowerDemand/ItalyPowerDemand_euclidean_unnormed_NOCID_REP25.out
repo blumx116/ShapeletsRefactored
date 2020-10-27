@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP25_tree.txt', './replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP25_time.txt']
+
+rand seed=1508180087
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP25_tree.txt  time_file=./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP25_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 0.64 gap=0.015210 gain= 0.38074 (9  )==>  28   1  /   6  32 
+
+=== Node 3 ===
+....
+Len=9    @[  8,  6]  d_th= 0.95 gap=0.038138 gain= 0.36061 (24 )==>   6   1  /   0  31 
+
+=== Node 6 ===
+....
+Len=7    @[  3, 11]  d_th= 0.16 gap=0.059168 gain= 0.41012 (5  )==>   0   1  /   6   0 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.03 sec <<
+
+
+Total Running  Time =     0.03 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'euclidean', 0, 0, './replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP25_tree.txt', './replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP25_acc.txt']
+; accuracy= 87.852   Correct:904 , Wrong: 125
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 437   46 
+;   p  1 |  79  467 
+
+num_class=2, num_obj=1029  distance=euclidean CID=false normalize=false ./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP25_tree.txt  ./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP25_acc.txt
+
+==> Tree Size = 14
+

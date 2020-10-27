@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1501821836, rand()=2041565931, rand()=593501112
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 0 0 10 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP04_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP04_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 14 
+NonL  1    --      0   10    5   0.6395 ==>  28   1  /   6  32 
+Leaf  2     1    
+NonL  3    --      8    6    9   0.9459 ==>   6   1  /   0  31 
+NonL  6    --      3    2    5   0.1372 ==>   0   1  /   6   0 
+Leaf  7     2    
+Leaf 12     2    
+Leaf 13     1    
+
+;Shapelet id   <data>
+Shapelet   1   1.275300  0.960050  0.613330  0.014447 -0.647480 
+Shapelet   3  -1.053900 -0.418230 -0.451680  0.117100  0.518600  0.652430  0.552060  0.217480 -0.117100 
+Shapelet   6  -0.713150 -0.934710 -1.100900 -1.100900 -0.879320 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 0 0 10 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP04_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP04_time.txt
+; time =>    0.047   0.004   0.028   0.004   0.008 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST 2 1029 euclidean 0 0 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP04_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_unnormed_NOCID_REP04_acc.txt
+; accuracy= 87.852   Correct:904 , Wrong: 125
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 437   46 
+;   p  1 |  79  467 
+

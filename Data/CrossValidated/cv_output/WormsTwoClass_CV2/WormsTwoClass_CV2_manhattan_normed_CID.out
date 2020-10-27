@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/WormsTwoClass_TRAIN_CV2', 2, 39, 450, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_manhattan_normed_CID_tree.txt', './cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502293172
+num_class=2, num_obj=39, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................................................................................................
+Len=13   @[  2, 63]  d_th= 1.51 gap=0.010033 gain= 0.39869 (13 )==>  13   0  /   4  22 
+
+=== Node 3 ===
+...............................................................................................................................................................................................................................
+Len=393  @[ 17, 76]  d_th=795.72 gap=4.762665 gain= 0.28244 (14 )==>   0  20  /   4   2 
+
+=== Node 7 ===
+...............................................................................................................................................................................................................................
+Len=59   @[  4,557]  d_th=35.93 gap=0.529365 gain= 0.63651 (2  )==>   0   2  /   4   0 
+
+num_class=2, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.97 sec
+  Time Rand Project =    22.27 sec
+  Time Score Matrix =     1.91 sec
+  Time Compute Gain =   251.41 sec
+Running  Time for this Shapelet=   281.81 sec <<
+
+
+Total Running  Time =   281.81 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/WormsTwoClass_TRAIN_CV1', 2, 38, 'manhattan', 1, 1, './cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_manhattan_normed_CID_tree.txt', './cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 36.842   Correct:14 , Wrong: 24
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  11   19 
+;   p  2 |   5    3 
+
+num_class=2, num_obj=38  distance=manhattan CID=true normalize=true ./cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_manhattan_normed_CID_tree.txt  ./cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 16
+

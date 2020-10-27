@@ -1,0 +1,44 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV2', 4, 9, 173, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503461396
+num_class=4, num_obj=9, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.....................................................................................
+Len=23   @[  1,160]  d_th= 0.02 gap=0.002442 gain= 0.68696 (1  )==>   0   3   0   2  /   1   0   3   0 
+
+=== Node 2 ===
+.....................................................................................
+Len=5    @[  0, 88]  d_th= 0.01 gap=0.003749 gain= 0.67301 (1  )==>   0   3   0   0  /   0   0   0   2 
+
+=== Node 3 ===
+.....................................................................................
+Len=7    @[  0,  3]  d_th= 0.00 gap=0.000770 gain= 0.56234 (2  )==>   1   0   0   0  /   0   0   3   0 
+
+num_class=4, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.09 sec
+  Time Rand Project =     0.21 sec
+  Time Score Matrix =     0.02 sec
+  Time Compute Gain =     2.55 sec
+Running  Time for this Shapelet=     2.89 sec <<
+
+
+Total Running  Time =     2.89 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV1', 3, 7, 'correlation', 0, 0, './cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 100.000   Correct:7 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   2    3    4 
+;   -----+------------------
+;   p  2 |   3    0    0 
+;   p  3 |   0    2    0 
+;   p  4 |   0    0    2 
+
+num_class=3, num_obj=7  distance=correlation CID=false normalize=false ./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_tree.txt  ./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 8
+

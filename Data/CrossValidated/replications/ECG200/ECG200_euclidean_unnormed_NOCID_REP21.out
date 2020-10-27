@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TRAIN', 2, 100, 48, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP21_tree.txt', './replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP21_time.txt']
+
+rand seed=1508196683
+num_class=2, num_obj=100, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP21_tree.txt  time_file=./replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP21_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+......................
+Len=47   @[  4,  5]  d_th= 3.33 gap=0.003184 gain= 0.27224 (16 )==>   2  56  /  29  13 
+
+=== Node 3 ===
+......................
+Len=15   @[  8, 45]  d_th= 1.72 gap=0.023552 gain= 0.15879 (32 )==>  29   8  /   0   5 
+
+=== Node 6 ===
+......................
+Len=25   @[ 27, 54]  d_th= 1.09 gap=0.000621 gain= 0.25299 (27 )==>   0   5  /  29   3 
+
+num_class=2, num_obj=37, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.14 sec
+  Time Rand Project =     0.94 sec
+  Time Score Matrix =     0.10 sec
+  Time Compute Gain =     0.27 sec
+Running  Time for this Shapelet=     1.55 sec <<
+
+
+Total Running  Time =     1.55 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TEST', 2, 100, 'euclidean', 0, 0, './replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP21_tree.txt', './replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP21_acc.txt']
+; accuracy= 83.000   Correct:83 , Wrong: 17
+
+
+;   == Confusion Matrix ==
+;   real |   1   -1 
+;   -----+------------
+;   p  1 |  55    8 
+;   p -1 |   9   28 
+
+num_class=2, num_obj=100  distance=euclidean CID=false normalize=false ./replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP21_tree.txt  ./replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP21_acc.txt
+
+==> Tree Size = 14
+

@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1502274326, rand()=1361460433, rand()=1258394554
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/wafer_TRAIN_CV1 2 499 76 1 2 10 euclidean 1 0 10 ./cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:  -1  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --      2   40   67  32.8294 ==>  24 447  /  24   4 
+Leaf  2     1    
+NonL  3    --      2   31   15   1.3501 ==>  19   0  /   5   4 
+Leaf  6    -1    
+NonL  7    --      5  107   13   0.5080 ==>   0   4  /   5   0 
+Leaf 14     1    
+Leaf 15    -1    
+
+;Shapelet id   <data>
+Shapelet   1   0.469460  0.461990  0.468320  0.464520  0.466580  0.465900  0.465540  0.465460  0.465060  0.465600  0.464830  0.467290  0.467470  0.464080  0.467750  0.466860  0.468570  0.469990  0.469290  0.469680  0.469720  0.469220  0.470110  0.468370  0.467110  0.467300  0.468230  0.470580  0.466720  0.467980  0.471550  0.471780  0.469180  0.469720  0.469810  0.466760  0.465010  0.465440  0.465120  0.465360  0.465440  0.464800  0.468590  0.469900  0.469450  0.469430  0.470100  0.468020  0.464710  0.465650  0.465140  0.465250  0.465320  0.465290  0.465300  0.465030  0.466120  0.470810  0.468930  0.472010  0.466820  0.473550  0.456370  0.479830  0.442720  0.511240  0.308840 
+Shapelet   3  -0.933920 -0.929550 -0.931720 -0.930820 -0.933390 -0.905700  0.165850  0.874980  1.011400  1.006000  1.018900  1.021900  1.035200  1.041800  1.050600 
+Shapelet   7  -1.064500 -1.064500 -1.064500 -1.064500 -1.064500 -1.064500 -1.064500 -1.064500 -1.064500  1.052000  1.070600  1.089100  1.089100 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/wafer_TRAIN_CV1 2 499 76 1 2 10 euclidean 1 0 10 ./cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_time.txt
+; time =>   20.941   0.922   8.979   0.885   9.388 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/wafer_TRAIN_CV2 2 501 euclidean 1 0 ./cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_acc.txt
+; accuracy= 93.613   Correct:469 , Wrong: 32
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |  20    3 
+;   p  1 |  29  449 
+

@@ -1,0 +1,75 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/FordA_TRAIN_CV2', 2, 661, 250, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/FordA_CV2/FordA_CV2_correlation_unnormed_CID_tree.txt', './cv_output/FordA_CV2/FordA_CV2_correlation_unnormed_CID_time.txt']
+
+rand seed=1503463002
+num_class=2, num_obj=661, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/FordA_CV2/FordA_CV2_correlation_unnormed_CID_tree.txt  time_file=./cv_output/FordA_CV2/FordA_CV2_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=21   @[  2, 58]  d_th= 0.04 gap=0.000013 gain= 0.13886 (17 )==>  90 249  / 251  71 
+
+=== Node 2 ===
+...........................................................................................................................
+Len=43   @[227,185]  d_th= 0.12 gap=0.000019 gain= 0.16680 (171)==>  29 226  /  61  23 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=205  @[256,176]  d_th= 0.55 gap=0.000039 gain= 0.11283 (36 )==>  81  62  / 170   9 
+
+=== Node 4 ===
+...........................................................................................................................
+Len=153  @[ 24,240]  d_th= 0.26 gap=0.000013 gain= 0.10138 (167)==>  21  23  /   8 203 
+
+=== Node 5 ===
+...........................................................................................................................
+Len=211  @[ 64,262]  d_th= 0.43 gap=0.000274 gain= 0.17334 (40 )==>   6  16  /  55   7 
+
+=== Node 6 ===
+...........................................................................................................................
+Len=199  @[ 66, 92]  d_th= 0.32 gap=0.000012 gain= 0.14194 (3  )==>  58  12  /  23  50 
+
+=== Node 8 ===
+...........................................................................................................................
+Len=239  @[ 41, 89]  d_th= 0.41 gap=0.000154 gain= 0.27562 (16 )==>  21   9  /   0  14 
+
+=== Node 10 ===
+...........................................................................................................................
+Len=233  @[  1, 97]  d_th= 0.57 gap=0.001309 gain= 0.30054 (14 )==>   2  16  /   4   0 
+
+=== Node 11 ===
+...........................................................................................................................
+Len=153  @[ 55,215]  d_th= 0.40 gap=0.000401 gain= 0.16211 (54 )==>   0   4  /  55   3 
+
+=== Node 12 ===
+...........................................................................................................................
+Len=55   @[ 62,283]  d_th= 0.08 gap=0.000083 gain= 0.15572 (6  )==>  20  12  /  38   0 
+
+=== Node 13 ===
+...........................................................................................................................
+Len=101  @[ 16,249]  d_th= 0.03 gap=0.000048 gain= 0.12142 (53 )==>   9   1  /  14  49 
+
+num_class=2, num_obj=73, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    58.96 sec
+  Time Rand Project =   801.42 sec
+  Time Score Matrix =    49.97 sec
+  Time Compute Gain =  1353.12 sec
+Running  Time for this Shapelet=  2312.66 sec <<
+
+
+Total Running  Time =  2312.66 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/FordA_TRAIN_CV1', 2, 659, 'correlation', 1, 0, './cv_output/FordA_CV2/FordA_CV2_correlation_unnormed_CID_tree.txt', './cv_output/FordA_CV2/FordA_CV2_correlation_unnormed_CID_acc.txt']
+; accuracy= 82.853   Correct:546 , Wrong: 113
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 | 298   71 
+;   p  1 |  42  248 
+
+num_class=2, num_obj=659  distance=correlation CID=true normalize=false ./cv_output/FordA_CV2/FordA_CV2_correlation_unnormed_CID_tree.txt  ./cv_output/FordA_CV2/FordA_CV2_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 28
+

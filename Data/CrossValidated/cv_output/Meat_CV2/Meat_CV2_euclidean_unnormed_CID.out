@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV2', 3, 30, 224, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/Meat_CV2/Meat_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/Meat_CV2/Meat_CV2_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502280286
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Meat_CV2/Meat_CV2_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/Meat_CV2/Meat_CV2_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................
+Len=7    @[  4,282]  d_th= 0.40 gap=0.055961 gain= 0.63651 (10 )==>  10   0  10  /   0  10   0 
+
+=== Node 2 ===
+..............................................................................................................
+Len=15   @[  0,160]  d_th= 0.03 gap=0.000778 gain= 0.69315 (0  )==>  10   0   0  /   0   0  10 
+
+num_class=3, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.58 sec
+  Time Rand Project =     1.85 sec
+  Time Score Matrix =     0.18 sec
+  Time Compute Gain =    12.88 sec
+Running  Time for this Shapelet=    15.67 sec <<
+
+
+Total Running  Time =    15.67 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV1', 3, 30, 'euclidean', 1, 0, './cv_output/Meat_CV2/Meat_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/Meat_CV2/Meat_CV2_euclidean_unnormed_CID_acc.txt']
+; accuracy= 90.000   Correct:27 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   7    0    0 
+;   p  2 |   0   10    0 
+;   p  3 |   3    0   10 
+
+num_class=3, num_obj=30  distance=euclidean CID=true normalize=false ./cv_output/Meat_CV2/Meat_CV2_euclidean_unnormed_CID_tree.txt  ./cv_output/Meat_CV2/Meat_CV2_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 6
+

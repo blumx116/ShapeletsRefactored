@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV2', 2, 185, 118, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/Strawberry_CV2/Strawberry_CV2_manhattan_normed_CID_tree.txt', './cv_output/Strawberry_CV2/Strawberry_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502275037
+num_class=2, num_obj=185, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Strawberry_CV2/Strawberry_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/Strawberry_CV2/Strawberry_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................
+Len=57   @[  2,121]  d_th= 2.09 gap=0.002273 gain= 0.29226 (103)==>  41   0  /  25 119 
+
+=== Node 3 ===
+.........................................................
+Len=41   @[  1,129]  d_th= 1.08 gap=0.001003 gain= 0.17938 (106)==>  16   3  /   9 116 
+
+=== Node 6 ===
+.........................................................
+Len=27   @[  0,171]  d_th= 3.42 gap=0.002869 gain= 0.25905 (9  )==>   2   3  /  14   0 
+
+=== Node 12 ===
+.........................................................
+Len=53   @[  2, 80]  d_th=12.06 gap=1.127707 gain= 0.67301 (1  )==>   0   3  /   2   0 
+
+num_class=2, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.42 sec
+  Time Rand Project =     8.68 sec
+  Time Score Matrix =     0.97 sec
+  Time Compute Gain =    26.93 sec
+Running  Time for this Shapelet=    38.78 sec <<
+
+
+Total Running  Time =    38.78 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1', 2, 185, 'manhattan', 1, 1, './cv_output/Strawberry_CV2/Strawberry_CV2_manhattan_normed_CID_tree.txt', './cv_output/Strawberry_CV2/Strawberry_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 81.081   Correct:150 , Wrong: 35
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  45   14 
+;   p  2 |  21  105 
+
+num_class=2, num_obj=185  distance=manhattan CID=true normalize=true ./cv_output/Strawberry_CV2/Strawberry_CV2_manhattan_normed_CID_tree.txt  ./cv_output/Strawberry_CV2/Strawberry_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 26
+

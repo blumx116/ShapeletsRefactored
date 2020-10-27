@@ -1,0 +1,68 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/LargeKitchenAppliances_TRAIN', 3, 375, 360, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP27_tree.txt', './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP27_time.txt']
+
+rand seed=1508339862
+num_class=3, num_obj=375, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP27_tree.txt  time_file=./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP27_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=5    @[  0,282]  d_th= 0.94 gap=0.001595 gain= 0.35113 (115)==> 111  12   7  /  14 113 118 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=83   @[ 30,413]  d_th= 7.18 gap=0.007541 gain= 0.21906 (96 )==> 108   5   0  /   3   7   7 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=169  @[178, 76]  d_th=19.47 gap=0.003537 gain= 0.27484 (69 )==>   1   4  83  /  13 109  35 
+
+=== Node 5 ===
+..................................................................................................................................................................................
+Len=7    @[  0,  2]  d_th= 0.91 gap=0.009950 gain= 0.67749 (3  )==>   3   0   7  /   0   7   0 
+
+=== Node 7 ===
+..................................................................................................................................................................................
+Len=285  @[  5,329]  d_th=26.17 gap=0.003724 gain= 0.27834 (49 )==>  13  13  28  /   0  96   7 
+
+=== Node 10 ===
+..................................................................................................................................................................................
+Len=127  @[  4,393]  d_th=19.20 gap=0.080784 gain= 0.61086 (4  )==>   0   0   7  /   3   0   0 
+
+=== Node 14 ===
+..................................................................................................................................................................................
+Len=47   @[  1,353]  d_th= 4.43 gap=0.000432 gain= 0.29237 (26 )==>  13   2  25  /   0  11   3 
+
+=== Node 28 ===
+..................................................................................................................................................................................
+Len=15   @[ 13,497]  d_th= 1.15 gap=0.004245 gain= 0.29101 (2  )==>  12   2   5  /   1   0  20 
+
+=== Node 29 ===
+..................................................................................................................................................................................
+Len=123  @[  4,167]  d_th=18.44 gap=0.003505 gain= 0.51958 (8  )==>   0  11   0  /   0   0   3 
+
+num_class=3, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    25.87 sec
+  Time Rand Project =    76.48 sec
+  Time Score Matrix =     8.54 sec
+  Time Compute Gain =   239.88 sec
+Running  Time for this Shapelet=   357.40 sec <<
+
+
+Total Running  Time =   357.40 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/LargeKitchenAppliances_TEST', 3, 375, 'euclidean', 0, 0, './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP27_tree.txt', './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP27_acc.txt']
+; accuracy= 79.467   Correct:298 , Wrong: 77
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 | 104    6    7 
+;   p  2 |  11   96   20 
+;   p  3 |  10   23   98 
+
+num_class=3, num_obj=375  distance=euclidean CID=false normalize=false ./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP27_tree.txt  ./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP27_acc.txt
+
+==> Tree Size = 60
+

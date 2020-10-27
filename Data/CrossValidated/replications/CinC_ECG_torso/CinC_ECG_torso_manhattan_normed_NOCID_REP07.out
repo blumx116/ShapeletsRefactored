@@ -1,0 +1,49 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'manhattan', 0, 1, 10, './replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_NOCID_REP07_tree.txt', './replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_NOCID_REP07_time.txt']
+
+rand seed=1503404960
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_NOCID_REP07_tree.txt  time_file=./replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_NOCID_REP07_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=737  @[ 25, 39]  d_th=443.36 gap=0.036245 gain= 0.66156 (10 )==>   0  12   0  13  /   5   0  10   0 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=51   @[  0,533]  d_th= 6.96 gap=0.000925 gain= 0.46268 (3  )==>   0  12   0   2  /   0   0   0  11 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=141  @[  1,900]  d_th=16.17 gap=0.356599 gain= 0.63651 (5  )==>   0   0  10   0  /   5   0   0   0 
+
+=== Node 4 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=629  @[  4, 71]  d_th=155.49 gap=3.100983 gain= 0.41012 (10 )==>   0   0   0   2  /   0  12   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    13.02 sec
+  Time Rand Project =    59.02 sec
+  Time Score Matrix =     4.64 sec
+  Time Compute Gain =  1070.43 sec
+Running  Time for this Shapelet=  1152.95 sec <<
+
+
+Total Running  Time =  1152.95 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'manhattan', 0, 1, './replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_NOCID_REP07_tree.txt', './replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_NOCID_REP07_acc.txt']
+; accuracy= 75.000   Correct:1035 , Wrong: 345
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 181   83    0    5 
+;   p  2 | 124  223    0   35 
+;   p  4 |   3    5  321    0 
+;   p  1 |  35   31   24  310 
+
+num_class=4, num_obj=1380  distance=manhattan CID=false normalize=true ./replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_NOCID_REP07_tree.txt  ./replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_NOCID_REP07_acc.txt
+
+==> Tree Size = 10
+

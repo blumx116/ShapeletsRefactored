@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'correlation', 0, 0, 10, './replications/Earthquakes/Earthquakes_correlation_unnormed_NOCID_REP10_tree.txt', './replications/Earthquakes/Earthquakes_correlation_unnormed_NOCID_REP10_time.txt']
+
+rand seed=1503427268
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Earthquakes/Earthquakes_correlation_unnormed_NOCID_REP10_tree.txt  time_file=./replications/Earthquakes/Earthquakes_correlation_unnormed_NOCID_REP10_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=69   @[  0,118]  d_th= 0.45 gap=0.000122 gain= 0.08348 (71 )==>  34   0  /  70  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=33   @[  9,184]  d_th= 0.42 gap=0.000676 gain= 0.08699 (51 )==>  44  34  /  26   1 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=205  @[  2,194]  d_th= 0.75 gap=0.000073 gain= 0.11777 (50 )==>  14   0  /  30  34 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=147  @[  0,156]  d_th= 0.72 gap=0.000019 gain= 0.14883 (14 )==>  20   5  /  10  29 
+
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    11.45 sec
+  Time Rand Project =   129.37 sec
+  Time Score Matrix =     8.17 sec
+  Time Compute Gain =   169.79 sec
+Running  Time for this Shapelet=   327.26 sec <<
+
+
+Total Running  Time =   327.26 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'correlation', 0, 0, './replications/Earthquakes/Earthquakes_correlation_unnormed_NOCID_REP10_tree.txt', './replications/Earthquakes/Earthquakes_correlation_unnormed_NOCID_REP10_acc.txt']
+; accuracy= 64.596   Correct:208 , Wrong: 114
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  16   72 
+;   p  0 |  42  192 
+
+num_class=2, num_obj=322  distance=correlation CID=false normalize=false ./replications/Earthquakes/Earthquakes_correlation_unnormed_NOCID_REP10_tree.txt  ./replications/Earthquakes/Earthquakes_correlation_unnormed_NOCID_REP10_acc.txt
+
+==> Tree Size = 28
+

@@ -1,0 +1,62 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP17_tree.txt', './replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP17_time.txt']
+
+rand seed=1508180511
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP17_tree.txt  time_file=./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP17_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=9    @[  0,106]  d_th= 1.82 gap=0.004359 gain= 0.48164 (130)==> 289  17   2   5   2  /   3 160   8  14   0 
+
+=== Node 3 ===
+.................................
+Len=55   @[180, 83]  d_th= 5.21 gap=0.002257 gain= 0.17266 (135)==>   0 153   1   6   0  /   3   7   7   8   0 
+
+=== Node 7 ===
+.................................
+Len=29   @[  7,  4]  d_th= 2.52 gap=0.012159 gain= 0.50113 (1  )==>   0   4   0   8   0  /   3   3   7   0   0 
+
+=== Node 14 ===
+.................................
+Len=11   @[  6, 64]  d_th= 0.19 gap=0.000787 gain= 0.42801 (2  )==>   0   0   0   7   0  /   0   4   0   1   0 
+
+=== Node 15 ===
+.................................
+Len=5    @[  0,  4]  d_th= 1.42 gap=0.116843 gain= 0.54020 (7  )==>   3   0   0   0   0  /   0   3   7   0   0 
+
+=== Node 29 ===
+.................................
+Len=21   @[  4,114]  d_th= 0.46 gap=0.099422 gain= 0.50040 (3  )==>   0   0   0   1   0  /   0   4   0   0   0 
+
+=== Node 31 ===
+.................................
+Len=5    @[  0, 12]  d_th= 1.85 gap=0.058301 gain= 0.61086 (4  )==>   0   3   0   0   0  /   0   0   7   0   0 
+
+num_class=5, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.46 sec
+  Time Rand Project =    15.23 sec
+  Time Score Matrix =     1.47 sec
+  Time Compute Gain =     2.76 sec
+Running  Time for this Shapelet=    22.15 sec <<
+
+
+Total Running  Time =    22.15 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'euclidean', 0, 0, './replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP17_tree.txt', './replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP17_acc.txt']
+; accuracy= 88.022   Correct:3961 , Wrong: 539
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2592  195   56   49   16 
+;   p  2 |  30 1330   15   97    4 
+;   p  3 |   4   29   14    4    0 
+;   p  4 |   1   36    1   25    2 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=4500  distance=euclidean CID=false normalize=false ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP17_tree.txt  ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP17_acc.txt
+
+==> Tree Size = 64
+

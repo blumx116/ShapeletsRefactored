@@ -1,0 +1,46 @@
+;Shapelet Tree 
+
+;random seed:1502275619, rand()=1023857949, rand()=1084062654
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ChlorineConcentration_TRAIN_CV2 3 234 83 1 2 10 manhattan 0 1 10 ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_manhattan_normed_NOCID_tree.txt ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_manhattan_normed_NOCID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 48 
+NonL  1    --     27  123   41  16.3201 ==>  40  46 131  /  17   0   0 
+NonL  2    --      3    3   25   1.5504 ==>   6   1   0  /  34  45 131 
+Leaf  3     1    
+Leaf  4     1    
+NonL  5    --      0   59    5   0.0554 ==>   4   0   0  /  30  45 131 
+Leaf 10     1    
+NonL 11    --     12    1   67  35.1181 ==>  30  31 102  /   0  14  29 
+NonL 22    --      0    1    9   0.5861 ==>   5   1   0  /  25  30 102 
+NonL 23    --     13   61   11   0.5383 ==>   0   4   0  /   0  10  29 
+Leaf 44     1    
+Leaf 45     3    
+Leaf 46     2    
+Leaf 47     3    
+
+;Shapelet id   <data>
+Shapelet   1  -0.523770 -0.628710 -0.386470 -0.745680 -0.637390 -0.602300 -0.805670 -0.532320 -0.776910 -0.725040 -0.818130 -0.789610 -0.719310 -0.645000 -0.376610  1.059600  0.994430 -0.100300 -0.145630  0.238000 -0.375350 -0.735920 -0.355540 -0.694360 -0.199230 -0.054599  0.046438  0.223900 -0.057479 -0.126660  0.593030  1.814400 -0.074157 -0.118730  0.939900  0.500300  0.330280  0.323510 -0.068363 -0.416660 -0.722520 
+Shapelet   2   2.998500  2.573500  2.526200  2.265100  2.089100  1.689400  1.552600  1.553200  0.980570  0.518640 -0.195170  1.743500  1.673100  1.377000  1.190000  0.734630  0.461410  0.102410 -0.161800 -0.306490 -0.842140 -0.825790 -0.660610  2.122600  1.704300 
+Shapelet   5  -0.939130 -0.993650 -0.884280 -1.039900  0.441500 
+Shapelet  11   4.679900  4.246600  4.058600  2.975800  2.803100  2.259600  2.142300  0.987400  0.823090  0.584720 -0.763210 -0.763220 -0.798430  0.824840  0.672210  0.357990  0.066026 -0.376740 -0.484360 -0.659870 -0.597040 -0.078801  0.098688 -0.339140 -0.529800  1.823600  1.352500  1.233900  0.397830  0.138460  0.041631  0.098662  0.109630  0.046183 -0.155400 -0.682030 -0.762490 -0.350650  0.656820  0.016880 -0.292380 -0.224310 -0.270330 -0.549430 -0.345520 -0.062752 -0.649110 -0.726590 -0.452700 -0.600680  0.474270 -0.004708 -0.495620 -0.661640 -0.222900 -0.346210 -0.177560 -0.297900 -0.379390 -0.553670 -0.290590  0.350640  0.121750 -0.493480 -0.638280 -0.657000 -0.246320 
+Shapelet  22   4.406700  4.008800  3.940800  3.061200  2.774900  2.254100  2.223800  1.175000  1.047300 
+Shapelet  23  -0.824810 -0.944790  1.107600  0.786560  0.551270  0.099140 -0.628370 -0.815390 -0.879070 -0.916130 -0.877200 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ChlorineConcentration_TRAIN_CV2 3 234 83 1 2 10 manhattan 0 1 10 ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_manhattan_normed_NOCID_tree.txt ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_manhattan_normed_NOCID_time.txt
+; time =>   59.593   3.320  33.096   2.343  18.524 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ChlorineConcentration_TRAIN_CV1 3 233 manhattan 0 1 ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_manhattan_normed_NOCID_tree.txt ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_manhattan_normed_NOCID_acc.txt
+; accuracy= 59.657   Correct:139 , Wrong: 94
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  20    7   10 
+;   p  2 |   1    0    2 
+;   p  3 |  36   38  119 
+

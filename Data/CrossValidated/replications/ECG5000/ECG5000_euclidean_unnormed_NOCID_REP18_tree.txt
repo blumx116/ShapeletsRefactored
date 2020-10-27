@@ -1,0 +1,42 @@
+;Shapelet Tree 
+
+;random seed:1508180534, rand()=2062450214, rand()=2119374060
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 euclidean 0 0 10 ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP18_tree.txt ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP18_time.txt 
+
+;Local Class:   0  1  2  3  4 
+;Real  Class:   1  2  3  4  5 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 28 
+NonL  1    --      0  106    9   1.8192 ==> 289  17   2   5   2  /   3 160   8  14   0 
+Leaf  2     1    
+NonL  3    --      1   97    9   0.6066 ==>   2   2   7   0   0  /   1 158   1  14   0 
+NonL  6    --      0  126    7   1.3971 ==>   2   0   0   0   0  /   0   2   7   0   0 
+Leaf  7     2    
+Leaf 12     1    
+NonL 13    --      0    3    9   0.6899 ==>   0   2   0   0   0  /   0   0   7   0   0 
+Leaf 26     2    
+Leaf 27     3    
+
+;Shapelet id   <data>
+Shapelet   1   1.993300  1.932200  1.797400  1.522300  1.251200  0.998730  0.483720  0.023132 -0.194910 
+Shapelet   3   0.347100  0.413900  0.564640  0.587810  0.724700  0.799320  0.993350  1.256900  1.295000 
+Shapelet   6   0.252280  0.333040  0.505730  1.090000  2.033600  2.536500  2.723100 
+Shapelet  13  -2.494700 -2.571800 -2.433700 -2.208300 -1.807500 -1.296900 -1.000400 -0.988520 -0.736010 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 euclidean 0 0 10 ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP18_tree.txt ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP18_time.txt
+; time =>   21.627   1.337  14.960   1.438   2.622 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST 5 4500 euclidean 0 0 ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP18_tree.txt ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP18_acc.txt
+; accuracy= 88.311   Correct:3974 , Wrong: 526
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2589  191   56   50   16 
+;   p  2 |  30 1369   14  117    5 
+;   p  3 |   8   30   16    8    1 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+

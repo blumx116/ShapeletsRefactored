@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV2', 2, 185, 118, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502274899
+num_class=2, num_obj=185, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................
+Len=61   @[  1,127]  d_th= 1.36 gap=0.000694 gain= 0.24837 (1  )==>  62  30  /   4  89 
+
+=== Node 2 ===
+.........................................................
+Len=27   @[  2, 52]  d_th= 0.27 gap=0.001237 gain= 0.17587 (16 )==>  37   1  /  25  29 
+
+=== Node 5 ===
+.........................................................
+Len=93   @[  6,  4]  d_th= 0.83 gap=0.002790 gain= 0.20918 (30 )==>  12   0  /  13  29 
+
+=== Node 11 ===
+.........................................................
+Len=17   @[  1,128]  d_th= 0.09 gap=0.000463 gain= 0.20978 (24 )==>   8   1  /   5  28 
+
+num_class=2, num_obj=42, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.55 sec
+  Time Rand Project =     9.02 sec
+  Time Score Matrix =     0.95 sec
+  Time Compute Gain =     4.43 sec
+Running  Time for this Shapelet=    16.72 sec <<
+
+
+Total Running  Time =    16.72 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1', 2, 185, 'euclidean', 0, 0, './cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 78.919   Correct:146 , Wrong: 39
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  28    1 
+;   p  2 |  38  118 
+
+num_class=2, num_obj=185  distance=euclidean CID=false normalize=false ./cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_unnormed_NOCID_tree.txt  ./cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 24
+

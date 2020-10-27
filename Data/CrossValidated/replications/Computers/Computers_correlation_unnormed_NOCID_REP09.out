@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Computers_TRAIN', 2, 250, 360, 1, 2, 10, 'correlation', 0, 0, 10, './replications/Computers/Computers_correlation_unnormed_NOCID_REP09_tree.txt', './replications/Computers/Computers_correlation_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1503441841
+num_class=2, num_obj=250, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Computers/Computers_correlation_unnormed_NOCID_REP09_tree.txt  time_file=./replications/Computers/Computers_correlation_unnormed_NOCID_REP09_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=47   @[  4, 44]  d_th= 1.00 gap=0.000000 gain= 0.69315 (0  )==>   0 125  / 125   0 
+
+num_class=2, num_obj=250, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.39 sec
+  Time Rand Project =    44.44 sec
+  Time Score Matrix =     3.72 sec
+  Time Compute Gain =   292.43 sec
+Running  Time for this Shapelet=   351.30 sec <<
+
+
+Total Running  Time =   351.30 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Computers_TEST', 2, 250, 'correlation', 0, 0, './replications/Computers/Computers_correlation_unnormed_NOCID_REP09_tree.txt', './replications/Computers/Computers_correlation_unnormed_NOCID_REP09_acc.txt']
+; accuracy= 50.000   Correct:125 , Wrong: 125
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   0    0 
+;   p  2 | 125  125 
+
+num_class=2, num_obj=250  distance=correlation CID=false normalize=false ./replications/Computers/Computers_correlation_unnormed_NOCID_REP09_tree.txt  ./replications/Computers/Computers_correlation_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 4
+

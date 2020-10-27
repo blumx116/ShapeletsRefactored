@@ -1,0 +1,500 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP01_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP01_time.txt']
+
+rand seed=1502025610
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP01_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP01_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=173  @[ 19,123]  d_th=88.03 gap=0.642427 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=133  @[  1, 18]  d_th=63.26 gap=1.524414 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=85   @[  0, 44]  d_th=49.33 gap=0.715603 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.62 sec
+  Time Rand Project =     5.28 sec
+  Time Score Matrix =     0.48 sec
+  Time Compute Gain =     7.90 sec
+Running  Time for this Shapelet=    14.67 sec <<
+
+
+Total Running  Time =    14.67 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 1, 0, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP01_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP01_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=true normalize=false ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP01_tree.txt  ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP01_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 92.045   Correct:81 , Wrong: 7
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  22    0    1    2 
+;   p  1 |   0   14    0    0 
+;   p  2 |   2    0   25    0 
+;   p  4 |   2    0    0   20 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP02_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP02_time.txt']
+
+rand seed=1502025625
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP02_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP02_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=155  @[ 19,134]  d_th=76.85 gap=0.374189 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=159  @[  1, 18]  d_th=71.96 gap=1.358623 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=101  @[  2, 42]  d_th=55.70 gap=0.714523 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.61 sec
+  Time Rand Project =     5.38 sec
+  Time Score Matrix =     0.47 sec
+  Time Compute Gain =     7.83 sec
+Running  Time for this Shapelet=    14.67 sec <<
+
+
+Total Running  Time =    14.67 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 1, 0, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP02_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP02_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=true normalize=false ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP02_tree.txt  ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP02_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 89.773   Correct:79 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  23    0    4    2 
+;   p  1 |   0   14    0    0 
+;   p  2 |   0    0   22    0 
+;   p  4 |   3    0    0   20 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP03_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP03_time.txt']
+
+rand seed=1502025640
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP03_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP03_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=173  @[ 19,135]  d_th=92.95 gap=0.377637 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=121  @[  1, 27]  d_th=56.54 gap=1.514958 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=93   @[  0, 43]  d_th=50.05 gap=0.694941 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.61 sec
+  Time Rand Project =     5.17 sec
+  Time Score Matrix =     0.47 sec
+  Time Compute Gain =     7.90 sec
+Running  Time for this Shapelet=    14.54 sec <<
+
+
+Total Running  Time =    14.54 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 1, 0, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP03_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP03_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=true normalize=false ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP03_tree.txt  ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP03_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 79.545   Correct:70 , Wrong: 18
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  22    0    5    5 
+;   p  1 |   0   14    0    0 
+;   p  2 |   1    0   21    4 
+;   p  4 |   3    0    0   13 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP04_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP04_time.txt']
+
+rand seed=1502025654
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP04_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP04_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=175  @[ 19,123]  d_th=88.19 gap=0.628038 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=133  @[  1, 18]  d_th=63.26 gap=1.524414 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=87   @[  0, 46]  d_th=52.65 gap=0.687015 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.63 sec
+  Time Rand Project =     5.48 sec
+  Time Score Matrix =     0.50 sec
+  Time Compute Gain =     8.22 sec
+Running  Time for this Shapelet=    15.21 sec <<
+
+
+Total Running  Time =    15.21 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 1, 0, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP04_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP04_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=true normalize=false ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP04_tree.txt  ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP04_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 86.364   Correct:76 , Wrong: 12
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  22    0    1    1 
+;   p  1 |   0   14    0    0 
+;   p  2 |   2    0   25    6 
+;   p  4 |   2    0    0   15 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP05_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP05_time.txt']
+
+rand seed=1502025670
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP05_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP05_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=173  @[ 19,123]  d_th=88.03 gap=0.642427 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=135  @[  1, 18]  d_th=63.89 gap=1.457730 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=101  @[  2, 42]  d_th=55.70 gap=0.714523 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.62 sec
+  Time Rand Project =     5.33 sec
+  Time Score Matrix =     0.48 sec
+  Time Compute Gain =     8.26 sec
+Running  Time for this Shapelet=    15.08 sec <<
+
+
+Total Running  Time =    15.08 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 1, 0, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP05_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP05_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=true normalize=false ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP05_tree.txt  ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP05_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 90.909   Correct:80 , Wrong: 8
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  24    0    4    2 
+;   p  1 |   0   14    0    0 
+;   p  2 |   0    0   22    0 
+;   p  4 |   2    0    0   20 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP06_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP06_time.txt']
+
+rand seed=1502025685
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP06_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP06_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=135  @[ 19,153]  d_th=68.93 gap=0.156120 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=123  @[  1, 34]  d_th=57.46 gap=1.386647 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=105  @[  2, 42]  d_th=56.72 gap=0.674735 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.61 sec
+  Time Rand Project =     5.12 sec
+  Time Score Matrix =     0.47 sec
+  Time Compute Gain =     7.88 sec
+Running  Time for this Shapelet=    14.47 sec <<
+
+
+Total Running  Time =    14.47 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 1, 0, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP06_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP06_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=true normalize=false ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP06_tree.txt  ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP06_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 87.500   Correct:77 , Wrong: 11
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  23    1    5    2 
+;   p  1 |   0   13    0    0 
+;   p  2 |   0    0   21    0 
+;   p  4 |   3    0    0   20 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP07_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP07_time.txt']
+
+rand seed=1502025700
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP07_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP07_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=171  @[ 19,134]  d_th=90.13 gap=0.377802 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=135  @[  1, 18]  d_th=63.89 gap=1.457730 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=97   @[  8, 42]  d_th=50.99 gap=1.047154 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.58 sec
+  Time Rand Project =     5.06 sec
+  Time Score Matrix =     0.44 sec
+  Time Compute Gain =     7.56 sec
+Running  Time for this Shapelet=    14.01 sec <<
+
+
+Total Running  Time =    14.01 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 1, 0, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP07_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP07_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=true normalize=false ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP07_tree.txt  ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP07_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 80.682   Correct:71 , Wrong: 17
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  21    0    3    5 
+;   p  1 |   0   14    0    0 
+;   p  2 |   2    0   23    4 
+;   p  4 |   3    0    0   13 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP08_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP08_time.txt']
+
+rand seed=1502025714
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP08_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP08_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=169  @[ 19,134]  d_th=86.45 gap=0.306494 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=135  @[  1, 18]  d_th=63.89 gap=1.457730 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=87   @[  0, 46]  d_th=52.65 gap=0.687015 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.59 sec
+  Time Rand Project =     4.71 sec
+  Time Score Matrix =     0.43 sec
+  Time Compute Gain =     7.26 sec
+Running  Time for this Shapelet=    13.34 sec <<
+
+
+Total Running  Time =    13.34 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 1, 0, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP08_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP08_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=true normalize=false ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP08_tree.txt  ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP08_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 82.955   Correct:73 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  21    0    1    1 
+;   p  1 |   0   14    0    0 
+;   p  2 |   2    0   25    8 
+;   p  4 |   3    0    0   13 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP09_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP09_time.txt']
+
+rand seed=1502025728
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP09_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP09_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=167  @[ 19,134]  d_th=83.70 gap=0.445358 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=133  @[  1, 18]  d_th=63.26 gap=1.524414 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=91   @[  0, 43]  d_th=49.27 gap=0.725435 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.64 sec
+  Time Rand Project =     5.39 sec
+  Time Score Matrix =     0.48 sec
+  Time Compute Gain =     8.07 sec
+Running  Time for this Shapelet=    14.98 sec <<
+
+
+Total Running  Time =    14.98 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 1, 0, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP09_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP09_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=true normalize=false ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP09_tree.txt  ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP09_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 81.818   Correct:72 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  24    0    5    5 
+;   p  1 |   0   14    0    0 
+;   p  2 |   1    0   21    4 
+;   p  4 |   1    0    0   13 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP10_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP10_time.txt']
+
+rand seed=1502025743
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP10_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP10_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=169  @[ 19,123]  d_th=85.16 gap=0.529214 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=67   @[  2, 16]  d_th=32.35 gap=1.384954 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=105  @[  2, 42]  d_th=56.72 gap=0.674735 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.63 sec
+  Time Rand Project =     5.42 sec
+  Time Score Matrix =     0.47 sec
+  Time Compute Gain =     7.76 sec
+Running  Time for this Shapelet=    14.69 sec <<
+
+
+Total Running  Time =    14.69 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 1, 0, './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP10_tree.txt', './output/FaceFour/FaceFour_manhattan_unnormed_CID_REP10_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=true normalize=false ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP10_tree.txt  ./output/FaceFour/FaceFour_manhattan_unnormed_CID_REP10_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 89.773   Correct:79 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  24    0    5    2 
+;   p  1 |   2   14    0    0 
+;   p  2 |   0    0   21    0 
+;   p  4 |   0    0    0   20 
+
+
+================ Replication:  10 Finished ================

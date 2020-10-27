@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1508196722, rand()=306939646, rand()=114244304
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TRAIN 2 100 48 1 2 10 euclidean 0 1 10 ./replications/ECG200/ECG200_euclidean_normed_NOCID_REP20_tree.txt ./replications/ECG200/ECG200_euclidean_normed_NOCID_REP20_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:  -1  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 32 
+NonL  1    --      4    9   47   1.9527 ==>   0  53  /  31  16 
+Leaf  2     1    
+NonL  3    --     35   59   25   1.6229 ==>  23   0  /   8  16 
+Leaf  6    -1    
+NonL  7    --      4   45    5   0.7608 ==>   1  13  /   7   3 
+Leaf 14     1    
+NonL 15    --      0   75    9   0.7871 ==>   0   3  /   7   0 
+Leaf 30     1    
+Leaf 31    -1    
+
+;Shapelet id   <data>
+Shapelet   1   0.701400  1.006100  0.395780 -0.369700 -0.738200 -0.729080 -0.906940 -0.870960 -1.060200 -1.198000 -0.981600 -1.272500 -1.287400 -1.276700 -1.539700 -1.346600 -1.535200 -1.763400 -1.688800 -1.809400 -1.863900 -1.994500 -1.889800 -1.925700 -1.833600 -1.661800 -1.342500 -1.011300 -0.672720 -0.216160  0.052872  0.562090  0.700880  0.946930  1.005000  1.027500  1.191700  0.968860  0.844620  0.779490  0.743940  0.673350  0.505280  0.662550  0.607700  0.546100  0.687160 
+Shapelet   3   1.220700  1.066500  1.037400  1.028100  0.876340  0.718330  0.566460  0.442320  0.427980  0.409830  0.360890  0.351490  0.320150  0.281170  0.306490  0.304560  0.232580  0.232210  0.278650  0.221460  0.197720  0.306780  0.340480  0.257220  0.159490 
+Shapelet   7   0.479710  0.469210  0.639210  0.490670  0.338890 
+Shapelet  15   1.239000  1.090000  0.842230  0.933020  0.893720  0.409130  0.299690  0.358680  0.169550 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TRAIN 2 100 48 1 2 10 euclidean 0 1 10 ./replications/ECG200/ECG200_euclidean_normed_NOCID_REP20_tree.txt ./replications/ECG200/ECG200_euclidean_normed_NOCID_REP20_time.txt
+; time =>    2.028   0.156   0.956   0.104   0.701 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TEST 2 100 euclidean 0 1 ./replications/ECG200/ECG200_euclidean_normed_NOCID_REP20_tree.txt ./replications/ECG200/ECG200_euclidean_normed_NOCID_REP20_acc.txt
+; accuracy= 78.000   Correct:78 , Wrong: 22
+
+
+;   == Confusion Matrix ==
+;   real |   1   -1 
+;   -----+------------
+;   p  1 |  53   11 
+;   p -1 |  11   25 
+

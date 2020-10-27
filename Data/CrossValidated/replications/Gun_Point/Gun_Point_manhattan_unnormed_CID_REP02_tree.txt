@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1502942386, rand()=1362608513, rand()=104350076
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 manhattan 1 0 10 ./replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP02_tree.txt ./replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP02_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   2  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      2  100   15   2.4435 ==>   0  18  /  26   6 
+Leaf  2     1    
+NonL  3    --     18   11   37  10.8955 ==>   0   6  /  26   0 
+Leaf  6     1    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1   0.187740  0.039058 -0.078698 -0.208210 -0.312640 -0.389000 -0.451820 -0.499660 -0.533070 -0.557150 -0.562840 -0.577440 -0.598070 -0.620100 -0.637170 
+Shapelet   3  -1.361800 -1.355200 -1.344600 -1.337200 -1.327800 -1.326200 -1.322300 -1.322000 -1.315400 -1.312300 -1.307700 -1.306300 -1.292600 -1.261800 -1.196900 -1.114000 -1.031300 -0.972260 -0.945880 -0.928970 -0.944320 -0.961890 -0.986010 -0.986560 -0.963710 -0.950270 -0.935390 -0.895150 -0.839530 -0.756300 -0.610470 -0.482360 -0.345810 -0.200520 -0.024858  0.120650  0.250210 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 manhattan 1 0 10 ./replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP02_tree.txt ./replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP02_time.txt
+; time =>    2.172   0.115   0.544   0.064   1.384 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TEST 2 150 manhattan 1 0 ./replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP02_tree.txt ./replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP02_acc.txt
+; accuracy= 89.333   Correct:134 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  75   15 
+;   p  2 |   1   59 
+

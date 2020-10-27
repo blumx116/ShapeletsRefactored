@@ -1,0 +1,686 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP01_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP01_time.txt']
+
+rand seed=1501835919
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP01_tree.txt  time_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP01_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+.................................
+Len=43   @[  0, 77]  d_th=15.06 gap=0.002265 gain= 0.51565 (58 )==> 273   1   2   1   2  /  19 176   8  18   0 
+
+=== Node 3 ===
+.................................
+Len=67   @[ 91, 72]  d_th=29.22 gap=0.053731 gain= 0.20743 (119)==>   0 159   3   8   0  /  19  17   5  10   0 
+
+=== Node 7 ===
+.................................
+Len=11   @[  0,103]  d_th= 2.40 gap=0.013881 gain= 0.48404 (5  )==>  19   1   2   1   0  /   0  16   3   9   0 
+
+=== Node 14 ===
+.................................
+Len=53   @[ 15, 78]  d_th=32.38 gap=0.147156 gain= 0.38721 (17 )==>  19   1   0   0   0  /   0   0   2   1   0 
+
+=== Node 15 ===
+.................................
+Len=7    @[  1,128]  d_th= 2.92 gap=0.082561 gain= 0.47785 (0  )==>   0  14   0   0   0  /   0   2   3   9   0 
+
+=== Node 29 ===
+.................................
+Len=61   @[  1, 57]  d_th=19.76 gap=2.137823 gain= 0.63651 (1  )==>   0   0   2   0   0  /   0   0   0   1   0 
+
+=== Node 31 ===
+.................................
+Len=5    @[  0,  7]  d_th= 1.06 gap=0.018687 gain= 0.51958 (8  )==>   0   2   0   9   0  /   0   0   3   0   0 
+
+=== Node 62 ===
+.................................
+Len=31   @[  6,  3]  d_th=11.74 gap=0.028182 gain= 0.22209 (3  )==>   0   0   0   7   0  /   0   2   0   2   0 
+
+num_class=5, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.75 sec
+  Time Rand Project =    16.46 sec
+  Time Score Matrix =     1.72 sec
+  Time Compute Gain =     3.73 sec
+Running  Time for this Shapelet=    24.97 sec <<
+
+
+Total Running  Time =    24.97 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'manhattan', 0, 0, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP01_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP01_acc.txt']
+0
+num_class=5, num_obj=4500  distance=manhattan CID=false normalize=false ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP01_tree.txt  ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP01_acc.txt
+
+==> Tree Size = 126
+
+; accuracy= 89.800   Correct:4041 , Wrong: 459
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2536   27   27   18   11 
+;   p  2 |  41 1465   31  119    4 
+;   p  3 |  46   51   12   10    2 
+;   p  4 |   4   47   16   28    5 
+;   p  5 |   0    0    0    0    0 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP02_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP02_time.txt']
+
+rand seed=1501835945
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP02_tree.txt  time_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP02_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+.................................
+Len=13   @[  0,104]  d_th= 7.94 gap=0.007592 gain= 0.48471 (134)==> 290  18   3   4   2  /   2 159   7  15   0 
+
+=== Node 3 ===
+.................................
+Len=65   @[120,  3]  d_th=26.03 gap=0.081522 gain= 0.14965 (137)==>   0 151   0   9   0  /   2   8   7   6   0 
+
+=== Node 7 ===
+.................................
+Len=45   @[  2,  2]  d_th=13.38 gap=0.301617 gain= 0.49661 (1  )==>   0   6   0   6   0  /   2   2   7   0   0 
+
+=== Node 14 ===
+.................................
+Len=11   @[  0, 63]  d_th= 0.98 gap=0.009697 gain= 0.69315 (0  )==>   0   6   0   0   0  /   0   0   0   6   0 
+
+=== Node 15 ===
+.................................
+Len=31   @[  0,  3]  d_th=13.47 gap=0.460381 gain= 0.47414 (7  )==>   2   0   0   0   0  /   0   2   7   0   0 
+
+=== Node 31 ===
+.................................
+Len=43   @[  5, 86]  d_th=17.77 gap=0.568497 gain= 0.52971 (5  )==>   0   0   7   0   0  /   0   2   0   0   0 
+
+num_class=5, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.49 sec
+  Time Rand Project =    14.62 sec
+  Time Score Matrix =     1.61 sec
+  Time Compute Gain =     3.44 sec
+Running  Time for this Shapelet=    22.36 sec <<
+
+
+Total Running  Time =    22.36 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'manhattan', 0, 0, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP02_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP02_acc.txt']
+0
+num_class=5, num_obj=4500  distance=manhattan CID=false normalize=false ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP02_tree.txt  ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP02_acc.txt
+
+==> Tree Size = 64
+
+; accuracy= 88.667   Correct:3990 , Wrong: 510
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2580  177   49   39   15 
+;   p  2 |  21 1358   11  104    6 
+;   p  3 |  26   37   23    3    1 
+;   p  4 |   0   18    3   29    0 
+;   p  5 |   0    0    0    0    0 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP03_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP03_time.txt']
+
+rand seed=1501835968
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP03_tree.txt  time_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP03_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+.................................
+Len=11   @[  8,125]  d_th= 5.99 gap=0.000166 gain= 0.54736 (92 )==> 284   3   0   7   2  /   8 174  10  12   0 
+
+=== Node 3 ===
+.................................
+Len=45   @[103,  2]  d_th=20.64 gap=0.017456 gain= 0.16917 (140)==>   1 159   0  12   0  /   7  15  10   0   0 
+
+=== Node 7 ===
+.................................
+Len=45   @[  8,  4]  d_th= 8.40 gap=0.036120 gain= 0.42700 (8  )==>   0  12   0   0   0  /   7   3  10   0   0 
+
+=== Node 15 ===
+.................................
+Len=27   @[  2, 26]  d_th= 9.46 gap=0.048483 gain= 0.46732 (8  )==>   6   0   0   0   0  /   1   3  10   0   0 
+
+=== Node 31 ===
+.................................
+Len=21   @[  0, 20]  d_th= 6.29 gap=0.074626 gain= 0.51958 (8  )==>   1   0  10   0   0  /   0   3   0   0   0 
+
+num_class=5, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.55 sec
+  Time Rand Project =    14.10 sec
+  Time Score Matrix =     1.52 sec
+  Time Compute Gain =     3.34 sec
+Running  Time for this Shapelet=    21.57 sec <<
+
+
+Total Running  Time =    21.57 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'manhattan', 0, 0, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP03_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP03_acc.txt']
+0
+num_class=5, num_obj=4500  distance=manhattan CID=false normalize=false ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP03_tree.txt  ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP03_acc.txt
+
+==> Tree Size = 64
+
+; accuracy= 90.400   Correct:4068 , Wrong: 432
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2578   83   36   72   13 
+;   p  2 |  22 1468   28   99    7 
+;   p  3 |  27   39   22    4    2 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP04_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP04_time.txt']
+
+rand seed=1501835990
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP04_tree.txt  time_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP04_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+.................................
+Len=19   @[  0,104]  d_th= 9.36 gap=0.004319 gain= 0.48884 (44 )==> 267   2   0   1   2  /  25 175  10  18   0 
+
+=== Node 3 ===
+.................................
+Len=63   @[ 78, 75]  d_th=22.44 gap=0.002360 gain= 0.25268 (86 )==>   0 150   0   7   0  /  25  25  10  11   0 
+
+=== Node 7 ===
+.................................
+Len=7    @[  1,107]  d_th= 1.62 gap=0.004330 gain= 0.37395 (19 )==>  25   5  10   5   0  /   0  20   0   6   0 
+
+=== Node 14 ===
+.................................
+Len=43   @[ 32,  4]  d_th=11.18 gap=0.051231 gain= 0.42599 (15 )==>   0   3   7   5   0  /  25   2   3   0   0 
+
+=== Node 15 ===
+.................................
+Len=17   @[  0,121]  d_th=23.52 gap=0.187583 gain= 0.42979 (12 )==>   0  19   0   0   0  /   0   1   0   6   0 
+
+=== Node 28 ===
+.................................
+Len=25   @[  0,  1]  d_th=14.32 gap=0.070192 gain= 0.69092 (1  )==>   0   3   0   5   0  /   0   0   7   0   0 
+
+=== Node 29 ===
+.................................
+Len=11   @[  0,  4]  d_th= 8.21 gap=0.083605 gain= 0.32902 (22 )==>  25   0   1   0   0  /   0   2   2   0   0 
+
+=== Node 31 ===
+.................................
+Len=37   @[  0,100]  d_th= 2.00 gap=0.328533 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   6   0 
+
+=== Node 56 ===
+.................................
+Len=7    @[  0,130]  d_th= 2.32 gap=0.168869 gain= 0.66156 (2  )==>   0   3   0   0   0  /   0   0   0   5   0 
+
+=== Node 59 ===
+.................................
+Len=69   @[  1, 20]  d_th=20.57 gap=0.613722 gain= 0.69315 (0  )==>   0   2   0   0   0  /   0   0   2   0   0 
+
+num_class=5, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.85 sec
+  Time Rand Project =    16.93 sec
+  Time Score Matrix =     1.84 sec
+  Time Compute Gain =     4.12 sec
+Running  Time for this Shapelet=    26.09 sec <<
+
+
+Total Running  Time =    26.09 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'manhattan', 0, 0, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP04_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP04_acc.txt']
+0
+num_class=5, num_obj=4500  distance=manhattan CID=false normalize=false ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP04_tree.txt  ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP04_acc.txt
+
+==> Tree Size = 120
+
+; accuracy= 91.178   Correct:4103 , Wrong: 397
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2604  100   39   27   16 
+;   p  2 |  15 1417   24   81    3 
+;   p  3 |   8    5   18    3    0 
+;   p  4 |   0   68    5   64    3 
+;   p  5 |   0    0    0    0    0 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP05_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP05_time.txt']
+
+rand seed=1501836022
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP05_tree.txt  time_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP05_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+.................................
+Len=19   @[  0,104]  d_th= 9.36 gap=0.004319 gain= 0.48884 (44 )==> 267   2   0   1   2  /  25 175  10  18   0 
+
+=== Node 3 ===
+.................................
+Len=49   @[180,  3]  d_th=20.65 gap=0.048687 gain= 0.23540 (86 )==>   0 148   0   9   0  /  25  27  10   9   0 
+
+=== Node 7 ===
+.................................
+Len=41   @[ 64,  2]  d_th=15.08 gap=0.001104 gain= 0.36573 (7  )==>   1  20   9   9   0  /  24   7   1   0   0 
+
+=== Node 14 ===
+.................................
+Len=63   @[  2,  0]  d_th=13.58 gap=0.025441 gain= 0.42034 (7  )==>   0  16   0   0   0  /   1   4   9   9   0 
+
+=== Node 15 ===
+.................................
+Len=21   @[  1, 28]  d_th=12.22 gap=0.057218 gain= 0.43243 (16 )==>  23   0   1   0   0  /   1   7   0   0   0 
+
+=== Node 29 ===
+.................................
+Len=27   @[  3,  1]  d_th= 9.83 gap=0.086950 gain= 0.45032 (3  )==>   0   3   1   9   0  /   1   1   8   0   0 
+
+=== Node 31 ===
+.................................
+Len=27   @[  0,101]  d_th= 5.60 gap=1.077673 gain= 0.37677 (6  )==>   1   0   0   0   0  /   0   7   0   0   0 
+
+=== Node 58 ===
+.................................
+Len=15   @[  0,103]  d_th= 0.83 gap=0.005404 gain= 0.54020 (7  )==>   0   3   0   0   0  /   0   0   1   9   0 
+
+=== Node 59 ===
+.................................
+Len=53   @[  1, 33]  d_th= 4.79 gap=0.049221 gain= 0.50040 (6  )==>   1   1   0   0   0  /   0   0   8   0   0 
+
+num_class=5, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.72 sec
+  Time Rand Project =    16.07 sec
+  Time Score Matrix =     1.76 sec
+  Time Compute Gain =     3.99 sec
+Running  Time for this Shapelet=    24.84 sec <<
+
+
+Total Running  Time =    24.84 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'manhattan', 0, 0, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP05_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP05_acc.txt']
+0
+num_class=5, num_obj=4500  distance=manhattan CID=false normalize=false ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP05_tree.txt  ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP05_acc.txt
+
+==> Tree Size = 120
+
+; accuracy= 91.667   Correct:4125 , Wrong: 375
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2584   62   36   24   14 
+;   p  2 |  26 1460   24   87    6 
+;   p  3 |  15   17   19    2    1 
+;   p  4 |   2   51    7   62    1 
+;   p  5 |   0    0    0    0    0 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP06_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP06_time.txt']
+
+rand seed=1501836047
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP06_tree.txt  time_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP06_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+.................................
+Len=13   @[  0,104]  d_th= 7.94 gap=0.007592 gain= 0.48471 (134)==> 290  18   3   4   2  /   2 159   7  15   0 
+
+=== Node 3 ===
+.................................
+Len=47   @[ 22,  3]  d_th=17.72 gap=0.031864 gain= 0.13078 (129)==>   0 147   0   9   0  /   2  12   7   6   0 
+
+=== Node 7 ===
+.................................
+Len=7    @[  0,108]  d_th= 2.29 gap=0.000017 gain= 0.44480 (13 )==>   2  11   7   0   0  /   0   1   0   6   0 
+
+=== Node 14 ===
+.................................
+Len=69   @[  1, 29]  d_th=15.86 gap=0.039700 gain= 0.43459 (6  )==>   1   0   6   0   0  /   1  11   1   0   0 
+
+=== Node 15 ===
+.................................
+Len=69   @[  0,  3]  d_th= 7.69 gap=0.925173 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   6   0 
+
+=== Node 28 ===
+.................................
+Len=27   @[  0,101]  d_th= 4.99 gap=0.961130 gain= 0.41012 (5  )==>   1   0   0   0   0  /   0   0   6   0   0 
+
+=== Node 29 ===
+.................................
+Len=31   @[  0, 65]  d_th= 3.02 gap=0.136946 gain= 0.42932 (9  )==>   1   0   1   0   0  /   0  11   0   0   0 
+
+=== Node 58 ===
+.................................
+Len=9    @[  0,  3]  d_th= 7.81 gap=2.602840 gain= 0.69315 (0  )==>   1   0   0   0   0  /   0   0   1   0   0 
+
+num_class=5, num_obj=2, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.66 sec
+  Time Rand Project =    14.97 sec
+  Time Score Matrix =     1.66 sec
+  Time Compute Gain =     3.60 sec
+Running  Time for this Shapelet=    23.10 sec <<
+
+
+Total Running  Time =    23.10 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'manhattan', 0, 0, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP06_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP06_acc.txt']
+0
+num_class=5, num_obj=4500  distance=manhattan CID=false normalize=false ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP06_tree.txt  ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP06_acc.txt
+
+==> Tree Size = 118
+
+; accuracy= 88.867   Correct:3999 , Wrong: 501
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2582  172   50   36   15 
+;   p  2 |  18 1366   18   97    6 
+;   p  3 |  27   30   17    8    1 
+;   p  4 |   0   22    1   34    0 
+;   p  5 |   0    0    0    0    0 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP07_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP07_time.txt']
+
+rand seed=1501836071
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP07_tree.txt  time_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP07_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+.................................
+Len=13   @[  0,104]  d_th= 7.94 gap=0.007592 gain= 0.48471 (134)==> 290  18   3   4   2  /   2 159   7  15   0 
+
+=== Node 3 ===
+.................................
+Len=59   @[ 57,  2]  d_th=24.34 gap=0.039490 gain= 0.14441 (135)==>   0 150   0   9   0  /   2   9   7   6   0 
+
+=== Node 7 ===
+.................................
+Len=17   @[  0, 74]  d_th= 2.90 gap=0.049173 gain= 0.49103 (2  )==>   2   2   7   0   0  /   0   7   0   6   0 
+
+=== Node 14 ===
+.................................
+Len=17   @[  1,  1]  d_th= 5.36 gap=0.434569 gain= 0.47414 (7  )==>   2   0   0   0   0  /   0   2   7   0   0 
+
+=== Node 15 ===
+.................................
+Len=17   @[  1, 55]  d_th= 0.88 gap=0.000340 gain= 0.46935 (1  )==>   0   1   0   6   0  /   0   6   0   0   0 
+
+=== Node 29 ===
+.................................
+Len=27   @[  1, 25]  d_th= 4.28 gap=0.209596 gain= 0.52971 (5  )==>   0   2   0   0   0  /   0   0   7   0   0 
+
+=== Node 30 ===
+.................................
+Len=47   @[  2,  1]  d_th=21.93 gap=1.837429 gain= 0.41012 (5  )==>   0   0   0   6   0  /   0   1   0   0   0 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.51 sec
+  Time Rand Project =    13.76 sec
+  Time Score Matrix =     1.49 sec
+  Time Compute Gain =     3.26 sec
+Running  Time for this Shapelet=    21.11 sec <<
+
+
+Total Running  Time =    21.11 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'manhattan', 0, 0, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP07_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP07_acc.txt']
+0
+num_class=5, num_obj=4500  distance=manhattan CID=false normalize=false ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP07_tree.txt  ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP07_acc.txt
+
+==> Tree Size = 62
+
+; accuracy= 88.867   Correct:3999 , Wrong: 501
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2583  170   49   37   15 
+;   p  2 |  24 1368    9  112    6 
+;   p  3 |  20   33   23    1    1 
+;   p  4 |   0   19    5   25    0 
+;   p  5 |   0    0    0    0    0 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP08_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP08_time.txt']
+
+rand seed=1501836093
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP08_tree.txt  time_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP08_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+.................................
+Len=13   @[  0,104]  d_th= 7.94 gap=0.007592 gain= 0.48471 (134)==> 290  18   3   4   2  /   2 159   7  15   0 
+
+=== Node 3 ===
+.................................
+Len=63   @[ 88, 74]  d_th=27.99 gap=0.063303 gain= 0.14296 (135)==>   0 151   1   7   0  /   2   8   6   8   0 
+
+=== Node 7 ===
+.................................
+Len=5    @[  0, 49]  d_th= 0.21 gap=0.003667 gain= 0.40321 (12 )==>   2   0   4   0   0  /   0   8   2   8   0 
+
+=== Node 14 ===
+.................................
+Len=13   @[  0,  4]  d_th= 4.38 gap=0.427288 gain= 0.63651 (2  )==>   2   0   0   0   0  /   0   0   4   0   0 
+
+=== Node 15 ===
+.................................
+Len=27   @[ 11, 88]  d_th= 2.71 gap=0.004884 gain= 0.52569 (0  )==>   0   1   0   8   0  /   0   7   2   0   0 
+
+=== Node 30 ===
+.................................
+Len=19   @[  0,113]  d_th= 1.35 gap=0.309506 gain= 0.34883 (7  )==>   0   1   0   0   0  /   0   0   0   8   0 
+
+=== Node 31 ===
+.................................
+Len=15   @[  8,102]  d_th= 2.21 gap=0.249245 gain= 0.52971 (5  )==>   0   0   2   0   0  /   0   7   0   0   0 
+
+num_class=5, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.53 sec
+  Time Rand Project =    13.97 sec
+  Time Score Matrix =     1.47 sec
+  Time Compute Gain =     3.33 sec
+Running  Time for this Shapelet=    21.41 sec <<
+
+
+Total Running  Time =    21.41 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'manhattan', 0, 0, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP08_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP08_acc.txt']
+0
+num_class=5, num_obj=4500  distance=manhattan CID=false normalize=false ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP08_tree.txt  ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP08_acc.txt
+
+==> Tree Size = 64
+
+; accuracy= 88.178   Correct:3968 , Wrong: 532
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2569  168   49   36   15 
+;   p  2 |  19 1347   18   83    3 
+;   p  3 |  24   40   14   18    2 
+;   p  4 |  15   35    5   38    2 
+;   p  5 |   0    0    0    0    0 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP09_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1501836115
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP09_tree.txt  time_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP09_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+.................................
+Len=13   @[  0,104]  d_th= 7.94 gap=0.007592 gain= 0.48471 (134)==> 290  18   3   4   2  /   2 159   7  15   0 
+
+=== Node 3 ===
+.................................
+Len=63   @[ 88, 74]  d_th=27.99 gap=0.063303 gain= 0.14296 (135)==>   0 151   1   7   0  /   2   8   6   8   0 
+
+=== Node 7 ===
+.................................
+Len=5    @[  0, 49]  d_th= 0.21 gap=0.003667 gain= 0.40321 (12 )==>   2   0   4   0   0  /   0   8   2   8   0 
+
+=== Node 14 ===
+.................................
+Len=29   @[  0,  2]  d_th=12.73 gap=0.660521 gain= 0.63651 (2  )==>   2   0   0   0   0  /   0   0   4   0   0 
+
+=== Node 15 ===
+.................................
+Len=13   @[  0, 62]  d_th= 0.72 gap=0.013221 gain= 0.37422 (4  )==>   0   3   0   8   0  /   0   5   2   0   0 
+
+=== Node 30 ===
+.................................
+Len=57   @[  0,  0]  d_th= 9.12 gap=0.402229 gain= 0.58595 (5  )==>   0   3   0   0   0  /   0   0   0   8   0 
+
+=== Node 31 ===
+.................................
+Len=13   @[  6,102]  d_th= 1.51 gap=0.087125 gain= 0.59827 (3  )==>   0   0   2   0   0  /   0   5   0   0   0 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.57 sec
+  Time Rand Project =    14.42 sec
+  Time Score Matrix =     1.59 sec
+  Time Compute Gain =     3.42 sec
+Running  Time for this Shapelet=    22.15 sec <<
+
+
+Total Running  Time =    22.15 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'manhattan', 0, 0, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP09_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP09_acc.txt']
+0
+num_class=5, num_obj=4500  distance=manhattan CID=false normalize=false ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP09_tree.txt  ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 64
+
+; accuracy= 87.911   Correct:3956 , Wrong: 544
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2571  170   49   38   15 
+;   p  2 |  34 1344   19   88    4 
+;   p  3 |  15   26    9   17    2 
+;   p  4 |   7   50    9   32    1 
+;   p  5 |   0    0    0    0    0 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP10_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP10_time.txt']
+
+rand seed=1501836138
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP10_tree.txt  time_file=./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP10_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+.................................
+Len=13   @[  0,104]  d_th= 7.94 gap=0.007592 gain= 0.48471 (134)==> 290  18   3   4   2  /   2 159   7  15   0 
+
+=== Node 3 ===
+.................................
+Len=63   @[ 49, 75]  d_th=22.44 gap=0.002360 gain= 0.16343 (125)==>   0 148   0   6   0  /   2  11   7   9   0 
+
+=== Node 7 ===
+.................................
+Len=7    @[  0,107]  d_th= 1.73 gap=0.022419 gain= 0.36654 (3  )==>   2   8   6   0   0  /   0   3   1   9   0 
+
+=== Node 14 ===
+.................................
+Len=39   @[ 10, 31]  d_th= 4.64 gap=0.071364 gain= 0.66156 (4  )==>   0   0   6   0   0  /   2   8   0   0   0 
+
+=== Node 15 ===
+.................................
+Len=31   @[  2, 83]  d_th= 4.66 gap=0.256284 gain= 0.39332 (7  )==>   0   1   0   9   0  /   0   2   1   0   0 
+
+=== Node 29 ===
+.................................
+Len=9    @[  0,  3]  d_th= 5.78 gap=1.224964 gain= 0.50040 (6  )==>   2   0   0   0   0  /   0   8   0   0   0 
+
+=== Node 31 ===
+.................................
+Len=33   @[  2, 99]  d_th=15.95 gap=2.777164 gain= 0.63651 (1  )==>   0   0   1   0   0  /   0   2   0   0   0 
+
+num_class=5, num_obj=3, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.60 sec
+  Time Rand Project =    14.16 sec
+  Time Score Matrix =     1.53 sec
+  Time Compute Gain =     3.35 sec
+Running  Time for this Shapelet=    21.70 sec <<
+
+
+Total Running  Time =    21.70 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'manhattan', 0, 0, './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP10_tree.txt', './output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP10_acc.txt']
+0
+num_class=5, num_obj=4500  distance=manhattan CID=false normalize=false ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP10_tree.txt  ./output/ECG5000/ECG5000_manhattan_unnormed_NOCID_REP10_acc.txt
+
+==> Tree Size = 64
+
+; accuracy= 88.489   Correct:3982 , Wrong: 518
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2581  168   49   40   15 
+;   p  2 |  24 1327   12   71    4 
+;   p  3 |  20   17   15    5    0 
+;   p  4 |   2   78   10   59    3 
+;   p  5 |   0    0    0    0    0 
+
+
+================ Replication:  10 Finished ================

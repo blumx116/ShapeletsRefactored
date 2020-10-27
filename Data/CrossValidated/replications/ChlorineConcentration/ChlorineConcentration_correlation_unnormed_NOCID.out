@@ -1,0 +1,850 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'correlation', 0, 0, 10, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP01_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP01_time.txt']
+
+rand seed=1501834102
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP01_tree.txt  time_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP01_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=41   @[  9,123]  d_th= 0.15 gap=0.000090 gain= 0.07356 (421)==>  91 262  91  /  23   0   0 
+
+=== Node 2 ===
+........................................
+Len=21   @[ 48, 29]  d_th= 0.03 gap=0.000000 gain= 0.02683 (282)==>   7  42  32  /  84 220  59 
+
+=== Node 4 ===
+........................................
+Len=5    @[  0,  3]  d_th= 0.00 gap=0.000012 gain= 0.15157 (33 )==>   0   5  19  /   7  37  13 
+
+=== Node 5 ===
+........................................
+Len=29   @[259, 40]  d_th= 0.03 gap=0.000003 gain= 0.02589 (285)==>   1  25  13  /  83 195  46 
+
+=== Node 8 ===
+........................................
+Len=27   @[ 10, 28]  d_th= 0.01 gap=0.000347 gain= 0.34631 (16 )==>   0   4   0  /   0   1  19 
+
+=== Node 9 ===
+........................................
+Len=5    @[  0,  8]  d_th= 0.00 gap=0.000002 gain= 0.14595 (11 )==>   7  14   2  /   0  23  11 
+
+=== Node 10 ===
+........................................
+Len=29   @[  0,134]  d_th= 0.01 gap=0.000138 gain= 0.17343 (15 )==>   0  12   0  /   1  13  13 
+
+=== Node 11 ===
+........................................
+Len=11   @[196, 29]  d_th= 0.04 gap=0.000005 gain= 0.02951 (210)==>  15  23  19  /  68 172  27 
+
+=== Node 18 ===
+........................................
+Len=21   @[ 19, 38]  d_th= 0.01 gap=0.000030 gain= 0.36612 (11 )==>   4   0   2  /   3  14   0 
+
+=== Node 19 ===
+........................................
+Len=9    @[  0, 26]  d_th= 0.01 gap=0.000053 gain= 0.15014 (26 )==>   0  23   7  /   0   0   4 
+
+=== Node 21 ===
+........................................
+Len=7    @[  0, 23]  d_th= 0.00 gap=0.000008 gain= 0.19739 (15 )==>   0   6   0  /   1   7  13 
+
+=== Node 22 ===
+........................................
+Len=7    @[  0,132]  d_th= 0.00 gap=0.000097 gain= 0.14490 (41 )==>   0   8   0  /  15  15  19 
+
+=== Node 23 ===
+........................................
+Len=13   @[ 24,  4]  d_th= 0.16 gap=0.000093 gain= 0.03451 (217)==>  68 148  26  /   0  24   1 
+
+num_class=3, num_obj=267, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.94 sec
+  Time Rand Project =    66.58 sec
+  Time Score Matrix =     5.05 sec
+  Time Compute Gain =    43.68 sec
+Running  Time for this Shapelet=   127.75 sec <<
+
+
+Total Running  Time =   127.75 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'correlation', 0, 0, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP01_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP01_acc.txt']
+0
+num_class=3, num_obj=3840  distance=correlation CID=false normalize=false ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP01_tree.txt  ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP01_acc.txt
+
+==> Tree Size = 48
+
+; accuracy= 55.703   Correct:2139 , Wrong: 1701
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 282  139  356 
+;   p  1 |  16  194   26 
+;   p  3 | 611  553 1663 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'correlation', 0, 0, 10, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP02_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP02_time.txt']
+
+rand seed=1501834231
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP02_tree.txt  time_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP02_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=41   @[338,123]  d_th= 0.14 gap=0.000021 gain= 0.08382 (415)==>  88 262  91  /  26   0   0 
+
+=== Node 2 ===
+........................................
+Len=69   @[ 98, 58]  d_th= 0.08 gap=0.000010 gain= 0.03719 (131)==>  14  90  51  /  74 172  40 
+
+=== Node 4 ===
+........................................
+Len=81   @[  6, 65]  d_th= 0.00 gap=0.000015 gain= 0.06030 (139)==>   0   0   8  /  14  90  43 
+
+=== Node 5 ===
+........................................
+Len=13   @[ 19, 28]  d_th= 0.08 gap=0.000057 gain= 0.04428 (228)==>  55 166  36  /  19   6   4 
+
+=== Node 9 ===
+........................................
+Len=5    @[  0,  1]  d_th= 0.00 gap=0.000001 gain= 0.15168 (37 )==>   0  51   4  /  14  39  39 
+
+=== Node 10 ===
+........................................
+Len=29   @[ 11,  7]  d_th= 0.47 gap=0.000088 gain= 0.03235 (233)==>  55 161  29  /   0   5   7 
+
+=== Node 11 ===
+........................................
+Len=9    @[  2,  3]  d_th= 0.00 gap=0.000001 gain= 0.26950 (21 )==>   0   4   0  /  19   2   4 
+
+=== Node 19 ===
+........................................
+Len=5    @[  0,  3]  d_th= 0.00 gap=0.000014 gain= 0.12556 (68 )==>   0   0  12  /  14  39  27 
+
+=== Node 20 ===
+........................................
+Len=77   @[ 12, 23]  d_th= 0.42 gap=0.000175 gain= 0.04417 (231)==>  48 161  29  /   7   0   0 
+
+=== Node 21 ===
+........................................
+Len=5    @[  0,130]  d_th= 0.01 gap=0.000449 gain= 0.28191 (6  )==>   0   3   0  /   0   2   7 
+
+=== Node 23 ===
+........................................
+Len=27   @[  0,125]  d_th= 0.00 gap=0.000285 gain= 0.29424 (17 )==>   0   1   3  /  19   1   1 
+
+num_class=3, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.94 sec
+  Time Rand Project =    64.63 sec
+  Time Score Matrix =     5.15 sec
+  Time Compute Gain =    43.65 sec
+Running  Time for this Shapelet=   125.82 sec <<
+
+
+Total Running  Time =   125.82 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'correlation', 0, 0, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP02_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP02_acc.txt']
+0
+num_class=3, num_obj=3840  distance=correlation CID=false normalize=false ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP02_tree.txt  ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP02_acc.txt
+
+==> Tree Size = 48
+
+; accuracy= 58.880   Correct:2261 , Wrong: 1579
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 104   26  109 
+;   p  1 |  49  297   76 
+;   p  3 | 756  563 1860 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'correlation', 0, 0, 10, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP03_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP03_time.txt']
+
+rand seed=1501834360
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP03_tree.txt  time_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP03_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=39   @[  9,123]  d_th= 0.16 gap=0.000076 gain= 0.07356 (421)==>  91 262  91  /  23   0   0 
+
+=== Node 2 ===
+........................................
+Len=81   @[178, 78]  d_th= 0.30 gap=0.000090 gain= 0.04433 (420)==>  79 262  91  /  12   0   0 
+
+=== Node 4 ===
+........................................
+Len=15   @[ 21, 92]  d_th= 0.08 gap=0.000047 gain= 0.03032 (14 )==>  33 122  68  /  46 140  23 
+
+=== Node 8 ===
+........................................
+Len=5    @[  0,  1]  d_th= 0.00 gap=0.000001 gain= 0.05320 (101)==>   1  47  13  /  32  75  55 
+
+=== Node 9 ===
+........................................
+Len=17   @[ 61,101]  d_th= 0.22 gap=0.000214 gain= 0.05679 (5  )==>  10  74  18  /  36  66   5 
+
+=== Node 16 ===
+........................................
+Len=15   @[  5, 90]  d_th= 0.09 gap=0.001683 gain= 0.15200 (51 )==>   0  47   9  /   1   0   4 
+
+=== Node 17 ===
+........................................
+Len=7    @[  0, 17]  d_th= 0.01 gap=0.000000 gain= 0.06831 (6  )==>   6  34  38  /  26  41  17 
+
+=== Node 18 ===
+........................................
+Len=59   @[ 19, 62]  d_th= 0.04 gap=0.000080 gain= 0.08388 (86 )==>   5   3   0  /   5  71  18 
+
+=== Node 19 ===
+........................................
+Len=17   @[ 97, 68]  d_th= 0.13 gap=0.000035 gain= 0.08901 (25 )==>  30  36   0  /   6  30   5 
+
+num_class=3, num_obj=107, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     8.15 sec
+  Time Rand Project =    66.40 sec
+  Time Score Matrix =     5.32 sec
+  Time Compute Gain =    45.59 sec
+Running  Time for this Shapelet=   130.12 sec <<
+
+
+Total Running  Time =   130.12 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'correlation', 0, 0, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP03_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP03_acc.txt']
+0
+num_class=3, num_obj=3840  distance=correlation CID=false normalize=false ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP03_tree.txt  ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP03_acc.txt
+
+==> Tree Size = 40
+
+; accuracy= 53.490   Correct:2054 , Wrong: 1786
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 257  102  457 
+;   p  1 |  13  258   49 
+;   p  3 | 639  526 1539 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'correlation', 0, 0, 10, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP04_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP04_time.txt']
+
+rand seed=1501834492
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP04_tree.txt  time_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP04_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=39   @[  9,123]  d_th= 0.16 gap=0.000076 gain= 0.07356 (421)==>  91 262  91  /  23   0   0 
+
+=== Node 2 ===
+........................................
+Len=15   @[ 23, 92]  d_th= 0.08 gap=0.000047 gain= 0.03417 (4  )==>  34 122  68  /  57 140  23 
+
+=== Node 4 ===
+........................................
+Len=5    @[  0,  1]  d_th= 0.00 gap=0.000001 gain= 0.05425 (102)==>   1  47  13  /  33  75  55 
+
+=== Node 5 ===
+........................................
+Len=23   @[134, 27]  d_th= 0.10 gap=0.000131 gain= 0.05207 (116)==>  33 112  23  /  24  28   0 
+
+=== Node 8 ===
+........................................
+Len=17   @[  5, 93]  d_th= 0.12 gap=0.001813 gain= 0.15200 (51 )==>   0  47   9  /   1   0   4 
+
+=== Node 9 ===
+........................................
+Len=7    @[  0, 17]  d_th= 0.01 gap=0.000000 gain= 0.06248 (5  )==>   7  34  38  /  26  41  17 
+
+=== Node 10 ===
+........................................
+Len=47   @[139,118]  d_th= 0.01 gap=0.000033 gain= 0.04832 (118)==>   0  17   8  /  33  95  15 
+
+=== Node 11 ===
+........................................
+Len=5    @[  0,  3]  d_th= 0.01 gap=0.000006 gain= 0.09284 (18 )==>  13   4   0  /  11  24   0 
+
+=== Node 16 ===
+........................................
+Len=43   @[  2, 73]  d_th= 0.00 gap=0.000188 gain= 0.14691 (48 )==>   0   0   4  /   0  47   5 
+
+=== Node 17 ===
+........................................
+Len=7    @[  0, 96]  d_th= 0.00 gap=0.000125 gain= 0.50040 (3  )==>   0   0   4  /   1   0   0 
+
+=== Node 18 ===
+........................................
+Len=9    @[  0, 38]  d_th= 0.02 gap=0.000053 gain= 0.09323 (7  )==>   7  22  14  /   0  12  24 
+
+=== Node 19 ===
+........................................
+Len=9    @[  1, 61]  d_th= 0.04 gap=0.000001 gain= 0.14729 (26 )==>  17  35   3  /   9   6  14 
+
+=== Node 20 ===
+........................................
+Len=31   @[  0, 26]  d_th= 0.01 gap=0.000244 gain= 0.50129 (7  )==>   0  16   0  /   0   1   8 
+
+=== Node 21 ===
+........................................
+Len=79   @[  7, 23]  d_th= 0.41 gap=0.000453 gain= 0.04239 (135)==>  29  95  15  /   4   0   0 
+
+=== Node 22 ===
+........................................
+Len=11   @[  0,  0]  d_th= 0.01 gap=0.001378 gain= 0.26440 (3  )==>   3   4   0  /  10   0   0 
+
+=== Node 23 ===
+........................................
+Len=11   @[ 30,132]  d_th= 0.13 gap=0.000022 gain= 0.26712 (17 )==>   3  23   0  /   8   1   0 
+
+num_class=3, num_obj=35, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.95 sec
+  Time Rand Project =    61.50 sec
+  Time Score Matrix =     5.19 sec
+  Time Compute Gain =    46.41 sec
+Running  Time for this Shapelet=   125.40 sec <<
+
+
+Total Running  Time =   125.40 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'correlation', 0, 0, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP04_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP04_acc.txt']
+0
+num_class=3, num_obj=3840  distance=correlation CID=false normalize=false ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP04_tree.txt  ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP04_acc.txt
+
+==> Tree Size = 48
+
+; accuracy= 56.406   Correct:2166 , Wrong: 1674
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 245   96  344 
+;   p  1 |  19  285   65 
+;   p  3 | 645  505 1636 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'correlation', 0, 0, 10, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP05_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP05_time.txt']
+
+rand seed=1501834621
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP05_tree.txt  time_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP05_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=39   @[  9,123]  d_th= 0.16 gap=0.000076 gain= 0.07356 (421)==>  91 262  91  /  23   0   0 
+
+=== Node 2 ===
+........................................
+Len=41   @[ 21,  4]  d_th= 0.02 gap=0.000060 gain= 0.03110 (354)==>   4  17  24  /  87 245  67 
+
+=== Node 4 ===
+........................................
+Len=39   @[  0, 97]  d_th= 0.01 gap=0.000084 gain= 0.12853 (29 )==>   0   0   8  /   4  17  16 
+
+=== Node 5 ===
+........................................
+Len=21   @[  2, 50]  d_th= 0.02 gap=0.000042 gain= 0.02683 (301)==>   1  33  15  /  86 212  52 
+
+=== Node 9 ===
+........................................
+Len=23   @[  0, 15]  d_th= 0.01 gap=0.000071 gain= 0.18439 (17 )==>   0   1   9  /   4  16   7 
+
+=== Node 10 ===
+........................................
+Len=9    @[  0,  2]  d_th= 0.01 gap=0.000056 gain= 0.16069 (13 )==>   1   6  11  /   0  27   4 
+
+=== Node 11 ===
+........................................
+Len=17   @[185,102]  d_th= 0.28 gap=0.000028 gain= 0.02955 (268)==>  67 190  52  /  19  22   0 
+
+=== Node 19 ===
+........................................
+Len=11   @[  0, 64]  d_th= 0.02 gap=0.000311 gain= 0.24243 (19 )==>   4  16   3  /   0   0   4 
+
+=== Node 20 ===
+........................................
+Len=7    @[  0, 29]  d_th= 0.00 gap=0.000093 gain= 0.29866 (10 )==>   1   3   0  /   0   3  11 
+
+=== Node 21 ===
+........................................
+Len=7    @[  0, 10]  d_th= 0.01 gap=0.000045 gain= 0.13815 (7  )==>   0  19   0  /   0   8   4 
+
+=== Node 22 ===
+........................................
+Len=69   @[107, 79]  d_th= 0.54 gap=0.000475 gain= 0.04085 (293)==>  59 190  52  /   8   0   0 
+
+=== Node 23 ===
+........................................
+Len=5    @[  0, 14]  d_th= 0.00 gap=0.000024 gain= 0.17356 (13 )==>  12   2   0  /   7  20   0 
+
+num_class=3, num_obj=41, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     8.18 sec
+  Time Rand Project =    68.36 sec
+  Time Score Matrix =     5.31 sec
+  Time Compute Gain =    45.17 sec
+Running  Time for this Shapelet=   131.73 sec <<
+
+
+Total Running  Time =   131.73 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'correlation', 0, 0, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP05_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP05_acc.txt']
+0
+num_class=3, num_obj=3840  distance=correlation CID=false normalize=false ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP05_tree.txt  ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP05_acc.txt
+
+==> Tree Size = 48
+
+; accuracy= 58.594   Correct:2250 , Wrong: 1590
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 109   45  135 
+;   p  1 |   3  271   40 
+;   p  3 | 797  570 1870 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'correlation', 0, 0, 10, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP06_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP06_time.txt']
+
+rand seed=1501834757
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP06_tree.txt  time_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP06_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=45   @[  9,120]  d_th= 0.17 gap=0.000126 gain= 0.06681 (425)==>  93 262  91  /  21   0   0 
+
+=== Node 2 ===
+........................................
+Len=75   @[ 99, 53]  d_th= 0.08 gap=0.000052 gain= 0.03251 (118)==>  18  94  52  /  75 168  39 
+
+=== Node 4 ===
+........................................
+Len=5    @[  0, 79]  d_th= 0.00 gap=0.000002 gain= 0.06920 (68 )==>   6  79  31  /  12  15  21 
+
+=== Node 5 ===
+........................................
+Len=23   @[119,  0]  d_th= 0.12 gap=0.000152 gain= 0.03977 (228)==>  57 162  36  /  18   6   3 
+
+=== Node 8 ===
+........................................
+Len=7    @[  0, 15]  d_th= 0.00 gap=0.000009 gain= 0.10342 (60 )==>   0  59  29  /   6  20   2 
+
+=== Node 9 ===
+........................................
+Len=11   @[  2, 28]  d_th= 0.01 gap=0.000080 gain= 0.19920 (8  )==>   0  11   9  /  12   4  12 
+
+=== Node 10 ===
+........................................
+Len=17   @[176,101]  d_th= 0.23 gap=0.000013 gain= 0.04481 (29 )==>  17  98  27  /  40  64   9 
+
+=== Node 11 ===
+........................................
+Len=19   @[  1,121]  d_th= 0.00 gap=0.000220 gain= 0.34883 (21 )==>   0   0   3  /  18   6   0 
+
+=== Node 16 ===
+........................................
+Len=63   @[ 63, 69]  d_th= 0.06 gap=0.000092 gain= 0.08377 (38 )==>   0   9  16  /   0  50  13 
+
+=== Node 17 ===
+........................................
+Len=9    @[  0,  2]  d_th= 0.01 gap=0.000059 gain= 0.20475 (2  )==>   6   6   1  /   0  14   1 
+
+=== Node 18 ===
+........................................
+Len=73   @[  0, 63]  d_th= 0.09 gap=0.000186 gain= 0.35074 (4  )==>   0   3   9  /   0   8   0 
+
+=== Node 19 ===
+........................................
+Len=15   @[ 11, 91]  d_th= 0.04 gap=0.000076 gain= 0.28783 (8  )==>   9   0   1  /   3   4  11 
+
+=== Node 20 ===
+........................................
+Len=61   @[  9, 18]  d_th= 0.62 gap=0.000096 gain= 0.07989 (132)==>  12  98  27  /   5   0   0 
+
+=== Node 21 ===
+........................................
+Len=47   @[ 36,111]  d_th= 0.11 gap=0.000104 gain= 0.08448 (45 )==>  36  41   2  /   4  23   7 
+
+=== Node 23 ===
+........................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000009 gain= 0.21576 (0  )==>  12   0   0  /   6   6   0 
+
+num_class=3, num_obj=24, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     8.02 sec
+  Time Rand Project =    65.55 sec
+  Time Score Matrix =     5.19 sec
+  Time Compute Gain =    45.41 sec
+Running  Time for this Shapelet=   128.62 sec <<
+
+
+Total Running  Time =   128.62 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'correlation', 0, 0, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP06_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP06_acc.txt']
+0
+num_class=3, num_obj=3840  distance=correlation CID=false normalize=false ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP06_tree.txt  ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP06_acc.txt
+
+==> Tree Size = 48
+
+; accuracy= 53.724   Correct:2063 , Wrong: 1777
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 178   76  258 
+;   p  1 |  97  311  213 
+;   p  3 | 634  499 1574 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'correlation', 0, 0, 10, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP07_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP07_time.txt']
+
+rand seed=1501834888
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP07_tree.txt  time_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP07_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=39   @[  9,123]  d_th= 0.16 gap=0.000076 gain= 0.07356 (421)==>  91 262  91  /  23   0   0 
+
+=== Node 2 ===
+........................................
+Len=39   @[ 21,  8]  d_th= 0.02 gap=0.000000 gain= 0.03263 (350)==>   4  18  25  /  87 244  66 
+
+=== Node 4 ===
+........................................
+Len=43   @[ 42,  8]  d_th= 0.01 gap=0.000039 gain= 0.15556 (9  )==>   2  13   4  /   2   5  21 
+
+=== Node 5 ===
+........................................
+Len=39   @[119,123]  d_th= 0.16 gap=0.000034 gain= 0.02625 (367)==>  76 240  66  /  11   4   0 
+
+=== Node 8 ===
+........................................
+Len=7    @[  1, 71]  d_th= 0.00 gap=0.000097 gain= 0.33650 (15 )==>   2   0   0  /   0  13   4 
+
+=== Node 9 ===
+........................................
+Len=17   @[  0, 13]  d_th= 0.02 gap=0.000020 gain= 0.25732 (24 )==>   0   5  21  /   2   0   0 
+
+=== Node 10 ===
+........................................
+Len=17   @[229,121]  d_th= 0.29 gap=0.000048 gain= 0.02710 (362)==>  76 238  58  /   0   2   8 
+
+=== Node 11 ===
+........................................
+Len=5    @[  0,  0]  d_th= 0.01 gap=0.000125 gain= 0.35045 (9  )==>  11   1   0  /   0   3   0 
+
+=== Node 17 ===
+........................................
+Len=59   @[  1,101]  d_th= 0.00 gap=0.000032 gain= 0.21941 (1  )==>   0   4   4  /   0   9   0 
+
+=== Node 18 ===
+........................................
+Len=13   @[  0, 50]  d_th= 0.05 gap=0.000287 gain= 0.22820 (20 )==>   0   2  21  /   0   3   0 
+
+=== Node 20 ===
+........................................
+Len=23   @[  4, 42]  d_th= 0.01 gap=0.000403 gain= 0.02557 (348)==>   4   1   7  /  72 237  51 
+
+num_class=3, num_obj=372, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     8.26 sec
+  Time Rand Project =    67.56 sec
+  Time Score Matrix =     5.06 sec
+  Time Compute Gain =    43.23 sec
+Running  Time for this Shapelet=   128.69 sec <<
+
+
+Total Running  Time =   128.69 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'correlation', 0, 0, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP07_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP07_acc.txt']
+0
+num_class=3, num_obj=3840  distance=correlation CID=false normalize=false ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP07_tree.txt  ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP07_acc.txt
+
+==> Tree Size = 42
+
+; accuracy= 57.500   Correct:2208 , Wrong: 1632
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 114   69  158 
+;   p  1 |  15  251   44 
+;   p  3 | 780  566 1843 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'correlation', 0, 0, 10, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP08_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP08_time.txt']
+
+rand seed=1501835021
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP08_tree.txt  time_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP08_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=41   @[269,123]  d_th= 0.18 gap=0.000062 gain= 0.07017 (423)==>  92 262  91  /  22   0   0 
+
+=== Node 2 ===
+........................................
+Len=65   @[247, 41]  d_th= 0.06 gap=0.000045 gain= 0.03207 (157)==>  15  81  48  /  77 181  43 
+
+=== Node 4 ===
+........................................
+Len=13   @[  0, 22]  d_th= 0.02 gap=0.000001 gain= 0.07328 (128)==>   9  80  47  /   6   1   1 
+
+=== Node 5 ===
+........................................
+Len=17   @[ 35,118]  d_th= 0.13 gap=0.000091 gain= 0.03867 (223)==>  54 169  39  /  23  12   4 
+
+=== Node 8 ===
+........................................
+Len=5    @[  0,  1]  d_th= 0.00 gap=0.000002 gain= 0.10484 (48 )==>   0  39   5  /   9  41  42 
+
+=== Node 9 ===
+........................................
+Len=5    @[  0,131]  d_th= 0.06 gap=0.001720 gain= 0.56234 (4  )==>   6   0   0  /   0   1   1 
+
+=== Node 10 ===
+........................................
+Len=69   @[  1, 15]  d_th= 0.01 gap=0.000008 gain= 0.03813 (244)==>   4   0   5  /  50 169  34 
+
+=== Node 11 ===
+........................................
+Len=9    @[  1, 70]  d_th= 0.00 gap=0.000168 gain= 0.21351 (33 )==>   0   0   3  /  23  12   1 
+
+=== Node 16 ===
+........................................
+Len=7    @[  0, 57]  d_th= 0.01 gap=0.000149 gain= 0.19149 (34 )==>   0  38   1  /   0   1   4 
+
+=== Node 17 ===
+........................................
+Len=5    @[  0,  6]  d_th= 0.00 gap=0.000035 gain= 0.11416 (28 )==>   0  29  31  /   9  12  11 
+
+=== Node 19 ===
+........................................
+Len=51   @[  0,100]  d_th= 0.02 gap=0.003322 gain= 0.69315 (0  )==>   0   0   1  /   0   1   0 
+
+=== Node 21 ===
+........................................
+Len=17   @[173,101]  d_th= 0.23 gap=0.000013 gain= 0.04880 (27 )==>  14  99  27  /  36  70   7 
+
+=== Node 23 ===
+........................................
+Len=11   @[  2,  1]  d_th= 0.01 gap=0.000062 gain= 0.26155 (22 )==>  23   6   0  /   0   6   1 
+
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     8.19 sec
+  Time Rand Project =    65.92 sec
+  Time Score Matrix =     5.17 sec
+  Time Compute Gain =    44.32 sec
+Running  Time for this Shapelet=   128.07 sec <<
+
+
+Total Running  Time =   128.07 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'correlation', 0, 0, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP08_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP08_acc.txt']
+0
+num_class=3, num_obj=3840  distance=correlation CID=false normalize=false ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP08_tree.txt  ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP08_acc.txt
+
+==> Tree Size = 48
+
+; accuracy= 53.984   Correct:2073 , Wrong: 1767
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 192   91  344 
+;   p  1 |  68  289  109 
+;   p  3 | 649  506 1592 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'correlation', 0, 0, 10, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP09_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1501835152
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP09_tree.txt  time_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP09_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=41   @[338,123]  d_th= 0.14 gap=0.000021 gain= 0.08382 (415)==>  88 262  91  /  26   0   0 
+
+=== Node 2 ===
+........................................
+Len=49   @[223, 15]  d_th= 0.03 gap=0.000008 gain= 0.02800 (271)==>   5  49  31  /  83 213  60 
+
+=== Node 4 ===
+........................................
+Len=59   @[  3, 72]  d_th= 0.00 gap=0.000024 gain= 0.08967 (71 )==>   0   0   7  /   5  49  24 
+
+=== Node 5 ===
+........................................
+Len=61   @[ 32,103]  d_th= 0.01 gap=0.000024 gain= 0.03601 (342)==>   0   0   7  /  83 213  53 
+
+=== Node 9 ===
+........................................
+Len=9    @[  0,  2]  d_th= 0.00 gap=0.000001 gain= 0.07355 (48 )==>   0   5  10  /   5  44  14 
+
+=== Node 11 ===
+........................................
+Len=25   @[  2, 16]  d_th= 0.00 gap=0.000083 gain= 0.02394 (337)==>   1   0   5  /  82 213  48 
+
+=== Node 18 ===
+........................................
+Len=41   @[  4,  5]  d_th= 0.02 gap=0.000037 gain= 0.28368 (1  )==>   0   5   3  /   0   0   7 
+
+=== Node 19 ===
+........................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000004 gain= 0.09265 (27 )==>   1  17   0  /   4  27  14 
+
+=== Node 23 ===
+........................................
+Len=19   @[ 11, 26]  d_th= 0.01 gap=0.000210 gain= 0.02588 (307)==>   0  18   0  /  82 195  48 
+
+num_class=3, num_obj=343, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     8.71 sec
+  Time Rand Project =    68.64 sec
+  Time Score Matrix =     5.28 sec
+  Time Compute Gain =    45.02 sec
+Running  Time for this Shapelet=   132.26 sec <<
+
+
+Total Running  Time =   132.26 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'correlation', 0, 0, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP09_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP09_acc.txt']
+0
+num_class=3, num_obj=3840  distance=correlation CID=false normalize=false ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP09_tree.txt  ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 48
+
+; accuracy= 58.255   Correct:2237 , Wrong: 1603
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 |  65   19   68 
+;   p  1 |   0  201    6 
+;   p  3 | 844  666 1971 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'correlation', 0, 0, 10, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP10_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP10_time.txt']
+
+rand seed=1501835289
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP10_tree.txt  time_file=./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP10_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=73   @[ 55, 88]  d_th= 0.26 gap=0.000060 gain= 0.05083 (415)==>  92 258  91  /  22   4   0 
+
+=== Node 2 ===
+........................................
+Len=41   @[320,123]  d_th= 0.14 gap=0.000078 gain= 0.05967 (401)==>  74 258  89  /  18   0   2 
+
+=== Node 3 ===
+........................................
+Len=11   @[  0, 26]  d_th= 0.01 gap=0.000114 gain= 0.15200 (4  )==>   7   4   0  /  15   0   0 
+
+=== Node 4 ===
+........................................
+Len=15   @[ 20, 92]  d_th= 0.08 gap=0.000047 gain= 0.03072 (11 )==>  29 121  66  /  45 137  23 
+
+=== Node 6 ===
+........................................
+Len=23   @[  0,  0]  d_th= 0.01 gap=0.000010 gain= 0.42803 (1  )==>   6   0   0  /   1   4   0 
+
+=== Node 8 ===
+........................................
+Len=35   @[ 36, 19]  d_th= 0.05 gap=0.000004 gain= 0.05356 (16 )==>   4  72  40  /  25  49  26 
+
+=== Node 9 ===
+........................................
+Len=19   @[ 90, 67]  d_th= 0.35 gap=0.000450 gain= 0.05620 (185)==>  36 136  23  /   9   1   0 
+
+=== Node 13 ===
+........................................
+Len=49   @[  3,101]  d_th= 0.04 gap=0.006388 gain= 0.50040 (3  )==>   1   0   0  /   0   4   0 
+
+=== Node 16 ===
+........................................
+Len=25   @[  2, 47]  d_th= 0.08 gap=0.000034 gain= 0.07840 (100)==>   4  72  32  /   0   0   8 
+
+=== Node 17 ===
+........................................
+Len=11   @[ 30, 39]  d_th= 0.02 gap=0.000010 gain= 0.09978 (44 )==>  19  43  10  /   6   6  16 
+
+=== Node 18 ===
+........................................
+Len=43   @[ 60,120]  d_th= 0.00 gap=0.000062 gain= 0.04535 (183)==>   0   1   5  /  36 135  18 
+
+num_class=3, num_obj=195, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     8.31 sec
+  Time Rand Project =    68.05 sec
+  Time Score Matrix =     5.33 sec
+  Time Compute Gain =    44.92 sec
+Running  Time for this Shapelet=   131.24 sec <<
+
+
+Total Running  Time =   131.24 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'correlation', 0, 0, './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP10_tree.txt', './output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP10_acc.txt']
+0
+num_class=3, num_obj=3840  distance=correlation CID=false normalize=false ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP10_tree.txt  ./output/ChlorineConcentration/ChlorineConcentration_correlation_unnormed_NOCID_REP10_acc.txt
+
+==> Tree Size = 38
+
+; accuracy= 59.922   Correct:2301 , Wrong: 1539
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 165   44  152 
+;   p  1 |  20  291   48 
+;   p  3 | 724  551 1845 
+
+
+================ Replication:  10 Finished ================

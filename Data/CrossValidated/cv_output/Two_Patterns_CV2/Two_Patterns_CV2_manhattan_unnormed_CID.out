@@ -1,0 +1,69 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV2', 4, 501, 64, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/Two_Patterns_CV2/Two_Patterns_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/Two_Patterns_CV2/Two_Patterns_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502274615
+num_class=4, num_obj=501, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=5    @[  0, 28]  d_th= 2.18 gap=0.125271 gain= 0.49956 (269)==> 136 119 125   5  /   0   0   0 116 
+
+=== Node 2 ===
+..............................
+Len=19   @[168, 17]  d_th=15.78 gap=0.063680 gain= 0.46683 (59 )==>   0 111 106   5  / 136   8  19   0 
+
+=== Node 4 ===
+..............................
+Len=23   @[191, 29]  d_th=19.45 gap=0.098817 gain= 0.14739 (110)==>   0  64 102   0  /   0  47   4   5 
+
+=== Node 5 ===
+..............................
+Len=19   @[149, 99]  d_th=12.61 gap=1.036311 gain= 0.26678 (127)==>   0   8  10   0  / 136   0   9   0 
+
+=== Node 8 ===
+..............................
+Len=61   @[ 14, 18]  d_th=58.27 gap=0.001058 gain= 0.09413 (116)==>   0  42  99   0  /   0  22   3   0 
+
+=== Node 9 ===
+..............................
+Len=39   @[ 23, 48]  d_th=34.31 gap=0.176547 gain= 0.25732 (48 )==>   0  47   0   5  /   0   0   4   0 
+
+=== Node 10 ===
+..............................
+Len=27   @[  9, 62]  d_th=16.79 gap=0.650242 gain= 0.68696 (2  )==>   0   0  10   0  /   0   8   0   0 
+
+=== Node 16 ===
+..............................
+Len=45   @[ 74, 34]  d_th=13.33 gap=0.004411 gain= 0.09373 (77 )==>   0   0  32   0  /   0  42  67   0 
+
+=== Node 17 ===
+..............................
+Len=63   @[ 22, 30]  d_th=41.67 gap=0.735212 gain= 0.36692 (19 )==>   0   0   3   0  /   0  22   0   0 
+
+num_class=4, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.82 sec
+  Time Rand Project =    33.36 sec
+  Time Score Matrix =     2.38 sec
+  Time Compute Gain =    17.57 sec
+Running  Time for this Shapelet=    58.27 sec <<
+
+
+Total Running  Time =    58.27 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV1', 4, 499, 'manhattan', 1, 0, './cv_output/Two_Patterns_CV2/Two_Patterns_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/Two_Patterns_CV2/Two_Patterns_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 84.168   Correct:420 , Wrong: 79
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 | 135    1   10    0 
+;   p  2 |   0   68    6   11 
+;   p  3 |   0   49  109    2 
+;   p  4 |   0    0    0  108 
+
+num_class=4, num_obj=499  distance=manhattan CID=true normalize=false ./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 36
+

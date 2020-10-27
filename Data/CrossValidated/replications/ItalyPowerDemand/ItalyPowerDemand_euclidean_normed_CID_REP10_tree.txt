@@ -1,0 +1,42 @@
+;Shapelet Tree 
+
+;random seed:1501824718, rand()=766634344, rand()=2069021255
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 1 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP10_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP10_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --      0   17    5   1.0627 ==>  29   4  /   5  29 
+NonL  2    --     21   18    5   1.7938 ==>   1   4  /  28   0 
+NonL  3    --      1   10    5   0.6765 ==>   0  23  /   5   6 
+NonL  4    --      0   10    7   0.5623 ==>   1   0  /   0   4 
+Leaf  5     1    
+Leaf  6     2    
+NonL  7    --      0    1    7   1.9023 ==>   0   6  /   5   0 
+Leaf  8     1    
+Leaf  9     2    
+Leaf 14     2    
+Leaf 15     1    
+
+;Shapelet id   <data>
+Shapelet   1   0.613330  1.369800  1.464400  1.054600  0.581810 
+Shapelet   2   0.487320  0.429130  0.225480  0.516410 -0.094555 
+Shapelet   3   1.344500  1.200700  0.999380  0.654270  0.740550 
+Shapelet   4   1.124800  1.048300  0.793130  0.461420  0.486940  0.563480  0.614520 
+Shapelet   7   0.569770  0.195130 -0.085856 -0.179520 -0.273180 -0.085856 -1.397100 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 1 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP10_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP10_time.txt
+; time =>    0.132   0.006   0.060   0.012   0.044 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST 2 1029 euclidean 1 1 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP10_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP10_acc.txt
+; accuracy= 73.955   Correct:761 , Wrong: 268
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 399  151 
+;   p  1 | 117  362 
+

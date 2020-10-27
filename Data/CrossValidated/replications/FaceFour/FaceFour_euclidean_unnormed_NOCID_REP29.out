@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP29_tree.txt', './replications/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP29_time.txt']
+
+rand seed=1508185838
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP29_tree.txt  time_file=./replications/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP29_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=33   @[  8,155]  d_th= 1.54 gap=0.017547 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=29   @[  2, 27]  d_th= 2.08 gap=0.092166 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=73   @[  0, 46]  d_th= 5.23 gap=0.095581 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.71 sec
+  Time Rand Project =     5.58 sec
+  Time Score Matrix =     0.40 sec
+  Time Compute Gain =     1.74 sec
+Running  Time for this Shapelet=     8.89 sec <<
+
+
+Total Running  Time =     8.89 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 0, 0, './replications/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP29_tree.txt', './replications/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP29_acc.txt']
+; accuracy= 80.682   Correct:71 , Wrong: 17
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  16    0    0    2 
+;   p  1 |   7   14    0    1 
+;   p  2 |   2    0   25    3 
+;   p  4 |   1    0    1   16 
+
+num_class=4, num_obj=88  distance=euclidean CID=false normalize=false ./replications/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP29_tree.txt  ./replications/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP29_acc.txt
+
+==> Tree Size = 8
+

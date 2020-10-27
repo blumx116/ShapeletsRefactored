@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1502274204, rand()=1796538117, rand()=120881767
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 48 1 2 10 euclidean 0 0 10 ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:  -1  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --     18   13   29   1.4055 ==>   1  29  /  15   6 
+Leaf  2     1    
+NonL  3    --     16   17   17   0.6440 ==>   0   3  /  15   3 
+Leaf  6     1    
+NonL  7    --     15   60   25   0.5504 ==>   0   2  /  15   1 
+Leaf 14     1    
+Leaf 15    -1    
+
+;Shapelet id   <data>
+Shapelet   1  -0.604890 -0.647730 -0.818380 -0.900500 -0.896760 -0.944610 -1.083600 -1.203300 -1.225000 -1.327700 -1.529100 -1.604900 -1.670100 -1.883000 -1.913500 -1.965200 -2.061400 -2.013900 -1.986700 -1.792300 -1.580100 -1.329000 -0.896520 -0.552380 -0.260080  0.051494  0.334320  0.527010  0.639820 
+Shapelet   3  -1.321500 -1.462900 -1.261800 -1.305200 -1.613500 -1.611500 -1.566300 -1.451700 -1.771400 -2.037700 -1.758700 -1.888300 -1.765800 -1.970500 -2.027500 -1.825400 -1.760900 
+Shapelet   7   0.761720  0.744150  0.655030  0.713420  0.802470  0.744210  0.564160  0.512190  0.552130  0.499490  0.498200  0.480840  0.325570  0.325380  0.444010  0.429420  0.374730  0.286480  0.210860  0.300700  0.369820  0.280080  0.192980  0.207960  0.246990 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 48 1 2 10 euclidean 0 0 10 ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_unnormed_NOCID_time.txt
+; time =>    0.694   0.062   0.419   0.047   0.129 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1 2 49 euclidean 0 0 ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_unnormed_NOCID_acc.txt
+; accuracy= 75.510   Correct:37 , Wrong: 12
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |  11    8 
+;   p  1 |   4   26 
+

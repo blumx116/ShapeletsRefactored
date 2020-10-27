@@ -1,0 +1,30 @@
+;Shapelet Tree 
+
+;random seed:1501828552, rand()=1934413236, rand()=928325519
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECGFiveDays_TRAIN 2 23 68 1 2 10 manhattan 0 1 10 ./output/ECGFiveDays/ECGFiveDays_manhattan_normed_NOCID_REP01_tree.txt ./output/ECGFiveDays/ECGFiveDays_manhattan_normed_NOCID_REP01_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 4 
+NonL  1    --     10   59   49  17.8068 ==>  14   0  /   0   9 
+Leaf  2     1    
+Leaf  3     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.833520 -0.374580 -0.203010 -0.134380 -0.070046 -0.044311  0.002870  0.020027  0.062919  0.097232  0.140120  0.165860  0.273090  0.333140  0.401760  0.526150  0.663400  0.826390  1.066600  1.332500  1.697100  2.061700  2.456300  2.786600  3.151100  3.297000  3.168300  2.769400  2.181800  1.482600  0.865000  0.431790  0.152990  0.037183 -0.057179 -0.082914 -0.100070 -0.117230 -0.108650 -0.091492 -0.065757 -0.108650 -0.005708 -0.022865 -0.027154 -0.044311 -0.070046 -0.074335 -0.100070 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECGFiveDays_TRAIN 2 23 68 1 2 10 manhattan 0 1 10 ./output/ECGFiveDays/ECGFiveDays_manhattan_normed_NOCID_REP01_tree.txt ./output/ECGFiveDays/ECGFiveDays_manhattan_normed_NOCID_REP01_time.txt
+; time =>    0.884   0.047   0.452   0.076   0.244 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ECGFiveDays_TEST 2 861 manhattan 0 1 ./output/ECGFiveDays/ECGFiveDays_manhattan_normed_NOCID_REP01_tree.txt ./output/ECGFiveDays/ECGFiveDays_manhattan_normed_NOCID_REP01_acc.txt
+; accuracy= 99.652   Correct:858 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 433    3 
+;   p  1 |   0  425 
+

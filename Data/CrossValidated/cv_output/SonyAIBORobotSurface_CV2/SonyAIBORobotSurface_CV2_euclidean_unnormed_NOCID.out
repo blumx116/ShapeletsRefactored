@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/SonyAIBORobotSurface_TRAIN_CV2', 2, 10, 35, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/SonyAIBORobotSurface_CV2/SonyAIBORobotSurface_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/SonyAIBORobotSurface_CV2/SonyAIBORobotSurface_CV2_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502274201
+num_class=2, num_obj=10, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/SonyAIBORobotSurface_CV2/SonyAIBORobotSurface_CV2_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/SonyAIBORobotSurface_CV2/SonyAIBORobotSurface_CV2_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+................
+Len=15   @[  7, 51]  d_th= 1.75 gap=0.026429 gain= 0.61086 (4  )==>   0   7  /   3   0 
+
+num_class=2, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.04 sec <<
+
+
+Total Running  Time =     0.04 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/SonyAIBORobotSurface_TRAIN_CV1', 2, 10, 'euclidean', 0, 0, './cv_output/SonyAIBORobotSurface_CV2/SonyAIBORobotSurface_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/SonyAIBORobotSurface_CV2/SonyAIBORobotSurface_CV2_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 90.000   Correct:9 , Wrong: 1
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   2    0 
+;   p  2 |   1    7 
+
+num_class=2, num_obj=10  distance=euclidean CID=false normalize=false ./cv_output/SonyAIBORobotSurface_CV2/SonyAIBORobotSurface_CV2_euclidean_unnormed_NOCID_tree.txt  ./cv_output/SonyAIBORobotSurface_CV2/SonyAIBORobotSurface_CV2_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 4
+

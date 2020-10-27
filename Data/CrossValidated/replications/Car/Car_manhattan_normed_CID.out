@@ -1,0 +1,516 @@
+================ Replication:  1 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 1, 10, './output/Car/Car_manhattan_normed_CID_REP01_tree.txt', './output/Car/Car_manhattan_normed_CID_REP01_time.txt']
+
+rand seed=1501877153
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_normed_CID_REP01_tree.txt  time_file=./output/Car/Car_manhattan_normed_CID_REP01_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=175  @[  0, 41]  d_th=26.44 gap=0.093352 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=187  @[  0,123]  d_th=15.84 gap=0.041569 gain= 0.48403 (12 )==>  15   1   0   0  /   1  16   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,334]  d_th= 8.94 gap=0.042238 gain= 0.54931 (4  )==>   1  15   0   0  /   0   1   0  11 
+
+num_class=4, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.67 sec
+  Time Rand Project =    14.06 sec
+  Time Score Matrix =     2.86 sec
+  Time Compute Gain =   149.50 sec
+Running  Time for this Shapelet=   171.30 sec <<
+
+
+Total Running  Time =   171.30 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 1, './output/Car/Car_manhattan_normed_CID_REP01_tree.txt', './output/Car/Car_manhattan_normed_CID_REP01_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=true ./output/Car/Car_manhattan_normed_CID_REP01_tree.txt  ./output/Car/Car_manhattan_normed_CID_REP01_acc.txt
+
+==> Tree Size = 12
+
+; accuracy= 81.667   Correct:49 , Wrong: 11
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   9    5    0    1 
+;   p  3 |   4   13    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   0    0    0   13 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 1, 10, './output/Car/Car_manhattan_normed_CID_REP02_tree.txt', './output/Car/Car_manhattan_normed_CID_REP02_time.txt']
+
+rand seed=1501877329
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_normed_CID_REP02_tree.txt  time_file=./output/Car/Car_manhattan_normed_CID_REP02_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=157  @[  0, 40]  d_th=23.41 gap=0.127426 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=189  @[  0,124]  d_th=16.63 gap=0.035886 gain= 0.48403 (12 )==>  15   1   0   0  /   1  16   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,334]  d_th= 8.94 gap=0.042238 gain= 0.54931 (4  )==>   1  15   0   0  /   0   1   0  11 
+
+num_class=4, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.63 sec
+  Time Rand Project =    13.89 sec
+  Time Score Matrix =     2.84 sec
+  Time Compute Gain =   149.62 sec
+Running  Time for this Shapelet=   171.17 sec <<
+
+
+Total Running  Time =   171.17 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 1, './output/Car/Car_manhattan_normed_CID_REP02_tree.txt', './output/Car/Car_manhattan_normed_CID_REP02_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=true ./output/Car/Car_manhattan_normed_CID_REP02_tree.txt  ./output/Car/Car_manhattan_normed_CID_REP02_acc.txt
+
+==> Tree Size = 12
+
+; accuracy= 83.333   Correct:50 , Wrong: 10
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   9    5    0    0 
+;   p  3 |   4   13    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   0    0    0   14 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 1, 10, './output/Car/Car_manhattan_normed_CID_REP03_tree.txt', './output/Car/Car_manhattan_normed_CID_REP03_time.txt']
+
+rand seed=1501877505
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_normed_CID_REP03_tree.txt  time_file=./output/Car/Car_manhattan_normed_CID_REP03_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=157  @[  0, 40]  d_th=23.41 gap=0.127426 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=201  @[  0, 81]  d_th=18.24 gap=0.018156 gain= 0.48848 (16 )==>  14   0   0   0  /   2  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,334]  d_th= 8.94 gap=0.042238 gain= 0.54624 (6  )==>   2  16   0   0  /   0   1   0  11 
+
+=== Node 10 ===
+...............................................................................................................................................
+Len=215  @[  0,146]  d_th=35.90 gap=0.164554 gain= 0.34883 (14 )==>   0  16   0   0  /   2   0   0   0 
+
+num_class=4, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.06 sec
+  Time Rand Project =    15.94 sec
+  Time Score Matrix =     3.21 sec
+  Time Compute Gain =   172.42 sec
+Running  Time for this Shapelet=   197.07 sec <<
+
+
+Total Running  Time =   197.07 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 1, './output/Car/Car_manhattan_normed_CID_REP03_tree.txt', './output/Car/Car_manhattan_normed_CID_REP03_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=true ./output/Car/Car_manhattan_normed_CID_REP03_tree.txt  ./output/Car/Car_manhattan_normed_CID_REP03_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 75.000   Correct:45 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   4    3    0    0 
+;   p  3 |   4   13    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   5    2    0   14 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 1, 10, './output/Car/Car_manhattan_normed_CID_REP04_tree.txt', './output/Car/Car_manhattan_normed_CID_REP04_time.txt']
+
+rand seed=1501877707
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_normed_CID_REP04_tree.txt  time_file=./output/Car/Car_manhattan_normed_CID_REP04_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=157  @[  0, 40]  d_th=23.41 gap=0.127426 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=187  @[  0,123]  d_th=15.84 gap=0.041569 gain= 0.48403 (12 )==>  15   1   0   0  /   1  16   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,334]  d_th= 8.94 gap=0.042238 gain= 0.54931 (4  )==>   1  15   0   0  /   0   1   0  11 
+
+num_class=4, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.64 sec
+  Time Rand Project =    13.82 sec
+  Time Score Matrix =     2.85 sec
+  Time Compute Gain =   148.90 sec
+Running  Time for this Shapelet=   170.39 sec <<
+
+
+Total Running  Time =   170.39 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 1, './output/Car/Car_manhattan_normed_CID_REP04_tree.txt', './output/Car/Car_manhattan_normed_CID_REP04_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=true ./output/Car/Car_manhattan_normed_CID_REP04_tree.txt  ./output/Car/Car_manhattan_normed_CID_REP04_acc.txt
+
+==> Tree Size = 12
+
+; accuracy= 81.667   Correct:49 , Wrong: 11
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   9    5    0    1 
+;   p  3 |   4   13    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   0    0    0   13 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 1, 10, './output/Car/Car_manhattan_normed_CID_REP05_tree.txt', './output/Car/Car_manhattan_normed_CID_REP05_time.txt']
+
+rand seed=1501877882
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_normed_CID_REP05_tree.txt  time_file=./output/Car/Car_manhattan_normed_CID_REP05_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=159  @[  0, 40]  d_th=24.12 gap=0.099377 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=189  @[  0,124]  d_th=16.63 gap=0.035886 gain= 0.48403 (12 )==>  15   1   0   0  /   1  16   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,334]  d_th= 8.94 gap=0.042238 gain= 0.54931 (4  )==>   1  15   0   0  /   0   1   0  11 
+
+num_class=4, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.65 sec
+  Time Rand Project =    13.82 sec
+  Time Score Matrix =     2.83 sec
+  Time Compute Gain =   148.99 sec
+Running  Time for this Shapelet=   170.42 sec <<
+
+
+Total Running  Time =   170.42 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 1, './output/Car/Car_manhattan_normed_CID_REP05_tree.txt', './output/Car/Car_manhattan_normed_CID_REP05_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=true ./output/Car/Car_manhattan_normed_CID_REP05_tree.txt  ./output/Car/Car_manhattan_normed_CID_REP05_acc.txt
+
+==> Tree Size = 12
+
+; accuracy= 83.333   Correct:50 , Wrong: 10
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   9    5    0    0 
+;   p  3 |   4   13    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   0    0    0   14 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 1, 10, './output/Car/Car_manhattan_normed_CID_REP06_tree.txt', './output/Car/Car_manhattan_normed_CID_REP06_time.txt']
+
+rand seed=1501878057
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_normed_CID_REP06_tree.txt  time_file=./output/Car/Car_manhattan_normed_CID_REP06_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=157  @[  0, 40]  d_th=23.41 gap=0.127426 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=201  @[  0, 81]  d_th=18.24 gap=0.018156 gain= 0.48848 (16 )==>  14   0   0   0  /   2  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,334]  d_th= 8.94 gap=0.042238 gain= 0.54624 (6  )==>   2  16   0   0  /   0   1   0  11 
+
+=== Node 10 ===
+...............................................................................................................................................
+Len=215  @[  0,146]  d_th=35.90 gap=0.164554 gain= 0.34883 (14 )==>   0  16   0   0  /   2   0   0   0 
+
+num_class=4, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.06 sec
+  Time Rand Project =    15.85 sec
+  Time Score Matrix =     3.26 sec
+  Time Compute Gain =   172.76 sec
+Running  Time for this Shapelet=   197.39 sec <<
+
+
+Total Running  Time =   197.39 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 1, './output/Car/Car_manhattan_normed_CID_REP06_tree.txt', './output/Car/Car_manhattan_normed_CID_REP06_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=true ./output/Car/Car_manhattan_normed_CID_REP06_tree.txt  ./output/Car/Car_manhattan_normed_CID_REP06_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 75.000   Correct:45 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   4    3    0    0 
+;   p  3 |   4   13    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   5    2    0   14 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 1, 10, './output/Car/Car_manhattan_normed_CID_REP07_tree.txt', './output/Car/Car_manhattan_normed_CID_REP07_time.txt']
+
+rand seed=1501878259
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_normed_CID_REP07_tree.txt  time_file=./output/Car/Car_manhattan_normed_CID_REP07_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=159  @[  0, 37]  d_th=22.37 gap=0.082755 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=187  @[  0,123]  d_th=15.84 gap=0.041569 gain= 0.48403 (12 )==>  15   1   0   0  /   1  16   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,334]  d_th= 8.94 gap=0.042238 gain= 0.54931 (4  )==>   1  15   0   0  /   0   1   0  11 
+
+num_class=4, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.67 sec
+  Time Rand Project =    14.16 sec
+  Time Score Matrix =     2.84 sec
+  Time Compute Gain =   149.70 sec
+Running  Time for this Shapelet=   171.59 sec <<
+
+
+Total Running  Time =   171.59 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 1, './output/Car/Car_manhattan_normed_CID_REP07_tree.txt', './output/Car/Car_manhattan_normed_CID_REP07_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=true ./output/Car/Car_manhattan_normed_CID_REP07_tree.txt  ./output/Car/Car_manhattan_normed_CID_REP07_acc.txt
+
+==> Tree Size = 12
+
+; accuracy= 81.667   Correct:49 , Wrong: 11
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   9    5    0    1 
+;   p  3 |   4   13    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   0    0    0   13 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 1, 10, './output/Car/Car_manhattan_normed_CID_REP08_tree.txt', './output/Car/Car_manhattan_normed_CID_REP08_time.txt']
+
+rand seed=1501878435
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_normed_CID_REP08_tree.txt  time_file=./output/Car/Car_manhattan_normed_CID_REP08_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=157  @[  0, 40]  d_th=23.41 gap=0.127426 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=201  @[  0, 81]  d_th=18.24 gap=0.018156 gain= 0.48848 (16 )==>  14   0   0   0  /   2  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,334]  d_th= 8.94 gap=0.042238 gain= 0.54624 (6  )==>   2  16   0   0  /   0   1   0  11 
+
+=== Node 10 ===
+...............................................................................................................................................
+Len=215  @[  0,146]  d_th=35.90 gap=0.164554 gain= 0.34883 (14 )==>   0  16   0   0  /   2   0   0   0 
+
+num_class=4, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.04 sec
+  Time Rand Project =    16.02 sec
+  Time Score Matrix =     3.20 sec
+  Time Compute Gain =   171.75 sec
+Running  Time for this Shapelet=   196.48 sec <<
+
+
+Total Running  Time =   196.48 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 1, './output/Car/Car_manhattan_normed_CID_REP08_tree.txt', './output/Car/Car_manhattan_normed_CID_REP08_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=true ./output/Car/Car_manhattan_normed_CID_REP08_tree.txt  ./output/Car/Car_manhattan_normed_CID_REP08_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 75.000   Correct:45 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   4    3    0    0 
+;   p  3 |   4   13    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   5    2    0   14 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 1, 10, './output/Car/Car_manhattan_normed_CID_REP09_tree.txt', './output/Car/Car_manhattan_normed_CID_REP09_time.txt']
+
+rand seed=1501878637
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_normed_CID_REP09_tree.txt  time_file=./output/Car/Car_manhattan_normed_CID_REP09_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=165  @[  0, 36]  d_th=23.57 gap=0.079350 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=201  @[  0, 81]  d_th=18.24 gap=0.018156 gain= 0.48848 (16 )==>  14   0   0   0  /   2  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,334]  d_th= 8.94 gap=0.042238 gain= 0.54624 (6  )==>   2  16   0   0  /   0   1   0  11 
+
+=== Node 10 ===
+...............................................................................................................................................
+Len=215  @[  0,146]  d_th=35.90 gap=0.164554 gain= 0.34883 (14 )==>   0  16   0   0  /   2   0   0   0 
+
+num_class=4, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.05 sec
+  Time Rand Project =    15.89 sec
+  Time Score Matrix =     3.21 sec
+  Time Compute Gain =   171.82 sec
+Running  Time for this Shapelet=   196.39 sec <<
+
+
+Total Running  Time =   196.39 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 1, './output/Car/Car_manhattan_normed_CID_REP09_tree.txt', './output/Car/Car_manhattan_normed_CID_REP09_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=true ./output/Car/Car_manhattan_normed_CID_REP09_tree.txt  ./output/Car/Car_manhattan_normed_CID_REP09_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 75.000   Correct:45 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   4    3    0    0 
+;   p  3 |   4   13    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   5    2    0   14 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 1, 10, './output/Car/Car_manhattan_normed_CID_REP10_tree.txt', './output/Car/Car_manhattan_normed_CID_REP10_time.txt']
+
+rand seed=1501878838
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_normed_CID_REP10_tree.txt  time_file=./output/Car/Car_manhattan_normed_CID_REP10_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=175  @[  0, 41]  d_th=26.44 gap=0.093352 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=187  @[  0,123]  d_th=15.84 gap=0.041569 gain= 0.48403 (12 )==>  15   1   0   0  /   1  16   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,334]  d_th= 8.94 gap=0.042238 gain= 0.54931 (4  )==>   1  15   0   0  /   0   1   0  11 
+
+num_class=4, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.66 sec
+  Time Rand Project =    14.01 sec
+  Time Score Matrix =     2.88 sec
+  Time Compute Gain =   149.80 sec
+Running  Time for this Shapelet=   171.54 sec <<
+
+
+Total Running  Time =   171.54 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 1, './output/Car/Car_manhattan_normed_CID_REP10_tree.txt', './output/Car/Car_manhattan_normed_CID_REP10_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=true ./output/Car/Car_manhattan_normed_CID_REP10_tree.txt  ./output/Car/Car_manhattan_normed_CID_REP10_acc.txt
+
+==> Tree Size = 12
+
+; accuracy= 81.667   Correct:49 , Wrong: 11
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   9    5    0    1 
+;   p  3 |   4   13    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   0    0    0   13 
+
+
+================ Replication:  10 Finished ================

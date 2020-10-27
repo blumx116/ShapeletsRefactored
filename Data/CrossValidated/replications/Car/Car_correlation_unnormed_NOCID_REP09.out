@@ -1,0 +1,53 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'correlation', 0, 0, 10, './replications/Car/Car_correlation_unnormed_NOCID_REP09_tree.txt', './replications/Car/Car_correlation_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1503392884
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/Car/Car_correlation_unnormed_NOCID_REP09_tree.txt  time_file=./replications/Car/Car_correlation_unnormed_NOCID_REP09_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=153  @[  0, 38]  d_th= 0.01 gap=0.000035 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=275  @[  0,118]  d_th= 0.01 gap=0.000022 gain= 0.44230 (0  )==>  16   6   0   0  /   0  11   0  11 
+
+=== Node 4 ===
+...............................................................................................................................................
+Len=121  @[  0,149]  d_th= 0.00 gap=0.000033 gain= 0.45546 (8  )==>  15   0   0   0  /   1   6   0   0 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=103  @[  0,346]  d_th= 0.00 gap=0.000005 gain= 0.53669 (2  )==>   0  11   0   1  /   0   0   0  10 
+
+=== Node 9 ===
+...............................................................................................................................................
+Len=5    @[  0,170]  d_th= 0.02 gap=0.002089 gain= 0.41012 (5  )==>   0   6   0   0  /   1   0   0   0 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.45 sec
+  Time Rand Project =     6.27 sec
+  Time Score Matrix =     0.72 sec
+  Time Compute Gain =    96.61 sec
+Running  Time for this Shapelet=   106.86 sec <<
+
+
+Total Running  Time =   106.86 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'correlation', 0, 0, './replications/Car/Car_correlation_unnormed_NOCID_REP09_tree.txt', './replications/Car/Car_correlation_unnormed_NOCID_REP09_acc.txt']
+; accuracy= 75.000   Correct:45 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   9    6    0    1 
+;   p  3 |   4   10    1    0 
+;   p  2 |   0    1   13    0 
+;   p  1 |   0    2    0   13 
+
+num_class=4, num_obj=60  distance=correlation CID=false normalize=false ./replications/Car/Car_correlation_unnormed_NOCID_REP09_tree.txt  ./replications/Car/Car_correlation_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 20
+

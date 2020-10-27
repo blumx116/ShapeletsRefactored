@@ -1,0 +1,486 @@
+================ Replication:  1 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP01_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP01_time.txt']
+
+rand seed=1501827942
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP01_tree.txt  time_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP01_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=71   @[ 12,145]  d_th=16.80 gap=0.009009 gain= 0.51989 (14 )==>  11   0   0  /   1  12  12 
+
+=== Node 3 ===
+.............................................................
+Len=73   @[  3,112]  d_th=17.63 gap=0.022921 gain= 0.54825 (3  )==>   1  12   1  /   0   0  11 
+
+=== Node 6 ===
+.............................................................
+Len=79   @[  0, 42]  d_th=10.79 gap=0.183635 gain= 0.41012 (10 )==>   0  12   0  /   1   0   1 
+
+=== Node 13 ===
+.............................................................
+Len=77   @[  0, 85]  d_th=16.11 gap=1.835685 gain= 0.69315 (0  )==>   0   0   1  /   1   0   0 
+
+num_class=3, num_obj=2, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.39 sec
+  Time Rand Project =     3.07 sec
+  Time Score Matrix =     0.58 sec
+  Time Compute Gain =     9.80 sec
+Running  Time for this Shapelet=    14.30 sec <<
+
+
+Total Running  Time =    14.30 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'manhattan', 1, 1, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP01_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP01_acc.txt']
+0
+num_class=3, num_obj=175  distance=manhattan CID=true normalize=true ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP01_tree.txt  ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP01_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 62.857   Correct:110 , Wrong: 65
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  35   11    3 
+;   p  1 |   9   29    4 
+;   p  2 |  25   13   46 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP02_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP02_time.txt']
+
+rand seed=1501827957
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP02_tree.txt  time_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP02_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=85   @[ 15, 14]  d_th=31.07 gap=0.013812 gain= 0.51806 (8  )==>  12   2   0  /   0  10  12 
+
+=== Node 2 ===
+.............................................................
+Len=115  @[  1, 76]  d_th=170.07 gap=0.680666 gain= 0.41012 (10 )==>  12   0   0  /   0   2   0 
+
+=== Node 3 ===
+.............................................................
+Len=57   @[  3,124]  d_th=14.82 gap=0.078144 gain= 0.53669 (0  )==>   0  10   1  /   0   0  11 
+
+num_class=3, num_obj=22, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.37 sec
+  Time Rand Project =     3.06 sec
+  Time Score Matrix =     0.57 sec
+  Time Compute Gain =     9.21 sec
+Running  Time for this Shapelet=    13.65 sec <<
+
+
+Total Running  Time =    13.65 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'manhattan', 1, 1, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP02_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP02_acc.txt']
+0
+num_class=3, num_obj=175  distance=manhattan CID=true normalize=true ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP02_tree.txt  ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP02_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 68.000   Correct:119 , Wrong: 56
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  44    6    1 
+;   p  1 |  19   31    8 
+;   p  2 |   6   16   44 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP03_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP03_time.txt']
+
+rand seed=1501827971
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP03_tree.txt  time_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP03_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=107  @[  6,  1]  d_th=39.09 gap=0.108828 gain= 0.51989 (14 )==>  11   0   0  /   1  12  12 
+
+=== Node 3 ===
+.............................................................
+Len=51   @[  2, 79]  d_th= 8.15 gap=0.005001 gain= 0.46966 (3  )==>   1  10   0  /   0   2  12 
+
+=== Node 7 ===
+.............................................................
+Len=87   @[  9, 78]  d_th=23.72 gap=0.417483 gain= 0.41012 (10 )==>   0   2   0  /   0   0  12 
+
+num_class=3, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.37 sec
+  Time Rand Project =     3.02 sec
+  Time Score Matrix =     0.56 sec
+  Time Compute Gain =     9.44 sec
+Running  Time for this Shapelet=    13.81 sec <<
+
+
+Total Running  Time =    13.81 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'manhattan', 1, 1, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP03_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP03_acc.txt']
+0
+num_class=3, num_obj=175  distance=manhattan CID=true normalize=true ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP03_tree.txt  ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP03_acc.txt
+
+==> Tree Size = 16
+
+; accuracy= 67.429   Correct:118 , Wrong: 57
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  39    6    2 
+;   p  1 |  13   39   11 
+;   p  2 |  17    8   40 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP04_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP04_time.txt']
+
+rand seed=1501827985
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP04_tree.txt  time_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP04_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=51   @[ 13, 81]  d_th= 7.59 gap=0.003338 gain= 0.51989 (14 )==>   0  11   0  /  12   1  12 
+
+=== Node 3 ===
+.............................................................
+Len=81   @[  2,140]  d_th=25.36 gap=0.112929 gain= 0.69235 (1  )==>  12   0   0  /   0   1  12 
+
+num_class=3, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.32 sec
+  Time Rand Project =     2.75 sec
+  Time Score Matrix =     0.51 sec
+  Time Compute Gain =     7.69 sec
+Running  Time for this Shapelet=    11.65 sec <<
+
+
+Total Running  Time =    11.65 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'manhattan', 1, 1, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP04_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP04_acc.txt']
+0
+num_class=3, num_obj=175  distance=manhattan CID=true normalize=true ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP04_tree.txt  ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP04_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 67.429   Correct:118 , Wrong: 57
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  35    7    4 
+;   p  1 |  22   37    3 
+;   p  2 |  12    9   46 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP05_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP05_time.txt']
+
+rand seed=1501827997
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP05_tree.txt  time_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP05_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=27   @[  0,152]  d_th= 4.41 gap=0.000124 gain= 0.51806 (8  )==>  12   2   0  /   0  10  12 
+
+=== Node 2 ===
+.............................................................
+Len=71   @[  6, 31]  d_th=32.48 gap=0.308824 gain= 0.41012 (10 )==>  12   0   0  /   0   2   0 
+
+=== Node 3 ===
+.............................................................
+Len=57   @[  3,125]  d_th=14.54 gap=0.066358 gain= 0.53669 (0  )==>   0  10   1  /   0   0  11 
+
+num_class=3, num_obj=22, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.35 sec
+  Time Rand Project =     2.98 sec
+  Time Score Matrix =     0.55 sec
+  Time Compute Gain =     8.97 sec
+Running  Time for this Shapelet=    13.26 sec <<
+
+
+Total Running  Time =    13.26 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'manhattan', 1, 1, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP05_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP05_acc.txt']
+0
+num_class=3, num_obj=175  distance=manhattan CID=true normalize=true ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP05_tree.txt  ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP05_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 62.286   Correct:109 , Wrong: 66
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  46    7    2 
+;   p  1 |  19   31   19 
+;   p  2 |   4   15   32 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP06_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP06_time.txt']
+
+rand seed=1501828011
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP06_tree.txt  time_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP06_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=87   @[ 12, 16]  d_th=24.70 gap=0.007726 gain= 0.51989 (14 )==>  11   0   0  /   1  12  12 
+
+=== Node 3 ===
+.............................................................
+Len=51   @[  8, 81]  d_th= 8.45 gap=0.123817 gain= 0.54825 (3  )==>   0  11   0  /   1   1  12 
+
+=== Node 7 ===
+.............................................................
+Len=35   @[  9, 56]  d_th= 5.50 gap=0.050378 gain= 0.41012 (10 )==>   1   1   0  /   0   0  12 
+
+=== Node 14 ===
+.............................................................
+Len=87   @[  0, 87]  d_th=14.87 gap=1.594245 gain= 0.69315 (0  )==>   1   0   0  /   0   1   0 
+
+num_class=3, num_obj=2, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.38 sec
+  Time Rand Project =     3.05 sec
+  Time Score Matrix =     0.58 sec
+  Time Compute Gain =     9.79 sec
+Running  Time for this Shapelet=    14.23 sec <<
+
+
+Total Running  Time =    14.23 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'manhattan', 1, 1, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP06_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP06_acc.txt']
+0
+num_class=3, num_obj=175  distance=manhattan CID=true normalize=true ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP06_tree.txt  ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP06_acc.txt
+
+==> Tree Size = 30
+
+; accuracy= 69.143   Correct:121 , Wrong: 54
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  40    6    1 
+;   p  1 |  15   36    7 
+;   p  2 |  14   11   45 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP07_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP07_time.txt']
+
+rand seed=1501828026
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP07_tree.txt  time_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP07_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=39   @[  1,196]  d_th= 2.84 gap=0.008570 gain= 0.49175 (6  )==>   0  12   9  /  12   0   3 
+
+=== Node 2 ===
+.............................................................
+Len=93   @[  3, 45]  d_th=20.86 gap=0.025693 gain= 0.51503 (5  )==>   0  12   1  /   0   0   8 
+
+=== Node 3 ===
+.............................................................
+Len=93   @[  0, 14]  d_th=40.55 gap=1.287036 gain= 0.50040 (9  )==>  12   0   0  /   0   0   3 
+
+num_class=3, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.36 sec
+  Time Rand Project =     3.03 sec
+  Time Score Matrix =     0.57 sec
+  Time Compute Gain =     9.05 sec
+Running  Time for this Shapelet=    13.42 sec <<
+
+
+Total Running  Time =    13.42 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'manhattan', 1, 1, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP07_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP07_acc.txt']
+0
+num_class=3, num_obj=175  distance=manhattan CID=true normalize=true ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP07_tree.txt  ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP07_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 57.714   Correct:101 , Wrong: 74
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  43   14    2 
+;   p  1 |  10   28   21 
+;   p  2 |  16   11   30 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP08_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP08_time.txt']
+
+rand seed=1501828040
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP08_tree.txt  time_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP08_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=57   @[  5,125]  d_th=14.54 gap=0.066358 gain= 0.51989 (14 )==>  12  12   1  /   0   0  11 
+
+=== Node 2 ===
+.............................................................
+Len=75   @[  1, 44]  d_th= 9.03 gap=0.059337 gain= 0.69235 (1  )==>   0  12   0  /  12   0   1 
+
+num_class=3, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.32 sec
+  Time Rand Project =     2.61 sec
+  Time Score Matrix =     0.49 sec
+  Time Compute Gain =     7.67 sec
+Running  Time for this Shapelet=    11.48 sec <<
+
+
+Total Running  Time =    11.48 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'manhattan', 1, 1, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP08_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP08_acc.txt']
+0
+num_class=3, num_obj=175  distance=manhattan CID=true normalize=true ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP08_tree.txt  ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP08_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 66.286   Correct:116 , Wrong: 59
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  53   12    4 
+;   p  1 |   8   20    6 
+;   p  2 |   8   21   43 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_time.txt']
+
+rand seed=1501828052
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_tree.txt  time_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=81   @[  9, 36]  d_th=31.10 gap=0.101731 gain= 0.51989 (14 )==>  11   0   0  /   1  12  12 
+
+=== Node 3 ===
+.............................................................
+Len=83   @[  2,117]  d_th= 8.64 gap=0.056675 gain= 0.46966 (3  )==>   1  10   0  /   0   2  12 
+
+=== Node 7 ===
+.............................................................
+Len=5    @[  0, 58]  d_th= 0.45 gap=0.023836 gain= 0.41012 (10 )==>   0   0  12  /   0   2   0 
+
+num_class=3, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.37 sec
+  Time Rand Project =     3.00 sec
+  Time Score Matrix =     0.57 sec
+  Time Compute Gain =     9.44 sec
+Running  Time for this Shapelet=    13.81 sec <<
+
+
+Total Running  Time =    13.81 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'manhattan', 1, 1, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_acc.txt']
+0
+num_class=3, num_obj=175  distance=manhattan CID=true normalize=true ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_tree.txt  ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_acc.txt
+
+==> Tree Size = 16
+
+; accuracy= 59.429   Correct:104 , Wrong: 71
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  36    6    2 
+;   p  1 |  16   27   10 
+;   p  2 |  17   20   41 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP10_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP10_time.txt']
+
+rand seed=1501828066
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP10_tree.txt  time_file=./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP10_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=57   @[  5,125]  d_th=14.54 gap=0.066358 gain= 0.51989 (14 )==>  12  12   1  /   0   0  11 
+
+=== Node 2 ===
+.............................................................
+Len=121  @[ 14, 71]  d_th=31.17 gap=0.143406 gain= 0.69235 (1  )==>   0  12   1  /  12   0   0 
+
+num_class=3, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.33 sec
+  Time Rand Project =     2.62 sec
+  Time Score Matrix =     0.50 sec
+  Time Compute Gain =     7.79 sec
+Running  Time for this Shapelet=    11.64 sec <<
+
+
+Total Running  Time =    11.64 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'manhattan', 1, 1, './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP10_tree.txt', './output/ArrowHead/ArrowHead_manhattan_normed_CID_REP10_acc.txt']
+0
+num_class=3, num_obj=175  distance=manhattan CID=true normalize=true ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP10_tree.txt  ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP10_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 66.857   Correct:117 , Wrong: 58
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  56   14    3 
+;   p  1 |   5   18    7 
+;   p  2 |   8   21   43 
+
+
+================ Replication:  10 Finished ================

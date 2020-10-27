@@ -1,0 +1,48 @@
+;Shapelet Tree 
+
+;random seed:1501823385, rand()=1597361545, rand()=1994700705
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TRAIN 2 276 40 1 2 10 manhattan 1 0 10 ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_unnormed_CID_REP05_tree.txt ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_unnormed_CID_REP05_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  0 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 32 
+NonL  1    --      0    6   17   2.8671 ==> 143  53  /  18  62 
+NonL  2    --     65   32   33   8.5410 ==>  68   1  /  75  52 
+NonL  3    --     11   54   17   7.4538 ==>   2  49  /  16  13 
+Leaf  4     1    
+NonL  5    --     71   29   27   1.3843 ==>  22   1  /  53  51 
+Leaf  6     0    
+NonL  7    --      2   13   29   6.5366 ==>  11   1  /   5  12 
+Leaf 10     1    
+NonL 11    --     34   30   23   2.7234 ==>  11   0  /  42  51 
+Leaf 14     1    
+NonL 15    --     15    0   25   3.9987 ==>   4   0  /   1  12 
+Leaf 22     1    
+Leaf 23     0    
+Leaf 30     1    
+Leaf 31     0    
+
+;Shapelet id   <data>
+Shapelet   1   0.512620  0.625720  0.894550  1.053000  1.132200  1.267200  1.432100  1.484500  1.275700  1.158900  1.005300  0.817360  0.504390  0.378850  0.145810 -0.209470 -0.578720 
+Shapelet   2   1.542100  1.583100  1.428200  1.311100  1.407200  1.301500  1.369700  1.449500  1.558900  1.600300  1.606100  1.197100  0.808840  0.358220 -0.035732 -0.416710 -0.766160 -0.855110  0.122680  0.293300  0.263920 -0.251850 -0.635210 -1.002200 -1.335100 -1.670000 -1.784600 -1.535700 -1.193100 -0.818170 -0.549350 -0.250510  0.134780 
+Shapelet   3  -1.228500 -1.067200 -1.117300 -1.223100 -1.248200 -1.185300 -1.097200 -0.910320 -0.674520 -0.782570 -0.990540 -0.901270 -0.759100 -0.613410 -0.688100 -0.817690 -1.023500 
+Shapelet   5   0.816190  1.054800  1.263200  1.348700  1.313800  1.339800  1.357300  1.401000  1.469600  1.457800  1.443400  1.435900  1.428700  1.314000  1.067000  0.799870  0.533920  0.305280  0.038368 -0.177210 -0.362580 -1.084100 -1.084100 -1.084100 -1.084100 -1.084100 -1.084100 
+Shapelet   7   1.316900  1.195200  0.995040  0.888880  0.754590  0.634360  0.497980  0.403140  0.276870  0.023124 -0.300130 -0.603000 -0.738890 -0.675810 -0.498770 -0.233760  0.091534  0.437210  0.792060  1.149500  1.459200  1.542400  1.431900  1.435500  1.340100  1.362200  1.429300  1.374000  1.370500 
+Shapelet  11   0.425010  0.701940  1.030900  1.351000  1.537800  1.575700  1.560400  1.519400  1.500300  1.527800  1.542900  1.541300  1.565100  1.225900  0.846610  0.501930  0.101150 -0.271970 -0.551010 -0.839970 -0.236360 -0.247510 -0.375720 
+Shapelet  15  -1.172500 -1.053200 -0.843140 -0.562650 -0.216250  0.139710  0.524430  0.789100  1.133700  1.317200  1.502900  1.578100  1.514200  1.323300  1.042400  0.776670  0.642950  0.281420  0.025351 -0.108370 -0.137860 -0.317780 -0.679760 -0.979720 -0.989230 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TRAIN 2 276 40 1 2 10 manhattan 1 0 10 ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_unnormed_CID_REP05_tree.txt ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_unnormed_CID_REP05_time.txt
+; time =>    6.440   0.431   2.521   0.362   2.873 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TEST 2 600 manhattan 1 0 ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_unnormed_CID_REP05_tree.txt ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_unnormed_CID_REP05_acc.txt
+; accuracy= 71.000   Correct:426 , Wrong: 174
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 | 226   22 
+;   p  0 | 152  200 
+

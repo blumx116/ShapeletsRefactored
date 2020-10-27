@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TRAIN', 2, 370, 1355, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/HandOutlines/HandOutlines_euclidean_unnormed_NOCID_REP23_tree.txt', './replications/HandOutlines/HandOutlines_euclidean_unnormed_NOCID_REP23_time.txt']
+
+rand seed=1508791894
+num_class=2, num_obj=370, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/HandOutlines/HandOutlines_euclidean_unnormed_NOCID_REP23_tree.txt  time_file=./replications/HandOutlines/HandOutlines_euclidean_unnormed_NOCID_REP23_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,0]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=1061  @[137,202]  d_th= 7.11 gap=0.000459 gain= 0.37407 (108)==> 223  16  /  14 117 
+
+=== Node 3 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=885  @[  0,145]  d_th= 2.44 gap=0.000797 gain= 0.11949 (111)==>   8   2  /   6 115 
+
+=== Node 6 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=473  @[  0,1177]  d_th= 1.66 gap=0.008237 gain= 0.50040 (6  )==>   8   0  /   0   2 
+
+num_class=2, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =   130.57 sec
+  Time Rand Project =   160.00 sec
+  Time Score Matrix =    18.47 sec
+  Time Compute Gain =  4150.25 sec
+Running  Time for this Shapelet=  4475.96 sec <<
+
+
+Total Running  Time =  4475.96 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TEST', 2, 1000, 'euclidean', 0, 0, './replications/HandOutlines/HandOutlines_euclidean_unnormed_NOCID_REP23_tree.txt', './replications/HandOutlines/HandOutlines_euclidean_unnormed_NOCID_REP23_acc.txt']
+; accuracy= 85.700   Correct:857 , Wrong: 143
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 | 268   49 
+;   p  1 |  94  589 
+
+num_class=2, num_obj=1000  distance=euclidean CID=false normalize=false ./replications/HandOutlines/HandOutlines_euclidean_unnormed_NOCID_REP23_tree.txt  ./replications/HandOutlines/HandOutlines_euclidean_unnormed_NOCID_REP23_acc.txt
+
+==> Tree Size = 14
+

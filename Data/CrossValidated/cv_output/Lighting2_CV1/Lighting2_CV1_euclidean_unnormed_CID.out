@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV1', 2, 30, 319, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502281147
+num_class=2, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+..............................................................................................................................................................
+Len=141  @[  5, 51]  d_th= 3.37 gap=0.001467 gain= 0.33965 (16 )==>   3  20  /   7   0 
+
+=== Node 2 ===
+..............................................................................................................................................................
+Len=119  @[  2,345]  d_th= 6.41 gap=0.007664 gain= 0.28941 (15 )==>   3   1  /   0  19 
+
+=== Node 4 ===
+..............................................................................................................................................................
+Len=319  @[  3,175]  d_th=12.10 gap=0.677524 gain= 0.56234 (2  )==>   0   1  /   3   0 
+
+num_class=2, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.06 sec
+  Time Rand Project =    15.02 sec
+  Time Score Matrix =     1.10 sec
+  Time Compute Gain =    36.78 sec
+Running  Time for this Shapelet=    56.18 sec <<
+
+
+Total Running  Time =    56.18 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV2', 2, 30, 'euclidean', 1, 0, './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_unnormed_CID_acc.txt']
+; accuracy= 80.000   Correct:24 , Wrong: 6
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   8    4 
+;   p  1 |   2   16 
+
+num_class=2, num_obj=30  distance=euclidean CID=true normalize=false ./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_unnormed_CID_tree.txt  ./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 10
+

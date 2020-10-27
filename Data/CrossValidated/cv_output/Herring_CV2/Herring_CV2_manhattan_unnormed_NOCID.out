@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV2', 2, 33, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502292116
+num_class=2, num_obj=33, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=7    @[  1, 58]  d_th= 0.18 gap=0.000431 gain= 0.31140 (5  )==>   6  13  /  14   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=15   @[  0,278]  d_th= 0.39 gap=0.014227 gain= 0.43405 (9  )==>   5   0  /   1  13 
+
+num_class=2, num_obj=19, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.70 sec
+  Time Rand Project =     2.28 sec
+  Time Score Matrix =     0.26 sec
+  Time Compute Gain =     7.61 sec
+Running  Time for this Shapelet=    11.09 sec <<
+
+
+Total Running  Time =    11.09 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1', 2, 31, 'manhattan', 0, 0, './cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 48.387   Correct:15 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   9    6 
+;   p  2 |  10    6 
+
+num_class=2, num_obj=31  distance=manhattan CID=false normalize=false ./cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_NOCID_tree.txt  ./cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 6
+

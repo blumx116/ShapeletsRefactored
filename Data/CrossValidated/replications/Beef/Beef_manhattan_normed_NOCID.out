@@ -1,0 +1,598 @@
+================ Replication:  1 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Beef/Beef_manhattan_normed_NOCID_REP01_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP01_time.txt']
+
+rand seed=1501869009
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_manhattan_normed_NOCID_REP01_tree.txt  time_file=./output/Beef/Beef_manhattan_normed_NOCID_REP01_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=219  @[ 18,187]  d_th=75.19 gap=0.953105 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0,298]  d_th= 0.60 gap=0.005954 gain= 0.39910 (14 )==>   0   5   0   0   0  /   0   1   6   6   6 
+
+=== Node 5 ===
+....................................................................................................................
+Len=35   @[  0, 24]  d_th= 3.37 gap=0.005280 gain= 0.62365 (7  )==>   0   1   6   0   6  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=25   @[  0,  1]  d_th= 1.24 gap=0.002553 gain= 0.69019 (1  )==>   0   1   0   0   6  /   0   0   6   0   0 
+
+=== Node 20 ===
+....................................................................................................................
+Len=191  @[  0,219]  d_th= 9.79 gap=0.708472 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.95 sec
+  Time Rand Project =    15.80 sec
+  Time Score Matrix =     2.81 sec
+  Time Compute Gain =    32.61 sec
+Running  Time for this Shapelet=    55.33 sec <<
+
+
+Total Running  Time =    55.33 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'manhattan', 0, 1, './output/Beef/Beef_manhattan_normed_NOCID_REP01_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP01_acc.txt']
+0
+num_class=5, num_obj=30  distance=manhattan CID=false normalize=true ./output/Beef/Beef_manhattan_normed_NOCID_REP01_tree.txt  ./output/Beef/Beef_manhattan_normed_NOCID_REP01_acc.txt
+
+==> Tree Size = 42
+
+; accuracy= 53.333   Correct:16 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    1 
+;   p  2 |   0    3    2    0    0 
+;   p  3 |   0    1    1    2    1 
+;   p  4 |   0    0    3    3    0 
+;   p  5 |   1    1    0    1    4 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Beef/Beef_manhattan_normed_NOCID_REP02_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP02_time.txt']
+
+rand seed=1501869066
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_manhattan_normed_NOCID_REP02_tree.txt  time_file=./output/Beef/Beef_manhattan_normed_NOCID_REP02_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=175  @[  7,147]  d_th=75.17 gap=0.911844 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=13   @[  0,296]  d_th= 1.88 gap=0.000555 gain= 0.39327 (4  )==>   0   6   0   1   3  /   0   0   6   5   3 
+
+=== Node 4 ===
+....................................................................................................................
+Len=39   @[  0, 25]  d_th= 5.45 gap=0.015218 gain= 0.61086 (4  )==>   0   6   0   1   0  /   0   0   0   0   3 
+
+=== Node 5 ===
+....................................................................................................................
+Len=43   @[  0,  0]  d_th= 3.98 gap=0.108513 gain= 0.55675 (0  )==>   0   0   6   0   1  /   0   0   0   5   2 
+
+=== Node 8 ===
+....................................................................................................................
+Len=97   @[  6, 16]  d_th= 5.20 gap=0.527541 gain= 0.41012 (5  )==>   0   0   0   1   0  /   0   6   0   0   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=91   @[  6,119]  d_th= 5.31 gap=0.556919 gain= 0.41012 (5  )==>   0   0   0   0   1  /   0   0   6   0   0 
+
+=== Node 11 ===
+....................................................................................................................
+Len=137  @[  0,150]  d_th=32.94 gap=0.149816 gain= 0.59827 (3  )==>   0   0   0   5   0  /   0   0   0   0   2 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.08 sec
+  Time Rand Project =    17.16 sec
+  Time Score Matrix =     2.93 sec
+  Time Compute Gain =    34.87 sec
+Running  Time for this Shapelet=    59.30 sec <<
+
+
+Total Running  Time =    59.30 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'manhattan', 0, 1, './output/Beef/Beef_manhattan_normed_NOCID_REP02_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP02_acc.txt']
+0
+num_class=5, num_obj=30  distance=manhattan CID=false normalize=true ./output/Beef/Beef_manhattan_normed_NOCID_REP02_tree.txt  ./output/Beef/Beef_manhattan_normed_NOCID_REP02_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 46.667   Correct:14 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    1    0    0    0 
+;   p  2 |   1    4    2    3    2 
+;   p  3 |   1    0    3    0    2 
+;   p  4 |   0    0    0    3    2 
+;   p  5 |   0    1    1    0    0 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Beef/Beef_manhattan_normed_NOCID_REP03_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP03_time.txt']
+
+rand seed=1501869127
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_manhattan_normed_NOCID_REP03_tree.txt  time_file=./output/Beef/Beef_manhattan_normed_NOCID_REP03_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=221  @[ 18,183]  d_th=75.55 gap=0.979777 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0,298]  d_th= 0.60 gap=0.005954 gain= 0.39910 (14 )==>   0   5   0   0   0  /   0   1   6   6   6 
+
+=== Node 5 ===
+....................................................................................................................
+Len=35   @[  0, 24]  d_th= 3.37 gap=0.005280 gain= 0.62365 (7  )==>   0   1   6   0   6  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=25   @[  0,  1]  d_th= 1.24 gap=0.002553 gain= 0.69019 (1  )==>   0   1   0   0   6  /   0   0   6   0   0 
+
+=== Node 20 ===
+....................................................................................................................
+Len=189  @[  0,219]  d_th=10.00 gap=0.727043 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.95 sec
+  Time Rand Project =    15.75 sec
+  Time Score Matrix =     2.73 sec
+  Time Compute Gain =    32.73 sec
+Running  Time for this Shapelet=    55.34 sec <<
+
+
+Total Running  Time =    55.34 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'manhattan', 0, 1, './output/Beef/Beef_manhattan_normed_NOCID_REP03_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP03_acc.txt']
+0
+num_class=5, num_obj=30  distance=manhattan CID=false normalize=true ./output/Beef/Beef_manhattan_normed_NOCID_REP03_tree.txt  ./output/Beef/Beef_manhattan_normed_NOCID_REP03_acc.txt
+
+==> Tree Size = 42
+
+; accuracy= 53.333   Correct:16 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    1 
+;   p  2 |   0    3    2    0    0 
+;   p  3 |   0    1    1    2    1 
+;   p  4 |   0    0    3    3    0 
+;   p  5 |   1    1    0    1    4 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Beef/Beef_manhattan_normed_NOCID_REP04_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP04_time.txt']
+
+rand seed=1501869184
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_manhattan_normed_NOCID_REP04_tree.txt  time_file=./output/Beef/Beef_manhattan_normed_NOCID_REP04_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=229  @[ 18,173]  d_th=76.87 gap=0.969651 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0,298]  d_th= 0.60 gap=0.005954 gain= 0.39910 (14 )==>   0   5   0   0   0  /   0   1   6   6   6 
+
+=== Node 5 ===
+....................................................................................................................
+Len=35   @[  0, 24]  d_th= 3.37 gap=0.005280 gain= 0.62365 (7  )==>   0   1   6   0   6  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=89   @[  2, 33]  d_th=15.24 gap=0.014898 gain= 0.69019 (1  )==>   0   0   6   0   0  /   0   1   0   0   6 
+
+=== Node 21 ===
+....................................................................................................................
+Len=227  @[  0,177]  d_th=12.36 gap=0.820136 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.97 sec
+  Time Rand Project =    16.02 sec
+  Time Score Matrix =     2.90 sec
+  Time Compute Gain =    32.54 sec
+Running  Time for this Shapelet=    55.64 sec <<
+
+
+Total Running  Time =    55.64 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'manhattan', 0, 1, './output/Beef/Beef_manhattan_normed_NOCID_REP04_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP04_acc.txt']
+0
+num_class=5, num_obj=30  distance=manhattan CID=false normalize=true ./output/Beef/Beef_manhattan_normed_NOCID_REP04_tree.txt  ./output/Beef/Beef_manhattan_normed_NOCID_REP04_acc.txt
+
+==> Tree Size = 44
+
+; accuracy= 56.667   Correct:17 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   0    3    2    0    0 
+;   p  3 |   0    0    1    2    1 
+;   p  4 |   0    0    3    3    0 
+;   p  5 |   1    2    0    1    5 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Beef/Beef_manhattan_normed_NOCID_REP05_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP05_time.txt']
+
+rand seed=1501869241
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_manhattan_normed_NOCID_REP05_tree.txt  time_file=./output/Beef/Beef_manhattan_normed_NOCID_REP05_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=221  @[ 18,183]  d_th=75.55 gap=0.979777 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0,298]  d_th= 0.60 gap=0.005954 gain= 0.39910 (14 )==>   0   5   0   0   0  /   0   1   6   6   6 
+
+=== Node 5 ===
+....................................................................................................................
+Len=35   @[  0, 24]  d_th= 3.37 gap=0.005280 gain= 0.62365 (7  )==>   0   1   6   0   6  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=25   @[  0,  1]  d_th= 1.24 gap=0.002553 gain= 0.69019 (1  )==>   0   1   0   0   6  /   0   0   6   0   0 
+
+=== Node 20 ===
+....................................................................................................................
+Len=233  @[  0,133]  d_th=10.61 gap=0.695134 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.93 sec
+  Time Rand Project =    15.71 sec
+  Time Score Matrix =     2.78 sec
+  Time Compute Gain =    32.61 sec
+Running  Time for this Shapelet=    55.21 sec <<
+
+
+Total Running  Time =    55.21 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'manhattan', 0, 1, './output/Beef/Beef_manhattan_normed_NOCID_REP05_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP05_acc.txt']
+0
+num_class=5, num_obj=30  distance=manhattan CID=false normalize=true ./output/Beef/Beef_manhattan_normed_NOCID_REP05_tree.txt  ./output/Beef/Beef_manhattan_normed_NOCID_REP05_acc.txt
+
+==> Tree Size = 42
+
+; accuracy= 53.333   Correct:16 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    1 
+;   p  2 |   0    3    2    0    0 
+;   p  3 |   0    1    1    2    1 
+;   p  4 |   0    0    3    3    0 
+;   p  5 |   1    1    0    1    4 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Beef/Beef_manhattan_normed_NOCID_REP06_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP06_time.txt']
+
+rand seed=1501869298
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_manhattan_normed_NOCID_REP06_tree.txt  time_file=./output/Beef/Beef_manhattan_normed_NOCID_REP06_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=233  @[ 18,166]  d_th=77.92 gap=0.964565 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0,298]  d_th= 0.60 gap=0.005954 gain= 0.39910 (14 )==>   0   5   0   0   0  /   0   1   6   6   6 
+
+=== Node 5 ===
+....................................................................................................................
+Len=35   @[  0, 24]  d_th= 3.37 gap=0.005280 gain= 0.62365 (7  )==>   0   1   6   0   6  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=25   @[  0,  1]  d_th= 1.24 gap=0.002553 gain= 0.69019 (1  )==>   0   1   0   0   6  /   0   0   6   0   0 
+
+=== Node 20 ===
+....................................................................................................................
+Len=225  @[  0,186]  d_th=11.67 gap=0.777737 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.94 sec
+  Time Rand Project =    15.94 sec
+  Time Score Matrix =     2.81 sec
+  Time Compute Gain =    32.47 sec
+Running  Time for this Shapelet=    55.31 sec <<
+
+
+Total Running  Time =    55.31 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'manhattan', 0, 1, './output/Beef/Beef_manhattan_normed_NOCID_REP06_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP06_acc.txt']
+0
+num_class=5, num_obj=30  distance=manhattan CID=false normalize=true ./output/Beef/Beef_manhattan_normed_NOCID_REP06_tree.txt  ./output/Beef/Beef_manhattan_normed_NOCID_REP06_acc.txt
+
+==> Tree Size = 42
+
+; accuracy= 56.667   Correct:17 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   0    3    2    0    0 
+;   p  3 |   0    1    1    2    1 
+;   p  4 |   0    0    3    3    0 
+;   p  5 |   1    1    0    1    5 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Beef/Beef_manhattan_normed_NOCID_REP07_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP07_time.txt']
+
+rand seed=1501869354
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_manhattan_normed_NOCID_REP07_tree.txt  time_file=./output/Beef/Beef_manhattan_normed_NOCID_REP07_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=173  @[  7,150]  d_th=73.30 gap=0.932054 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0,298]  d_th= 0.60 gap=0.005954 gain= 0.39910 (14 )==>   0   5   0   0   0  /   0   1   6   6   6 
+
+=== Node 5 ===
+....................................................................................................................
+Len=35   @[  0, 24]  d_th= 3.37 gap=0.005280 gain= 0.62365 (7  )==>   0   1   6   0   6  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=25   @[  0,  1]  d_th= 1.24 gap=0.002553 gain= 0.69019 (1  )==>   0   1   0   0   6  /   0   0   6   0   0 
+
+=== Node 20 ===
+....................................................................................................................
+Len=231  @[  0, 99]  d_th=10.66 gap=0.701079 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.93 sec
+  Time Rand Project =    15.82 sec
+  Time Score Matrix =     2.80 sec
+  Time Compute Gain =    32.56 sec
+Running  Time for this Shapelet=    55.26 sec <<
+
+
+Total Running  Time =    55.26 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'manhattan', 0, 1, './output/Beef/Beef_manhattan_normed_NOCID_REP07_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP07_acc.txt']
+0
+num_class=5, num_obj=30  distance=manhattan CID=false normalize=true ./output/Beef/Beef_manhattan_normed_NOCID_REP07_tree.txt  ./output/Beef/Beef_manhattan_normed_NOCID_REP07_acc.txt
+
+==> Tree Size = 42
+
+; accuracy= 53.333   Correct:16 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    1    0    0    0 
+;   p  2 |   0    3    2    0    0 
+;   p  3 |   1    1    1    2    1 
+;   p  4 |   0    0    3    3    0 
+;   p  5 |   1    1    0    1    5 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Beef/Beef_manhattan_normed_NOCID_REP08_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP08_time.txt']
+
+rand seed=1501869411
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_manhattan_normed_NOCID_REP08_tree.txt  time_file=./output/Beef/Beef_manhattan_normed_NOCID_REP08_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=173  @[  7,150]  d_th=73.30 gap=0.932054 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0,298]  d_th= 0.60 gap=0.005954 gain= 0.39910 (14 )==>   0   5   0   0   0  /   0   1   6   6   6 
+
+=== Node 5 ===
+....................................................................................................................
+Len=35   @[  0, 24]  d_th= 3.37 gap=0.005280 gain= 0.62365 (7  )==>   0   1   6   0   6  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=91   @[  2, 33]  d_th=15.58 gap=0.016392 gain= 0.69019 (1  )==>   0   0   6   0   0  /   0   1   0   0   6 
+
+=== Node 21 ===
+....................................................................................................................
+Len=217  @[  0, 94]  d_th=10.52 gap=0.714107 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.94 sec
+  Time Rand Project =    15.71 sec
+  Time Score Matrix =     2.76 sec
+  Time Compute Gain =    32.64 sec
+Running  Time for this Shapelet=    55.19 sec <<
+
+
+Total Running  Time =    55.19 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'manhattan', 0, 1, './output/Beef/Beef_manhattan_normed_NOCID_REP08_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP08_acc.txt']
+0
+num_class=5, num_obj=30  distance=manhattan CID=false normalize=true ./output/Beef/Beef_manhattan_normed_NOCID_REP08_tree.txt  ./output/Beef/Beef_manhattan_normed_NOCID_REP08_acc.txt
+
+==> Tree Size = 44
+
+; accuracy= 56.667   Correct:17 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    1    0    0    0 
+;   p  2 |   0    3    2    0    0 
+;   p  3 |   0    0    1    2    0 
+;   p  4 |   0    0    3    3    0 
+;   p  5 |   2    2    0    1    6 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Beef/Beef_manhattan_normed_NOCID_REP09_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP09_time.txt']
+
+rand seed=1501869468
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_manhattan_normed_NOCID_REP09_tree.txt  time_file=./output/Beef/Beef_manhattan_normed_NOCID_REP09_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=175  @[  7,147]  d_th=75.17 gap=0.911844 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0,298]  d_th= 0.60 gap=0.005954 gain= 0.39910 (14 )==>   0   5   0   0   0  /   0   1   6   6   6 
+
+=== Node 5 ===
+....................................................................................................................
+Len=35   @[  0, 24]  d_th= 3.37 gap=0.005280 gain= 0.62365 (7  )==>   0   1   6   0   6  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=25   @[  0,  1]  d_th= 1.24 gap=0.002553 gain= 0.69019 (1  )==>   0   1   0   0   6  /   0   0   6   0   0 
+
+=== Node 20 ===
+....................................................................................................................
+Len=171  @[  0,225]  d_th=10.34 gap=0.791057 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.92 sec
+  Time Rand Project =    15.92 sec
+  Time Score Matrix =     2.71 sec
+  Time Compute Gain =    32.45 sec
+Running  Time for this Shapelet=    55.11 sec <<
+
+
+Total Running  Time =    55.11 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'manhattan', 0, 1, './output/Beef/Beef_manhattan_normed_NOCID_REP09_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP09_acc.txt']
+0
+num_class=5, num_obj=30  distance=manhattan CID=false normalize=true ./output/Beef/Beef_manhattan_normed_NOCID_REP09_tree.txt  ./output/Beef/Beef_manhattan_normed_NOCID_REP09_acc.txt
+
+==> Tree Size = 42
+
+; accuracy= 53.333   Correct:16 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    1    0    0    0 
+;   p  2 |   0    3    2    0    0 
+;   p  3 |   1    1    1    2    1 
+;   p  4 |   0    0    3    3    0 
+;   p  5 |   1    1    0    1    5 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Beef/Beef_manhattan_normed_NOCID_REP10_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP10_time.txt']
+
+rand seed=1501869524
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_manhattan_normed_NOCID_REP10_tree.txt  time_file=./output/Beef/Beef_manhattan_normed_NOCID_REP10_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=231  @[ 18,173]  d_th=77.24 gap=0.982806 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0,298]  d_th= 0.60 gap=0.005954 gain= 0.39910 (14 )==>   0   5   0   0   0  /   0   1   6   6   6 
+
+=== Node 5 ===
+....................................................................................................................
+Len=35   @[  0, 24]  d_th= 3.37 gap=0.005280 gain= 0.62365 (7  )==>   0   1   6   0   6  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=25   @[  0,  1]  d_th= 1.24 gap=0.002553 gain= 0.69019 (1  )==>   0   1   0   0   6  /   0   0   6   0   0 
+
+=== Node 20 ===
+....................................................................................................................
+Len=163  @[  0,115]  d_th= 8.99 gap=0.704024 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.91 sec
+  Time Rand Project =    15.77 sec
+  Time Score Matrix =     2.76 sec
+  Time Compute Gain =    32.48 sec
+Running  Time for this Shapelet=    55.05 sec <<
+
+
+Total Running  Time =    55.05 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'manhattan', 0, 1, './output/Beef/Beef_manhattan_normed_NOCID_REP10_tree.txt', './output/Beef/Beef_manhattan_normed_NOCID_REP10_acc.txt']
+0
+num_class=5, num_obj=30  distance=manhattan CID=false normalize=true ./output/Beef/Beef_manhattan_normed_NOCID_REP10_tree.txt  ./output/Beef/Beef_manhattan_normed_NOCID_REP10_acc.txt
+
+==> Tree Size = 42
+
+; accuracy= 56.667   Correct:17 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   0    3    2    0    0 
+;   p  3 |   0    1    1    2    1 
+;   p  4 |   0    0    3    3    0 
+;   p  5 |   1    1    0    1    5 
+
+
+================ Replication:  10 Finished ================

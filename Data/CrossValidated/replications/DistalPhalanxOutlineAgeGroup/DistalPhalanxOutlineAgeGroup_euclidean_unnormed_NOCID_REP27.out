@@ -1,0 +1,60 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TRAIN', 3, 139, 40, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP27_tree.txt', './replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP27_time.txt']
+
+rand seed=1508180419
+num_class=3, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP27_tree.txt  time_file=./replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP27_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [2,1]  [1,3]  [0,2]  
+
+=== Node 1 ===
+..................
+Len=11   @[  0, 17]  d_th= 1.08 gap=0.002960 gain= 0.23962 (61 )==>  58  27  15  /   1  38   0 
+
+=== Node 2 ===
+..................
+Len=15   @[ 14, 55]  d_th= 1.17 gap=0.002878 gain= 0.24291 (72 )==>  56  27   3  /   2   0  12 
+
+=== Node 4 ===
+..................
+Len=39   @[ 47, 34]  d_th= 1.40 gap=0.001548 gain= 0.12303 (16 )==>  31   2   2  /  25  25   1 
+
+=== Node 5 ===
+..................
+Len=11   @[  0, 24]  d_th= 0.54 gap=0.005712 gain= 0.41012 (10 )==>   0   0  12  /   2   0   0 
+
+=== Node 8 ===
+..................
+Len=17   @[ 10, 53]  d_th= 0.37 gap=0.005900 gain= 0.21903 (31 )==>   0   2   0  /  31   0   2 
+
+=== Node 9 ===
+..................
+Len=7    @[  0, 18]  d_th= 0.34 gap=0.000194 gain= 0.17461 (31 )==>  16  25   0  /   9   0   1 
+
+=== Node 18 ===
+..................
+Len=39   @[  0, 38]  d_th= 1.05 gap=0.001672 gain= 0.14516 (21 )==>   0  10   0  /  16  15   0 
+
+num_class=3, num_obj=41, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.19 sec
+  Time Rand Project =     1.07 sec
+  Time Score Matrix =     0.14 sec
+  Time Compute Gain =     0.42 sec
+Running  Time for this Shapelet=     1.94 sec <<
+
+
+Total Running  Time =     1.94 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TEST', 3, 400, 'euclidean', 0, 0, './replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP27_tree.txt', './replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP27_acc.txt']
+; accuracy= 82.750   Correct:331 , Wrong: 69
+
+
+;   == Confusion Matrix ==
+;   real |   2    3    1 
+;   -----+------------------
+;   p  2 |  98   37   14 
+;   p  3 |  13  219    2 
+;   p  1 |   2    1   14 
+
+num_class=3, num_obj=400  distance=euclidean CID=false normalize=false ./replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP27_tree.txt  ./replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP27_acc.txt
+
+==> Tree Size = 38
+

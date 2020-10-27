@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV2', 2, 30, 319, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/Lighting2_CV2/Lighting2_CV2_correlation_unnormed_CID_tree.txt', './cv_output/Lighting2_CV2/Lighting2_CV2_correlation_unnormed_CID_time.txt']
+
+rand seed=1503462685
+num_class=2, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Lighting2_CV2/Lighting2_CV2_correlation_unnormed_CID_tree.txt  time_file=./cv_output/Lighting2_CV2/Lighting2_CV2_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+..............................................................................................................................................................
+Len=19   @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.50250 (12 )==>   1  20  /   9   0 
+
+num_class=2, num_obj=30, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.22 sec
+  Time Rand Project =    10.12 sec
+  Time Score Matrix =     0.69 sec
+  Time Compute Gain =    38.97 sec
+Running  Time for this Shapelet=    51.77 sec <<
+
+
+Total Running  Time =    51.77 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV1', 2, 30, 'correlation', 1, 0, './cv_output/Lighting2_CV2/Lighting2_CV2_correlation_unnormed_CID_tree.txt', './cv_output/Lighting2_CV2/Lighting2_CV2_correlation_unnormed_CID_acc.txt']
+; accuracy= 66.667   Correct:20 , Wrong: 10
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   0    0 
+;   p  1 |  10   20 
+
+num_class=2, num_obj=30  distance=correlation CID=true normalize=false ./cv_output/Lighting2_CV2/Lighting2_CV2_correlation_unnormed_CID_tree.txt  ./cv_output/Lighting2_CV2/Lighting2_CV2_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 4
+

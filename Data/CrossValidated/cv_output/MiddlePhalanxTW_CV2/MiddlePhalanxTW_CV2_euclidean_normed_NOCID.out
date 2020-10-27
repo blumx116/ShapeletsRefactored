@@ -1,0 +1,87 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxTW_TRAIN_CV2', 6, 79, 40, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502274294
+num_class=6, num_obj=79, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [5,8]  [4,7]  [3,6]  [2,5]  [1,4]  [0,3]  
+
+=== Node 1 ===
+..................
+Len=39   @[ 25, 32]  d_th= 1.72 gap=0.003606 gain= 0.56057 (33 )==>  13  22  12   6   3   0  /   0   0   0   0   2  21 
+
+=== Node 2 ===
+..................
+Len=27   @[  0, 14]  d_th= 0.83 gap=0.000172 gain= 0.20579 (30 )==>  10  22   8   3   0   0  /   3   0   4   3   3   0 
+
+=== Node 4 ===
+..................
+Len=11   @[  0, 13]  d_th= 0.23 gap=0.000308 gain= 0.21511 (25 )==>   7   2   0   0   0   0  /   3  20   8   3   0   0 
+
+=== Node 5 ===
+..................
+Len=11   @[  0, 12]  d_th= 0.16 gap=0.000521 gain= 0.69019 (1  )==>   3   0   4   0   0   0  /   0   0   0   3   3   0 
+
+=== Node 8 ===
+..................
+Len=39   @[  8, 37]  d_th= 0.80 gap=0.016753 gain= 0.52971 (5  )==>   0   2   0   0   0   0  /   7   0   0   0   0   0 
+
+=== Node 9 ===
+..................
+Len=11   @[  0, 13]  d_th= 0.19 gap=0.001600 gain= 0.27276 (24 )==>   3   0   1   1   0   0  /   0  20   7   2   0   0 
+
+=== Node 10 ===
+..................
+Len=5    @[  0,  0]  d_th= 0.13 gap=0.006916 gain= 0.68291 (1  )==>   3   0   0   0   0   0  /   0   0   4   0   0   0 
+
+=== Node 11 ===
+..................
+Len=5    @[  0, 15]  d_th= 0.16 gap=0.010140 gain= 0.69315 (0  )==>   0   0   0   3   0   0  /   0   0   0   0   3   0 
+
+=== Node 18 ===
+..................
+Len=37   @[  3, 40]  d_th= 0.88 gap=0.037582 gain= 0.67301 (1  )==>   0   0   1   1   0   0  /   3   0   0   0   0   0 
+
+=== Node 19 ===
+..................
+Len=15   @[ 21, 48]  d_th= 0.66 gap=0.007870 gain= 0.18855 (21 )==>   0   0   3   1   0   0  /   0  20   4   1   0   0 
+
+=== Node 36 ===
+..................
+Len=13   @[  0, 62]  d_th= 0.35 gap=0.095690 gain= 0.69315 (0  )==>   0   0   1   0   0   0  /   0   0   0   1   0   0 
+
+=== Node 38 ===
+..................
+Len=31   @[  3, 21]  d_th= 0.23 gap=0.041772 gain= 0.56234 (2  )==>   0   0   0   1   0   0  /   0   0   3   0   0   0 
+
+=== Node 39 ===
+..................
+Len=9    @[  0, 11]  d_th= 0.30 gap=0.000737 gain= 0.25602 (19 )==>   0  20   2   0   0   0  /   0   0   2   1   0   0 
+
+num_class=6, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.11 sec
+  Time Rand Project =     0.54 sec
+  Time Score Matrix =     0.06 sec
+  Time Compute Gain =     0.69 sec
+Running  Time for this Shapelet=     1.45 sec <<
+
+
+Total Running  Time =     1.45 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxTW_TRAIN_CV1', 6, 75, 'euclidean', 0, 1, './cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_euclidean_normed_NOCID_acc.txt']
+; accuracy= 48.000   Correct:36 , Wrong: 39
+
+
+;   == Confusion Matrix ==
+;   real |   3    4    5    6    7    8 
+;   -----+------------------------------------
+;   p  3 |   1    4    2    0    1    0 
+;   p  4 |   4   10    4    2    0    0 
+;   p  5 |   4    2    2    1    0    0 
+;   p  6 |   2    3    1    0    0    0 
+;   p  7 |   0    3    2    2    2    0 
+;   p  8 |   1    0    0    0    1   21 
+
+num_class=6, num_obj=75  distance=euclidean CID=false normalize=true ./cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_euclidean_normed_NOCID_tree.txt  ./cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 80
+

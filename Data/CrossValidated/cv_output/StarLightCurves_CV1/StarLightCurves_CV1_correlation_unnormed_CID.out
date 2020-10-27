@@ -1,0 +1,48 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/StarLightCurves_TRAIN_CV1', 3, 499, 512, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_correlation_unnormed_CID_tree.txt', './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503493434
+num_class=3, num_obj=499, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................................................................................................................................................
+Len=503  @[ 65,200]  d_th= 0.27 gap=0.000437 gain= 0.57900 (223)==>  75   0 286  /   1 137   0 
+
+=== Node 2 ===
+..............................................................................................................................................................................................................................................................
+Len=295  @[232,  3]  d_th= 0.33 gap=0.000021 gain= 0.28373 (217)==>  13   0 276  /  62   0  10 
+
+=== Node 5 ===
+..............................................................................................................................................................................................................................................................
+Len=145  @[  0,  0]  d_th= 0.00 gap=0.000030 gain= 0.23858 (48 )==>  59   0   1  /   3   0   9 
+
+=== Node 11 ===
+..............................................................................................................................................................................................................................................................
+Len=503  @[  0,488]  d_th= 0.03 gap=0.000466 gain= 0.56234 (6  )==>   3   0   0  /   0   0   9 
+
+num_class=3, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    33.31 sec
+  Time Rand Project =   111.31 sec
+  Time Score Matrix =    11.54 sec
+  Time Compute Gain =  3495.67 sec
+Running  Time for this Shapelet=  3662.63 sec <<
+
+
+Total Running  Time =  3662.63 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/StarLightCurves_TRAIN_CV2', 3, 501, 'correlation', 1, 0, './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_correlation_unnormed_CID_tree.txt', './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 96.407   Correct:483 , Wrong: 18
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  60    0    2 
+;   p  2 |   0  138    0 
+;   p  3 |  16    0  285 
+
+num_class=3, num_obj=501  distance=correlation CID=true normalize=false ./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 24
+

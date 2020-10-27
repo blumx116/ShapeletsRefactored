@@ -1,0 +1,51 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Earthquakes_TRAIN_CV1', 2, 69, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/Earthquakes_CV1/Earthquakes_CV1_manhattan_unnormed_NOCID_tree.txt', './cv_output/Earthquakes_CV1/Earthquakes_CV1_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502323859
+num_class=2, num_obj=69, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Earthquakes_CV1/Earthquakes_CV1_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/Earthquakes_CV1/Earthquakes_CV1_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=125  @[ 58,231]  d_th=91.85 gap=0.009533 gain= 0.13310 (41 )==>   4  10  /  48   7 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=77   @[  1, 64]  d_th=44.34 gap=0.050153 gain= 0.41955 (4  )==>   4   1  /   0   9 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=123  @[ 53, 42]  d_th=56.10 gap=0.039687 gain= 0.23298 (31 )==>   5   7  /  43   0 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=251  @[  4, 13]  d_th=101.01 gap=6.375548 gain= 0.50040 (3  )==>   0   1  /   4   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=105  @[  3,289]  d_th=53.87 gap=0.062456 gain= 0.67919 (2  )==>   5   0  /   0   7 
+
+num_class=2, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     4.17 sec
+  Time Rand Project =    35.96 sec
+  Time Score Matrix =     2.49 sec
+  Time Compute Gain =    21.93 sec
+Running  Time for this Shapelet=    67.16 sec <<
+
+
+Total Running  Time =    67.16 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Earthquakes_TRAIN_CV2', 2, 70, 'manhattan', 0, 0, './cv_output/Earthquakes_CV1/Earthquakes_CV1_manhattan_unnormed_NOCID_tree.txt', './cv_output/Earthquakes_CV1/Earthquakes_CV1_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 68.571   Correct:48 , Wrong: 22
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  44   14 
+;   p  1 |   8    4 
+
+num_class=2, num_obj=70  distance=manhattan CID=false normalize=false ./cv_output/Earthquakes_CV1/Earthquakes_CV1_manhattan_unnormed_NOCID_tree.txt  ./cv_output/Earthquakes_CV1/Earthquakes_CV1_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 14
+

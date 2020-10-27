@@ -1,0 +1,75 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/OSULeaf_TRAIN_CV2', 6, 102, 214, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/OSULeaf_CV2/OSULeaf_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/OSULeaf_CV2/OSULeaf_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502278373
+num_class=6, num_obj=102, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/OSULeaf_CV2/OSULeaf_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/OSULeaf_CV2/OSULeaf_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................................................................
+Len=141  @[ 22,168]  d_th=127.21 gap=0.080460 gain= 0.61965 (2  )==>   0  14   1  27   0   8  /  17   1  16   0  18   0 
+
+=== Node 2 ===
+.........................................................................................................
+Len=189  @[ 22, 56]  d_th=140.53 gap=0.274360 gain= 0.38585 (32 )==>   0  14   1  26   0   0  /   0   0   0   1   0   8 
+
+=== Node 3 ===
+.........................................................................................................
+Len=139  @[ 34,175]  d_th=112.40 gap=0.642015 gain= 0.63198 (18 )==>   0   1  16   0  18   0  /  17   0   0   0   0   0 
+
+=== Node 4 ===
+.........................................................................................................
+Len=187  @[ 36, 28]  d_th=108.28 gap=0.021362 gain= 0.39858 (13 )==>   0   2   0  25   0   0  /   0  12   1   1   0   0 
+
+=== Node 5 ===
+.........................................................................................................
+Len=209  @[  0, 32]  d_th=68.83 gap=4.761191 gain= 0.34883 (7  )==>   0   0   0   1   0   0  /   0   0   0   0   0   8 
+
+=== Node 6 ===
+.........................................................................................................
+Len=25   @[  0,169]  d_th= 4.79 gap=0.049004 gain= 0.40033 (5  )==>   0   1   2   0  17   0  /   0   0  14   0   1   0 
+
+=== Node 9 ===
+.........................................................................................................
+Len=87   @[  2, 17]  d_th=48.32 gap=0.670631 gain= 0.41012 (10 )==>   0  12   0   0   0   0  /   0   0   1   1   0   0 
+
+=== Node 12 ===
+.........................................................................................................
+Len=71   @[  1,301]  d_th=15.56 gap=0.066691 gain= 0.42271 (14 )==>   0   1   2   0   0   0  /   0   0   0   0  17   0 
+
+=== Node 19 ===
+.........................................................................................................
+Len=183  @[  0,224]  d_th=130.27 gap=9.629475 gain= 0.69315 (0  )==>   0   0   1   0   0   0  /   0   0   0   1   0   0 
+
+=== Node 24 ===
+.........................................................................................................
+Len=139  @[  2,272]  d_th=149.58 gap=5.989801 gain= 0.63651 (1  )==>   0   0   2   0   0   0  /   0   1   0   0   0   0 
+
+num_class=6, num_obj=3, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     4.98 sec
+  Time Rand Project =    38.57 sec
+  Time Score Matrix =     2.86 sec
+  Time Compute Gain =    76.61 sec
+Running  Time for this Shapelet=   125.96 sec <<
+
+
+Total Running  Time =   125.96 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/OSULeaf_TRAIN_CV1', 6, 98, 'manhattan', 1, 0, './cv_output/OSULeaf_CV2/OSULeaf_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/OSULeaf_CV2/OSULeaf_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 55.102   Correct:54 , Wrong: 44
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6 
+;   -----+------------------------------------
+;   p  1 |  13    0    0    2    2    0 
+;   p  2 |   0    5    0    8    4    2 
+;   p  3 |   0    0   10    0    2    0 
+;   p  4 |   0    5    0   15    1    0 
+;   p  5 |   4    3    4    0    7    1 
+;   p  6 |   0    1    2    1    2    4 
+
+num_class=6, num_obj=98  distance=manhattan CID=true normalize=false ./cv_output/OSULeaf_CV2/OSULeaf_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/OSULeaf_CV2/OSULeaf_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 50
+

@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/SonyAIBORobotSurfaceII_TRAIN_CV2', 2, 14, 33, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/SonyAIBORobotSurfaceII_CV2/SonyAIBORobotSurfaceII_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/SonyAIBORobotSurfaceII_CV2/SonyAIBORobotSurfaceII_CV2_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502274243
+num_class=2, num_obj=14, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/SonyAIBORobotSurfaceII_CV2/SonyAIBORobotSurfaceII_CV2_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/SonyAIBORobotSurfaceII_CV2/SonyAIBORobotSurfaceII_CV2_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+...............
+Len=21   @[  7, 32]  d_th= 2.36 gap=0.032220 gain= 0.68291 (2  )==>   0   8  /   6   0 
+
+num_class=2, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.03 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.05 sec <<
+
+
+Total Running  Time =     0.05 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/SonyAIBORobotSurfaceII_TRAIN_CV1', 2, 13, 'euclidean', 0, 0, './cv_output/SonyAIBORobotSurfaceII_CV2/SonyAIBORobotSurfaceII_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/SonyAIBORobotSurfaceII_CV2/SonyAIBORobotSurfaceII_CV2_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 61.538   Correct:8 , Wrong: 5
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   4    4 
+;   p  2 |   1    4 
+
+num_class=2, num_obj=13  distance=euclidean CID=false normalize=false ./cv_output/SonyAIBORobotSurfaceII_CV2/SonyAIBORobotSurfaceII_CV2_euclidean_unnormed_NOCID_tree.txt  ./cv_output/SonyAIBORobotSurfaceII_CV2/SonyAIBORobotSurfaceII_CV2_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 4
+

@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1501837434, rand()=843692873, rand()=920033434
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 euclidean 0 0 10 ./output/Gun/Gun_euclidean_unnormed_NOCID_REP01_tree.txt ./output/Gun/Gun_euclidean_unnormed_NOCID_REP01_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   2  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --      9    0   43   2.3035 ==>   3  23  /  23   1 
+NonL  2    --      0  103   11   0.2821 ==>   3   0  /   0  23 
+Leaf  3     2    
+Leaf  4     2    
+Leaf  5     1    
+
+;Shapelet id   <data>
+Shapelet   1  -1.177200 -1.175800 -1.173200 -1.170900 -1.169500 -1.166300 -1.165900 -1.167600 -1.166900 -1.168400 -1.168700 -1.169900 -1.172000 -1.174500 -1.172200 -1.151000 -1.111200 -1.038100 -0.963580 -0.879190 -0.817760 -0.778330 -0.763750 -0.758160 -0.760060 -0.744710 -0.721350 -0.701090 -0.688570 -0.681300 -0.674620 -0.673100 -0.672520 -0.654700 -0.607990 -0.540510 -0.412170 -0.253200 -0.098128  0.079075  0.226020  0.379000  0.500760 
+Shapelet   2   0.468000  0.136190 -0.020964 -0.241450 -0.429280 -0.547880 -0.657700 -0.740820 -0.775350 -0.782460 -0.769290 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 euclidean 0 0 10 ./output/Gun/Gun_euclidean_unnormed_NOCID_REP01_tree.txt ./output/Gun/Gun_euclidean_unnormed_NOCID_REP01_time.txt
+; time =>    1.190   0.120   0.626   0.076   0.318 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/Gun_Point_TEST 2 150 euclidean 0 0 ./output/Gun/Gun_euclidean_unnormed_NOCID_REP01_tree.txt ./output/Gun/Gun_euclidean_unnormed_NOCID_REP01_acc.txt
+; accuracy= 86.000   Correct:129 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  66   11 
+;   p  2 |  10   63 
+

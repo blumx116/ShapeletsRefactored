@@ -1,0 +1,59 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/LargeKitchenAppliances_TRAIN_CV1', 3, 186, 360, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503472355
+num_class=3, num_obj=186, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.46210 (0  )==>   0  31  62  /  62  31   0 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=73   @[  0,276]  d_th= 0.17 gap=0.000011 gain= 0.32564 (90 )==>  46   1   1  /  16  61  61 
+
+=== Node 3 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=3 
+
+=== Node 5 ===
+..................................................................................................................................................................................
+Len=187  @[130, 39]  d_th= 0.21 gap=0.000108 gain= 0.32873 (56 )==>   0   0  41  /  16  61  20 
+
+=== Node 11 ===
+..................................................................................................................................................................................
+Len=179  @[ 10,249]  d_th= 0.39 gap=0.000018 gain= 0.42721 (39 )==>  13   0  16  /   3  61   4 
+
+=== Node 22 ===
+..................................................................................................................................................................................
+Len=5    @[  0,552]  d_th= 1.00 gap=0.000000 gain= 0.56356 (1  )==>   0   0  15  /  13   0   1 
+
+=== Node 23 ===
+..................................................................................................................................................................................
+Len=109  @[ 65,489]  d_th= 0.45 gap=0.001426 gain= 0.27035 (56 )==>   2   0   4  /   1  61   0 
+
+num_class=3, num_obj=68, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    14.89 sec
+  Time Rand Project =    33.61 sec
+  Time Score Matrix =     4.37 sec
+  Time Compute Gain =   797.85 sec
+Running  Time for this Shapelet=   854.23 sec <<
+
+
+Total Running  Time =   854.23 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/LargeKitchenAppliances_TRAIN_CV2', 3, 189, 'correlation', 0, 0, './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 77.249   Correct:146 , Wrong: 43
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  48   15    2 
+;   p  2 |   4   42    5 
+;   p  3 |  11    6   56 
+
+num_class=3, num_obj=189  distance=correlation CID=false normalize=false ./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_NOCID_tree.txt  ./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 48
+

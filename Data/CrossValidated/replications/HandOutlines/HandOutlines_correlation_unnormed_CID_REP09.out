@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TRAIN', 2, 370, 1355, 1, 2, 10, 'correlation', 1, 0, 10, './replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP09_tree.txt', './replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP09_time.txt']
+
+rand seed=1503747575
+num_class=2, num_obj=370, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP09_tree.txt  time_file=./replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP09_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,0]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=691  @[  0, 46]  d_th= 0.01 gap=0.000001 gain= 0.33438 (136)==> 227  26  /  10 107 
+
+=== Node 2 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=1145  @[108,680]  d_th= 0.11 gap=0.000019 gain= 0.07476 (233)==> 226  17  /   1   9 
+
+num_class=2, num_obj=253, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =   133.77 sec
+  Time Rand Project =   165.46 sec
+  Time Score Matrix =    20.01 sec
+  Time Compute Gain = 40240.65 sec
+Running  Time for this Shapelet= 40583.56 sec <<
+
+
+Total Running  Time = 40583.56 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TEST', 2, 1000, 'correlation', 1, 0, './replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP09_tree.txt', './replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP09_acc.txt']
+; accuracy= 85.300   Correct:853 , Wrong: 147
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 | 267   52 
+;   p  1 |  95  586 
+
+num_class=2, num_obj=1000  distance=correlation CID=true normalize=false ./replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP09_tree.txt  ./replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP09_acc.txt
+
+==> Tree Size = 6
+

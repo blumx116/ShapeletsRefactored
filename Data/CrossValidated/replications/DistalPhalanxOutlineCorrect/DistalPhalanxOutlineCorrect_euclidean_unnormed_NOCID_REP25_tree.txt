@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1508180157, rand()=1855789138, rand()=974145700
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TRAIN 2 276 40 1 2 10 euclidean 0 0 10 ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_NOCID_REP25_tree.txt ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_NOCID_REP25_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  0 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 24 
+NonL  1    --     78    9   27   1.7954 ==> 160  71  /   1  44 
+NonL  2    --      0   12    7   0.1755 ==>  51   3  / 109  68 
+Leaf  3     0    
+Leaf  4     1    
+NonL  5    --      1   38   17   0.5371 ==>  31   0  /  78  68 
+Leaf 10     1    
+NonL 11    --      6   30    7   0.5100 ==>  62  29  /  16  39 
+Leaf 22     1    
+Leaf 23     0    
+
+;Shapelet id   <data>
+Shapelet   1   1.093600  1.168400  1.494600  1.479700  1.324400  1.121800  0.828660  0.674720  0.562540  0.306540 -0.070365 -0.282500 -0.643590 -1.034600 -1.115600 -0.917580 -0.565400 -0.180890  0.203010  0.588830  1.048700  1.346700  1.185600  0.943470  0.907210  0.874180  1.075000 
+Shapelet   2   1.432100  1.484500  1.275700  1.158900  1.005300  0.817360  0.504390 
+Shapelet   5   1.459300  1.551000  1.573300  1.566600  1.323900  1.051400  0.683250  0.368980  0.106880 -0.226880 -0.556680 -0.837570  0.014293 -0.108250 -0.265930 -0.587360 -0.847150 
+Shapelet  11   1.293200  1.331200  1.265400  0.993960  0.852470  0.768370  0.993550 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TRAIN 2 276 40 1 2 10 euclidean 0 0 10 ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_NOCID_REP25_tree.txt ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_NOCID_REP25_time.txt
+; time =>    4.085   0.389   2.337   0.352   0.779 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TEST 2 600 euclidean 0 0 ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_NOCID_REP25_tree.txt ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_NOCID_REP25_acc.txt
+; accuracy= 72.667   Correct:436 , Wrong: 164
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 | 303   89 
+;   p  0 |  75  133 
+

@@ -1,0 +1,584 @@
+================ Replication:  1 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Ham/Ham_manhattan_normed_NOCID_REP01_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP01_time.txt']
+
+rand seed=1501875824
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Ham/Ham_manhattan_normed_NOCID_REP01_tree.txt  time_file=./output/Ham/Ham_manhattan_normed_NOCID_REP01_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=195  @[ 52, 13]  d_th=79.95 gap=0.022580 gain= 0.13001 (33 )==>  21  50  /  31   7 
+
+=== Node 2 ===
+..........................................................................................................
+Len=47   @[ 10,335]  d_th=10.27 gap=0.006967 gain= 0.18420 (3  )==>  20  17  /   1  33 
+
+=== Node 3 ===
+..........................................................................................................
+Len=9    @[  0,347]  d_th= 1.57 gap=0.003705 gain= 0.26324 (14 )==>  26   0  /   5   7 
+
+=== Node 4 ===
+..........................................................................................................
+Len=35   @[  0,138]  d_th= 9.31 gap=0.013758 gain= 0.23711 (19 )==>  20   8  /   0   9 
+
+=== Node 7 ===
+..........................................................................................................
+Len=29   @[  5,171]  d_th= 4.03 gap=0.089229 gain= 0.67919 (2  )==>   0   7  /   5   0 
+
+=== Node 8 ===
+..........................................................................................................
+Len=203  @[ 27, 32]  d_th=54.60 gap=0.018694 gain= 0.28809 (10 )==>   2   7  /  18   1 
+
+num_class=2, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     6.31 sec
+  Time Rand Project =    69.68 sec
+  Time Score Matrix =    10.74 sec
+  Time Compute Gain =    83.31 sec
+Running  Time for this Shapelet=   179.08 sec <<
+
+
+Total Running  Time =   179.08 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'manhattan', 0, 1, './output/Ham/Ham_manhattan_normed_NOCID_REP01_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP01_acc.txt']
+0
+num_class=2, num_obj=105  distance=manhattan CID=false normalize=true ./output/Ham/Ham_manhattan_normed_NOCID_REP01_tree.txt  ./output/Ham/Ham_manhattan_normed_NOCID_REP01_acc.txt
+
+==> Tree Size = 18
+
+; accuracy= 60.952   Correct:64 , Wrong: 41
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  33   23 
+;   p  2 |  18   31 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Ham/Ham_manhattan_normed_NOCID_REP02_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP02_time.txt']
+
+rand seed=1501876008
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Ham/Ham_manhattan_normed_NOCID_REP02_tree.txt  time_file=./output/Ham/Ham_manhattan_normed_NOCID_REP02_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=187  @[ 52, 10]  d_th=77.18 gap=0.007550 gain= 0.16948 (51 )==>  25  55  /  27   2 
+
+=== Node 2 ===
+..........................................................................................................
+Len=39   @[ 18,352]  d_th= 6.01 gap=0.002442 gain= 0.17373 (30 )==>  18   7  /   7  48 
+
+=== Node 4 ===
+..........................................................................................................
+Len=89   @[  2,229]  d_th=24.83 gap=0.087412 gain= 0.34861 (5  )==>  15   0  /   3   7 
+
+=== Node 5 ===
+..........................................................................................................
+Len=39   @[  0,313]  d_th= 5.04 gap=0.019165 gain= 0.12477 (49 )==>   3   0  /   4  48 
+
+=== Node 9 ===
+..........................................................................................................
+Len=57   @[  0,349]  d_th=14.30 gap=0.444239 gain= 0.61086 (4  )==>   3   0  /   0   7 
+
+num_class=2, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     5.97 sec
+  Time Rand Project =    67.96 sec
+  Time Score Matrix =    10.50 sec
+  Time Compute Gain =    79.55 sec
+Running  Time for this Shapelet=   172.84 sec <<
+
+
+Total Running  Time =   172.84 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'manhattan', 0, 1, './output/Ham/Ham_manhattan_normed_NOCID_REP02_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP02_acc.txt']
+0
+num_class=2, num_obj=105  distance=manhattan CID=false normalize=true ./output/Ham/Ham_manhattan_normed_NOCID_REP02_tree.txt  ./output/Ham/Ham_manhattan_normed_NOCID_REP02_acc.txt
+
+==> Tree Size = 20
+
+; accuracy= 67.619   Correct:71 , Wrong: 34
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  38   21 
+;   p  2 |  13   33 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Ham/Ham_manhattan_normed_NOCID_REP03_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP03_time.txt']
+
+rand seed=1501876186
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Ham/Ham_manhattan_normed_NOCID_REP03_tree.txt  time_file=./output/Ham/Ham_manhattan_normed_NOCID_REP03_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=159  @[  9, 47]  d_th=61.26 gap=0.032881 gain= 0.12271 (55 )==>  28  54  /  24   3 
+
+=== Node 2 ===
+..........................................................................................................
+Len=51   @[ 11,123]  d_th=10.44 gap=0.014222 gain= 0.20750 (32 )==>  20   5  /   8  49 
+
+=== Node 3 ===
+..........................................................................................................
+Len=91   @[  6,165]  d_th=17.06 gap=0.015205 gain= 0.22420 (17 )==>   2   3  /  22   0 
+
+=== Node 4 ===
+..........................................................................................................
+Len=39   @[ 15,244]  d_th=11.25 gap=0.078603 gain= 0.33959 (17 )==>  20   1  /   0   4 
+
+=== Node 5 ===
+..........................................................................................................
+Len=193  @[  3, 45]  d_th=39.14 gap=0.006079 gain= 0.20792 (43 )==>   6   1  /   2  48 
+
+=== Node 6 ===
+..........................................................................................................
+Len=145  @[  0,254]  d_th=44.72 gap=1.378556 gain= 0.67301 (1  )==>   2   0  /   0   3 
+
+=== Node 10 ===
+..........................................................................................................
+Len=203  @[  6,107]  d_th=19.03 gap=1.335834 gain= 0.41012 (5  )==>   0   1  /   6   0 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     6.76 sec
+  Time Rand Project =    76.21 sec
+  Time Score Matrix =    11.58 sec
+  Time Compute Gain =    88.63 sec
+Running  Time for this Shapelet=   193.05 sec <<
+
+
+Total Running  Time =   193.05 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'manhattan', 0, 1, './output/Ham/Ham_manhattan_normed_NOCID_REP03_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP03_acc.txt']
+0
+num_class=2, num_obj=105  distance=manhattan CID=false normalize=true ./output/Ham/Ham_manhattan_normed_NOCID_REP03_tree.txt  ./output/Ham/Ham_manhattan_normed_NOCID_REP03_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 60.952   Correct:64 , Wrong: 41
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  29   19 
+;   p  2 |  22   35 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Ham/Ham_manhattan_normed_NOCID_REP04_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP04_time.txt']
+
+rand seed=1501876384
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Ham/Ham_manhattan_normed_NOCID_REP04_tree.txt  time_file=./output/Ham/Ham_manhattan_normed_NOCID_REP04_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=155  @[  9, 47]  d_th=59.14 gap=0.035803 gain= 0.12271 (55 )==>  28  54  /  24   3 
+
+=== Node 2 ===
+..........................................................................................................
+Len=43   @[ 23,352]  d_th= 8.41 gap=0.035467 gain= 0.17025 (48 )==>  15   2  /  13  52 
+
+=== Node 3 ===
+..........................................................................................................
+Len=121  @[  6,128]  d_th=27.70 gap=0.035065 gain= 0.22420 (17 )==>   2   3  /  22   0 
+
+=== Node 4 ===
+..........................................................................................................
+Len=171  @[  7, 93]  d_th=66.65 gap=0.368665 gain= 0.36221 (13 )==>  15   0  /   0   2 
+
+=== Node 5 ===
+..........................................................................................................
+Len=43   @[  7,313]  d_th= 6.29 gap=0.054014 gain= 0.10773 (57 )==>   4   0  /   9  52 
+
+=== Node 6 ===
+..........................................................................................................
+Len=65   @[  0,351]  d_th=20.36 gap=0.827075 gain= 0.67301 (1  )==>   2   0  /   0   3 
+
+=== Node 11 ===
+..........................................................................................................
+Len=45   @[  6,317]  d_th= 4.66 gap=0.011079 gain= 0.14068 (53 )==>   4   0  /   5  52 
+
+num_class=2, num_obj=61, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.89 sec
+  Time Rand Project =    89.01 sec
+  Time Score Matrix =    13.76 sec
+  Time Compute Gain =   103.19 sec
+Running  Time for this Shapelet=   225.46 sec <<
+
+
+Total Running  Time =   225.46 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'manhattan', 0, 1, './output/Ham/Ham_manhattan_normed_NOCID_REP04_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP04_acc.txt']
+0
+num_class=2, num_obj=105  distance=manhattan CID=false normalize=true ./output/Ham/Ham_manhattan_normed_NOCID_REP04_tree.txt  ./output/Ham/Ham_manhattan_normed_NOCID_REP04_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 65.714   Correct:69 , Wrong: 36
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  30   15 
+;   p  2 |  21   39 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Ham/Ham_manhattan_normed_NOCID_REP05_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP05_time.txt']
+
+rand seed=1501876615
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Ham/Ham_manhattan_normed_NOCID_REP05_tree.txt  time_file=./output/Ham/Ham_manhattan_normed_NOCID_REP05_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=47   @[  1,353]  d_th=12.39 gap=0.008101 gain= 0.12551 (21 )==>  44  21  /   8  36 
+
+=== Node 2 ===
+..........................................................................................................
+Len=13   @[  0, 22]  d_th= 2.19 gap=0.000587 gain= 0.15864 (11 )==>  34   4  /  10  17 
+
+=== Node 3 ===
+..........................................................................................................
+Len=171  @[  8, 40]  d_th=76.90 gap=0.069063 gain= 0.29606 (32 )==>   2  36  /   6   0 
+
+=== Node 4 ===
+..........................................................................................................
+Len=17   @[  0, 89]  d_th= 1.87 gap=0.011774 gain= 0.17379 (20 )==>  29   0  /   5   4 
+
+=== Node 5 ===
+..........................................................................................................
+Len=37   @[  3,135]  d_th= 9.75 gap=0.036376 gain= 0.34894 (1  )==>  10   4  /   0  13 
+
+=== Node 9 ===
+..........................................................................................................
+Len=143  @[  0,270]  d_th=47.55 gap=0.250635 gain= 0.68696 (1  )==>   5   0  /   0   4 
+
+=== Node 10 ===
+..........................................................................................................
+Len=43   @[ 10,180]  d_th= 8.68 gap=0.043073 gain= 0.59827 (6  )==>   0   4  /  10   0 
+
+num_class=2, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     6.59 sec
+  Time Rand Project =    73.04 sec
+  Time Score Matrix =    11.00 sec
+  Time Compute Gain =    86.64 sec
+Running  Time for this Shapelet=   186.57 sec <<
+
+
+Total Running  Time =   186.57 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'manhattan', 0, 1, './output/Ham/Ham_manhattan_normed_NOCID_REP05_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP05_acc.txt']
+0
+num_class=2, num_obj=105  distance=manhattan CID=false normalize=true ./output/Ham/Ham_manhattan_normed_NOCID_REP05_tree.txt  ./output/Ham/Ham_manhattan_normed_NOCID_REP05_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 57.143   Correct:60 , Wrong: 45
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  27   21 
+;   p  2 |  24   33 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Ham/Ham_manhattan_normed_NOCID_REP06_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP06_time.txt']
+
+rand seed=1501876807
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Ham/Ham_manhattan_normed_NOCID_REP06_tree.txt  time_file=./output/Ham/Ham_manhattan_normed_NOCID_REP06_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=71   @[  9,134]  d_th=18.72 gap=0.008400 gain= 0.12263 (77 )==>  36  57  /  16   0 
+
+=== Node 2 ===
+..........................................................................................................
+Len=215  @[ 18, 23]  d_th=59.39 gap=0.003549 gain= 0.16496 (65 )==>  14   0  /  22  57 
+
+=== Node 5 ===
+..........................................................................................................
+Len=153  @[ 73, 81]  d_th=38.78 gap=0.004461 gain= 0.12950 (29 )==>   0  25  /  22  32 
+
+=== Node 11 ===
+..........................................................................................................
+Len=37   @[  3,374]  d_th= 6.03 gap=0.007267 gain= 0.21889 (2  )==>  19   7  /   3  25 
+
+num_class=2, num_obj=54, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.34 sec
+  Time Rand Project =    84.60 sec
+  Time Score Matrix =    13.14 sec
+  Time Compute Gain =    94.72 sec
+Running  Time for this Shapelet=   210.76 sec <<
+
+
+Total Running  Time =   210.76 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'manhattan', 0, 1, './output/Ham/Ham_manhattan_normed_NOCID_REP06_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP06_acc.txt']
+0
+num_class=2, num_obj=105  distance=manhattan CID=false normalize=true ./output/Ham/Ham_manhattan_normed_NOCID_REP06_tree.txt  ./output/Ham/Ham_manhattan_normed_NOCID_REP06_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 58.095   Correct:61 , Wrong: 44
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  34   27 
+;   p  2 |  17   27 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Ham/Ham_manhattan_normed_NOCID_REP07_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP07_time.txt']
+
+rand seed=1501877023
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Ham/Ham_manhattan_normed_NOCID_REP07_tree.txt  time_file=./output/Ham/Ham_manhattan_normed_NOCID_REP07_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=193  @[ 52, 14]  d_th=79.94 gap=0.001901 gain= 0.14290 (35 )==>  21  51  /  31   6 
+
+=== Node 2 ===
+..........................................................................................................
+Len=43   @[ 19,352]  d_th= 8.41 gap=0.035467 gain= 0.17623 (44 )==>  12   2  /   9  49 
+
+=== Node 3 ===
+..........................................................................................................
+Len=79   @[ 31,236]  d_th=18.39 gap=0.014674 gain= 0.23932 (29 )==>   0   4  /  31   2 
+
+=== Node 4 ===
+..........................................................................................................
+Len=75   @[  1,186]  d_th=20.62 gap=0.456092 gain= 0.41012 (10 )==>  12   0  /   0   2 
+
+=== Node 5 ===
+..........................................................................................................
+Len=209  @[  3, 60]  d_th=53.65 gap=0.018012 gain= 0.20497 (20 )==>   9  10  /   0  39 
+
+=== Node 10 ===
+..........................................................................................................
+Len=25   @[ 12, 26]  d_th= 4.10 gap=0.011651 gain= 0.41726 (3  )==>   0   8  /   9   2 
+
+num_class=2, num_obj=19, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     6.72 sec
+  Time Rand Project =    74.88 sec
+  Time Score Matrix =    11.47 sec
+  Time Compute Gain =    87.23 sec
+Running  Time for this Shapelet=   189.98 sec <<
+
+
+Total Running  Time =   189.98 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'manhattan', 0, 1, './output/Ham/Ham_manhattan_normed_NOCID_REP07_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP07_acc.txt']
+0
+num_class=2, num_obj=105  distance=manhattan CID=false normalize=true ./output/Ham/Ham_manhattan_normed_NOCID_REP07_tree.txt  ./output/Ham/Ham_manhattan_normed_NOCID_REP07_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 75.238   Correct:79 , Wrong: 26
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  38   13 
+;   p  2 |  13   41 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Ham/Ham_manhattan_normed_NOCID_REP08_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP08_time.txt']
+
+rand seed=1501877218
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Ham/Ham_manhattan_normed_NOCID_REP08_tree.txt  time_file=./output/Ham/Ham_manhattan_normed_NOCID_REP08_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=93   @[ 53,287]  d_th=23.21 gap=0.004468 gain= 0.12351 (55 )==>   2  25  /  50  32 
+
+=== Node 3 ===
+..........................................................................................................
+Len=115  @[ 65, 89]  d_th=33.24 gap=0.003609 gain= 0.17340 (10 )==>  17  29  /  33   3 
+
+=== Node 6 ===
+..........................................................................................................
+Len=209  @[  8, 42]  d_th=56.66 gap=0.022759 gain= 0.31803 (4  )==>  17   8  /   0  21 
+
+=== Node 12 ===
+..........................................................................................................
+Len=153  @[ 17, 26]  d_th=36.18 gap=0.060867 gain= 0.37113 (13 )==>   0   6  /  17   2 
+
+num_class=2, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     5.78 sec
+  Time Rand Project =    65.07 sec
+  Time Score Matrix =    10.12 sec
+  Time Compute Gain =    74.25 sec
+Running  Time for this Shapelet=   163.80 sec <<
+
+
+Total Running  Time =   163.80 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'manhattan', 0, 1, './output/Ham/Ham_manhattan_normed_NOCID_REP08_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP08_acc.txt']
+0
+num_class=2, num_obj=105  distance=manhattan CID=false normalize=true ./output/Ham/Ham_manhattan_normed_NOCID_REP08_tree.txt  ./output/Ham/Ham_manhattan_normed_NOCID_REP08_acc.txt
+
+==> Tree Size = 26
+
+; accuracy= 66.667   Correct:70 , Wrong: 35
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  36   20 
+;   p  2 |  15   34 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Ham/Ham_manhattan_normed_NOCID_REP09_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP09_time.txt']
+
+rand seed=1501877386
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Ham/Ham_manhattan_normed_NOCID_REP09_tree.txt  time_file=./output/Ham/Ham_manhattan_normed_NOCID_REP09_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=193  @[ 52, 10]  d_th=80.63 gap=0.045394 gain= 0.15960 (53 )==>  26  55  /  26   2 
+
+=== Node 2 ===
+..........................................................................................................
+Len=51   @[ 18,124]  d_th=10.87 gap=0.013615 gain= 0.18905 (47 )==>  15   2  /  11  53 
+
+=== Node 4 ===
+..........................................................................................................
+Len=93   @[ 15,224]  d_th=17.95 gap=0.158218 gain= 0.36221 (13 )==>   0   2  /  15   0 
+
+=== Node 5 ===
+..........................................................................................................
+Len=165  @[  5, 55]  d_th=31.60 gap=0.102536 gain= 0.18660 (48 )==>   7   1  /   4  52 
+
+=== Node 10 ===
+..........................................................................................................
+Len=213  @[  7,161]  d_th=21.12 gap=1.446781 gain= 0.37677 (6  )==>   0   1  /   7   0 
+
+num_class=2, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     6.05 sec
+  Time Rand Project =    68.70 sec
+  Time Score Matrix =    10.63 sec
+  Time Compute Gain =    79.15 sec
+Running  Time for this Shapelet=   173.45 sec <<
+
+
+Total Running  Time =   173.45 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'manhattan', 0, 1, './output/Ham/Ham_manhattan_normed_NOCID_REP09_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP09_acc.txt']
+0
+num_class=2, num_obj=105  distance=manhattan CID=false normalize=true ./output/Ham/Ham_manhattan_normed_NOCID_REP09_tree.txt  ./output/Ham/Ham_manhattan_normed_NOCID_REP09_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 61.905   Correct:65 , Wrong: 40
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  35   24 
+;   p  2 |  16   30 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Ham/Ham_manhattan_normed_NOCID_REP10_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP10_time.txt']
+
+rand seed=1501877564
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Ham/Ham_manhattan_normed_NOCID_REP10_tree.txt  time_file=./output/Ham/Ham_manhattan_normed_NOCID_REP10_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=153  @[  8, 55]  d_th=68.73 gap=0.018142 gain= 0.12263 (77 )==>  36  57  /  16   0 
+
+=== Node 2 ===
+..........................................................................................................
+Len=41   @[ 17,354]  d_th= 8.13 gap=0.006668 gain= 0.17642 (37 )==>  23   5  /  13  52 
+
+=== Node 4 ===
+..........................................................................................................
+Len=47   @[ 11,231]  d_th=19.52 gap=0.004122 gain= 0.32076 (20 )==>  23   1  /   0   4 
+
+=== Node 5 ===
+..........................................................................................................
+Len=51   @[  9,146]  d_th= 6.58 gap=0.033403 gain= 0.20363 (51 )==>   7   0  /   6  52 
+
+=== Node 11 ===
+..........................................................................................................
+Len=189  @[  6,  0]  d_th=75.29 gap=0.000133 gain= 0.12928 (38 )==>   1  47  /   5   5 
+
+num_class=2, num_obj=58, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.67 sec
+  Time Rand Project =    87.86 sec
+  Time Score Matrix =    13.57 sec
+  Time Compute Gain =    99.59 sec
+Running  Time for this Shapelet=   220.10 sec <<
+
+
+Total Running  Time =   220.10 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'manhattan', 0, 1, './output/Ham/Ham_manhattan_normed_NOCID_REP10_tree.txt', './output/Ham/Ham_manhattan_normed_NOCID_REP10_acc.txt']
+0
+num_class=2, num_obj=105  distance=manhattan CID=false normalize=true ./output/Ham/Ham_manhattan_normed_NOCID_REP10_tree.txt  ./output/Ham/Ham_manhattan_normed_NOCID_REP10_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 68.571   Correct:72 , Wrong: 33
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  41   23 
+;   p  2 |  10   31 
+
+
+================ Replication:  10 Finished ================

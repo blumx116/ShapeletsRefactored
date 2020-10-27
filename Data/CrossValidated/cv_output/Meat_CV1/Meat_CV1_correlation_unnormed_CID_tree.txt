@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1503462267, rand()=1527918462, rand()=1230601666
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV1 3 30 224 1 2 10 correlation 1 0 10 ./cv_output/Meat_CV1/Meat_CV1_correlation_unnormed_CID_tree.txt ./cv_output/Meat_CV1/Meat_CV1_correlation_unnormed_CID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      1   80   55   0.0069 ==>  10   0   0  /   0  10  10 
+Leaf  2     1    
+NonL  3    --      0  193   25   0.0026 ==>   0  10   0  /   0   0  10 
+Leaf  6     2    
+Leaf  7     3    
+
+;Shapelet id   <data>
+Shapelet   1  -0.250390 -0.247380 -0.245610 -0.243640 -0.243530 -0.243990 -0.242990 -0.244930 -0.253140 -0.264470 -0.276040 -0.286030 -0.294070 -0.300230 -0.303520 -0.305310 -0.305520 -0.305190 -0.303830 -0.301030 -0.298060 -0.294910 -0.290740 -0.284480 -0.276820 -0.269310 -0.263700 -0.257980 -0.249330 -0.238600 -0.230550 -0.222230 -0.212670 -0.203420 -0.193400 -0.183920 -0.174690 -0.167050 -0.159660 -0.152740 -0.147270 -0.143210 -0.140400 -0.140050 -0.143240 -0.147770 -0.153760 -0.160060 -0.165870 -0.171070 -0.177560 -0.183760 -0.188420 -0.193460 -0.195990 
+Shapelet   3  -0.203860 -0.179200 -0.155500 -0.127900 -0.095762 -0.062407 -0.029730  0.000677  0.028444  0.044285  0.052698  0.053552  0.039787  0.028530  0.008688 -0.018630 -0.036489 -0.055247 -0.069401 -0.078152 -0.085201 -0.091841 -0.118540 -0.132120 -0.141890 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV1 3 30 224 1 2 10 correlation 1 0 10 ./cv_output/Meat_CV1/Meat_CV1_correlation_unnormed_CID_tree.txt ./cv_output/Meat_CV1/Meat_CV1_correlation_unnormed_CID_time.txt
+; time =>   27.640   0.609   2.210   0.210  24.367 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV2 3 30 correlation 1 0 ./cv_output/Meat_CV1/Meat_CV1_correlation_unnormed_CID_tree.txt ./cv_output/Meat_CV1/Meat_CV1_correlation_unnormed_CID_acc.txt
+; accuracy= 100.000   Correct:30 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  10    0    0 
+;   p  2 |   0   10    0 
+;   p  3 |   0    0   10 
+

@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1502274460, rand()=618689888, rand()=1097692523
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2 5 251 70 1 2 10 manhattan 1 0 10 ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_time.txt 
+
+;Local Class:   0  1  2  3  4 
+;Real  Class:   1  2  3  4  5 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0  124    9   5.1447 ==> 146   7   1   4   1  /   0  82   4   6   0 
+Leaf  2     1    
+NonL  3    --     82    0   55  10.5082 ==>   0   0   4   0   0  /   0  82   0   6   0 
+Leaf  6     3    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1   0.558930  0.583810  0.645900  0.708570  0.923390  1.425200  1.731900  1.841500  2.170000 
+Shapelet   3  -0.517250 -1.487600 -1.765800 -1.844700 -1.604200 -1.269800 -0.753340 -0.515910 -0.368730 -0.045290  0.063995  0.052047  0.079417  0.057524  0.079019  0.047206  0.039526  0.095147  0.092524  0.095415  0.046400  0.027231  0.026277  0.049964  0.024194  0.031583  0.000811 -0.008524 -0.021363  0.000703 -0.048341 -0.112980 -0.101800 -0.125820 -0.097933 -0.157800 -0.138310 -0.107130 -0.135390 -0.110420 -0.065677 -0.049655 -0.000720  0.015757  0.076596  0.128490  0.149060  0.158030  0.168160  0.210300  0.221730  0.215330  0.228620  0.254770  0.235070 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2 5 251 70 1 2 10 manhattan 1 0 10 ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_time.txt
+; time =>    9.254   0.555   4.291   0.464   3.543 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV1 5 249 manhattan 1 0 ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_acc.txt
+; accuracy= 90.763   Correct:226 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 | 144    8    1    4    1 
+;   p  2 |   2   80    2    5    0 
+;   p  3 |   0    0    2    0    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+

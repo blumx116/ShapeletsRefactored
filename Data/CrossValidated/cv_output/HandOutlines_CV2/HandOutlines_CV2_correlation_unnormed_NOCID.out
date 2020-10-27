@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/HandOutlines_TRAIN_CV2', 2, 186, 1355, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/HandOutlines_CV2/HandOutlines_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/HandOutlines_CV2/HandOutlines_CV2_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503499128
+num_class=2, num_obj=186, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/HandOutlines_CV2/HandOutlines_CV2_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/HandOutlines_CV2/HandOutlines_CV2_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=233  @[  7,372]  d_th= 0.08 gap=0.000069 gain= 0.37994 (74 )==>  54   2  /  13 117 
+
+num_class=2, num_obj=186, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    41.26 sec
+  Time Rand Project =    45.71 sec
+  Time Score Matrix =     5.47 sec
+  Time Compute Gain =  8676.12 sec
+Running  Time for this Shapelet=  8773.61 sec <<
+
+
+Total Running  Time =  8773.61 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/HandOutlines_TRAIN_CV1', 2, 184, 'correlation', 0, 0, './cv_output/HandOutlines_CV2/HandOutlines_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/HandOutlines_CV2/HandOutlines_CV2_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 85.870   Correct:158 , Wrong: 26
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  43    3 
+;   p  1 |  23  115 
+
+num_class=2, num_obj=184  distance=correlation CID=false normalize=false ./cv_output/HandOutlines_CV2/HandOutlines_CV2_correlation_unnormed_NOCID_tree.txt  ./cv_output/HandOutlines_CV2/HandOutlines_CV2_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 4
+

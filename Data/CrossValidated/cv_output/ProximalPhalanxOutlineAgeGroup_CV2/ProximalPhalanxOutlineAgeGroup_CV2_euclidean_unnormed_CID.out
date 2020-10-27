@@ -1,0 +1,68 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV2', 3, 201, 40, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502274252
+num_class=3, num_obj=201, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................
+Len=9    @[101, 49]  d_th= 0.42 gap=0.092794 gain= 0.60352 (1  )==>   0   5  95  /  36  65   0 
+
+=== Node 3 ===
+..................
+Len=33   @[ 27, 39]  d_th= 0.67 gap=0.000474 gain= 0.18333 (41 )==>  24   6   0  /  12  59   0 
+
+=== Node 6 ===
+..................
+Len=9    @[  0, 11]  d_th= 0.23 gap=0.000351 gain= 0.22314 (6  )==>   6   6   0  /  18   0   0 
+
+=== Node 7 ===
+..................
+Len=33   @[ 45, 32]  d_th= 0.72 gap=0.000911 gain= 0.13739 (1  )==>   0  36   0  /  12  23   0 
+
+=== Node 12 ===
+..................
+Len=7    @[  0, 49]  d_th= 0.13 gap=0.002611 gain= 0.45391 (2  )==>   5   0   0  /   1   6   0 
+
+=== Node 15 ===
+..................
+Len=7    @[  0, 16]  d_th= 0.12 gap=0.000529 gain= 0.18589 (15 )==>   8   2   0  /   4  21   0 
+
+=== Node 25 ===
+..................
+Len=39   @[  0, 32]  d_th= 0.20 gap=0.031674 gain= 0.41012 (5  )==>   1   0   0  /   0   6   0 
+
+=== Node 30 ===
+..................
+Len=7    @[  0, 65]  d_th= 0.15 gap=0.004211 gain= 0.50040 (6  )==>   8   0   0  /   0   2   0 
+
+=== Node 31 ===
+..................
+Len=5    @[  0,  7]  d_th= 0.08 gap=0.001972 gain= 0.27695 (19 )==>   3   0   0  /   1  21   0 
+
+num_class=3, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.17 sec
+  Time Rand Project =     0.78 sec
+  Time Score Matrix =     0.10 sec
+  Time Compute Gain =     1.67 sec
+Running  Time for this Shapelet=     2.80 sec <<
+
+
+Total Running  Time =     2.80 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV1', 3, 199, 'euclidean', 1, 0, './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_CID_acc.txt']
+; accuracy= 75.879   Correct:151 , Wrong: 48
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  24   12    0 
+;   p  2 |  12   57   24 
+;   p  3 |   0    0   70 
+
+num_class=3, num_obj=199  distance=euclidean CID=true normalize=false ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_CID_tree.txt  ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 64
+

@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV1', 2, 54, 216, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/Ham_CV1/Ham_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Ham_CV1/Ham_CV1_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502279882
+num_class=2, num_obj=54, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Ham_CV1/Ham_CV1_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/Ham_CV1/Ham_CV1_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=177  @[ 32, 37]  d_th= 5.32 gap=0.003056 gain= 0.23511 (10 )==>   2  20  /  24   8 
+
+=== Node 3 ===
+..........................................................................................................
+Len=13   @[  0, 69]  d_th= 0.79 gap=0.007031 gain= 0.28481 (14 )==>  22   1  /   2   7 
+
+=== Node 7 ===
+..........................................................................................................
+Len=161  @[  0, 95]  d_th= 4.01 gap=0.038221 gain= 0.52971 (5  )==>   2   0  /   0   7 
+
+num_class=2, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.86 sec
+  Time Rand Project =    16.96 sec
+  Time Score Matrix =     1.21 sec
+  Time Compute Gain =    21.67 sec
+Running  Time for this Shapelet=    42.94 sec <<
+
+
+Total Running  Time =    42.94 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV2', 2, 55, 'euclidean', 0, 1, './cv_output/Ham_CV1/Ham_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Ham_CV1/Ham_CV1_euclidean_normed_NOCID_acc.txt']
+; accuracy= 47.273   Correct:26 , Wrong: 29
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  11   14 
+;   p  2 |  15   15 
+
+num_class=2, num_obj=55  distance=euclidean CID=false normalize=true ./cv_output/Ham_CV1/Ham_CV1_euclidean_normed_NOCID_tree.txt  ./cv_output/Ham_CV1/Ham_CV1_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 16
+

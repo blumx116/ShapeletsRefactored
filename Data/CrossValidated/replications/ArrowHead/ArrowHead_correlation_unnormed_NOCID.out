@@ -1,0 +1,478 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP01_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP01_time.txt']
+
+rand seed=1501844785
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP01_tree.txt  time_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP01_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=21   @[  0, 79]  d_th= 0.01 gap=0.000031 gain= 0.51806 (8  )==>  12   0   2  /   0  12  10 
+
+=== Node 2 ===
+.............................................................
+Len=33   @[  0, 39]  d_th= 0.05 gap=0.003683 gain= 0.41012 (10 )==>  12   0   0  /   0   0   2 
+
+=== Node 3 ===
+.............................................................
+Len=85   @[  2,125]  d_th= 0.01 gap=0.000038 gain= 0.44325 (2  )==>   0  10   0  /   0   2  10 
+
+=== Node 7 ===
+.............................................................
+Len=5    @[  0, 50]  d_th= 0.08 gap=0.000441 gain= 0.45056 (8  )==>   0   0  10  /   0   2   0 
+
+num_class=3, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.38 sec
+  Time Rand Project =     1.86 sec
+  Time Score Matrix =     0.21 sec
+  Time Compute Gain =     5.51 sec
+Running  Time for this Shapelet=     8.13 sec <<
+
+
+Total Running  Time =     8.13 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP01_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP01_acc.txt']
+0
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP01_tree.txt  ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP01_acc.txt
+
+==> Tree Size = 16
+
+; accuracy= 65.714   Correct:115 , Wrong: 60
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  47    5    3 
+;   p  1 |   9   22    4 
+;   p  2 |  13   26   46 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP02_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP02_time.txt']
+
+rand seed=1501844794
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP02_tree.txt  time_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP02_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=89   @[ 27, 79]  d_th= 0.23 gap=0.000359 gain= 0.51989 (14 )==>   1  12  12  /  11   0   0 
+
+=== Node 2 ===
+.............................................................
+Len=83   @[  2,117]  d_th= 0.01 gap=0.000027 gain= 0.46966 (3  )==>   1  10   0  /   0   2  12 
+
+=== Node 5 ===
+.............................................................
+Len=5    @[  0, 50]  d_th= 0.08 gap=0.000441 gain= 0.41012 (10 )==>   0   0  12  /   0   2   0 
+
+num_class=3, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.33 sec
+  Time Rand Project =     1.60 sec
+  Time Score Matrix =     0.18 sec
+  Time Compute Gain =     4.84 sec
+Running  Time for this Shapelet=     7.10 sec <<
+
+
+Total Running  Time =     7.10 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP02_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP02_acc.txt']
+0
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP02_tree.txt  ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP02_acc.txt
+
+==> Tree Size = 12
+
+; accuracy= 54.857   Correct:96 , Wrong: 79
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  29    4    1 
+;   p  1 |  15   25   10 
+;   p  2 |  25   24   42 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_time.txt']
+
+rand seed=1501844804
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_tree.txt  time_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=73   @[  1, 47]  d_th= 0.01 gap=0.000169 gain= 0.49175 (6  )==>   0  12   9  /  12   0   3 
+
+=== Node 2 ===
+.............................................................
+Len=35   @[  0, 51]  d_th= 0.01 gap=0.000009 gain= 0.51503 (5  )==>   0  12   1  /   0   0   8 
+
+=== Node 3 ===
+.............................................................
+Len=89   @[  1, 14]  d_th= 0.12 gap=0.006059 gain= 0.50040 (9  )==>  12   0   0  /   0   0   3 
+
+num_class=3, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.34 sec
+  Time Rand Project =     1.76 sec
+  Time Score Matrix =     0.20 sec
+  Time Compute Gain =     4.81 sec
+Running  Time for this Shapelet=     7.27 sec <<
+
+
+Total Running  Time =     7.27 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_acc.txt']
+0
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_tree.txt  ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 65.714   Correct:115 , Wrong: 60
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  47    8    3 
+;   p  1 |   7   26    8 
+;   p  2 |  15   19   42 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP04_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP04_time.txt']
+
+rand seed=1501844811
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP04_tree.txt  time_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP04_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=27   @[ 30,192]  d_th= 0.04 gap=0.000172 gain= 0.51989 (14 )==>  11   0   0  /   1  12  12 
+
+=== Node 3 ===
+.............................................................
+Len=63   @[ 23, 72]  d_th= 0.03 gap=0.000046 gain= 0.55467 (1  )==>   0  12   1  /   1   0  11 
+
+num_class=3, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.26 sec
+  Time Rand Project =     1.28 sec
+  Time Score Matrix =     0.14 sec
+  Time Compute Gain =     3.77 sec
+Running  Time for this Shapelet=     5.57 sec <<
+
+
+Total Running  Time =     5.57 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP04_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP04_acc.txt']
+0
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP04_tree.txt  ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP04_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 64.000   Correct:112 , Wrong: 63
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  42    9    7 
+;   p  1 |  11   35   11 
+;   p  2 |  16    9   35 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP05_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP05_time.txt']
+
+rand seed=1501844817
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP05_tree.txt  time_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP05_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=75   @[ 12,145]  d_th= 0.05 gap=0.000310 gain= 0.63651 (12 )==>  12   0   0  /   0  12  12 
+
+=== Node 3 ===
+.............................................................
+Len=87   @[  2,124]  d_th= 0.01 gap=0.000008 gain= 0.45391 (4  )==>   0  10   0  /   0   2  12 
+
+=== Node 7 ===
+.............................................................
+Len=5    @[  0, 50]  d_th= 0.08 gap=0.000441 gain= 0.41012 (10 )==>   0   0  12  /   0   2   0 
+
+num_class=3, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.35 sec
+  Time Rand Project =     1.79 sec
+  Time Score Matrix =     0.20 sec
+  Time Compute Gain =     5.08 sec
+Running  Time for this Shapelet=     7.58 sec <<
+
+
+Total Running  Time =     7.58 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP05_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP05_acc.txt']
+0
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP05_tree.txt  ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP05_acc.txt
+
+==> Tree Size = 16
+
+; accuracy= 61.143   Correct:107 , Wrong: 68
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  40    3    4 
+;   p  1 |   9   23    5 
+;   p  2 |  20   27   44 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP06_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP06_time.txt']
+
+rand seed=1501844825
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP06_tree.txt  time_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP06_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=41   @[  2,188]  d_th= 0.01 gap=0.000307 gain= 0.55844 (10 )==>   0  12  11  /  12   0   1 
+
+=== Node 2 ===
+.............................................................
+Len=51   @[ 19, 82]  d_th= 0.02 gap=0.000168 gain= 0.54255 (1  )==>   0  11   0  /   0   1  11 
+
+num_class=3, num_obj=23, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.29 sec
+  Time Rand Project =     1.49 sec
+  Time Score Matrix =     0.17 sec
+  Time Compute Gain =     4.17 sec
+Running  Time for this Shapelet=     6.25 sec <<
+
+
+Total Running  Time =     6.25 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP06_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP06_acc.txt']
+0
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP06_tree.txt  ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP06_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 61.143   Correct:107 , Wrong: 68
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  30   10    3 
+;   p  1 |  11   28    1 
+;   p  2 |  28   15   49 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP07_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP07_time.txt']
+
+rand seed=1501844833
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP07_tree.txt  time_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP07_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=31   @[  3, 56]  d_th= 0.02 gap=0.000160 gain= 0.55844 (10 )==>  11  12   0  /   1   0  12 
+
+=== Node 2 ===
+.............................................................
+Len=77   @[  1, 41]  d_th= 0.01 gap=0.000177 gain= 0.69220 (1  )==>   0  12   0  /  11   0   0 
+
+num_class=3, num_obj=23, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.26 sec
+  Time Rand Project =     1.28 sec
+  Time Score Matrix =     0.15 sec
+  Time Compute Gain =     3.69 sec
+Running  Time for this Shapelet=     5.49 sec <<
+
+
+Total Running  Time =     5.49 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP07_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP07_acc.txt']
+0
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP07_tree.txt  ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP07_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 60.000   Correct:105 , Wrong: 70
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  45   16    7 
+;   p  1 |  13   26   12 
+;   p  2 |  11   11   34 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_time.txt']
+
+rand seed=1501844839
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_tree.txt  time_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=89   @[ 27, 79]  d_th= 0.23 gap=0.000359 gain= 0.51989 (14 )==>   1  12  12  /  11   0   0 
+
+=== Node 2 ===
+.............................................................
+Len=29   @[  0, 88]  d_th= 0.00 gap=0.000008 gain= 0.46966 (3  )==>   0  12   2  /   1   0  10 
+
+=== Node 4 ===
+.............................................................
+Len=43   @[ 10,131]  d_th= 0.01 gap=0.000699 gain= 0.41012 (10 )==>   0   0   2  /   0  12   0 
+
+num_class=3, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.34 sec
+  Time Rand Project =     1.70 sec
+  Time Score Matrix =     0.19 sec
+  Time Compute Gain =     4.98 sec
+Running  Time for this Shapelet=     7.36 sec <<
+
+
+Total Running  Time =     7.36 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_acc.txt']
+0
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_tree.txt  ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_acc.txt
+
+==> Tree Size = 10
+
+; accuracy= 54.286   Correct:95 , Wrong: 80
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  29    4    1 
+;   p  1 |  16   24   10 
+;   p  2 |  24   25   42 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1501844847
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_tree.txt  time_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=31   @[  3, 56]  d_th= 0.02 gap=0.000160 gain= 0.55844 (10 )==>  11  12   0  /   1   0  12 
+
+=== Node 2 ===
+.............................................................
+Len=77   @[  1, 41]  d_th= 0.01 gap=0.000177 gain= 0.69220 (1  )==>   0  12   0  /  11   0   0 
+
+num_class=3, num_obj=23, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.28 sec
+  Time Rand Project =     1.44 sec
+  Time Score Matrix =     0.17 sec
+  Time Compute Gain =     4.14 sec
+Running  Time for this Shapelet=     6.17 sec <<
+
+
+Total Running  Time =     6.17 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_acc.txt']
+0
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_tree.txt  ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 60.000   Correct:105 , Wrong: 70
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  45   16    7 
+;   p  1 |  13   26   12 
+;   p  2 |  11   11   34 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP10_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP10_time.txt']
+
+rand seed=1501844853
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP10_tree.txt  time_file=./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP10_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=73   @[  1, 47]  d_th= 0.01 gap=0.000169 gain= 0.49175 (6  )==>   0  12   9  /  12   0   3 
+
+=== Node 2 ===
+.............................................................
+Len=35   @[  0, 51]  d_th= 0.01 gap=0.000009 gain= 0.51503 (5  )==>   0  12   1  /   0   0   8 
+
+=== Node 3 ===
+.............................................................
+Len=97   @[  1,  5]  d_th= 0.09 gap=0.004737 gain= 0.50040 (9  )==>  12   0   0  /   0   0   3 
+
+num_class=3, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.33 sec
+  Time Rand Project =     1.66 sec
+  Time Score Matrix =     0.18 sec
+  Time Compute Gain =     4.56 sec
+Running  Time for this Shapelet=     6.87 sec <<
+
+
+Total Running  Time =     6.87 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP10_tree.txt', './output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP10_acc.txt']
+0
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP10_tree.txt  ./output/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP10_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 65.143   Correct:114 , Wrong: 61
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  46    9    3 
+;   p  1 |   7   26    8 
+;   p  2 |  16   18   42 
+
+
+================ Replication:  10 Finished ================

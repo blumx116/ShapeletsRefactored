@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2', 2, 34, 12, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502274202
+num_class=2, num_obj=34, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  1,  9]  d_th= 0.83 gap=0.000379 gain= 0.23231 (4  )==>  13   2  /   4  15 
+
+=== Node 2 ===
+....
+Len=11   @[ 10, 12]  d_th= 8.89 gap=0.057275 gain= 0.39267 (11 )==>  13   0  /   0   2 
+
+=== Node 3 ===
+....
+Len=5    @[  6,  9]  d_th= 1.44 gap=0.025908 gain= 0.31365 (7  )==>   0  13  /   4   2 
+
+=== Node 7 ===
+....
+Len=11   @[  0,  4]  d_th= 2.47 gap=0.099325 gain= 0.63651 (2  )==>   4   0  /   0   2 
+
+num_class=2, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.01 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.02 sec <<
+
+
+Total Running  Time =     0.02 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1', 2, 33, 'manhattan', 0, 1, './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_NOCID_acc.txt']
+; accuracy= 66.667   Correct:22 , Wrong: 11
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  12    6 
+;   p  2 |   5   10 
+
+num_class=2, num_obj=33  distance=manhattan CID=false normalize=true ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_NOCID_tree.txt  ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 16
+

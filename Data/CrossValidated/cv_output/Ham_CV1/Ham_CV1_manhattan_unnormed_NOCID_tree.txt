@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1502279979, rand()=902744895, rand()=2033274181
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV1 2 54 216 1 2 10 manhattan 0 0 10 ./cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 30 
+NonL  1    --     49  183   65  20.1604 ==>   0  17  /  26  11 
+Leaf  2     2    
+NonL  3    --      0  368   31  23.9651 ==>  18   0  /   8  11 
+Leaf  6     1    
+NonL  7    --      9  208   35  17.7585 ==>   3  11  /   5   0 
+NonL 14    --      1  381   19   2.3436 ==>   3   1  /   0  10 
+Leaf 15     1    
+Leaf 28     1    
+Leaf 29     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.696020 -0.708320 -0.687310 -0.664250 -0.659130 -0.676550 -0.709340 -0.721130 -0.717540 -0.675010 -0.577140 -0.464400 -0.423400 -0.464400 -0.607880 -0.691410 -0.643750 -0.592510 -0.582260 -0.505390 -0.249180  0.063410  0.432360  0.919180  1.482900  2.108000  2.712700  3.250800  3.794000  4.296100  4.449900  4.296100  3.327600  1.749300  0.452860 -0.192810 -0.326040 -0.326040 -0.326040 -0.361910 -0.443900 -0.520770 -0.525890 -0.490020 -0.361910 -0.151810  0.099281  0.130030  0.094156  0.001918 -0.085197 -0.146690 -0.192810 -0.233800 -0.269670 -0.310670 -0.372160 -0.464400 -0.592510 -0.729840 -0.836430 -0.868200 -0.866150 -0.830280 -0.721130 
+Shapelet   3  -1.685700 -1.775200 -1.855600 -1.925900 -1.984400 -2.025500 -2.047400 -2.053800 -2.053800 -2.050200 -2.034600 -1.990800 -1.904000 -1.776100 -1.644500 -1.543100 -1.460900 -1.368700 -1.234400 -1.037000 -0.781250 -0.452370  0.114030  0.625610  1.055000  1.329000  1.429500  1.493500  1.520900  1.530000  1.511700 
+Shapelet   7   2.052300  2.039600  1.942400  1.748000  1.574700  1.498600  1.481700  1.469000  1.422600  1.261900  1.008300  0.809700  0.691360  0.594140  0.492710  0.420850  0.403950  0.408180  0.416630  0.399720  0.332100  0.209530  0.040463 -0.137050 -0.251170 -0.331470 -0.331470 -0.276530 -0.175090 -0.141280 -0.162410 -0.208900 -0.251170 -0.284980 -0.335700 
+Shapelet  14  -0.560640 -0.547290 -0.537090 -0.528850 -0.515890 -0.488810 -0.440530 -0.377730 -0.311010 -0.220730 -0.059801  0.156080  0.438680  0.756610  1.015700  1.113800  1.113800  1.003900  0.736990 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV1 2 54 216 1 2 10 manhattan 0 0 10 ./cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_time.txt
+; time =>   37.731   2.505  20.654   1.512  11.437 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV2 2 55 manhattan 0 0 ./cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_acc.txt
+; accuracy= 50.909   Correct:28 , Wrong: 27
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  12   13 
+;   p  2 |  14   16 
+

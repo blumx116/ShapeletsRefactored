@@ -1,0 +1,38 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV1', 5, 249, 70, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_CID_tree.txt', './cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503460955
+num_class=5, num_obj=249, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=37   @[146,  8]  d_th= 0.04 gap=0.000155 gain= 0.58698 (65 )==>   0  85   0   7   0  / 146   3   5   2   1 
+
+num_class=5, num_obj=249, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.43 sec
+  Time Rand Project =     4.42 sec
+  Time Score Matrix =     0.47 sec
+  Time Compute Gain =     5.13 sec
+Running  Time for this Shapelet=    10.87 sec <<
+
+
+Total Running  Time =    10.87 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2', 5, 251, 'correlation', 1, 0, './cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_CID_tree.txt', './cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 88.845   Correct:223 , Wrong: 28
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 | 143    9    4    0    1 
+;   p  2 |   3   80    1   10    0 
+;   p  3 |   0    0    0    0    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=251  distance=correlation CID=true normalize=false ./cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 4
+

@@ -1,0 +1,67 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxTW_TRAIN_CV1', 6, 102, 40, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502274228
+num_class=6, num_obj=102, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [5,8]  [4,7]  [3,6]  [2,5]  [1,4]  [0,3]  
+
+=== Node 1 ===
+..................
+Len=31   @[  0, 41]  d_th= 3.54 gap=0.003563 gain= 0.68079 (16 )==>   1  33  20   5   0   0  /   0   0   0   0   7  36 
+
+=== Node 2 ===
+..................
+Len=33   @[ 36, 40]  d_th= 3.54 gap=0.001051 gain= 0.26068 (1  )==>   0   7  17   5   0   0  /   1  26   3   0   0   0 
+
+=== Node 3 ===
+..................
+Len=27   @[  0, 24]  d_th= 3.05 gap=0.030103 gain= 0.14187 (37 )==>   0   0   0   0   3   0  /   0   0   0   0   4  36 
+
+=== Node 4 ===
+..................
+Len=31   @[  1, 25]  d_th= 3.36 gap=0.017626 gain= 0.24227 (19 )==>   0   7  16   1   0   0  /   0   0   1   4   0   0 
+
+=== Node 5 ===
+..................
+Len=35   @[  0, 37]  d_th= 3.41 gap=0.011730 gain= 0.32508 (24 )==>   1  26   0   0   0   0  /   0   0   3   0   0   0 
+
+=== Node 8 ===
+..................
+Len=11   @[  0, 11]  d_th= 0.44 gap=0.002009 gain= 0.25138 (16 )==>   0   4   0   0   0   0  /   0   3  16   1   0   0 
+
+=== Node 9 ===
+..................
+Len=39   @[  0, 15]  d_th= 1.16 gap=0.186092 gain= 0.50040 (3  )==>   0   0   1   0   0   0  /   0   0   0   4   0   0 
+
+=== Node 17 ===
+..................
+Len=7    @[  0, 18]  d_th= 0.35 gap=0.004006 gain= 0.42271 (14 )==>   0   3   0   0   0   0  /   0   0  16   1   0   0 
+
+num_class=6, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.09 sec
+  Time Rand Project =     0.38 sec
+  Time Score Matrix =     0.05 sec
+  Time Compute Gain =     0.65 sec
+Running  Time for this Shapelet=     1.21 sec <<
+
+
+Total Running  Time =     1.21 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxTW_TRAIN_CV2', 6, 103, 'manhattan', 0, 1, './cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_NOCID_acc.txt']
+; accuracy= 68.932   Correct:71 , Wrong: 32
+
+
+;   == Confusion Matrix ==
+;   real |   3    4    5    6    7    8 
+;   -----+------------------------------------
+;   p  3 |   0    0    0    0    0    0 
+;   p  4 |   0   28    8    0    0    0 
+;   p  5 |   0    4    5    1    0    0 
+;   p  6 |   0    0    2    3    2    0 
+;   p  7 |   0    1    5    1    0    1 
+;   p  8 |   1    1    0    0    5   35 
+
+num_class=6, num_obj=103  distance=manhattan CID=false normalize=true ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_NOCID_tree.txt  ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 36
+

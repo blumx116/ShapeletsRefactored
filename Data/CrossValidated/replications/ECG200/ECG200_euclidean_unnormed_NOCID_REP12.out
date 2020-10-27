@@ -1,0 +1,51 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TRAIN', 2, 100, 48, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP12_tree.txt', './replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP12_time.txt']
+
+rand seed=1508196667
+num_class=2, num_obj=100, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP12_tree.txt  time_file=./replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP12_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+......................
+Len=33   @[  4,  4]  d_th= 2.67 gap=0.002832 gain= 0.25075 (8  )==>   0  46  /  31  23 
+
+=== Node 3 ===
+......................
+Len=15   @[ 12, 45]  d_th= 1.49 gap=0.007534 gain= 0.18528 (22 )==>  29   9  /   2  14 
+
+=== Node 6 ===
+......................
+Len=27   @[ 13, 64]  d_th= 1.62 gap=0.002601 gain= 0.23044 (20 )==>   2   7  /  27   2 
+
+=== Node 7 ===
+......................
+Len=11   @[ 11,  2]  d_th= 1.75 gap=0.015364 gain= 0.37677 (12 )==>   2   0  /   0  14 
+
+=== Node 12 ===
+......................
+Len=19   @[  0,  7]  d_th= 0.99 gap=0.024839 gain= 0.52971 (5  )==>   0   7  /   2   0 
+
+num_class=2, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.17 sec
+  Time Rand Project =     1.08 sec
+  Time Score Matrix =     0.12 sec
+  Time Compute Gain =     0.33 sec
+Running  Time for this Shapelet=     1.80 sec <<
+
+
+Total Running  Time =     1.80 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TEST', 2, 100, 'euclidean', 0, 0, './replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP12_tree.txt', './replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP12_acc.txt']
+; accuracy= 76.000   Correct:76 , Wrong: 24
+
+
+;   == Confusion Matrix ==
+;   real |   1   -1 
+;   -----+------------
+;   p  1 |  50   10 
+;   p -1 |  14   26 
+
+num_class=2, num_obj=100  distance=euclidean CID=false normalize=false ./replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP12_tree.txt  ./replications/ECG200/ECG200_euclidean_unnormed_NOCID_REP12_acc.txt
+
+==> Tree Size = 26
+

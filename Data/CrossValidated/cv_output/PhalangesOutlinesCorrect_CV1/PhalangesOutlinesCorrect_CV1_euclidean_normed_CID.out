@@ -1,0 +1,63 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/PhalangesOutlinesCorrect_TRAIN_CV1', 2, 900, 40, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_euclidean_normed_CID_tree.txt', './cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_euclidean_normed_CID_time.txt']
+
+rand seed=1502274295
+num_class=2, num_obj=900, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_euclidean_normed_CID_tree.txt  time_file=./cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=17   @[ 12, 24]  d_th= 0.73 gap=0.000409 gain= 0.08767 (612)==> 197 559  / 117  27 
+
+=== Node 2 ===
+..................
+Len=7    @[ 46, 35]  d_th= 2.65 gap=0.000000 gain= 0.05326 (324)==>  12 204  / 185 355 
+
+=== Node 3 ===
+..................
+Len=29   @[ 62, 31]  d_th= 1.73 gap=0.000561 gain= 0.07670 (12 )==>  43  23  /  74   4 
+
+=== Node 5 ===
+..................
+Len=37   @[192, 26]  d_th= 1.35 gap=0.001849 gain= 0.04648 (366)==>   0  64  / 139 291 
+
+=== Node 6 ===
+..................
+Len=5    @[  0, 14]  d_th= 0.07 gap=0.000672 gain= 0.10119 (48 )==>   1   8  /  42  15 
+
+=== Node 11 ===
+..................
+Len=37   @[ 61, 10]  d_th= 2.09 gap=0.000541 gain= 0.05307 (48 )==>  30 161  / 109 130 
+
+=== Node 12 ===
+..................
+Len=37   @[  0, 27]  d_th= 0.68 gap=0.112352 gain= 0.34883 (7  )==>   1   0  /   0   8 
+
+=== Node 13 ===
+..................
+Len=31   @[ 43, 39]  d_th= 0.60 gap=0.015406 gain= 0.10148 (49 )==>   0   4  /  42  11 
+
+num_class=2, num_obj=57, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.09 sec
+  Time Rand Project =     7.81 sec
+  Time Score Matrix =     1.20 sec
+  Time Compute Gain =    12.56 sec
+Running  Time for this Shapelet=    23.60 sec <<
+
+
+Total Running  Time =    23.60 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/PhalangesOutlinesCorrect_TRAIN_CV2', 2, 900, 'euclidean', 1, 1, './cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_euclidean_normed_CID_tree.txt', './cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_euclidean_normed_CID_acc.txt']
+; accuracy= 66.889   Correct:602 , Wrong: 298
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  16    0 
+;   p  1 | 298  586 
+
+num_class=2, num_obj=900  distance=euclidean CID=true normalize=true ./cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_euclidean_normed_CID_tree.txt  ./cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 28
+

@@ -1,0 +1,44 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'euclidean', 0, 1, 10, './replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP14_tree.txt', './replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP14_time.txt']
+
+rand seed=1508182981
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP14_tree.txt  time_file=./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP14_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=41   @[  2,188]  d_th= 1.04 gap=0.012140 gain= 0.55844 (10 )==>   0  12  11  /  12   0   1 
+
+=== Node 2 ===
+.............................................................
+Len=89   @[ 17, 81]  d_th= 3.16 gap=0.007587 gain= 0.44954 (3  )==>   0  10   0  /   0   2  11 
+
+=== Node 5 ===
+.............................................................
+Len=25   @[  0,  0]  d_th= 0.24 gap=0.004583 gain= 0.42932 (9  )==>   0   0  11  /   0   2   0 
+
+num_class=3, num_obj=13, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.31 sec
+  Time Rand Project =     1.42 sec
+  Time Score Matrix =     0.15 sec
+  Time Compute Gain =     3.57 sec
+Running  Time for this Shapelet=     5.63 sec <<
+
+
+Total Running  Time =     5.63 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'euclidean', 0, 1, './replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP14_tree.txt', './replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP14_acc.txt']
+; accuracy= 57.714   Correct:101 , Wrong: 74
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  30   10    3 
+;   p  1 |  16   36   15 
+;   p  2 |  23    7   35 
+
+num_class=3, num_obj=175  distance=euclidean CID=false normalize=true ./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP14_tree.txt  ./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP14_acc.txt
+
+==> Tree Size = 12
+

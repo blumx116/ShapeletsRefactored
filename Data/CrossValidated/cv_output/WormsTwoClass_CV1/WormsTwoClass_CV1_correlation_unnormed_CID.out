@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/WormsTwoClass_TRAIN_CV1', 2, 38, 450, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_correlation_unnormed_CID_tree.txt', './cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503492789
+num_class=2, num_obj=38, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................................................................................................
+Len=131  @[ 36, 69]  d_th= 0.20 gap=0.000764 gain= 0.51539 (2  )==>  16   2  /   0  20 
+
+=== Node 2 ===
+...............................................................................................................................................................................................................................
+Len=61   @[ 16,659]  d_th= 0.09 gap=0.001301 gain= 0.34883 (14 )==>   0   2  /  16   0 
+
+num_class=2, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.81 sec
+  Time Rand Project =    17.15 sec
+  Time Score Matrix =     1.27 sec
+  Time Compute Gain =   145.55 sec
+Running  Time for this Shapelet=   168.39 sec <<
+
+
+Total Running  Time =   168.39 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/WormsTwoClass_TRAIN_CV2', 2, 39, 'correlation', 1, 0, './cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_correlation_unnormed_CID_tree.txt', './cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 46.154   Correct:18 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  14   18 
+;   p  2 |   3    4 
+
+num_class=2, num_obj=39  distance=correlation CID=true normalize=false ./cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 6
+

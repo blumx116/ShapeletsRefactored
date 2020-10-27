@@ -1,0 +1,43 @@
+;Shapelet Tree 
+
+;random seed:1502275226, rand()=1407555841, rand()=1572139803
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ChlorineConcentration_TRAIN_CV2 3 234 83 1 2 10 euclidean 1 0 10 ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_euclidean_unnormed_CID_tree.txt ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_euclidean_unnormed_CID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 40 
+NonL  1    --      5  127   35   3.8816 ==>  45  46 131  /  12   0   0 
+NonL  2    --     87   93   65   8.0690 ==>  39  45 131  /   6   1   0 
+Leaf  3     1    
+NonL  4    --      5    3   25   0.5485 ==>   5   1   0  /  34  44 131 
+Leaf  5     1    
+Leaf  8     1    
+NonL  9    --     13   92   15   0.2292 ==>   4   1   0  /  30  43 131 
+Leaf 18     1    
+NonL 19    --      5    1   15   0.5655 ==>   3   0   0  /  27  43 131 
+Leaf 38     1    
+Leaf 39     3    
+
+;Shapelet id   <data>
+Shapelet   1  -0.629940 -0.324510 -0.715510 -0.621290 -0.739040 -0.715350 -0.715510 -0.715510 -0.673330 -0.674400 -0.628820  1.247800  1.119000  0.122800  0.155730  0.358950 -0.110330 -0.720090  0.025477 -0.714890  0.022297  0.374500  0.303890  0.470660  0.372440  0.293900  1.244900  1.907000  0.233500  0.181760  1.239800  0.991760 -0.290730  0.759350 -0.586390 
+Shapelet   2  -0.912910 -0.850010  1.052600  0.637220  0.095596 -0.961600 -0.856630 -0.859200 -0.897010  0.921130  0.431850 -0.414230  0.747000  0.125920 -0.278920 -0.742570 -0.932230 -0.895150 -0.968830  0.621870 -0.186480 -0.340400 -0.780040 -1.016200 -1.048400 -0.197920 -0.499730 -0.509680 -0.943790 -1.004100 -0.959720 -0.918150 -1.043400 -0.775070 -0.987440 -0.846290 -0.858090 -1.031900 -0.047494 -0.795440 -1.044800 -1.045800 -1.026900 -0.509040 -0.561260  0.543620  1.362100  0.175870 -0.625830  0.858470 -0.164530 -0.919100 -0.548000 -0.920090  0.564420 -0.356660  0.480450  0.489780 -0.336700 -0.061835  0.637080  2.154100 -0.170130 -0.183800  1.865100 
+Shapelet   4   2.998500  2.573500  2.526200  2.265100  2.089100  1.689400  1.552600  1.553200  0.980570  0.518640 -0.195170  1.743500  1.673100  1.377000  1.190000  0.734630  0.461410  0.102410 -0.161800 -0.306490 -0.842140 -0.825790 -0.660610  2.122600  1.704300 
+Shapelet   9  -0.620180 -0.597310 -0.753060  0.764280  0.232270 -0.190750 -0.800810 -0.715800 -0.660910 -0.759150  0.538130  0.064928  0.179210  0.278420 -0.025968 
+Shapelet  19   3.971100  3.597400  3.406200  2.856200  2.684500  2.195000  1.690000 -0.011354 -0.058416 -1.204300 -1.337300 -1.070200 -1.212100  0.368310  0.609860 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ChlorineConcentration_TRAIN_CV2 3 234 83 1 2 10 euclidean 1 0 10 ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_euclidean_unnormed_CID_tree.txt ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_euclidean_unnormed_CID_time.txt
+; time =>   61.649   3.393  32.900   2.368  20.806 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ChlorineConcentration_TRAIN_CV1 3 233 euclidean 1 0 ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_euclidean_unnormed_CID_tree.txt ./cv_output/ChlorineConcentration_CV2/ChlorineConcentration_CV2_euclidean_unnormed_CID_acc.txt
+; accuracy= 57.940   Correct:135 , Wrong: 98
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  10    4    6 
+;   p  2 |   0    0    0 
+;   p  3 |  47   41  125 
+

@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TRAIN', 2, 370, 1355, 1, 2, 10, 'euclidean', 1, 0, 10, './replications/HandOutlines/HandOutlines_euclidean_unnormed_CID_REP05_tree.txt', './replications/HandOutlines/HandOutlines_euclidean_unnormed_CID_REP05_time.txt']
+
+rand seed=1503589907
+num_class=2, num_obj=370, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/HandOutlines/HandOutlines_euclidean_unnormed_CID_REP05_tree.txt  time_file=./replications/HandOutlines/HandOutlines_euclidean_unnormed_CID_REP05_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,0]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=953  @[  6, 99]  d_th= 6.55 gap=0.000033 gain= 0.36544 (130)==> 228  22  /   9 111 
+
+num_class=2, num_obj=370, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    82.44 sec
+  Time Rand Project =   109.72 sec
+  Time Score Matrix =    12.55 sec
+  Time Compute Gain =  9881.32 sec
+Running  Time for this Shapelet= 10098.38 sec <<
+
+
+Total Running  Time = 10098.38 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TEST', 2, 1000, 'euclidean', 1, 0, './replications/HandOutlines/HandOutlines_euclidean_unnormed_CID_REP05_tree.txt', './replications/HandOutlines/HandOutlines_euclidean_unnormed_CID_REP05_acc.txt']
+; accuracy= 88.200   Correct:882 , Wrong: 118
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 | 268   24 
+;   p  1 |  94  614 
+
+num_class=2, num_obj=1000  distance=euclidean CID=true normalize=false ./replications/HandOutlines/HandOutlines_euclidean_unnormed_CID_REP05_tree.txt  ./replications/HandOutlines/HandOutlines_euclidean_unnormed_CID_REP05_acc.txt
+
+==> Tree Size = 4
+

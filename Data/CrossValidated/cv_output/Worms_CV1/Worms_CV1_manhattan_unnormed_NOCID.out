@@ -1,0 +1,62 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Worms_TRAIN_CV1', 5, 37, 450, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/Worms_CV1/Worms_CV1_manhattan_unnormed_NOCID_tree.txt', './cv_output/Worms_CV1/Worms_CV1_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502540937
+num_class=5, num_obj=37, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Worms_CV1/Worms_CV1_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/Worms_CV1/Worms_CV1_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................................................................................................
+Len=83   @[  0, 44]  d_th=27.88 gap=0.055176 gain= 0.45679 (1  )==>  14   0   0   5   0  /   2   6   5   1   4 
+
+=== Node 2 ===
+...............................................................................................................................................................................................................................
+Len=417  @[ 12,468]  d_th=403.06 gap=0.063550 gain= 0.43405 (7  )==>  13   0   0   0   0  /   1   0   0   5   0 
+
+=== Node 3 ===
+...............................................................................................................................................................................................................................
+Len=143  @[ 10,723]  d_th=78.02 gap=0.381485 gain= 0.66825 (4  )==>   2   0   5   0   4  /   0   6   0   1   0 
+
+=== Node 5 ===
+...............................................................................................................................................................................................................................
+Len=289  @[  0,571]  d_th=80.74 gap=4.749377 gain= 0.45056 (4  )==>   1   0   0   0   0  /   0   0   0   5   0 
+
+=== Node 6 ===
+...............................................................................................................................................................................................................................
+Len=49   @[  0,192]  d_th= 7.97 gap=0.110350 gain= 0.68901 (1  )==>   2   0   0   0   4  /   0   0   5   0   0 
+
+=== Node 7 ===
+...............................................................................................................................................................................................................................
+Len=333  @[  6,370]  d_th=108.32 gap=5.935737 gain= 0.41012 (5  )==>   0   0   0   1   0  /   0   6   0   0   0 
+
+=== Node 12 ===
+...............................................................................................................................................................................................................................
+Len=355  @[  4,465]  d_th=274.40 gap=3.673250 gain= 0.63651 (2  )==>   0   0   0   0   4  /   2   0   0   0   0 
+
+num_class=5, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.90 sec
+  Time Rand Project =    19.13 sec
+  Time Score Matrix =     1.67 sec
+  Time Compute Gain =    47.61 sec
+Running  Time for this Shapelet=    73.50 sec <<
+
+
+Total Running  Time =    73.50 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Worms_TRAIN_CV2', 5, 40, 'manhattan', 0, 0, './cv_output/Worms_CV1/Worms_CV1_manhattan_unnormed_NOCID_tree.txt', './cv_output/Worms_CV1/Worms_CV1_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 50.000   Correct:20 , Wrong: 20
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |  12    1    2    5    2 
+;   p  2 |   1    4    1    0    1 
+;   p  3 |   2    1    2    0    0 
+;   p  4 |   2    1    0    1    0 
+;   p  5 |   0    0    0    1    1 
+
+num_class=5, num_obj=40  distance=manhattan CID=false normalize=false ./cv_output/Worms_CV1/Worms_CV1_manhattan_unnormed_NOCID_tree.txt  ./cv_output/Worms_CV1/Worms_CV1_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 26
+

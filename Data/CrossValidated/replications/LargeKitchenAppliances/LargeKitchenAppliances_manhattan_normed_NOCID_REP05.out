@@ -1,0 +1,60 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/LargeKitchenAppliances_TRAIN', 3, 375, 360, 1, 2, 10, 'manhattan', 0, 1, 10, './replications/LargeKitchenAppliances/LargeKitchenAppliances_manhattan_normed_NOCID_REP05_tree.txt', './replications/LargeKitchenAppliances/LargeKitchenAppliances_manhattan_normed_NOCID_REP05_time.txt']
+
+rand seed=1503371486
+num_class=3, num_obj=375, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/LargeKitchenAppliances/LargeKitchenAppliances_manhattan_normed_NOCID_REP05_tree.txt  time_file=./replications/LargeKitchenAppliances/LargeKitchenAppliances_manhattan_normed_NOCID_REP05_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=33   @[  1,258]  d_th= 9.75 gap=0.001522 gain= 0.34733 (123)==> 109  11   6  /  16 114 119 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.14802 (30 )==>  31  11   6  /  78   0   0 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=179  @[147,373]  d_th=110.11 gap=0.017505 gain= 0.34989 (75 )==>   1   0  86  /  15 114  33 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=333  @[ 27, 54]  d_th=137.42 gap=0.004020 gain= 0.18130 (90 )==>  91   6   2  /   0   5   4 
+
+=== Node 7 ===
+..................................................................................................................................................................................
+Len=261  @[  6,166]  d_th=57.63 gap=0.110941 gain= 0.36319 (90 )==>  11   0  25  /   4 114   8 
+
+=== Node 9 ===
+..................................................................................................................................................................................
+Len=49   @[  2, 40]  d_th=11.52 gap=0.084090 gain= 0.68696 (1  )==>   0   5   0  /   0   0   4 
+
+=== Node 14 ===
+..................................................................................................................................................................................
+Len=47   @[  0,307]  d_th=11.70 gap=0.023372 gain= 0.51989 (12 )==>  11   0   1  /   0   0  24 
+
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    25.32 sec
+  Time Rand Project =    76.16 sec
+  Time Score Matrix =     8.67 sec
+  Time Compute Gain =  1228.98 sec
+Running  Time for this Shapelet=  1346.15 sec <<
+
+
+Total Running  Time =  1346.15 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/LargeKitchenAppliances_TEST', 3, 375, 'manhattan', 0, 1, './replications/LargeKitchenAppliances/LargeKitchenAppliances_manhattan_normed_NOCID_REP05_tree.txt', './replications/LargeKitchenAppliances/LargeKitchenAppliances_manhattan_normed_NOCID_REP05_acc.txt']
+; accuracy= 78.133   Correct:293 , Wrong: 82
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 | 106   11    6 
+;   p  2 |  12   84   16 
+;   p  3 |   7   30  103 
+
+num_class=3, num_obj=375  distance=manhattan CID=false normalize=true ./replications/LargeKitchenAppliances/LargeKitchenAppliances_manhattan_normed_NOCID_REP05_tree.txt  ./replications/LargeKitchenAppliances/LargeKitchenAppliances_manhattan_normed_NOCID_REP05_acc.txt
+
+==> Tree Size = 30
+

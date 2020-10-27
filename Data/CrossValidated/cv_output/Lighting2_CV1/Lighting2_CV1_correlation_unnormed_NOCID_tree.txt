@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1503462891, rand()=543631282, rand()=665301183
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV1 2 30 319 1 2 10 correlation 0 0 10 ./cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_NOCID_tree.txt ./cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:  -1  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 18 
+NonL  1    --      0  182    5   0.0100 ==>  10   7  /   0  13 
+NonL  2    --      0    0    9   1.0000 ==>   1   7  /   9   0 
+Leaf  3     1    
+NonL  4    --      0    0    9   1.0000 ==>   1   7  /   9   0 
+NonL  8    --      0    0    9   1.0000 ==>   1   7  /   9   0 
+Leaf 16     1    
+
+;Shapelet id   <data>
+Shapelet   1   0.602610  0.500270 -0.087159 -0.114100  0.229730 
+Shapelet   2  -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 
+Shapelet   4  -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 
+Shapelet   8  -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 -1.396000 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV1 2 30 319 1 2 10 correlation 0 0 10 ./cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_NOCID_tree.txt ./cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_NOCID_time.txt
+; time =>   95.467   2.908  21.619   1.587  67.600 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV2 2 30 correlation 0 0 ./cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_NOCID_tree.txt ./cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_NOCID_acc.txt
+; accuracy= 66.667   Correct:20 , Wrong: 10
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   0    0 
+;   p  1 |  10   20 
+

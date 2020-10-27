@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2', 2, 34, 12, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502274202
+num_class=2, num_obj=34, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=7    @[  2, 12]  d_th= 0.99 gap=0.001356 gain= 0.25045 (8  )==>  16   5  /   1  12 
+
+=== Node 2 ===
+....
+Len=5    @[  1,  9]  d_th= 0.56 gap=0.031382 gain= 0.34945 (7  )==>  14   0  /   2   5 
+
+=== Node 5 ===
+....
+Len=9    @[  2, 14]  d_th= 1.32 gap=0.065431 gain= 0.59827 (3  )==>   0   5  /   2   0 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.01 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.02 sec <<
+
+
+Total Running  Time =     0.02 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1', 2, 33, 'euclidean', 0, 1, './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_euclidean_normed_NOCID_acc.txt']
+; accuracy= 57.576   Correct:19 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  10    7 
+;   p  2 |   7    9 
+
+num_class=2, num_obj=33  distance=euclidean CID=false normalize=true ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_euclidean_normed_NOCID_tree.txt  ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 12
+

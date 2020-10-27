@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_tree.txt', './replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1503367241
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_tree.txt  time_file=./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=75   @[ 12,145]  d_th= 0.05 gap=0.000310 gain= 0.63651 (12 )==>  12   0   0  /   0  12  12 
+
+=== Node 3 ===
+.............................................................
+Len=47   @[ 22,127]  d_th= 0.02 gap=0.000205 gain= 0.69315 (0  )==>   0  12   0  /   0   0  12 
+
+num_class=3, num_obj=24, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.24 sec
+  Time Rand Project =     1.04 sec
+  Time Score Matrix =     0.12 sec
+  Time Compute Gain =     3.44 sec
+Running  Time for this Shapelet=     4.96 sec <<
+
+
+Total Running  Time =     4.96 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_tree.txt', './replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_acc.txt']
+; accuracy= 68.571   Correct:120 , Wrong: 55
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  40    3    4 
+;   p  1 |  21   45   14 
+;   p  2 |   8    5   35 
+
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_tree.txt  ./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 8
+

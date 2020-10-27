@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2', 2, 34, 12, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_tree.txt', './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502274202
+num_class=2, num_obj=34, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  1,  9]  d_th= 0.91 gap=0.004934 gain= 0.23231 (4  )==>  13   2  /   4  15 
+
+=== Node 2 ===
+....
+Len=11   @[ 10, 12]  d_th= 9.23 gap=0.045508 gain= 0.39267 (11 )==>  13   0  /   0   2 
+
+=== Node 3 ===
+....
+Len=5    @[  6,  9]  d_th= 1.85 gap=0.025342 gain= 0.38297 (9  )==>   0  14  /   4   1 
+
+=== Node 7 ===
+....
+Len=5    @[  4, 13]  d_th= 0.69 gap=0.308321 gain= 0.50040 (3  )==>   0   1  /   4   0 
+
+num_class=2, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.01 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.02 sec
+Running  Time for this Shapelet=     0.03 sec <<
+
+
+Total Running  Time =     0.03 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1', 2, 33, 'manhattan', 1, 1, './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_tree.txt', './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 72.727   Correct:24 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  12    4 
+;   p  2 |   5   12 
+
+num_class=2, num_obj=33  distance=manhattan CID=true normalize=true ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_tree.txt  ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 16
+

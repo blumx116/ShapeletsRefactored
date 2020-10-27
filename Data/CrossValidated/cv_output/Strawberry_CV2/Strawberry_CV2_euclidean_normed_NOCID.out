@@ -1,0 +1,51 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV2', 2, 185, 118, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502274955
+num_class=2, num_obj=185, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................
+Len=67   @[  2,114]  d_th= 0.48 gap=0.000417 gain= 0.32149 (97 )==>  44   0  /  22 119 
+
+=== Node 3 ===
+.........................................................
+Len=25   @[  0, 74]  d_th= 0.90 gap=0.000074 gain= 0.14540 (63 )==>   3  99  /  19  20 
+
+=== Node 7 ===
+.........................................................
+Len=19   @[  1, 81]  d_th= 0.60 gap=0.003644 gain= 0.31211 (1  )==>  17   3  /   2  17 
+
+=== Node 14 ===
+.........................................................
+Len=83   @[  0, 52]  d_th= 0.66 gap=0.007498 gain= 0.25446 (10 )==>   2   3  /  15   0 
+
+=== Node 15 ===
+.........................................................
+Len=69   @[  0, 41]  d_th= 0.96 gap=0.048155 gain= 0.33650 (15 )==>   2   0  /   0  17 
+
+num_class=2, num_obj=19, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.59 sec
+  Time Rand Project =     9.64 sec
+  Time Score Matrix =     1.06 sec
+  Time Compute Gain =    15.67 sec
+Running  Time for this Shapelet=    28.81 sec <<
+
+
+Total Running  Time =    28.81 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1', 2, 185, 'euclidean', 0, 1, './cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_normed_NOCID_acc.txt']
+; accuracy= 86.486   Correct:160 , Wrong: 25
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  50    9 
+;   p  2 |  16  110 
+
+num_class=2, num_obj=185  distance=euclidean CID=false normalize=true ./cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_normed_NOCID_tree.txt  ./cv_output/Strawberry_CV2/Strawberry_CV2_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 32
+

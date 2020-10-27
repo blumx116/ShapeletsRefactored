@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'euclidean', 0, 1, 10, './replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP30_tree.txt', './replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP30_time.txt']
+
+rand seed=1508180090
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP30_tree.txt  time_file=./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP30_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 17]  d_th= 1.05 gap=0.002317 gain= 0.27813 (9  )==>  31   7  /   3  26 
+
+=== Node 2 ===
+....
+Len=9    @[ 30, 12]  d_th= 1.63 gap=0.017520 gain= 0.21070 (30 )==>  31   3  /   0   4 
+
+=== Node 3 ===
+....
+Len=5    @[ 24,  2]  d_th= 1.32 gap=0.009613 gain= 0.25503 (21 )==>   0  25  /   3   1 
+
+=== Node 7 ===
+....
+Len=7    @[  2,  9]  d_th= 0.39 gap=0.148687 gain= 0.56234 (2  )==>   0   1  /   3   0 
+
+num_class=2, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.02 sec
+Running  Time for this Shapelet=     0.05 sec <<
+
+
+Total Running  Time =     0.05 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'euclidean', 0, 1, './replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP30_tree.txt', './replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP30_acc.txt']
+; accuracy= 71.914   Correct:740 , Wrong: 289
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 346  119 
+;   p  1 | 170  394 
+
+num_class=2, num_obj=1029  distance=euclidean CID=false normalize=true ./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP30_tree.txt  ./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP30_acc.txt
+
+==> Tree Size = 16
+

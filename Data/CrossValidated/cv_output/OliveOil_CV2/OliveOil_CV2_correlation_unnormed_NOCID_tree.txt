@@ -1,0 +1,38 @@
+;Shapelet Tree 
+
+;random seed:1503462573, rand()=1603691674, rand()=245630607
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV2 4 16 285 1 2 10 correlation 0 0 10 ./cv_output/OliveOil_CV2/OliveOil_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/OliveOil_CV2/OliveOil_CV2_correlation_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1  2  3 
+;Real  Class:   1  2  3  4 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0  460   27   0.0002 ==>   3   4   0   0  /   0   0   2   7 
+NonL  2    --      0  369   45   0.0120 ==>   3   0   0   0  /   0   4   0   0 
+NonL  3    --      0  209   15   0.0014 ==>   0   0   2   0  /   0   0   0   7 
+Leaf  4     1    
+Leaf  5     2    
+Leaf  6     3    
+Leaf  7     4    
+
+;Shapelet id   <data>
+Shapelet   1  -0.791040 -0.782670 -0.768630 -0.753850 -0.737550 -0.714090 -0.679530 -0.659130 -0.617880 -0.592330 -0.566380 -0.538400 -0.515590 -0.485700 -0.453850 -0.404130 -0.338920 -0.245300 -0.160150 -0.054637  0.105190  0.298220  0.530930  0.853460  1.216000  1.587300  2.398500 
+Shapelet   2  -0.871860 -0.877790 -0.882600 -0.885700 -0.890530 -0.894760 -0.897870 -0.900970 -0.902550 -0.903310 -0.905020 -0.906670 -0.905830 -0.906170 -0.907300 -0.903790 -0.898690 -0.902660 -0.906390 -0.911560 -0.914350 -0.916370 -0.917840 -0.918710 -0.918980 -0.917470 -0.913830 -0.916330 -0.916680 -0.917220 -0.917570 -0.917470 -0.918900 -0.920020 -0.920040 -0.920110 -0.920870 -0.921250 -0.921270 -0.921380 -0.921470 -0.921150 -0.920140 -0.919640 -0.919240 
+Shapelet   3   1.043200  0.992580  0.956450  0.929600  0.910340  0.895960  0.882410  0.873540  0.873000  0.882080  0.899270  0.921960  0.947960  0.975460  1.001800 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV2 4 16 285 1 2 10 correlation 0 0 10 ./cv_output/OliveOil_CV2/OliveOil_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/OliveOil_CV2/OliveOil_CV2_correlation_unnormed_NOCID_time.txt
+; time =>   20.922   0.509   1.332   0.097  18.840 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV1 4 14 correlation 0 0 ./cv_output/OliveOil_CV2/OliveOil_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/OliveOil_CV2/OliveOil_CV2_correlation_unnormed_NOCID_acc.txt
+; accuracy= 64.286   Correct:9 , Wrong: 5
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   1    0    0    1 
+;   p  2 |   0    3    1    0 
+;   p  3 |   1    0    0    0 
+;   p  4 |   0    1    1    5 
+

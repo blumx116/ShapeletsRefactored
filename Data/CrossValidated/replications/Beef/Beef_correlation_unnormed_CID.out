@@ -1,0 +1,638 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'correlation', 1, 0, 10, './output/Beef/Beef_correlation_unnormed_CID_REP01_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP01_time.txt']
+
+rand seed=1501936133
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_correlation_unnormed_CID_REP01_tree.txt  time_file=./output/Beef/Beef_correlation_unnormed_CID_REP01_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=135  @[  6,180]  d_th= 0.15 gap=0.004795 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0, 17]  d_th= 0.00 gap=0.000005 gain= 0.39910 (14 )==>   0   6   6   1   6  /   0   0   0   5   0 
+
+=== Node 4 ===
+....................................................................................................................
+Len=5    @[  0,294]  d_th= 0.02 gap=0.000376 gain= 0.49076 (1  )==>   0   6   0   0   4  /   0   0   6   1   2 
+
+=== Node 8 ===
+....................................................................................................................
+Len=33   @[  0, 29]  d_th= 0.01 gap=0.000538 gain= 0.42281 (0  )==>   0   5   0   0   0  /   0   1   0   0   4 
+
+=== Node 9 ===
+....................................................................................................................
+Len=79   @[  0,296]  d_th= 0.00 gap=0.000057 gain= 0.63651 (3  )==>   0   0   6   0   0  /   0   0   0   1   2 
+
+=== Node 17 ===
+....................................................................................................................
+Len=79   @[  2,161]  d_th= 0.09 gap=0.002667 gain= 0.50040 (3  )==>   0   0   0   0   4  /   0   1   0   0   0 
+
+=== Node 19 ===
+....................................................................................................................
+Len=5    @[  0,282]  d_th= 0.02 gap=0.009990 gain= 0.63651 (1  )==>   0   0   0   1   0  /   0   0   0   0   2 
+
+num_class=5, num_obj=3, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.85 sec
+  Time Rand Project =    10.79 sec
+  Time Score Matrix =     1.06 sec
+  Time Compute Gain =    63.80 sec
+Running  Time for this Shapelet=    78.36 sec <<
+
+
+Total Running  Time =    78.36 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'correlation', 1, 0, './output/Beef/Beef_correlation_unnormed_CID_REP01_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP01_acc.txt']
+0
+num_class=5, num_obj=30  distance=correlation CID=true normalize=false ./output/Beef/Beef_correlation_unnormed_CID_REP01_tree.txt  ./output/Beef/Beef_correlation_unnormed_CID_REP01_acc.txt
+
+==> Tree Size = 40
+
+; accuracy= 46.667   Correct:14 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   0    4    2    2    2 
+;   p  3 |   0    0    1    0    0 
+;   p  4 |   1    0    3    3    3 
+;   p  5 |   0    1    0    1    1 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'correlation', 1, 0, 10, './output/Beef/Beef_correlation_unnormed_CID_REP02_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP02_time.txt']
+
+rand seed=1501936212
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_correlation_unnormed_CID_REP02_tree.txt  time_file=./output/Beef/Beef_correlation_unnormed_CID_REP02_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=107  @[  8,246]  d_th= 0.07 gap=0.000345 gain= 0.56362 (2  )==>   0   6   0   6   4  /   6   0   6   0   2 
+
+=== Node 2 ===
+....................................................................................................................
+Len=23   @[  0, 35]  d_th= 0.01 gap=0.000000 gain= 0.51986 (0  )==>   0   6   0   0   2  /   0   0   0   6   2 
+
+=== Node 3 ===
+....................................................................................................................
+Len=171  @[  7,150]  d_th= 0.18 gap=0.005426 gain= 0.68291 (2  )==>   0   0   6   0   2  /   6   0   0   0   0 
+
+=== Node 4 ===
+....................................................................................................................
+Len=217  @[  6, 80]  d_th= 0.01 gap=0.000367 gain= 0.56234 (4  )==>   0   0   0   0   2  /   0   6   0   0   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=37   @[  0, 34]  d_th= 0.04 gap=0.000305 gain= 0.56234 (4  )==>   0   0   0   6   0  /   0   0   0   0   2 
+
+=== Node 6 ===
+....................................................................................................................
+Len=79   @[  0,105]  d_th= 0.14 gap=0.004892 gain= 0.56234 (4  )==>   0   0   6   0   0  /   0   0   0   0   2 
+
+num_class=5, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.50 sec
+  Time Rand Project =     8.48 sec
+  Time Score Matrix =     0.85 sec
+  Time Compute Gain =    52.12 sec
+Running  Time for this Shapelet=    63.68 sec <<
+
+
+Total Running  Time =    63.68 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'correlation', 1, 0, './output/Beef/Beef_correlation_unnormed_CID_REP02_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP02_acc.txt']
+0
+num_class=5, num_obj=30  distance=correlation CID=true normalize=false ./output/Beef/Beef_correlation_unnormed_CID_REP02_tree.txt  ./output/Beef/Beef_correlation_unnormed_CID_REP02_acc.txt
+
+==> Tree Size = 14
+
+; accuracy= 56.667   Correct:17 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    0    0    0    0 
+;   p  2 |   0    4    0    2    1 
+;   p  3 |   0    0    3    0    1 
+;   p  4 |   1    0    2    2    0 
+;   p  5 |   1    2    1    2    4 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'correlation', 1, 0, 10, './output/Beef/Beef_correlation_unnormed_CID_REP03_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP03_time.txt']
+
+rand seed=1501936276
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_correlation_unnormed_CID_REP03_tree.txt  time_file=./output/Beef/Beef_correlation_unnormed_CID_REP03_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=169  @[  7,150]  d_th= 0.23 gap=0.005089 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=9    @[  0, 17]  d_th= 0.00 gap=0.000005 gain= 0.39910 (14 )==>   0   6   6   1   6  /   0   0   0   5   0 
+
+=== Node 4 ===
+....................................................................................................................
+Len=13   @[  0,296]  d_th= 0.02 gap=0.000550 gain= 0.47963 (3  )==>   0   6   0   0   2  /   0   0   6   1   4 
+
+=== Node 8 ===
+....................................................................................................................
+Len=227  @[  6, 69]  d_th= 0.02 gap=0.000359 gain= 0.56234 (4  )==>   0   0   0   0   2  /   0   6   0   0   0 
+
+=== Node 9 ===
+....................................................................................................................
+Len=29   @[  0,183]  d_th= 0.01 gap=0.000082 gain= 0.65548 (3  )==>   0   0   6   1   0  /   0   0   0   0   4 
+
+=== Node 18 ===
+....................................................................................................................
+Len=9    @[  0,122]  d_th= 0.03 gap=0.002486 gain= 0.41012 (5  )==>   0   0   6   0   0  /   0   0   0   1   0 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.87 sec
+  Time Rand Project =    10.81 sec
+  Time Score Matrix =     1.06 sec
+  Time Compute Gain =    65.22 sec
+Running  Time for this Shapelet=    79.83 sec <<
+
+
+Total Running  Time =    79.83 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'correlation', 1, 0, './output/Beef/Beef_correlation_unnormed_CID_REP03_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP03_acc.txt']
+0
+num_class=5, num_obj=30  distance=correlation CID=true normalize=false ./output/Beef/Beef_correlation_unnormed_CID_REP03_tree.txt  ./output/Beef/Beef_correlation_unnormed_CID_REP03_acc.txt
+
+==> Tree Size = 38
+
+; accuracy= 46.667   Correct:14 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    1    0    0    0 
+;   p  2 |   0    5    1    2    2 
+;   p  3 |   0    0    1    1    0 
+;   p  4 |   1    0    4    3    3 
+;   p  5 |   1    0    0    0    1 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'correlation', 1, 0, 10, './output/Beef/Beef_correlation_unnormed_CID_REP04_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP04_time.txt']
+
+rand seed=1501936363
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_correlation_unnormed_CID_REP04_tree.txt  time_file=./output/Beef/Beef_correlation_unnormed_CID_REP04_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=163  @[  7,157]  d_th= 0.23 gap=0.005457 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=109  @[  2,245]  d_th= 0.08 gap=0.000256 gain= 0.47739 (8  )==>   0   6   0   6   4  /   0   0   6   0   2 
+
+=== Node 4 ===
+....................................................................................................................
+Len=9    @[  0, 26]  d_th= 0.00 gap=0.000066 gain= 0.45213 (6  )==>   0   6   0   1   4  /   0   0   0   5   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=79   @[  0,105]  d_th= 0.14 gap=0.004892 gain= 0.56234 (4  )==>   0   0   6   0   0  /   0   0   0   0   2 
+
+=== Node 8 ===
+....................................................................................................................
+Len=9    @[  0, 48]  d_th= 0.03 gap=0.000437 gain= 0.65548 (3  )==>   0   6   0   1   0  /   0   0   0   0   4 
+
+=== Node 16 ===
+....................................................................................................................
+Len=5    @[  0, 59]  d_th= 0.04 gap=0.006483 gain= 0.41012 (5  )==>   0   6   0   0   0  /   0   0   0   1   0 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.81 sec
+  Time Rand Project =    10.46 sec
+  Time Score Matrix =     0.99 sec
+  Time Compute Gain =    59.58 sec
+Running  Time for this Shapelet=    73.71 sec <<
+
+
+Total Running  Time =    73.71 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'correlation', 1, 0, './output/Beef/Beef_correlation_unnormed_CID_REP04_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP04_acc.txt']
+0
+num_class=5, num_obj=30  distance=correlation CID=true normalize=false ./output/Beef/Beef_correlation_unnormed_CID_REP04_tree.txt  ./output/Beef/Beef_correlation_unnormed_CID_REP04_acc.txt
+
+==> Tree Size = 34
+
+; accuracy= 53.333   Correct:16 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    1    0    0    0 
+;   p  2 |   0    4    2    4    1 
+;   p  3 |   0    0    3    0    1 
+;   p  4 |   1    1    1    2    1 
+;   p  5 |   1    0    0    0    3 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'correlation', 1, 0, 10, './output/Beef/Beef_correlation_unnormed_CID_REP05_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP05_time.txt']
+
+rand seed=1501936437
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_correlation_unnormed_CID_REP05_tree.txt  time_file=./output/Beef/Beef_correlation_unnormed_CID_REP05_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=109  @[  8,246]  d_th= 0.08 gap=0.000346 gain= 0.56362 (2  )==>   0   6   0   6   4  /   6   0   6   0   2 
+
+=== Node 2 ===
+....................................................................................................................
+Len=11   @[  0,210]  d_th= 0.01 gap=0.000040 gain= 0.42538 (2  )==>   0   3   0   6   0  /   0   3   0   0   4 
+
+=== Node 3 ===
+....................................................................................................................
+Len=179  @[  7,142]  d_th= 0.18 gap=0.005267 gain= 0.68291 (2  )==>   0   0   6   0   2  /   6   0   0   0   0 
+
+=== Node 4 ===
+....................................................................................................................
+Len=15   @[  0,332]  d_th= 0.01 gap=0.000659 gain= 0.63651 (3  )==>   0   3   0   0   0  /   0   0   0   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=19   @[  0,273]  d_th= 0.05 gap=0.001739 gain= 0.68291 (1  )==>   0   3   0   0   0  /   0   0   0   0   4 
+
+=== Node 6 ===
+....................................................................................................................
+Len=79   @[  0,105]  d_th= 0.14 gap=0.004892 gain= 0.56234 (4  )==>   0   0   6   0   0  /   0   0   0   0   2 
+
+num_class=5, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.58 sec
+  Time Rand Project =     8.57 sec
+  Time Score Matrix =     0.85 sec
+  Time Compute Gain =    53.41 sec
+Running  Time for this Shapelet=    65.17 sec <<
+
+
+Total Running  Time =    65.17 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'correlation', 1, 0, './output/Beef/Beef_correlation_unnormed_CID_REP05_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP05_acc.txt']
+0
+num_class=5, num_obj=30  distance=correlation CID=true normalize=false ./output/Beef/Beef_correlation_unnormed_CID_REP05_tree.txt  ./output/Beef/Beef_correlation_unnormed_CID_REP05_acc.txt
+
+==> Tree Size = 14
+
+; accuracy= 63.333   Correct:19 , Wrong: 11
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    0    0    0    0 
+;   p  2 |   0    2    0    1    0 
+;   p  3 |   0    0    3    0    1 
+;   p  4 |   1    4    2    5    0 
+;   p  5 |   1    0    1    0    5 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'correlation', 1, 0, 10, './output/Beef/Beef_correlation_unnormed_CID_REP06_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP06_time.txt']
+
+rand seed=1501936503
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_correlation_unnormed_CID_REP06_tree.txt  time_file=./output/Beef/Beef_correlation_unnormed_CID_REP06_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=157  @[  7,161]  d_th= 0.23 gap=0.004875 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=115  @[  2,250]  d_th= 0.05 gap=0.000331 gain= 0.39327 (4  )==>   0   6   0   5   3  /   0   0   6   1   3 
+
+=== Node 4 ===
+....................................................................................................................
+Len=9    @[  0, 17]  d_th= 0.00 gap=0.000005 gain= 0.65176 (4  )==>   0   6   0   0   3  /   0   0   0   5   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=13   @[  0,164]  d_th= 0.01 gap=0.000033 gain= 0.67301 (2  )==>   0   0   6   0   0  /   0   0   0   1   3 
+
+=== Node 8 ===
+....................................................................................................................
+Len=9    @[  0, 48]  d_th= 0.03 gap=0.000437 gain= 0.63651 (3  )==>   0   6   0   0   0  /   0   0   0   0   3 
+
+=== Node 11 ===
+....................................................................................................................
+Len=5    @[  0, 71]  d_th= 0.02 gap=0.009960 gain= 0.56234 (2  )==>   0   0   0   1   0  /   0   0   0   0   3 
+
+num_class=5, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.77 sec
+  Time Rand Project =    10.22 sec
+  Time Score Matrix =     0.99 sec
+  Time Compute Gain =    58.58 sec
+Running  Time for this Shapelet=    72.39 sec <<
+
+
+Total Running  Time =    72.39 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'correlation', 1, 0, './output/Beef/Beef_correlation_unnormed_CID_REP06_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP06_acc.txt']
+0
+num_class=5, num_obj=30  distance=correlation CID=true normalize=false ./output/Beef/Beef_correlation_unnormed_CID_REP06_tree.txt  ./output/Beef/Beef_correlation_unnormed_CID_REP06_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 60.000   Correct:18 , Wrong: 12
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    1    0    0    0 
+;   p  2 |   0    5    1    3    1 
+;   p  3 |   0    0    3    0    1 
+;   p  4 |   0    0    1    3    1 
+;   p  5 |   2    0    1    0    3 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'correlation', 1, 0, 10, './output/Beef/Beef_correlation_unnormed_CID_REP07_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP07_time.txt']
+
+rand seed=1501936576
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_correlation_unnormed_CID_REP07_tree.txt  time_file=./output/Beef/Beef_correlation_unnormed_CID_REP07_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=163  @[  7,157]  d_th= 0.23 gap=0.005457 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=115  @[  2,250]  d_th= 0.05 gap=0.000331 gain= 0.39327 (4  )==>   0   6   0   5   3  /   0   0   6   1   3 
+
+=== Node 4 ===
+....................................................................................................................
+Len=9    @[  0, 17]  d_th= 0.00 gap=0.000005 gain= 0.65176 (4  )==>   0   6   0   0   3  /   0   0   0   5   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=13   @[  0,164]  d_th= 0.01 gap=0.000033 gain= 0.67301 (2  )==>   0   0   6   0   0  /   0   0   0   1   3 
+
+=== Node 8 ===
+....................................................................................................................
+Len=9    @[  0, 48]  d_th= 0.03 gap=0.000437 gain= 0.63651 (3  )==>   0   6   0   0   0  /   0   0   0   0   3 
+
+=== Node 11 ===
+....................................................................................................................
+Len=7    @[  0,184]  d_th= 0.02 gap=0.008014 gain= 0.56234 (2  )==>   0   0   0   1   0  /   0   0   0   0   3 
+
+num_class=5, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.78 sec
+  Time Rand Project =    10.12 sec
+  Time Score Matrix =     0.98 sec
+  Time Compute Gain =    59.40 sec
+Running  Time for this Shapelet=    73.14 sec <<
+
+
+Total Running  Time =    73.14 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'correlation', 1, 0, './output/Beef/Beef_correlation_unnormed_CID_REP07_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP07_acc.txt']
+0
+num_class=5, num_obj=30  distance=correlation CID=true normalize=false ./output/Beef/Beef_correlation_unnormed_CID_REP07_tree.txt  ./output/Beef/Beef_correlation_unnormed_CID_REP07_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 60.000   Correct:18 , Wrong: 12
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    1    0    0    0 
+;   p  2 |   0    5    1    3    1 
+;   p  3 |   0    0    3    0    1 
+;   p  4 |   1    0    1    3    1 
+;   p  5 |   1    0    1    0    3 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'correlation', 1, 0, 10, './output/Beef/Beef_correlation_unnormed_CID_REP08_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP08_time.txt']
+
+rand seed=1501936650
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_correlation_unnormed_CID_REP08_tree.txt  time_file=./output/Beef/Beef_correlation_unnormed_CID_REP08_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=157  @[  7,161]  d_th= 0.23 gap=0.004875 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=115  @[  2,250]  d_th= 0.05 gap=0.000331 gain= 0.39327 (4  )==>   0   6   0   5   3  /   0   0   6   1   3 
+
+=== Node 4 ===
+....................................................................................................................
+Len=9    @[  0,106]  d_th= 0.02 gap=0.000149 gain= 0.55675 (0  )==>   0   6   0   0   1  /   0   0   0   5   2 
+
+=== Node 5 ===
+....................................................................................................................
+Len=13   @[  0,164]  d_th= 0.01 gap=0.000033 gain= 0.67301 (2  )==>   0   0   6   0   0  /   0   0   0   1   3 
+
+=== Node 8 ===
+....................................................................................................................
+Len=5    @[  0,302]  d_th= 0.08 gap=0.005756 gain= 0.41012 (5  )==>   0   6   0   0   0  /   0   0   0   0   1 
+
+=== Node 9 ===
+....................................................................................................................
+Len=83   @[  1,370]  d_th= 0.10 gap=0.001174 gain= 0.59827 (3  )==>   0   0   0   5   0  /   0   0   0   0   2 
+
+=== Node 11 ===
+....................................................................................................................
+Len=5    @[  0,224]  d_th= 0.01 gap=0.004576 gain= 0.56234 (2  )==>   0   0   0   1   0  /   0   0   0   0   3 
+
+num_class=5, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.82 sec
+  Time Rand Project =    10.61 sec
+  Time Score Matrix =     1.06 sec
+  Time Compute Gain =    62.38 sec
+Running  Time for this Shapelet=    76.76 sec <<
+
+
+Total Running  Time =    76.76 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'correlation', 1, 0, './output/Beef/Beef_correlation_unnormed_CID_REP08_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP08_acc.txt']
+0
+num_class=5, num_obj=30  distance=correlation CID=true normalize=false ./output/Beef/Beef_correlation_unnormed_CID_REP08_tree.txt  ./output/Beef/Beef_correlation_unnormed_CID_REP08_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 53.333   Correct:16 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    1    0    0    0 
+;   p  2 |   0    4    0    2    1 
+;   p  3 |   0    0    3    0    1 
+;   p  4 |   0    1    3    4    3 
+;   p  5 |   2    0    0    0    1 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'correlation', 1, 0, 10, './output/Beef/Beef_correlation_unnormed_CID_REP09_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP09_time.txt']
+
+rand seed=1501936728
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_correlation_unnormed_CID_REP09_tree.txt  time_file=./output/Beef/Beef_correlation_unnormed_CID_REP09_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=107  @[  8,246]  d_th= 0.07 gap=0.000345 gain= 0.56362 (2  )==>   0   6   0   6   4  /   6   0   6   0   2 
+
+=== Node 2 ===
+....................................................................................................................
+Len=23   @[  0, 35]  d_th= 0.01 gap=0.000000 gain= 0.51986 (0  )==>   0   6   0   0   2  /   0   0   0   6   2 
+
+=== Node 3 ===
+....................................................................................................................
+Len=167  @[  7,153]  d_th= 0.18 gap=0.005235 gain= 0.68291 (2  )==>   0   0   6   0   2  /   6   0   0   0   0 
+
+=== Node 4 ===
+....................................................................................................................
+Len=203  @[  6, 90]  d_th= 0.01 gap=0.000359 gain= 0.56234 (4  )==>   0   0   0   0   2  /   0   6   0   0   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=153  @[  0,238]  d_th= 0.05 gap=0.000261 gain= 0.56234 (4  )==>   0   0   0   6   0  /   0   0   0   0   2 
+
+=== Node 6 ===
+....................................................................................................................
+Len=79   @[  0,105]  d_th= 0.14 gap=0.004892 gain= 0.56234 (4  )==>   0   0   6   0   0  /   0   0   0   0   2 
+
+num_class=5, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.60 sec
+  Time Rand Project =     9.55 sec
+  Time Score Matrix =     0.96 sec
+  Time Compute Gain =    55.10 sec
+Running  Time for this Shapelet=    68.00 sec <<
+
+
+Total Running  Time =    68.00 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'correlation', 1, 0, './output/Beef/Beef_correlation_unnormed_CID_REP09_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP09_acc.txt']
+0
+num_class=5, num_obj=30  distance=correlation CID=true normalize=false ./output/Beef/Beef_correlation_unnormed_CID_REP09_tree.txt  ./output/Beef/Beef_correlation_unnormed_CID_REP09_acc.txt
+
+==> Tree Size = 14
+
+; accuracy= 53.333   Correct:16 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    0    0    0    0 
+;   p  2 |   0    4    0    2    2 
+;   p  3 |   0    0    3    0    1 
+;   p  4 |   1    1    3    3    1 
+;   p  5 |   1    1    0    1    2 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'correlation', 1, 0, 10, './output/Beef/Beef_correlation_unnormed_CID_REP10_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP10_time.txt']
+
+rand seed=1501936798
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_correlation_unnormed_CID_REP10_tree.txt  time_file=./output/Beef/Beef_correlation_unnormed_CID_REP10_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=171  @[  7,148]  d_th= 0.23 gap=0.004964 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=5    @[  0,299]  d_th= 0.00 gap=0.000063 gain= 0.39910 (14 )==>   0   5   0   0   0  /   0   1   6   6   6 
+
+=== Node 5 ===
+....................................................................................................................
+Len=17   @[  0,115]  d_th= 0.00 gap=0.000020 gain= 0.49076 (1  )==>   0   1   2   0   6  /   0   0   4   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=13   @[  0,210]  d_th= 0.01 gap=0.000133 gain= 0.63651 (3  )==>   0   1   2   0   0  /   0   0   0   0   6 
+
+=== Node 11 ===
+....................................................................................................................
+Len=79   @[  0,296]  d_th= 0.00 gap=0.000007 gain= 0.67301 (2  )==>   0   0   4   0   0  /   0   0   0   6   0 
+
+=== Node 20 ===
+....................................................................................................................
+Len=7    @[  0,243]  d_th= 0.01 gap=0.004495 gain= 0.63651 (1  )==>   0   1   0   0   0  /   0   0   2   0   0 
+
+num_class=5, num_obj=3, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.80 sec
+  Time Rand Project =    10.43 sec
+  Time Score Matrix =     1.03 sec
+  Time Compute Gain =    60.35 sec
+Running  Time for this Shapelet=    74.45 sec <<
+
+
+Total Running  Time =    74.45 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'correlation', 1, 0, './output/Beef/Beef_correlation_unnormed_CID_REP10_tree.txt', './output/Beef/Beef_correlation_unnormed_CID_REP10_acc.txt']
+0
+num_class=5, num_obj=30  distance=correlation CID=true normalize=false ./output/Beef/Beef_correlation_unnormed_CID_REP10_tree.txt  ./output/Beef/Beef_correlation_unnormed_CID_REP10_acc.txt
+
+==> Tree Size = 42
+
+; accuracy= 43.333   Correct:13 , Wrong: 17
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   4    1    0    0    0 
+;   p  2 |   0    1    2    0    0 
+;   p  3 |   1    1    1    2    0 
+;   p  4 |   1    1    2    2    1 
+;   p  5 |   0    2    1    2    5 
+
+
+================ Replication:  10 Finished ================

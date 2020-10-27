@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 1, 0, 10, './replications/ArrowHead/ArrowHead_correlation_unnormed_CID_REP02_tree.txt', './replications/ArrowHead/ArrowHead_correlation_unnormed_CID_REP02_time.txt']
+
+rand seed=1503367122
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/ArrowHead/ArrowHead_correlation_unnormed_CID_REP02_tree.txt  time_file=./replications/ArrowHead/ArrowHead_correlation_unnormed_CID_REP02_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=65   @[ 10,145]  d_th= 0.03 gap=0.000158 gain= 0.55844 (10 )==>   0  12  11  /  12   0   1 
+
+=== Node 2 ===
+.............................................................
+Len=41   @[ 17, 83]  d_th= 0.05 gap=0.000081 gain= 0.69220 (1  )==>   0  12   0  /   0   0  11 
+
+num_class=3, num_obj=23, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.23 sec
+  Time Rand Project =     1.00 sec
+  Time Score Matrix =     0.11 sec
+  Time Compute Gain =     6.04 sec
+Running  Time for this Shapelet=     7.52 sec <<
+
+
+Total Running  Time =     7.52 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 1, 0, './replications/ArrowHead/ArrowHead_correlation_unnormed_CID_REP02_tree.txt', './replications/ArrowHead/ArrowHead_correlation_unnormed_CID_REP02_acc.txt']
+; accuracy= 74.286   Correct:130 , Wrong: 45
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  42    6    3 
+;   p  1 |  13   43    5 
+;   p  2 |  14    4   45 
+
+num_class=3, num_obj=175  distance=correlation CID=true normalize=false ./replications/ArrowHead/ArrowHead_correlation_unnormed_CID_REP02_tree.txt  ./replications/ArrowHead/ArrowHead_correlation_unnormed_CID_REP02_acc.txt
+
+==> Tree Size = 6
+

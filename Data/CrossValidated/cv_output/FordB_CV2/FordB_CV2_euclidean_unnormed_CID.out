@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FordB_TRAIN_CV2', 2, 406, 250, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502281464
+num_class=2, num_obj=406, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=219  @[401, 49]  d_th=14.32 gap=0.002084 gain= 0.08395 (284)==>   3  58  / 198 147 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=53   @[263,322]  d_th= 4.83 gap=0.001066 gain= 0.05316 (283)==> 167 147  /  31   0 
+
+=== Node 6 ===
+...........................................................................................................................
+Len=143  @[254,120]  d_th= 8.47 gap=0.012437 gain= 0.05619 (270)==>   0  22  / 167 125 
+
+=== Node 13 ===
+...........................................................................................................................
+Len=145  @[112,244]  d_th=15.68 gap=0.003573 gain= 0.04752 (2  )==> 105  40  /  62  85 
+
+num_class=2, num_obj=292, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    36.75 sec
+  Time Rand Project =   489.04 sec
+  Time Score Matrix =    30.61 sec
+  Time Compute Gain =   384.67 sec
+Running  Time for this Shapelet=   972.38 sec <<
+
+
+Total Running  Time =   972.38 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FordB_TRAIN_CV1', 2, 404, 'euclidean', 1, 0, './cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_CID_acc.txt']
+; accuracy= 69.059   Correct:279 , Wrong: 125
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 | 118   43 
+;   p  1 |  82  161 
+
+num_class=2, num_obj=404  distance=euclidean CID=true normalize=false ./cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_CID_tree.txt  ./cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 28
+

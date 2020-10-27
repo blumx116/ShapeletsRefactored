@@ -1,0 +1,51 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FordB_TRAIN_CV2', 2, 406, 250, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/FordB_CV2/FordB_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/FordB_CV2/FordB_CV2_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502286723
+num_class=2, num_obj=406, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/FordB_CV2/FordB_CV2_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/FordB_CV2/FordB_CV2_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=137  @[258,329]  d_th=74.79 gap=0.006170 gain= 0.08394 (302)==>   1  51  / 200 154 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=41   @[  7,184]  d_th=17.29 gap=0.034598 gain= 0.05689 (288)==> 167 154  /  33   0 
+
+=== Node 6 ===
+...........................................................................................................................
+Len=235  @[ 12,263]  d_th=166.26 gap=0.001183 gain= 0.06336 (137)==>  73  19  /  94 135 
+
+=== Node 12 ===
+...........................................................................................................................
+Len=105  @[ 90,192]  d_th=31.40 gap=0.002539 gain= 0.11229 (80 )==>   0   6  /  73  13 
+
+=== Node 13 ===
+...........................................................................................................................
+Len=211  @[ 66, 34]  d_th=144.86 gap=0.003389 gain= 0.05934 (57 )==>  77  66  /  17  69 
+
+num_class=2, num_obj=229, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    38.37 sec
+  Time Rand Project =   563.14 sec
+  Time Score Matrix =    32.75 sec
+  Time Compute Gain =   171.23 sec
+Running  Time for this Shapelet=   839.37 sec <<
+
+
+Total Running  Time =   839.37 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FordB_TRAIN_CV1', 2, 404, 'manhattan', 0, 0, './cv_output/FordB_CV2/FordB_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/FordB_CV2/FordB_CV2_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 68.564   Correct:277 , Wrong: 127
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 | 158   85 
+;   p  1 |  42  119 
+
+num_class=2, num_obj=404  distance=manhattan CID=false normalize=false ./cv_output/FordB_CV2/FordB_CV2_manhattan_unnormed_NOCID_tree.txt  ./cv_output/FordB_CV2/FordB_CV2_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 28
+

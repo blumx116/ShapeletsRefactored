@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV2', 3, 18, 126, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_CID_tree.txt', './cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502274510
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=41   @[  2, 49]  d_th=11.82 gap=0.206165 gain= 0.63651 (6  )==>   6   6   0  /   0   0   6 
+
+=== Node 2 ===
+.............................................................
+Len=107  @[  6, 49]  d_th=23.64 gap=0.234347 gain= 0.69315 (0  )==>   0   6   0  /   6   0   0 
+
+num_class=3, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.12 sec
+  Time Rand Project =     0.56 sec
+  Time Score Matrix =     0.06 sec
+  Time Compute Gain =     2.94 sec
+Running  Time for this Shapelet=     3.76 sec <<
+
+
+Total Running  Time =     3.76 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV1', 3, 18, 'manhattan', 1, 1, './cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_CID_tree.txt', './cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 77.778   Correct:14 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |   6    0    0 
+;   p  1 |   0    4    2 
+;   p  2 |   0    2    4 
+
+num_class=3, num_obj=18  distance=manhattan CID=true normalize=true ./cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_CID_tree.txt  ./cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 6
+

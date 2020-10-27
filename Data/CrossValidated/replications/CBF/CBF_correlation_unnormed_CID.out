@@ -1,0 +1,450 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CBF_TRAIN', 3, 30, 64, 1, 2, 10, 'correlation', 1, 0, 10, './output/CBF/CBF_correlation_unnormed_CID_REP01_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP01_time.txt']
+
+rand seed=1501857251
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CBF/CBF_correlation_unnormed_CID_REP01_tree.txt  time_file=./output/CBF/CBF_correlation_unnormed_CID_REP01_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=41   @[  3,  9]  d_th= 0.39 gap=0.014739 gain= 0.67301 (6  )==>  10   8   0  /   0   0  12 
+
+=== Node 2 ===
+..............................
+Len=57   @[  3, 14]  d_th= 0.38 gap=0.012272 gain= 0.68696 (2  )==>   0   8   0  /  10   0   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.08 sec
+  Time Rand Project =     0.65 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     1.04 sec
+Running  Time for this Shapelet=     1.91 sec <<
+
+
+Total Running  Time =     1.91 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CBF_TEST', 3, 900, 'correlation', 1, 0, './output/CBF/CBF_correlation_unnormed_CID_REP01_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP01_acc.txt']
+0
+num_class=3, num_obj=900  distance=correlation CID=true normalize=false ./output/CBF/CBF_correlation_unnormed_CID_REP01_tree.txt  ./output/CBF/CBF_correlation_unnormed_CID_REP01_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 96.444   Correct:868 , Wrong: 32
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 296    2    0 
+;   p  1 |   2  285   15 
+;   p  3 |   0   13  287 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CBF_TRAIN', 3, 30, 64, 1, 2, 10, 'correlation', 1, 0, 10, './output/CBF/CBF_correlation_unnormed_CID_REP02_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP02_time.txt']
+
+rand seed=1501857253
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CBF/CBF_correlation_unnormed_CID_REP02_tree.txt  time_file=./output/CBF/CBF_correlation_unnormed_CID_REP02_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=23   @[  0, 13]  d_th= 0.22 gap=0.015036 gain= 0.67301 (6  )==>  10   8   0  /   0   0  12 
+
+=== Node 2 ===
+..............................
+Len=51   @[  1,  9]  d_th= 0.34 gap=0.007604 gain= 0.68696 (2  )==>  10   0   0  /   0   8   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.08 sec
+  Time Rand Project =     0.79 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     0.92 sec
+Running  Time for this Shapelet=     1.91 sec <<
+
+
+Total Running  Time =     1.91 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CBF_TEST', 3, 900, 'correlation', 1, 0, './output/CBF/CBF_correlation_unnormed_CID_REP02_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP02_acc.txt']
+0
+num_class=3, num_obj=900  distance=correlation CID=true normalize=false ./output/CBF/CBF_correlation_unnormed_CID_REP02_tree.txt  ./output/CBF/CBF_correlation_unnormed_CID_REP02_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 92.556   Correct:833 , Wrong: 67
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 288    0    3 
+;   p  1 |   1  290   44 
+;   p  3 |   9   10  255 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CBF_TRAIN', 3, 30, 64, 1, 2, 10, 'correlation', 1, 0, 10, './output/CBF/CBF_correlation_unnormed_CID_REP03_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP03_time.txt']
+
+rand seed=1501857255
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CBF/CBF_correlation_unnormed_CID_REP03_tree.txt  time_file=./output/CBF/CBF_correlation_unnormed_CID_REP03_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=17   @[  0, 19]  d_th= 0.22 gap=0.017639 gain= 0.67301 (6  )==>  10   8   0  /   0   0  12 
+
+=== Node 2 ===
+..............................
+Len=59   @[  5,  9]  d_th= 0.35 gap=0.013861 gain= 0.68696 (2  )==>   0   8   0  /  10   0   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.08 sec
+  Time Rand Project =     0.60 sec
+  Time Score Matrix =     0.06 sec
+  Time Compute Gain =     0.87 sec
+Running  Time for this Shapelet=     1.65 sec <<
+
+
+Total Running  Time =     1.65 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CBF_TEST', 3, 900, 'correlation', 1, 0, './output/CBF/CBF_correlation_unnormed_CID_REP03_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP03_acc.txt']
+0
+num_class=3, num_obj=900  distance=correlation CID=true normalize=false ./output/CBF/CBF_correlation_unnormed_CID_REP03_tree.txt  ./output/CBF/CBF_correlation_unnormed_CID_REP03_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 93.889   Correct:845 , Wrong: 55
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 282    0    4 
+;   p  1 |  16  293   28 
+;   p  3 |   0    7  270 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CBF_TRAIN', 3, 30, 64, 1, 2, 10, 'correlation', 1, 0, 10, './output/CBF/CBF_correlation_unnormed_CID_REP04_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP04_time.txt']
+
+rand seed=1501857257
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CBF/CBF_correlation_unnormed_CID_REP04_tree.txt  time_file=./output/CBF/CBF_correlation_unnormed_CID_REP04_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=19   @[ 15, 22]  d_th= 0.23 gap=0.018307 gain= 0.67301 (6  )==>  10   8   0  /   0   0  12 
+
+=== Node 2 ===
+..............................
+Len=55   @[  1,  9]  d_th= 0.43 gap=0.005734 gain= 0.68696 (2  )==>  10   0   0  /   0   8   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.09 sec
+  Time Rand Project =     0.72 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     1.07 sec
+Running  Time for this Shapelet=     2.01 sec <<
+
+
+Total Running  Time =     2.01 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CBF_TEST', 3, 900, 'correlation', 1, 0, './output/CBF/CBF_correlation_unnormed_CID_REP04_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP04_acc.txt']
+0
+num_class=3, num_obj=900  distance=correlation CID=true normalize=false ./output/CBF/CBF_correlation_unnormed_CID_REP04_tree.txt  ./output/CBF/CBF_correlation_unnormed_CID_REP04_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 88.556   Correct:797 , Wrong: 103
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 294    2    0 
+;   p  1 |   0  288   87 
+;   p  3 |   4   10  215 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CBF_TRAIN', 3, 30, 64, 1, 2, 10, 'correlation', 1, 0, 10, './output/CBF/CBF_correlation_unnormed_CID_REP05_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP05_time.txt']
+
+rand seed=1501857260
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CBF/CBF_correlation_unnormed_CID_REP05_tree.txt  time_file=./output/CBF/CBF_correlation_unnormed_CID_REP05_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=17   @[  0, 19]  d_th= 0.22 gap=0.017639 gain= 0.67301 (6  )==>  10   8   0  /   0   0  12 
+
+=== Node 2 ===
+..............................
+Len=55   @[  1,  9]  d_th= 0.43 gap=0.005734 gain= 0.68696 (2  )==>  10   0   0  /   0   8   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.09 sec
+  Time Rand Project =     0.72 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     1.06 sec
+Running  Time for this Shapelet=     2.01 sec <<
+
+
+Total Running  Time =     2.01 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CBF_TEST', 3, 900, 'correlation', 1, 0, './output/CBF/CBF_correlation_unnormed_CID_REP05_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP05_acc.txt']
+0
+num_class=3, num_obj=900  distance=correlation CID=true normalize=false ./output/CBF/CBF_correlation_unnormed_CID_REP05_tree.txt  ./output/CBF/CBF_correlation_unnormed_CID_REP05_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 87.000   Correct:783 , Wrong: 117
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 282    0    4 
+;   p  1 |   0  290   87 
+;   p  3 |  16   10  211 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CBF_TRAIN', 3, 30, 64, 1, 2, 10, 'correlation', 1, 0, 10, './output/CBF/CBF_correlation_unnormed_CID_REP06_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP06_time.txt']
+
+rand seed=1501857263
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CBF/CBF_correlation_unnormed_CID_REP06_tree.txt  time_file=./output/CBF/CBF_correlation_unnormed_CID_REP06_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=17   @[  7,  8]  d_th= 0.21 gap=0.014121 gain= 0.67301 (6  )==>  10   8   0  /   0   0  12 
+
+=== Node 2 ===
+..............................
+Len=59   @[  5,  9]  d_th= 0.35 gap=0.013861 gain= 0.68696 (2  )==>   0   8   0  /  10   0   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.08 sec
+  Time Rand Project =     0.62 sec
+  Time Score Matrix =     0.06 sec
+  Time Compute Gain =     0.93 sec
+Running  Time for this Shapelet=     1.75 sec <<
+
+
+Total Running  Time =     1.75 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CBF_TEST', 3, 900, 'correlation', 1, 0, './output/CBF/CBF_correlation_unnormed_CID_REP06_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP06_acc.txt']
+0
+num_class=3, num_obj=900  distance=correlation CID=true normalize=false ./output/CBF/CBF_correlation_unnormed_CID_REP06_tree.txt  ./output/CBF/CBF_correlation_unnormed_CID_REP06_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 94.667   Correct:852 , Wrong: 48
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 288    0    4 
+;   p  1 |  10  293   27 
+;   p  3 |   0    7  271 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CBF_TRAIN', 3, 30, 64, 1, 2, 10, 'correlation', 1, 0, 10, './output/CBF/CBF_correlation_unnormed_CID_REP07_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP07_time.txt']
+
+rand seed=1501857265
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CBF/CBF_correlation_unnormed_CID_REP07_tree.txt  time_file=./output/CBF/CBF_correlation_unnormed_CID_REP07_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=43   @[ 15, 14]  d_th= 0.31 gap=0.014618 gain= 0.67301 (6  )==>  10   8   0  /   0   0  12 
+
+=== Node 2 ===
+..............................
+Len=59   @[  5,  9]  d_th= 0.35 gap=0.013861 gain= 0.68696 (2  )==>   0   8   0  /  10   0   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.09 sec
+  Time Rand Project =     0.83 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     0.92 sec
+Running  Time for this Shapelet=     1.96 sec <<
+
+
+Total Running  Time =     1.96 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CBF_TEST', 3, 900, 'correlation', 1, 0, './output/CBF/CBF_correlation_unnormed_CID_REP07_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP07_acc.txt']
+0
+num_class=3, num_obj=900  distance=correlation CID=true normalize=false ./output/CBF/CBF_correlation_unnormed_CID_REP07_tree.txt  ./output/CBF/CBF_correlation_unnormed_CID_REP07_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 95.778   Correct:862 , Wrong: 38
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 296    1    0 
+;   p  1 |   2  292   28 
+;   p  3 |   0    7  274 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CBF_TRAIN', 3, 30, 64, 1, 2, 10, 'correlation', 1, 0, 10, './output/CBF/CBF_correlation_unnormed_CID_REP08_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP08_time.txt']
+
+rand seed=1501857267
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CBF/CBF_correlation_unnormed_CID_REP08_tree.txt  time_file=./output/CBF/CBF_correlation_unnormed_CID_REP08_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=23   @[  0, 13]  d_th= 0.22 gap=0.015036 gain= 0.67301 (6  )==>  10   8   0  /   0   0  12 
+
+=== Node 2 ===
+..............................
+Len=59   @[  5,  9]  d_th= 0.35 gap=0.013861 gain= 0.68696 (2  )==>   0   8   0  /  10   0   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.07 sec
+  Time Rand Project =     0.55 sec
+  Time Score Matrix =     0.05 sec
+  Time Compute Gain =     0.84 sec
+Running  Time for this Shapelet=     1.56 sec <<
+
+
+Total Running  Time =     1.56 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CBF_TEST', 3, 900, 'correlation', 1, 0, './output/CBF/CBF_correlation_unnormed_CID_REP08_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP08_acc.txt']
+0
+num_class=3, num_obj=900  distance=correlation CID=true normalize=false ./output/CBF/CBF_correlation_unnormed_CID_REP08_tree.txt  ./output/CBF/CBF_correlation_unnormed_CID_REP08_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 94.667   Correct:852 , Wrong: 48
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 288    0    3 
+;   p  1 |  10  293   28 
+;   p  3 |   0    7  271 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CBF_TRAIN', 3, 30, 64, 1, 2, 10, 'correlation', 1, 0, 10, './output/CBF/CBF_correlation_unnormed_CID_REP09_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP09_time.txt']
+
+rand seed=1501857269
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CBF/CBF_correlation_unnormed_CID_REP09_tree.txt  time_file=./output/CBF/CBF_correlation_unnormed_CID_REP09_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=41   @[  3,  9]  d_th= 0.39 gap=0.014739 gain= 0.67301 (6  )==>  10   8   0  /   0   0  12 
+
+=== Node 2 ===
+..............................
+Len=59   @[  5,  9]  d_th= 0.35 gap=0.013861 gain= 0.68696 (2  )==>   0   8   0  /  10   0   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.09 sec
+  Time Rand Project =     0.69 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     1.04 sec
+Running  Time for this Shapelet=     1.95 sec <<
+
+
+Total Running  Time =     1.95 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CBF_TEST', 3, 900, 'correlation', 1, 0, './output/CBF/CBF_correlation_unnormed_CID_REP09_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP09_acc.txt']
+0
+num_class=3, num_obj=900  distance=correlation CID=true normalize=false ./output/CBF/CBF_correlation_unnormed_CID_REP09_tree.txt  ./output/CBF/CBF_correlation_unnormed_CID_REP09_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 95.667   Correct:861 , Wrong: 39
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 296    2    0 
+;   p  1 |   2  291   28 
+;   p  3 |   0    7  274 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CBF_TRAIN', 3, 30, 64, 1, 2, 10, 'correlation', 1, 0, 10, './output/CBF/CBF_correlation_unnormed_CID_REP10_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP10_time.txt']
+
+rand seed=1501857271
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CBF/CBF_correlation_unnormed_CID_REP10_tree.txt  time_file=./output/CBF/CBF_correlation_unnormed_CID_REP10_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=21   @[ 19,  8]  d_th= 0.24 gap=0.013806 gain= 0.67301 (6  )==>  10   8   0  /   0   0  12 
+
+=== Node 2 ===
+..............................
+Len=59   @[ 10,  4]  d_th= 0.34 gap=0.011944 gain= 0.68696 (2  )==>   0   8   0  /  10   0   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.09 sec
+  Time Rand Project =     0.71 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     1.04 sec
+Running  Time for this Shapelet=     1.97 sec <<
+
+
+Total Running  Time =     1.97 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CBF_TEST', 3, 900, 'correlation', 1, 0, './output/CBF/CBF_correlation_unnormed_CID_REP10_tree.txt', './output/CBF/CBF_correlation_unnormed_CID_REP10_acc.txt']
+0
+num_class=3, num_obj=900  distance=correlation CID=true normalize=false ./output/CBF/CBF_correlation_unnormed_CID_REP10_tree.txt  ./output/CBF/CBF_correlation_unnormed_CID_REP10_acc.txt
+
+==> Tree Size = 6
+
+; accuracy= 97.778   Correct:880 , Wrong: 20
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 296    3    1 
+;   p  1 |   2  287    4 
+;   p  3 |   0   10  297 
+
+
+================ Replication:  10 Finished ================

@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1508180344, rand()=1442930914, rand()=727297019
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECGFiveDays_TRAIN 2 23 68 1 2 10 euclidean 0 0 10 ./replications/ECGFiveDays/ECGFiveDays_euclidean_unnormed_NOCID_REP26_tree.txt ./replications/ECGFiveDays/ECGFiveDays_euclidean_unnormed_NOCID_REP26_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      1   59   33   3.1302 ==>  12   0  /   2   9 
+Leaf  2     1    
+NonL  3    --      1   54    5   4.8096 ==>   0   9  /   2   0 
+Leaf  6     2    
+Leaf  7     1    
+
+;Shapelet id   <data>
+Shapelet   1  -1.868700 -0.808110 -0.371610 -0.228840 -0.118690 -0.073819 -0.012628  0.003689  0.048563  0.040404  0.121990  0.187260  0.228060  0.285170  0.346360  0.419790  0.538090  0.652310  0.815490  1.035800  1.296900  1.606900  1.941400  2.288100  2.610400  2.875600  2.965300  2.847000  2.451300  1.896500  1.256100  0.689030  0.346360 
+Shapelet   3   0.021731  0.697430  0.472200 -3.403700 -6.162800 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECGFiveDays_TRAIN 2 23 68 1 2 10 euclidean 0 0 10 ./replications/ECGFiveDays/ECGFiveDays_euclidean_unnormed_NOCID_REP26_tree.txt ./replications/ECGFiveDays/ECGFiveDays_euclidean_unnormed_NOCID_REP26_time.txt
+; time =>    0.474   0.044   0.268   0.028   0.107 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECGFiveDays_TEST 2 861 euclidean 0 0 ./replications/ECGFiveDays/ECGFiveDays_euclidean_unnormed_NOCID_REP26_tree.txt ./replications/ECGFiveDays/ECGFiveDays_euclidean_unnormed_NOCID_REP26_acc.txt
+; accuracy= 100.000   Correct:861 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 433    0 
+;   p  1 |   0  428 
+

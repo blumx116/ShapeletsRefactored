@@ -1,0 +1,75 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxTW_TRAIN_CV1', 6, 102, 40, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503460950
+num_class=6, num_obj=102, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [5,8]  [4,7]  [3,6]  [2,5]  [1,4]  [0,3]  
+
+=== Node 1 ===
+..................
+Len=33   @[  0, 34]  d_th= 0.01 gap=0.000368 gain= 0.64935 (18 )==>   1  33  20   5   1   0  /   0   0   0   0   6  36 
+
+=== Node 2 ===
+..................
+Len=33   @[ 21, 36]  d_th= 0.01 gap=0.000002 gain= 0.41254 (10 )==>   1  31   3   0   0   0  /   0   2  17   5   1   0 
+
+=== Node 3 ===
+..................
+Len=13   @[  0, 10]  d_th= 0.00 gap=0.000004 gain= 0.22356 (34 )==>   0   0   0   0   4   0  /   0   0   0   0   2  36 
+
+=== Node 4 ===
+..................
+Len=5    @[  0,  3]  d_th= 0.00 gap=0.000001 gain= 0.23795 (29 )==>   1   0   2   0   0   0  /   0  31   1   0   0   0 
+
+=== Node 5 ===
+..................
+Len=17   @[  0, 13]  d_th= 0.00 gap=0.000039 gain= 0.30507 (17 )==>   0   2   0   2   0   0  /   0   0  17   3   1   0 
+
+=== Node 8 ===
+..................
+Len=17   @[  0, 58]  d_th= 0.01 gap=0.002231 gain= 0.63651 (1  )==>   1   0   0   0   0   0  /   0   0   2   0   0   0 
+
+=== Node 10 ===
+..................
+Len=35   @[  0, 44]  d_th= 0.01 gap=0.000373 gain= 0.69315 (0  )==>   0   2   0   0   0   0  /   0   0   0   2   0   0 
+
+=== Node 11 ===
+..................
+Len=13   @[  0, 50]  d_th= 0.02 gap=0.000168 gain= 0.25928 (7  )==>   0   0   3   3   1   0  /   0   0  14   0   0   0 
+
+=== Node 22 ===
+..................
+Len=25   @[  0, 24]  d_th= 0.00 gap=0.000082 gain= 0.68291 (1  )==>   0   0   3   0   0   0  /   0   0   0   3   1   0 
+
+=== Node 45 ===
+..................
+Len=5    @[  0, 37]  d_th= 0.05 gap=0.004830 gain= 0.56234 (2  )==>   0   0   0   3   0   0  /   0   0   0   0   1   0 
+
+num_class=6, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.10 sec
+  Time Rand Project =     0.46 sec
+  Time Score Matrix =     0.05 sec
+  Time Compute Gain =     0.75 sec
+Running  Time for this Shapelet=     1.42 sec <<
+
+
+Total Running  Time =     1.42 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxTW_TRAIN_CV2', 6, 103, 'correlation', 0, 0, './cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 66.990   Correct:69 , Wrong: 34
+
+
+;   == Confusion Matrix ==
+;   real |   3    4    5    6    7    8 
+;   -----+------------------------------------
+;   p  3 |   0    0    0    0    0    0 
+;   p  4 |   1   27    6    0    0    0 
+;   p  5 |   0    4    6    2    2    0 
+;   p  6 |   0    3    3    3    0    0 
+;   p  7 |   0    0    4    0    0    3 
+;   p  8 |   0    0    1    0    5   33 
+
+num_class=6, num_obj=103  distance=correlation CID=false normalize=false ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_correlation_unnormed_NOCID_tree.txt  ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 92
+

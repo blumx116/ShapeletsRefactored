@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1501821838, rand()=1347729563, rand()=1042952000
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 manhattan 0 0 10 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0   10    5   1.2375 ==>  29   1  /   5  32 
+Leaf  2     1    
+NonL  3    --      8    6    9   1.9454 ==>   5   0  /   0  32 
+Leaf  6     1    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.275300  0.960050  0.613330  0.014447 -0.647480 
+Shapelet   3  -1.053900 -0.418230 -0.451680  0.117100  0.518600  0.652430  0.552060  0.217480 -0.117100 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 manhattan 0 0 10 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_time.txt
+; time =>    0.037   0.003   0.022   0.003   0.007 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST 2 1029 manhattan 0 0 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_acc.txt
+; accuracy= 85.714   Correct:882 , Wrong: 147
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 423   54 
+;   p  1 |  93  459 
+

@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1502274202, rand()=1476185868, rand()=565730230
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2 2 34 12 1 2 10 manhattan 1 0 10 ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_CID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 14 
+NonL  1    --      2    2   11   1.8938 ==>  12   0  /   5  17 
+Leaf  2     1    
+NonL  3    --      1   12    7   3.1724 ==>   5   1  /   0  16 
+NonL  6    --      0    4    7   2.9595 ==>   5   0  /   0   1 
+Leaf  7     2    
+Leaf 12     1    
+Leaf 13     2    
+
+;Shapelet id   <data>
+Shapelet   1  -1.500800 -1.577000 -1.634200 -1.462700 -1.081500 -0.281100  0.843300  0.976710  0.976710  0.862360  0.709900 
+Shapelet   3   0.637080  0.069169 -0.367690 -0.498740 -0.367690 -0.018202  1.772900 
+Shapelet   6  -1.511700 -1.470500 -1.017000 -0.728360 -0.439770  0.013743  0.673390 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2 2 34 12 1 2 10 manhattan 1 0 10 ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_CID_time.txt
+; time =>    0.025   0.002   0.010   0.001   0.011 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1 2 33 manhattan 1 0 ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_CID_acc.txt
+; accuracy= 87.879   Correct:29 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  14    1 
+;   p  2 |   3   15 
+

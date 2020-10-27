@@ -1,0 +1,75 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/OSULeaf_TRAIN_CV1', 6, 98, 214, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/OSULeaf_CV1/OSULeaf_CV1_correlation_unnormed_CID_tree.txt', './cv_output/OSULeaf_CV1/OSULeaf_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503462254
+num_class=6, num_obj=98, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/OSULeaf_CV1/OSULeaf_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/OSULeaf_CV1/OSULeaf_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................................................................
+Len=213  @[ 26,131]  d_th= 0.36 gap=0.000165 gain= 0.57418 (20 )==>   0  12   0  26   1   0  /  17   2  16   0  17   7 
+
+=== Node 2 ===
+.........................................................................................................
+Len=119  @[ 27,306]  d_th= 0.20 gap=0.000291 gain= 0.52898 (15 )==>   0   1   0  26   0   0  /   0  11   0   0   1   0 
+
+=== Node 3 ===
+.........................................................................................................
+Len=77   @[ 30,121]  d_th= 0.13 gap=0.000350 gain= 0.51250 (19 )==>   0   1  16   0  15   7  /  17   1   0   0   2   0 
+
+=== Node 6 ===
+.........................................................................................................
+Len=71   @[ 17,323]  d_th= 0.04 gap=0.000080 gain= 0.52237 (3  )==>   0   1   0   0  14   6  /   0   0  16   0   1   1 
+
+=== Node 7 ===
+.........................................................................................................
+Len=113  @[ 18, 55]  d_th= 0.18 gap=0.005513 gain= 0.42271 (14 )==>   0   1   0   0   2   0  /  17   0   0   0   0   0 
+
+=== Node 12 ===
+.........................................................................................................
+Len=149  @[  5,236]  d_th= 0.33 gap=0.001990 gain= 0.46497 (7  )==>   0   1   0   0  13   0  /   0   0   0   0   1   6 
+
+=== Node 13 ===
+.........................................................................................................
+Len=89   @[ 16,332]  d_th= 0.02 gap=0.000774 gain= 0.34883 (14 )==>   0   0   0   0   1   1  /   0   0  16   0   0   0 
+
+=== Node 14 ===
+.........................................................................................................
+Len=99   @[  0,227]  d_th= 0.10 gap=0.010548 gain= 0.63651 (1  )==>   0   1   0   0   0   0  /   0   0   0   0   2   0 
+
+=== Node 25 ===
+.........................................................................................................
+Len=173  @[  2,133]  d_th= 0.80 gap=0.019172 gain= 0.41012 (5  )==>   0   0   0   0   0   6  /   0   0   0   0   1   0 
+
+=== Node 26 ===
+.........................................................................................................
+Len=209  @[  0,134]  d_th= 0.31 gap=0.021711 gain= 0.69315 (0  )==>   0   0   0   0   1   0  /   0   0   0   0   0   1 
+
+num_class=6, num_obj=2, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     4.79 sec
+  Time Rand Project =    40.11 sec
+  Time Score Matrix =     2.92 sec
+  Time Compute Gain =   129.70 sec
+Running  Time for this Shapelet=   180.51 sec <<
+
+
+Total Running  Time =   180.51 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/OSULeaf_TRAIN_CV2', 6, 102, 'correlation', 1, 0, './cv_output/OSULeaf_CV1/OSULeaf_CV1_correlation_unnormed_CID_tree.txt', './cv_output/OSULeaf_CV1/OSULeaf_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 67.647   Correct:69 , Wrong: 33
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6 
+;   -----+------------------------------------
+;   p  1 |  13    0    1    0    0    2 
+;   p  2 |   0    6    3    4    0    1 
+;   p  3 |   1    0   12    0    2    3 
+;   p  4 |   0    8    0   23    0    0 
+;   p  5 |   2    1    1    0   14    1 
+;   p  6 |   1    0    0    0    2    1 
+
+num_class=6, num_obj=102  distance=correlation CID=true normalize=false ./cv_output/OSULeaf_CV1/OSULeaf_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/OSULeaf_CV1/OSULeaf_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 54
+

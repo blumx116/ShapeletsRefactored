@@ -1,0 +1,80 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ChlorineConcentration_TRAIN', 3, 467, 83, 1, 2, 10, 'euclidean', 0, 1, 10, './replications/ChlorineConcentration/ChlorineConcentration_euclidean_normed_NOCID_REP28_tree.txt', './replications/ChlorineConcentration/ChlorineConcentration_euclidean_normed_NOCID_REP28_time.txt']
+
+rand seed=1508182902
+num_class=3, num_obj=467, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/ChlorineConcentration/ChlorineConcentration_euclidean_normed_NOCID_REP28_tree.txt  time_file=./replications/ChlorineConcentration/ChlorineConcentration_euclidean_normed_NOCID_REP28_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [2,2]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=41   @[  9,123]  d_th= 3.56 gap=0.001039 gain= 0.07356 (421)==>  91 262  91  /  23   0   0 
+
+=== Node 2 ===
+........................................
+Len=41   @[ 69, 73]  d_th= 2.36 gap=0.000109 gain= 0.03212 (164)==>  14  79  47  /  77 183  44 
+
+=== Node 4 ===
+........................................
+Len=17   @[  1, 53]  d_th= 0.81 gap=0.000650 gain= 0.08895 (16 )==>   0  48  30  /  14  31  17 
+
+=== Node 5 ===
+........................................
+Len=7    @[  1, 22]  d_th= 0.14 gap=0.001947 gain= 0.03263 (294)==>   0   0   5  /  77 183  39 
+
+=== Node 8 ===
+........................................
+Len=77   @[  2, 71]  d_th= 0.87 gap=0.001261 gain= 0.10764 (62 )==>   0   0   8  /   0  48  22 
+
+=== Node 9 ===
+........................................
+Len=17   @[  0, 77]  d_th= 1.02 gap=0.000437 gain= 0.21638 (38 )==>   5  31  14  /   9   0   3 
+
+=== Node 11 ===
+........................................
+Len=17   @[ 34,120]  d_th= 2.43 gap=0.000425 gain= 0.04124 (215)==>  53 166  38  /  24  17   1 
+
+=== Node 17 ===
+........................................
+Len=9    @[  0,  2]  d_th= 0.30 gap=0.000144 gain= 0.10079 (30 )==>   0   7  13  /   0  41   9 
+
+=== Node 18 ===
+........................................
+Len=51   @[  7,107]  d_th= 0.72 gap=0.017095 gain= 0.21088 (36 )==>   0   0   7  /   5  31   7 
+
+=== Node 19 ===
+........................................
+Len=17   @[  0, 20]  d_th= 0.59 gap=0.009274 gain= 0.37489 (4  )==>   8   0   0  /   1   0   3 
+
+=== Node 22 ===
+........................................
+Len=5    @[  0, 25]  d_th= 0.29 gap=0.000131 gain= 0.02980 (119)==>  49 113  26  /   4  53  12 
+
+=== Node 23 ===
+........................................
+Len=11   @[  3, 75]  d_th= 1.79 gap=0.011412 gain= 0.14419 (32 )==>  24  13   0  /   0   4   1 
+
+num_class=3, num_obj=42, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.40 sec
+  Time Rand Project =    67.95 sec
+  Time Score Matrix =     4.77 sec
+  Time Compute Gain =    35.15 sec
+Running  Time for this Shapelet=   120.15 sec <<
+
+
+Total Running  Time =   120.15 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ChlorineConcentration_TEST', 3, 3840, 'euclidean', 0, 1, './replications/ChlorineConcentration/ChlorineConcentration_euclidean_normed_NOCID_REP28_tree.txt', './replications/ChlorineConcentration/ChlorineConcentration_euclidean_normed_NOCID_REP28_acc.txt']
+; accuracy= 57.708   Correct:2216 , Wrong: 1624
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 146   31  124 
+;   p  1 |  30  312  163 
+;   p  3 | 733  543 1758 
+
+num_class=3, num_obj=3840  distance=euclidean CID=false normalize=true ./replications/ChlorineConcentration/ChlorineConcentration_euclidean_normed_NOCID_REP28_tree.txt  ./replications/ChlorineConcentration/ChlorineConcentration_euclidean_normed_NOCID_REP28_acc.txt
+
+==> Tree Size = 48
+

@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV2', 4, 16, 285, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_normed_CID_tree.txt', './cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502280044
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.............................................................................................................................................
+Len=177  @[  7,318]  d_th= 4.18 gap=0.015922 gain= 0.68531 (2  )==>   3   4   2   0  /   0   0   0   7 
+
+=== Node 2 ===
+.............................................................................................................................................
+Len=29   @[  0,426]  d_th= 1.32 gap=0.042183 gain= 0.68696 (1  )==>   3   0   2   0  /   0   4   0   0 
+
+=== Node 4 ===
+.............................................................................................................................................
+Len=73   @[  0,408]  d_th= 2.11 gap=0.153656 gain= 0.67301 (1  )==>   3   0   0   0  /   0   0   2   0 
+
+num_class=4, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.52 sec
+  Time Rand Project =     1.30 sec
+  Time Score Matrix =     0.10 sec
+  Time Compute Gain =    28.63 sec
+Running  Time for this Shapelet=    30.69 sec <<
+
+
+Total Running  Time =    30.69 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV1', 4, 14, 'manhattan', 1, 1, './cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_normed_CID_tree.txt', './cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 71.429   Correct:10 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   2    0    0    0 
+;   p  2 |   0    3    0    1 
+;   p  3 |   0    0    0    0 
+;   p  4 |   0    1    2    5 
+
+num_class=4, num_obj=14  distance=manhattan CID=true normalize=true ./cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_normed_CID_tree.txt  ./cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 10
+

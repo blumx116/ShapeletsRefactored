@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1', 2, 31, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/Herring_CV1/Herring_CV1_euclidean_unnormed_NOCID_tree.txt', './cv_output/Herring_CV1/Herring_CV1_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502279544
+num_class=2, num_obj=31, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Herring_CV1/Herring_CV1_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/Herring_CV1/Herring_CV1_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=243  @[  1,137]  d_th= 2.50 gap=0.000121 gain= 0.26616 (1  )==>   4  11  /  15   1 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=5    @[  0,321]  d_th= 0.07 gap=0.001478 gain= 0.35045 (9  )==>   3   0  /   1  11 
+
+num_class=2, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.64 sec
+  Time Rand Project =     2.03 sec
+  Time Score Matrix =     0.23 sec
+  Time Compute Gain =     4.03 sec
+Running  Time for this Shapelet=     7.14 sec <<
+
+
+Total Running  Time =     7.14 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV2', 2, 33, 'euclidean', 0, 0, './cv_output/Herring_CV1/Herring_CV1_euclidean_unnormed_NOCID_tree.txt', './cv_output/Herring_CV1/Herring_CV1_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 60.606   Correct:20 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  15    8 
+;   p  2 |   5    5 
+
+num_class=2, num_obj=33  distance=euclidean CID=false normalize=false ./cv_output/Herring_CV1/Herring_CV1_euclidean_unnormed_NOCID_tree.txt  ./cv_output/Herring_CV1/Herring_CV1_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 6
+

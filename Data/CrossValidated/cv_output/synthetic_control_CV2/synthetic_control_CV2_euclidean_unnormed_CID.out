@@ -1,0 +1,75 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV2', 6, 150, 30, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/synthetic_control_CV2/synthetic_control_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/synthetic_control_CV2/synthetic_control_CV2_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502274222
+num_class=6, num_obj=150, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/synthetic_control_CV2/synthetic_control_CV2_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/synthetic_control_CV2/synthetic_control_CV2_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.............
+Len=25   @[131, 20]  d_th= 5.46 gap=0.019618 gain= 0.58041 (54 )==>   0   0   0  23   0  25  /  25  25  25   2  25   0 
+
+=== Node 2 ===
+.............
+Len=9    @[  0, 23]  d_th= 1.83 gap=0.022770 gain= 0.51911 (2  )==>   0   0   0  22   0   1  /   0   0   0   1   0  24 
+
+=== Node 3 ===
+.............
+Len=5    @[  2, 15]  d_th= 1.95 gap=0.002546 gain= 0.56988 (2  )==>  24  25   2   1   0   0  /   1   0  23   1  25   0 
+
+=== Node 6 ===
+.............
+Len=21   @[ 38, 17]  d_th= 4.53 gap=0.168735 gain= 0.69241 (2  )==>   0  25   0   0   0   0  /  24   0   2   1   0   0 
+
+=== Node 7 ===
+.............
+Len=17   @[ 39, 26]  d_th= 3.29 gap=0.001491 gain= 0.42421 (4  )==>   0   0   1   0  22   0  /   1   0  22   1   3   0 
+
+=== Node 13 ===
+.............
+Len=25   @[ 12,  4]  d_th= 6.34 gap=0.046585 gain= 0.34883 (21 )==>  24   0   0   0   0   0  /   0   0   2   1   0   0 
+
+=== Node 15 ===
+.............
+Len=25   @[ 12, 21]  d_th= 5.23 gap=0.058014 gain= 0.47917 (17 )==>   0   0  22   0   0   0  /   1   0   0   1   3   0 
+
+=== Node 27 ===
+.............
+Len=7    @[  2, 42]  d_th= 0.68 gap=0.257834 gain= 0.63651 (1  )==>   0   0   0   1   0   0  /   0   0   2   0   0   0 
+
+=== Node 31 ===
+.............
+Len=5    @[  1, 40]  d_th= 1.75 gap=0.039985 gain= 0.67301 (1  )==>   1   0   0   1   0   0  /   0   0   0   0   3   0 
+
+=== Node 62 ===
+.............
+Len=29   @[  0, 21]  d_th= 5.08 gap=0.943709 gain= 0.69315 (0  )==>   1   0   0   0   0   0  /   0   0   0   1   0   0 
+
+num_class=6, num_obj=2, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.13 sec
+  Time Rand Project =     0.99 sec
+  Time Score Matrix =     0.10 sec
+  Time Compute Gain =     0.71 sec
+Running  Time for this Shapelet=     2.03 sec <<
+
+
+Total Running  Time =     2.03 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV1', 6, 150, 'euclidean', 1, 0, './cv_output/synthetic_control_CV2/synthetic_control_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/synthetic_control_CV2/synthetic_control_CV2_euclidean_unnormed_CID_acc.txt']
+; accuracy= 87.333   Correct:131 , Wrong: 19
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6 
+;   -----+------------------------------------
+;   p  1 |  22    0    0    0    0    0 
+;   p  2 |   0   24    0    0    0    0 
+;   p  3 |   2    0   23    0    4    1 
+;   p  4 |   1    1    0   19    0    2 
+;   p  5 |   0    0    2    1   21    0 
+;   p  6 |   0    0    0    5    0   22 
+
+num_class=6, num_obj=150  distance=euclidean CID=true normalize=false ./cv_output/synthetic_control_CV2/synthetic_control_CV2_euclidean_unnormed_CID_tree.txt  ./cv_output/synthetic_control_CV2/synthetic_control_CV2_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 126
+

@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1502275227, rand()=939593204, rand()=426644978
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1 2 185 118 1 2 10 manhattan 1 0 10 ./cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_unnormed_CID_tree.txt ./cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_unnormed_CID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 22 
+NonL  1    --      4   28   41   4.2937 ==>  63  16  /   3 103 
+NonL  2    --      0  169   23   1.6330 ==>  57   2  /   6  14 
+Leaf  3     2    
+Leaf  4     1    
+NonL  5    --      1   44   27   2.1711 ==>   2  14  /   4   0 
+NonL 10    --      1   70    5   0.1948 ==>   2   0  /   0  14 
+Leaf 11     1    
+Leaf 20     1    
+Leaf 21     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.208100  1.398900  1.622100  1.788300  1.929500  2.151800  2.436900  2.643500  2.715900  2.717200  2.732200  2.820200  2.984400  3.148000  3.203100  3.126700  2.965400  2.798300  2.713000  2.670300  2.473300  2.071400  1.685100  1.512800  1.546400  1.625200  1.597700  1.439100  1.231100  1.048200  0.913220  0.822290  0.760630  0.713710  0.674840  0.643560  0.616080  0.579000  0.519570  0.430210  0.301750 
+Shapelet   2  -0.946240 -0.945710 -0.941770 -0.885210 -0.849180 -0.823660 -0.802090 -0.781310 -0.757380 -0.750540 -0.757110 -0.770270 -0.784210 -0.799730 -0.833400 -0.879160 -0.923090 -0.970700 -1.005900 -1.023000 -1.027800 -1.029100 -1.017800 
+Shapelet   5   2.965400  2.798300  2.713000  2.670300  2.473300  2.071400  1.685100  1.512800  1.546400  1.625200  1.597700  1.439100  1.231100  1.048200  0.913220  0.822290  0.760630  0.713710  0.674840  0.643560  0.616080  0.579000  0.519570  0.430210  0.301750  0.141790 -0.008340 
+Shapelet  10  -0.067517 -0.163430 -0.203410 -0.205770 -0.190610 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1 2 185 118 1 2 10 manhattan 1 0 10 ./cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_unnormed_CID_tree.txt ./cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_unnormed_CID_time.txt
+; time =>   25.558   1.211   7.150   0.805  15.718 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV2 2 185 manhattan 1 0 ./cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_unnormed_CID_tree.txt ./cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_unnormed_CID_acc.txt
+; accuracy= 79.459   Correct:147 , Wrong: 38
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  40   12 
+;   p  2 |  26  107 
+

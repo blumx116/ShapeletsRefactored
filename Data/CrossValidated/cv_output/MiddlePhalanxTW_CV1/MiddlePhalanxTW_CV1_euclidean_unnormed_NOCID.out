@@ -1,0 +1,83 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxTW_TRAIN_CV1', 6, 75, 40, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/MiddlePhalanxTW_CV1/MiddlePhalanxTW_CV1_euclidean_unnormed_NOCID_tree.txt', './cv_output/MiddlePhalanxTW_CV1/MiddlePhalanxTW_CV1_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502274205
+num_class=6, num_obj=75, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/MiddlePhalanxTW_CV1/MiddlePhalanxTW_CV1_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/MiddlePhalanxTW_CV1/MiddlePhalanxTW_CV1_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [5,8]  [4,7]  [3,6]  [2,5]  [1,4]  [0,3]  
+
+=== Node 1 ===
+..................
+Len=35   @[  1, 31]  d_th= 1.12 gap=0.008448 gain= 0.57944 (29 )==>  12  22  11   5   2   0  /   0   0   0   0   2  21 
+
+=== Node 2 ===
+..................
+Len=21   @[  0, 32]  d_th= 0.56 gap=0.001098 gain= 0.26628 (12 )==>  10   6   0   4   0   0  /   2  16  11   1   2   0 
+
+=== Node 4 ===
+..................
+Len=7    @[  0, 67]  d_th= 0.13 gap=0.000364 gain= 0.35664 (0  )==>   4   6   0   0   0   0  /   6   0   0   4   0   0 
+
+=== Node 5 ===
+..................
+Len=23   @[  0, 18]  d_th= 0.72 gap=0.000202 gain= 0.32549 (14 )==>   1   0   7   1   0   0  /   1  16   4   0   2   0 
+
+=== Node 8 ===
+..................
+Len=13   @[  1, 47]  d_th= 0.35 gap=0.004699 gain= 0.67301 (2  )==>   4   0   0   0   0   0  /   0   6   0   0   0   0 
+
+=== Node 9 ===
+..................
+Len=29   @[  0, 20]  d_th= 0.72 gap=0.000319 gain= 0.42281 (0  )==>   5   0   0   0   0   0  /   1   0   0   4   0   0 
+
+=== Node 10 ===
+..................
+Len=5    @[  0,  4]  d_th= 0.19 gap=0.005206 gain= 0.52971 (5  )==>   1   0   0   1   0   0  /   0   0   7   0   0   0 
+
+=== Node 11 ===
+..................
+Len=21   @[  0, 11]  d_th= 0.26 gap=0.000965 gain= 0.38721 (17 )==>   1   0   0   0   2   0  /   0  16   4   0   0   0 
+
+=== Node 19 ===
+..................
+Len=39   @[  0, 15]  d_th= 0.63 gap=0.100430 gain= 0.50040 (3  )==>   1   0   0   0   0   0  /   0   0   0   4   0   0 
+
+=== Node 20 ===
+..................
+Len=7    @[  0, 48]  d_th= 0.25 gap=0.094004 gain= 0.69315 (0  )==>   1   0   0   0   0   0  /   0   0   0   1   0   0 
+
+=== Node 22 ===
+..................
+Len=29   @[  0, 44]  d_th= 0.18 gap=0.033311 gain= 0.63651 (1  )==>   1   0   0   0   0   0  /   0   0   0   0   2   0 
+
+=== Node 23 ===
+..................
+Len=9    @[  0,  4]  d_th= 0.38 gap=0.002821 gain= 0.31024 (14 )==>   0  16   1   0   0   0  /   0   0   3   0   0   0 
+
+num_class=6, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.08 sec
+  Time Rand Project =     0.43 sec
+  Time Score Matrix =     0.05 sec
+  Time Compute Gain =     0.23 sec
+Running  Time for this Shapelet=     0.82 sec <<
+
+
+Total Running  Time =     0.82 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxTW_TRAIN_CV2', 6, 79, 'euclidean', 0, 0, './cv_output/MiddlePhalanxTW_CV1/MiddlePhalanxTW_CV1_euclidean_unnormed_NOCID_tree.txt', './cv_output/MiddlePhalanxTW_CV1/MiddlePhalanxTW_CV1_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 46.835   Correct:37 , Wrong: 42
+
+
+;   == Confusion Matrix ==
+;   real |   3    4    5    6    7    8 
+;   -----+------------------------------------
+;   p  3 |   4    3    4    1    1    0 
+;   p  4 |   3   11    6    4    1    0 
+;   p  5 |   0    2    0    1    0    0 
+;   p  6 |   5    5    0    0    0    0 
+;   p  7 |   0    0    0    0    1    0 
+;   p  8 |   1    1    2    0    2   21 
+
+num_class=6, num_obj=79  distance=euclidean CID=false normalize=false ./cv_output/MiddlePhalanxTW_CV1/MiddlePhalanxTW_CV1_euclidean_unnormed_NOCID_tree.txt  ./cv_output/MiddlePhalanxTW_CV1/MiddlePhalanxTW_CV1_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 48
+

@@ -1,0 +1,49 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/CinC_ECG_torso/CinC_ECG_torso_euclidean_unnormed_NOCID_REP16_tree.txt', './replications/CinC_ECG_torso/CinC_ECG_torso_euclidean_unnormed_NOCID_REP16_time.txt']
+
+rand seed=1508718004
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/CinC_ECG_torso/CinC_ECG_torso_euclidean_unnormed_NOCID_REP16_tree.txt  time_file=./replications/CinC_ECG_torso/CinC_ECG_torso_euclidean_unnormed_NOCID_REP16_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=701  @[ 12, 56]  d_th=37.40 gap=0.011846 gain= 0.56234 (20 )==>   5  12   0  13  /   0   0  10   0 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=299  @[ 21,1009]  d_th=11.66 gap=0.020585 gain= 0.45056 (20 )==>   0  12   0  13  /   5   0   0   0 
+
+=== Node 4 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=419  @[  4,1147]  d_th= 4.75 gap=0.003886 gain= 0.46268 (3  )==>   0   0   0  11  /   0  12   0   2 
+
+=== Node 9 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=699  @[ 10, 38]  d_th=16.28 gap=0.089147 gain= 0.41012 (10 )==>   0   0   0   2  /   0  12   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    21.10 sec
+  Time Rand Project =   113.85 sec
+  Time Score Matrix =     7.55 sec
+  Time Compute Gain =   259.01 sec
+Running  Time for this Shapelet=   409.83 sec <<
+
+
+Total Running  Time =   409.83 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 0, 0, './replications/CinC_ECG_torso/CinC_ECG_torso_euclidean_unnormed_NOCID_REP16_tree.txt', './replications/CinC_ECG_torso/CinC_ECG_torso_euclidean_unnormed_NOCID_REP16_acc.txt']
+; accuracy= 60.870   Correct:840 , Wrong: 540
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 228   59   77   73 
+;   p  2 |  95  258   13   84 
+;   p  4 |   7    7  252   91 
+;   p  1 |  13   18    3  102 
+
+num_class=4, num_obj=1380  distance=euclidean CID=false normalize=false ./replications/CinC_ECG_torso/CinC_ECG_torso_euclidean_unnormed_NOCID_REP16_tree.txt  ./replications/CinC_ECG_torso/CinC_ECG_torso_euclidean_unnormed_NOCID_REP16_acc.txt
+
+==> Tree Size = 20
+

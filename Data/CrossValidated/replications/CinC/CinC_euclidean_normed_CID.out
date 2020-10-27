@@ -1,0 +1,500 @@
+================ Replication:  1 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 1, 1, 10, './output/CinC/CinC_euclidean_normed_CID_REP01_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP01_time.txt']
+
+rand seed=1502122676
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CinC/CinC_euclidean_normed_CID_REP01_tree.txt  time_file=./output/CinC/CinC_euclidean_normed_CID_REP01_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  1,  4]  d_th= 0.53 gap=0.018987 gain= 0.59372 (6  )==>   0  12  10   1  /   5   0   0  12 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=731  @[  7,123]  d_th=32.95 gap=0.063385 gain= 0.69220 (1  )==>   0  12   0   0  /   0   0  10   1 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=395  @[  5, 34]  d_th=34.87 gap=0.109893 gain= 0.60580 (7  )==>   5   0   0   0  /   0   0   0  12 
+
+num_class=4, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    16.98 sec
+  Time Rand Project =   123.16 sec
+  Time Score Matrix =    18.92 sec
+  Time Compute Gain =  1806.89 sec
+Running  Time for this Shapelet=  1981.16 sec <<
+
+
+Total Running  Time =  1981.16 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 1, 1, './output/CinC/CinC_euclidean_normed_CID_REP01_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP01_acc.txt']
+0
+num_class=4, num_obj=1380  distance=euclidean CID=true normalize=true ./output/CinC/CinC_euclidean_normed_CID_REP01_tree.txt  ./output/CinC/CinC_euclidean_normed_CID_REP01_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 78.261   Correct:1080 , Wrong: 300
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 252   48   15    1 
+;   p  2 |  10  275    5   28 
+;   p  4 |  80    7  325   93 
+;   p  1 |   1   12    0  228 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 1, 1, 10, './output/CinC/CinC_euclidean_normed_CID_REP02_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP02_time.txt']
+
+rand seed=1502124725
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CinC/CinC_euclidean_normed_CID_REP02_tree.txt  time_file=./output/CinC/CinC_euclidean_normed_CID_REP02_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  1,  4]  d_th= 0.53 gap=0.018987 gain= 0.59372 (6  )==>   0  12  10   1  /   5   0   0  12 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=731  @[  7,123]  d_th=32.95 gap=0.063385 gain= 0.69220 (1  )==>   0  12   0   0  /   0   0  10   1 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=549  @[ 13,102]  d_th=19.37 gap=0.094937 gain= 0.60580 (7  )==>   5   0   0   0  /   0   0   0  12 
+
+num_class=4, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    16.99 sec
+  Time Rand Project =   122.96 sec
+  Time Score Matrix =    18.90 sec
+  Time Compute Gain =  1810.59 sec
+Running  Time for this Shapelet=  1984.82 sec <<
+
+
+Total Running  Time =  1984.82 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 1, 1, './output/CinC/CinC_euclidean_normed_CID_REP02_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP02_acc.txt']
+0
+num_class=4, num_obj=1380  distance=euclidean CID=true normalize=true ./output/CinC/CinC_euclidean_normed_CID_REP02_tree.txt  ./output/CinC/CinC_euclidean_normed_CID_REP02_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 70.145   Correct:968 , Wrong: 412
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 252   48   15    1 
+;   p  2 |  10  246    5  111 
+;   p  4 |  80    7  325   93 
+;   p  1 |   1   41    0  145 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 1, 1, 10, './output/CinC/CinC_euclidean_normed_CID_REP03_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP03_time.txt']
+
+rand seed=1502126775
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CinC/CinC_euclidean_normed_CID_REP03_tree.txt  time_file=./output/CinC/CinC_euclidean_normed_CID_REP03_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  1,  4]  d_th= 0.53 gap=0.018987 gain= 0.59372 (6  )==>   0  12  10   1  /   5   0   0  12 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=729  @[  7,123]  d_th=33.06 gap=0.045967 gain= 0.69220 (1  )==>   0  12   0   0  /   0   0  10   1 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=443  @[ 15,1065]  d_th=45.03 gap=0.360236 gain= 0.60580 (7  )==>   5   0   0   0  /   0   0   0  12 
+
+num_class=4, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    16.94 sec
+  Time Rand Project =   123.53 sec
+  Time Score Matrix =    19.10 sec
+  Time Compute Gain =  1814.91 sec
+Running  Time for this Shapelet=  1989.82 sec <<
+
+
+Total Running  Time =  1989.82 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 1, 1, './output/CinC/CinC_euclidean_normed_CID_REP03_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP03_acc.txt']
+0
+num_class=4, num_obj=1380  distance=euclidean CID=true normalize=true ./output/CinC/CinC_euclidean_normed_CID_REP03_tree.txt  ./output/CinC/CinC_euclidean_normed_CID_REP03_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 78.913   Correct:1089 , Wrong: 291
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 247   49   15    1 
+;   p  2 |  11  287    5   26 
+;   p  4 |  85    6  325   93 
+;   p  1 |   0    0    0  230 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 1, 1, 10, './output/CinC/CinC_euclidean_normed_CID_REP04_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP04_time.txt']
+
+rand seed=1502128832
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CinC/CinC_euclidean_normed_CID_REP04_tree.txt  time_file=./output/CinC/CinC_euclidean_normed_CID_REP04_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  1,  4]  d_th= 0.53 gap=0.018987 gain= 0.59372 (6  )==>   0  12  10   1  /   5   0   0  12 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=731  @[  7,123]  d_th=32.95 gap=0.063385 gain= 0.69220 (1  )==>   0  12   0   0  /   0   0  10   1 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=567  @[ 15, 62]  d_th=26.30 gap=0.118980 gain= 0.60580 (7  )==>   5   0   0   0  /   0   0   0  12 
+
+num_class=4, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    16.99 sec
+  Time Rand Project =   124.36 sec
+  Time Score Matrix =    19.20 sec
+  Time Compute Gain =  1809.96 sec
+Running  Time for this Shapelet=  1986.17 sec <<
+
+
+Total Running  Time =  1986.17 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 1, 1, './output/CinC/CinC_euclidean_normed_CID_REP04_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP04_acc.txt']
+0
+num_class=4, num_obj=1380  distance=euclidean CID=true normalize=true ./output/CinC/CinC_euclidean_normed_CID_REP04_tree.txt  ./output/CinC/CinC_euclidean_normed_CID_REP04_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 71.594   Correct:988 , Wrong: 392
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 252   48   15    1 
+;   p  2 |  11  254    5   99 
+;   p  4 |  80    7  325   93 
+;   p  1 |   0   33    0  157 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 1, 1, 10, './output/CinC/CinC_euclidean_normed_CID_REP05_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP05_time.txt']
+
+rand seed=1502130886
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CinC/CinC_euclidean_normed_CID_REP05_tree.txt  time_file=./output/CinC/CinC_euclidean_normed_CID_REP05_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  1,  4]  d_th= 0.53 gap=0.018987 gain= 0.59372 (6  )==>   0  12  10   1  /   5   0   0  12 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=729  @[  7,123]  d_th=33.06 gap=0.045967 gain= 0.69220 (1  )==>   0  12   0   0  /   0   0  10   1 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=499  @[ 15,1012]  d_th=51.61 gap=0.697611 gain= 0.60580 (7  )==>   5   0   0   0  /   0   0   0  12 
+
+num_class=4, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    16.92 sec
+  Time Rand Project =   123.28 sec
+  Time Score Matrix =    18.92 sec
+  Time Compute Gain =  1808.63 sec
+Running  Time for this Shapelet=  1983.15 sec <<
+
+
+Total Running  Time =  1983.15 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 1, 1, './output/CinC/CinC_euclidean_normed_CID_REP05_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP05_acc.txt']
+0
+num_class=4, num_obj=1380  distance=euclidean CID=true normalize=true ./output/CinC/CinC_euclidean_normed_CID_REP05_tree.txt  ./output/CinC/CinC_euclidean_normed_CID_REP05_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 78.623   Correct:1085 , Wrong: 295
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 247   49   15    1 
+;   p  2 |  11  285    5   28 
+;   p  4 |  85    6  325   93 
+;   p  1 |   0    2    0  228 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 1, 1, 10, './output/CinC/CinC_euclidean_normed_CID_REP06_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP06_time.txt']
+
+rand seed=1502132936
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CinC/CinC_euclidean_normed_CID_REP06_tree.txt  time_file=./output/CinC/CinC_euclidean_normed_CID_REP06_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  1,  4]  d_th= 0.53 gap=0.018987 gain= 0.59372 (6  )==>   0  12  10   1  /   5   0   0  12 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=723  @[  7,134]  d_th=32.41 gap=0.074669 gain= 0.69220 (1  )==>   0  12   0   0  /   0   0  10   1 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=519  @[ 15,987]  d_th=33.89 gap=0.154890 gain= 0.60580 (7  )==>   5   0   0   0  /   0   0   0  12 
+
+num_class=4, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    16.97 sec
+  Time Rand Project =   123.70 sec
+  Time Score Matrix =    19.13 sec
+  Time Compute Gain =  1810.06 sec
+Running  Time for this Shapelet=  1985.31 sec <<
+
+
+Total Running  Time =  1985.31 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 1, 1, './output/CinC/CinC_euclidean_normed_CID_REP06_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP06_acc.txt']
+0
+num_class=4, num_obj=1380  distance=euclidean CID=true normalize=true ./output/CinC/CinC_euclidean_normed_CID_REP06_tree.txt  ./output/CinC/CinC_euclidean_normed_CID_REP06_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 75.942   Correct:1048 , Wrong: 332
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 255   50   24    2 
+;   p  2 |  11  262    5   41 
+;   p  4 |  77    5  316   92 
+;   p  1 |   0   25    0  215 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 1, 1, 10, './output/CinC/CinC_euclidean_normed_CID_REP07_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP07_time.txt']
+
+rand seed=1502134989
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CinC/CinC_euclidean_normed_CID_REP07_tree.txt  time_file=./output/CinC/CinC_euclidean_normed_CID_REP07_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  1,  4]  d_th= 0.53 gap=0.018987 gain= 0.59372 (6  )==>   0  12  10   1  /   5   0   0  12 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=731  @[  7,123]  d_th=32.95 gap=0.063385 gain= 0.69220 (1  )==>   0  12   0   0  /   0   0  10   1 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=7    @[  0,  0]  d_th= 0.37 gap=0.054964 gain= 0.60580 (7  )==>   5   0   0   0  /   0   0   0  12 
+
+num_class=4, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    17.01 sec
+  Time Rand Project =   123.22 sec
+  Time Score Matrix =    18.98 sec
+  Time Compute Gain =  1812.34 sec
+Running  Time for this Shapelet=  1986.73 sec <<
+
+
+Total Running  Time =  1986.73 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 1, 1, './output/CinC/CinC_euclidean_normed_CID_REP07_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP07_acc.txt']
+0
+num_class=4, num_obj=1380  distance=euclidean CID=true normalize=true ./output/CinC/CinC_euclidean_normed_CID_REP07_tree.txt  ./output/CinC/CinC_euclidean_normed_CID_REP07_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 73.623   Correct:1016 , Wrong: 364
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 252   48   15    1 
+;   p  2 |  11  286    4  103 
+;   p  4 |  80    7  325   93 
+;   p  1 |   0    1    1  153 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 1, 1, 10, './output/CinC/CinC_euclidean_normed_CID_REP08_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP08_time.txt']
+
+rand seed=1502137040
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CinC/CinC_euclidean_normed_CID_REP08_tree.txt  time_file=./output/CinC/CinC_euclidean_normed_CID_REP08_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  0,498]  d_th= 0.65 gap=0.001891 gain= 0.63058 (14 )==>   5  12  10   0  /   0   0   0  13 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=731  @[  8,127]  d_th=32.88 gap=0.090301 gain= 0.68696 (3  )==>   0  12   0   0  /   5   0  10   0 
+
+=== Node 5 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=305  @[  2,757]  d_th=25.43 gap=0.334080 gain= 0.63651 (5  )==>   0   0  10   0  /   5   0   0   0 
+
+num_class=4, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    17.36 sec
+  Time Rand Project =   125.47 sec
+  Time Score Matrix =    19.34 sec
+  Time Compute Gain =  1855.46 sec
+Running  Time for this Shapelet=  2033.26 sec <<
+
+
+Total Running  Time =  2033.26 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 1, 1, './output/CinC/CinC_euclidean_normed_CID_REP08_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP08_acc.txt']
+0
+num_class=4, num_obj=1380  distance=euclidean CID=true normalize=true ./output/CinC/CinC_euclidean_normed_CID_REP08_tree.txt  ./output/CinC/CinC_euclidean_normed_CID_REP08_acc.txt
+
+==> Tree Size = 12
+
+; accuracy= 76.884   Correct:1061 , Wrong: 319
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 245   75   16   14 
+;   p  2 |  24  248    1   39 
+;   p  4 |  48   14  325   54 
+;   p  1 |  26    5    3  243 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 1, 1, 10, './output/CinC/CinC_euclidean_normed_CID_REP09_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP09_time.txt']
+
+rand seed=1502139143
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CinC/CinC_euclidean_normed_CID_REP09_tree.txt  time_file=./output/CinC/CinC_euclidean_normed_CID_REP09_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  1,  4]  d_th= 0.53 gap=0.018987 gain= 0.59372 (6  )==>   0  12  10   1  /   5   0   0  12 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=729  @[  7,123]  d_th=33.06 gap=0.045967 gain= 0.69220 (1  )==>   0  12   0   0  /   0   0  10   1 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=445  @[ 15,1067]  d_th=39.79 gap=0.315655 gain= 0.60580 (7  )==>   5   0   0   0  /   0   0   0  12 
+
+num_class=4, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    16.90 sec
+  Time Rand Project =   122.82 sec
+  Time Score Matrix =    18.99 sec
+  Time Compute Gain =  1804.47 sec
+Running  Time for this Shapelet=  1978.47 sec <<
+
+
+Total Running  Time =  1978.47 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 1, 1, './output/CinC/CinC_euclidean_normed_CID_REP09_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP09_acc.txt']
+0
+num_class=4, num_obj=1380  distance=euclidean CID=true normalize=true ./output/CinC/CinC_euclidean_normed_CID_REP09_tree.txt  ./output/CinC/CinC_euclidean_normed_CID_REP09_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 78.768   Correct:1087 , Wrong: 293
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 247   49   15    1 
+;   p  2 |  11  286    5   27 
+;   p  4 |  85    6  325   93 
+;   p  1 |   0    1    0  229 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'euclidean', 1, 1, 10, './output/CinC/CinC_euclidean_normed_CID_REP10_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP10_time.txt']
+
+rand seed=1502141187
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/CinC/CinC_euclidean_normed_CID_REP10_tree.txt  time_file=./output/CinC/CinC_euclidean_normed_CID_REP10_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  1,  4]  d_th= 0.53 gap=0.018987 gain= 0.59372 (6  )==>   0  12  10   1  /   5   0   0  12 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=731  @[  7,123]  d_th=32.95 gap=0.063385 gain= 0.69220 (1  )==>   0  12   0   0  /   0   0  10   1 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=485  @[ 13,157]  d_th=24.14 gap=0.070342 gain= 0.60580 (7  )==>   5   0   0   0  /   0   0   0  12 
+
+num_class=4, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    16.92 sec
+  Time Rand Project =   123.00 sec
+  Time Score Matrix =    18.99 sec
+  Time Compute Gain =  1795.32 sec
+Running  Time for this Shapelet=  1969.65 sec <<
+
+
+Total Running  Time =  1969.65 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'euclidean', 1, 1, './output/CinC/CinC_euclidean_normed_CID_REP10_tree.txt', './output/CinC/CinC_euclidean_normed_CID_REP10_acc.txt']
+0
+num_class=4, num_obj=1380  distance=euclidean CID=true normalize=true ./output/CinC/CinC_euclidean_normed_CID_REP10_tree.txt  ./output/CinC/CinC_euclidean_normed_CID_REP10_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 71.884   Correct:992 , Wrong: 388
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 252   48   15    1 
+;   p  2 |  10  272    5  113 
+;   p  4 |  80    7  325   93 
+;   p  1 |   1   15    0  143 
+
+
+================ Replication:  10 Finished ================

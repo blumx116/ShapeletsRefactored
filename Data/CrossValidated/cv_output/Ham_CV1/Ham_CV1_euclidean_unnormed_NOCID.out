@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV1', 2, 54, 216, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/Ham_CV1/Ham_CV1_euclidean_unnormed_NOCID_tree.txt', './cv_output/Ham_CV1/Ham_CV1_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502279786
+num_class=2, num_obj=54, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Ham_CV1/Ham_CV1_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/Ham_CV1/Ham_CV1_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=207  @[ 49, 32]  d_th= 5.24 gap=0.002627 gain= 0.25506 (14 )==>   1  19  /  25   9 
+
+=== Node 3 ===
+..........................................................................................................
+Len=41   @[ 17,344]  d_th= 3.89 gap=0.005438 gain= 0.36210 (16 )==>  24   1  /   1   8 
+
+=== Node 7 ===
+..........................................................................................................
+Len=87   @[  0,316]  d_th= 2.04 gap=0.218986 gain= 0.34883 (7  )==>   1   0  /   0   8 
+
+num_class=2, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.59 sec
+  Time Rand Project =    13.25 sec
+  Time Score Matrix =     1.12 sec
+  Time Compute Gain =     5.36 sec
+Running  Time for this Shapelet=    22.38 sec <<
+
+
+Total Running  Time =    22.38 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV2', 2, 55, 'euclidean', 0, 0, './cv_output/Ham_CV1/Ham_CV1_euclidean_unnormed_NOCID_tree.txt', './cv_output/Ham_CV1/Ham_CV1_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 60.000   Correct:33 , Wrong: 22
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  18   14 
+;   p  2 |   8   15 
+
+num_class=2, num_obj=55  distance=euclidean CID=false normalize=false ./cv_output/Ham_CV1/Ham_CV1_euclidean_unnormed_NOCID_tree.txt  ./cv_output/Ham_CV1/Ham_CV1_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 16
+

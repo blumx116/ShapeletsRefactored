@@ -1,0 +1,67 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FordA_TRAIN', 2, 1320, 250, 1, 2, 10, 'correlation', 1, 0, 10, './replications/FordA/FordA_correlation_unnormed_CID_REP07_tree.txt', './replications/FordA/FordA_correlation_unnormed_CID_REP07_time.txt']
+
+rand seed=1503458165
+num_class=2, num_obj=1320, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/FordA/FordA_correlation_unnormed_CID_REP07_tree.txt  time_file=./replications/FordA/FordA_correlation_unnormed_CID_REP07_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=209  @[1307,202]  d_th= 0.61 gap=0.000003 gain= 0.16909 (48 )==> 167 517  / 514 122 
+
+=== Node 2 ===
+...........................................................................................................................
+Len=37   @[ 16,407]  d_th= 0.08 gap=0.000013 gain= 0.11386 (220)==>  43 409  / 124 108 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=207  @[234, 95]  d_th= 0.57 gap=0.000016 gain= 0.09836 (394)==>  50  71  / 464  51 
+
+=== Node 5 ===
+...........................................................................................................................
+Len=149  @[162,132]  d_th= 0.13 gap=0.000015 gain= 0.09248 (90 )==>  60  11  /  64  97 
+
+=== Node 6 ===
+...........................................................................................................................
+Len=17   @[  0, 38]  d_th= 0.01 gap=0.000036 gain= 0.24746 (19 )==>   9  61  /  41  10 
+
+=== Node 10 ===
+...........................................................................................................................
+Len=203  @[ 60,242]  d_th= 0.45 gap=0.000054 gain= 0.15655 (47 )==>  56   3  /   4   8 
+
+=== Node 11 ===
+...........................................................................................................................
+Len=17   @[  0, 29]  d_th= 0.02 gap=0.000001 gain= 0.14878 (85 )==>  31  92  /  33   5 
+
+=== Node 12 ===
+...........................................................................................................................
+Len=31   @[ 14,346]  d_th= 0.12 gap=0.000977 gain= 0.21917 (48 )==>   1  58  /   8   3 
+
+=== Node 13 ===
+...........................................................................................................................
+Len=57   @[ 17,394]  d_th= 0.04 gap=0.000070 gain= 0.18484 (41 )==>   0   5  /  41   5 
+
+num_class=2, num_obj=51, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    93.97 sec
+  Time Rand Project =  1285.92 sec
+  Time Score Matrix =    91.92 sec
+  Time Compute Gain =  2187.19 sec
+Running  Time for this Shapelet=  3746.62 sec <<
+
+
+Total Running  Time =  3746.62 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FordA_TEST', 2, 3601, 'correlation', 1, 0, './replications/FordA/FordA_correlation_unnormed_CID_REP07_tree.txt', './replications/FordA/FordA_correlation_unnormed_CID_REP07_acc.txt']
+; accuracy= 82.255   Correct:2962 , Wrong: 639
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |1524  317 
+;   p  1 | 322 1438 
+
+num_class=2, num_obj=3601  distance=correlation CID=true normalize=false ./replications/FordA/FordA_correlation_unnormed_CID_REP07_tree.txt  ./replications/FordA/FordA_correlation_unnormed_CID_REP07_acc.txt
+
+==> Tree Size = 28
+

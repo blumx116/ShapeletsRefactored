@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV2', 2, 29, 117, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/Wine_CV2/Wine_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/Wine_CV2/Wine_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502274848
+num_class=2, num_obj=29, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Wine_CV2/Wine_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/Wine_CV2/Wine_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................
+Len=57   @[ 17, 43]  d_th= 0.62 gap=0.003653 gain= 0.18014 (17 )==>  15   8  /   0   6 
+
+=== Node 2 ===
+.........................................................
+Len=85   @[  0, 49]  d_th= 0.52 gap=0.001060 gain= 0.36585 (1  )==>   3   8  /  12   0 
+
+=== Node 4 ===
+.........................................................
+Len=31   @[  0, 31]  d_th= 0.18 gap=0.015629 gain= 0.58595 (5  )==>   3   0  /   0   8 
+
+num_class=2, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.18 sec
+  Time Rand Project =     0.56 sec
+  Time Score Matrix =     0.04 sec
+  Time Compute Gain =     2.91 sec
+Running  Time for this Shapelet=     3.75 sec <<
+
+
+Total Running  Time =     3.75 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV1', 2, 28, 'manhattan', 1, 0, './cv_output/Wine_CV2/Wine_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/Wine_CV2/Wine_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 67.857   Correct:19 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   9    3 
+;   p  2 |   6   10 
+
+num_class=2, num_obj=28  distance=manhattan CID=true normalize=false ./cv_output/Wine_CV2/Wine_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/Wine_CV2/Wine_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 10
+

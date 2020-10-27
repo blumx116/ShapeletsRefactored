@@ -1,0 +1,69 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/RefrigerationDevices_TRAIN_CV1', 3, 186, 360, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_tree.txt', './cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502308797
+num_class=3, num_obj=186, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=5    @[  0, 48]  d_th= 0.00 gap=0.000000 gain= 0.31579 (10 )==>   1  32  55  /  61  30   7 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=5    @[  0, 48]  d_th= 0.00 gap=0.000000 gain= 0.45117 (0  )==>   0  28  55  /  53  30   0 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=7    @[  9,  2]  d_th= 3.82 gap=1.444891 gain= 0.68814 (2  )==>   0   4   7  /   9   0   0 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=5    @[  0, 48]  d_th= 0.00 gap=0.000000 gain= 0.45117 (0  )==>   0  28  55  /  53  30   0 
+
+=== Node 5 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 6 ===
+..................................................................................................................................................................................
+Len=9    @[  4,249]  d_th= 1.98 gap=0.658793 gain= 0.65548 (3  )==>   0   0   7  /   0   4   0 
+
+=== Node 8 ===
+..................................................................................................................................................................................
+Len=5    @[  0, 48]  d_th= 0.00 gap=0.000000 gain= 0.45117 (0  )==>   0  28  55  /  53  30   0 
+
+=== Node 9 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 16 ===
+..................................................................................................................................................................................
+Len=5    @[  0, 48]  d_th= 0.00 gap=0.000000 gain= 0.45117 (0  )==>   0  28  55  /  53  30   0 
+
+=== Node 17 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=17 
+
+num_class=3, num_obj=0, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    36.95 sec
+  Time Rand Project =   280.09 sec
+  Time Score Matrix =    17.54 sec
+  Time Compute Gain =  1533.24 sec
+Running  Time for this Shapelet=  1886.09 sec <<
+
+
+Total Running  Time =  1886.09 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/RefrigerationDevices_TRAIN_CV2', 3, 189, 'manhattan', 1, 1, './cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_tree.txt', './cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 36.508   Correct:69 , Wrong: 120
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  10    0    3 
+;   p  2 |   6    0    1 
+;   p  3 |  47   63   59 
+
+num_class=3, num_obj=189  distance=manhattan CID=true normalize=true ./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_tree.txt  ./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 34
+

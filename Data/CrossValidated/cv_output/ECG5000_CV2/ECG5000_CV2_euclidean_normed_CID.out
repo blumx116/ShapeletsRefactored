@@ -1,0 +1,58 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2', 5, 251, 70, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_normed_CID_tree.txt', './cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_normed_CID_time.txt']
+
+rand seed=1502274429
+num_class=5, num_obj=251, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_normed_CID_tree.txt  time_file=./cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=41   @[  1, 85]  d_th= 3.82 gap=0.005717 gain= 0.58967 (41 )==> 143   1   1   0   1  /   3  88   4  10   0 
+
+=== Node 3 ===
+.................................
+Len=27   @[  1,  0]  d_th= 1.52 gap=0.016252 gain= 0.17326 (95 )==>   1   0   4   0   0  /   2  88   0  10   0 
+
+=== Node 6 ===
+.................................
+Len=65   @[  0, 43]  d_th= 2.65 gap=0.328571 gain= 0.50040 (3  )==>   1   0   0   0   0  /   0   0   4   0   0 
+
+=== Node 7 ===
+.................................
+Len=17   @[  3,104]  d_th= 1.88 gap=0.031270 gain= 0.15474 (84 )==>   0  87   0   5   0  /   2   1   0   5   0 
+
+=== Node 15 ===
+.................................
+Len=29   @[  3, 11]  d_th= 1.92 gap=0.036055 gain= 0.66156 (2  )==>   0   0   0   5   0  /   2   1   0   0   0 
+
+=== Node 31 ===
+.................................
+Len=31   @[  2, 29]  d_th= 3.47 gap=0.622760 gain= 0.63651 (1  )==>   0   1   0   0   0  /   2   0   0   0   0 
+
+num_class=5, num_obj=3, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.87 sec
+  Time Rand Project =     7.38 sec
+  Time Score Matrix =     0.79 sec
+  Time Compute Gain =     8.98 sec
+Running  Time for this Shapelet=    18.75 sec <<
+
+
+Total Running  Time =    18.75 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV1', 5, 249, 'euclidean', 1, 1, './cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_normed_CID_tree.txt', './cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_normed_CID_acc.txt']
+; accuracy= 90.361   Correct:225 , Wrong: 24
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 | 135    2    0    0    1 
+;   p  2 |   4   84    0    6    0 
+;   p  3 |   7    2    5    2    0 
+;   p  4 |   0    0    0    1    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=249  distance=euclidean CID=true normalize=true ./cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_normed_CID_tree.txt  ./cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 64
+

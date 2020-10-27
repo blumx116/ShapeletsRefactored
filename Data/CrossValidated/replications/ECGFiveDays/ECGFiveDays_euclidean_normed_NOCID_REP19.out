@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECGFiveDays_TRAIN', 2, 23, 68, 1, 2, 10, 'euclidean', 0, 1, 10, './replications/ECGFiveDays/ECGFiveDays_euclidean_normed_NOCID_REP19_tree.txt', './replications/ECGFiveDays/ECGFiveDays_euclidean_normed_NOCID_REP19_time.txt']
+
+rand seed=1508180353
+num_class=2, num_obj=23, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/ECGFiveDays/ECGFiveDays_euclidean_normed_NOCID_REP19_tree.txt  time_file=./replications/ECGFiveDays/ECGFiveDays_euclidean_normed_NOCID_REP19_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+................................
+Len=39   @[  1, 61]  d_th= 2.45 gap=0.064249 gain= 0.66933 (5  )==>  14   0  /   0   9 
+
+num_class=2, num_obj=23, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.03 sec
+  Time Rand Project =     0.19 sec
+  Time Score Matrix =     0.02 sec
+  Time Compute Gain =     0.21 sec
+Running  Time for this Shapelet=     0.47 sec <<
+
+
+Total Running  Time =     0.47 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECGFiveDays_TEST', 2, 861, 'euclidean', 0, 1, './replications/ECGFiveDays/ECGFiveDays_euclidean_normed_NOCID_REP19_tree.txt', './replications/ECGFiveDays/ECGFiveDays_euclidean_normed_NOCID_REP19_acc.txt']
+; accuracy= 100.000   Correct:861 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 433    0 
+;   p  1 |   0  428 
+
+num_class=2, num_obj=861  distance=euclidean CID=false normalize=true ./replications/ECGFiveDays/ECGFiveDays_euclidean_normed_NOCID_REP19_tree.txt  ./replications/ECGFiveDays/ECGFiveDays_euclidean_normed_NOCID_REP19_acc.txt
+
+==> Tree Size = 4
+

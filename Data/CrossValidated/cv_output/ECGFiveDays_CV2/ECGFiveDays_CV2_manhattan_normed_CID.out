@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECGFiveDays_TRAIN_CV2', 2, 12, 68, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/ECGFiveDays_CV2/ECGFiveDays_CV2_manhattan_normed_CID_tree.txt', './cv_output/ECGFiveDays_CV2/ECGFiveDays_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502274279
+num_class=2, num_obj=12, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ECGFiveDays_CV2/ECGFiveDays_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/ECGFiveDays_CV2/ECGFiveDays_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+................................
+Len=27   @[  0, 57]  d_th= 9.81 gap=0.612506 gain= 0.67919 (2  )==>   7   0  /   0   5 
+
+num_class=2, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.02 sec
+  Time Rand Project =     0.09 sec
+  Time Score Matrix =     0.01 sec
+  Time Compute Gain =     0.25 sec
+Running  Time for this Shapelet=     0.37 sec <<
+
+
+Total Running  Time =     0.37 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECGFiveDays_TRAIN_CV1', 2, 11, 'manhattan', 1, 1, './cv_output/ECGFiveDays_CV2/ECGFiveDays_CV2_manhattan_normed_CID_tree.txt', './cv_output/ECGFiveDays_CV2/ECGFiveDays_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 100.000   Correct:11 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   7    0 
+;   p  2 |   0    4 
+
+num_class=2, num_obj=11  distance=manhattan CID=true normalize=true ./cv_output/ECGFiveDays_CV2/ECGFiveDays_CV2_manhattan_normed_CID_tree.txt  ./cv_output/ECGFiveDays_CV2/ECGFiveDays_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 4
+

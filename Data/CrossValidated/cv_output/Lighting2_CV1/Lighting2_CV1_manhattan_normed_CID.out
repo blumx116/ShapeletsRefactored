@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV1', 2, 30, 319, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_normed_CID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502281446
+num_class=2, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+..............................................................................................................................................................
+Len=63   @[  2, 66]  d_th=19.81 gap=0.028328 gain= 0.33965 (16 )==>   7   0  /   3  20 
+
+=== Node 3 ===
+..............................................................................................................................................................
+Len=37   @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.38721 (17 )==>   3   0  /   0  20 
+
+num_class=2, num_obj=23, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.99 sec
+  Time Rand Project =    16.67 sec
+  Time Score Matrix =     1.02 sec
+  Time Compute Gain =    58.36 sec
+Running  Time for this Shapelet=    79.18 sec <<
+
+
+Total Running  Time =    79.18 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV2', 2, 30, 'manhattan', 1, 1, './cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_normed_CID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 50.000   Correct:15 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   5   10 
+;   p  1 |   5   10 
+
+num_class=2, num_obj=30  distance=manhattan CID=true normalize=true ./cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_normed_CID_tree.txt  ./cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 8
+

@@ -1,0 +1,80 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/LargeKitchenAppliances_TRAIN_CV2', 3, 189, 360, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502297478
+num_class=3, num_obj=189, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=27   @[  8,382]  d_th=16.18 gap=0.002533 gain= 0.31816 (45 )==>  57   9   6  /   6  54  57 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=323  @[ 60, 33]  d_th=105.66 gap=0.041779 gain= 0.25272 (58 )==>   0   7   0  /  57   2   6 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=181  @[ 74,254]  d_th=81.17 gap=0.001174 gain= 0.28316 (7  )==>   5  44   6  /   1  10  51 
+
+=== Node 5 ===
+..................................................................................................................................................................................
+Len=67   @[ 18,325]  d_th=48.75 gap=0.012232 gain= 0.21052 (43 )==>  53   1   0  /   4   1   6 
+
+=== Node 6 ===
+..................................................................................................................................................................................
+Len=137  @[ 51,551]  d_th=93.49 gap=0.090514 gain= 0.34224 (25 )==>   5   4   6  /   0  40   0 
+
+=== Node 7 ===
+..................................................................................................................................................................................
+Len=223  @[ 34,268]  d_th=197.68 gap=0.060200 gain= 0.24548 (22 )==>   0   0  42  /   1  10   9 
+
+=== Node 11 ===
+..................................................................................................................................................................................
+Len=51   @[  1,254]  d_th=41.89 gap=0.898854 gain= 0.68901 (1  )==>   4   1   0  /   0   0   6 
+
+=== Node 12 ===
+..................................................................................................................................................................................
+Len=5    @[  1,417]  d_th= 0.54 gap=0.008502 gain= 0.67301 (3  )==>   5   4   0  /   0   0   6 
+
+=== Node 15 ===
+..................................................................................................................................................................................
+Len=65   @[ 12,617]  d_th=55.47 gap=0.301676 gain= 0.25320 (10 )==>   0   0   5  /   1  10   4 
+
+=== Node 22 ===
+..................................................................................................................................................................................
+Len=89   @[  4,300]  d_th=39.01 gap=4.135436 gain= 0.50040 (3  )==>   0   1   0  /   4   0   0 
+
+=== Node 24 ===
+..................................................................................................................................................................................
+Len=5    @[  0,291]  d_th= 2.55 gap=0.029757 gain= 0.68696 (1  )==>   5   0   0  /   0   4   0 
+
+=== Node 31 ===
+..................................................................................................................................................................................
+Len=11   @[  2, 57]  d_th=15.15 gap=0.376966 gain= 0.35732 (1  )==>   0   8   0  /   1   2   4 
+
+num_class=3, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    13.69 sec
+  Time Rand Project =    29.26 sec
+  Time Score Matrix =     3.53 sec
+  Time Compute Gain =   225.45 sec
+Running  Time for this Shapelet=   275.16 sec <<
+
+
+Total Running  Time =   275.16 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/LargeKitchenAppliances_TRAIN_CV1', 3, 186, 'manhattan', 0, 0, './cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 69.892   Correct:130 , Wrong: 56
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  44   10    7 
+;   p  2 |   4   34    3 
+;   p  3 |  14   18   52 
+
+num_class=3, num_obj=186  distance=manhattan CID=false normalize=false ./cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_manhattan_unnormed_NOCID_tree.txt  ./cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 64
+

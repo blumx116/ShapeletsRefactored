@@ -1,0 +1,99 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/DistalPhalanxTW/DistalPhalanxTW_euclidean_unnormed_NOCID_REP11_tree.txt', './replications/DistalPhalanxTW/DistalPhalanxTW_euclidean_unnormed_NOCID_REP11_time.txt']
+
+rand seed=1508181785
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/DistalPhalanxTW/DistalPhalanxTW_euclidean_unnormed_NOCID_REP11_tree.txt  time_file=./replications/DistalPhalanxTW/DistalPhalanxTW_euclidean_unnormed_NOCID_REP11_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [3,5]  [2,8]  [1,6]  [0,4]  
+
+=== Node 1 ===
+..................
+Len=13   @[  2, 44]  d_th= 0.25 gap=0.007107 gain= 0.59690 (53 )==>   0   0  42   0   0   1  /  19  13   0  39  18   7 
+
+=== Node 3 ===
+..................
+Len=21   @[ 19, 48]  d_th= 1.02 gap=0.001335 gain= 0.33141 (50 )==>   8   0   0   0  15   0  /  11  13   0  39   3   7 
+
+=== Node 6 ===
+..................
+Len=7    @[  0, 19]  d_th= 0.36 gap=0.000424 gain= 0.42852 (3  )==>   0   0   0   0  13   0  /   8   0   0   0   2   0 
+
+=== Node 7 ===
+..................
+Len=21   @[  0, 36]  d_th= 1.26 gap=0.000196 gain= 0.23707 (25 )==>  11   5   0  32   1   0  /   0   8   0   7   2   7 
+
+=== Node 13 ===
+..................
+Len=9    @[  0, 16]  d_th= 0.49 gap=0.005221 gain= 0.30945 (4  )==>   7   0   0   0   0   0  /   1   0   0   0   2   0 
+
+=== Node 14 ===
+..................
+Len=13   @[  0, 12]  d_th= 0.33 gap=0.001715 gain= 0.16708 (23 )==>   1   5   0   7   0   0  /  10   0   0  25   1   0 
+
+=== Node 15 ===
+..................
+Len=39   @[  6, 32]  d_th= 1.10 gap=0.000778 gain= 0.51518 (2  )==>   0   8   0   0   0   5  /   0   0   0   7   2   2 
+
+=== Node 27 ===
+..................
+Len=23   @[  1, 28]  d_th= 0.44 gap=0.092757 gain= 0.63651 (1  )==>   1   0   0   0   0   0  /   0   0   0   0   2   0 
+
+=== Node 28 ===
+..................
+Len=15   @[  3, 16]  d_th= 0.60 gap=0.014827 gain= 0.47382 (3  )==>   0   1   0   7   0   0  /   1   4   0   0   0   0 
+
+=== Node 29 ===
+..................
+Len=31   @[  0, 17]  d_th= 0.81 gap=0.004580 gain= 0.15572 (12 )==>   0   0   0  12   0   0  /  10   0   0  13   1   0 
+
+=== Node 30 ===
+..................
+Len=39   @[  3,  4]  d_th= 0.98 gap=0.002718 gain= 0.66628 (3  )==>   0   8   0   0   0   0  /   0   0   0   0   0   5 
+
+=== Node 31 ===
+..................
+Len=15   @[  0, 18]  d_th= 0.77 gap=0.021657 gain= 0.65548 (3  )==>   0   0   0   7   0   0  /   0   0   0   0   2   2 
+
+=== Node 56 ===
+..................
+Len=31   @[  0, 29]  d_th= 0.54 gap=0.096813 gain= 0.37677 (6  )==>   0   1   0   0   0   0  /   0   0   0   7   0   0 
+
+=== Node 57 ===
+..................
+Len=13   @[  0, 39]  d_th= 0.29 gap=0.080318 gain= 0.50040 (3  )==>   1   0   0   0   0   0  /   0   4   0   0   0   0 
+
+=== Node 59 ===
+..................
+Len=37   @[  0, 25]  d_th= 1.11 gap=0.004601 gain= 0.30066 (6  )==>   0   0   0   8   1   0  /  10   0   0   5   0   0 
+
+=== Node 63 ===
+..................
+Len=27   @[  2, 40]  d_th= 1.65 gap=0.164382 gain= 0.69315 (0  )==>   0   0   0   0   0   2  /   0   0   0   0   2   0 
+
+num_class=6, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.22 sec
+  Time Rand Project =     1.15 sec
+  Time Score Matrix =     0.14 sec
+  Time Compute Gain =     0.56 sec
+Running  Time for this Shapelet=     2.18 sec <<
+
+
+Total Running  Time =     2.18 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'euclidean', 0, 0, './replications/DistalPhalanxTW/DistalPhalanxTW_euclidean_unnormed_NOCID_REP11_tree.txt', './replications/DistalPhalanxTW/DistalPhalanxTW_euclidean_unnormed_NOCID_REP11_acc.txt']
+; accuracy= 68.250   Correct:273 , Wrong: 127
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 199    0    0    0    3    0 
+;   p  5 |   0   36   14   10    4    2 
+;   p  6 |   0    8    5    0    4    0 
+;   p  4 |   0   33    9   11    3    9 
+;   p  7 |  14    1    2    0    4    0 
+;   p  3 |   0    4    0    7    0   18 
+
+num_class=6, num_obj=400  distance=euclidean CID=false normalize=false ./replications/DistalPhalanxTW/DistalPhalanxTW_euclidean_unnormed_NOCID_REP11_tree.txt  ./replications/DistalPhalanxTW/DistalPhalanxTW_euclidean_unnormed_NOCID_REP11_acc.txt
+
+==> Tree Size = 128
+

@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1501821842, rand()=568786120, rand()=845255168
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 manhattan 0 0 10 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --      0   10    5   1.2375 ==>  29   1  /   5  32 
+Leaf  2     1    
+NonL  3    --      3    3    9   5.1270 ==>   0  30  /   5   2 
+Leaf  6     2    
+NonL  7    --      3    3   11   3.2366 ==>   5   0  /   0   2 
+Leaf 14     1    
+Leaf 15     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.275300  0.960050  0.613330  0.014447 -0.647480 
+Shapelet   3  -1.393300 -1.393300 -1.291200 -1.750600 -0.729610  0.342470  1.720900  1.823000  1.771900 
+Shapelet   7  -1.362600 -1.481000 -1.441500 -1.086500 -0.770880 -0.810330  0.018080  0.333670  0.649250  0.688700 -0.100260 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 manhattan 0 0 10 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_time.txt
+; time =>    0.029   0.002   0.017   0.002   0.005 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST 2 1029 manhattan 0 0 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_acc.txt
+; accuracy= 86.200   Correct:887 , Wrong: 142
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 423   49 
+;   p  1 |  93  464 
+

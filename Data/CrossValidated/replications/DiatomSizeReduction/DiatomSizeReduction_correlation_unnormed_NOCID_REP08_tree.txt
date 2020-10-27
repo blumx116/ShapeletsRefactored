@@ -1,0 +1,38 @@
+;Shapelet Tree 
+
+;random seed:1503369618, rand()=452720764, rand()=93584500
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN 4 16 173 1 2 10 correlation 0 0 10 ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_NOCID_REP08_tree.txt ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_NOCID_REP08_time.txt 
+
+;Local Class:   0  1  2  3 
+;Real  Class:   2  3  4  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0   92    5   0.0206 ==>   6   0   0   1  /   0   5   4   0 
+NonL  2    --      0   92    5   0.0135 ==>   6   0   0   0  /   0   0   0   1 
+NonL  3    --      0  160   31   0.0117 ==>   0   5   0   0  /   0   0   4   0 
+Leaf  4     2    
+Leaf  5     1    
+Leaf  6     3    
+Leaf  7     4    
+
+;Shapelet id   <data>
+Shapelet   1  -1.239400 -1.168800 -1.153800 -1.139300 -1.123200 
+Shapelet   2  -1.239400 -1.168800 -1.153800 -1.139300 -1.123200 
+Shapelet   3   1.608600  1.622600  1.619400  1.617400  1.615700  1.615000  1.615000  1.615600  1.617200  1.619200  1.564800  1.524100  1.528700  1.504900  1.452600  1.445600  1.452100  1.403000  1.354400  1.307200  1.260900  1.215600  1.160900  1.104400  1.061500  1.014400  0.957750  0.910340  0.870200  0.817070  0.761060 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN 4 16 173 1 2 10 correlation 0 0 10 ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_NOCID_REP08_tree.txt ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_NOCID_REP08_time.txt
+; time =>    5.107   0.157   0.335   0.034   4.540 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST 4 306 correlation 0 0 ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_NOCID_REP08_tree.txt ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_NOCID_REP08_acc.txt
+; accuracy= 85.948   Correct:263 , Wrong: 43
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  82    0    0   12 
+;   p  2 |   4   88    0   15 
+;   p  4 |   0    0   87    0 
+;   p  1 |   8    4    0    6 
+

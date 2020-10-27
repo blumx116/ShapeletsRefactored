@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1501824722, rand()=1192433441, rand()=911449083
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 manhattan 0 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP08_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP08_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 32 
+NonL  1    --      0   17    5   1.8208 ==>  24   2  /  10  31 
+Leaf  2     1    
+NonL  3    --      5    1    9   1.1911 ==>   6   0  /   4  31 
+Leaf  6     1    
+NonL  7    --      5    6    9   2.2895 ==>   0  25  /   4   6 
+Leaf 14     2    
+NonL 15    --      6    8    5   0.5681 ==>   4   0  /   0   6 
+Leaf 30     1    
+Leaf 31     2    
+
+;Shapelet id   <data>
+Shapelet   1   0.613330  1.369800  1.464400  1.054600  0.581810 
+Shapelet   3  -1.549200 -1.489300 -1.569200 -1.569200 -1.449400 -1.090000  0.088196  0.347790  1.066700 
+Shapelet   7  -1.265300 -0.317200  0.519370  1.132900  1.188600  1.188600  0.881890  0.575140  0.603030 
+Shapelet  15  -0.836490 -0.139720  0.557050  0.600600  0.557050 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 manhattan 0 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP08_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP08_time.txt
+; time =>    0.116   0.006   0.069   0.013   0.018 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST 2 1029 manhattan 0 1 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP08_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP08_acc.txt
+; accuracy= 69.679   Correct:717 , Wrong: 312
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 310  106 
+;   p  1 | 206  407 
+

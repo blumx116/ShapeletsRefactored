@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV1', 2, 149, 213, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/yoga_CV1/yoga_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/yoga_CV1/yoga_CV1_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502277887
+num_class=2, num_obj=149, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/yoga_CV1/yoga_CV1_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/yoga_CV1/yoga_CV1_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................................................................
+Len=57   @[  9,  7]  d_th= 4.36 gap=0.009712 gain= 0.09835 (115)==>  51  81  /  17   0 
+
+=== Node 2 ===
+.........................................................................................................
+Len=109  @[ 24, 79]  d_th= 2.62 gap=0.002180 gain= 0.11114 (104)==>  14   0  /  37  81 
+
+=== Node 5 ===
+.........................................................................................................
+Len=99   @[  4,295]  d_th= 6.28 gap=0.010895 gain= 0.10724 (98 )==>  27  81  /  10   0 
+
+=== Node 10 ===
+.........................................................................................................
+Len=123  @[ 16, 92]  d_th= 5.14 gap=0.000386 gain= 0.17731 (44 )==>  21  11  /   6  70 
+
+num_class=2, num_obj=108, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     5.52 sec
+  Time Rand Project =    25.98 sec
+  Time Score Matrix =     2.85 sec
+  Time Compute Gain =    99.98 sec
+Running  Time for this Shapelet=   136.70 sec <<
+
+
+Total Running  Time =   136.70 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV2', 2, 151, 'euclidean', 1, 0, './cv_output/yoga_CV1/yoga_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/yoga_CV1/yoga_CV1_euclidean_unnormed_CID_acc.txt']
+; accuracy= 67.550   Correct:102 , Wrong: 49
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  45   25 
+;   p  2 |  24   57 
+
+num_class=2, num_obj=151  distance=euclidean CID=true normalize=false ./cv_output/yoga_CV1/yoga_CV1_euclidean_unnormed_CID_tree.txt  ./cv_output/yoga_CV1/yoga_CV1_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 22
+

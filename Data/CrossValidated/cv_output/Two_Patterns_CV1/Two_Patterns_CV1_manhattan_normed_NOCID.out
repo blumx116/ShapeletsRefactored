@@ -1,0 +1,82 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV1', 4, 499, 64, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/Two_Patterns_CV1/Two_Patterns_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/Two_Patterns_CV1/Two_Patterns_CV1_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502275609
+num_class=4, num_obj=499, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=5    @[  0, 63]  d_th= 0.00 gap=0.000000 gain= 0.51613 (13 )==>   1   9 120 113  / 134 109   5   8 
+
+=== Node 2 ===
+..............................
+Len=5    @[  0, 63]  d_th= 0.00 gap=0.000000 gain= 0.65674 (1  )==>   0   4 120 113  / 129 107   0   0 
+
+=== Node 3 ===
+..............................
+Len=7    @[  0, 73]  d_th= 0.00 gap=0.000000 gain= 0.69315 (0  )==>   0   0   5   8  /   6   7   0   0 
+
+=== Node 4 ===
+..............................
+Len=5    @[  0, 63]  d_th= 0.00 gap=0.000000 gain= 0.65674 (1  )==>   0   4 120 113  / 129 107   0   0 
+
+=== Node 5 ===
+..............................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 6 ===
+..............................
+Len=25   @[  5, 55]  d_th= 7.28 gap=0.053558 gain= 0.63651 (8  )==>   5   6   5   0  /   0   0   0   8 
+
+=== Node 7 ===
+..............................
+Len=63   @[  0, 48]  d_th=25.36 gap=3.194494 gain= 0.69315 (0  )==>   1   0   0   0  /   0   1   0   0 
+
+=== Node 8 ===
+..............................
+Len=5    @[  0, 63]  d_th= 0.00 gap=0.000000 gain= 0.65674 (1  )==>   0   4 120 113  / 129 107   0   0 
+
+=== Node 9 ===
+..............................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 12 ===
+..............................
+Len=27   @[  5,  2]  d_th=10.21 gap=0.629080 gain= 0.62109 (6  )==>   0   6   5   0  /   5   0   0   0 
+
+=== Node 16 ===
+..............................
+Len=5    @[  0, 63]  d_th= 0.00 gap=0.000000 gain= 0.65674 (1  )==>   0   4 120 113  / 129 107   0   0 
+
+=== Node 17 ===
+..............................Error!! bsf_sh is empty  at node_id=17 
+
+=== Node 24 ===
+..............................
+Len=15   @[  0,  7]  d_th= 0.00 gap=0.000000 gain= 0.44325 (1  )==>   0   1   5   0  /   0   5   0   0 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     4.33 sec
+  Time Rand Project =    61.10 sec
+  Time Score Matrix =     3.69 sec
+  Time Compute Gain =    20.23 sec
+Running  Time for this Shapelet=    92.88 sec <<
+
+
+Total Running  Time =    92.88 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV2', 4, 501, 'manhattan', 0, 1, './cv_output/Two_Patterns_CV1/Two_Patterns_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/Two_Patterns_CV1/Two_Patterns_CV1_manhattan_normed_NOCID_acc.txt']
+; accuracy= 25.749   Correct:129 , Wrong: 372
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   6    0    2    0 
+;   p  2 |   1    4    6    1 
+;   p  3 | 129  113  116  117 
+;   p  4 |   0    2    1    3 
+
+num_class=4, num_obj=501  distance=manhattan CID=false normalize=true ./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_manhattan_normed_NOCID_tree.txt  ./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 50
+

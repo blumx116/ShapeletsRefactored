@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV2', 3, 18, 126, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502274505
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=43   @[  0,147]  d_th= 1.29 gap=0.007459 gain= 0.63651 (6  )==>   6   0   0  /   0   6   6 
+
+=== Node 3 ===
+.............................................................
+Len=19   @[  0,132]  d_th= 0.35 gap=0.000951 gain= 0.69315 (0  )==>   0   6   0  /   0   0   6 
+
+num_class=3, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.09 sec
+  Time Rand Project =     0.35 sec
+  Time Score Matrix =     0.04 sec
+  Time Compute Gain =     1.19 sec
+Running  Time for this Shapelet=     1.72 sec <<
+
+
+Total Running  Time =     1.72 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV1', 3, 18, 'euclidean', 0, 1, './cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_normed_NOCID_acc.txt']
+; accuracy= 77.778   Correct:14 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |   4    1    1 
+;   p  1 |   0    5    0 
+;   p  2 |   2    0    5 
+
+num_class=3, num_obj=18  distance=euclidean CID=false normalize=true ./cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_normed_NOCID_tree.txt  ./cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 8
+

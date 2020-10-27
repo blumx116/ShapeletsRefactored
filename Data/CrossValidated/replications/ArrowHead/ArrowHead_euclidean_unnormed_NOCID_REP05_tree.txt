@@ -1,0 +1,40 @@
+;Shapelet Tree 
+
+;random seed:1501844521, rand()=531484728, rand()=1980962664
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN 3 36 126 1 2 10 euclidean 0 0 10 ./output/ArrowHead/ArrowHead_euclidean_unnormed_NOCID_REP05_tree.txt ./output/ArrowHead/ArrowHead_euclidean_unnormed_NOCID_REP05_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   0  1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 10 
+NonL  1    --      1   72   49   1.3355 ==>   0  12   8  /  12   0   4 
+NonL  2    --      0   75   17   0.2400 ==>   0   3   8  /   0   9   0 
+NonL  3    --      0   59   11   0.2668 ==>  12   0   0  /   0   0   4 
+NonL  4    --      0  140   23   0.3216 ==>   0   3   0  /   0   0   8 
+Leaf  5     1    
+Leaf  6     0    
+Leaf  7     2    
+Leaf  8     1    
+Leaf  9     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.021600  0.988840  0.926410  0.877160  0.816550  0.785540  0.727750  0.661810  0.597560  0.577960  0.509230  0.509660  0.440190  0.387570  0.335920  0.303310  0.222850  0.190080  0.144650  0.118380  0.076166  0.046068  0.032005 -0.046298 -0.110640 -0.160190 -0.246350 -0.322250 -0.412200 -0.457790 -0.550510 -0.623050 -0.651510 -0.762090 -0.847730 -0.922190 -0.965050 -1.020800 -1.092900 -1.155600 -1.166200 -1.186900 -1.154600 -1.172600 -1.181300 -1.194300 -1.166300 -1.155100 -1.135900 
+Shapelet   2   0.877160  0.816550  0.785540  0.727750  0.661810  0.597560  0.577960  0.509230  0.509660  0.440190  0.387570  0.335920  0.303310  0.222850  0.190080  0.144650  0.118380 
+Shapelet   3   1.474000  1.447900  1.358500  1.268600  1.219500  1.155900  1.084900  0.977630  0.946450  0.930990  0.803440 
+Shapelet   4  -1.099300 -1.075300 -1.010900 -0.936240 -0.892760 -0.816830 -0.726890 -0.635390 -0.606170 -0.533620 -0.442390 -0.376980 -0.308940 -0.216880 -0.124970 -0.083117  0.006543  0.086720  0.128950  0.159390  0.172550  0.217350  0.262570 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN 3 36 126 1 2 10 euclidean 0 0 10 ./output/ArrowHead/ArrowHead_euclidean_unnormed_NOCID_REP05_tree.txt ./output/ArrowHead/ArrowHead_euclidean_unnormed_NOCID_REP05_time.txt
+; time =>    3.971   0.385   1.972   0.212   1.232 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ArrowHead_TEST 3 175 euclidean 0 0 ./output/ArrowHead/ArrowHead_euclidean_unnormed_NOCID_REP05_tree.txt ./output/ArrowHead/ArrowHead_euclidean_unnormed_NOCID_REP05_acc.txt
+; accuracy= 66.286   Correct:116 , Wrong: 59
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  46    9    1 
+;   p  1 |  12   32   14 
+;   p  2 |  11   12   38 
+

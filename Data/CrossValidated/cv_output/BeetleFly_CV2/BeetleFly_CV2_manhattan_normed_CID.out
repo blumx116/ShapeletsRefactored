@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/BeetleFly_TRAIN_CV2', 2, 10, 256, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/BeetleFly_CV2/BeetleFly_CV2_manhattan_normed_CID_tree.txt', './cv_output/BeetleFly_CV2/BeetleFly_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502279689
+num_class=2, num_obj=10, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/BeetleFly_CV2/BeetleFly_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/BeetleFly_CV2/BeetleFly_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=167  @[  2,138]  d_th=142.12 gap=3.054509 gain= 0.69315 (0  )==>   5   0  /   0   5 
+
+num_class=2, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.22 sec
+  Time Rand Project =     1.07 sec
+  Time Score Matrix =     0.09 sec
+  Time Compute Gain =     6.79 sec
+Running  Time for this Shapelet=     8.32 sec <<
+
+
+Total Running  Time =     8.32 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/BeetleFly_TRAIN_CV1', 2, 10, 'manhattan', 1, 1, './cv_output/BeetleFly_CV2/BeetleFly_CV2_manhattan_normed_CID_tree.txt', './cv_output/BeetleFly_CV2/BeetleFly_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 70.000   Correct:7 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   5    3 
+;   p  2 |   0    2 
+
+num_class=2, num_obj=10  distance=manhattan CID=true normalize=true ./cv_output/BeetleFly_CV2/BeetleFly_CV2_manhattan_normed_CID_tree.txt  ./cv_output/BeetleFly_CV2/BeetleFly_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 4
+

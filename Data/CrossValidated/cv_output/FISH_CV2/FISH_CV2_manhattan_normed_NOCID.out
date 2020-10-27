@@ -1,0 +1,80 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FISH_TRAIN_CV2', 7, 89, 232, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/FISH_CV2/FISH_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/FISH_CV2/FISH_CV2_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502280654
+num_class=7, num_obj=89, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/FISH_CV2/FISH_CV2_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/FISH_CV2/FISH_CV2_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [6,7]  [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................
+Len=231  @[  0, 16]  d_th=45.83 gap=0.078570 gain= 0.50422 (33 )==>  10   0  14  11   0  12  14  /   3  13   0   0  11   1   0 
+
+=== Node 2 ===
+..................................................................................................................
+Len=149  @[ 26,159]  d_th=31.83 gap=0.009027 gain= 0.49342 (5  )==>   0   0  13  11   0   0   4  /  10   0   1   0   0  12  10 
+
+=== Node 3 ===
+..................................................................................................................
+Len=67   @[  0, 33]  d_th= 2.51 gap=0.036661 gain= 0.69059 (2  )==>   3   0   0   0  11   1   0  /   0  13   0   0   0   0   0 
+
+=== Node 4 ===
+..................................................................................................................
+Len=77   @[  0,  1]  d_th= 2.42 gap=0.011308 gain= 0.69059 (2  )==>   0   0  13   0   0   0   0  /   0   0   0  11   0   0   4 
+
+=== Node 5 ===
+..................................................................................................................
+Len=53   @[  0,408]  d_th= 1.93 gap=0.029738 gain= 0.50384 (9  )==>   8   0   1   0   0  12   0  /   2   0   0   0   0   0  10 
+
+=== Node 6 ===
+..................................................................................................................
+Len=137  @[  0,109]  d_th=16.16 gap=0.163110 gain= 0.57992 (7  )==>   3   0   0   0   0   1   0  /   0   0   0   0  11   0   0 
+
+=== Node 9 ===
+..................................................................................................................
+Len=111  @[  0,  9]  d_th= 8.76 gap=0.179444 gain= 0.57992 (7  )==>   0   0   0  11   0   0   0  /   0   0   0   0   0   0   4 
+
+=== Node 10 ===
+..................................................................................................................
+Len=221  @[  0,142]  d_th=26.45 gap=0.051124 gain= 0.52100 (5  )==>   7   0   1   0   0   0   0  /   1   0   0   0   0  12   0 
+
+=== Node 11 ===
+..................................................................................................................
+Len=77   @[  0,233]  d_th= 4.29 gap=0.096337 gain= 0.45056 (8  )==>   2   0   0   0   0   0   0  /   0   0   0   0   0   0  10 
+
+=== Node 12 ===
+..................................................................................................................
+Len=191  @[  3,141]  d_th=12.41 gap=0.897632 gain= 0.56234 (2  )==>   0   0   0   0   0   1   0  /   3   0   0   0   0   0   0 
+
+=== Node 20 ===
+..................................................................................................................
+Len=231  @[  0,218]  d_th=57.21 gap=0.458245 gain= 0.37677 (6  )==>   7   0   0   0   0   0   0  /   0   0   1   0   0   0   0 
+
+num_class=7, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.60 sec
+  Time Rand Project =     9.77 sec
+  Time Score Matrix =     1.08 sec
+  Time Compute Gain =   102.00 sec
+Running  Time for this Shapelet=   117.66 sec <<
+
+
+Total Running  Time =   117.66 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FISH_TRAIN_CV1', 7, 86, 'manhattan', 0, 1, './cv_output/FISH_CV2/FISH_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/FISH_CV2/FISH_CV2_manhattan_normed_NOCID_acc.txt']
+; accuracy= 55.814   Correct:48 , Wrong: 38
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6    7 
+;   -----+------------------------------------------
+;   p  1 |   9    1    0    0    1    1    2 
+;   p  2 |   0    9    0    0    1    0    0 
+;   p  3 |   0    0    5    1    0    0    0 
+;   p  4 |   1    0    2    6    1    8    2 
+;   p  5 |   0    2    0    0    8    0    0 
+;   p  6 |   1    0    0    0    0    3    2 
+;   p  7 |   2    0    7    3    0    0    8 
+
+num_class=7, num_obj=86  distance=manhattan CID=false normalize=true ./cv_output/FISH_CV2/FISH_CV2_manhattan_normed_NOCID_tree.txt  ./cv_output/FISH_CV2/FISH_CV2_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 42
+

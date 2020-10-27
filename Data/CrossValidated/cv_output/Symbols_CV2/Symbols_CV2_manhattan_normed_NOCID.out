@@ -1,0 +1,55 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Symbols_TRAIN_CV2', 6, 15, 199, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/Symbols_CV2/Symbols_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/Symbols_CV2/Symbols_CV2_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502276263
+num_class=6, num_obj=15, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Symbols_CV2/Symbols_CV2_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/Symbols_CV2/Symbols_CV2_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................
+Len=113  @[  4,180]  d_th=32.29 gap=0.754217 gain= 0.69092 (1  )==>   0   3   2   2   0   0  /   4   0   0   0   2   2 
+
+=== Node 2 ===
+..................................................................................................
+Len=121  @[  3,184]  d_th=46.56 gap=1.970799 gain= 0.68291 (1  )==>   0   0   2   2   0   0  /   0   3   0   0   0   0 
+
+=== Node 3 ===
+..................................................................................................
+Len=193  @[  6,  8]  d_th=238.98 gap=5.521386 gain= 0.69315 (0  )==>   0   0   0   0   2   2  /   4   0   0   0   0   0 
+
+=== Node 4 ===
+..................................................................................................
+Len=199  @[  2,123]  d_th=105.75 gap=6.215735 gain= 0.69315 (0  )==>   0   0   0   2   0   0  /   0   0   2   0   0   0 
+
+=== Node 6 ===
+..................................................................................................
+Len=151  @[  0,145]  d_th=84.99 gap=5.760428 gain= 0.69315 (0  )==>   0   0   0   0   2   0  /   0   0   0   0   0   2 
+
+num_class=6, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.30 sec
+  Time Rand Project =     0.82 sec
+  Time Score Matrix =     0.09 sec
+  Time Compute Gain =     7.96 sec
+Running  Time for this Shapelet=     9.28 sec <<
+
+
+Total Running  Time =     9.28 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Symbols_TRAIN_CV1', 6, 10, 'manhattan', 0, 1, './cv_output/Symbols_CV2/Symbols_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/Symbols_CV2/Symbols_CV2_manhattan_normed_NOCID_acc.txt']
+; accuracy= 100.000   Correct:10 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6 
+;   -----+------------------------------------
+;   p  1 |   4    0    0    0    0    0 
+;   p  2 |   0    2    0    0    0    0 
+;   p  3 |   0    0    1    0    0    0 
+;   p  4 |   0    0    0    1    0    0 
+;   p  5 |   0    0    0    0    1    0 
+;   p  6 |   0    0    0    0    0    1 
+
+num_class=6, num_obj=10  distance=manhattan CID=false normalize=true ./cv_output/Symbols_CV2/Symbols_CV2_manhattan_normed_NOCID_tree.txt  ./cv_output/Symbols_CV2/Symbols_CV2_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 14
+

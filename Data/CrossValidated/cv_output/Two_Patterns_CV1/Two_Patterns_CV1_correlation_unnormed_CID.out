@@ -1,0 +1,65 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV1', 4, 499, 64, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/Two_Patterns_CV1/Two_Patterns_CV1_correlation_unnormed_CID_tree.txt', './cv_output/Two_Patterns_CV1/Two_Patterns_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503461159
+num_class=4, num_obj=499, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=5    @[  0, 63]  d_th= 1.00 gap=0.000000 gain= 0.65814 (1  )==>   0   4 125 121  / 135 114   0   0 
+
+=== Node 2 ===
+..............................
+Len=5    @[  0, 63]  d_th= 1.00 gap=0.000000 gain= 0.65814 (1  )==>   0   4 125 121  / 135 114   0   0 
+
+=== Node 3 ===
+..............................Error!! bsf_sh is empty  at node_id=3 
+
+=== Node 4 ===
+..............................
+Len=5    @[  0, 63]  d_th= 1.00 gap=0.000000 gain= 0.65814 (1  )==>   0   4 125 121  / 135 114   0   0 
+
+=== Node 5 ===
+..............................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 8 ===
+..............................
+Len=5    @[  0, 63]  d_th= 1.00 gap=0.000000 gain= 0.65814 (1  )==>   0   4 125 121  / 135 114   0   0 
+
+=== Node 9 ===
+..............................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 16 ===
+..............................
+Len=5    @[  0, 63]  d_th= 1.00 gap=0.000000 gain= 0.65814 (1  )==>   0   4 125 121  / 135 114   0   0 
+
+=== Node 17 ===
+..............................Error!! bsf_sh is empty  at node_id=17 
+
+num_class=4, num_obj=0, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     4.92 sec
+  Time Rand Project =    64.38 sec
+  Time Score Matrix =     4.06 sec
+  Time Compute Gain =    41.20 sec
+Running  Time for this Shapelet=   118.29 sec <<
+
+
+Total Running  Time =   118.29 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV2', 4, 501, 'correlation', 1, 0, './cv_output/Two_Patterns_CV1/Two_Patterns_CV1_correlation_unnormed_CID_tree.txt', './cv_output/Two_Patterns_CV1/Two_Patterns_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 24.950   Correct:125 , Wrong: 376
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   0    0    0    0 
+;   p  2 |   0    0    0    0 
+;   p  3 | 136  119  125  121 
+;   p  4 |   0    0    0    0 
+
+num_class=4, num_obj=501  distance=correlation CID=true normalize=false ./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 34
+

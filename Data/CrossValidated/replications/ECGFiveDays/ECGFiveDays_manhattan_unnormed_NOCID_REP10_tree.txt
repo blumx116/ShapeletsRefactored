@@ -1,0 +1,30 @@
+;Shapelet Tree 
+
+;random seed:1501835025, rand()=1926572192, rand()=2118446343
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECGFiveDays_TRAIN 2 23 68 1 2 10 manhattan 0 0 10 ./output/ECGFiveDays/ECGFiveDays_manhattan_unnormed_NOCID_REP10_tree.txt ./output/ECGFiveDays/ECGFiveDays_manhattan_unnormed_NOCID_REP10_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 4 
+NonL  1    --      4   58   49  13.4944 ==>  13   0  /   1   9 
+Leaf  2     1    
+Leaf  3     2    
+
+;Shapelet id   <data>
+Shapelet   1  -1.466500 -0.695610 -0.156930  0.028819  0.140270  0.140270  0.177420  0.168130  0.223860  0.214570  0.214570  0.251720  0.326020  0.261010  0.409610  0.381750  0.548920  0.521060  0.660370  0.743960  0.939000  1.161900  1.329100  1.644900  1.867800  2.081400  2.248500  2.155700  1.904900  1.422000  0.892560  0.493200  0.205280  0.056681 -0.017619 -0.101210 -0.064057 -0.101210 -0.203370 -0.101210 -0.026907 -0.091919 -0.101210 -0.054769 -0.073344 -0.064057 -0.064057 -0.119780 -0.082632 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECGFiveDays_TRAIN 2 23 68 1 2 10 manhattan 0 0 10 ./output/ECGFiveDays/ECGFiveDays_manhattan_unnormed_NOCID_REP10_tree.txt ./output/ECGFiveDays/ECGFiveDays_manhattan_unnormed_NOCID_REP10_time.txt
+; time =>    0.356   0.033   0.196   0.021   0.088 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ECGFiveDays_TEST 2 861 manhattan 0 0 ./output/ECGFiveDays/ECGFiveDays_manhattan_unnormed_NOCID_REP10_tree.txt ./output/ECGFiveDays/ECGFiveDays_manhattan_unnormed_NOCID_REP10_acc.txt
+; accuracy= 94.077   Correct:810 , Wrong: 51
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 418   36 
+;   p  1 |  15  392 
+

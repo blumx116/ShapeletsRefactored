@@ -1,0 +1,51 @@
+;Shapelet Tree 
+
+;random seed:1508180661, rand()=1879891641, rand()=433768590
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 euclidean 0 0 10 ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP23_tree.txt ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP23_time.txt 
+
+;Local Class:   0  1  2  3  4 
+;Real  Class:   1  2  3  4  5 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 64 
+NonL  1    --      0  106    9   1.8192 ==> 289  17   2   5   2  /   3 160   8  14   0 
+Leaf  2     1    
+NonL  3    --     60    2   59   4.1757 ==>   0 151   0   9   0  /   3   9   8   5   0 
+Leaf  6     2    
+NonL  7    --      1  125   11   2.1713 ==>   2   0   0   5   0  /   1   9   8   0   0 
+NonL 14    --      2  100   39   3.2030 ==>   0   0   0   5   0  /   2   0   0   0   0 
+NonL 15    --      3  107   15   1.3496 ==>   0   2   8   0   0  /   1   7   0   0   0 
+Leaf 28     4    
+Leaf 29     1    
+NonL 30    --      0    3   15   1.7551 ==>   0   2   0   0   0  /   0   0   8   0   0 
+NonL 31    --      0    3   13   1.3820 ==>   1   0   0   0   0  /   0   7   0   0   0 
+Leaf 60     2    
+Leaf 61     3    
+Leaf 62     1    
+Leaf 63     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.993300  1.932200  1.797400  1.522300  1.251200  0.998730  0.483720  0.023132 -0.194910 
+Shapelet   3  -1.656600 -2.223200 -2.504200 -2.703600 -2.694800 -2.561800 -2.242500 -1.669000 -1.090900 -0.679660 -0.520510 -0.445330 -0.232100  0.091003  0.397420  0.563200  0.517410  0.416090  0.406970  0.466460  0.521320  0.483830  0.439240  0.487260  0.518260  0.481980  0.453940  0.459250  0.547110  0.563320  0.475780  0.489970  0.412600  0.399890  0.468530  0.342720  0.391150  0.468840  0.361250  0.330390  0.331040  0.316940  0.280300  0.256640  0.256670  0.215700  0.144840  0.079152  0.133750  0.188120  0.141050  0.139850  0.120580  0.075139  0.032265 -0.026153  0.007731  0.042268 -0.006407 
+Shapelet   7   0.299130  0.252280  0.333040  0.505730  1.090000  2.033600  2.536500  2.723100  2.832400  2.375200  0.868500 
+Shapelet  14   0.326580  0.329470  0.333980  0.471900  0.427460  0.548140  0.572060  0.603840  0.659860  0.637960  0.639570  0.682220  0.776340  0.761640  0.785130  0.851280  0.870360  0.832040  0.907330  0.912040  0.811800  0.890770  0.921170  0.908360  1.025600  1.210500  1.406200  1.790000  2.064400  2.034800  1.893600  1.776300  1.679600  1.743700  2.229600  2.852000  2.959700  2.400100  2.068000 
+Shapelet  15   0.107940  0.182160  0.219870  0.286050  0.312220  0.326740  0.438590  0.576260  0.713480  0.867200  0.987960  1.081700  1.263400  1.480200  1.665200 
+Shapelet  30  -2.956300 -2.806100 -2.912200 -2.794900 -2.522300 -1.929200 -1.352400 -1.185500 -1.331500 -1.236300 -0.789340 -0.477960 -0.311560 -0.244150 -0.291080 
+Shapelet  31  -4.229400 -4.937300 -5.056200 -3.852600 -2.165900 -1.975600 -1.108100 -0.114640 -0.197920 -0.246020 -0.104140 -0.046411 -0.067893 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 euclidean 0 0 10 ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP23_tree.txt ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP23_time.txt
+; time =>   23.035   1.474  16.030   1.534   2.632 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST 5 4500 euclidean 0 0 ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP23_tree.txt ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP23_acc.txt
+; accuracy= 89.111   Correct:4010 , Wrong: 490
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2588  189   56   49   16 
+;   p  2 |  25 1370   13   90    6 
+;   p  3 |  13   24   17    1    0 
+;   p  4 |   1    7    0   35    0 
+;   p  5 |   0    0    0    0    0 
+

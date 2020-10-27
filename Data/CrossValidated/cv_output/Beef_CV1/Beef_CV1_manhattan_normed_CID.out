@@ -1,0 +1,50 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Beef_TRAIN_CV1', 5, 15, 235, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/Beef_CV1/Beef_CV1_manhattan_normed_CID_tree.txt', './cv_output/Beef_CV1/Beef_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502281148
+num_class=5, num_obj=15, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Beef_CV1/Beef_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/Beef_CV1/Beef_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=105  @[  6,246]  d_th=13.26 gap=0.088522 gain= 0.67301 (3  )==>   0   0   3   0   3  /   3   3   0   3   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=103  @[  0,250]  d_th= 8.41 gap=0.137293 gain= 0.69315 (0  )==>   0   0   3   0   0  /   0   0   0   0   3 
+
+=== Node 3 ===
+....................................................................................................................
+Len=211  @[  3,203]  d_th=131.21 gap=2.701619 gain= 0.63651 (3  )==>   0   3   0   3   0  /   3   0   0   0   0 
+
+=== Node 6 ===
+....................................................................................................................
+Len=119  @[  3,253]  d_th=14.02 gap=0.169730 gain= 0.69315 (0  )==>   0   0   0   3   0  /   0   3   0   0   0 
+
+num_class=5, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.65 sec
+  Time Rand Project =     3.06 sec
+  Time Score Matrix =     0.29 sec
+  Time Compute Gain =    19.86 sec
+Running  Time for this Shapelet=    24.25 sec <<
+
+
+Total Running  Time =    24.25 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Beef_TRAIN_CV2', 5, 15, 'manhattan', 1, 1, './cv_output/Beef_CV1/Beef_CV1_manhattan_normed_CID_tree.txt', './cv_output/Beef_CV1/Beef_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 40.000   Correct:6 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   2    0    0    0    0 
+;   p  2 |   1    0    1    0    0 
+;   p  3 |   0    0    2    1    0 
+;   p  4 |   0    3    0    1    2 
+;   p  5 |   0    0    0    1    1 
+
+num_class=5, num_obj=15  distance=manhattan CID=true normalize=true ./cv_output/Beef_CV1/Beef_CV1_manhattan_normed_CID_tree.txt  ./cv_output/Beef_CV1/Beef_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 14
+

@@ -1,0 +1,60 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV2', 3, 201, 40, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503461007
+num_class=3, num_obj=201, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................
+Len=9    @[101, 49]  d_th= 0.09 gap=0.030059 gain= 0.60352 (1  )==>   0   5  95  /  36  65   0 
+
+=== Node 3 ===
+..................
+Len=33   @[ 24, 34]  d_th= 0.01 gap=0.000004 gain= 0.19245 (5  )==>  33  20   0  /   3  45   0 
+
+=== Node 6 ===
+..................
+Len=13   @[  0, 13]  d_th= 0.00 gap=0.000007 gain= 0.12734 (7  )==>  25   5   0  /   8  15   0 
+
+=== Node 12 ===
+..................
+Len=29   @[  1, 37]  d_th= 0.00 gap=0.000008 gain= 0.14641 (2  )==>  16   0   0  /   9   5   0 
+
+=== Node 13 ===
+..................
+Len=11   @[  0, 27]  d_th= 0.00 gap=0.000029 gain= 0.29348 (13 )==>   3  15   0  /   5   0   0 
+
+=== Node 25 ===
+..................
+Len=5    @[  2, 46]  d_th= 0.01 gap=0.000232 gain= 0.27372 (2  )==>   3   5   0  /   6   0   0 
+
+=== Node 26 ===
+..................
+Len=39   @[  0, 28]  d_th= 0.00 gap=0.000013 gain= 0.45056 (12 )==>   3   0   0  /   0  15   0 
+
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.14 sec
+  Time Rand Project =     0.70 sec
+  Time Score Matrix =     0.09 sec
+  Time Compute Gain =     1.08 sec
+Running  Time for this Shapelet=     2.09 sec <<
+
+
+Total Running  Time =     2.09 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV1', 3, 199, 'correlation', 0, 0, './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 75.377   Correct:150 , Wrong: 49
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  14    3    0 
+;   p  2 |  22   66   24 
+;   p  3 |   0    0   70 
+
+num_class=3, num_obj=199  distance=correlation CID=false normalize=false ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_correlation_unnormed_NOCID_tree.txt  ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 54
+

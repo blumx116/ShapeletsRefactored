@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV1', 2, 30, 319, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_CID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503462774
+num_class=2, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+..............................................................................................................................................................
+Len=21   @[  8,462]  d_th= 1.00 gap=0.000000 gain= 0.33965 (16 )==>   3  20  /   7   0 
+
+=== Node 2 ===
+..............................................................................................................................................................
+Len=151  @[  9, 36]  d_th= 0.15 gap=0.000639 gain= 0.25299 (10 )==>   2  18  /   8   2 
+
+=== Node 5 ===
+..............................................................................................................................................................
+Len=151  @[  7, 36]  d_th= 0.74 gap=0.024487 gain= 0.50040 (6  )==>   8   0  /   0   2 
+
+num_class=2, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.54 sec
+  Time Rand Project =    20.10 sec
+  Time Score Matrix =     1.40 sec
+  Time Compute Gain =    91.37 sec
+Running  Time for this Shapelet=   117.03 sec <<
+
+
+Total Running  Time =   117.03 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV2', 2, 30, 'correlation', 1, 0, './cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_CID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 70.000   Correct:21 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   6    5 
+;   p  1 |   4   15 
+
+num_class=2, num_obj=30  distance=correlation CID=true normalize=false ./cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/Lighting2_CV1/Lighting2_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 12
+

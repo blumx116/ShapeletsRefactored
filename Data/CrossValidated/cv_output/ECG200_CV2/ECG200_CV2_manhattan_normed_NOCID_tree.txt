@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1502274209, rand()=596401562, rand()=2015781094
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 48 1 2 10 manhattan 0 1 10 ./cv_output/ECG200_CV2/ECG200_CV2_manhattan_normed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_manhattan_normed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:  -1  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --     20   12   47   9.7007 ==>   1  32  /  15   3 
+Leaf  2     1    
+NonL  3    --     17   43   39  16.2320 ==>   0   2  /  15   1 
+Leaf  6     1    
+Leaf  7    -1    
+
+;Shapelet id   <data>
+Shapelet   1  -0.162630 -0.757700 -0.826690 -0.904670 -0.864900 -0.927230 -1.082200 -1.017900 -1.015700 -1.216100 -1.355700 -1.360500 -1.502700 -1.678900 -1.744000 -1.817700 -1.964800 -1.991400 -2.145500 -2.092700 -1.887600 -1.926300 -1.707200 -1.420800 -1.245500 -0.888400 -0.477760 -0.099044  0.188990  0.456600  0.683890  0.900100  0.941010  0.949470  0.998930  0.948970  0.827440  0.781730  0.711890  0.648240  0.692620  0.564810  0.494600  0.651260  0.586890  0.392720  0.468090 
+Shapelet   3   0.687200  0.503320  0.564070  0.605740  0.573150  0.617510  0.585750  0.530470  0.553880  0.699730  0.509420  0.434740  0.508500  0.451750  0.411380  0.326030  0.438770  0.344490  0.221020  0.182360  0.296400  0.195740  0.082230  0.251620  0.061732  0.116090  0.044929  0.222060  0.479390  0.486130  0.536000  0.350840  0.263370  0.050237 -0.024589 -0.040240 -0.081722  0.017325 -0.184960 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 48 1 2 10 manhattan 0 1 10 ./cv_output/ECG200_CV2/ECG200_CV2_manhattan_normed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_manhattan_normed_NOCID_time.txt
+; time =>    0.694   0.045   0.311   0.036   0.273 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1 2 49 manhattan 0 1 ./cv_output/ECG200_CV2/ECG200_CV2_manhattan_normed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_manhattan_normed_NOCID_acc.txt
+; accuracy= 81.633   Correct:40 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |  13    7 
+;   p  1 |   2   27 
+

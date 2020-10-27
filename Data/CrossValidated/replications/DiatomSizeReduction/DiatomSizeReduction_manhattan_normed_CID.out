@@ -1,0 +1,500 @@
+================ Replication:  1 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN', 4, 16, 173, 1, 2, 10, 'manhattan', 1, 1, 10, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP01_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP01_time.txt']
+
+rand seed=1501871421
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP01_tree.txt  time_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP01_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,1]  [2,4]  [1,3]  [0,2]  
+
+=== Node 1 ===
+.....................................................................................
+Len=169  @[  1,110]  d_th=21.16 gap=0.269375 gain= 0.68531 (2  )==>   0   5   4   0  /   6   0   0   1 
+
+=== Node 2 ===
+.....................................................................................
+Len=45   @[  0,134]  d_th= 5.89 gap=0.313186 gain= 0.68696 (1  )==>   0   5   0   0  /   0   0   4   0 
+
+=== Node 3 ===
+.....................................................................................
+Len=169  @[  0, 87]  d_th=21.02 gap=0.986367 gain= 0.41012 (5  )==>   6   0   0   0  /   0   0   0   1 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.23 sec
+  Time Rand Project =     1.01 sec
+  Time Score Matrix =     0.16 sec
+  Time Compute Gain =     9.06 sec
+Running  Time for this Shapelet=    10.58 sec <<
+
+
+Total Running  Time =    10.58 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST', 4, 306, 'manhattan', 1, 1, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP01_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP01_acc.txt']
+0
+num_class=4, num_obj=306  distance=manhattan CID=true normalize=true ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP01_tree.txt  ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP01_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.464   Correct:286 , Wrong: 20
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  83    0    0    0 
+;   p  2 |  11   92    0    8 
+;   p  4 |   0    0   87    1 
+;   p  1 |   0    0    0   24 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN', 4, 16, 173, 1, 2, 10, 'manhattan', 1, 1, 10, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP02_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP02_time.txt']
+
+rand seed=1501871432
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP02_tree.txt  time_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP02_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,1]  [2,4]  [1,3]  [0,2]  
+
+=== Node 1 ===
+.....................................................................................
+Len=169  @[  1,110]  d_th=21.16 gap=0.269375 gain= 0.68531 (2  )==>   0   5   4   0  /   6   0   0   1 
+
+=== Node 2 ===
+.....................................................................................
+Len=45   @[  0,134]  d_th= 5.89 gap=0.313186 gain= 0.68696 (1  )==>   0   5   0   0  /   0   0   4   0 
+
+=== Node 3 ===
+.....................................................................................
+Len=159  @[  0, 82]  d_th=19.60 gap=0.888054 gain= 0.41012 (5  )==>   6   0   0   0  /   0   0   0   1 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.23 sec
+  Time Rand Project =     1.03 sec
+  Time Score Matrix =     0.16 sec
+  Time Compute Gain =     9.28 sec
+Running  Time for this Shapelet=    10.83 sec <<
+
+
+Total Running  Time =    10.83 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST', 4, 306, 'manhattan', 1, 1, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP02_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP02_acc.txt']
+0
+num_class=4, num_obj=306  distance=manhattan CID=true normalize=true ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP02_tree.txt  ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP02_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.137   Correct:285 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  83    0    0    0 
+;   p  2 |  11   92    0    9 
+;   p  4 |   0    0   87    1 
+;   p  1 |   0    0    0   23 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN', 4, 16, 173, 1, 2, 10, 'manhattan', 1, 1, 10, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP03_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP03_time.txt']
+
+rand seed=1501871443
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP03_tree.txt  time_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP03_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,1]  [2,4]  [1,3]  [0,2]  
+
+=== Node 1 ===
+.....................................................................................
+Len=169  @[  1,110]  d_th=21.16 gap=0.269375 gain= 0.68531 (2  )==>   0   5   4   0  /   6   0   0   1 
+
+=== Node 2 ===
+.....................................................................................
+Len=45   @[  0,134]  d_th= 5.89 gap=0.313186 gain= 0.68696 (1  )==>   0   5   0   0  /   0   0   4   0 
+
+=== Node 3 ===
+.....................................................................................
+Len=173  @[  0, 86]  d_th=21.74 gap=1.010687 gain= 0.41012 (5  )==>   6   0   0   0  /   0   0   0   1 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.23 sec
+  Time Rand Project =     1.01 sec
+  Time Score Matrix =     0.15 sec
+  Time Compute Gain =     9.02 sec
+Running  Time for this Shapelet=    10.54 sec <<
+
+
+Total Running  Time =    10.54 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST', 4, 306, 'manhattan', 1, 1, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP03_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP03_acc.txt']
+0
+num_class=4, num_obj=306  distance=manhattan CID=true normalize=true ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP03_tree.txt  ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP03_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.464   Correct:286 , Wrong: 20
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  83    0    0    0 
+;   p  2 |  11   92    0    8 
+;   p  4 |   0    0   87    1 
+;   p  1 |   0    0    0   24 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN', 4, 16, 173, 1, 2, 10, 'manhattan', 1, 1, 10, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP04_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP04_time.txt']
+
+rand seed=1501871455
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP04_tree.txt  time_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP04_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,1]  [2,4]  [1,3]  [0,2]  
+
+=== Node 1 ===
+.....................................................................................
+Len=171  @[  1,110]  d_th=21.30 gap=0.269898 gain= 0.68531 (2  )==>   0   5   4   0  /   6   0   0   1 
+
+=== Node 2 ===
+.....................................................................................
+Len=39   @[  0,160]  d_th= 4.07 gap=0.310024 gain= 0.68696 (1  )==>   0   5   0   0  /   0   0   4   0 
+
+=== Node 3 ===
+.....................................................................................
+Len=169  @[  0, 99]  d_th=17.69 gap=0.700349 gain= 0.41012 (5  )==>   6   0   0   0  /   0   0   0   1 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.23 sec
+  Time Rand Project =     1.02 sec
+  Time Score Matrix =     0.15 sec
+  Time Compute Gain =     9.09 sec
+Running  Time for this Shapelet=    10.62 sec <<
+
+
+Total Running  Time =    10.62 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST', 4, 306, 'manhattan', 1, 1, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP04_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP04_acc.txt']
+0
+num_class=4, num_obj=306  distance=manhattan CID=true normalize=true ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP04_tree.txt  ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP04_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.137   Correct:285 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  83    0    0    1 
+;   p  2 |  11   92    0    9 
+;   p  4 |   0    0   87    0 
+;   p  1 |   0    0    0   23 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN', 4, 16, 173, 1, 2, 10, 'manhattan', 1, 1, 10, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP05_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP05_time.txt']
+
+rand seed=1501871466
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP05_tree.txt  time_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP05_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,1]  [2,4]  [1,3]  [0,2]  
+
+=== Node 1 ===
+.....................................................................................
+Len=171  @[  1,110]  d_th=21.30 gap=0.269898 gain= 0.68531 (2  )==>   0   5   4   0  /   6   0   0   1 
+
+=== Node 2 ===
+.....................................................................................
+Len=37   @[  0,134]  d_th= 2.93 gap=0.306219 gain= 0.68696 (1  )==>   0   5   0   0  /   0   0   4   0 
+
+=== Node 3 ===
+.....................................................................................
+Len=117  @[  0,116]  d_th=14.06 gap=0.565714 gain= 0.41012 (5  )==>   6   0   0   0  /   0   0   0   1 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.24 sec
+  Time Rand Project =     1.05 sec
+  Time Score Matrix =     0.16 sec
+  Time Compute Gain =     9.17 sec
+Running  Time for this Shapelet=    10.75 sec <<
+
+
+Total Running  Time =    10.75 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST', 4, 306, 'manhattan', 1, 1, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP05_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP05_acc.txt']
+0
+num_class=4, num_obj=306  distance=manhattan CID=true normalize=true ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP05_tree.txt  ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP05_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 92.484   Correct:283 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  83    0    0    0 
+;   p  2 |  11   92    0   11 
+;   p  4 |   0    0   87    1 
+;   p  1 |   0    0    0   21 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN', 4, 16, 173, 1, 2, 10, 'manhattan', 1, 1, 10, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP06_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP06_time.txt']
+
+rand seed=1501871477
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP06_tree.txt  time_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP06_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,1]  [2,4]  [1,3]  [0,2]  
+
+=== Node 1 ===
+.....................................................................................
+Len=163  @[  1,112]  d_th=20.53 gap=0.261300 gain= 0.68531 (2  )==>   0   5   4   0  /   6   0   0   1 
+
+=== Node 2 ===
+.....................................................................................
+Len=45   @[  0,134]  d_th= 5.89 gap=0.313186 gain= 0.68696 (1  )==>   0   5   0   0  /   0   0   4   0 
+
+=== Node 3 ===
+.....................................................................................
+Len=157  @[  0, 82]  d_th=19.07 gap=0.861052 gain= 0.41012 (5  )==>   6   0   0   0  /   0   0   0   1 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.23 sec
+  Time Rand Project =     1.02 sec
+  Time Score Matrix =     0.16 sec
+  Time Compute Gain =     9.03 sec
+Running  Time for this Shapelet=    10.56 sec <<
+
+
+Total Running  Time =    10.56 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST', 4, 306, 'manhattan', 1, 1, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP06_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP06_acc.txt']
+0
+num_class=4, num_obj=306  distance=manhattan CID=true normalize=true ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP06_tree.txt  ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP06_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.137   Correct:285 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  83    0    0    0 
+;   p  2 |  11   92    0    9 
+;   p  4 |   0    0   87    1 
+;   p  1 |   0    0    0   23 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN', 4, 16, 173, 1, 2, 10, 'manhattan', 1, 1, 10, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP07_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP07_time.txt']
+
+rand seed=1501871488
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP07_tree.txt  time_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP07_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,1]  [2,4]  [1,3]  [0,2]  
+
+=== Node 1 ===
+.....................................................................................
+Len=167  @[  1,110]  d_th=21.14 gap=0.273149 gain= 0.68531 (2  )==>   0   5   4   0  /   6   0   0   1 
+
+=== Node 2 ===
+.....................................................................................
+Len=43   @[  0,134]  d_th= 5.31 gap=0.300375 gain= 0.68696 (1  )==>   0   5   0   0  /   0   0   4   0 
+
+=== Node 3 ===
+.....................................................................................
+Len=173  @[  0, 73]  d_th=23.60 gap=0.990917 gain= 0.41012 (5  )==>   6   0   0   0  /   0   0   0   1 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.23 sec
+  Time Rand Project =     1.03 sec
+  Time Score Matrix =     0.16 sec
+  Time Compute Gain =     9.09 sec
+Running  Time for this Shapelet=    10.64 sec <<
+
+
+Total Running  Time =    10.64 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST', 4, 306, 'manhattan', 1, 1, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP07_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP07_acc.txt']
+0
+num_class=4, num_obj=306  distance=manhattan CID=true normalize=true ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP07_tree.txt  ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP07_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.137   Correct:285 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  83    0    0    0 
+;   p  2 |  11   92    0    9 
+;   p  4 |   0    0   87    1 
+;   p  1 |   0    0    0   23 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN', 4, 16, 173, 1, 2, 10, 'manhattan', 1, 1, 10, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP08_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP08_time.txt']
+
+rand seed=1501871500
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP08_tree.txt  time_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP08_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,1]  [2,4]  [1,3]  [0,2]  
+
+=== Node 1 ===
+.....................................................................................
+Len=169  @[  1,110]  d_th=21.16 gap=0.269375 gain= 0.68531 (2  )==>   0   5   4   0  /   6   0   0   1 
+
+=== Node 2 ===
+.....................................................................................
+Len=45   @[  0,134]  d_th= 5.89 gap=0.313186 gain= 0.68696 (1  )==>   0   5   0   0  /   0   0   4   0 
+
+=== Node 3 ===
+.....................................................................................
+Len=173  @[  0, 98]  d_th=18.20 gap=0.695372 gain= 0.41012 (5  )==>   6   0   0   0  /   0   0   0   1 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.23 sec
+  Time Rand Project =     1.02 sec
+  Time Score Matrix =     0.16 sec
+  Time Compute Gain =     9.11 sec
+Running  Time for this Shapelet=    10.65 sec <<
+
+
+Total Running  Time =    10.65 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST', 4, 306, 'manhattan', 1, 1, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP08_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP08_acc.txt']
+0
+num_class=4, num_obj=306  distance=manhattan CID=true normalize=true ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP08_tree.txt  ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP08_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.137   Correct:285 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  83    0    0    0 
+;   p  2 |  11   92    0    9 
+;   p  4 |   0    0   87    1 
+;   p  1 |   0    0    0   23 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN', 4, 16, 173, 1, 2, 10, 'manhattan', 1, 1, 10, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP09_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP09_time.txt']
+
+rand seed=1501871511
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP09_tree.txt  time_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP09_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,1]  [2,4]  [1,3]  [0,2]  
+
+=== Node 1 ===
+.....................................................................................
+Len=171  @[  1,110]  d_th=21.30 gap=0.269898 gain= 0.68531 (2  )==>   0   5   4   0  /   6   0   0   1 
+
+=== Node 2 ===
+.....................................................................................
+Len=45   @[  0,134]  d_th= 5.89 gap=0.313186 gain= 0.68696 (1  )==>   0   5   0   0  /   0   0   4   0 
+
+=== Node 3 ===
+.....................................................................................
+Len=169  @[  0, 87]  d_th=21.02 gap=0.986367 gain= 0.41012 (5  )==>   6   0   0   0  /   0   0   0   1 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.22 sec
+  Time Rand Project =     1.00 sec
+  Time Score Matrix =     0.16 sec
+  Time Compute Gain =     9.05 sec
+Running  Time for this Shapelet=    10.56 sec <<
+
+
+Total Running  Time =    10.56 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST', 4, 306, 'manhattan', 1, 1, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP09_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP09_acc.txt']
+0
+num_class=4, num_obj=306  distance=manhattan CID=true normalize=true ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP09_tree.txt  ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP09_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.464   Correct:286 , Wrong: 20
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  83    0    0    0 
+;   p  2 |  11   92    0    8 
+;   p  4 |   0    0   87    1 
+;   p  1 |   0    0    0   24 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN', 4, 16, 173, 1, 2, 10, 'manhattan', 1, 1, 10, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP10_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP10_time.txt']
+
+rand seed=1501871522
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP10_tree.txt  time_file=./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP10_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,1]  [2,4]  [1,3]  [0,2]  
+
+=== Node 1 ===
+.....................................................................................
+Len=171  @[  1,110]  d_th=21.30 gap=0.269898 gain= 0.68531 (2  )==>   0   5   4   0  /   6   0   0   1 
+
+=== Node 2 ===
+.....................................................................................
+Len=41   @[  1,147]  d_th= 3.99 gap=0.310349 gain= 0.68696 (1  )==>   0   0   4   0  /   0   5   0   0 
+
+=== Node 3 ===
+.....................................................................................
+Len=169  @[  0, 83]  d_th=21.56 gap=1.003883 gain= 0.41012 (5  )==>   6   0   0   0  /   0   0   0   1 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.23 sec
+  Time Rand Project =     1.04 sec
+  Time Score Matrix =     0.16 sec
+  Time Compute Gain =     9.17 sec
+Running  Time for this Shapelet=    10.73 sec <<
+
+
+Total Running  Time =    10.73 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST', 4, 306, 'manhattan', 1, 1, './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP10_tree.txt', './output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP10_acc.txt']
+0
+num_class=4, num_obj=306  distance=manhattan CID=true normalize=true ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP10_tree.txt  ./output/DiatomSizeReduction/DiatomSizeReduction_manhattan_normed_CID_REP10_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.137   Correct:285 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  83    0    0    0 
+;   p  2 |  11   92    0    9 
+;   p  4 |   0    0   87    1 
+;   p  1 |   0    0    0   23 
+
+
+================ Replication:  10 Finished ================

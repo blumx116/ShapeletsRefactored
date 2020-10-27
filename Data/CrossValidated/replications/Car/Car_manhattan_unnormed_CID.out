@@ -1,0 +1,544 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 0, 10, './output/Car/Car_manhattan_unnormed_CID_REP01_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP01_time.txt']
+
+rand seed=1502007716
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_unnormed_CID_REP01_tree.txt  time_file=./output/Car/Car_manhattan_unnormed_CID_REP01_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=75   @[  0,132]  d_th= 9.32 gap=0.173225 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=105  @[  0,183]  d_th=12.20 gap=0.011340 gain= 0.55662 (14 )==>  15   0   0   0  /   1  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,322]  d_th=10.39 gap=0.071379 gain= 0.41938 (1  )==>   1  14   0   0  /   0   3   0  11 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=11   @[  0,155]  d_th= 0.26 gap=0.004911 gain= 0.51958 (8  )==>   0   0   0  11  /   0   3   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.91 sec
+  Time Rand Project =     8.20 sec
+  Time Score Matrix =     0.93 sec
+  Time Compute Gain =    92.02 sec
+Running  Time for this Shapelet=   104.91 sec <<
+
+
+Total Running  Time =   104.91 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 0, './output/Car/Car_manhattan_unnormed_CID_REP01_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP01_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=false ./output/Car/Car_manhattan_unnormed_CID_REP01_tree.txt  ./output/Car/Car_manhattan_unnormed_CID_REP01_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 73.333   Correct:44 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   5    7    0    0 
+;   p  3 |   7   12    0    1 
+;   p  2 |   0    0   14    0 
+;   p  1 |   1    0    0   13 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 0, 10, './output/Car/Car_manhattan_unnormed_CID_REP02_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP02_time.txt']
+
+rand seed=1502007822
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_unnormed_CID_REP02_tree.txt  time_file=./output/Car/Car_manhattan_unnormed_CID_REP02_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=75   @[  0,132]  d_th= 9.32 gap=0.173225 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=105  @[  0,183]  d_th=12.20 gap=0.011340 gain= 0.55662 (14 )==>  15   0   0   0  /   1  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,322]  d_th=10.39 gap=0.071379 gain= 0.41938 (1  )==>   1  14   0   0  /   0   3   0  11 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=11   @[  0,155]  d_th= 0.26 gap=0.004911 gain= 0.51958 (8  )==>   0   0   0  11  /   0   3   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.81 sec
+  Time Rand Project =     7.89 sec
+  Time Score Matrix =     0.89 sec
+  Time Compute Gain =    87.50 sec
+Running  Time for this Shapelet=    99.89 sec <<
+
+
+Total Running  Time =    99.89 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 0, './output/Car/Car_manhattan_unnormed_CID_REP02_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP02_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=false ./output/Car/Car_manhattan_unnormed_CID_REP02_tree.txt  ./output/Car/Car_manhattan_unnormed_CID_REP02_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 73.333   Correct:44 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   5    7    0    0 
+;   p  3 |   7   12    0    1 
+;   p  2 |   0    0   14    0 
+;   p  1 |   1    0    0   13 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 0, 10, './output/Car/Car_manhattan_unnormed_CID_REP03_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP03_time.txt']
+
+rand seed=1502007923
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_unnormed_CID_REP03_tree.txt  time_file=./output/Car/Car_manhattan_unnormed_CID_REP03_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=75   @[  0,132]  d_th= 9.32 gap=0.173225 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=105  @[  0,183]  d_th=12.20 gap=0.011340 gain= 0.55662 (14 )==>  15   0   0   0  /   1  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,322]  d_th=10.39 gap=0.071379 gain= 0.41938 (1  )==>   1  14   0   0  /   0   3   0  11 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=11   @[  0,155]  d_th= 0.26 gap=0.004911 gain= 0.51958 (8  )==>   0   0   0  11  /   0   3   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.87 sec
+  Time Rand Project =     8.10 sec
+  Time Score Matrix =     0.94 sec
+  Time Compute Gain =    92.56 sec
+Running  Time for this Shapelet=   105.29 sec <<
+
+
+Total Running  Time =   105.29 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 0, './output/Car/Car_manhattan_unnormed_CID_REP03_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP03_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=false ./output/Car/Car_manhattan_unnormed_CID_REP03_tree.txt  ./output/Car/Car_manhattan_unnormed_CID_REP03_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 73.333   Correct:44 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   5    7    0    0 
+;   p  3 |   7   12    0    1 
+;   p  2 |   0    0   14    0 
+;   p  1 |   1    0    0   13 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 0, 10, './output/Car/Car_manhattan_unnormed_CID_REP04_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP04_time.txt']
+
+rand seed=1502008031
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_unnormed_CID_REP04_tree.txt  time_file=./output/Car/Car_manhattan_unnormed_CID_REP04_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=75   @[  0,132]  d_th= 9.32 gap=0.173225 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=105  @[  0,183]  d_th=12.20 gap=0.011340 gain= 0.55662 (14 )==>  15   0   0   0  /   1  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,322]  d_th=10.39 gap=0.071379 gain= 0.41938 (1  )==>   1  14   0   0  /   0   3   0  11 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=103  @[  0,269]  d_th=19.22 gap=0.083714 gain= 0.35891 (6  )==>   0   0   0  10  /   0   3   0   1 
+
+=== Node 23 ===
+...............................................................................................................................................
+Len=233  @[  1, 23]  d_th=46.07 gap=3.018341 gain= 0.56234 (2  )==>   0   0   0   1  /   0   3   0   0 
+
+num_class=4, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.93 sec
+  Time Rand Project =     8.35 sec
+  Time Score Matrix =     0.97 sec
+  Time Compute Gain =    92.95 sec
+Running  Time for this Shapelet=   106.06 sec <<
+
+
+Total Running  Time =   106.06 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 0, './output/Car/Car_manhattan_unnormed_CID_REP04_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP04_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=false ./output/Car/Car_manhattan_unnormed_CID_REP04_tree.txt  ./output/Car/Car_manhattan_unnormed_CID_REP04_acc.txt
+
+==> Tree Size = 48
+
+; accuracy= 78.333   Correct:47 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |  11   10    0    1 
+;   p  3 |   1    9    0    0 
+;   p  2 |   0    0   14    0 
+;   p  1 |   1    0    0   13 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 0, 10, './output/Car/Car_manhattan_unnormed_CID_REP05_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP05_time.txt']
+
+rand seed=1502008138
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_unnormed_CID_REP05_tree.txt  time_file=./output/Car/Car_manhattan_unnormed_CID_REP05_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=75   @[  0,132]  d_th= 9.32 gap=0.173225 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=105  @[  0,183]  d_th=12.20 gap=0.011340 gain= 0.55662 (14 )==>  15   0   0   0  /   1  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,322]  d_th=10.39 gap=0.071379 gain= 0.41938 (1  )==>   1  14   0   0  /   0   3   0  11 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=11   @[  0,155]  d_th= 0.26 gap=0.004911 gain= 0.51958 (8  )==>   0   0   0  11  /   0   3   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.86 sec
+  Time Rand Project =     8.12 sec
+  Time Score Matrix =     0.93 sec
+  Time Compute Gain =    91.42 sec
+Running  Time for this Shapelet=   104.15 sec <<
+
+
+Total Running  Time =   104.15 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 0, './output/Car/Car_manhattan_unnormed_CID_REP05_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP05_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=false ./output/Car/Car_manhattan_unnormed_CID_REP05_tree.txt  ./output/Car/Car_manhattan_unnormed_CID_REP05_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 73.333   Correct:44 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   5    7    0    0 
+;   p  3 |   7   12    0    1 
+;   p  2 |   0    0   14    0 
+;   p  1 |   1    0    0   13 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 0, 10, './output/Car/Car_manhattan_unnormed_CID_REP06_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP06_time.txt']
+
+rand seed=1502008243
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_unnormed_CID_REP06_tree.txt  time_file=./output/Car/Car_manhattan_unnormed_CID_REP06_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=75   @[  0,132]  d_th= 9.32 gap=0.173225 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=105  @[  0,183]  d_th=12.20 gap=0.011340 gain= 0.55662 (14 )==>  15   0   0   0  /   1  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,322]  d_th=10.39 gap=0.071379 gain= 0.41938 (1  )==>   1  14   0   0  /   0   3   0  11 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=11   @[  0,155]  d_th= 0.26 gap=0.004911 gain= 0.51958 (8  )==>   0   0   0  11  /   0   3   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.94 sec
+  Time Rand Project =     8.40 sec
+  Time Score Matrix =     0.97 sec
+  Time Compute Gain =    92.17 sec
+Running  Time for this Shapelet=   105.32 sec <<
+
+
+Total Running  Time =   105.32 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 0, './output/Car/Car_manhattan_unnormed_CID_REP06_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP06_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=false ./output/Car/Car_manhattan_unnormed_CID_REP06_tree.txt  ./output/Car/Car_manhattan_unnormed_CID_REP06_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 73.333   Correct:44 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   5    7    0    0 
+;   p  3 |   7   12    0    1 
+;   p  2 |   0    0   14    0 
+;   p  1 |   1    0    0   13 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 0, 10, './output/Car/Car_manhattan_unnormed_CID_REP07_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP07_time.txt']
+
+rand seed=1502008350
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_unnormed_CID_REP07_tree.txt  time_file=./output/Car/Car_manhattan_unnormed_CID_REP07_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=75   @[  0,132]  d_th= 9.32 gap=0.173225 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=105  @[  0,183]  d_th=12.20 gap=0.011340 gain= 0.55662 (14 )==>  15   0   0   0  /   1  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,322]  d_th=10.39 gap=0.071379 gain= 0.41938 (1  )==>   1  14   0   0  /   0   3   0  11 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=11   @[  0,155]  d_th= 0.26 gap=0.004911 gain= 0.51958 (8  )==>   0   0   0  11  /   0   3   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.89 sec
+  Time Rand Project =     8.37 sec
+  Time Score Matrix =     0.93 sec
+  Time Compute Gain =    88.73 sec
+Running  Time for this Shapelet=   101.72 sec <<
+
+
+Total Running  Time =   101.72 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 0, './output/Car/Car_manhattan_unnormed_CID_REP07_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP07_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=false ./output/Car/Car_manhattan_unnormed_CID_REP07_tree.txt  ./output/Car/Car_manhattan_unnormed_CID_REP07_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 73.333   Correct:44 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   5    7    0    0 
+;   p  3 |   7   12    0    1 
+;   p  2 |   0    0   14    0 
+;   p  1 |   1    0    0   13 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 0, 10, './output/Car/Car_manhattan_unnormed_CID_REP08_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP08_time.txt']
+
+rand seed=1502008452
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_unnormed_CID_REP08_tree.txt  time_file=./output/Car/Car_manhattan_unnormed_CID_REP08_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=75   @[  0,132]  d_th= 9.32 gap=0.173225 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=105  @[  0,183]  d_th=12.20 gap=0.011340 gain= 0.55662 (14 )==>  15   0   0   0  /   1  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,322]  d_th=10.39 gap=0.071379 gain= 0.41938 (1  )==>   1  14   0   0  /   0   3   0  11 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=11   @[  0,155]  d_th= 0.26 gap=0.004911 gain= 0.51958 (8  )==>   0   0   0  11  /   0   3   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.98 sec
+  Time Rand Project =     8.72 sec
+  Time Score Matrix =     0.99 sec
+  Time Compute Gain =    96.61 sec
+Running  Time for this Shapelet=   110.12 sec <<
+
+
+Total Running  Time =   110.12 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 0, './output/Car/Car_manhattan_unnormed_CID_REP08_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP08_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=false ./output/Car/Car_manhattan_unnormed_CID_REP08_tree.txt  ./output/Car/Car_manhattan_unnormed_CID_REP08_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 73.333   Correct:44 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   5    7    0    0 
+;   p  3 |   7   12    0    1 
+;   p  2 |   0    0   14    0 
+;   p  1 |   1    0    0   13 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 0, 10, './output/Car/Car_manhattan_unnormed_CID_REP09_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP09_time.txt']
+
+rand seed=1502008564
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_unnormed_CID_REP09_tree.txt  time_file=./output/Car/Car_manhattan_unnormed_CID_REP09_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=75   @[  0,132]  d_th= 9.32 gap=0.173225 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=105  @[  0,183]  d_th=12.20 gap=0.011340 gain= 0.55662 (14 )==>  15   0   0   0  /   1  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,322]  d_th=10.39 gap=0.071379 gain= 0.41938 (1  )==>   1  14   0   0  /   0   3   0  11 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=11   @[  0,155]  d_th= 0.26 gap=0.004911 gain= 0.51958 (8  )==>   0   0   0  11  /   0   3   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.88 sec
+  Time Rand Project =     8.61 sec
+  Time Score Matrix =     0.99 sec
+  Time Compute Gain =    90.76 sec
+Running  Time for this Shapelet=   104.02 sec <<
+
+
+Total Running  Time =   104.02 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 0, './output/Car/Car_manhattan_unnormed_CID_REP09_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP09_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=false ./output/Car/Car_manhattan_unnormed_CID_REP09_tree.txt  ./output/Car/Car_manhattan_unnormed_CID_REP09_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 73.333   Correct:44 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   5    7    0    0 
+;   p  3 |   7   12    0    1 
+;   p  2 |   0    0   14    0 
+;   p  1 |   1    0    0   13 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'manhattan', 1, 0, 10, './output/Car/Car_manhattan_unnormed_CID_REP10_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP10_time.txt']
+
+rand seed=1502008669
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/Car/Car_manhattan_unnormed_CID_REP10_tree.txt  time_file=./output/Car/Car_manhattan_unnormed_CID_REP10_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=75   @[  0,132]  d_th= 9.32 gap=0.173225 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=105  @[  0,183]  d_th=12.20 gap=0.011340 gain= 0.55662 (14 )==>  15   0   0   0  /   1  17   0  11 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=119  @[  0,322]  d_th=10.39 gap=0.071379 gain= 0.41938 (1  )==>   1  14   0   0  /   0   3   0  11 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=11   @[  0,155]  d_th= 0.26 gap=0.004911 gain= 0.51958 (8  )==>   0   0   0  11  /   0   3   0   0 
+
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.86 sec
+  Time Rand Project =     8.68 sec
+  Time Score Matrix =     1.00 sec
+  Time Compute Gain =    92.04 sec
+Running  Time for this Shapelet=   105.38 sec <<
+
+
+Total Running  Time =   105.38 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'manhattan', 1, 0, './output/Car/Car_manhattan_unnormed_CID_REP10_tree.txt', './output/Car/Car_manhattan_unnormed_CID_REP10_acc.txt']
+0
+num_class=4, num_obj=60  distance=manhattan CID=true normalize=false ./output/Car/Car_manhattan_unnormed_CID_REP10_tree.txt  ./output/Car/Car_manhattan_unnormed_CID_REP10_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 73.333   Correct:44 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |   5    7    0    0 
+;   p  3 |   7   12    0    1 
+;   p  2 |   0    0   14    0 
+;   p  1 |   1    0    0   13 
+
+
+================ Replication:  10 Finished ================

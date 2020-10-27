@@ -1,0 +1,60 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Plane_TRAIN_CV1', 7, 51, 72, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/Plane_CV1/Plane_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/Plane_CV1/Plane_CV1_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502274540
+num_class=7, num_obj=51, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Plane_CV1/Plane_CV1_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/Plane_CV1/Plane_CV1_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [6,7]  [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................
+Len=63   @[ 41,  0]  d_th= 5.27 gap=0.093002 gain= 0.69295 (1  )==>   0   0   0   0   6   9  10  /   7   7   4   8   0   0   0 
+
+=== Node 2 ===
+..................................
+Len=61   @[ 15, 22]  d_th= 2.42 gap=0.104547 gain= 0.67301 (5  )==>   0   0   0   0   0   0  10  /   0   0   0   0   6   9   0 
+
+=== Node 3 ===
+..................................
+Len=71   @[  9, 69]  d_th= 5.01 gap=0.234730 gain= 0.69019 (2  )==>   7   7   0   0   0   0   0  /   0   0   4   8   0   0   0 
+
+=== Node 5 ===
+..................................
+Len=45   @[  0, 42]  d_th= 4.53 gap=0.522974 gain= 0.67301 (3  )==>   0   0   0   0   6   0   0  /   0   0   0   0   0   9   0 
+
+=== Node 6 ===
+..................................
+Len=63   @[  1, 13]  d_th= 2.41 gap=0.038897 gain= 0.69315 (0  )==>   7   0   0   0   0   0   0  /   0   7   0   0   0   0   0 
+
+=== Node 7 ===
+..................................
+Len=63   @[  8,  2]  d_th= 6.11 gap=0.550623 gain= 0.63651 (4  )==>   0   0   0   8   0   0   0  /   0   0   4   0   0   0   0 
+
+num_class=7, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.21 sec
+  Time Rand Project =     1.18 sec
+  Time Score Matrix =     0.13 sec
+  Time Compute Gain =     2.12 sec
+Running  Time for this Shapelet=     3.78 sec <<
+
+
+Total Running  Time =     3.78 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Plane_TRAIN_CV2', 7, 54, 'euclidean', 1, 0, './cv_output/Plane_CV1/Plane_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/Plane_CV1/Plane_CV1_euclidean_unnormed_CID_acc.txt']
+; accuracy= 90.741   Correct:49 , Wrong: 5
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6    7 
+;   -----+------------------------------------------
+;   p  1 |   6    0    0    0    0    0    0 
+;   p  2 |   1    6    0    0    0    0    0 
+;   p  3 |   1    0    5    0    0    0    0 
+;   p  4 |   0    0    0    8    0    0    0 
+;   p  5 |   0    0    0    0    7    0    0 
+;   p  6 |   0    1    0    0    0    9    2 
+;   p  7 |   0    0    0    0    0    0    8 
+
+num_class=7, num_obj=54  distance=euclidean CID=true normalize=false ./cv_output/Plane_CV1/Plane_CV1_euclidean_unnormed_CID_tree.txt  ./cv_output/Plane_CV1/Plane_CV1_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 16
+

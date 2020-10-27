@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1501830251, rand()=411478250, rand()=817604410
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 manhattan 0 1 10 ./output/ECG5000/ECG5000_manhattan_normed_NOCID_REP10_tree.txt ./output/ECG5000/ECG5000_manhattan_normed_NOCID_REP10_time.txt 
+
+;Local Class:   0  1  2  3  4 
+;Real  Class:   1  2  3  4  5 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --    325    7   43   8.7059 ==>   1 162   4  16   0  / 291  15   6   3   2 
+NonL  2    --     20    7   65  26.9609 ==>   1 162   0  16   0  /   0   0   4   0   0 
+Leaf  3     1    
+Leaf  4     2    
+Leaf  5     3    
+
+;Shapelet id   <data>
+Shapelet   1  -1.763600 -1.300700 -0.798890 -0.472750 -0.401040 -0.301930 -0.093508  0.227740  0.524810  0.620290  0.595500  0.536060  0.493870  0.516180  0.496020  0.479150  0.530340  0.552770  0.568530  0.573610  0.552840  0.606310  0.637220  0.544190  0.461200  0.458020  0.485420  0.493560  0.464000  0.456980  0.515320  0.537000  0.466120  0.410270  0.415640  0.413730  0.419590  0.440700  0.376700  0.279210  0.268910  0.260570  0.250650 
+Shapelet   2  -2.616600 -2.423100 -1.967700 -1.350300 -0.824260 -0.547430 -0.506070 -0.484570 -0.296240 -0.032789  0.198540  0.407300  0.476720  0.396980  0.374510  0.403130  0.415890  0.465840  0.472270  0.441490  0.460430  0.432510  0.387790  0.437980  0.436320  0.365160  0.388250  0.407100  0.381490  0.445270  0.468840  0.399970  0.398260  0.357850  0.283180  0.312890  0.323460  0.286820  0.273670  0.299110  0.279770  0.234220  0.321270  0.295650  0.169680  0.238220  0.237690  0.099750  0.056134  0.113530  0.176060  0.131060  0.087600  0.120590  0.117080  0.073524  0.027574  0.015555  0.013205  0.010132  0.046518  0.051880  0.065648  0.113530  0.101230 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 manhattan 0 1 10 ./output/ECG5000/ECG5000_manhattan_normed_NOCID_REP10_tree.txt ./output/ECG5000/ECG5000_manhattan_normed_NOCID_REP10_time.txt
+; time =>   35.749   1.373  17.983   4.754   8.124 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ECG5000_TEST 5 4500 manhattan 0 1 ./output/ECG5000/ECG5000_manhattan_normed_NOCID_REP10_tree.txt ./output/ECG5000/ECG5000_manhattan_normed_NOCID_REP10_acc.txt
+; accuracy= 88.644   Correct:3989 , Wrong: 511
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2581  184   52   21   16 
+;   p  2 |  31 1395   21  150    6 
+;   p  3 |  15   11   13    4    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+

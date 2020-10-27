@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1502274827, rand()=101168054, rand()=1440318530
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV1 2 28 117 1 2 10 manhattan 0 0 10 ./cv_output/Wine_CV1/Wine_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/Wine_CV1/Wine_CV1_manhattan_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0  164   29   0.5915 ==>  12   0  /   3  13 
+Leaf  2     1    
+NonL  3    --      0   21   35   0.7144 ==>   3   0  /   0  13 
+Leaf  6     1    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.425980 -0.400620 -0.371630 -0.339020 -0.308220 -0.267910 -0.218540 -0.157850 -0.084923 -0.026948  0.061375  0.145620  0.262930  0.376620  0.506160  0.651550  0.815960  1.000300  1.205500  1.427000  1.675200  1.915200  2.159400  2.428000  2.637700  2.857300  2.990500  3.054800  3.119600 
+Shapelet   3   0.090607  0.061380  0.039348  0.024510  0.011020 -0.006066 -0.020905 -0.026750 -0.020905  0.002027  0.047891  0.124330  0.239890  0.417500  0.705720  1.162600  1.717000  1.931900  1.465600  0.802400  0.346010  0.111740  0.015517  0.001128  0.045643  0.137820  0.255180  0.340160  0.309140  0.153110 -0.035743 -0.178730 -0.265060 -0.311380 -0.336560 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV1 2 28 117 1 2 10 manhattan 0 0 10 ./cv_output/Wine_CV1/Wine_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/Wine_CV1/Wine_CV1_manhattan_unnormed_NOCID_time.txt
+; time =>    1.433   0.130   0.453   0.035   0.776 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV2 2 29 manhattan 0 0 ./cv_output/Wine_CV1/Wine_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/Wine_CV1/Wine_CV1_manhattan_unnormed_NOCID_acc.txt
+; accuracy= 41.379   Correct:12 , Wrong: 17
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   7    9 
+;   p  2 |   8    5 
+

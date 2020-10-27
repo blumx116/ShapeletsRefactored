@@ -1,0 +1,44 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV2', 4, 9, 173, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502278719
+num_class=4, num_obj=9, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.....................................................................................
+Len=49   @[  1,152]  d_th= 6.73 gap=0.346862 gain= 0.68696 (1  )==>   0   3   0   2  /   1   0   3   0 
+
+=== Node 2 ===
+.....................................................................................
+Len=165  @[  0,105]  d_th=15.68 gap=0.788036 gain= 0.67301 (1  )==>   0   3   0   0  /   0   0   0   2 
+
+=== Node 3 ===
+.....................................................................................
+Len=161  @[  0, 85]  d_th= 7.23 gap=0.569829 gain= 0.56234 (2  )==>   1   0   0   0  /   0   0   3   0 
+
+num_class=4, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.08 sec
+  Time Rand Project =     0.18 sec
+  Time Score Matrix =     0.02 sec
+  Time Compute Gain =     2.29 sec
+Running  Time for this Shapelet=     2.60 sec <<
+
+
+Total Running  Time =     2.60 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV1', 3, 7, 'manhattan', 0, 1, './cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_manhattan_normed_NOCID_acc.txt']
+; accuracy= 100.000   Correct:7 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   2    3    4 
+;   -----+------------------
+;   p  2 |   3    0    0 
+;   p  3 |   0    2    0 
+;   p  4 |   0    0    2 
+
+num_class=3, num_obj=7  distance=manhattan CID=false normalize=true ./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_manhattan_normed_NOCID_tree.txt  ./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 8
+

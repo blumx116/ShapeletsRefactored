@@ -1,0 +1,75 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Lighting7_TRAIN_CV2', 7, 36, 160, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/Lighting7_CV2/Lighting7_CV2_correlation_unnormed_CID_tree.txt', './cv_output/Lighting7_CV2/Lighting7_CV2_correlation_unnormed_CID_time.txt']
+
+rand seed=1503465664
+num_class=7, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Lighting7_CV2/Lighting7_CV2_correlation_unnormed_CID_tree.txt  time_file=./cv_output/Lighting7_CV2/Lighting7_CV2_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [6,6]  [5,5]  [4,4]  [3,3]  [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................
+Len=7    @[  1,  0]  d_th= 1.00 gap=0.000000 gain= 0.69315 (0  )==>   0   0   0   0   3  10   5  /   4   4   4   6   0   0   0 
+
+=== Node 2 ===
+..............................................................................
+Len=7    @[  1,  0]  d_th= 1.00 gap=0.000000 gain= 0.69315 (0  )==>   0   0   0   0   3  10   5  /   4   4   4   6   0   0   0 
+
+=== Node 3 ===
+..............................................................................Error!! bsf_sh is empty  at node_id=3 
+
+=== Node 4 ===
+..............................................................................
+Len=7    @[  1,  0]  d_th= 1.00 gap=0.000000 gain= 0.69315 (0  )==>   0   0   0   0   3  10   5  /   4   4   4   6   0   0   0 
+
+=== Node 5 ===
+..............................................................................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 8 ===
+..............................................................................
+Len=7    @[  1,  0]  d_th= 1.00 gap=0.000000 gain= 0.69315 (0  )==>   0   0   0   0   3  10   5  /   4   4   4   6   0   0   0 
+
+=== Node 9 ===
+..............................................................................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 16 ===
+..............................................................................
+Len=7    @[  1,  0]  d_th= 1.00 gap=0.000000 gain= 0.69315 (0  )==>   0   0   0   0   3  10   5  /   4   4   4   6   0   0   0 
+
+=== Node 17 ===
+..............................................................................Error!! bsf_sh is empty  at node_id=17 
+
+=== Node 32 ===
+..............................................................................
+Len=7    @[  1,  0]  d_th= 1.00 gap=0.000000 gain= 0.69315 (0  )==>   0   0   0   0   3  10   5  /   4   4   4   6   0   0   0 
+
+=== Node 33 ===
+..............................................................................Error!! bsf_sh is empty  at node_id=33 
+
+num_class=7, num_obj=0, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.04 sec
+  Time Rand Project =    15.05 sec
+  Time Score Matrix =     1.28 sec
+  Time Compute Gain =    40.51 sec
+Running  Time for this Shapelet=    60.29 sec <<
+
+
+Total Running  Time =    60.29 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Lighting7_TRAIN_CV1', 7, 34, 'correlation', 1, 0, './cv_output/Lighting7_CV2/Lighting7_CV2_correlation_unnormed_CID_tree.txt', './cv_output/Lighting7_CV2/Lighting7_CV2_correlation_unnormed_CID_acc.txt']
+; accuracy= 26.471   Correct:9 , Wrong: 25
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2    3    4    5    6 
+;   -----+------------------------------------------
+;   p  0 |   0    0    0    0    0    0    0 
+;   p  1 |   0    0    0    0    0    0    0 
+;   p  2 |   0    0    0    0    0    0    0 
+;   p  3 |   0    0    0    0    0    0    0 
+;   p  4 |   0    0    0    0    0    0    0 
+;   p  5 |   4    4    4    6    2    9    5 
+;   p  6 |   0    0    0    0    0    0    0 
+
+num_class=7, num_obj=34  distance=correlation CID=true normalize=false ./cv_output/Lighting7_CV2/Lighting7_CV2_correlation_unnormed_CID_tree.txt  ./cv_output/Lighting7_CV2/Lighting7_CV2_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 66
+

@@ -1,0 +1,60 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/LargeKitchenAppliances_TRAIN', 3, 375, 360, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP14_tree.txt', './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP14_time.txt']
+
+rand seed=1508334396
+num_class=3, num_obj=375, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP14_tree.txt  time_file=./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP14_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=67   @[  0,276]  d_th= 2.03 gap=0.000002 gain= 0.29231 (97 )==> 109  10  20  /  16 115 105 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=5    @[  0,282]  d_th= 0.99 gap=0.001354 gain= 0.27603 (79 )==> 103   5   1  /   6   5  19 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=127  @[175,118]  d_th=19.64 gap=0.002165 gain= 0.33442 (58 )==>   0   6  83  /  16 109  22 
+
+=== Node 5 ===
+..................................................................................................................................................................................
+Len=31   @[  0,463]  d_th=20.52 gap=0.306905 gain= 0.45056 (20 )==>   6   0  19  /   0   5   0 
+
+=== Node 7 ===
+..................................................................................................................................................................................
+Len=131  @[  6,144]  d_th=18.06 gap=0.041669 gain= 0.30731 (95 )==>  12   0  14  /   4 109   8 
+
+=== Node 10 ===
+..................................................................................................................................................................................
+Len=207  @[  2,146]  d_th=25.45 gap=0.030115 gain= 0.28691 (17 )==>   4   0   0  /   2   0  19 
+
+=== Node 14 ===
+..................................................................................................................................................................................
+Len=77   @[  0,366]  d_th= 5.13 gap=0.000758 gain= 0.55459 (0  )==>  12   0   1  /   0   0  13 
+
+num_class=3, num_obj=26, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    25.00 sec
+  Time Rand Project =    73.01 sec
+  Time Score Matrix =     8.17 sec
+  Time Compute Gain =   229.52 sec
+Running  Time for this Shapelet=   342.03 sec <<
+
+
+Total Running  Time =   342.03 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/LargeKitchenAppliances_TEST', 3, 375, 'euclidean', 0, 0, './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP14_tree.txt', './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP14_acc.txt']
+; accuracy= 81.067   Correct:304 , Wrong: 71
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  98    2    3 
+;   p  2 |  15   96   12 
+;   p  3 |  12   27  110 
+
+num_class=3, num_obj=375  distance=euclidean CID=false normalize=false ./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP14_tree.txt  ./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_unnormed_NOCID_REP14_acc.txt
+
+==> Tree Size = 30
+

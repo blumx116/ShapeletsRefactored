@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Computers_TRAIN_CV2', 2, 126, 360, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/Computers_CV2/Computers_CV2_euclidean_normed_CID_tree.txt', './cv_output/Computers_CV2/Computers_CV2_euclidean_normed_CID_time.txt']
+
+rand seed=1502312884
+num_class=2, num_obj=126, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Computers_CV2/Computers_CV2_euclidean_normed_CID_tree.txt  time_file=./cv_output/Computers_CV2/Computers_CV2_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=13   @[  8,342]  d_th= 1.37 gap=0.156571 gain= 0.17017 (74 )==>  26   0  /  37  63 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=5    @[  2,686]  d_th= 2.24 gap=0.000000 gain= 0.30679 (6  )==>   2  51  /  35  12 
+
+=== Node 7 ===
+..................................................................................................................................................................................
+Len=279  @[  2,261]  d_th=25.58 gap=0.156024 gain= 0.00000 (3  )==>   4   0  /   1   0 
+
+num_class=2, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.33 sec
+  Time Rand Project =    27.63 sec
+  Time Score Matrix =     2.60 sec
+  Time Compute Gain =   394.02 sec
+Running  Time for this Shapelet=   434.02 sec <<
+
+
+Total Running  Time =   434.02 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Computers_TRAIN_CV1', 2, 124, 'euclidean', 1, 1, './cv_output/Computers_CV2/Computers_CV2_euclidean_normed_CID_tree.txt', './cv_output/Computers_CV2/Computers_CV2_euclidean_normed_CID_acc.txt']
+; accuracy= 57.258   Correct:71 , Wrong: 53
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  11    2 
+;   p  2 |  51   60 
+
+num_class=2, num_obj=124  distance=euclidean CID=true normalize=true ./cv_output/Computers_CV2/Computers_CV2_euclidean_normed_CID_tree.txt  ./cv_output/Computers_CV2/Computers_CV2_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 16
+

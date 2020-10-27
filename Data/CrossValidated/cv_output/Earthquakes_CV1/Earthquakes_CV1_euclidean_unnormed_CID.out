@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Earthquakes_TRAIN_CV1', 2, 69, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502323228
+num_class=2, num_obj=69, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=121  @[ 23,196]  d_th=14.90 gap=0.002310 gain= 0.13073 (15 )==>  39   3  /  13  14 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=223  @[ 13,222]  d_th=19.75 gap=0.000577 gain= 0.40649 (5  )==>   0  11  /  13   3 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=13   @[ 13,141]  d_th= 2.01 gap=0.045651 gain= 0.48258 (10 )==>   0   3  /  13   0 
+
+num_class=2, num_obj=16, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.13 sec
+  Time Rand Project =    27.56 sec
+  Time Score Matrix =     1.92 sec
+  Time Compute Gain =    36.86 sec
+Running  Time for this Shapelet=    71.60 sec <<
+
+
+Total Running  Time =    71.60 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Earthquakes_TRAIN_CV2', 2, 70, 'euclidean', 1, 0, './cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_unnormed_CID_acc.txt']
+; accuracy= 64.286   Correct:45 , Wrong: 25
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  41   14 
+;   p  1 |  11    4 
+
+num_class=2, num_obj=70  distance=euclidean CID=true normalize=false ./cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_unnormed_CID_tree.txt  ./cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 16
+

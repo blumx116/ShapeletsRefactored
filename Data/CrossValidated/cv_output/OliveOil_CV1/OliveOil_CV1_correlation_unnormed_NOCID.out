@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV1', 4, 14, 285, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/OliveOil_CV1/OliveOil_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/OliveOil_CV1/OliveOil_CV1_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503462522
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/OliveOil_CV1/OliveOil_CV1_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/OliveOil_CV1/OliveOil_CV1_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.............................................................................................................................................
+Len=89   @[  0,361]  d_th= 0.01 gap=0.000444 gain= 0.68291 (2  )==>   2   0   0   6  /   0   4   2   0 
+
+=== Node 2 ===
+.............................................................................................................................................
+Len=7    @[  0,167]  d_th= 0.00 gap=0.000039 gain= 0.56234 (4  )==>   2   0   0   0  /   0   0   0   6 
+
+=== Node 3 ===
+.............................................................................................................................................
+Len=7    @[  0,162]  d_th= 0.00 gap=0.000595 gain= 0.63651 (2  )==>   0   4   0   0  /   0   0   2   0 
+
+num_class=4, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.44 sec
+  Time Rand Project =     1.13 sec
+  Time Score Matrix =     0.08 sec
+  Time Compute Gain =    16.80 sec
+Running  Time for this Shapelet=    18.57 sec <<
+
+
+Total Running  Time =    18.57 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV2', 4, 16, 'correlation', 0, 0, './cv_output/OliveOil_CV1/OliveOil_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/OliveOil_CV1/OliveOil_CV1_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 68.750   Correct:11 , Wrong: 5
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   2    0    0    0 
+;   p  2 |   0    1    0    0 
+;   p  3 |   0    2    2    1 
+;   p  4 |   1    1    0    6 
+
+num_class=4, num_obj=16  distance=correlation CID=false normalize=false ./cv_output/OliveOil_CV1/OliveOil_CV1_correlation_unnormed_NOCID_tree.txt  ./cv_output/OliveOil_CV1/OliveOil_CV1_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 8
+

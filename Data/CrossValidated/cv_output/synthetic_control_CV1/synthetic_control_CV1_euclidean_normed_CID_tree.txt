@@ -1,0 +1,52 @@
+;Shapelet Tree 
+
+;random seed:1502274206, rand()=2020112157, rand()=372725015
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV1 6 150 30 1 2 10 euclidean 1 1 10 ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_CID_tree.txt ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_CID_time.txt 
+
+;Local Class:   0  1  2  3  4  5 
+;Real  Class:   1  2  3  4  5  6 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 54 
+NonL  1    --    108   20   21   7.7122 ==>   0  25  25   0  25   0  /  25   0   0  25   0  25 
+NonL  2    --      0   26   25   5.7602 ==>   0  25   0   0   0   0  /   0   0  25   0  25   0 
+NonL  3    --     35   19   29   7.3557 ==>   0   0   0  25   0  25  /  25   0   0   0   0   0 
+Leaf  4     2    
+NonL  5    --      5   33   25   5.2739 ==>   0   0  23   0   1   0  /   0   0   2   0  24   0 
+NonL  6    --     37   19   19   3.5775 ==>   0   0   0   1   0  22  /   0   0   0  24   0   3 
+Leaf  7     1    
+Leaf 10     3    
+Leaf 11     5    
+Leaf 12     6    
+NonL 13    --      8    0   15   4.5525 ==>   0   0   0   1   0   3  /   0   0   0  23   0   0 
+NonL 26    --      0   48    7   0.8135 ==>   0   0   0   1   0   0  /   0   0   0   0   0   3 
+Leaf 27     4    
+Leaf 52     4    
+Leaf 53     6    
+
+;Shapelet id   <data>
+Shapelet   1  -1.077200 -1.641000 -1.508400 -1.045700 -1.054900 -1.239100 -1.010900 -0.339270 -0.083770 -0.890520  0.524470  0.667490  0.233780  0.976160  1.311600  0.773210  0.642870  1.473100  1.241500  0.233740  0.626890 
+Shapelet   2   0.458420  0.814110  1.635500  1.318600  0.668560  1.005400 -0.242450 -0.646750 -1.224300 -2.080800 -0.970350 -1.050100 -0.026563  0.329620  1.384400  0.719090  1.684200  0.904040 -0.259480 -0.421410 -1.455300 -1.625600 -0.935300 -1.004500 -0.891960 
+Shapelet   3   0.392530  0.830690  0.751830 -0.105940  0.648330 -0.095334  0.491740  0.244320  0.383740  0.452340  0.315230 -0.038728 -0.025414  0.334230 -0.020375 -0.284570 -0.478810  0.025486 -1.035700 -0.998750 -0.368180 -0.220000 -0.032356 -0.616570 -0.397080 -0.566150 -0.684510 -0.829930 -0.660880 
+Shapelet   5   1.092400 -0.516050  0.277460 -0.496880  0.412020 -0.472370 -0.292320  1.252100  0.231020  0.568230  1.181600  0.015411  0.629980 -0.099308  1.269900 -0.142120  1.108600  0.813620  1.684200  1.768100  1.256200  1.857500  1.861700  1.242300  0.274750 
+Shapelet   6   0.950560  1.264800  0.631910  1.263500  1.080000  0.904810  0.930680  1.074700  0.708980  1.274200 -1.420500 -1.242900 -1.414300 -0.387080 -0.490730 -0.948960 -1.285800 -1.076700 -0.725500 
+Shapelet  13   0.676540  0.419090  0.212130  1.115800  1.241300  1.426700  0.232440  1.019600  0.625450  0.040797  1.258200  1.603100  1.540700  1.738900  1.607600 
+Shapelet  26  -0.906600 -1.141800 -1.528800 -0.676610 -1.248300 -2.094200 -0.910210 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV1 6 150 30 1 2 10 euclidean 1 1 10 ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_CID_tree.txt ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_CID_time.txt
+; time =>    1.886   0.104   0.814   0.078   0.806 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV2 6 150 euclidean 1 1 ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_CID_tree.txt ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_CID_acc.txt
+; accuracy= 80.667   Correct:121 , Wrong: 29
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6 
+;   -----+------------------------------------
+;   p  1 |  22    0    6    1    0    0 
+;   p  2 |   0   25    0    0    0    1 
+;   p  3 |   1    0   17    0   10    0 
+;   p  4 |   1    0    0   19    0    1 
+;   p  5 |   0    0    2    0   15    0 
+;   p  6 |   1    0    0    5    0   23 
+

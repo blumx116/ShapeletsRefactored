@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV2', 2, 33, 256, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502292083
+num_class=2, num_obj=33, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=7    @[  1, 58]  d_th= 0.24 gap=0.004931 gain= 0.27809 (7  )==>   7  13  /  13   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=101  @[  0,380]  d_th=12.76 gap=0.124941 gain= 0.35294 (10 )==>   2  13  /   5   0 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=33   @[  1,129]  d_th= 1.78 gap=0.054641 gain= 0.39267 (11 )==>   2   0  /   0  13 
+
+num_class=2, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.95 sec
+  Time Rand Project =     3.01 sec
+  Time Score Matrix =     0.34 sec
+  Time Compute Gain =    28.43 sec
+Running  Time for this Shapelet=    33.07 sec <<
+
+
+Total Running  Time =    33.07 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1', 2, 31, 'manhattan', 1, 0, './cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 54.839   Correct:17 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  12    7 
+;   p  2 |   7    5 
+
+num_class=2, num_obj=31  distance=manhattan CID=true normalize=false ./cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/Herring_CV2/Herring_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 10
+

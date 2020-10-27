@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Car_TRAIN_CV1', 4, 29, 289, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/Car_CV1/Car_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/Car_CV1/Car_CV1_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502280605
+num_class=4, num_obj=29, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Car_CV1/Car_CV1_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/Car_CV1/Car_CV1_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=73   @[  0,129]  d_th= 1.26 gap=0.042968 gain= 0.58900 (13 )==>   8   0   5   8  /   0   8   0   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=23   @[  0,178]  d_th= 0.16 gap=0.000980 gain= 0.66453 (5  )==>   8   0   0   0  /   0   0   5   8 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=47   @[  0, 44]  d_th= 0.40 gap=0.003608 gain= 0.66628 (3  )==>   0   0   5   0  /   0   0   0   8 
+
+num_class=4, num_obj=13, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.07 sec
+  Time Rand Project =     2.76 sec
+  Time Score Matrix =     0.29 sec
+  Time Compute Gain =    30.96 sec
+Running  Time for this Shapelet=    35.44 sec <<
+
+
+Total Running  Time =    35.44 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Car_TRAIN_CV2', 4, 31, 'euclidean', 1, 0, './cv_output/Car_CV1/Car_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/Car_CV1/Car_CV1_euclidean_unnormed_CID_acc.txt']
+; accuracy= 80.645   Correct:25 , Wrong: 6
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   7    0    0    2 
+;   p  2 |   0    8    0    0 
+;   p  3 |   0    0    4    1 
+;   p  4 |   1    0    2    6 
+
+num_class=4, num_obj=31  distance=euclidean CID=true normalize=false ./cv_output/Car_CV1/Car_CV1_euclidean_unnormed_CID_tree.txt  ./cv_output/Car_CV1/Car_CV1_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 12
+

@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'correlation', 1, 0, 10, './replications/FaceFour/FaceFour_correlation_unnormed_CID_REP01_tree.txt', './replications/FaceFour/FaceFour_correlation_unnormed_CID_REP01_time.txt']
+
+rand seed=1503369634
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/FaceFour/FaceFour_correlation_unnormed_CID_REP01_tree.txt  time_file=./replications/FaceFour/FaceFour_correlation_unnormed_CID_REP01_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=153  @[  2, 35]  d_th= 0.50 gap=0.008793 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=97   @[  0, 99]  d_th= 0.48 gap=0.018550 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=65   @[  0, 44]  d_th= 0.30 gap=0.024202 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.61 sec
+  Time Rand Project =     4.59 sec
+  Time Score Matrix =     0.39 sec
+  Time Compute Gain =    11.95 sec
+Running  Time for this Shapelet=    17.99 sec <<
+
+
+Total Running  Time =    17.99 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'correlation', 1, 0, './replications/FaceFour/FaceFour_correlation_unnormed_CID_REP01_tree.txt', './replications/FaceFour/FaceFour_correlation_unnormed_CID_REP01_acc.txt']
+; accuracy= 92.045   Correct:81 , Wrong: 7
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  21    0    0    0 
+;   p  1 |   0   14    0    0 
+;   p  2 |   5    0   26    2 
+;   p  4 |   0    0    0   20 
+
+num_class=4, num_obj=88  distance=correlation CID=true normalize=false ./replications/FaceFour/FaceFour_correlation_unnormed_CID_REP01_tree.txt  ./replications/FaceFour/FaceFour_correlation_unnormed_CID_REP01_acc.txt
+
+==> Tree Size = 8
+

@@ -1,0 +1,48 @@
+;Shapelet Tree 
+
+;random seed:1501825226, rand()=1052031739, rand()=1264571622
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TRAIN 2 276 40 1 2 10 manhattan 1 1 10 ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_normed_CID_REP04_tree.txt ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_normed_CID_REP04_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  0 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 32 
+NonL  1    --      0   10   31   5.4022 ==> 151  54  /  10  61 
+NonL  2    --      4   38   39   5.4992 ==>  69   2  /  82  52 
+NonL  3    --      0    2    7   1.0336 ==>   0  34  /  10  27 
+Leaf  4     1    
+NonL  5    --      9   30   35   7.0614 ==>  42  48  /  40   4 
+Leaf  6     0    
+NonL  7    --      1    0   29   4.7047 ==>   5   0  /   5  27 
+NonL 10    --     57   40   19   0.6865 ==>   0  13  /  42  35 
+Leaf 11     1    
+Leaf 14     1    
+NonL 15    --     23    7   21   6.2485 ==>   0  24  /   5   3 
+Leaf 20     0    
+Leaf 21     1    
+Leaf 30     0    
+Leaf 31     1    
+
+;Shapelet id   <data>
+Shapelet   1   1.132200  1.267200  1.432100  1.484500  1.275700  1.158900  1.005300  0.817360  0.504390  0.378850  0.145810 -0.209470 -0.578720 -0.674810 -0.799990 -0.935040 -0.788160 -0.577440 -0.271910  0.061242  0.410370  0.760720  1.134800  1.504600  1.669600  1.699900  1.553100  1.393700  1.470400  1.587700  1.690200 
+Shapelet   2   1.459300  1.551000  1.573300  1.566600  1.323900  1.051400  0.683250  0.368980  0.106880 -0.226880 -0.556680 -0.837570  0.014293 -0.108250 -0.265930 -0.587360 -0.847150 -1.165100 -1.442400 -1.642200 -1.731200 -1.494000 -1.231300 -0.930760 -0.685500 -0.442670 -0.188880 -0.057416 -0.229310 -0.503590 -0.723670 -0.994040 -1.189700 -1.376700 -1.488900 -1.624200 -1.502600 -1.280300 -0.997450 
+Shapelet   3  -0.598060 -0.278300  0.042043  0.127210  0.183150  0.620540  0.891500 
+Shapelet   5   0.849160  1.156500  1.487700  1.549000  1.487900  1.284600  1.236200  1.336300  1.562900  1.655400  1.772800  1.682300  1.592200  1.338100  0.942360  0.603780  0.220750 -0.103490 -0.434170 -0.692970 -0.381730 -0.470020 -0.574490 -0.807020 -0.952850 -1.040100 -1.153400 -1.257400 -1.352900 -1.300100 -1.262600 -1.111800 -0.956820 -0.815520 -0.744990 
+Shapelet   7  -0.887320 -0.821560 -0.591130 -0.337690 -0.002621  0.310980  0.537850  0.876660  0.965010  1.111900  1.274000  1.345200  1.337200  1.310600  1.263800  1.049400  0.921190  0.774880  0.634990  0.407000  0.138930 -0.156120 -0.475020 -0.739280 -0.838630 -0.771270 -0.586850 -0.308680  0.040303 
+Shapelet  10   1.365000  1.442500  1.331500  1.166100  0.915460  0.669300  0.437230  0.153620 -0.064698 -0.222690 -1.136100 -1.136100 -1.136100 -1.136100 -1.136100 -1.136100 -1.136100 -1.136100 -1.136100 
+Shapelet  15   1.062100  1.506600  1.783400  1.821200  1.737600  1.508000  1.298000  0.958860  0.708090  0.447310  0.107920  0.085107  0.123710 -0.243290 -0.616690 -0.942440 -0.965540 -0.943980 -0.876570 -0.571760 -0.258730 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TRAIN 2 276 40 1 2 10 manhattan 1 1 10 ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_normed_CID_REP04_tree.txt ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_normed_CID_REP04_time.txt
+; time =>   12.175   0.427   4.625   1.110   5.237 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TEST 2 600 manhattan 1 1 ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_normed_CID_REP04_tree.txt ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_manhattan_normed_CID_REP04_acc.txt
+; accuracy= 75.833   Correct:455 , Wrong: 145
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 | 339  106 
+;   p  0 |  39  116 
+

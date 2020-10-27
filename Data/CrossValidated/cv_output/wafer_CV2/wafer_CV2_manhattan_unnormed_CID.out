@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/wafer_TRAIN_CV2', 2, 501, 76, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/wafer_CV2/wafer_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/wafer_CV2/wafer_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502274596
+num_class=2, num_obj=501, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/wafer_CV2/wafer_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/wafer_CV2/wafer_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+....................................
+Len=67   @[494, 50]  d_th=989.20 gap=0.062179 gain= 0.19025 (417)==>  11 448  /  38   4 
+
+num_class=2, num_obj=501, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.84 sec
+  Time Rand Project =     7.75 sec
+  Time Score Matrix =     0.77 sec
+  Time Compute Gain =     8.26 sec
+Running  Time for this Shapelet=    18.22 sec <<
+
+
+Total Running  Time =    18.22 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/wafer_TRAIN_CV1', 2, 499, 'manhattan', 1, 0, './cv_output/wafer_CV2/wafer_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/wafer_CV2/wafer_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 95.591   Correct:477 , Wrong: 22
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |  31    5 
+;   p  1 |  17  446 
+
+num_class=2, num_obj=499  distance=manhattan CID=true normalize=false ./cv_output/wafer_CV2/wafer_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/wafer_CV2/wafer_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 4
+

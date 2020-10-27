@@ -1,0 +1,51 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxOutlineCorrect_TRAIN_CV1', 2, 145, 40, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_euclidean_normed_CID_tree.txt', './cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_euclidean_normed_CID_time.txt']
+
+rand seed=1502274244
+num_class=2, num_obj=145, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_euclidean_normed_CID_tree.txt  time_file=./cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=23   @[  0,  7]  d_th= 0.38 gap=0.001079 gain= 0.11995 (93 )==>  24   2  /  38  81 
+
+=== Node 3 ===
+..................
+Len=35   @[ 52, 18]  d_th= 1.25 gap=0.001633 gain= 0.09779 (67 )==>   0  26  /  38  55 
+
+=== Node 7 ===
+..................
+Len=11   @[  0,  8]  d_th= 0.51 gap=0.000063 gain= 0.14262 (27 )==>  13  47  /  25   8 
+
+=== Node 14 ===
+..................
+Len=15   @[  5, 36]  d_th= 1.31 gap=0.001344 gain= 0.11119 (52 )==>   9  47  /   4   0 
+
+=== Node 15 ===
+..................
+Len=13   @[  0,  0]  d_th= 0.25 gap=0.000626 gain= 0.16198 (5  )==>  11   8  /  14   0 
+
+num_class=2, num_obj=33, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.16 sec
+  Time Rand Project =     0.80 sec
+  Time Score Matrix =     0.11 sec
+  Time Compute Gain =     1.95 sec
+Running  Time for this Shapelet=     3.13 sec <<
+
+
+Total Running  Time =     3.13 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxOutlineCorrect_TRAIN_CV2', 2, 146, 'euclidean', 1, 1, './cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_euclidean_normed_CID_tree.txt', './cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_euclidean_normed_CID_acc.txt']
+; accuracy= 58.904   Correct:86 , Wrong: 60
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  32   29 
+;   p  1 |  31   54 
+
+num_class=2, num_obj=146  distance=euclidean CID=true normalize=true ./cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_euclidean_normed_CID_tree.txt  ./cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 32
+

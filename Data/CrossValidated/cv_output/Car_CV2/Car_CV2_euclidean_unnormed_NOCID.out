@@ -1,0 +1,49 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Car_TRAIN_CV2', 4, 31, 289, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/Car_CV2/Car_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/Car_CV2/Car_CV2_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502280186
+num_class=4, num_obj=31, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Car_CV2/Car_CV2_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/Car_CV2/Car_CV2_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=73   @[  0,123]  d_th= 1.09 gap=0.018581 gain= 0.57102 (15 )==>   8   0   6   9  /   0   8   0   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=27   @[  0,175]  d_th= 0.18 gap=0.000170 gain= 0.64609 (7  )==>   8   0   0   0  /   0   0   6   9 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=257  @[ 12,305]  d_th= 6.50 gap=0.002600 gain= 0.48162 (1  )==>   0   0   0   8  /   0   0   6   1 
+
+=== Node 11 ===
+...............................................................................................................................................
+Len=245  @[  6,315]  d_th= 0.84 gap=0.053391 gain= 0.41012 (5  )==>   0   0   0   1  /   0   0   6   0 
+
+num_class=4, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.35 sec
+  Time Rand Project =     3.52 sec
+  Time Score Matrix =     0.38 sec
+  Time Compute Gain =    10.11 sec
+Running  Time for this Shapelet=    15.74 sec <<
+
+
+Total Running  Time =    15.74 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Car_TRAIN_CV1', 4, 29, 'euclidean', 0, 0, './cv_output/Car_CV2/Car_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/Car_CV2/Car_CV2_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 79.310   Correct:23 , Wrong: 6
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   4    0    0    0 
+;   p  2 |   0    8    0    0 
+;   p  3 |   0    0    3    0 
+;   p  4 |   4    0    2    8 
+
+num_class=4, num_obj=29  distance=euclidean CID=false normalize=false ./cv_output/Car_CV2/Car_CV2_euclidean_unnormed_NOCID_tree.txt  ./cv_output/Car_CV2/Car_CV2_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 24
+

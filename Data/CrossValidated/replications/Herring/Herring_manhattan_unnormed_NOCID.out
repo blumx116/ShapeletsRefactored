@@ -1,0 +1,568 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './output/Herring/Herring_manhattan_unnormed_NOCID_REP01_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP01_time.txt']
+
+rand seed=1502331558
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP01_tree.txt  time_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP01_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=161  @[  2,  3]  d_th=14.46 gap=0.002249 gain= 0.12663 (32 )==>   3  13  /  36  12 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=37   @[  0,273]  d_th= 2.88 gap=0.002433 gain= 0.48258 (10 )==>   0  13  /   3   0 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=29   @[  0, 59]  d_th= 1.76 gap=0.001049 gain= 0.13129 (14 )==>  19  12  /  17   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=9    @[ 10,390]  d_th= 0.29 gap=0.000300 gain= 0.22301 (19 )==>   0   6  /  19   6 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=57   @[  7, 62]  d_th= 6.05 gap=0.030793 gain= 0.37113 (9  )==>   2   6  /  17   0 
+
+num_class=2, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.48 sec
+  Time Rand Project =    13.48 sec
+  Time Score Matrix =     1.55 sec
+  Time Compute Gain =    32.15 sec
+Running  Time for this Shapelet=    51.82 sec <<
+
+
+Total Running  Time =    51.82 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'manhattan', 0, 0, './output/Herring/Herring_manhattan_unnormed_NOCID_REP01_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP01_acc.txt']
+0
+num_class=2, num_obj=64  distance=manhattan CID=false normalize=false ./output/Herring/Herring_manhattan_unnormed_NOCID_REP01_tree.txt  ./output/Herring/Herring_manhattan_unnormed_NOCID_REP01_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 57.812   Correct:37 , Wrong: 27
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  22   11 
+;   p  2 |  16   15 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './output/Herring/Herring_manhattan_unnormed_NOCID_REP02_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP02_time.txt']
+
+rand seed=1502331612
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP02_tree.txt  time_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP02_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=69   @[  1, 77]  d_th=16.14 gap=0.016560 gain= 0.10645 (40 )==>  27  25  /  12   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=103  @[  5,240]  d_th= 7.38 gap=0.000916 gain= 0.16599 (32 )==>   0  10  /  27  15 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=7    @[  0,258]  d_th= 0.46 gap=0.003232 gain= 0.16976 (30 )==>  27   9  /   0   6 
+
+=== Node 10 ===
+..............................................................................................................................
+Len=37   @[  0,129]  d_th= 3.01 gap=0.008912 gain= 0.19724 (2  )==>  10   9  /  17   0 
+
+num_class=2, num_obj=36, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.53 sec
+  Time Rand Project =    13.27 sec
+  Time Score Matrix =     1.59 sec
+  Time Compute Gain =    34.18 sec
+Running  Time for this Shapelet=    53.79 sec <<
+
+
+Total Running  Time =    53.79 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'manhattan', 0, 0, './output/Herring/Herring_manhattan_unnormed_NOCID_REP02_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP02_acc.txt']
+0
+num_class=2, num_obj=64  distance=manhattan CID=false normalize=false ./output/Herring/Herring_manhattan_unnormed_NOCID_REP02_tree.txt  ./output/Herring/Herring_manhattan_unnormed_NOCID_REP02_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 59.375   Correct:38 , Wrong: 26
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  34   22 
+;   p  2 |   4    4 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './output/Herring/Herring_manhattan_unnormed_NOCID_REP03_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP03_time.txt']
+
+rand seed=1502331668
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP03_tree.txt  time_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP03_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=47   @[ 13,141]  d_th= 3.64 gap=0.001801 gain= 0.10833 (22 )==>   6  15  /  33  10 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=33   @[ 12,169]  d_th= 1.47 gap=0.010039 gain= 0.30505 (13 )==>   4   0  /   2  15 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=17   @[  0,166]  d_th= 0.46 gap=0.000403 gain= 0.16326 (5  )==>  14  10  /  19   0 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=43   @[  0,167]  d_th= 1.71 gap=0.017288 gain= 0.36221 (13 )==>   2   0  /   0  15 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=13   @[  1,146]  d_th= 0.51 gap=0.002818 gain= 0.28137 (6  )==>   5  10  /   9   0 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=39   @[  0,284]  d_th= 3.11 gap=0.003669 gain= 0.41311 (7  )==>   1  10  /   4   0 
+
+num_class=2, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.34 sec
+  Time Rand Project =    12.57 sec
+  Time Score Matrix =     1.47 sec
+  Time Compute Gain =    31.95 sec
+Running  Time for this Shapelet=    50.42 sec <<
+
+
+Total Running  Time =    50.42 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'manhattan', 0, 0, './output/Herring/Herring_manhattan_unnormed_NOCID_REP03_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP03_acc.txt']
+0
+num_class=2, num_obj=64  distance=manhattan CID=false normalize=false ./output/Herring/Herring_manhattan_unnormed_NOCID_REP03_tree.txt  ./output/Herring/Herring_manhattan_unnormed_NOCID_REP03_acc.txt
+
+==> Tree Size = 26
+
+; accuracy= 70.312   Correct:45 , Wrong: 19
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  31   12 
+;   p  2 |   7   14 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './output/Herring/Herring_manhattan_unnormed_NOCID_REP04_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP04_time.txt']
+
+rand seed=1502331720
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP04_tree.txt  time_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP04_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=123  @[  2,  2]  d_th=10.37 gap=0.004158 gain= 0.12468 (28 )==>   4  14  /  35  11 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=41   @[  2,206]  d_th= 4.90 gap=0.037221 gain= 0.39071 (8  )==>   0  13  /   4   1 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=35   @[  0, 57]  d_th= 3.06 gap=0.001568 gain= 0.13164 (12 )==>  18  11  /  17   0 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=187  @[  3,207]  d_th=10.16 gap=0.742992 gain= 0.50040 (3  )==>   0   1  /   4   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=129  @[ 16,244]  d_th=19.17 gap=0.007156 gain= 0.21780 (9  )==>   8  11  /  10   0 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=101  @[  0,360]  d_th=10.50 gap=0.007941 gain= 0.29778 (9  )==>   5   0  /   3  11 
+
+num_class=2, num_obj=19, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.20 sec
+  Time Rand Project =    12.13 sec
+  Time Score Matrix =     1.42 sec
+  Time Compute Gain =    31.71 sec
+Running  Time for this Shapelet=    49.50 sec <<
+
+
+Total Running  Time =    49.50 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'manhattan', 0, 0, './output/Herring/Herring_manhattan_unnormed_NOCID_REP04_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP04_acc.txt']
+0
+num_class=2, num_obj=64  distance=manhattan CID=false normalize=false ./output/Herring/Herring_manhattan_unnormed_NOCID_REP04_tree.txt  ./output/Herring/Herring_manhattan_unnormed_NOCID_REP04_acc.txt
+
+==> Tree Size = 26
+
+; accuracy= 53.125   Correct:34 , Wrong: 30
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  21   13 
+;   p  2 |  17   13 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './output/Herring/Herring_manhattan_unnormed_NOCID_REP05_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP05_time.txt']
+
+rand seed=1502331773
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP05_tree.txt  time_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP05_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=123  @[  2,  2]  d_th=10.37 gap=0.004158 gain= 0.12468 (28 )==>   4  14  /  35  11 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=41   @[  2,206]  d_th= 4.90 gap=0.037221 gain= 0.39071 (8  )==>   0  13  /   4   1 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=31   @[  0, 59]  d_th= 1.98 gap=0.002147 gain= 0.13164 (12 )==>  18  11  /  17   0 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=225  @[  3,190]  d_th=10.78 gap=0.718879 gain= 0.50040 (3  )==>   0   1  /   4   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=93   @[ 23,272]  d_th=12.11 gap=0.015447 gain= 0.26394 (11 )==>   1   8  /  17   3 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=251  @[  0,254]  d_th= 9.72 gap=0.613571 gain= 0.34883 (7  )==>   1   0  /   0   8 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=85   @[  4,142]  d_th= 5.80 gap=0.037214 gain= 0.31024 (12 )==>   1   3  /  16   0 
+
+num_class=2, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.42 sec
+  Time Rand Project =    13.06 sec
+  Time Score Matrix =     1.53 sec
+  Time Compute Gain =    33.21 sec
+Running  Time for this Shapelet=    52.36 sec <<
+
+
+Total Running  Time =    52.36 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'manhattan', 0, 0, './output/Herring/Herring_manhattan_unnormed_NOCID_REP05_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP05_acc.txt']
+0
+num_class=2, num_obj=64  distance=manhattan CID=false normalize=false ./output/Herring/Herring_manhattan_unnormed_NOCID_REP05_tree.txt  ./output/Herring/Herring_manhattan_unnormed_NOCID_REP05_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 50.000   Correct:32 , Wrong: 32
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  21   15 
+;   p  2 |  17   11 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './output/Herring/Herring_manhattan_unnormed_NOCID_REP06_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP06_time.txt']
+
+rand seed=1502331828
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP06_tree.txt  time_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP06_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=157  @[  2,  3]  d_th=11.46 gap=0.022143 gain= 0.11358 (50 )==>   0   7  /  39  18 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=17   @[  0,133]  d_th= 0.57 gap=0.002850 gain= 0.14075 (23 )==>  22  18  /  17   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=113  @[  3,298]  d_th=13.99 gap=0.019227 gain= 0.19127 (24 )==>  22  10  /   0   8 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=43   @[  4,128]  d_th= 3.47 gap=0.012252 gain= 0.31063 (14 )==>   1   8  /  21   2 
+
+num_class=2, num_obj=32, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.60 sec
+  Time Rand Project =    13.92 sec
+  Time Score Matrix =     1.61 sec
+  Time Compute Gain =    33.69 sec
+Running  Time for this Shapelet=    54.04 sec <<
+
+
+Total Running  Time =    54.04 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'manhattan', 0, 0, './output/Herring/Herring_manhattan_unnormed_NOCID_REP06_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP06_acc.txt']
+0
+num_class=2, num_obj=64  distance=manhattan CID=false normalize=false ./output/Herring/Herring_manhattan_unnormed_NOCID_REP06_tree.txt  ./output/Herring/Herring_manhattan_unnormed_NOCID_REP06_acc.txt
+
+==> Tree Size = 26
+
+; accuracy= 57.812   Correct:37 , Wrong: 27
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  25   14 
+;   p  2 |  13   12 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './output/Herring/Herring_manhattan_unnormed_NOCID_REP07_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP07_time.txt']
+
+rand seed=1502331884
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP07_tree.txt  time_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP07_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=65   @[  8, 80]  d_th=11.33 gap=0.013960 gain= 0.13850 (34 )==>  24  25  /  15   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=11   @[  2,286]  d_th= 0.45 gap=0.000092 gain= 0.18366 (13 )==>   2  16  /  22   9 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=11   @[  4,219]  d_th= 0.23 gap=0.037497 gain= 0.34883 (14 )==>   2   0  /   0  16 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=107  @[ 21,285]  d_th=12.64 gap=0.050333 gain= 0.30653 (19 )==>   0   6  /  22   3 
+
+=== Node 11 ===
+..............................................................................................................................
+Len=105  @[  1,147]  d_th= 8.71 gap=0.017167 gain= 0.23232 (15 )==>   2   3  /  20   0 
+
+num_class=2, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.39 sec
+  Time Rand Project =    12.65 sec
+  Time Score Matrix =     1.48 sec
+  Time Compute Gain =    32.68 sec
+Running  Time for this Shapelet=    51.32 sec <<
+
+
+Total Running  Time =    51.32 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'manhattan', 0, 0, './output/Herring/Herring_manhattan_unnormed_NOCID_REP07_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP07_acc.txt']
+0
+num_class=2, num_obj=64  distance=manhattan CID=false normalize=false ./output/Herring/Herring_manhattan_unnormed_NOCID_REP07_tree.txt  ./output/Herring/Herring_manhattan_unnormed_NOCID_REP07_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 53.125   Correct:34 , Wrong: 30
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  19   11 
+;   p  2 |  19   15 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './output/Herring/Herring_manhattan_unnormed_NOCID_REP08_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP08_time.txt']
+
+rand seed=1502331937
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP08_tree.txt  time_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP08_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=159  @[  2,  3]  d_th=11.86 gap=0.021378 gain= 0.11358 (50 )==>   0   7  /  39  18 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=17   @[  0,133]  d_th= 0.57 gap=0.002850 gain= 0.14075 (23 )==>  22  18  /  17   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=65   @[ 11, 98]  d_th= 4.67 gap=0.009853 gain= 0.19127 (24 )==>   0   8  /  22  10 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=89   @[  0,260]  d_th=10.09 gap=0.006221 gain= 0.21035 (6  )==>  13   0  /   9  10 
+
+num_class=2, num_obj=32, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.57 sec
+  Time Rand Project =    13.68 sec
+  Time Score Matrix =     1.61 sec
+  Time Compute Gain =    33.51 sec
+Running  Time for this Shapelet=    53.54 sec <<
+
+
+Total Running  Time =    53.54 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'manhattan', 0, 0, './output/Herring/Herring_manhattan_unnormed_NOCID_REP08_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP08_acc.txt']
+0
+num_class=2, num_obj=64  distance=manhattan CID=false normalize=false ./output/Herring/Herring_manhattan_unnormed_NOCID_REP08_tree.txt  ./output/Herring/Herring_manhattan_unnormed_NOCID_REP08_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 59.375   Correct:38 , Wrong: 26
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  24   12 
+;   p  2 |  14   14 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './output/Herring/Herring_manhattan_unnormed_NOCID_REP09_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1502331993
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP09_tree.txt  time_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP09_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=55   @[ 48,144]  d_th= 4.60 gap=0.002826 gain= 0.12155 (0  )==>  12  20  /  27   5 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=13   @[  1,299]  d_th= 0.68 gap=0.000850 gain= 0.21340 (10 )==>  12   9  /   0  11 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=35   @[  0,129]  d_th= 2.16 gap=0.011808 gain= 0.17870 (8  )==>   7   5  /  20   0 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=237  @[  7, 86]  d_th=37.99 gap=0.001423 gain= 0.40950 (7  )==>   0   7  /  12   2 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=29   @[  2,260]  d_th= 2.79 gap=0.050303 gain= 0.45391 (0  )==>   1   5  /   6   0 
+
+=== Node 9 ===
+..............................................................................................................................
+Len=37   @[  0, 65]  d_th= 8.17 gap=0.032583 gain= 0.41012 (10 )==>  12   0  /   0   2 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=241  @[  5, 58]  d_th=12.50 gap=0.805000 gain= 0.45056 (4  )==>   1   0  /   0   5 
+
+num_class=2, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.35 sec
+  Time Rand Project =    12.68 sec
+  Time Score Matrix =     1.43 sec
+  Time Compute Gain =    31.90 sec
+Running  Time for this Shapelet=    50.44 sec <<
+
+
+Total Running  Time =    50.44 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'manhattan', 0, 0, './output/Herring/Herring_manhattan_unnormed_NOCID_REP09_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP09_acc.txt']
+0
+num_class=2, num_obj=64  distance=manhattan CID=false normalize=false ./output/Herring/Herring_manhattan_unnormed_NOCID_REP09_tree.txt  ./output/Herring/Herring_manhattan_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 26
+
+; accuracy= 70.312   Correct:45 , Wrong: 19
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  29   10 
+;   p  2 |   9   16 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './output/Herring/Herring_manhattan_unnormed_NOCID_REP10_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP10_time.txt']
+
+rand seed=1502332046
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP10_tree.txt  time_file=./output/Herring/Herring_manhattan_unnormed_NOCID_REP10_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=157  @[  2,  3]  d_th=11.46 gap=0.022143 gain= 0.11358 (50 )==>   0   7  /  39  18 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=17   @[  0,133]  d_th= 0.57 gap=0.002850 gain= 0.14075 (23 )==>  22  18  /  17   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=77   @[  3,109]  d_th= 5.99 gap=0.014127 gain= 0.19127 (24 )==>   0   8  /  22  10 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=69   @[  6,324]  d_th= 9.05 gap=0.030320 gain= 0.21679 (22 )==>  22   5  /   0   5 
+
+num_class=2, num_obj=32, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.58 sec
+  Time Rand Project =    13.49 sec
+  Time Score Matrix =     1.62 sec
+  Time Compute Gain =    33.80 sec
+Running  Time for this Shapelet=    53.69 sec <<
+
+
+Total Running  Time =    53.69 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'manhattan', 0, 0, './output/Herring/Herring_manhattan_unnormed_NOCID_REP10_tree.txt', './output/Herring/Herring_manhattan_unnormed_NOCID_REP10_acc.txt']
+0
+num_class=2, num_obj=64  distance=manhattan CID=false normalize=false ./output/Herring/Herring_manhattan_unnormed_NOCID_REP10_tree.txt  ./output/Herring/Herring_manhattan_unnormed_NOCID_REP10_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 54.688   Correct:35 , Wrong: 29
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  28   19 
+;   p  2 |  10    7 
+
+
+================ Replication:  10 Finished ================

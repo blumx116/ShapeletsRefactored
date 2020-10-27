@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxOutlineCorrect_TRAIN_CV1', 2, 145, 40, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502274257
+num_class=2, num_obj=145, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=33   @[ 31, 35]  d_th= 3.97 gap=0.004561 gain= 0.13232 (105)==>  20   0  /  42  83 
+
+=== Node 3 ===
+..................
+Len=19   @[  0,  8]  d_th= 0.91 gap=0.004239 gain= 0.08420 (107)==>   9   0  /  33  83 
+
+=== Node 7 ===
+..................
+Len=37   @[  4, 28]  d_th= 7.42 gap=0.017732 gain= 0.06825 (74 )==>  33  62  /   0  21 
+
+=== Node 14 ===
+..................
+Len=39   @[  1, 22]  d_th= 6.04 gap=0.002914 gain= 0.10183 (17 )==>   4  35  /  29  27 
+
+num_class=2, num_obj=95, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.18 sec
+  Time Rand Project =     0.93 sec
+  Time Score Matrix =     0.14 sec
+  Time Compute Gain =     1.16 sec
+Running  Time for this Shapelet=     2.51 sec <<
+
+
+Total Running  Time =     2.51 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxOutlineCorrect_TRAIN_CV2', 2, 146, 'manhattan', 0, 1, './cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_acc.txt']
+; accuracy= 56.849   Correct:83 , Wrong: 63
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  51   51 
+;   p  1 |  12   32 
+
+num_class=2, num_obj=146  distance=manhattan CID=false normalize=true ./cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_tree.txt  ./cv_output/MiddlePhalanxOutlineCorrect_CV1/MiddlePhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 30
+

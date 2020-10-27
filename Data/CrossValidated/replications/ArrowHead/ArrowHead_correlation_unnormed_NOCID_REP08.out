@@ -1,0 +1,48 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'correlation', 0, 0, 10, './replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_tree.txt', './replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_time.txt']
+
+rand seed=1503367234
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_tree.txt  time_file=./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=21   @[  0, 79]  d_th= 0.01 gap=0.000031 gain= 0.51806 (8  )==>  12   0   2  /   0  12  10 
+
+=== Node 2 ===
+.............................................................
+Len=91   @[  1,128]  d_th= 0.13 gap=0.005500 gain= 0.41012 (10 )==>  12   0   0  /   0   0   2 
+
+=== Node 3 ===
+.............................................................
+Len=35   @[  0, 51]  d_th= 0.01 gap=0.000009 gain= 0.42803 (6  )==>   0  12   2  /   0   0   8 
+
+=== Node 6 ===
+.............................................................
+Len=49   @[  0, 77]  d_th= 0.02 gap=0.000377 gain= 0.41012 (10 )==>   0  12   0  /   0   0   2 
+
+num_class=3, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.33 sec
+  Time Rand Project =     1.49 sec
+  Time Score Matrix =     0.16 sec
+  Time Compute Gain =     4.85 sec
+Running  Time for this Shapelet=     7.03 sec <<
+
+
+Total Running  Time =     7.03 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'correlation', 0, 0, './replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_tree.txt', './replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_acc.txt']
+; accuracy= 68.000   Correct:119 , Wrong: 56
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  47    8    4 
+;   p  1 |   7   30    7 
+;   p  2 |  15   15   42 
+
+num_class=3, num_obj=175  distance=correlation CID=false normalize=false ./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_tree.txt  ./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP08_acc.txt
+
+==> Tree Size = 14
+

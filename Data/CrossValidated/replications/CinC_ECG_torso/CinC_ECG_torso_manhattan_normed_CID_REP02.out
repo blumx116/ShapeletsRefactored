@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TRAIN', 4, 40, 820, 1, 2, 10, 'manhattan', 1, 1, 10, './replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_CID_REP02_tree.txt', './replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_CID_REP02_time.txt']
+
+rand seed=1503384610
+num_class=4, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_CID_REP02_tree.txt  time_file=./replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_CID_REP02_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [3,2]  [2,4]  [1,3]  [0,1]  
+
+=== Node 1 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=5    @[  1,  4]  d_th= 0.97 gap=0.020303 gain= 0.59372 (6  )==>   0  12  10   1  /   5   0   0  12 
+
+=== Node 2 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=777  @[ 16, 14]  d_th=710.39 gap=1.266383 gain= 0.68462 (3  )==>   0  12   0   1  /   0   0  10   0 
+
+=== Node 3 ===
+........................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=505  @[ 13,1049]  d_th=351.60 gap=1.676030 gain= 0.60580 (7  )==>   5   0   0   0  /   0   0   0  12 
+
+num_class=4, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    11.46 sec
+  Time Rand Project =    48.82 sec
+  Time Score Matrix =     3.97 sec
+  Time Compute Gain =  1376.01 sec
+Running  Time for this Shapelet=  1445.14 sec <<
+
+
+Total Running  Time =  1445.14 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/CinC_ECG_torso_TEST', 4, 1380, 'manhattan', 1, 1, './replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_CID_REP02_tree.txt', './replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_CID_REP02_acc.txt']
+; accuracy= 73.551   Correct:1015 , Wrong: 365
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 | 295   44   15   87 
+;   p  2 |  15  287    8  145 
+;   p  4 |  33   10  322    7 
+;   p  1 |   0    1    0  111 
+
+num_class=4, num_obj=1380  distance=manhattan CID=true normalize=true ./replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_CID_REP02_tree.txt  ./replications/CinC_ECG_torso/CinC_ECG_torso_manhattan_normed_CID_REP02_acc.txt
+
+==> Tree Size = 8
+

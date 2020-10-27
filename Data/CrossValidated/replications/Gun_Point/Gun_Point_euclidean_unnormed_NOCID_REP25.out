@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN', 2, 50, 75, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_tree.txt', './replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_time.txt']
+
+rand seed=1508180581
+num_class=2, num_obj=50, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_tree.txt  time_file=./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,2]  
+
+=== Node 1 ===
+....................................
+Len=31   @[  9, 10]  d_th= 1.47 gap=0.003741 gain= 0.36950 (0  )==>   3  22  /  23   2 
+
+=== Node 2 ===
+....................................
+Len=13   @[  0, 95]  d_th= 0.38 gap=0.003143 gain= 0.27695 (17 )==>   0  21  /   3   1 
+
+=== Node 5 ===
+....................................
+Len=15   @[  1, 61]  d_th= 1.95 gap=0.289089 gain= 0.56234 (2  )==>   3   0  /   0   1 
+
+num_class=2, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.11 sec
+  Time Rand Project =     0.58 sec
+  Time Score Matrix =     0.06 sec
+  Time Compute Gain =     0.32 sec
+Running  Time for this Shapelet=     1.14 sec <<
+
+
+Total Running  Time =     1.14 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TEST', 2, 150, 'euclidean', 0, 0, './replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_tree.txt', './replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_acc.txt']
+; accuracy= 86.667   Correct:130 , Wrong: 20
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  58    2 
+;   p  2 |  18   72 
+
+num_class=2, num_obj=150  distance=euclidean CID=false normalize=false ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_tree.txt  ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_acc.txt
+
+==> Tree Size = 12
+

@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV1', 3, 30, 224, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/Meat_CV1/Meat_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Meat_CV1/Meat_CV1_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502280503
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Meat_CV1/Meat_CV1_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/Meat_CV1/Meat_CV1_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................
+Len=37   @[  0, 82]  d_th= 0.66 gap=0.022068 gain= 0.63651 (10 )==>  10   0   0  /   0  10  10 
+
+=== Node 3 ===
+..............................................................................................................
+Len=35   @[  0,190]  d_th= 0.33 gap=0.011069 gain= 0.69315 (0  )==>   0  10   0  /   0   0  10 
+
+num_class=3, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.57 sec
+  Time Rand Project =     2.05 sec
+  Time Score Matrix =     0.20 sec
+  Time Compute Gain =    12.73 sec
+Running  Time for this Shapelet=    15.76 sec <<
+
+
+Total Running  Time =    15.76 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV2', 3, 30, 'euclidean', 0, 1, './cv_output/Meat_CV1/Meat_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Meat_CV1/Meat_CV1_euclidean_normed_NOCID_acc.txt']
+; accuracy= 93.333   Correct:28 , Wrong: 2
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  10    0    2 
+;   p  2 |   0   10    0 
+;   p  3 |   0    0    8 
+
+num_class=3, num_obj=30  distance=euclidean CID=false normalize=true ./cv_output/Meat_CV1/Meat_CV1_euclidean_normed_NOCID_tree.txt  ./cv_output/Meat_CV1/Meat_CV1_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 8
+

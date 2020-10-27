@@ -1,0 +1,49 @@
+;Shapelet Tree 
+
+;random seed:1501823734, rand()=1748268040, rand()=1224895977
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TRAIN 3 139 40 1 2 10 manhattan 1 0 10 ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_CID_REP03_tree.txt ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_CID_REP03_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   2  3  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 48 
+NonL  1    --     75   13   27  15.8718 ==>  58  27  15  /   1  38   0 
+NonL  2    --     12   33   39  12.1263 ==>   1   0  11  /  57  27   4 
+Leaf  3     3    
+Leaf  4     1    
+NonL  5    --      0   22    7   0.7649 ==>  26  26   0  /  31   1   4 
+NonL 10    --      1   38   39   5.3480 ==>   0  10   0  /  26  16   0 
+NonL 11    --      0   11   33   6.0984 ==>  27   1   0  /   4   0   4 
+Leaf 20     3    
+NonL 21    --      0   13    9   1.1504 ==>  25   8   0  /   1   8   0 
+Leaf 22     2    
+NonL 23    --      1   35   17   3.5174 ==>   0   0   4  /   4   0   0 
+Leaf 42     2    
+Leaf 43     3    
+Leaf 46     1    
+Leaf 47     2    
+
+;Shapelet id   <data>
+Shapelet   1   0.768060  0.653410  0.408850  0.071842 -0.102560 -0.335590 -0.663400 -0.592630 -0.881860 -1.172600 -0.977770 -0.661930 -0.207150  0.216930  0.647080  1.084700  1.596400  1.945100  1.562600  1.159500  1.042100  1.201000  0.969520  0.849920  0.806300  0.950610  1.347900 
+Shapelet   2   1.114400  1.156400  0.862350  0.683130  0.682540  0.591340  0.667030  0.797970  1.039600  1.072700  1.184700  0.995880  0.614310  0.309520 -0.023190 -0.347260 -0.567050 -0.432930 -0.564290 -0.742330 -0.990790 -1.228500 -1.067200 -1.117300 -1.223100 -1.248200 -1.185300 -1.097200 -0.910320 -0.674520 -0.782570 -0.990540 -0.901270 -0.759100 -0.613410 -0.688100 -0.817690 -1.023500 -1.076900 
+Shapelet   5  -0.763090 -0.931560 -1.009000 -0.809310 -0.492130 -0.202430  0.106320 
+Shapelet  10   1.415100  1.547500  1.700300  1.612700  1.310100  0.951050  0.629770  0.272800 -0.081916 -0.444490 -0.746160 -0.884770  0.030128  0.114580  0.013788 -0.286010 -0.493930 -0.725830 -1.025900 -1.306700 -1.490300 -1.482300 -1.382200 -1.256800 -1.008400 -0.773230 -0.512220 -0.338770 -0.235340 -0.409260 -0.610350 -0.910440 -1.194100 -1.395300 -1.537000 -1.468600 -1.277800 -1.030900 -0.856200 
+Shapelet  11   1.465400  1.386400  1.355300  1.151500  1.033900  0.885270  0.635750  0.497970  0.306060  0.111140  0.147820 -0.152010 -0.399590 -0.694480 -0.807760 -0.745100 -0.488180 -0.206860  0.111030  0.443480  0.816690  1.163400  1.543600  1.563100  1.555600  1.336800  1.339600  1.382100  1.362900  1.350800  1.535100  1.547500  1.189500 
+Shapelet  21   1.341100  1.173000  0.953170  0.673320  0.582900  0.299100  0.030086 -0.127690 -0.445840 
+Shapelet  23   1.341600  1.257400  1.387500  1.421100  1.624800  1.899600  1.752000  1.301500  1.022200  0.784650  0.480860  0.118580 -0.243240 -0.618200 -0.796780 -0.430800 -0.314570 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TRAIN 3 139 40 1 2 10 manhattan 1 0 10 ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_CID_REP03_tree.txt ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_CID_REP03_time.txt
+; time =>    3.726   0.246   1.356   0.182   1.800 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TEST 3 400 manhattan 1 0 ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_CID_REP03_tree.txt ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_CID_REP03_acc.txt
+; accuracy= 76.250   Correct:305 , Wrong: 95
+
+
+;   == Confusion Matrix ==
+;   real |   2    3    1 
+;   -----+------------------
+;   p  2 |  82   46   11 
+;   p  3 |  22  207    3 
+;   p  1 |   9    4   16 
+

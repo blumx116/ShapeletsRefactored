@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1501837456, rand()=730184832, rand()=419720557
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 manhattan 1 0 10 ./output/Gun/Gun_manhattan_unnormed_CID_REP02_tree.txt ./output/Gun/Gun_manhattan_unnormed_CID_REP02_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   2  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --      2   94   23   3.4069 ==>   3  22  /  23   2 
+NonL  2    --      0  100   11   1.8463 ==>   0  22  /   3   0 
+Leaf  3     2    
+Leaf  4     1    
+Leaf  5     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.139200  0.979360  0.809060  0.646920  0.471690  0.302690  0.187740  0.039058 -0.078698 -0.208210 -0.312640 -0.389000 -0.451820 -0.499660 -0.533070 -0.557150 -0.562840 -0.577440 -0.598070 -0.620100 -0.637170 -0.640290 -0.636960 
+Shapelet   2   0.187740  0.039058 -0.078698 -0.208210 -0.312640 -0.389000 -0.451820 -0.499660 -0.533070 -0.557150 -0.562840 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 manhattan 1 0 10 ./output/Gun/Gun_manhattan_unnormed_CID_REP02_tree.txt ./output/Gun/Gun_manhattan_unnormed_CID_REP02_time.txt
+; time =>    2.111   0.110   0.573   0.064   1.316 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/Gun_Point_TEST 2 150 manhattan 1 0 ./output/Gun/Gun_manhattan_unnormed_CID_REP02_tree.txt ./output/Gun/Gun_manhattan_unnormed_CID_REP02_acc.txt
+; accuracy= 82.667   Correct:124 , Wrong: 26
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  64   14 
+;   p  2 |  12   60 
+

@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/WormsTwoClass_TRAIN_CV1', 2, 38, 450, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_manhattan_unnormed_NOCID_tree.txt', './cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502291546
+num_class=2, num_obj=38, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................................................................................................
+Len=71   @[  0,138]  d_th=18.17 gap=0.049900 gain= 0.34562 (6  )==>  14   2  /   2  20 
+
+=== Node 2 ===
+...............................................................................................................................................................................................................................
+Len=109  @[  3, 43]  d_th=58.96 gap=0.983217 gain= 0.37677 (12 )==>  14   0  /   0   2 
+
+num_class=2, num_obj=16, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     4.01 sec
+  Time Rand Project =    32.80 sec
+  Time Score Matrix =     2.17 sec
+  Time Compute Gain =    39.76 sec
+Running  Time for this Shapelet=    81.11 sec <<
+
+
+Total Running  Time =    81.11 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/WormsTwoClass_TRAIN_CV2', 2, 39, 'manhattan', 0, 0, './cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_manhattan_unnormed_NOCID_tree.txt', './cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 69.231   Correct:27 , Wrong: 12
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  11    6 
+;   p  2 |   6   16 
+
+num_class=2, num_obj=39  distance=manhattan CID=false normalize=false ./cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_manhattan_unnormed_NOCID_tree.txt  ./cv_output/WormsTwoClass_CV1/WormsTwoClass_CV1_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 6
+

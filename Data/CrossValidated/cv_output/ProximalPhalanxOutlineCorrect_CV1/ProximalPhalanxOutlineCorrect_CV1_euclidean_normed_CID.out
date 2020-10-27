@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineCorrect_TRAIN_CV1', 2, 300, 40, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_CID_tree.txt', './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_CID_time.txt']
+
+rand seed=1502274497
+num_class=2, num_obj=300, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_CID_tree.txt  time_file=./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=31   @[ 11, 41]  d_th= 0.87 gap=0.000251 gain= 0.28462 (148)==>  70   6  /  27 197 
+
+=== Node 3 ===
+..................
+Len=39   @[  2, 32]  d_th= 1.18 gap=0.002847 gain= 0.06722 (206)==>  19 196  /   8   1 
+
+num_class=2, num_obj=224, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.19 sec
+  Time Rand Project =     1.05 sec
+  Time Score Matrix =     0.15 sec
+  Time Compute Gain =     2.47 sec
+Running  Time for this Shapelet=     3.98 sec <<
+
+
+Total Running  Time =     3.98 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineCorrect_TRAIN_CV2', 2, 300, 'euclidean', 1, 1, './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_CID_tree.txt', './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_CID_acc.txt']
+; accuracy= 41.000   Correct:123 , Wrong: 177
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  97  177 
+;   p  1 |   0   26 
+
+num_class=2, num_obj=300  distance=euclidean CID=true normalize=true ./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_CID_tree.txt  ./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 8
+

@@ -1,0 +1,67 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/PhalangesOutlinesCorrect_TRAIN_CV1', 2, 900, 40, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503460972
+num_class=2, num_obj=900, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=17   @[ 12, 24]  d_th= 0.01 gap=0.000001 gain= 0.08579 (376)==> 141 497  / 173  89 
+
+=== Node 2 ===
+..................
+Len=37   @[  3, 42]  d_th= 0.01 gap=0.000001 gain= 0.04735 (148)==>  17 228  / 124 269 
+
+=== Node 3 ===
+..................
+Len=27   @[175, 31]  d_th= 0.03 gap=0.000018 gain= 0.11131 (36 )==>  46  67  / 127  22 
+
+=== Node 5 ===
+..................
+Len=39   @[ 35, 24]  d_th= 0.07 gap=0.000012 gain= 0.08297 (171)==> 119 163  /   5 106 
+
+=== Node 6 ===
+..................
+Len=27   @[ 80, 14]  d_th= 0.02 gap=0.000021 gain= 0.09311 (65 )==>   1  23  /  45  44 
+
+=== Node 7 ===
+..................
+Len=13   @[  0,  0]  d_th= 0.01 gap=0.000031 gain= 0.07897 (35 )==>  70  22  /  57   0 
+
+=== Node 10 ===
+..................
+Len=33   @[  2, 16]  d_th= 0.03 gap=0.000000 gain= 0.08629 (68 )==>  18  89  / 101  74 
+
+=== Node 13 ===
+..................
+Len=9    @[ 78, 28]  d_th= 0.01 gap=0.000009 gain= 0.10578 (65 )==>   0  12  /  45  32 
+
+=== Node 14 ===
+..................
+Len=33   @[ 83, 27]  d_th= 0.01 gap=0.000006 gain= 0.10097 (80 )==>   0   6  /  70  16 
+
+num_class=2, num_obj=92, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.22 sec
+  Time Rand Project =     8.12 sec
+  Time Score Matrix =     1.22 sec
+  Time Compute Gain =     7.23 sec
+Running  Time for this Shapelet=    18.65 sec <<
+
+
+Total Running  Time =    18.65 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/PhalangesOutlinesCorrect_TRAIN_CV2', 2, 900, 'correlation', 0, 0, './cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 47.333   Correct:426 , Wrong: 474
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 | 184  344 
+;   p  1 | 130  242 
+
+num_class=2, num_obj=900  distance=correlation CID=false normalize=false ./cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_correlation_unnormed_NOCID_tree.txt  ./cv_output/PhalangesOutlinesCorrect_CV1/PhalangesOutlinesCorrect_CV1_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 30
+

@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1501835857, rand()=62867355, rand()=1616585123
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 manhattan 1 0 10 ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP09_tree.txt ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP09_time.txt 
+
+;Local Class:   0  1  2  3  4 
+;Real  Class:   1  2  3  4  5 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0   95   11   7.1775 ==> 292  19   2   9   2  /   0 158   8  10   0 
+Leaf  2     1    
+NonL  3    --    160  106   21   3.8019 ==>   0   0   7   0   0  /   0 158   1  10   0 
+Leaf  6     3    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1   0.263560  0.342560  0.419510  0.586610  0.860620  1.173300  1.258200  1.433800  1.700500  1.999000  2.125300 
+Shapelet   3   0.585050  0.482570  0.444660  0.479390  0.423890  0.419650  0.441630  0.457300  0.552760  0.633140  0.692840  0.870670  1.040600  1.032800  0.977920  0.955690  0.959880  1.159000  1.166500  0.881540  0.710050 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 manhattan 1 0 10 ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP09_tree.txt ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP09_time.txt
+; time =>   28.580   1.417  13.816   1.495  10.712 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ECG5000_TEST 5 4500 manhattan 1 0 ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP09_tree.txt ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP09_acc.txt
+; accuracy= 87.756   Correct:3949 , Wrong: 551
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2598  224   63   94   17 
+;   p  2 |  28 1345   17   74    4 
+;   p  3 |   1   21    6    7    1 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+

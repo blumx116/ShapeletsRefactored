@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FaceFour_TRAIN_CV1', 4, 11, 175, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/FaceFour_CV1/FaceFour_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/FaceFour_CV1/FaceFour_CV1_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502276169
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/FaceFour_CV1/FaceFour_CV1_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/FaceFour_CV1/FaceFour_CV1_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+......................................................................................
+Len=147  @[  0,138]  d_th=92.05 gap=1.769567 gain= 0.68901 (1  )==>   4   0   0   2  /   0   4   1   0 
+
+=== Node 2 ===
+......................................................................................
+Len=75   @[  4, 11]  d_th=35.25 gap=2.113024 gain= 0.63651 (2  )==>   0   0   0   2  /   4   0   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=119  @[  4, 60]  d_th=37.09 gap=3.399898 gain= 0.50040 (3  )==>   0   0   1   0  /   0   4   0   0 
+
+num_class=4, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.27 sec
+  Time Rand Project =     1.61 sec
+  Time Score Matrix =     0.15 sec
+  Time Compute Gain =     3.39 sec
+Running  Time for this Shapelet=     5.60 sec <<
+
+
+Total Running  Time =     5.60 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FaceFour_TRAIN_CV2', 4, 13, 'manhattan', 1, 0, './cv_output/FaceFour_CV1/FaceFour_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/FaceFour_CV1/FaceFour_CV1_manhattan_unnormed_CID_acc.txt']
+; accuracy= 69.231   Correct:9 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   4    1    1    0 
+;   p  2 |   0    2    1    0 
+;   p  3 |   0    0    0    0 
+;   p  4 |   0    1    0    3 
+
+num_class=4, num_obj=13  distance=manhattan CID=true normalize=false ./cv_output/FaceFour_CV1/FaceFour_CV1_manhattan_unnormed_CID_tree.txt  ./cv_output/FaceFour_CV1/FaceFour_CV1_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 8
+

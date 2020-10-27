@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1', 2, 31, 256, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/Herring_CV1/Herring_CV1_correlation_unnormed_CID_tree.txt', './cv_output/Herring_CV1/Herring_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503464996
+num_class=2, num_obj=31, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Herring_CV1/Herring_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/Herring_CV1/Herring_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=71   @[  0,141]  d_th= 0.01 gap=0.000020 gain= 0.23323 (9  )==>  11   0  /   8  12 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=53   @[  9, 74]  d_th= 0.01 gap=0.000004 gain= 0.35074 (2  )==>   0   9  /   8   3 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=19   @[  8,158]  d_th= 0.08 gap=0.000490 gain= 0.58595 (5  )==>   0   3  /   8   0 
+
+num_class=2, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.83 sec
+  Time Rand Project =     2.72 sec
+  Time Score Matrix =     0.30 sec
+  Time Compute Gain =    43.73 sec
+Running  Time for this Shapelet=    47.94 sec <<
+
+
+Total Running  Time =    47.94 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV2', 2, 33, 'correlation', 1, 0, './cv_output/Herring_CV1/Herring_CV1_correlation_unnormed_CID_tree.txt', './cv_output/Herring_CV1/Herring_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 57.576   Correct:19 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  16   10 
+;   p  2 |   4    3 
+
+num_class=2, num_obj=33  distance=correlation CID=true normalize=false ./cv_output/Herring_CV1/Herring_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/Herring_CV1/Herring_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 16
+

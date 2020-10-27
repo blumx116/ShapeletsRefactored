@@ -1,0 +1,37 @@
+;Shapelet Tree 
+
+;random seed:1501828052, rand()=949498875, rand()=276611268
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN 3 36 126 1 2 10 manhattan 1 1 10 ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_tree.txt ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   0  1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --      9   36   81  31.0982 ==>  11   0   0  /   1  12  12 
+Leaf  2     0    
+NonL  3    --      2  117   83   8.6434 ==>   1  10   0  /   0   2  12 
+Leaf  6     1    
+NonL  7    --      0   58    5   0.4528 ==>   0   0  12  /   0   2   0 
+Leaf 14     2    
+Leaf 15     1    
+
+;Shapelet id   <data>
+Shapelet   1   0.762640  0.785630  0.949870  1.060100  1.136500  1.215600  1.228000  1.393400  1.424600  1.477600  1.498000  1.468600  1.459600  1.459600  1.459600  1.450800  1.421100  1.382500  1.403700  1.395300  1.305600  1.234100  1.148400  1.047300  0.995140  0.994310  0.837400  0.704520  0.655800  0.592960  0.440250  0.356950  0.248750  0.181850  0.145630  0.107080  0.115370  0.109890  0.142850  0.124400  0.195810  0.269660  0.346750  0.271010  0.204850  0.006704 -0.163490 -0.295220 -0.440750 -0.595890 -0.669880 -0.772160 -0.849580 -0.932370 -0.974920 -1.013900 -1.079100 -1.082800 -1.112500 -1.141900 -1.109400 -1.163100 -1.211300 -1.147700 -1.002300 -0.877960 -0.748470 -0.711070 -0.640120 -0.457020 -0.271810 -0.178340 -0.091641  0.037803  0.092253  0.169210  0.228380  0.254520  0.283470  0.307740  0.333850 
+Shapelet   3  -0.919870 -0.896810 -0.870450 -0.837340 -0.843630 -0.846220 -0.811240 -0.773250 -0.773750 -0.788980 -0.787890 -0.823140 -0.880470 -0.877290 -0.931220 -0.925710 -0.978440 -0.994930 -1.017000 -1.028900 -1.038500 -1.077600 -1.094800 -1.083800 -1.061700 -1.015300 -0.968130 -0.884420 -0.835240 -0.750610 -0.649460 -0.598300 -0.515630 -0.464010 -0.361020 -0.259060 -0.208710 -0.135760 -0.101860  0.000627  0.088312  0.121310  0.188920  0.182880  0.194650  0.276500  0.293570  0.322270  0.341100  0.380650  0.413800  0.455040  0.494950  0.536990  0.580230  0.625010  0.668950  0.716030  0.804300  0.821490  0.902000  0.962980  1.062000  1.085000  1.132600  1.192300  1.246800  1.265900  1.312600  1.346700  1.386400  1.443500  1.451300  1.459400  1.481900  1.486000  1.448500  1.468800  1.452000  1.433700  1.397500  1.347800  1.342800 
+Shapelet   7   1.265300  1.244000  1.221200  1.157900  1.135900 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN 3 36 126 1 2 10 manhattan 1 1 10 ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_tree.txt ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_time.txt
+; time =>   13.808   0.373   2.996   0.573   9.444 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ArrowHead_TEST 3 175 manhattan 1 1 ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_tree.txt ./output/ArrowHead/ArrowHead_manhattan_normed_CID_REP09_acc.txt
+; accuracy= 59.429   Correct:104 , Wrong: 71
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  36    6    2 
+;   p  1 |  16   27   10 
+;   p  2 |  17   20   41 
+

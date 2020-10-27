@@ -1,0 +1,500 @@
+================ Replication:  1 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 0, 1, 10, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP01_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP01_time.txt']
+
+rand seed=1501842223
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP01_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP01_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=175  @[  2, 38]  d_th=113.67 gap=0.534923 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=141  @[  2, 59]  d_th=83.04 gap=1.542887 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=167  @[  3, 61]  d_th=107.62 gap=1.729771 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     8.02 sec
+  Time Score Matrix =     1.22 sec
+  Time Compute Gain =     7.74 sec
+Running  Time for this Shapelet=    18.66 sec <<
+
+
+Total Running  Time =    18.66 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 0, 1, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP01_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP01_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=false normalize=true ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP01_tree.txt  ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP01_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 95.455   Correct:84 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    0    2 
+;   p  1 |   0   14    1    1 
+;   p  2 |   0    0   25    0 
+;   p  4 |   0    0    0   19 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 0, 1, 10, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP02_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP02_time.txt']
+
+rand seed=1501842242
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP02_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP02_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=175  @[  2, 38]  d_th=113.67 gap=0.534923 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=107  @[  5, 39]  d_th=51.46 gap=1.270047 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=139  @[  1, 61]  d_th=88.51 gap=2.253934 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.74 sec
+  Time Rand Project =     7.98 sec
+  Time Score Matrix =     1.20 sec
+  Time Compute Gain =     7.73 sec
+Running  Time for this Shapelet=    18.64 sec <<
+
+
+Total Running  Time =    18.64 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 0, 1, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP02_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP02_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=false normalize=true ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP02_tree.txt  ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP02_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 96.591   Correct:85 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    0    2 
+;   p  1 |   0   14    0    0 
+;   p  2 |   0    0   25    0 
+;   p  4 |   0    0    1   20 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 0, 1, 10, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP03_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP03_time.txt']
+
+rand seed=1501842261
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP03_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP03_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=175  @[  2, 38]  d_th=113.67 gap=0.534923 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=151  @[  6, 64]  d_th=88.72 gap=1.214089 gain= 0.66628 (3  )==>   0   8   0   0  /   0   0   5   0 
+
+=== Node 3 ===
+......................................................................................
+Len=149  @[  3, 53]  d_th=103.62 gap=1.788794 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.74 sec
+  Time Rand Project =     7.95 sec
+  Time Score Matrix =     1.19 sec
+  Time Compute Gain =     7.69 sec
+Running  Time for this Shapelet=    18.54 sec <<
+
+
+Total Running  Time =    18.54 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 0, 1, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP03_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP03_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=false normalize=true ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP03_tree.txt  ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP03_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 96.591   Correct:85 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    0    2 
+;   p  1 |   0   14    0    0 
+;   p  2 |   0    0   25    0 
+;   p  4 |   0    0    1   20 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 0, 1, 10, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP04_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP04_time.txt']
+
+rand seed=1501842280
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP04_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP04_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=173  @[  3, 33]  d_th=125.53 gap=0.781059 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=107  @[  2, 63]  d_th=60.08 gap=1.797934 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=145  @[  1, 61]  d_th=92.85 gap=2.265032 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.73 sec
+  Time Rand Project =     7.97 sec
+  Time Score Matrix =     1.26 sec
+  Time Compute Gain =     7.70 sec
+Running  Time for this Shapelet=    18.64 sec <<
+
+
+Total Running  Time =    18.64 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 0, 1, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP04_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP04_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=false normalize=true ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP04_tree.txt  ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP04_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 96.591   Correct:85 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    0    2 
+;   p  1 |   0   14    0    1 
+;   p  2 |   0    0   26    0 
+;   p  4 |   0    0    0   19 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 0, 1, 10, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP05_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP05_time.txt']
+
+rand seed=1501842300
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP05_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP05_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=173  @[  3, 33]  d_th=125.53 gap=0.781059 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=141  @[  2, 59]  d_th=83.04 gap=1.542887 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=139  @[  1, 61]  d_th=88.51 gap=2.253934 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     7.90 sec
+  Time Score Matrix =     1.24 sec
+  Time Compute Gain =     7.76 sec
+Running  Time for this Shapelet=    18.59 sec <<
+
+
+Total Running  Time =    18.59 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 0, 1, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP05_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP05_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=false normalize=true ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP05_tree.txt  ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP05_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 96.591   Correct:85 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    0    2 
+;   p  1 |   0   14    0    1 
+;   p  2 |   0    0   26    0 
+;   p  4 |   0    0    0   19 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 0, 1, 10, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP06_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP06_time.txt']
+
+rand seed=1501842319
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP06_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP06_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=169  @[  3, 36]  d_th=119.38 gap=0.511521 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=107  @[  2, 63]  d_th=60.08 gap=1.797934 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=155  @[  1, 44]  d_th=87.14 gap=1.934323 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     7.99 sec
+  Time Score Matrix =     1.20 sec
+  Time Compute Gain =     7.71 sec
+Running  Time for this Shapelet=    18.59 sec <<
+
+
+Total Running  Time =    18.59 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 0, 1, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP06_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP06_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=false normalize=true ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP06_tree.txt  ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP06_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 94.318   Correct:83 , Wrong: 5
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    2    2 
+;   p  1 |   0   14    0    1 
+;   p  2 |   0    0   24    0 
+;   p  4 |   0    0    0   19 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 0, 1, 10, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP07_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP07_time.txt']
+
+rand seed=1501842338
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP07_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP07_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=175  @[  2, 38]  d_th=113.67 gap=0.534923 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=107  @[  2, 63]  d_th=60.08 gap=1.797934 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=173  @[  0, 63]  d_th=118.98 gap=1.997522 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     7.90 sec
+  Time Score Matrix =     1.24 sec
+  Time Compute Gain =     7.72 sec
+Running  Time for this Shapelet=    18.54 sec <<
+
+
+Total Running  Time =    18.54 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 0, 1, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP07_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP07_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=false normalize=true ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP07_tree.txt  ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP07_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 95.455   Correct:84 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    0    2 
+;   p  1 |   0   14    1    1 
+;   p  2 |   0    0   25    0 
+;   p  4 |   0    0    0   19 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 0, 1, 10, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP08_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP08_time.txt']
+
+rand seed=1501842357
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP08_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP08_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=161  @[  2, 63]  d_th=111.17 gap=0.512565 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=113  @[  2, 63]  d_th=62.65 gap=1.763330 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=169  @[  0, 72]  d_th=110.75 gap=1.800448 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.73 sec
+  Time Rand Project =     7.99 sec
+  Time Score Matrix =     1.23 sec
+  Time Compute Gain =     7.71 sec
+Running  Time for this Shapelet=    18.62 sec <<
+
+
+Total Running  Time =    18.62 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 0, 1, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP08_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP08_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=false normalize=true ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP08_tree.txt  ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP08_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 95.455   Correct:84 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    0    4 
+;   p  1 |   0   14    0    0 
+;   p  2 |   0    0   26    0 
+;   p  4 |   0    0    0   18 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 0, 1, 10, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP09_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP09_time.txt']
+
+rand seed=1501842376
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP09_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP09_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=169  @[  8, 69]  d_th=119.67 gap=0.534454 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=113  @[  2, 63]  d_th=62.65 gap=1.763330 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=139  @[  3, 52]  d_th=93.58 gap=1.879564 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     8.00 sec
+  Time Score Matrix =     1.20 sec
+  Time Compute Gain =     7.69 sec
+Running  Time for this Shapelet=    18.60 sec <<
+
+
+Total Running  Time =    18.60 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 0, 1, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP09_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP09_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=false normalize=true ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP09_tree.txt  ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP09_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 97.727   Correct:86 , Wrong: 2
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    0    1 
+;   p  1 |   0   14    0    1 
+;   p  2 |   0    0   26    0 
+;   p  4 |   0    0    0   20 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'manhattan', 0, 1, 10, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP10_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP10_time.txt']
+
+rand seed=1501842396
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP10_tree.txt  time_file=./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP10_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=175  @[  2, 38]  d_th=113.67 gap=0.534923 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=99   @[  2, 61]  d_th=57.73 gap=1.623225 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=175  @[  3, 64]  d_th=110.78 gap=2.083532 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     7.89 sec
+  Time Score Matrix =     1.22 sec
+  Time Compute Gain =     7.66 sec
+Running  Time for this Shapelet=    18.47 sec <<
+
+
+Total Running  Time =    18.47 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'manhattan', 0, 1, './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP10_tree.txt', './output/FaceFour/FaceFour_manhattan_normed_NOCID_REP10_acc.txt']
+0
+num_class=4, num_obj=88  distance=manhattan CID=false normalize=true ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP10_tree.txt  ./output/FaceFour/FaceFour_manhattan_normed_NOCID_REP10_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 95.455   Correct:84 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    0    2 
+;   p  1 |   0   14    1    1 
+;   p  2 |   0    0   25    0 
+;   p  4 |   0    0    0   19 
+
+
+================ Replication:  10 Finished ================

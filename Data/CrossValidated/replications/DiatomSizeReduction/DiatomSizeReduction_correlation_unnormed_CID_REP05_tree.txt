@@ -1,0 +1,38 @@
+;Shapelet Tree 
+
+;random seed:1503372350, rand()=694989761, rand()=1157944328
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN 4 16 173 1 2 10 correlation 1 0 10 ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_CID_REP05_tree.txt ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_CID_REP05_time.txt 
+
+;Local Class:   0  1  2  3 
+;Real  Class:   2  3  4  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0   94   11   0.0068 ==>   6   0   0   1  /   0   5   4   0 
+NonL  2    --      0  153   47   0.0347 ==>   6   0   0   0  /   0   0   0   1 
+NonL  3    --      0  160   25   0.0219 ==>   0   5   0   0  /   0   0   4   0 
+Leaf  4     2    
+Leaf  5     1    
+Leaf  6     3    
+Leaf  7     4    
+
+;Shapelet id   <data>
+Shapelet   1  -1.153800 -1.139300 -1.123200 -1.105600 -1.086100 -1.065000 -1.014300 -0.946860 -0.922340 -0.896210 -0.868900 
+Shapelet   2   0.875580  0.875120  0.920770  0.967960  1.016300  1.069100  1.128200  1.178800  1.236700  1.292800  1.346500  1.406700  1.460900  1.515200  1.570400  1.625000  1.621500  1.663000  1.721600  1.772000  1.771500  1.771900  1.738900  1.696300  1.698800  1.643000  1.586700  1.531200  1.475900  1.415600  1.360800  1.303900  1.243800  1.183600  1.131300  1.074200  1.017700  0.970970  0.981860  0.948300  0.901790  0.866990  0.881700  0.845590  0.804140  0.764000  0.725200 
+Shapelet   3   1.608600  1.622600  1.619400  1.617400  1.615700  1.615000  1.615000  1.615600  1.617200  1.619200  1.564800  1.524100  1.528700  1.504900  1.452600  1.445600  1.452100  1.403000  1.354400  1.307200  1.260900  1.215600  1.160900  1.104400  1.061500 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TRAIN 4 16 173 1 2 10 correlation 1 0 10 ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_CID_REP05_tree.txt ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_CID_REP05_time.txt
+; time =>    8.165   0.156   0.328   0.032   7.606 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DiatomSizeReduction_TEST 4 306 correlation 1 0 ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_CID_REP05_tree.txt ./replications/DiatomSizeReduction/DiatomSizeReduction_correlation_unnormed_CID_REP05_acc.txt
+; accuracy= 86.601   Correct:265 , Wrong: 41
+
+
+;   == Confusion Matrix ==
+;   real |   3    2    4    1 
+;   -----+------------------------
+;   p  3 |  87    0    0   15 
+;   p  2 |   5   88    7    6 
+;   p  4 |   0    4   80    2 
+;   p  1 |   2    0    0   10 
+

@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/WormsTwoClass_TRAIN_CV2', 2, 39, 450, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502292320
+num_class=2, num_obj=39, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................................................................................................
+Len=25   @[  1,606]  d_th= 0.88 gap=0.001440 gain= 0.39869 (13 )==>  13   0  /   4  22 
+
+=== Node 3 ===
+...............................................................................................................................................................................................................................
+Len=9    @[  0,213]  d_th= 1.02 gap=0.014001 gain= 0.28244 (14 )==>   4   2  /   0  20 
+
+=== Node 6 ===
+...............................................................................................................................................................................................................................
+Len=269  @[  3, 14]  d_th=37.76 gap=0.167253 gain= 0.63651 (2  )==>   4   0  /   0   2 
+
+num_class=2, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     4.49 sec
+  Time Rand Project =    27.74 sec
+  Time Score Matrix =     2.07 sec
+  Time Compute Gain =   117.80 sec
+Running  Time for this Shapelet=   154.37 sec <<
+
+
+Total Running  Time =   154.37 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/WormsTwoClass_TRAIN_CV1', 2, 38, 'euclidean', 1, 0, './cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_euclidean_unnormed_CID_acc.txt']
+; accuracy= 36.842   Correct:14 , Wrong: 24
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  10   18 
+;   p  2 |   6    4 
+
+num_class=2, num_obj=38  distance=euclidean CID=true normalize=false ./cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_euclidean_unnormed_CID_tree.txt  ./cv_output/WormsTwoClass_CV2/WormsTwoClass_CV2_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 14
+

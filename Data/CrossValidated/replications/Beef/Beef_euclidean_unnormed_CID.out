@@ -1,0 +1,670 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Beef/Beef_euclidean_unnormed_CID_REP01_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP01_time.txt']
+
+rand seed=1501934668
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_euclidean_unnormed_CID_REP01_tree.txt  time_file=./output/Beef/Beef_euclidean_unnormed_CID_REP01_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=173  @[  7,150]  d_th= 7.50 gap=0.067576 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=121  @[ 16,  6]  d_th= 3.08 gap=0.000781 gain= 0.39327 (4  )==>   0   1   3   6   0  /   0   5   3   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=39   @[  0,347]  d_th= 0.70 gap=0.014792 gain= 0.67301 (2  )==>   0   1   3   0   0  /   0   0   0   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=5    @[  0,284]  d_th= 0.17 gap=0.002422 gain= 0.65176 (4  )==>   0   5   0   0   0  /   0   0   3   0   6 
+
+=== Node 8 ===
+....................................................................................................................
+Len=47   @[  0, 62]  d_th= 0.67 gap=0.097601 gain= 0.56234 (2  )==>   0   1   0   0   0  /   0   0   3   0   0 
+
+=== Node 11 ===
+....................................................................................................................
+Len=65   @[  0,368]  d_th= 1.23 gap=0.017238 gain= 0.63651 (3  )==>   0   0   3   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.74 sec
+  Time Rand Project =    10.22 sec
+  Time Score Matrix =     1.01 sec
+  Time Compute Gain =    30.57 sec
+Running  Time for this Shapelet=    44.34 sec <<
+
+
+Total Running  Time =    44.34 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 1, 0, './output/Beef/Beef_euclidean_unnormed_CID_REP01_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP01_acc.txt']
+0
+num_class=5, num_obj=30  distance=euclidean CID=true normalize=false ./output/Beef/Beef_euclidean_unnormed_CID_REP01_tree.txt  ./output/Beef/Beef_euclidean_unnormed_CID_REP01_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 46.667   Correct:14 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   0    2    0    0    2 
+;   p  3 |   0    1    3    0    4 
+;   p  4 |   1    1    3    4    0 
+;   p  5 |   0    1    0    2    0 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Beef/Beef_euclidean_unnormed_CID_REP02_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP02_time.txt']
+
+rand seed=1501934713
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_euclidean_unnormed_CID_REP02_tree.txt  time_file=./output/Beef/Beef_euclidean_unnormed_CID_REP02_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=121  @[  7,205]  d_th= 7.19 gap=0.068562 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=19   @[  0, 91]  d_th= 0.39 gap=0.000876 gain= 0.39327 (4  )==>   0   3   1   6   0  /   0   3   5   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=17   @[  0, 49]  d_th= 0.42 gap=0.009879 gain= 0.61086 (4  )==>   0   3   0   0   0  /   0   0   1   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=17   @[  0, 86]  d_th= 1.04 gap=0.018883 gain= 0.55675 (0  )==>   0   1   0   0   6  /   0   2   5   0   0 
+
+=== Node 9 ===
+....................................................................................................................
+Len=173  @[  0, 24]  d_th= 0.46 gap=0.035262 gain= 0.41012 (5  )==>   0   0   1   0   0  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=109  @[  0,276]  d_th= 0.70 gap=0.067464 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+=== Node 11 ===
+....................................................................................................................
+Len=25   @[  0,281]  d_th= 0.45 gap=0.071680 gain= 0.59827 (3  )==>   0   2   0   0   0  /   0   0   5   0   0 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.85 sec
+  Time Rand Project =    10.42 sec
+  Time Score Matrix =     1.04 sec
+  Time Compute Gain =    32.06 sec
+Running  Time for this Shapelet=    46.21 sec <<
+
+
+Total Running  Time =    46.21 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 1, 0, './output/Beef/Beef_euclidean_unnormed_CID_REP02_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP02_acc.txt']
+0
+num_class=5, num_obj=30  distance=euclidean CID=true normalize=false ./output/Beef/Beef_euclidean_unnormed_CID_REP02_tree.txt  ./output/Beef/Beef_euclidean_unnormed_CID_REP02_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 50.000   Correct:15 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   1    3    2    4    1 
+;   p  3 |   0    0    3    0    1 
+;   p  4 |   0    0    0    1    1 
+;   p  5 |   0    2    1    1    3 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Beef/Beef_euclidean_unnormed_CID_REP03_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP03_time.txt']
+
+rand seed=1501934760
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_euclidean_unnormed_CID_REP03_tree.txt  time_file=./output/Beef/Beef_euclidean_unnormed_CID_REP03_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=121  @[  7,205]  d_th= 7.19 gap=0.068562 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=27   @[  0, 87]  d_th= 0.67 gap=0.003035 gain= 0.38979 (6  )==>   0   2   1   6   0  /   0   4   5   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=15   @[  0, 51]  d_th= 0.25 gap=0.009471 gain= 0.52971 (5  )==>   0   2   0   0   0  /   0   0   1   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=5    @[  0,284]  d_th= 0.17 gap=0.002422 gain= 0.57992 (7  )==>   0   4   0   0   0  /   0   0   5   0   6 
+
+=== Node 9 ===
+....................................................................................................................
+Len=79   @[  0, 19]  d_th= 0.58 gap=0.065261 gain= 0.41012 (5  )==>   0   0   1   0   0  /   0   0   0   6   0 
+
+=== Node 11 ===
+....................................................................................................................
+Len=5    @[  0, 26]  d_th= 0.03 gap=0.000518 gain= 0.44325 (1  )==>   0   0   5   0   1  /   0   0   0   0   5 
+
+=== Node 22 ===
+....................................................................................................................
+Len=111  @[  5,247]  d_th= 0.70 gap=0.066683 gain= 0.45056 (4  )==>   0   0   0   0   1  /   0   0   5   0   0 
+
+num_class=5, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.87 sec
+  Time Rand Project =    10.27 sec
+  Time Score Matrix =     1.05 sec
+  Time Compute Gain =    32.17 sec
+Running  Time for this Shapelet=    46.19 sec <<
+
+
+Total Running  Time =    46.19 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 1, 0, './output/Beef/Beef_euclidean_unnormed_CID_REP03_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP03_acc.txt']
+0
+num_class=5, num_obj=30  distance=euclidean CID=true normalize=false ./output/Beef/Beef_euclidean_unnormed_CID_REP03_tree.txt  ./output/Beef/Beef_euclidean_unnormed_CID_REP03_acc.txt
+
+==> Tree Size = 46
+
+; accuracy= 46.667   Correct:14 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   0    3    2    2    2 
+;   p  3 |   0    1    3    2    1 
+;   p  4 |   1    0    0    1    1 
+;   p  5 |   0    1    1    1    2 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Beef/Beef_euclidean_unnormed_CID_REP04_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP04_time.txt']
+
+rand seed=1501934807
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_euclidean_unnormed_CID_REP04_tree.txt  time_file=./output/Beef/Beef_euclidean_unnormed_CID_REP04_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=121  @[  7,205]  d_th= 7.19 gap=0.068562 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=27   @[  0, 87]  d_th= 0.67 gap=0.003035 gain= 0.38979 (6  )==>   0   2   1   6   0  /   0   4   5   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=5    @[  0, 80]  d_th= 0.03 gap=0.006845 gain= 0.63651 (3  )==>   0   2   1   0   0  /   0   0   0   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=5    @[  0,284]  d_th= 0.17 gap=0.002422 gain= 0.57992 (7  )==>   0   4   0   0   0  /   0   0   5   0   6 
+
+=== Node 8 ===
+....................................................................................................................
+Len=163  @[  2,  1]  d_th= 0.99 gap=0.077176 gain= 0.63651 (1  )==>   0   0   1   0   0  /   0   2   0   0   0 
+
+=== Node 11 ===
+....................................................................................................................
+Len=29   @[  0,118]  d_th= 0.33 gap=0.019179 gain= 0.30829 (3  )==>   0   0   5   0   2  /   0   0   0   0   4 
+
+=== Node 22 ===
+....................................................................................................................
+Len=17   @[  0,203]  d_th= 0.35 gap=0.013826 gain= 0.59827 (3  )==>   0   0   5   0   0  /   0   0   0   0   2 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.86 sec
+  Time Rand Project =    10.07 sec
+  Time Score Matrix =     1.02 sec
+  Time Compute Gain =    31.13 sec
+Running  Time for this Shapelet=    44.94 sec <<
+
+
+Total Running  Time =    44.94 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 1, 0, './output/Beef/Beef_euclidean_unnormed_CID_REP04_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP04_acc.txt']
+0
+num_class=5, num_obj=30  distance=euclidean CID=true normalize=false ./output/Beef/Beef_euclidean_unnormed_CID_REP04_tree.txt  ./output/Beef/Beef_euclidean_unnormed_CID_REP04_acc.txt
+
+==> Tree Size = 46
+
+; accuracy= 33.333   Correct:10 , Wrong: 20
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   0    1    0    1    2 
+;   p  3 |   0    1    0    1    1 
+;   p  4 |   1    2    3    2    1 
+;   p  5 |   0    1    3    2    2 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Beef/Beef_euclidean_unnormed_CID_REP05_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP05_time.txt']
+
+rand seed=1501934852
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_euclidean_unnormed_CID_REP05_tree.txt  time_file=./output/Beef/Beef_euclidean_unnormed_CID_REP05_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=173  @[ 18,138]  d_th= 4.97 gap=0.070491 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=19   @[  0, 91]  d_th= 0.39 gap=0.000876 gain= 0.39327 (4  )==>   0   3   1   6   0  /   0   3   5   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=17   @[  0, 49]  d_th= 0.42 gap=0.009879 gain= 0.61086 (4  )==>   0   3   0   0   0  /   0   0   1   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=19   @[  0, 85]  d_th= 1.23 gap=0.018439 gain= 0.55675 (0  )==>   0   1   0   0   6  /   0   2   5   0   0 
+
+=== Node 9 ===
+....................................................................................................................
+Len=167  @[  0, 24]  d_th= 0.46 gap=0.035965 gain= 0.41012 (5  )==>   0   0   1   0   0  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=99   @[  0,284]  d_th= 0.66 gap=0.066340 gain= 0.41012 (5  )==>   0   1   0   0   0  /   0   0   0   0   6 
+
+=== Node 11 ===
+....................................................................................................................
+Len=55   @[  0,251]  d_th= 0.40 gap=0.037841 gain= 0.59827 (3  )==>   0   2   0   0   0  /   0   0   5   0   0 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.83 sec
+  Time Rand Project =    10.17 sec
+  Time Score Matrix =     1.04 sec
+  Time Compute Gain =    32.93 sec
+Running  Time for this Shapelet=    46.82 sec <<
+
+
+Total Running  Time =    46.82 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 1, 0, './output/Beef/Beef_euclidean_unnormed_CID_REP05_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP05_acc.txt']
+0
+num_class=5, num_obj=30  distance=euclidean CID=true normalize=false ./output/Beef/Beef_euclidean_unnormed_CID_REP05_tree.txt  ./output/Beef/Beef_euclidean_unnormed_CID_REP05_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 50.000   Correct:15 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   1    3    2    3    1 
+;   p  3 |   0    1    3    1    1 
+;   p  4 |   0    0    0    1    1 
+;   p  5 |   0    1    1    1    3 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Beef/Beef_euclidean_unnormed_CID_REP06_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP06_time.txt']
+
+rand seed=1501934900
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_euclidean_unnormed_CID_REP06_tree.txt  time_file=./output/Beef/Beef_euclidean_unnormed_CID_REP06_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=121  @[  7,205]  d_th= 7.19 gap=0.068562 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=27   @[  0, 87]  d_th= 0.67 gap=0.003035 gain= 0.38979 (6  )==>   0   2   1   6   0  /   0   4   5   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=5    @[  0, 80]  d_th= 0.03 gap=0.006845 gain= 0.63651 (3  )==>   0   2   1   0   0  /   0   0   0   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=5    @[  0,284]  d_th= 0.17 gap=0.002422 gain= 0.57992 (7  )==>   0   4   0   0   0  /   0   0   5   0   6 
+
+=== Node 8 ===
+....................................................................................................................
+Len=161  @[  2,  1]  d_th= 0.98 gap=0.077550 gain= 0.63651 (1  )==>   0   0   1   0   0  /   0   2   0   0   0 
+
+=== Node 11 ===
+....................................................................................................................
+Len=5    @[  0, 26]  d_th= 0.03 gap=0.000518 gain= 0.44325 (1  )==>   0   0   5   0   1  /   0   0   0   0   5 
+
+=== Node 22 ===
+....................................................................................................................
+Len=123  @[  5,245]  d_th= 0.72 gap=0.065136 gain= 0.45056 (4  )==>   0   0   0   0   1  /   0   0   5   0   0 
+
+num_class=5, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.75 sec
+  Time Rand Project =     9.55 sec
+  Time Score Matrix =     0.98 sec
+  Time Compute Gain =    30.44 sec
+Running  Time for this Shapelet=    43.52 sec <<
+
+
+Total Running  Time =    43.52 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 1, 0, './output/Beef/Beef_euclidean_unnormed_CID_REP06_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP06_acc.txt']
+0
+num_class=5, num_obj=30  distance=euclidean CID=true normalize=false ./output/Beef/Beef_euclidean_unnormed_CID_REP06_tree.txt  ./output/Beef/Beef_euclidean_unnormed_CID_REP06_acc.txt
+
+==> Tree Size = 46
+
+; accuracy= 40.000   Correct:12 , Wrong: 18
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   0    1    0    1    2 
+;   p  3 |   0    2    2    2    1 
+;   p  4 |   1    2    3    2    1 
+;   p  5 |   0    0    1    1    2 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Beef/Beef_euclidean_unnormed_CID_REP07_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP07_time.txt']
+
+rand seed=1501934944
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_euclidean_unnormed_CID_REP07_tree.txt  time_file=./output/Beef/Beef_euclidean_unnormed_CID_REP07_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=121  @[  7,205]  d_th= 7.19 gap=0.068562 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=121  @[ 16,  6]  d_th= 3.08 gap=0.000781 gain= 0.39327 (4  )==>   0   1   3   6   0  /   0   5   3   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=41   @[  0,347]  d_th= 0.81 gap=0.018016 gain= 0.67301 (2  )==>   0   1   3   0   0  /   0   0   0   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=89   @[  6, 33]  d_th= 0.72 gap=0.004610 gain= 0.41955 (6  )==>   0   1   3   0   0  /   0   4   0   0   6 
+
+=== Node 8 ===
+....................................................................................................................
+Len=51   @[  0,303]  d_th= 0.70 gap=0.097963 gain= 0.56234 (2  )==>   0   1   0   0   0  /   0   0   3   0   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=37   @[  0,261]  d_th= 0.34 gap=0.055856 gain= 0.56234 (2  )==>   0   1   0   0   0  /   0   0   3   0   0 
+
+=== Node 11 ===
+....................................................................................................................
+Len=5    @[  0,284]  d_th= 0.17 gap=0.002422 gain= 0.67301 (2  )==>   0   4   0   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.71 sec
+  Time Rand Project =     9.56 sec
+  Time Score Matrix =     0.97 sec
+  Time Compute Gain =    31.19 sec
+Running  Time for this Shapelet=    44.22 sec <<
+
+
+Total Running  Time =    44.22 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 1, 0, './output/Beef/Beef_euclidean_unnormed_CID_REP07_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP07_acc.txt']
+0
+num_class=5, num_obj=30  distance=euclidean CID=true normalize=false ./output/Beef/Beef_euclidean_unnormed_CID_REP07_tree.txt  ./output/Beef/Beef_euclidean_unnormed_CID_REP07_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 50.000   Correct:15 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   0    2    0    0    2 
+;   p  3 |   0    1    1    0    1 
+;   p  4 |   1    1    3    4    0 
+;   p  5 |   0    1    2    2    3 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Beef/Beef_euclidean_unnormed_CID_REP08_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP08_time.txt']
+
+rand seed=1501934989
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_euclidean_unnormed_CID_REP08_tree.txt  time_file=./output/Beef/Beef_euclidean_unnormed_CID_REP08_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=173  @[  7,150]  d_th= 7.50 gap=0.067576 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=21   @[  0, 88]  d_th= 0.58 gap=0.001857 gain= 0.38979 (6  )==>   0   2   1   6   0  /   0   4   5   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=17   @[  0, 49]  d_th= 0.42 gap=0.009879 gain= 0.52971 (5  )==>   0   2   0   0   0  /   0   0   1   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=29   @[  0,280]  d_th= 1.64 gap=0.009559 gain= 0.45629 (5  )==>   0   4   0   0   1  /   0   0   5   0   5 
+
+=== Node 9 ===
+....................................................................................................................
+Len=173  @[  0, 24]  d_th= 0.46 gap=0.035262 gain= 0.41012 (5  )==>   0   0   1   0   0  /   0   0   0   6   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=5    @[  0,284]  d_th= 0.31 gap=0.063062 gain= 0.50040 (3  )==>   0   4   0   0   0  /   0   0   0   0   1 
+
+=== Node 11 ===
+....................................................................................................................
+Len=91   @[  1, 26]  d_th= 1.03 gap=0.009358 gain= 0.42281 (2  )==>   0   0   5   0   1  /   0   0   0   0   4 
+
+=== Node 22 ===
+....................................................................................................................
+Len=87   @[  5, 13]  d_th= 0.54 gap=0.058399 gain= 0.45056 (4  )==>   0   0   0   0   1  /   0   0   5   0   0 
+
+num_class=5, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.88 sec
+  Time Rand Project =    10.42 sec
+  Time Score Matrix =     1.09 sec
+  Time Compute Gain =    34.73 sec
+Running  Time for this Shapelet=    48.98 sec <<
+
+
+Total Running  Time =    48.98 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 1, 0, './output/Beef/Beef_euclidean_unnormed_CID_REP08_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP08_acc.txt']
+0
+num_class=5, num_obj=30  distance=euclidean CID=true normalize=false ./output/Beef/Beef_euclidean_unnormed_CID_REP08_tree.txt  ./output/Beef/Beef_euclidean_unnormed_CID_REP08_acc.txt
+
+==> Tree Size = 46
+
+; accuracy= 43.333   Correct:13 , Wrong: 17
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   1    4    3    3    2 
+;   p  3 |   0    0    3    0    1 
+;   p  4 |   0    0    0    0    2 
+;   p  5 |   0    1    0    3    1 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Beef/Beef_euclidean_unnormed_CID_REP09_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP09_time.txt']
+
+rand seed=1501935038
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_euclidean_unnormed_CID_REP09_tree.txt  time_file=./output/Beef/Beef_euclidean_unnormed_CID_REP09_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=201  @[  7,123]  d_th= 7.62 gap=0.063395 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=27   @[  0, 87]  d_th= 0.67 gap=0.003035 gain= 0.38979 (6  )==>   0   2   1   6   0  /   0   4   5   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=35   @[  0, 68]  d_th= 1.13 gap=0.002787 gain= 0.63651 (3  )==>   0   2   1   0   0  /   0   0   0   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=5    @[  0,284]  d_th= 0.17 gap=0.002422 gain= 0.57992 (7  )==>   0   4   0   0   0  /   0   0   5   0   6 
+
+=== Node 8 ===
+....................................................................................................................
+Len=159  @[  2, 11]  d_th= 0.98 gap=0.077384 gain= 0.63651 (1  )==>   0   0   1   0   0  /   0   2   0   0   0 
+
+=== Node 11 ===
+....................................................................................................................
+Len=23   @[  0,347]  d_th= 0.25 gap=0.001145 gain= 0.42803 (3  )==>   0   0   4   0   0  /   0   0   1   0   6 
+
+=== Node 23 ===
+....................................................................................................................
+Len=133  @[  0,266]  d_th= 0.54 gap=0.046544 gain= 0.41012 (5  )==>   0   0   1   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.86 sec
+  Time Rand Project =    10.62 sec
+  Time Score Matrix =     1.07 sec
+  Time Compute Gain =    35.51 sec
+Running  Time for this Shapelet=    49.90 sec <<
+
+
+Total Running  Time =    49.90 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 1, 0, './output/Beef/Beef_euclidean_unnormed_CID_REP09_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP09_acc.txt']
+0
+num_class=5, num_obj=30  distance=euclidean CID=true normalize=false ./output/Beef/Beef_euclidean_unnormed_CID_REP09_tree.txt  ./output/Beef/Beef_euclidean_unnormed_CID_REP09_acc.txt
+
+==> Tree Size = 48
+
+; accuracy= 43.333   Correct:13 , Wrong: 17
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   1    2    2    2    3 
+;   p  3 |   0    1    2    1    0 
+;   p  4 |   0    0    1    1    0 
+;   p  5 |   0    2    1    2    3 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Beef/Beef_euclidean_unnormed_CID_REP10_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP10_time.txt']
+
+rand seed=1501935089
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/Beef/Beef_euclidean_unnormed_CID_REP10_tree.txt  time_file=./output/Beef/Beef_euclidean_unnormed_CID_REP10_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [0,1]  [1,2]  [2,3]  [3,4]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=173  @[ 18,138]  d_th= 4.97 gap=0.070491 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=145  @[ 16, 19]  d_th= 3.35 gap=0.005827 gain= 0.41123 (8  )==>   0   1   1   6   0  /   0   5   5   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=49   @[  0,340]  d_th= 1.01 gap=0.018130 gain= 0.56234 (4  )==>   0   1   1   0   0  /   0   0   0   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=5    @[  0,284]  d_th= 0.17 gap=0.002422 gain= 0.62109 (6  )==>   0   5   0   0   0  /   0   0   5   0   6 
+
+=== Node 8 ===
+....................................................................................................................
+Len=33   @[  0,310]  d_th= 0.61 gap=0.105590 gain= 0.69315 (0  )==>   0   1   0   0   0  /   0   0   1   0   0 
+
+=== Node 11 ===
+....................................................................................................................
+Len=23   @[  0,347]  d_th= 0.25 gap=0.001145 gain= 0.42803 (3  )==>   0   0   4   0   0  /   0   0   1   0   6 
+
+=== Node 23 ===
+....................................................................................................................
+Len=47   @[  0,349]  d_th= 0.35 gap=0.051741 gain= 0.41012 (5  )==>   0   0   1   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.80 sec
+  Time Rand Project =    10.29 sec
+  Time Score Matrix =     1.03 sec
+  Time Compute Gain =    31.64 sec
+Running  Time for this Shapelet=    45.58 sec <<
+
+
+Total Running  Time =    45.58 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 1, 0, './output/Beef/Beef_euclidean_unnormed_CID_REP10_tree.txt', './output/Beef/Beef_euclidean_unnormed_CID_REP10_acc.txt']
+0
+num_class=5, num_obj=30  distance=euclidean CID=true normalize=false ./output/Beef/Beef_euclidean_unnormed_CID_REP10_tree.txt  ./output/Beef/Beef_euclidean_unnormed_CID_REP10_acc.txt
+
+==> Tree Size = 48
+
+; accuracy= 60.000   Correct:18 , Wrong: 12
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    1    0    0    0 
+;   p  2 |   0    2    0    0    2 
+;   p  3 |   0    0    2    0    1 
+;   p  4 |   1    1    3    6    0 
+;   p  5 |   0    2    1    0    3 
+
+
+================ Replication:  10 Finished ================

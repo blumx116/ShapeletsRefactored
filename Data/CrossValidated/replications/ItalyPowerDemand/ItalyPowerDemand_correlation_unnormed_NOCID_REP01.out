@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'correlation', 0, 0, 10, './replications/ItalyPowerDemand/ItalyPowerDemand_correlation_unnormed_NOCID_REP01_tree.txt', './replications/ItalyPowerDemand/ItalyPowerDemand_correlation_unnormed_NOCID_REP01_time.txt']
+
+rand seed=1503365383
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/ItalyPowerDemand/ItalyPowerDemand_correlation_unnormed_NOCID_REP01_tree.txt  time_file=./replications/ItalyPowerDemand/ItalyPowerDemand_correlation_unnormed_NOCID_REP01_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 17]  d_th= 0.11 gap=0.000485 gain= 0.27813 (9  )==>  31   7  /   3  26 
+
+=== Node 2 ===
+....
+Len=9    @[ 30, 12]  d_th= 0.15 gap=0.003178 gain= 0.21070 (30 )==>  31   3  /   0   4 
+
+=== Node 3 ===
+....
+Len=9    @[  9,  9]  d_th= 0.28 gap=0.022642 gain= 0.18511 (25 )==>   1  26  /   2   0 
+
+num_class=2, num_obj=29, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.02 sec
+Running  Time for this Shapelet=     0.05 sec <<
+
+
+Total Running  Time =     0.05 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'correlation', 0, 0, './replications/ItalyPowerDemand/ItalyPowerDemand_correlation_unnormed_NOCID_REP01_tree.txt', './replications/ItalyPowerDemand/ItalyPowerDemand_correlation_unnormed_NOCID_REP01_acc.txt']
+; accuracy= 77.065   Correct:793 , Wrong: 236
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 368   88 
+;   p  1 | 148  425 
+
+num_class=2, num_obj=1029  distance=correlation CID=false normalize=false ./replications/ItalyPowerDemand/ItalyPowerDemand_correlation_unnormed_NOCID_REP01_tree.txt  ./replications/ItalyPowerDemand/ItalyPowerDemand_correlation_unnormed_NOCID_REP01_acc.txt
+
+==> Tree Size = 8
+

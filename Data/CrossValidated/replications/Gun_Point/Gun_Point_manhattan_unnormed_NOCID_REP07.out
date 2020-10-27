@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN', 2, 50, 75, 1, 2, 10, 'manhattan', 0, 0, 10, './replications/Gun_Point/Gun_Point_manhattan_unnormed_NOCID_REP07_tree.txt', './replications/Gun_Point/Gun_Point_manhattan_unnormed_NOCID_REP07_time.txt']
+
+rand seed=1502942414
+num_class=2, num_obj=50, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Gun_Point/Gun_Point_manhattan_unnormed_NOCID_REP07_tree.txt  time_file=./replications/Gun_Point/Gun_Point_manhattan_unnormed_NOCID_REP07_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,2]  
+
+=== Node 1 ===
+....................................
+Len=63   @[  9,  3]  d_th=14.22 gap=0.043518 gain= 0.35129 (16 )==>   0  17  /  26   7 
+
+=== Node 3 ===
+....................................
+Len=29   @[ 31, 86]  d_th= 2.14 gap=0.053068 gain= 0.51675 (19 )==>   0   7  /  26   0 
+
+num_class=2, num_obj=33, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.12 sec
+  Time Rand Project =     0.61 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     0.43 sec
+Running  Time for this Shapelet=     1.30 sec <<
+
+
+Total Running  Time =     1.30 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TEST', 2, 150, 'manhattan', 0, 0, './replications/Gun_Point/Gun_Point_manhattan_unnormed_NOCID_REP07_tree.txt', './replications/Gun_Point/Gun_Point_manhattan_unnormed_NOCID_REP07_acc.txt']
+; accuracy= 88.000   Correct:132 , Wrong: 18
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  59    1 
+;   p  2 |  17   73 
+
+num_class=2, num_obj=150  distance=manhattan CID=false normalize=false ./replications/Gun_Point/Gun_Point_manhattan_unnormed_NOCID_REP07_tree.txt  ./replications/Gun_Point/Gun_Point_manhattan_unnormed_NOCID_REP07_acc.txt
+
+==> Tree Size = 8
+

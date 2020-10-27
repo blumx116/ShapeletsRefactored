@@ -1,0 +1,37 @@
+;Shapelet Tree 
+
+;random seed:1508183044, rand()=367284293, rand()=943394914
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN 3 36 126 1 2 10 euclidean 0 1 10 ./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP24_tree.txt ./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP24_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   0  1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 10 
+NonL  1    --      5   19   41   1.3487 ==>   0  12  11  /  12   0   1 
+NonL  2    --      0   88   29   0.3737 ==>   0  12   2  /   0   0   9 
+Leaf  3     0    
+NonL  4    --      0   52   35   0.5826 ==>   0  12   0  /   0   0   2 
+Leaf  5     2    
+Leaf  8     1    
+Leaf  9     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.630770 -0.502430 -0.394030 -0.287210 -0.170170 -0.072404  0.071421  0.205750  0.290880  0.320680  0.431330  0.483350  0.581570  0.674360  0.761610  0.805200  0.881570  0.991130  1.019500  1.078600  1.116700  1.133100  1.165800  1.253700  1.269100  1.266200  1.263400  1.219100  1.195600  1.150800  1.124800  1.081000  1.070600  1.042200  1.038800  1.058000  1.096900  1.074400  1.094000  1.071700  1.113800 
+Shapelet   2   0.222850  0.190080  0.144650  0.118380  0.076166  0.046068  0.032005 -0.046298 -0.110640 -0.160190 -0.246350 -0.322250 -0.412200 -0.457790 -0.550510 -0.623050 -0.651510 -0.762090 -0.847730 -0.922190 -0.965050 -1.020800 -1.092900 -1.155600 -1.166200 -1.186900 -1.154600 -1.172600 -1.181300 
+Shapelet   4   1.240600  1.240600  1.223000  1.255700  1.288900  1.254600  1.253600  1.288000  1.304800  1.304100  1.321000  1.285900  1.285400  1.267800  1.248200  1.225700  1.162600  1.140600  1.095300  1.097000  1.021600  0.988840  0.926410  0.877160  0.816550  0.785540  0.727750  0.661810  0.597560  0.577960  0.509230  0.509660  0.440190  0.387570  0.335920 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN 3 36 126 1 2 10 euclidean 0 1 10 ./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP24_tree.txt ./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP24_time.txt
+; time =>    5.746   0.321   1.446   0.144   3.671 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TEST 3 175 euclidean 0 1 ./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP24_tree.txt ./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP24_acc.txt
+; accuracy= 51.429   Correct:90 , Wrong: 85
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  23    4    2 
+;   p  1 |  10   24    8 
+;   p  2 |  36   25   43 
+

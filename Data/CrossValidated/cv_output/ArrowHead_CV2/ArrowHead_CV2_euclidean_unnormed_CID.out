@@ -1,0 +1,44 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV2', 3, 18, 126, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502275373
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=75   @[  2, 29]  d_th= 3.42 gap=0.033970 gain= 0.63651 (6  )==>   6   0   0  /   0   6   6 
+
+=== Node 3 ===
+.............................................................
+Len=97   @[  5,102]  d_th= 2.26 gap=0.020901 gain= 0.45391 (2  )==>   0   6   1  /   0   0   5 
+
+=== Node 6 ===
+.............................................................
+Len=103  @[  6, 78]  d_th= 1.24 gap=0.121873 gain= 0.41012 (5  )==>   0   0   1  /   0   6   0 
+
+num_class=3, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.14 sec
+  Time Rand Project =     0.62 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     2.25 sec
+Running  Time for this Shapelet=     3.16 sec <<
+
+
+Total Running  Time =     3.16 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV1', 3, 18, 'euclidean', 1, 0, './cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_unnormed_CID_acc.txt']
+; accuracy= 83.333   Correct:15 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |   6    1    0 
+;   p  1 |   0    3    0 
+;   p  2 |   0    2    6 
+
+num_class=3, num_obj=18  distance=euclidean CID=true normalize=false ./cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_unnormed_CID_tree.txt  ./cv_output/ArrowHead_CV2/ArrowHead_CV2_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 14
+

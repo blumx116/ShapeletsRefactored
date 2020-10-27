@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1501837418, rand()=509005821, rand()=202968441
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 euclidean 1 0 10 ./output/Gun/Gun_euclidean_unnormed_CID_REP06_tree.txt ./output/Gun/Gun_euclidean_unnormed_CID_REP06_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   2  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      2  100   15   0.7314 ==>   0  18  /  26   6 
+Leaf  2     1    
+NonL  3    --      8    9   35   1.3853 ==>   0   6  /  26   0 
+Leaf  6     1    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1   0.187740  0.039058 -0.078698 -0.208210 -0.312640 -0.389000 -0.451820 -0.499660 -0.533070 -0.557150 -0.562840 -0.577440 -0.598070 -0.620100 -0.637170 
+Shapelet   3  -1.312600 -1.319800 -1.331400 -1.339700 -1.332300 -1.326100 -1.310600 -1.295300 -1.295100 -1.303300 -1.295200 -1.258000 -1.208500 -1.124000 -1.027100 -0.940230 -0.874550 -0.846780 -0.826900 -0.820560 -0.817710 -0.814080 -0.821730 -0.820910 -0.812850 -0.796440 -0.796440 -0.790570 -0.778240 -0.758930 -0.738220 -0.708850 -0.660990 -0.549090 -0.411350 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 euclidean 1 0 10 ./output/Gun/Gun_euclidean_unnormed_CID_REP06_tree.txt ./output/Gun/Gun_euclidean_unnormed_CID_REP06_time.txt
+; time =>    2.626   0.139   0.767   0.086   1.561 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/Gun_Point_TEST 2 150 euclidean 1 0 ./output/Gun/Gun_euclidean_unnormed_CID_REP06_tree.txt ./output/Gun/Gun_euclidean_unnormed_CID_REP06_acc.txt
+; accuracy= 89.333   Correct:134 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  74   14 
+;   p  2 |   2   60 
+

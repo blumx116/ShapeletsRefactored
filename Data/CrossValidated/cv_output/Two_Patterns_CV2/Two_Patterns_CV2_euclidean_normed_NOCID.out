@@ -1,0 +1,57 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV2', 4, 501, 64, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/Two_Patterns_CV2/Two_Patterns_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/Two_Patterns_CV2/Two_Patterns_CV2_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502274552
+num_class=4, num_obj=501, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................
+Len=15   @[  2, 61]  d_th= 0.61 gap=0.000000 gain= 0.51749 (19 )==>  13   6 120 121  / 123 113   5   0 
+
+=== Node 2 ===
+..............................
+Len=13   @[  0, 72]  d_th= 0.11 gap=0.030128 gain= 0.55838 (152)==>  19 119 125   5  /   0   0   0 116 
+
+=== Node 3 ===
+..............................
+Len=41   @[  3, 34]  d_th= 4.49 gap=0.097982 gain= 0.00000 (115)==> 116   0   0   0  /   1   0   0   0 
+
+=== Node 4 ===
+..............................
+Len=15   @[  0, 61]  d_th= 0.61 gap=0.000000 gain= 0.49095 (18 )==>  13   5 120   5  /   6 114   5   0 
+
+=== Node 8 ===
+..............................
+Len=15   @[  0, 61]  d_th= 0.61 gap=0.000000 gain= 0.49095 (18 )==>  13   5 120   5  /   6 114   5   0 
+
+=== Node 16 ===
+..............................
+Len=15   @[  0, 61]  d_th= 0.61 gap=0.000000 gain= 0.49095 (18 )==>  13   5 120   5  /   6 114   5   0 
+
+num_class=4, num_obj=268, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.38 sec
+  Time Rand Project =    40.60 sec
+  Time Score Matrix =     2.75 sec
+  Time Compute Gain =    13.87 sec
+Running  Time for this Shapelet=    62.97 sec <<
+
+
+Total Running  Time =    62.97 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV1', 4, 499, 'euclidean', 0, 1, './cv_output/Two_Patterns_CV2/Two_Patterns_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/Two_Patterns_CV2/Two_Patterns_CV2_euclidean_normed_NOCID_acc.txt']
+; accuracy= 26.453   Correct:132 , Wrong: 367
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 | 122  115  115  121 
+;   p  2 |   0    0    0    0 
+;   p  3 |  13    3   10    0 
+;   p  4 |   0    0    0    0 
+
+num_class=4, num_obj=499  distance=euclidean CID=false normalize=true ./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_euclidean_normed_NOCID_tree.txt  ./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 34
+

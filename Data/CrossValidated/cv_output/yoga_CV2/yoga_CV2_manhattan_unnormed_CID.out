@@ -1,0 +1,71 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV2', 2, 151, 213, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/yoga_CV2/yoga_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/yoga_CV2/yoga_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502276903
+num_class=2, num_obj=151, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/yoga_CV2/yoga_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/yoga_CV2/yoga_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................................................................
+Len=131  @[  1,233]  d_th=57.42 gap=0.002198 gain= 0.10691 (47 )==>  29  70  /  40  12 
+
+=== Node 2 ===
+.........................................................................................................
+Len=187  @[ 18,105]  d_th=92.34 gap=0.032780 gain= 0.08104 (35 )==>  18  14  /  11  56 
+
+=== Node 3 ===
+.........................................................................................................
+Len=187  @[  4,238]  d_th=96.27 gap=0.043196 gain= 0.20735 (2  )==>  27   0  /  13  12 
+
+=== Node 4 ===
+.........................................................................................................
+Len=189  @[  7,161]  d_th=36.88 gap=0.052796 gain= 0.17942 (2  )==>  13   2  /   5  12 
+
+=== Node 5 ===
+.........................................................................................................
+Len=121  @[ 13,  2]  d_th=42.84 gap=0.174899 gain= 0.09322 (47 )==>   6   4  /   5  52 
+
+=== Node 7 ===
+.........................................................................................................
+Len=177  @[  4,228]  d_th=73.07 gap=0.125850 gain= 0.33245 (7  )==>   9   0  /   4  12 
+
+=== Node 8 ===
+.........................................................................................................
+Len=37   @[ 14, 66]  d_th= 3.25 gap=0.208338 gain= 0.39267 (11 )==>   0   2  /  13   0 
+
+=== Node 9 ===
+.........................................................................................................
+Len=47   @[  0,211]  d_th=13.71 gap=0.109248 gain= 0.60580 (7  )==>   5   0  /   0  12 
+
+=== Node 10 ===
+.........................................................................................................
+Len=177  @[  6,198]  d_th=27.91 gap=0.575999 gain= 0.67301 (2  )==>   0   4  /   6   0 
+
+=== Node 15 ===
+.........................................................................................................
+Len=19   @[  0,183]  d_th= 1.27 gap=0.033552 gain= 0.34199 (10 )==>   3   0  /   1  12 
+
+num_class=2, num_obj=16, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     5.29 sec
+  Time Rand Project =    21.37 sec
+  Time Score Matrix =     2.35 sec
+  Time Compute Gain =   117.98 sec
+Running  Time for this Shapelet=   149.25 sec <<
+
+
+Total Running  Time =   149.25 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV1', 2, 149, 'manhattan', 1, 0, './cv_output/yoga_CV2/yoga_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/yoga_CV2/yoga_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 68.456   Correct:102 , Wrong: 47
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  42   21 
+;   p  2 |  26   60 
+
+num_class=2, num_obj=149  distance=manhattan CID=true normalize=false ./cv_output/yoga_CV2/yoga_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/yoga_CV2/yoga_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 32
+

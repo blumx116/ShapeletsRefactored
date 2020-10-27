@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1503460948, rand()=692882032, rand()=1397289577
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 48 1 2 10 correlation 0 0 10 ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:  -1  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --     15    3   47   0.1200 ==>   3  33  /  13   2 
+Leaf  2     1    
+NonL  3    --     11   35   15   0.0556 ==>  13   0  /   0   2 
+Leaf  6    -1    
+Leaf  7     1    
+
+;Shapelet id   <data>
+Shapelet   1   1.936000  2.259500  1.741300  1.158300  0.418240 -0.071605 -0.241250 -0.243480 -0.263900 -0.621660 -0.418720 -0.188500 -0.623140 -0.935790 -1.117800 -1.245000 -1.327800 -1.354300 -1.261900 -1.280900 -1.367900 -1.509400 -1.749000 -1.691100 -1.575400 -1.834500 -1.848000 -1.774700 -2.059600 -2.179800 -2.021300 -1.799700 -1.589500 -1.450700 -1.292900 -1.036200 -0.729060 -0.415320 -0.202840  0.000305  0.215110  0.295560  0.405040  0.455400  0.542080  0.736760  0.671500 
+Shapelet   3  -1.668800 -1.635500 -1.481500 -1.332200 -1.259500 -1.146800 -0.919810 -0.742420 -0.755510 -0.809820 -0.626790 -0.203230  0.180670  0.319120  0.333520 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 48 1 2 10 correlation 0 0 10 ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_NOCID_time.txt
+; time =>    0.683   0.045   0.300   0.036   0.267 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1 2 49 correlation 0 0 ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_NOCID_acc.txt
+; accuracy= 67.347   Correct:33 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   5    6 
+;   p  1 |  10   28 
+

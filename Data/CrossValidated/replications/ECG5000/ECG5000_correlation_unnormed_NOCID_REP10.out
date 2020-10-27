@@ -1,0 +1,42 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'correlation', 0, 0, 10, './replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP10_tree.txt', './replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP10_time.txt']
+
+rand seed=1503366162
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP10_tree.txt  time_file=./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP10_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=41   @[325,  7]  d_th= 0.03 gap=0.000025 gain= 0.52303 (138)==>   0 162   3  16   0  / 292  15   7   3   2 
+
+=== Node 2 ===
+.................................
+Len=69   @[156, 61]  d_th= 0.59 gap=0.000054 gain= 0.08704 (169)==>   0 162   3  10   0  /   0   0   0   6   0 
+
+num_class=5, num_obj=181, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.22 sec
+  Time Rand Project =    13.20 sec
+  Time Score Matrix =     1.36 sec
+  Time Compute Gain =     7.68 sec
+Running  Time for this Shapelet=    24.61 sec <<
+
+
+Total Running  Time =    24.61 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'correlation', 0, 0, './replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP10_tree.txt', './replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP10_acc.txt']
+; accuracy= 89.933   Correct:4047 , Wrong: 453
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2615  181   61   23   16 
+;   p  2 |   9 1386   25  106    2 
+;   p  3 |   0    0    0    0    0 
+;   p  4 |   3   23    0   46    4 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=4500  distance=correlation CID=false normalize=false ./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP10_tree.txt  ./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP10_acc.txt
+
+==> Tree Size = 6
+

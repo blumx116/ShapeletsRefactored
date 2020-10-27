@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1502279643, rand()=1160765671, rand()=779927154
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1 2 31 256 1 2 10 manhattan 0 0 10 ./cv_output/Herring_CV1/Herring_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/Herring_CV1/Herring_CV1_manhattan_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --      0  125    9   0.2178 ==>  11   0  /   8  12 
+Leaf  2     1    
+NonL  3    --      2  358   31   1.9873 ==>   5   0  /   3  12 
+Leaf  6     1    
+NonL  7    --      1  240   19   0.5867 ==>   3   0  /   0  12 
+Leaf 14     1    
+Leaf 15     2    
+
+;Shapelet id   <data>
+Shapelet   1  -1.251800 -1.275800 -1.294100 -1.322000 -1.347900 -1.358200 -1.360500 -1.339200 -1.308700 
+Shapelet   3  -0.449290 -0.400990 -0.347580 -0.326390 -0.346650 -0.398730 -0.454900 -0.500680 -0.545360 -0.593890 -0.642190 -0.695770 -0.745760 -0.800780 -0.856760 -0.907540 -0.963480 -1.014200 -1.067700 -1.109000 -1.096200 -1.058400 -1.038000 -1.022100 -0.996080 -0.990610 -0.992840 -1.026300 -1.067300 -1.117000 -1.166400 
+Shapelet   7   1.208400  1.225300  1.226700  1.228700  1.237800  1.234600  1.238500  1.243000  1.232200  1.238000  1.234300  1.235500  1.201800  1.153200  1.120900  1.079100  1.032700  0.997290  1.008700 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1 2 31 256 1 2 10 manhattan 0 0 10 ./cv_output/Herring_CV1/Herring_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/Herring_CV1/Herring_CV1_manhattan_unnormed_NOCID_time.txt
+; time =>   13.187   0.908   2.924   0.311   8.703 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV2 2 33 manhattan 0 0 ./cv_output/Herring_CV1/Herring_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/Herring_CV1/Herring_CV1_manhattan_unnormed_NOCID_acc.txt
+; accuracy= 54.545   Correct:18 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  12    7 
+;   p  2 |   8    6 
+

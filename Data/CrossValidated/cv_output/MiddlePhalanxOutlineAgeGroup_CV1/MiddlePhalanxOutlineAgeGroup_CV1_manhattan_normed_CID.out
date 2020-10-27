@@ -1,0 +1,76 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxOutlineAgeGroup_TRAIN_CV1', 3, 76, 40, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_manhattan_normed_CID_tree.txt', './cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502274297
+num_class=3, num_obj=76, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................
+Len=39   @[ 29, 26]  d_th= 9.85 gap=0.025224 gain= 0.13235 (20 )==>   4  36   8  /  14   8   6 
+
+=== Node 2 ===
+..................
+Len=25   @[  0, 13]  d_th= 1.47 gap=0.004356 gain= 0.21965 (36 )==>   1   0   5  /   3  36   3 
+
+=== Node 3 ===
+..................
+Len=9    @[ 11, 53]  d_th= 1.93 gap=0.006770 gain= 0.26323 (6  )==>  10   1   6  /   4   7   0 
+
+=== Node 4 ===
+..................
+Len=37   @[  0, 17]  d_th= 2.25 gap=0.369877 gain= 0.45056 (4  )==>   1   0   0  /   0   0   5 
+
+=== Node 5 ===
+..................
+Len=39   @[  0, 36]  d_th= 3.41 gap=0.001793 gain= 0.22966 (20 )==>   3   5   3  /   0  31   0 
+
+=== Node 6 ===
+..................
+Len=5    @[  0, 41]  d_th= 1.28 gap=0.013608 gain= 0.33208 (1  )==>   7   1   0  /   3   0   6 
+
+=== Node 7 ===
+..................
+Len=7    @[  0, 11]  d_th= 0.54 gap=0.009695 gain= 0.65548 (3  )==>   4   0   0  /   0   7   0 
+
+=== Node 10 ===
+..................
+Len=5    @[  0,  7]  d_th= 0.98 gap=0.005363 gain= 0.58595 (5  )==>   3   5   0  /   0   0   3 
+
+=== Node 12 ===
+..................
+Len=33   @[  7, 44]  d_th= 1.40 gap=0.243643 gain= 0.37677 (6  )==>   0   1   0  /   7   0   0 
+
+=== Node 13 ===
+..................
+Len=35   @[  1,  1]  d_th= 3.10 gap=0.043972 gain= 0.63651 (3  )==>   3   0   0  /   0   0   6 
+
+=== Node 20 ===
+..................
+Len=9    @[  0, 10]  d_th= 0.84 gap=0.022788 gain= 0.38040 (0  )==>   3   1   0  /   0   4   0 
+
+num_class=3, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.10 sec
+  Time Rand Project =     0.45 sec
+  Time Score Matrix =     0.05 sec
+  Time Compute Gain =     1.17 sec
+Running  Time for this Shapelet=     1.82 sec <<
+
+
+Total Running  Time =     1.82 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxOutlineAgeGroup_TRAIN_CV2', 3, 78, 'manhattan', 1, 1, './cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_manhattan_normed_CID_tree.txt', './cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 47.436   Correct:37 , Wrong: 41
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   6    6    4 
+;   p  2 |  11   30   10 
+;   p  3 |   2    8    1 
+
+num_class=3, num_obj=78  distance=manhattan CID=true normalize=true ./cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_manhattan_normed_CID_tree.txt  ./cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 42
+

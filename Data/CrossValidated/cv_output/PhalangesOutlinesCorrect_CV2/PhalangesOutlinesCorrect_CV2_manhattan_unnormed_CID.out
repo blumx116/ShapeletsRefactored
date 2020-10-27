@@ -1,0 +1,55 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/PhalangesOutlinesCorrect_TRAIN_CV2', 2, 900, 40, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502274378
+num_class=2, num_obj=900, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=39   @[123, 29]  d_th= 6.35 gap=0.000261 gain= 0.05088 (478)==>  20 191  / 294 395 
+
+=== Node 3 ===
+..................
+Len=35   @[219,  9]  d_th= 6.67 gap=0.000390 gain= 0.04884 (255)==> 152 320  / 142  75 
+
+=== Node 6 ===
+..................
+Len=27   @[ 24, 48]  d_th= 3.91 gap=0.003110 gain= 0.08420 (398)==> 116 319  /  36   1 
+
+=== Node 7 ===
+..................
+Len=35   @[ 57, 30]  d_th= 5.52 gap=0.000883 gain= 0.15908 (11 )==>  47  67  /  95   8 
+
+=== Node 12 ===
+..................
+Len=21   @[  0,  0]  d_th= 3.98 gap=0.001102 gain= 0.03838 (369)==>  92 310  /  24   9 
+
+=== Node 14 ===
+..................
+Len=33   @[  5, 36]  d_th= 2.01 gap=0.002825 gain= 0.11578 (58 )==>  23   5  /  24  62 
+
+num_class=2, num_obj=114, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.90 sec
+  Time Rand Project =     5.33 sec
+  Time Score Matrix =     0.81 sec
+  Time Compute Gain =    10.46 sec
+Running  Time for this Shapelet=    18.13 sec <<
+
+
+Total Running  Time =    18.13 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/PhalangesOutlinesCorrect_TRAIN_CV1', 2, 900, 'manhattan', 1, 0, './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 45.889   Correct:413 , Wrong: 487
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 | 261  434 
+;   p  1 |  53  152 
+
+num_class=2, num_obj=900  distance=manhattan CID=true normalize=false ./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 30
+

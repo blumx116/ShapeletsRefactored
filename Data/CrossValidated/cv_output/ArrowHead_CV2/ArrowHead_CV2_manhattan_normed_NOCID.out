@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV2', 3, 18, 126, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502274514
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=75   @[  0,146]  d_th=13.70 gap=0.086740 gain= 0.63651 (6  )==>   6   0   0  /   0   6   6 
+
+=== Node 3 ===
+.............................................................
+Len=19   @[  0,132]  d_th= 1.28 gap=0.008265 gain= 0.69315 (0  )==>   0   6   0  /   0   0   6 
+
+num_class=3, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.11 sec
+  Time Rand Project =     0.41 sec
+  Time Score Matrix =     0.04 sec
+  Time Compute Gain =     1.36 sec
+Running  Time for this Shapelet=     1.97 sec <<
+
+
+Total Running  Time =     1.97 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV1', 3, 18, 'manhattan', 0, 1, './cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_NOCID_acc.txt']
+; accuracy= 94.444   Correct:17 , Wrong: 1
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |   5    0    0 
+;   p  1 |   0    6    0 
+;   p  2 |   1    0    6 
+
+num_class=3, num_obj=18  distance=manhattan CID=false normalize=true ./cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_NOCID_tree.txt  ./cv_output/ArrowHead_CV2/ArrowHead_CV2_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 8
+

@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1502491004, rand()=2017777742, rand()=494589434
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN 2 139 256 1 2 10 euclidean 1 0 10 ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_tree.txt ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   0  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 32 
+NonL  1    --      0   11   15   0.9396 ==>  32   0  /  72  35 
+Leaf  2     0    
+NonL  3    --     12   81   45   3.5887 ==>   0   6  /  72  29 
+Leaf  6     1    
+NonL  7    --      0  326    9   0.3284 ==>  23   0  /  49  29 
+Leaf 14     0    
+NonL 15    --      6  178  107  13.1543 ==>  33   5  /  16  24 
+Leaf 30     0    
+Leaf 31     1    
+
+;Shapelet id   <data>
+Shapelet   1  -0.269270 -0.269270 -0.269270 -0.269270 -0.269270 -0.269270  4.206100 -0.269270 -0.269270 -0.269270 -0.269270 -0.269270 -0.269270 -0.269270 -0.269270 
+Shapelet   3  -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200  1.862100 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200  2.090000 -0.447200 -0.447200  1.706800 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 -0.447200 
+Shapelet   7  -0.392960 -0.392960 -0.392960 -0.392960 -0.392960  1.870900 -0.392960 -0.392960  1.998400 
+Shapelet  15  -0.578200 -0.578200 -0.578200 -0.578200  1.540300 -0.578200 -0.578200  1.792000 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200  1.609700  1.418700 -0.578200 -0.578200 -0.578200 -0.578200  1.948300  1.219000 -0.578200 -0.578200  1.653100 -0.578200  1.809400  1.201700 -0.578200 -0.578200  2.078600 -0.578200 -0.578200 -0.578200 -0.578200  1.800700 -0.578200 -0.578200  1.609700 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200  1.201700 -0.578200  1.175600 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200  1.279800 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200  1.818100  1.870200 -0.578200 -0.578200  1.540300 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200 -0.578200  1.158200 -0.578200 -0.578200 -0.578200  1.965700 -0.578200  2.677600 -0.578200  1.601000 -0.578200  2.095900  2.330300 -0.578200 -0.578200  1.288500 -0.578200  1.305800 -0.578200  1.166900  2.807900  2.495300 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN 2 139 256 1 2 10 euclidean 1 0 10 ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_tree.txt ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_time.txt
+; time =>  426.464  14.890 198.509  12.113 189.770 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/Earthquakes_TEST 2 322 euclidean 1 0 ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_tree.txt ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_acc.txt
+; accuracy= 69.255   Correct:223 , Wrong: 99
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  21   62 
+;   p  0 |  37  202 
+

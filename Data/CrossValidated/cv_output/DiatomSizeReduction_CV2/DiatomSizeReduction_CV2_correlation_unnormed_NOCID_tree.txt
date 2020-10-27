@@ -1,0 +1,37 @@
+;Shapelet Tree 
+
+;random seed:1503461396, rand()=1347265139, rand()=1662090146
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV2 4 9 173 1 2 10 correlation 0 0 10 ./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1  2  3 
+;Real  Class:   1  2  3  4 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      1  160   23   0.0214 ==>   0   3   0   2  /   1   0   3   0 
+NonL  2    --      0   88    5   0.0128 ==>   0   3   0   0  /   0   0   0   2 
+NonL  3    --      0    3    7   0.0020 ==>   1   0   0   0  /   0   0   3   0 
+Leaf  4     2    
+Leaf  5     4    
+Leaf  6     1    
+Leaf  7     3    
+
+;Shapelet id   <data>
+Shapelet   1   1.267900  1.320000  1.367500  1.419500  1.472400  1.521400  1.569800  1.618900  1.668800  1.719500  1.770800  1.792600  1.792000  1.765300  1.737600  1.715800  1.664500  1.613900  1.564000  1.513500  1.461700  1.412100  1.359100 
+Shapelet   2  -1.285200 -1.270800 -1.217600 -1.208300 -1.197200 
+Shapelet   3   1.457900  1.421100  1.383500  1.389700  1.366100  1.321100  1.277600 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV2 4 9 173 1 2 10 correlation 0 0 10 ./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_time.txt
+; time =>    2.889   0.090   0.207   0.022   2.546 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV1 3 7 correlation 0 0 ./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/DiatomSizeReduction_CV2/DiatomSizeReduction_CV2_correlation_unnormed_NOCID_acc.txt
+; accuracy= 100.000   Correct:7 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   2    3    4 
+;   -----+------------------
+;   p  2 |   3    0    0 
+;   p  3 |   0    2    0 
+;   p  4 |   0    0    2 
+

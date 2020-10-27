@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/HandOutlines_TRAIN_CV1', 2, 184, 1355, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502502005
+num_class=2, num_obj=184, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=1231  @[117, 20]  d_th=177.78 gap=0.031854 gain= 0.37083 (58 )==>   9 112  /  57   6 
+
+num_class=2, num_obj=184, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    39.78 sec
+  Time Rand Project =    44.17 sec
+  Time Score Matrix =     5.50 sec
+  Time Compute Gain =  8401.42 sec
+Running  Time for this Shapelet=  8497.22 sec <<
+
+
+Total Running  Time =  8497.22 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/HandOutlines_TRAIN_CV2', 2, 186, 'manhattan', 0, 1, './cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_normed_NOCID_acc.txt']
+; accuracy= 87.634   Correct:163 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  54   10 
+;   p  1 |  13  109 
+
+num_class=2, num_obj=186  distance=manhattan CID=false normalize=true ./cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_normed_NOCID_tree.txt  ./cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 4
+

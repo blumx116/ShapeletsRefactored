@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 1, 10, './replications/Herring/Herring_euclidean_normed_NOCID_REP22_tree.txt', './replications/Herring/Herring_euclidean_normed_NOCID_REP22_time.txt']
+
+rand seed=1508198120
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Herring/Herring_euclidean_normed_NOCID_REP22_tree.txt  time_file=./replications/Herring/Herring_euclidean_normed_NOCID_REP22_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=93   @[  9, 11]  d_th= 0.45 gap=0.000098 gain= 0.13190 (48 )==>   0   8  /  39  17 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=195  @[  7,305]  d_th= 1.53 gap=0.000104 gain= 0.14341 (44 )==>   0   6  /  39  11 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=19   @[  0, 68]  d_th= 0.14 gap=0.000397 gain= 0.13261 (10 )==>  19  11  /  20   0 
+
+=== Node 14 ===
+..............................................................................................................................
+Len=33   @[  0,141]  d_th= 1.06 gap=0.001598 gain= 0.28925 (4  )==>  13   0  /   6  11 
+
+num_class=2, num_obj=30, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.42 sec
+  Time Rand Project =    12.98 sec
+  Time Score Matrix =     1.37 sec
+  Time Compute Gain =    74.46 sec
+Running  Time for this Shapelet=    93.65 sec <<
+
+
+Total Running  Time =    93.65 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 1, './replications/Herring/Herring_euclidean_normed_NOCID_REP22_tree.txt', './replications/Herring/Herring_euclidean_normed_NOCID_REP22_acc.txt']
+; accuracy= 59.375   Correct:38 , Wrong: 26
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  24   12 
+;   p  2 |  14   14 
+
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=true ./replications/Herring/Herring_euclidean_normed_NOCID_REP22_tree.txt  ./replications/Herring/Herring_euclidean_normed_NOCID_REP22_acc.txt
+
+==> Tree Size = 30
+

@@ -1,0 +1,55 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'correlation', 0, 0, 10, './replications/Herring/Herring_correlation_unnormed_NOCID_REP08_tree.txt', './replications/Herring/Herring_correlation_unnormed_NOCID_REP08_time.txt']
+
+rand seed=1503429464
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Herring/Herring_correlation_unnormed_NOCID_REP08_tree.txt  time_file=./replications/Herring/Herring_correlation_unnormed_NOCID_REP08_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=103  @[  2, 13]  d_th= 0.01 gap=0.000006 gain= 0.13468 (2  )==>  11  20  /  28   5 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=25   @[  1,335]  d_th= 0.00 gap=0.000000 gain= 0.22173 (1  )==>   1  15  /  10   5 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=117  @[  0,268]  d_th= 0.01 gap=0.000005 gain= 0.21528 (13 )==>  23   0  /   5   5 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=29   @[  9,385]  d_th= 0.04 gap=0.000122 gain= 0.45629 (3  )==>   1   5  /   9   0 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=37   @[  5, 95]  d_th= 0.01 gap=0.000087 gain= 0.69315 (0  )==>   0   5  /   5   0 
+
+=== Node 10 ===
+..............................................................................................................................
+Len=19   @[  1, 94]  d_th= 0.06 gap=0.005823 gain= 0.45056 (4  )==>   0   5  /   1   0 
+
+num_class=2, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.18 sec
+  Time Rand Project =     7.18 sec
+  Time Score Matrix =     0.80 sec
+  Time Compute Gain =    70.11 sec
+Running  Time for this Shapelet=    81.12 sec <<
+
+
+Total Running  Time =    81.12 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'correlation', 0, 0, './replications/Herring/Herring_correlation_unnormed_NOCID_REP08_tree.txt', './replications/Herring/Herring_correlation_unnormed_NOCID_REP08_acc.txt']
+; accuracy= 54.688   Correct:35 , Wrong: 29
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  27   18 
+;   p  2 |  11    8 
+
+num_class=2, num_obj=64  distance=correlation CID=false normalize=false ./replications/Herring/Herring_correlation_unnormed_NOCID_REP08_tree.txt  ./replications/Herring/Herring_correlation_unnormed_NOCID_REP08_acc.txt
+
+==> Tree Size = 22
+

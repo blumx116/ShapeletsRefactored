@@ -1,0 +1,50 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'correlation', 0, 0, 10, './replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_tree.txt', './replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_time.txt']
+
+rand seed=1503366021
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_tree.txt  time_file=./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=29   @[292,  9]  d_th= 0.03 gap=0.000011 gain= 0.53830 (118)==>   4 169   1  17   0  / 288   8   9   2   2 
+
+=== Node 2 ===
+.................................
+Len=39   @[ 76, 78]  d_th= 0.49 gap=0.004904 gain= 0.11940 (171)==>   0 168   1  12   0  /   4   1   0   5   0 
+
+=== Node 5 ===
+.................................
+Len=31   @[  5,102]  d_th= 0.02 gap=0.001372 gain= 0.69315 (0  )==>   0   0   0   5   0  /   4   1   0   0   0 
+
+=== Node 11 ===
+.................................
+Len=43   @[  2, 78]  d_th= 0.42 gap=0.034172 gain= 0.50040 (3  )==>   4   0   0   0   0  /   0   1   0   0   0 
+
+num_class=5, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.29 sec
+  Time Rand Project =    13.19 sec
+  Time Score Matrix =     1.36 sec
+  Time Compute Gain =     7.93 sec
+Running  Time for this Shapelet=    24.92 sec <<
+
+
+Total Running  Time =    24.92 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'correlation', 0, 0, './replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_tree.txt', './replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_acc.txt']
+; accuracy= 91.956   Correct:4138 , Wrong: 362
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2617   97   65   29   15 
+;   p  2 |   9 1485   21  110    7 
+;   p  3 |   0    0    0    0    0 
+;   p  4 |   1    8    0   36    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=4500  distance=correlation CID=false normalize=false ./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_tree.txt  ./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_acc.txt
+
+==> Tree Size = 24
+

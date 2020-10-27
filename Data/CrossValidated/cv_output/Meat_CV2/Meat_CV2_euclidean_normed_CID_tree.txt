@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1502280308, rand()=1520770016, rand()=253246337
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV2 3 30 224 1 2 10 euclidean 1 1 10 ./cv_output/Meat_CV2/Meat_CV2_euclidean_normed_CID_tree.txt ./cv_output/Meat_CV2/Meat_CV2_euclidean_normed_CID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --      0    0   33   1.9974 ==>  10   0  10  /   0  10   0 
+NonL  2    --      0  172   47   0.3322 ==>  10   0   0  /   0   0  10 
+Leaf  3     2    
+Leaf  4     1    
+Leaf  5     3    
+
+;Shapelet id   <data>
+Shapelet   1  -0.216490 -0.225040 -0.225800 -0.231840 -0.228280 -0.233340 -0.236060 -0.239420 -0.241460 -0.237240 -0.236880 -0.231890 -0.222000 -0.219110 -0.212680 -0.205610 -0.197240 -0.177590 -0.172860 -0.171400 -0.167050 -0.166100 -0.172720 -0.180510 -0.177320 -0.169060 -0.167260 -0.160320 -0.156560 -0.148350 -0.136630 -0.124120 -0.105080 
+Shapelet   2  -0.245230 -0.244810 -0.252690 -0.250130 -0.256890 -0.254010 -0.261010 -0.265170 -0.258140 -0.258030 -0.257210 -0.258870 -0.256500 -0.251200 -0.245120 -0.240310 -0.230380 -0.230010 -0.226350 -0.222180 -0.221220 -0.198570 -0.165830 -0.141290 -0.105420 -0.072307 -0.038535 -0.006519  0.026564  0.062312  0.083289  0.089228  0.087806  0.072658  0.064199  0.047492  0.014843 -0.005941 -0.015368 -0.039590 -0.052443 -0.058865 -0.070839 -0.103040 -0.123060 -0.129130 -0.151770 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV2 3 30 224 1 2 10 euclidean 1 1 10 ./cv_output/Meat_CV2/Meat_CV2_euclidean_normed_CID_tree.txt ./cv_output/Meat_CV2/Meat_CV2_euclidean_normed_CID_time.txt
+; time =>   24.403   0.555   1.736   0.163  21.758 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV1 3 30 euclidean 1 1 ./cv_output/Meat_CV2/Meat_CV2_euclidean_normed_CID_tree.txt ./cv_output/Meat_CV2/Meat_CV2_euclidean_normed_CID_acc.txt
+; accuracy= 56.667   Correct:17 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   3    4    0 
+;   p  2 |   2    4    0 
+;   p  3 |   5    2   10 
+

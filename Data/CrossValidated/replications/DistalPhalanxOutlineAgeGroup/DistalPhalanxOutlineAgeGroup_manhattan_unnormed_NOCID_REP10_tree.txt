@@ -1,0 +1,55 @@
+;Shapelet Tree 
+
+;random seed:1501823802, rand()=681017875, rand()=1692453961
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TRAIN 3 139 40 1 2 10 manhattan 0 0 10 ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_NOCID_REP10_tree.txt ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_NOCID_REP10_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   2  3  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 48 
+NonL  1    --      0   21    9   2.5042 ==>  58  27  15  /   1  38   0 
+NonL  2    --      6   56   13   1.9248 ==>   4   0  13  /  54  27   2 
+Leaf  3     3    
+NonL  4    --      0    4    5   0.4410 ==>   0   0  11  /   4   0   2 
+NonL  5    --      0   22    7   0.7334 ==>  28  25   0  /  26   2   2 
+Leaf  8     1    
+NonL  9    --      4   16   25   2.1339 ==>   0   0   2  /   4   0   0 
+NonL 10    --      1   41   31   4.7107 ==>   0  10   0  /  28  15   0 
+NonL 11    --      0   20    7   0.8830 ==>  22   0   0  /   4   2   2 
+Leaf 18     1    
+Leaf 19     2    
+Leaf 20     3    
+NonL 21    --      0   35   31   4.5996 ==>  24   5   0  /   4  10   0 
+Leaf 22     2    
+NonL 23    --      0   34   15   2.8546 ==>   0   0   2  /   4   2   0 
+Leaf 42     2    
+Leaf 43     3    
+Leaf 46     1    
+Leaf 47     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.445840 -0.763090 -0.931560 -1.009000 -0.809310 -0.492130 -0.202430  0.106320  0.425890 
+Shapelet   2  -1.226500 -1.221200 -1.276200 -1.238900 -1.101100 -0.977060 -0.911640 -0.830990 -0.668070 -0.496450 -0.658100 -0.799150 -0.847220 
+Shapelet   4   0.152450  0.530050  0.768810  1.104200  1.176600 
+Shapelet   5  -0.763090 -0.931560 -1.009000 -0.809310 -0.492130 -0.202430  0.106320 
+Shapelet   9   0.836040  0.712860  0.456460  0.194530 -0.030864 -0.223200 -0.485280 -0.638420 -0.660860 -0.546900 -0.263720  0.033640  0.338160  0.653960  0.982460  1.321000  1.647200  1.549800  1.347100  1.285000  1.264700  1.367200  1.351100  1.454700  1.469100 
+Shapelet  10   1.612700  1.310100  0.951050  0.629770  0.272800 -0.081916 -0.444490 -0.746160 -0.884770  0.030128  0.114580  0.013788 -0.286010 -0.493930 -0.725830 -1.025900 -1.306700 -1.490300 -1.482300 -1.382200 -1.256800 -1.008400 -0.773230 -0.512220 -0.338770 -0.235340 -0.409260 -0.610350 -0.910440 -1.194100 -1.395300 
+Shapelet  11   0.111140  0.147820 -0.152010 -0.399590 -0.694480 -0.807760 -0.745100 
+Shapelet  21   1.380600  1.320100  1.307200  1.408900  1.543200  1.664100  1.694700  1.513900  1.182200  0.833830  0.457720  0.088686 -0.306990 -0.557210 -0.811970 -0.080178 -0.182990 -0.510670 -0.705460 -0.958010 -1.261900 -1.467900 -1.570300 -1.484300 -1.237700 -0.972340 -0.739300 -0.473590 -0.247680 -0.086920 -0.169570 
+Shapelet  23   0.874200  1.058200  1.270400  1.620300  1.861400  1.999800  1.991700  1.792600  1.478100  1.102000  0.747660  0.333290 -0.015557 -0.351180 -0.649080 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TRAIN 3 139 40 1 2 10 manhattan 0 0 10 ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_NOCID_REP10_tree.txt ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_NOCID_REP10_time.txt
+; time =>    2.434   0.240   1.369   0.181   0.520 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TEST 3 400 manhattan 0 0 ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_NOCID_REP10_tree.txt ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_manhattan_unnormed_NOCID_REP10_acc.txt
+; accuracy= 78.250   Correct:313 , Wrong: 87
+
+
+;   == Confusion Matrix ==
+;   real |   2    3    1 
+;   -----+------------------
+;   p  2 |  78   34   13 
+;   p  3 |  33  223    5 
+;   p  1 |   2    0   12 
+
