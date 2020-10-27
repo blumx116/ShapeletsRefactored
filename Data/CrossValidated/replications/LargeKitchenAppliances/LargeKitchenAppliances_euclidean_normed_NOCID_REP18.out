@@ -1,0 +1,73 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/LargeKitchenAppliances_TRAIN', 3, 375, 360, 1, 2, 10, 'euclidean', 0, 1, 10, './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_normed_NOCID_REP18_tree.txt', './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_normed_NOCID_REP18_time.txt']
+
+rand seed=1508359672
+num_class=3, num_obj=375, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_normed_NOCID_REP18_tree.txt  time_file=./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_normed_NOCID_REP18_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.31112 (29 )==>   1  64 108  / 124  61  17 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.45455 (0  )==>   0  53 108  / 103  58   0 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=335  @[ 45,220]  d_th=18.65 gap=0.004715 gain= 0.47960 (23 )==>   0   0  15  /  22  14   2 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.45455 (0  )==>   0  53 108  / 103  58   0 
+
+=== Node 5 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 7 ===
+..................................................................................................................................................................................
+Len=209  @[  8,251]  d_th=13.99 gap=0.027915 gain= 0.50426 (6  )==>  20   0   2  /   2  14   0 
+
+=== Node 8 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.45455 (0  )==>   0  53 108  / 103  58   0 
+
+=== Node 9 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 15 ===
+..................................................................................................................................................................................
+Len=127  @[  2,156]  d_th= 8.96 gap=0.567823 gain= 0.37677 (12 )==>   0  14   0  /   2   0   0 
+
+=== Node 16 ===
+..................................................................................................................................................................................
+Len=33   @[  1,258]  d_th= 3.33 gap=0.000677 gain= 0.29542 (100)==>  89  12  10  /  14  99  98 
+
+=== Node 17 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=17 
+
+num_class=3, num_obj=0, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    42.55 sec
+  Time Rand Project =   128.85 sec
+  Time Score Matrix =    15.50 sec
+  Time Compute Gain =  1748.35 sec
+Running  Time for this Shapelet=  1946.59 sec <<
+
+
+Total Running  Time =  1946.59 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/LargeKitchenAppliances_TEST', 3, 375, 'euclidean', 0, 1, './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_normed_NOCID_REP18_tree.txt', './replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_normed_NOCID_REP18_acc.txt']
+; accuracy= 56.800   Correct:213 , Wrong: 162
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  92   14   14 
+;   p  2 |  28  110  100 
+;   p  3 |   5    1   11 
+
+num_class=3, num_obj=375  distance=euclidean CID=false normalize=true ./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_normed_NOCID_REP18_tree.txt  ./replications/LargeKitchenAppliances/LargeKitchenAppliances_euclidean_normed_NOCID_REP18_acc.txt
+
+==> Tree Size = 34
+

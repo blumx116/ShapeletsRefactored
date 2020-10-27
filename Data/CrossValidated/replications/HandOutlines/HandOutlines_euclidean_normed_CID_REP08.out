@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TRAIN', 2, 370, 1355, 1, 2, 10, 'euclidean', 1, 1, 10, './replications/HandOutlines/HandOutlines_euclidean_normed_CID_REP08_tree.txt', './replications/HandOutlines/HandOutlines_euclidean_normed_CID_REP08_time.txt']
+
+rand seed=1503806766
+num_class=2, num_obj=370, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/HandOutlines/HandOutlines_euclidean_normed_CID_REP08_tree.txt  time_file=./replications/HandOutlines/HandOutlines_euclidean_normed_CID_REP08_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,0]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=937  @[ 25,191]  d_th=10.75 gap=0.000901 gain= 0.34170 (142)==> 229  27  /   8 106 
+
+=== Node 2 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=1191  @[ 94,209]  d_th= 4.56 gap=0.000025 gain= 0.06447 (222)==>   6  11  / 223  16 
+
+=== Node 4 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=51   @[  0,562]  d_th= 0.54 gap=0.001131 gain= 0.44678 (7  )==>   1  11  /   5   0 
+
+num_class=2, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =   132.94 sec
+  Time Rand Project =   162.11 sec
+  Time Score Matrix =    19.72 sec
+  Time Compute Gain = 38176.24 sec
+Running  Time for this Shapelet= 38516.66 sec <<
+
+
+Total Running  Time = 38516.66 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TEST', 2, 1000, 'euclidean', 1, 1, './replications/HandOutlines/HandOutlines_euclidean_normed_CID_REP08_tree.txt', './replications/HandOutlines/HandOutlines_euclidean_normed_CID_REP08_acc.txt']
+; accuracy= 84.300   Correct:843 , Wrong: 157
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 | 218   13 
+;   p  1 | 144  625 
+
+num_class=2, num_obj=1000  distance=euclidean CID=true normalize=true ./replications/HandOutlines/HandOutlines_euclidean_normed_CID_REP08_tree.txt  ./replications/HandOutlines/HandOutlines_euclidean_normed_CID_REP08_acc.txt
+
+==> Tree Size = 10
+

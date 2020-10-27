@@ -1,0 +1,30 @@
+;Shapelet Tree 
+
+;random seed:1501834985, rand()=479186398, rand()=1926068133
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECGFiveDays_TRAIN 2 23 68 1 2 10 euclidean 1 0 10 ./output/ECGFiveDays/ECGFiveDays_euclidean_unnormed_CID_REP09_tree.txt ./output/ECGFiveDays/ECGFiveDays_euclidean_unnormed_CID_REP09_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 4 
+NonL  1    --      1   57   33   4.9236 ==>  14   1  /   0   8 
+Leaf  2     1    
+Leaf  3     2    
+
+;Shapelet id   <data>
+Shapelet   1  -5.271000 -3.480100 -1.868700 -0.808110 -0.371610 -0.228840 -0.118690 -0.073819 -0.012628  0.003689  0.048563  0.040404  0.121990  0.187260  0.228060  0.285170  0.346360  0.419790  0.538090  0.652310  0.815490  1.035800  1.296900  1.606900  1.941400  2.288100  2.610400  2.875600  2.965300  2.847000  2.451300  1.896500  1.256100 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECGFiveDays_TRAIN 2 23 68 1 2 10 euclidean 1 0 10 ./output/ECGFiveDays/ECGFiveDays_euclidean_unnormed_CID_REP09_tree.txt ./output/ECGFiveDays/ECGFiveDays_euclidean_unnormed_CID_REP09_time.txt
+; time =>    0.553   0.033   0.214   0.024   0.265 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ECGFiveDays_TEST 2 861 euclidean 1 0 ./output/ECGFiveDays/ECGFiveDays_euclidean_unnormed_CID_REP09_tree.txt ./output/ECGFiveDays/ECGFiveDays_euclidean_unnormed_CID_REP09_acc.txt
+; accuracy= 80.256   Correct:691 , Wrong: 170
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 275   12 
+;   p  1 | 158  416 
+

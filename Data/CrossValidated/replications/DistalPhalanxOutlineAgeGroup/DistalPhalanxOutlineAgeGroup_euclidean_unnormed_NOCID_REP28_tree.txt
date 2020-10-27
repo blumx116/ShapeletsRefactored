@@ -1,0 +1,49 @@
+;Shapelet Tree 
+
+;random seed:1508180421, rand()=503397942, rand()=1226069070
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TRAIN 3 139 40 1 2 10 euclidean 0 0 10 ./replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP28_tree.txt ./replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP28_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   2  3  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 40 
+NonL  1    --      0   17   11   1.0784 ==>  58  27  15  /   1  38   0 
+NonL  2    --     66   33   35   2.1339 ==>  54  27   3  /   4   0  12 
+Leaf  3     3    
+NonL  4    --      1   38   39   1.0536 ==>   0  10   1  /  54  17   2 
+NonL  5    --      1   63   13   0.4769 ==>   1   0  12  /   3   0   0 
+Leaf  8     3    
+NonL  9    --      0   13    7   0.3932 ==>  54  15   0  /   0   2   2 
+Leaf 10     1    
+Leaf 11     2    
+NonL 18    --      0   10    7   0.2251 ==>  20  13   0  /  34   2   0 
+NonL 19    --      0   38    7   0.7609 ==>   0   0   2  /   0   2   0 
+Leaf 36     2    
+Leaf 37     2    
+Leaf 38     1    
+Leaf 39     3    
+
+;Shapelet id   <data>
+Shapelet   1   0.582900  0.299100  0.030086 -0.127690 -0.445840 -0.763090 -0.931560 -1.009000 -0.809310 -0.492130 -0.202430 
+Shapelet   2   1.385000  1.225400  1.292400  1.095400  1.092900  1.354300  1.369800  1.463800  1.576200  1.481700  1.147900  0.796940  0.383270  0.026053 -0.367320 -0.690920 -0.955600  0.413240  0.263930 -0.030721 -0.498230 -0.785910 -1.127500 -1.532200 -1.818900 -1.747300 -1.488200 -1.169900 -0.845860 -0.393880 -0.119850  0.173860  0.242370  0.095277 -0.197240 
+Shapelet   4   1.415100  1.547500  1.700300  1.612700  1.310100  0.951050  0.629770  0.272800 -0.081916 -0.444490 -0.746160 -0.884770  0.030128  0.114580  0.013788 -0.286010 -0.493930 -0.725830 -1.025900 -1.306700 -1.490300 -1.482300 -1.382200 -1.256800 -1.008400 -0.773230 -0.512220 -0.338770 -0.235340 -0.409260 -0.610350 -0.910440 -1.194100 -1.395300 -1.537000 -1.468600 -1.277800 -1.030900 -0.856200 
+Shapelet   5  -0.503710 -0.521270 -0.622610 -0.706530 -0.774850 -0.916520 -1.041400 -1.140100 -1.200200 -1.358100 -1.414000 -1.335700 -1.169900 
+Shapelet   9   1.341100  1.173000  0.953170  0.673320  0.582900  0.299100  0.030086 
+Shapelet  18   1.403500  1.444300  1.469200  1.341100  1.173000  0.953170  0.673320 
+Shapelet  19   1.861400  1.999800  1.991700  1.792600  1.478100  1.102000  0.747660 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TRAIN 3 139 40 1 2 10 euclidean 0 0 10 ./replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP28_tree.txt ./replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP28_time.txt
+; time =>    2.216   0.222   1.234   0.162   0.478 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TEST 3 400 euclidean 0 0 ./replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP28_tree.txt ./replications/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_NOCID_REP28_acc.txt
+; accuracy= 83.750   Correct:335 , Wrong: 65
+
+
+;   == Confusion Matrix ==
+;   real |   2    3    1 
+;   -----+------------------
+;   p  2 |  94   32    8 
+;   p  3 |  15  223    4 
+;   p  1 |   4    2   18 
+

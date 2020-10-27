@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FaceFour_TRAIN_CV1', 4, 11, 175, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/FaceFour_CV1/FaceFour_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/FaceFour_CV1/FaceFour_CV1_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502276164
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/FaceFour_CV1/FaceFour_CV1_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/FaceFour_CV1/FaceFour_CV1_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+......................................................................................
+Len=163  @[  5, 67]  d_th=12.68 gap=0.117561 gain= 0.68901 (1  )==>   0   4   0   2  /   4   0   1   0 
+
+=== Node 2 ===
+......................................................................................
+Len=115  @[  4, 82]  d_th= 7.68 gap=0.284320 gain= 0.63651 (2  )==>   0   0   0   2  /   0   4   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=169  @[  0, 11]  d_th=10.87 gap=0.323285 gain= 0.50040 (3  )==>   4   0   0   0  /   0   0   1   0 
+
+num_class=4, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.27 sec
+  Time Rand Project =     1.72 sec
+  Time Score Matrix =     0.15 sec
+  Time Compute Gain =     2.87 sec
+Running  Time for this Shapelet=     5.20 sec <<
+
+
+Total Running  Time =     5.20 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FaceFour_TRAIN_CV2', 4, 13, 'euclidean', 0, 1, './cv_output/FaceFour_CV1/FaceFour_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/FaceFour_CV1/FaceFour_CV1_euclidean_normed_NOCID_acc.txt']
+; accuracy= 92.308   Correct:12 , Wrong: 1
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   4    0    0    1 
+;   p  2 |   0    4    0    0 
+;   p  3 |   0    0    2    0 
+;   p  4 |   0    0    0    2 
+
+num_class=4, num_obj=13  distance=euclidean CID=false normalize=true ./cv_output/FaceFour_CV1/FaceFour_CV1_euclidean_normed_NOCID_tree.txt  ./cv_output/FaceFour_CV1/FaceFour_CV1_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 8
+

@@ -1,0 +1,55 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineCorrect_TRAIN_CV1', 2, 137, 40, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/DistalPhalanxOutlineCorrect_CV1/DistalPhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/DistalPhalanxOutlineCorrect_CV1/DistalPhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502274282
+num_class=2, num_obj=137, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/DistalPhalanxOutlineCorrect_CV1/DistalPhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/DistalPhalanxOutlineCorrect_CV1/DistalPhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=37   @[ 11, 30]  d_th= 6.21 gap=0.003617 gain= 0.19161 (19 )==>   5  54  /  52  26 
+
+=== Node 3 ===
+..................
+Len=27   @[ 39, 17]  d_th= 3.54 gap=0.004490 gain= 0.17268 (20 )==>   9  20  /  43   6 
+
+=== Node 6 ===
+..................
+Len=39   @[  1, 33]  d_th= 6.87 gap=0.031550 gain= 0.22485 (5  )==>   8   4  /   1  16 
+
+=== Node 7 ===
+..................
+Len=17   @[  0,  1]  d_th= 2.13 gap=0.000236 gain= 0.10870 (5  )==>  16   6  /  27   0 
+
+=== Node 12 ===
+..................
+Len=21   @[  9, 45]  d_th= 3.41 gap=0.019411 gain= 0.42801 (2  )==>   1   4  /   7   0 
+
+=== Node 14 ===
+..................
+Len=27   @[ 16,  5]  d_th= 3.05 gap=0.030461 gain= 0.20927 (16 )==>   0   3  /  16   3 
+
+num_class=2, num_obj=22, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.14 sec
+  Time Rand Project =     0.78 sec
+  Time Score Matrix =     0.10 sec
+  Time Compute Gain =     0.77 sec
+Running  Time for this Shapelet=     1.89 sec <<
+
+
+Total Running  Time =     1.89 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineCorrect_TRAIN_CV2', 2, 139, 'manhattan', 0, 1, './cv_output/DistalPhalanxOutlineCorrect_CV1/DistalPhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/DistalPhalanxOutlineCorrect_CV1/DistalPhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_acc.txt']
+; accuracy= 61.151   Correct:85 , Wrong: 54
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  46   42 
+;   p  1 |  12   39 
+
+num_class=2, num_obj=139  distance=manhattan CID=false normalize=true ./cv_output/DistalPhalanxOutlineCorrect_CV1/DistalPhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_tree.txt  ./cv_output/DistalPhalanxOutlineCorrect_CV1/DistalPhalanxOutlineCorrect_CV1_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 30
+

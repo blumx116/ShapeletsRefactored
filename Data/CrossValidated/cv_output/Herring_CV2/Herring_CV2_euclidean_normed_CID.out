@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV2', 2, 33, 256, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/Herring_CV2/Herring_CV2_euclidean_normed_CID_tree.txt', './cv_output/Herring_CV2/Herring_CV2_euclidean_normed_CID_time.txt']
+
+rand seed=1502292006
+num_class=2, num_obj=33, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Herring_CV2/Herring_CV2_euclidean_normed_CID_tree.txt  time_file=./cv_output/Herring_CV2/Herring_CV2_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=11   @[  0,109]  d_th= 0.60 gap=0.000219 gain= 0.29138 (17 )==>  20   5  /   0   8 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=15   @[  0,123]  d_th= 0.41 gap=0.002458 gain= 0.28870 (9  )==>  17   0  /   3   5 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=77   @[  4, 76]  d_th= 1.78 gap=0.043342 gain= 0.66156 (2  )==>   0   5  /   3   0 
+
+num_class=2, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.92 sec
+  Time Rand Project =     2.98 sec
+  Time Score Matrix =     0.33 sec
+  Time Compute Gain =    41.87 sec
+Running  Time for this Shapelet=    46.45 sec <<
+
+
+Total Running  Time =    46.45 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1', 2, 31, 'euclidean', 1, 1, './cv_output/Herring_CV2/Herring_CV2_euclidean_normed_CID_tree.txt', './cv_output/Herring_CV2/Herring_CV2_euclidean_normed_CID_acc.txt']
+; accuracy= 61.290   Correct:19 , Wrong: 12
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  13    6 
+;   p  2 |   6    6 
+
+num_class=2, num_obj=31  distance=euclidean CID=true normalize=true ./cv_output/Herring_CV2/Herring_CV2_euclidean_normed_CID_tree.txt  ./cv_output/Herring_CV2/Herring_CV2_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 12
+

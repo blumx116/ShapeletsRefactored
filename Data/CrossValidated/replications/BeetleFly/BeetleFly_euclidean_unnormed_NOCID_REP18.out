@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/BeetleFly_TRAIN', 2, 20, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/BeetleFly/BeetleFly_euclidean_unnormed_NOCID_REP18_tree.txt', './replications/BeetleFly/BeetleFly_euclidean_unnormed_NOCID_REP18_time.txt']
+
+rand seed=1508199174
+num_class=2, num_obj=20, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/BeetleFly/BeetleFly_euclidean_unnormed_NOCID_REP18_tree.txt  time_file=./replications/BeetleFly/BeetleFly_euclidean_unnormed_NOCID_REP18_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=87   @[  5,411]  d_th= 3.97 gap=0.041213 gain= 0.52560 (2  )==>   9   0  /   1  10 
+
+num_class=2, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.56 sec
+  Time Rand Project =     3.28 sec
+  Time Score Matrix =     0.23 sec
+  Time Compute Gain =     1.95 sec
+Running  Time for this Shapelet=     6.33 sec <<
+
+
+Total Running  Time =     6.33 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/BeetleFly_TEST', 2, 20, 'euclidean', 0, 0, './replications/BeetleFly/BeetleFly_euclidean_unnormed_NOCID_REP18_tree.txt', './replications/BeetleFly/BeetleFly_euclidean_unnormed_NOCID_REP18_acc.txt']
+; accuracy= 70.000   Correct:14 , Wrong: 6
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   5    1 
+;   p  2 |   5    9 
+
+num_class=2, num_obj=20  distance=euclidean CID=false normalize=false ./replications/BeetleFly/BeetleFly_euclidean_unnormed_NOCID_REP18_tree.txt  ./replications/BeetleFly/BeetleFly_euclidean_unnormed_NOCID_REP18_acc.txt
+
+==> Tree Size = 4
+

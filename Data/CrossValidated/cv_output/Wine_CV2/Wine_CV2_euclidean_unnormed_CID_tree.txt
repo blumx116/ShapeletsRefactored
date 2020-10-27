@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1502274838, rand()=1986888692, rand()=1340226465
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV2 2 29 117 1 2 10 euclidean 1 0 10 ./cv_output/Wine_CV2/Wine_CV2_euclidean_unnormed_CID_tree.txt ./cv_output/Wine_CV2/Wine_CV2_euclidean_unnormed_CID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --     17   64   35   0.0228 ==>   0   7  /  15   7 
+Leaf  2     2    
+NonL  3    --      0   12   27   0.2364 ==>  15   1  /   0   6 
+Leaf  6     1    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.495470 -0.505740 -0.512890 -0.521820 -0.534770 -0.549510 -0.559780 -0.565580 -0.568710 -0.570940 -0.572280 -0.572280 -0.570490 -0.566030 -0.559780 -0.551740 -0.545040 -0.539240 -0.534320 -0.529860 -0.524950 -0.519140 -0.513340 -0.508420 -0.503510 -0.499050 -0.494580 -0.488330 -0.479400 -0.466450 -0.448580 -0.424470 -0.398120 -0.379810 -0.379810 
+Shapelet   3   0.511570  0.444070  0.381940  0.324730  0.272880  0.228180  0.188390  0.153080  0.121790  0.092292  0.065473  0.047146  0.035077  0.023455  0.010046 -0.002023 -0.004705  0.006470  0.034630  0.086928  0.172750  0.302820  0.499050  0.813290  1.303200  1.886500  2.102000 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV2 2 29 117 1 2 10 euclidean 1 0 10 ./cv_output/Wine_CV2/Wine_CV2_euclidean_unnormed_CID_tree.txt ./cv_output/Wine_CV2/Wine_CV2_euclidean_unnormed_CID_time.txt
+; time =>    2.703   0.134   0.427   0.031   2.067 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV1 2 28 euclidean 1 0 ./cv_output/Wine_CV2/Wine_CV2_euclidean_unnormed_CID_tree.txt ./cv_output/Wine_CV2/Wine_CV2_euclidean_unnormed_CID_acc.txt
+; accuracy= 53.571   Correct:15 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   9    7 
+;   p  2 |   6    6 
+

@@ -1,0 +1,47 @@
+;Shapelet Tree 
+
+;random seed:1502275113, rand()=501862716, rand()=1667771608
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV1 4 499 64 1 2 10 euclidean 1 0 10 ./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_euclidean_unnormed_CID_time.txt 
+
+;Local Class:   0  1  2  3 
+;Real  Class:   1  2  3  4 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 36 
+NonL  1    --      0   87    5   1.0656 ==>   7 118 125 121  / 128   0   0   0 
+NonL  2    --      0   62    5   1.6634 ==>   7 115 122   0  /   0   3   3 121 
+Leaf  3     1    
+NonL  4    --    112   50   61   9.7984 ==>   6 114  88   0  /   1   1  34   0 
+Leaf  5     4    
+NonL  8    --     21   33   27   3.2171 ==>   0  76  19   0  /   6  38  69   0 
+Leaf  9     3    
+NonL 16    --     55   37   33   7.8313 ==>   0  76   9   0  /   0   0  10   0 
+NonL 17    --     18    8   31   7.6790 ==>   1  22  68   0  /   5  16   1   0 
+Leaf 32     2    
+Leaf 33     3    
+Leaf 34     3    
+Leaf 35     2    
+
+;Shapelet id   <data>
+Shapelet   1  -1.601400 -1.601400 -1.601400  1.563300  1.563300 
+Shapelet   2  -0.261880  1.563300  1.563300  1.563300  1.563300 
+Shapelet   4   0.392650  0.059576 -0.650420  0.400490 -0.574370  0.330380  0.426850  0.012500 -0.161710 -0.041642  0.061745  0.234080 -0.180160 -0.151280 -0.328260 -0.067275 -0.136820 -0.323720  0.154680  0.107940  0.069190 -0.227050  0.013312  0.521580 -0.555930 -1.164200 -0.090708  0.233630  0.336570 -0.069931 -0.349230 -0.109330 -0.427430  0.600230 -0.249420  0.422520  0.799020  0.021915 -0.094735 -0.243080 -0.023281  0.436530  0.144340  0.691890  0.347100 -0.215280  0.209240  1.766800  1.766800  1.766800  1.766800  1.766800  1.766800  1.766800  1.766800  1.766800 -1.797300 -1.797300 -1.797300 -1.797300 -1.797300 
+Shapelet   8   0.190060 -0.418440 -0.261880 -0.062463 -0.357880  0.282410  0.235450  0.594660  0.101860 -0.037316 -0.231010  0.362570 -0.834190  0.281280 -0.060347 -1.607600 -1.607600 -1.607600 -1.607600 -1.607600 -1.607600 -1.607600 -1.607600 -1.607600 -1.607600 -1.607600 -1.607600 
+Shapelet  16  -1.491200 -1.491200 -1.491200 -1.491200 -1.491200 -1.491200 -1.491200  1.514000  1.514000  1.514000  1.514000  1.514000  1.514000  1.514000  1.514000  1.514000  1.514000  1.514000  1.514000  1.514000  1.514000 -0.082232  0.093444  0.049263  0.232350 -0.195360 -0.215230  0.337140  0.427680 -0.384250  1.514000  1.514000  1.514000 
+Shapelet  17   0.023872 -0.026155 -0.412230  0.066947 -0.166330 -0.625190 -0.805910  0.004041 -0.070768 -0.508570 -0.068165 -0.364150 -0.042362 -0.290380 -0.114620  0.981950 -1.747500 -1.747500 -1.747500 -1.747500 -1.747500 -1.747500 -1.747500 -1.747500  1.762300  1.762300  1.762300  1.762300  1.762300  1.762300  1.762300 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV1 4 499 64 1 2 10 euclidean 1 0 10 ./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_euclidean_unnormed_CID_time.txt
+; time =>   51.311   2.636  31.629   2.087  13.125 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV2 4 501 euclidean 1 0 ./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/Two_Patterns_CV1/Two_Patterns_CV1_euclidean_unnormed_CID_acc.txt
+; accuracy= 83.234   Correct:417 , Wrong: 84
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 | 127    0    0    0 
+;   p  2 |   3   69   23    0 
+;   p  3 |   6   40  100    0 
+;   p  4 |   0   10    2  121 
+

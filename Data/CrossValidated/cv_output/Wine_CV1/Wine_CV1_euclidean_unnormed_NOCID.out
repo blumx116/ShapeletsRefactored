@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV1', 2, 28, 117, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_tree.txt', './cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502274819
+num_class=2, num_obj=28, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................
+Len=39   @[  0, 58]  d_th= 0.05 gap=0.000050 gain= 0.48023 (2  )==>  13   0  /   2  13 
+
+=== Node 3 ===
+.........................................................
+Len=15   @[  0, 89]  d_th= 0.01 gap=0.000870 gain= 0.39267 (11 )==>   2   0  /   0  13 
+
+num_class=2, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.11 sec
+  Time Rand Project =     0.37 sec
+  Time Score Matrix =     0.03 sec
+  Time Compute Gain =     0.44 sec
+Running  Time for this Shapelet=     0.98 sec <<
+
+
+Total Running  Time =     0.98 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV2', 2, 29, 'euclidean', 0, 0, './cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_tree.txt', './cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 55.172   Correct:16 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   9    7 
+;   p  2 |   6    7 
+
+num_class=2, num_obj=29  distance=euclidean CID=false normalize=false ./cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_tree.txt  ./cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 8
+

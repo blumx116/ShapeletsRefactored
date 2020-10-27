@@ -1,0 +1,58 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'correlation', 1, 0, 10, './replications/ECG5000/ECG5000_correlation_unnormed_CID_REP02_tree.txt', './replications/ECG5000/ECG5000_correlation_unnormed_CID_REP02_time.txt']
+
+rand seed=1503365608
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/ECG5000/ECG5000_correlation_unnormed_CID_REP02_tree.txt  time_file=./replications/ECG5000/ECG5000_correlation_unnormed_CID_REP02_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=7    @[  0,  5]  d_th= 0.03 gap=0.000064 gain= 0.55141 (90 )==> 284   3   5   1   2  /   8 174   5  18   0 
+
+=== Node 3 ===
+.................................
+Len=57   @[ 12,  5]  d_th= 0.08 gap=0.000152 gain= 0.17137 (157)==>   0 167   0  14   0  /   8   7   5   4   0 
+
+=== Node 7 ===
+.................................
+Len=47   @[ 15,  3]  d_th= 0.07 gap=0.000206 gain= 0.66156 (6  )==>   0   0   5   4   0  /   8   7   0   0   0 
+
+=== Node 14 ===
+.................................
+Len=57   @[  7, 36]  d_th= 0.16 gap=0.001839 gain= 0.68696 (1  )==>   0   0   0   4   0  /   0   0   5   0   0 
+
+=== Node 15 ===
+.................................
+Len=65   @[  8, 73]  d_th= 0.52 gap=0.002082 gain= 0.48998 (1  )==>   1   7   0   0   0  /   7   0   0   0   0 
+
+=== Node 30 ===
+.................................
+Len=7    @[  0, 87]  d_th= 0.05 gap=0.018588 gain= 0.37677 (6  )==>   1   0   0   0   0  /   0   7   0   0   0 
+
+num_class=5, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.29 sec
+  Time Rand Project =    13.72 sec
+  Time Score Matrix =     1.45 sec
+  Time Compute Gain =    16.75 sec
+Running  Time for this Shapelet=    34.42 sec <<
+
+
+Total Running  Time =    34.42 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'correlation', 1, 0, './replications/ECG5000/ECG5000_correlation_unnormed_CID_REP02_tree.txt', './replications/ECG5000/ECG5000_correlation_unnormed_CID_REP02_acc.txt']
+; accuracy= 91.311   Correct:4109 , Wrong: 391
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2590   77   36   20   15 
+;   p  2 |  21 1488   15  145    7 
+;   p  3 |   3   20   28    7    0 
+;   p  4 |  13    5    7    3    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=4500  distance=correlation CID=true normalize=false ./replications/ECG5000/ECG5000_correlation_unnormed_CID_REP02_tree.txt  ./replications/ECG5000/ECG5000_correlation_unnormed_CID_REP02_acc.txt
+
+==> Tree Size = 62
+

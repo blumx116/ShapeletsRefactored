@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV1', 2, 30, 319, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_CID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_CID_time.txt']
+
+rand seed=1502281233
+num_class=2, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_CID_tree.txt  time_file=./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+..............................................................................................................................................................
+Len=47   @[  2, 87]  d_th= 4.10 gap=0.000349 gain= 0.27607 (18 )==>   6   0  /   4  20 
+
+=== Node 3 ===
+..............................................................................................................................................................
+Len=37   @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.45056 (16 )==>   4   0  /   0  20 
+
+num_class=2, num_obj=24, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.88 sec
+  Time Rand Project =    14.01 sec
+  Time Score Matrix =     1.02 sec
+  Time Compute Gain =    58.16 sec
+Running  Time for this Shapelet=    76.22 sec <<
+
+
+Total Running  Time =    76.22 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV2', 2, 30, 'euclidean', 1, 1, './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_CID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_CID_acc.txt']
+; accuracy= 53.333   Correct:16 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   5    9 
+;   p  1 |   5   11 
+
+num_class=2, num_obj=30  distance=euclidean CID=true normalize=true ./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_CID_tree.txt  ./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 8
+

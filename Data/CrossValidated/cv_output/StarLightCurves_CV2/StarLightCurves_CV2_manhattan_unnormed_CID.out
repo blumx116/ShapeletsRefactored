@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/StarLightCurves_TRAIN_CV2', 3, 501, 512, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/StarLightCurves_CV2/StarLightCurves_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/StarLightCurves_CV2/StarLightCurves_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502316273
+num_class=3, num_obj=501, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/StarLightCurves_CV2/StarLightCurves_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/StarLightCurves_CV2/StarLightCurves_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................................................................................................................................................
+Len=205  @[ 82, 79]  d_th=335.13 gap=1.406219 gain= 0.58860 (225)==>   0 138   0  /  76   0 287 
+
+=== Node 3 ===
+..............................................................................................................................................................................................................................................................
+Len=195  @[237,102]  d_th=67.02 gap=0.009288 gain= 0.24908 (241)==>  21   0 281  /  55   0   6 
+
+num_class=3, num_obj=363, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    41.65 sec
+  Time Rand Project =   159.20 sec
+  Time Score Matrix =    14.70 sec
+  Time Compute Gain =  2211.90 sec
+Running  Time for this Shapelet=  2440.34 sec <<
+
+
+Total Running  Time =  2440.34 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/StarLightCurves_TRAIN_CV1', 3, 499, 'manhattan', 1, 0, './cv_output/StarLightCurves_CV2/StarLightCurves_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/StarLightCurves_CV2/StarLightCurves_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 91.784   Correct:458 , Wrong: 41
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  53    4   13 
+;   p  2 |   0  132    0 
+;   p  3 |  23    1  273 
+
+num_class=3, num_obj=499  distance=manhattan CID=true normalize=false ./cv_output/StarLightCurves_CV2/StarLightCurves_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/StarLightCurves_CV2/StarLightCurves_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 8
+

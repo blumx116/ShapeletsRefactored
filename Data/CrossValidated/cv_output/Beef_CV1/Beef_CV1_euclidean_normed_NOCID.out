@@ -1,0 +1,50 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Beef_TRAIN_CV1', 5, 15, 235, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/Beef_CV1/Beef_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Beef_CV1/Beef_CV1_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502281109
+num_class=5, num_obj=15, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Beef_CV1/Beef_CV1_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/Beef_CV1/Beef_CV1_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=93   @[ 10, 23]  d_th= 2.88 gap=0.005384 gain= 0.67301 (3  )==>   0   3   3   3   0  /   3   0   0   0   3 
+
+=== Node 2 ===
+....................................................................................................................
+Len=75   @[  3,293]  d_th= 0.75 gap=0.012388 gain= 0.63651 (3  )==>   0   0   3   0   0  /   0   3   0   3   0 
+
+=== Node 3 ===
+....................................................................................................................
+Len=119  @[  3,264]  d_th= 3.35 gap=0.180054 gain= 0.69315 (0  )==>   0   0   0   0   3  /   3   0   0   0   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=5    @[  0,244]  d_th= 0.46 gap=0.024862 gain= 0.69315 (0  )==>   0   3   0   0   0  /   0   0   0   3   0 
+
+num_class=5, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.62 sec
+  Time Rand Project =     2.81 sec
+  Time Score Matrix =     0.25 sec
+  Time Compute Gain =     9.93 sec
+Running  Time for this Shapelet=    13.95 sec <<
+
+
+Total Running  Time =    13.95 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Beef_TRAIN_CV2', 5, 15, 'euclidean', 0, 1, './cv_output/Beef_CV1/Beef_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Beef_CV1/Beef_CV1_euclidean_normed_NOCID_acc.txt']
+; accuracy= 40.000   Correct:6 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   2    0    0    0    0 
+;   p  2 |   1    0    0    2    1 
+;   p  3 |   0    1    2    1    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    2    1    0    2 
+
+num_class=5, num_obj=15  distance=euclidean CID=false normalize=true ./cv_output/Beef_CV1/Beef_CV1_euclidean_normed_NOCID_tree.txt  ./cv_output/Beef_CV1/Beef_CV1_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 12
+

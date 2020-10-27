@@ -1,0 +1,49 @@
+;Shapelet Tree 
+
+;random seed:1502274289, rand()=1671044089, rand()=1639264652
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxOutlineAgeGroup_TRAIN_CV1 3 76 40 1 2 10 euclidean 1 0 10 ./cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_euclidean_unnormed_CID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 48 
+NonL  1    --      1    2   13   0.5231 ==>   8  42  13  /  10   2   1 
+NonL  2    --      0    0    7   0.0695 ==>   3   0   0  /   5  42  13 
+NonL  3    --     12    7   15   0.2699 ==>   0   2   1  /  10   0   0 
+Leaf  4     1    
+NonL  5    --      0    5    5   0.1656 ==>   1  20   0  /   4  22  13 
+NonL  6    --      2   36   15   0.1811 ==>   0   0   1  /   0   2   0 
+Leaf  7     1    
+Leaf 10     2    
+NonL 11    --      0    7    5   0.0651 ==>   3   0   0  /   1  22  13 
+Leaf 12     3    
+Leaf 13     2    
+Leaf 22     1    
+NonL 23    --      0    4   21   0.4222 ==>   1   0   4  /   0  22   9 
+Leaf 46     3    
+Leaf 47     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.473070 -0.210790  0.063249  0.359950  0.658300  0.961970  1.311400  1.537200  1.567600  1.503600  1.511600  1.557100  1.487600 
+Shapelet   2  -0.754870 -0.682880 -0.484820 -0.235040  0.061418  0.353940  0.673820 
+Shapelet   3   1.062300  1.230200  1.347600  1.342000  1.373000  1.343300  1.295800  1.220200  0.947670  0.671800  0.410970  0.117370 -0.192300 -0.380980 -0.557700 
+Shapelet   5   0.317240  0.546370  0.911930  1.302100  1.477400 
+Shapelet   6   1.391200  1.376000  1.355200  1.471000  1.465500  1.366100  1.373100  1.065600  0.863140  0.552630  0.284190  0.026746 -0.184420 -0.394540 -0.767670 
+Shapelet  11   0.846850  1.128200  1.383200  1.445100  1.499600 
+Shapelet  23   0.033935  0.322690  0.526920  0.756900  1.005900  1.214100  1.280200  1.286300  1.360900  1.291900  1.204400  1.035200  0.771800  0.583180  0.237150 -0.015756 -0.308390 -0.546750 -0.572050 -0.579590 -0.427700 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxOutlineAgeGroup_TRAIN_CV1 3 76 40 1 2 10 euclidean 1 0 10 ./cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_euclidean_unnormed_CID_time.txt
+; time =>    1.718   0.109   0.522   0.064   0.961 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxOutlineAgeGroup_TRAIN_CV2 3 78 euclidean 1 0 ./cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/MiddlePhalanxOutlineAgeGroup_CV1/MiddlePhalanxOutlineAgeGroup_CV1_euclidean_unnormed_CID_acc.txt
+; accuracy= 46.154   Correct:36 , Wrong: 42
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   1    8    7 
+;   p  2 |  15   34    7 
+;   p  3 |   3    2    1 
+

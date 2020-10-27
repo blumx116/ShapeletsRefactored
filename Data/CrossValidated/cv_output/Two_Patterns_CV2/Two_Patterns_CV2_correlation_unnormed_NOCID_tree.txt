@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1503461061, rand()=858233176, rand()=1646590987
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV2 4 501 64 1 2 10 correlation 0 0 10 ./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_correlation_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1  2  3 
+;Real  Class:   1  2  3  4 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 34 
+NonL  1    --      0   22    5   1.0000 ==>   0   5 125 121  / 136 114   0   0 
+NonL  2    --      0   22    5   1.0000 ==>   0   5 125 121  / 136 114   0   0 
+NonL  4    --      0   22    5   1.0000 ==>   0   5 125 121  / 136 114   0   0 
+NonL  8    --      0   22    5   1.0000 ==>   0   5 125 121  / 136 114   0   0 
+NonL 16    --      0   22    5   1.0000 ==>   0   5 125 121  / 136 114   0   0 
+Leaf 32     3    
+
+;Shapelet id   <data>
+Shapelet   1   1.547800  1.547800  1.547800  1.547800  1.547800 
+Shapelet   2   1.547800  1.547800  1.547800  1.547800  1.547800 
+Shapelet   4   1.547800  1.547800  1.547800  1.547800  1.547800 
+Shapelet   8   1.547800  1.547800  1.547800  1.547800  1.547800 
+Shapelet  16   1.547800  1.547800  1.547800  1.547800  1.547800 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV2 4 501 64 1 2 10 correlation 0 0 10 ./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_correlation_unnormed_NOCID_time.txt
+; time =>   97.903   4.666  63.429   4.101  22.041 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Two_Patterns_TRAIN_CV1 4 499 correlation 0 0 ./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/Two_Patterns_CV2/Two_Patterns_CV2_correlation_unnormed_NOCID_acc.txt
+; accuracy= 25.050   Correct:125 , Wrong: 374
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   0    0    0    0 
+;   p  2 |   0    0    0    0 
+;   p  3 | 135  118  125  121 
+;   p  4 |   0    0    0    0 
+

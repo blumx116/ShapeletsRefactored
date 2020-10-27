@@ -1,0 +1,66 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/LargeKitchenAppliances_TRAIN_CV2', 3, 189, 360, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_euclidean_normed_CID_tree.txt', './cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_euclidean_normed_CID_time.txt']
+
+rand seed=1502294734
+num_class=3, num_obj=189, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_euclidean_normed_CID_tree.txt  time_file=./cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=61   @[130,629]  d_th= 4.36 gap=0.020987 gain= 0.31753 (105)==>   0   0  42  /  63  63  21 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.37957 (9  )==>   1  50  18  /  62  13   3 
+
+=== Node 6 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.50005 (0  )==>   0  45  18  /  54   9   0 
+
+=== Node 7 ===
+..................................................................................................................................................................................
+Len=33   @[  1,509]  d_th= 4.05 gap=0.101041 gain= 0.54251 (1  )==>   9   1   0  /   0   8   3 
+
+=== Node 12 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.50005 (0  )==>   0  45  18  /  54   9   0 
+
+=== Node 13 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=13 
+
+=== Node 15 ===
+..................................................................................................................................................................................
+Len=7    @[  0,690]  d_th= 0.71 gap=0.267446 gain= 0.58595 (5  )==>   0   8   0  /   0   0   3 
+
+=== Node 24 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.50005 (0  )==>   0  45  18  /  54   9   0 
+
+=== Node 25 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=25 
+
+num_class=3, num_obj=0, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    17.26 sec
+  Time Rand Project =    37.24 sec
+  Time Score Matrix =     4.91 sec
+  Time Compute Gain =  1243.62 sec
+Running  Time for this Shapelet=  1306.94 sec <<
+
+
+Total Running  Time =  1306.94 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/LargeKitchenAppliances_TRAIN_CV1', 3, 186, 'euclidean', 1, 1, './cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_euclidean_normed_CID_tree.txt', './cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_euclidean_normed_CID_acc.txt']
+; accuracy= 53.226   Correct:99 , Wrong: 87
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  12    0    1 
+;   p  2 |  48   59   33 
+;   p  3 |   2    3   28 
+
+num_class=3, num_obj=186  distance=euclidean CID=true normalize=true ./cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_euclidean_normed_CID_tree.txt  ./cv_output/LargeKitchenAppliances_CV2/LargeKitchenAppliances_CV2_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 50
+

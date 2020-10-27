@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV2', 2, 185, 118, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/Strawberry_CV2/Strawberry_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/Strawberry_CV2/Strawberry_CV2_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503461131
+num_class=2, num_obj=185, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Strawberry_CV2/Strawberry_CV2_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/Strawberry_CV2/Strawberry_CV2_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................
+Len=67   @[  2,114]  d_th= 0.00 gap=0.000003 gain= 0.32149 (97 )==>  44   0  /  22 119 
+
+=== Node 3 ===
+.........................................................
+Len=25   @[  0, 74]  d_th= 0.02 gap=0.000003 gain= 0.14540 (63 )==>   3  99  /  19  20 
+
+=== Node 7 ===
+.........................................................
+Len=67   @[ 11, 93]  d_th= 0.02 gap=0.000077 gain= 0.30449 (13 )==>  19   7  /   0  13 
+
+=== Node 14 ===
+.........................................................
+Len=5    @[  0,  3]  d_th= 0.00 gap=0.000043 gain= 0.26902 (2  )==>   5   7  /  14   0 
+
+num_class=2, num_obj=26, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.65 sec
+  Time Rand Project =     9.92 sec
+  Time Score Matrix =     1.10 sec
+  Time Compute Gain =    18.32 sec
+Running  Time for this Shapelet=    31.84 sec <<
+
+
+Total Running  Time =    31.84 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1', 2, 185, 'correlation', 0, 0, './cv_output/Strawberry_CV2/Strawberry_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/Strawberry_CV2/Strawberry_CV2_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 74.054   Correct:137 , Wrong: 48
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  39   21 
+;   p  2 |  27   98 
+
+num_class=2, num_obj=185  distance=correlation CID=false normalize=false ./cv_output/Strawberry_CV2/Strawberry_CV2_correlation_unnormed_NOCID_tree.txt  ./cv_output/Strawberry_CV2/Strawberry_CV2_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 30
+

@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/HandOutlines_TRAIN_CV1', 2, 184, 1355, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502479046
+num_class=2, num_obj=184, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=1165  @[117, 76]  d_th=197.71 gap=0.023745 gain= 0.38700 (52 )==>   7 111  /  59   7 
+
+=== Node 3 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=1239  @[ 59,1008]  d_th=77.18 gap=0.109473 gain= 0.15620 (58 )==>   0   4  /  59   3 
+
+num_class=2, num_obj=66, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    54.03 sec
+  Time Rand Project =    57.24 sec
+  Time Score Matrix =     6.79 sec
+  Time Compute Gain =  7562.56 sec
+Running  Time for this Shapelet=  7688.34 sec <<
+
+
+Total Running  Time =  7688.34 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/HandOutlines_TRAIN_CV2', 2, 186, 'manhattan', 1, 0, './cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_unnormed_CID_acc.txt']
+; accuracy= 87.634   Correct:163 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  51    7 
+;   p  1 |  16  112 
+
+num_class=2, num_obj=186  distance=manhattan CID=true normalize=false ./cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_unnormed_CID_tree.txt  ./cv_output/HandOutlines_CV1/HandOutlines_CV1_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 8
+

@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1502274202, rand()=728134088, rand()=754373489
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2 2 34 12 1 2 10 manhattan 1 1 10 ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_tree.txt ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --      1    9    5   0.9070 ==>  13   2  /   4  15 
+NonL  2    --     10   12   11   9.2260 ==>  13   0  /   0   2 
+NonL  3    --      6    9    5   1.8515 ==>   0  14  /   4   1 
+Leaf  4     1    
+Leaf  5     2    
+Leaf  6     2    
+NonL  7    --      4   13    5   0.6894 ==>   0   1  /   4   0 
+Leaf 14     2    
+Leaf 15     1    
+
+;Shapelet id   <data>
+Shapelet   1   1.101700  1.176300  1.027100  0.678860  0.330620 
+Shapelet   2   0.721270  0.559490  0.599940  0.883050  0.802160  1.065100  1.105500  1.004400  0.579710  0.276370 -0.249410 
+Shapelet   3   1.359200  1.682600  1.544000  0.897130  0.435090 
+Shapelet   7   1.095200  0.082083 -0.199340 -0.030488 -0.030488 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2 2 34 12 1 2 10 manhattan 1 1 10 ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_tree.txt ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_time.txt
+; time =>    0.032   0.002   0.011   0.002   0.016 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1 2 33 manhattan 1 1 ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_tree.txt ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_normed_CID_acc.txt
+; accuracy= 72.727   Correct:24 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  12    4 
+;   p  2 |   5   12 
+

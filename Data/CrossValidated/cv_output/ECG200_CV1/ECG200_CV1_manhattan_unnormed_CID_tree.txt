@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1502276819, rand()=1995668832, rand()=778763667
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1 2 49 48 1 2 10 manhattan 1 0 10 ./cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_tree.txt ./cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:  -1  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 22 
+NonL  1    --      7   47   15   3.9900 ==>  15   5  /   0  29 
+NonL  2    --     15   47    9   0.5781 ==>   0   3  /  15   2 
+Leaf  3     1    
+Leaf  4     1    
+NonL  5    --      4   36   15   2.2764 ==>   1   2  /  14   0 
+NonL 10    --      0    2   37   5.8287 ==>   1   0  /   0   2 
+Leaf 11    -1    
+Leaf 20    -1    
+Leaf 21     1    
+
+;Shapelet id   <data>
+Shapelet   1  -0.396440 -0.501470 -0.450290 -0.131470  0.069686  0.045052  0.124840  0.262950  0.242810  0.309020  0.459180  0.298940  0.096623  0.321060  0.551180 
+Shapelet   2   0.080364  0.212870  0.335410  0.477430  0.538270  0.489880  0.517940  0.532210  0.484140 
+Shapelet   5  -1.872300 -1.554700 -1.301200 -1.016500 -0.979280 -0.706250 -0.303370 -0.012646  0.169670  0.091330  0.250280  0.387270  0.257930  0.429290  0.517510 
+Shapelet  10   1.683500  2.478900  2.802400  2.438700  1.717700  1.009300  0.257350 -0.221560 -0.135580 -0.191270 -0.306970 -0.167640 -0.098005 -0.056260 -0.323400 -0.630180 -0.569720 -0.709410 -0.750320 -0.673330 -0.980100 -1.207100 -1.181400 -1.026400 -1.299500 -1.928900 -1.907600 -1.868800 -1.990600 -2.011600 -2.402700 -2.144000 -1.661800 -1.939400 -1.872300 -1.554700 -1.301200 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1 2 49 48 1 2 10 manhattan 1 0 10 ./cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_tree.txt ./cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_time.txt
+; time =>    1.038   0.059   0.385   0.043   0.505 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 manhattan 1 0 ./cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_tree.txt ./cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_acc.txt
+; accuracy= 80.392   Correct:41 , Wrong: 10
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   9    3 
+;   p  1 |   7   32 
+

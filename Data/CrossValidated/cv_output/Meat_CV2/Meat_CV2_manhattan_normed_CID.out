@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV2', 3, 30, 224, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/Meat_CV2/Meat_CV2_manhattan_normed_CID_tree.txt', './cv_output/Meat_CV2/Meat_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502280371
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Meat_CV2/Meat_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/Meat_CV2/Meat_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................
+Len=111  @[ 10,  8]  d_th=19.50 gap=0.828829 gain= 0.63651 (10 )==>   0  10   0  /  10   0  10 
+
+=== Node 3 ===
+..............................................................................................................
+Len=19   @[  0,195]  d_th= 1.46 gap=0.055153 gain= 0.69315 (0  )==>  10   0   0  /   0   0  10 
+
+num_class=3, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.59 sec
+  Time Rand Project =     1.81 sec
+  Time Score Matrix =     0.17 sec
+  Time Compute Gain =    23.94 sec
+Running  Time for this Shapelet=    26.72 sec <<
+
+
+Total Running  Time =    26.72 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV1', 3, 30, 'manhattan', 1, 1, './cv_output/Meat_CV2/Meat_CV2_manhattan_normed_CID_tree.txt', './cv_output/Meat_CV2/Meat_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 66.667   Correct:20 , Wrong: 10
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   5    4    0 
+;   p  2 |   2    5    0 
+;   p  3 |   3    1   10 
+
+num_class=3, num_obj=30  distance=manhattan CID=true normalize=true ./cv_output/Meat_CV2/Meat_CV2_manhattan_normed_CID_tree.txt  ./cv_output/Meat_CV2/Meat_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 8
+

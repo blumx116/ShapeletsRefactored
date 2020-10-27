@@ -1,0 +1,38 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'euclidean', 0, 1, 10, './replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP22_tree.txt', './replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP22_time.txt']
+
+rand seed=1508181167
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP22_tree.txt  time_file=./replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP22_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=29   @[453,  6]  d_th= 1.47 gap=0.000415 gain= 0.52635 (136)==>   1 164   1  16   0  / 291  13   9   3   2 
+
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.93 sec
+  Time Rand Project =    11.03 sec
+  Time Score Matrix =     1.06 sec
+  Time Compute Gain =     4.97 sec
+Running  Time for this Shapelet=    18.94 sec <<
+
+
+Total Running  Time =    18.94 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'euclidean', 0, 1, './replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP22_tree.txt', './replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP22_acc.txt']
+; accuracy= 88.733   Correct:3993 , Wrong: 507
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2562  159   75   38   14 
+;   p  2 |  65 1431   11  137    8 
+;   p  3 |   0    0    0    0    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=4500  distance=euclidean CID=false normalize=true ./replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP22_tree.txt  ./replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP22_acc.txt
+
+==> Tree Size = 4
+

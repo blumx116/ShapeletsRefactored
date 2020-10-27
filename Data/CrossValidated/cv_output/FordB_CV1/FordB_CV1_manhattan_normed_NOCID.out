@@ -1,0 +1,71 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FordB_TRAIN_CV1', 2, 404, 250, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/FordB_CV1/FordB_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/FordB_CV1/FordB_CV1_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502304246
+num_class=2, num_obj=404, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/FordB_CV1/FordB_CV1_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/FordB_CV1/FordB_CV1_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=211  @[232, 12]  d_th=159.52 gap=0.006836 gain= 0.11660 (146)==>  20 109  / 180  95 
+
+=== Node 2 ===
+...........................................................................................................................
+Len=59   @[ 17,184]  d_th=11.39 gap=0.011166 gain= 0.18686 (89 )==>  15   5  /   5 104 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=151  @[271,293]  d_th=101.86 gap=0.002042 gain= 0.06980 (3  )==>  67  72  / 113  23 
+
+=== Node 4 ===
+...........................................................................................................................
+Len=51   @[  0,108]  d_th= 8.43 gap=0.005241 gain= 0.42717 (8  )==>  14   0  /   1   5 
+
+=== Node 6 ===
+...........................................................................................................................
+Len=145  @[ 52,138]  d_th=75.27 gap=0.027881 gain= 0.16047 (29 )==>  59  25  /   8  47 
+
+=== Node 7 ===
+...........................................................................................................................
+Len=47   @[ 37,187]  d_th=15.43 gap=0.001087 gain= 0.11599 (60 )==>  20  18  /  93   5 
+
+=== Node 9 ===
+...........................................................................................................................
+Len=199  @[  0,205]  d_th=74.26 gap=5.264446 gain= 0.45056 (4  )==>   1   0  /   0   5 
+
+=== Node 12 ===
+...........................................................................................................................
+Len=169  @[  1,146]  d_th=85.14 gap=0.071671 gain= 0.10760 (16 )==>  32   2  /  27  23 
+
+=== Node 13 ===
+...........................................................................................................................
+Len=191  @[ 16, 46]  d_th=130.90 gap=0.017457 gain= 0.14456 (9  )==>   8  15  /   0  32 
+
+=== Node 14 ===
+...........................................................................................................................
+Len=27   @[ 21, 58]  d_th= 6.12 gap=0.035674 gain= 0.21985 (8  )==>   2  13  /  18   5 
+
+num_class=2, num_obj=38, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    34.63 sec
+  Time Rand Project =   432.51 sec
+  Time Score Matrix =    27.30 sec
+  Time Compute Gain =   520.89 sec
+Running  Time for this Shapelet=  1041.47 sec <<
+
+
+Total Running  Time =  1041.47 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FordB_TRAIN_CV2', 2, 406, 'manhattan', 0, 1, './cv_output/FordB_CV1/FordB_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/FordB_CV1/FordB_CV1_manhattan_normed_NOCID_acc.txt']
+; accuracy= 71.182   Correct:289 , Wrong: 117
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 | 144   60 
+;   p  1 |  57  145 
+
+num_class=2, num_obj=406  distance=manhattan CID=false normalize=true ./cv_output/FordB_CV1/FordB_CV1_manhattan_normed_NOCID_tree.txt  ./cv_output/FordB_CV1/FordB_CV1_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 30
+

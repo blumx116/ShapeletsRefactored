@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1', 2, 49, 48, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/ECG200_CV1/ECG200_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/ECG200_CV1/ECG200_CV1_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503461743
+num_class=2, num_obj=49, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ECG200_CV1/ECG200_CV1_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/ECG200_CV1/ECG200_CV1_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+......................
+Len=47   @[ 16,  9]  d_th= 0.05 gap=0.000116 gain= 0.27786 (9  )==>   1  28  /  14   6 
+
+=== Node 3 ===
+......................
+Len=25   @[  5,  1]  d_th= 0.06 gap=0.000545 gain= 0.46732 (6  )==>  13   0  /   1   6 
+
+=== Node 7 ===
+......................
+Len=13   @[  0, 14]  d_th= 0.04 gap=0.012064 gain= 0.41012 (5  )==>   1   0  /   0   6 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.05 sec
+  Time Rand Project =     0.32 sec
+  Time Score Matrix =     0.04 sec
+  Time Compute Gain =     0.31 sec
+Running  Time for this Shapelet=     0.75 sec <<
+
+
+Total Running  Time =     0.75 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2', 2, 51, 'correlation', 0, 0, './cv_output/ECG200_CV1/ECG200_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/ECG200_CV1/ECG200_CV1_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 84.314   Correct:43 , Wrong: 8
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   9    1 
+;   p  1 |   7   34 
+
+num_class=2, num_obj=51  distance=correlation CID=false normalize=false ./cv_output/ECG200_CV1/ECG200_CV1_correlation_unnormed_NOCID_tree.txt  ./cv_output/ECG200_CV1/ECG200_CV1_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 16
+

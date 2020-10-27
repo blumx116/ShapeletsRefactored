@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV1', 2, 30, 319, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502281365
+num_class=2, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+..............................................................................................................................................................
+Len=161  @[  5, 40]  d_th=42.74 gap=0.197943 gain= 0.27607 (18 )==>   4  20  /   6   0 
+
+=== Node 2 ===
+..............................................................................................................................................................
+Len=139  @[  3,331]  d_th=54.33 gap=0.133776 gain= 0.28305 (18 )==>   3   0  /   1  20 
+
+num_class=2, num_obj=24, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.00 sec
+  Time Rand Project =    17.25 sec
+  Time Score Matrix =     1.15 sec
+  Time Compute Gain =    39.64 sec
+Running  Time for this Shapelet=    61.27 sec <<
+
+
+Total Running  Time =    61.27 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV2', 2, 30, 'manhattan', 1, 0, './cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_unnormed_CID_acc.txt']
+; accuracy= 73.333   Correct:22 , Wrong: 8
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   7    5 
+;   p  1 |   3   15 
+
+num_class=2, num_obj=30  distance=manhattan CID=true normalize=false ./cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_unnormed_CID_tree.txt  ./cv_output/Lighting2_CV1/Lighting2_CV1_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 6
+

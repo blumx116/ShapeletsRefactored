@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1502274206, rand()=1360088332, rand()=529855208
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 48 1 2 10 euclidean 0 1 10 ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_normed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_normed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:  -1  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --     18   11   45   1.6377 ==>   1  31  /  15   4 
+Leaf  2     1    
+NonL  3    --     16   53   21   1.9399 ==>   0   3  /  15   1 
+Leaf  6     1    
+Leaf  7    -1    
+
+;Shapelet id   <data>
+Shapelet   1  -0.421040 -0.465030 -0.604890 -0.647730 -0.818380 -0.900500 -0.896760 -0.944610 -1.083600 -1.203300 -1.225000 -1.327700 -1.529100 -1.604900 -1.670100 -1.883000 -1.913500 -1.965200 -2.061400 -2.013900 -1.986700 -1.792300 -1.580100 -1.329000 -0.896520 -0.552380 -0.260080  0.051494  0.334320  0.527010  0.639820  0.728950  0.742360  0.696900  0.706790  0.618820  0.593080  0.608750  0.562880  0.603470  0.537850  0.518120  0.596300  0.524330  0.506740 
+Shapelet   3   0.609380  0.661330  0.655020  0.597530  0.510810  0.545900  0.468090  0.394080  0.520640  0.384810  0.383270  0.429560  0.380670  0.354290  0.258550  0.433320  0.266730  0.276500  0.424850  0.266450  0.224320 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 48 1 2 10 euclidean 0 1 10 ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_normed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_normed_NOCID_time.txt
+; time =>    0.691   0.048   0.316   0.037   0.260 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1 2 49 euclidean 0 1 ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_normed_NOCID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_euclidean_normed_NOCID_acc.txt
+; accuracy= 77.551   Correct:38 , Wrong: 11
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   9    5 
+;   p  1 |   6   29 
+

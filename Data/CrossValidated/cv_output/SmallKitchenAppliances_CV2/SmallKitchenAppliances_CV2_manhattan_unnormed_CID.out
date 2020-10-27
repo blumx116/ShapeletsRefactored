@@ -1,0 +1,68 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/SmallKitchenAppliances_TRAIN_CV2', 3, 189, 360, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/SmallKitchenAppliances_CV2/SmallKitchenAppliances_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/SmallKitchenAppliances_CV2/SmallKitchenAppliances_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502305849
+num_class=3, num_obj=189, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/SmallKitchenAppliances_CV2/SmallKitchenAppliances_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/SmallKitchenAppliances_CV2/SmallKitchenAppliances_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=175  @[  1, 34]  d_th=67.11 gap=0.086320 gain= 0.22200 (119)==>  62  29  63  /   1  34   0 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=19   @[  0,261]  d_th=10.93 gap=0.045866 gain= 0.24111 (36 )==>  48   6   5  /  14  23  58 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=31   @[  0,217]  d_th= 7.45 gap=0.124274 gain= 0.21118 (13 )==>  36   0   0  /  12   6   5 
+
+=== Node 5 ===
+..................................................................................................................................................................................
+Len=297  @[ 23,344]  d_th=105.54 gap=0.222881 gain= 0.16092 (81 )==>   7  23  58  /   7   0   0 
+
+=== Node 9 ===
+..................................................................................................................................................................................
+Len=255  @[  0,426]  d_th=39.89 gap=0.071540 gain= 0.57396 (11 )==>  12   0   5  /   0   6   0 
+
+=== Node 10 ===
+..................................................................................................................................................................................
+Len=45   @[  1,208]  d_th=40.85 gap=0.003520 gain= 0.18465 (10 )==>   7   1  31  /   0  22  27 
+
+=== Node 18 ===
+..................................................................................................................................................................................
+Len=349  @[  8,  2]  d_th=28.77 gap=0.038250 gain= 0.29447 (1  )==>   3   0   5  /   9   0   0 
+
+=== Node 20 ===
+..................................................................................................................................................................................
+Len=207  @[  0,  0]  d_th=21.47 gap=0.058193 gain= 0.22306 (7  )==>   7   1   8  /   0   0  23 
+
+=== Node 21 ===
+..................................................................................................................................................................................
+Len=25   @[ 44,219]  d_th=44.31 gap=0.200835 gain= 0.21436 (3  )==>   0   4  22  /   0  18   5 
+
+num_class=3, num_obj=49, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    12.89 sec
+  Time Rand Project =    23.46 sec
+  Time Score Matrix =     3.02 sec
+  Time Compute Gain =   603.02 sec
+Running  Time for this Shapelet=   645.32 sec <<
+
+
+Total Running  Time =   645.32 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/SmallKitchenAppliances_TRAIN_CV1', 3, 186, 'manhattan', 1, 0, './cv_output/SmallKitchenAppliances_CV2/SmallKitchenAppliances_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/SmallKitchenAppliances_CV2/SmallKitchenAppliances_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 68.280   Correct:127 , Wrong: 59
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  43    7    8 
+;   p  2 |   2   43   13 
+;   p  3 |  17   12   41 
+
+num_class=3, num_obj=186  distance=manhattan CID=true normalize=false ./cv_output/SmallKitchenAppliances_CV2/SmallKitchenAppliances_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/SmallKitchenAppliances_CV2/SmallKitchenAppliances_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 44
+

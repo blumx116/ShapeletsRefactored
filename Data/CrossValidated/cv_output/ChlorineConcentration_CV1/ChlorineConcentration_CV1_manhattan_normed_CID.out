@@ -1,0 +1,88 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ChlorineConcentration_TRAIN_CV1', 3, 233, 83, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_CID_tree.txt', './cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502274997
+num_class=3, num_obj=233, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=61   @[  0, 68]  d_th=23.12 gap=0.020275 gain= 0.06041 (41 )==>  13  33  50  /  44  12  81 
+
+=== Node 2 ===
+........................................
+Len=11   @[  0, 82]  d_th= 1.35 gap=0.000409 gain= 0.08572 (40 )==>   6  31  31  /   7   2  19 
+
+=== Node 3 ===
+........................................
+Len=31   @[  3,130]  d_th=25.88 gap=0.004962 gain= 0.07347 (117)==>  35  11  81  /   9   1   0 
+
+=== Node 4 ===
+........................................
+Len=5    @[  0,  1]  d_th= 0.31 gap=0.003396 gain= 0.10189 (52 )==>   6  23  31  /   0   8   0 
+
+=== Node 5 ===
+........................................
+Len=11   @[  2, 14]  d_th= 1.30 gap=0.001524 gain= 0.20894 (16 )==>   3   2   1  /   4   0  18 
+
+=== Node 6 ===
+........................................
+Len=79   @[ 80, 23]  d_th=61.38 gap=0.015029 gain= 0.06406 (115)==>  29  11  81  /   6   0   0 
+
+=== Node 8 ===
+........................................
+Len=61   @[  6, 43]  d_th= 2.07 gap=0.010619 gain= 0.10506 (48 )==>   0   6   0  /   6  17  31 
+
+=== Node 10 ===
+........................................
+Len=31   @[  0,  0]  d_th= 3.91 gap=0.059939 gain= 0.69315 (0  )==>   3   0   0  /   0   2   1 
+
+=== Node 11 ===
+........................................
+Len=5    @[  0,  0]  d_th= 0.13 gap=0.000034 gain= 0.30054 (10 )==>   4   0   2  /   0   0  16 
+
+=== Node 12 ===
+........................................
+Len=23   @[ 34, 26]  d_th= 3.04 gap=0.019998 gain= 0.06288 (115)==>   0   3   0  /  29   8  81 
+
+=== Node 17 ===
+........................................
+Len=9    @[ 26,104]  d_th= 1.70 gap=0.000595 gain= 0.12812 (32 )==>   4   0   7  /   2  17  24 
+
+=== Node 21 ===
+........................................
+Len=79   @[  0, 14]  d_th=24.39 gap=0.269898 gain= 0.63651 (1  )==>   0   2   0  /   0   0   1 
+
+=== Node 22 ===
+........................................
+Len=83   @[  4, 14]  d_th=13.02 gap=0.117035 gain= 0.63651 (2  )==>   0   0   2  /   4   0   0 
+
+=== Node 25 ===
+........................................
+Len=13   @[  3, 28]  d_th= 6.11 gap=0.001954 gain= 0.05188 (92 )==>  24   4  77  /   5   4   4 
+
+num_class=3, num_obj=118, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.89 sec
+  Time Rand Project =    24.12 sec
+  Time Score Matrix =     1.94 sec
+  Time Compute Gain =    31.96 sec
+Running  Time for this Shapelet=    62.67 sec <<
+
+
+Total Running  Time =    62.67 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ChlorineConcentration_TRAIN_CV2', 3, 234, 'manhattan', 1, 1, './cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_CID_tree.txt', './cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 54.701   Correct:128 , Wrong: 106
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  14    4   12 
+;   p  2 |   1    4    9 
+;   p  3 |  42   38  110 
+
+num_class=3, num_obj=234  distance=manhattan CID=true normalize=true ./cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_CID_tree.txt  ./cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 52
+

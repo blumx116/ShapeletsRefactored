@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1', 2, 33, 12, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502274201
+num_class=2, num_obj=33, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  1, 17]  d_th= 1.55 gap=0.011868 gain= 0.38941 (7  )==>  13   0  /   4  16 
+
+=== Node 3 ===
+....
+Len=7    @[  2,  3]  d_th= 2.34 gap=0.012088 gain= 0.26138 (6  )==>   4   3  /   0  13 
+
+=== Node 6 ===
+....
+Len=11   @[  1, 11]  d_th= 9.06 gap=0.080598 gain= 0.68291 (1  )==>   4   0  /   0   3 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.01 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.02 sec <<
+
+
+Total Running  Time =     0.02 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2', 2, 34, 'manhattan', 1, 0, './cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_manhattan_unnormed_CID_acc.txt']
+; accuracy= 88.235   Correct:30 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  15    2 
+;   p  2 |   2   15 
+
+num_class=2, num_obj=34  distance=manhattan CID=true normalize=false ./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_manhattan_unnormed_CID_tree.txt  ./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 14
+

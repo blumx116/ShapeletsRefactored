@@ -1,0 +1,44 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/StarLightCurves_TRAIN_CV1', 3, 499, 512, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502413460
+num_class=3, num_obj=499, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................................................................................................................................................
+Len=275  @[262, 37]  d_th=184.55 gap=0.006793 gain= 0.57633 (223)==>  76   0 285  /   0 137   1 
+
+=== Node 2 ===
+..............................................................................................................................................................................................................................................................
+Len=249  @[275, 70]  d_th=91.08 gap=0.007914 gain= 0.23987 (181)==>  11   0 260  /  65   0  25 
+
+=== Node 5 ===
+..............................................................................................................................................................................................................................................................
+Len=165  @[  0,731]  d_th=32.35 gap=0.026983 gain= 0.29331 (52 )==>  64   0   7  /   1   0  18 
+
+num_class=3, num_obj=90, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    34.95 sec
+  Time Rand Project =   119.37 sec
+  Time Score Matrix =    11.59 sec
+  Time Compute Gain =  1732.88 sec
+Running  Time for this Shapelet=  1908.92 sec <<
+
+
+Total Running  Time =  1908.92 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/StarLightCurves_TRAIN_CV2', 3, 501, 'manhattan', 1, 0, './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_unnormed_CID_acc.txt']
+; accuracy= 96.208   Correct:482 , Wrong: 19
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  65    0    7 
+;   p  2 |   0  137    0 
+;   p  3 |  11    1  280 
+
+num_class=3, num_obj=501  distance=manhattan CID=true normalize=false ./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_unnormed_CID_tree.txt  ./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 12
+

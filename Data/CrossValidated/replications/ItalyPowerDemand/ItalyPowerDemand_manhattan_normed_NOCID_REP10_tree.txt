@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1501824723, rand()=2020866990, rand()=110139978
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 manhattan 0 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP10_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP10_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 30 
+NonL  1    --      7    0    9   0.9775 ==>  19   0  /  15  33 
+Leaf  2     1    
+NonL  3    --     10    6    9   2.0551 ==>  11   0  /   4  33 
+Leaf  6     1    
+NonL  7    --      2    2   11   1.0451 ==>   3   1  /   1  32 
+NonL 14    --      3    1   11   0.6941 ==>   0   1  /   3   0 
+Leaf 15     2    
+Leaf 28     2    
+Leaf 29     1    
+
+;Shapelet id   <data>
+Shapelet   1  -1.099100 -1.375600 -1.523000 -1.559900 -1.596800 -1.430900 -1.135900 -0.232720  0.652070 
+Shapelet   3  -1.053900 -0.418230 -0.451680  0.117100  0.518600  0.652430  0.552060  0.217480 -0.117100 
+Shapelet   7  -1.536700 -1.620200 -1.620200 -1.453200 -0.993720  0.050469  0.635220  1.032000  0.802290  0.823170  0.656100 
+Shapelet  14  -1.267700 -1.442100 -1.529300 -1.529300 -1.471200 -1.180600 -0.715600  0.243380  1.057100  1.260500  1.318600 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 manhattan 0 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP10_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP10_time.txt
+; time =>    0.116   0.006   0.066   0.015   0.019 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST 2 1029 manhattan 0 1 ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP10_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_normed_NOCID_REP10_acc.txt
+; accuracy= 72.595   Correct:747 , Wrong: 282
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 405  171 
+;   p  1 | 111  342 
+

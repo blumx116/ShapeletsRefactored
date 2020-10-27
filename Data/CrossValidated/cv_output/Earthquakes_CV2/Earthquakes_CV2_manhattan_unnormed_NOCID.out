@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Earthquakes_TRAIN_CV2', 2, 70, 256, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502280593
+num_class=2, num_obj=70, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=85   @[ 69,247]  d_th=49.21 gap=0.004185 gain= 0.17682 (10 )==>  22  18  /  30   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=153  @[ 23,120]  d_th=103.45 gap=0.013674 gain= 0.28746 (18 )==>  22   7  /   0  11 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=7    @[  0, 83]  d_th= 1.16 gap=0.000450 gain= 0.24327 (3  )==>  16   0  /   6   7 
+
+=== Node 9 ===
+..............................................................................................................................
+Len=189  @[  9,248]  d_th=127.65 gap=0.170551 gain= 0.46935 (1  )==>   6   1  /   0   6 
+
+num_class=2, num_obj=13, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     5.07 sec
+  Time Rand Project =    50.73 sec
+  Time Score Matrix =     3.05 sec
+  Time Compute Gain =    22.43 sec
+Running  Time for this Shapelet=    84.58 sec <<
+
+
+Total Running  Time =    84.58 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Earthquakes_TRAIN_CV1', 2, 69, 'manhattan', 0, 0, './cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 65.217   Correct:45 , Wrong: 24
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  40   12 
+;   p  1 |  12    5 
+
+num_class=2, num_obj=69  distance=manhattan CID=false normalize=false ./cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_unnormed_NOCID_tree.txt  ./cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 20
+

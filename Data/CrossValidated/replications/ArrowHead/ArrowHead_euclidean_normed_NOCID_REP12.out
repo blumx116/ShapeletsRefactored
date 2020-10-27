@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN', 3, 36, 126, 1, 2, 10, 'euclidean', 0, 1, 10, './replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP12_tree.txt', './replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP12_time.txt']
+
+rand seed=1508182970
+num_class=3, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP12_tree.txt  time_file=./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP12_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=51   @[ 12, 39]  d_th= 2.09 gap=0.001380 gain= 0.51989 (14 )==>  12  12   1  /   0   0  11 
+
+=== Node 2 ===
+.............................................................
+Len=77   @[  1, 41]  d_th= 1.27 gap=0.010698 gain= 0.69235 (1  )==>   0  12   0  /  12   0   1 
+
+num_class=3, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.29 sec
+  Time Rand Project =     1.43 sec
+  Time Score Matrix =     0.14 sec
+  Time Compute Gain =     3.04 sec
+Running  Time for this Shapelet=     5.08 sec <<
+
+
+Total Running  Time =     5.08 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TEST', 3, 175, 'euclidean', 0, 1, './replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP12_tree.txt', './replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP12_acc.txt']
+; accuracy= 56.571   Correct:99 , Wrong: 76
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  42   10    3 
+;   p  1 |  10   15    8 
+;   p  2 |  17   28   42 
+
+num_class=3, num_obj=175  distance=euclidean CID=false normalize=true ./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP12_tree.txt  ./replications/ArrowHead/ArrowHead_euclidean_normed_NOCID_REP12_acc.txt
+
+==> Tree Size = 6
+

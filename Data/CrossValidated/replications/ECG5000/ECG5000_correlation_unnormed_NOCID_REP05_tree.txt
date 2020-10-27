@@ -1,0 +1,42 @@
+;Shapelet Tree 
+
+;random seed:1503366021, rand()=1262581727, rand()=1135309072
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 correlation 0 0 10 ./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_tree.txt ./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_time.txt 
+
+;Local Class:   0  1  2  3  4 
+;Real  Class:   1  2  3  4  5 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 24 
+NonL  1    --    292    9   29   0.0336 ==>   4 169   1  17   0  / 288   8   9   2   2 
+NonL  2    --     76   78   39   0.4929 ==>   0 168   1  12   0  /   4   1   0   5   0 
+Leaf  3     1    
+Leaf  4     2    
+NonL  5    --      5  102   31   0.0240 ==>   0   0   0   5   0  /   4   1   0   0   0 
+Leaf 10     4    
+NonL 11    --      2   78   43   0.4222 ==>   4   0   0   0   0  /   0   1   0   0   0 
+Leaf 22     1    
+Leaf 23     2    
+
+;Shapelet id   <data>
+Shapelet   1  -1.880800 -1.598100 -1.073500 -0.606020 -0.400630 -0.309740 -0.275990 -0.161900  0.108510  0.309780  0.412530  0.538150  0.542470  0.427850  0.378160  0.361890  0.379760  0.453750  0.548390  0.677940  0.668260  0.413160  0.227670  0.279820  0.358980  0.403980  0.430350  0.408670  0.420500 
+Shapelet   2   0.428260  0.423180  0.425030  0.427700  0.426690  0.464150  0.501830  0.481990  0.463980  0.495950  0.519570  0.526860  0.510470  0.489520  0.545600  0.563570  0.514390  0.496230  0.523610  0.574850  0.504320  0.480790  0.553190  0.525860  0.567720  0.549910  0.457730  0.510470  0.520430  0.507100  0.539520  0.516130  0.510470  0.558880  0.571560  0.529600  0.462120  0.339590  0.232470 
+Shapelet   5   0.333980  0.471900  0.427460  0.548140  0.572060  0.603840  0.659860  0.637960  0.639570  0.682220  0.776340  0.761640  0.785130  0.851280  0.870360  0.832040  0.907330  0.912040  0.811800  0.890770  0.921170  0.908360  1.025600  1.210500  1.406200  1.790000  2.064400  2.034800  1.893600  1.776300  1.679600 
+Shapelet  11   0.514040  0.547780  0.569100  0.522880  0.522860  0.546830  0.575610  0.561580  0.496240  0.482760  0.492500  0.462530  0.549890  0.559800  0.513760  0.764790  0.875890  0.954180  1.136000  1.216300  1.462900  1.604800  1.784300  1.772600  1.646600  1.628500  1.443300  1.372100  1.217400  1.025300  0.818880  0.527820  0.290920  0.202220  0.132170  0.169940  0.188610  0.205420  0.178200  0.133120  0.153510  0.134800  0.176710 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 correlation 0 0 10 ./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_tree.txt ./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_time.txt
+; time =>   24.923   1.286  13.189   1.364   7.928 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST 5 4500 correlation 0 0 ./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_tree.txt ./replications/ECG5000/ECG5000_correlation_unnormed_NOCID_REP05_acc.txt
+; accuracy= 91.956   Correct:4138 , Wrong: 362
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2617   97   65   29   15 
+;   p  2 |   9 1485   21  110    7 
+;   p  3 |   0    0    0    0    0 
+;   p  4 |   1    8    0   36    0 
+;   p  5 |   0    0    0    0    0 
+

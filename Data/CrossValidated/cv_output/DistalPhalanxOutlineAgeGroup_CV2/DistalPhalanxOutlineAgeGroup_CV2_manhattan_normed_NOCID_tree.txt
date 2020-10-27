@@ -1,0 +1,37 @@
+;Shapelet Tree 
+
+;random seed:1502274309, rand()=496867834, rand()=1955702236
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineAgeGroup_TRAIN_CV2 3 71 40 1 2 10 manhattan 0 1 10 ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_tree.txt ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --     36   48   13   3.1703 ==>   0   2  33  /   8  28   0 
+Leaf  2     3    
+NonL  3    --     13   32   33   7.4391 ==>   1  27   0  /   7   1   0 
+Leaf  6     2    
+NonL  7    --      7    3   33   1.9969 ==>   0   1   0  /   7   0   0 
+Leaf 14     2    
+Leaf 15     1    
+
+;Shapelet id   <data>
+Shapelet   1  -0.271180 -0.472740 -1.061500 -1.061500 -1.061500 -1.061500 -1.061500 -1.061500 -1.061500 -1.061500 -1.061500 -1.061500 -1.061500 
+Shapelet   3   1.634400  1.385000  1.225400  1.292400  1.095400  1.092900  1.354300  1.369800  1.463800  1.576200  1.481700  1.147900  0.796940  0.383270  0.026053 -0.367320 -0.690920 -0.955600  0.413240  0.263930 -0.030721 -0.498230 -0.785910 -1.127500 -1.532200 -1.818900 -1.747300 -1.488200 -1.169900 -0.845860 -0.393880 -0.119850  0.173860 
+Shapelet   7  -0.317500  0.009719  0.279350  0.559640  0.833190  1.018300  1.231700  1.318700  1.302400  1.280700  1.169400  1.029400  0.849000  0.677090  0.475580  0.310600  0.021176 -0.146810 -0.407810 -0.677500 -0.764740 -0.638100 -0.465340 -0.204470  0.021421  0.365800  0.721440  1.036200  1.403100  1.452500  1.382300  1.354600  1.265600 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineAgeGroup_TRAIN_CV2 3 71 40 1 2 10 manhattan 0 1 10 ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_tree.txt ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_time.txt
+; time =>    0.607   0.043   0.229   0.027   0.281 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineAgeGroup_TRAIN_CV1 3 68 manhattan 0 1 ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_tree.txt ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_acc.txt
+; accuracy= 54.412   Correct:37 , Wrong: 31
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   6    3    2 
+;   p  2 |   1   26   25 
+;   p  3 |   0    0    5 
+

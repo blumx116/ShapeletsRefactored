@@ -1,0 +1,91 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxTW_TRAIN_CV2', 6, 79, 40, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_manhattan_normed_CID_tree.txt', './cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502274299
+num_class=6, num_obj=79, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [5,8]  [4,7]  [3,6]  [2,5]  [1,4]  [0,3]  
+
+=== Node 1 ===
+..................
+Len=9    @[ 57, 46]  d_th= 1.46 gap=0.028368 gain= 0.56057 (33 )==>   0   0   0   0   2  21  /  13  22  12   6   3   0 
+
+=== Node 3 ===
+..................
+Len=25   @[  0, 16]  d_th= 3.08 gap=0.006200 gain= 0.20616 (24 )==>  11  21   5   3   0   0  /   2   1   7   3   3   0 
+
+=== Node 6 ===
+..................
+Len=37   @[ 38, 30]  d_th= 3.73 gap=0.000074 gain= 0.25394 (14 )==>   0   6   4   3   0   0  /  11  15   1   0   0   0 
+
+=== Node 7 ===
+..................
+Len=7    @[  0, 13]  d_th= 0.41 gap=0.000058 gain= 0.68531 (2  )==>   2   0   7   0   0   0  /   0   1   0   3   3   0 
+
+=== Node 12 ===
+..................
+Len=15   @[  1, 23]  d_th= 0.91 gap=0.001836 gain= 0.54020 (7  )==>   0   6   4   0   0   0  /   0   0   0   3   0   0 
+
+=== Node 13 ===
+..................
+Len=7    @[  0, 17]  d_th= 0.36 gap=0.012405 gain= 0.24900 (15 )==>   5   0   1   0   0   0  /   6  15   0   0   0   0 
+
+=== Node 14 ===
+..................
+Len=29   @[  0, 27]  d_th= 2.89 gap=0.226321 gain= 0.52971 (5  )==>   2   0   0   0   0   0  /   0   0   7   0   0   0 
+
+=== Node 15 ===
+..................
+Len=21   @[  0,  6]  d_th= 2.10 gap=0.078532 gain= 0.68291 (1  )==>   0   1   0   0   3   0  /   0   0   0   3   0   0 
+
+=== Node 24 ===
+..................
+Len=21   @[  0, 39]  d_th= 1.37 gap=0.022829 gain= 0.29110 (2  )==>   0   4   0   0   0   0  /   0   2   4   0   0   0 
+
+=== Node 26 ===
+..................
+Len=39   @[  5, 29]  d_th= 1.62 gap=0.259126 gain= 0.45056 (4  )==>   0   0   1   0   0   0  /   5   0   0   0   0   0 
+
+=== Node 27 ===
+..................
+Len=23   @[  5,  1]  d_th= 2.43 gap=0.025758 gain= 0.30505 (13 )==>   4   0   0   0   0   0  /   2  15   0   0   0   0 
+
+=== Node 30 ===
+..................
+Len=39   @[  0, 33]  d_th= 1.95 gap=0.312468 gain= 0.56234 (2  )==>   0   1   0   0   0   0  /   0   0   0   0   3   0 
+
+=== Node 49 ===
+..................
+Len=7    @[  0, 11]  d_th= 0.40 gap=0.038885 gain= 0.63651 (2  )==>   0   2   0   0   0   0  /   0   0   4   0   0   0 
+
+=== Node 55 ===
+..................
+Len=27   @[  0, 35]  d_th= 2.19 gap=0.018600 gain= 0.24988 (11 )==>   2   1   0   0   0   0  /   0  14   0   0   0   0 
+
+num_class=6, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.12 sec
+  Time Rand Project =     0.56 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     1.45 sec
+Running  Time for this Shapelet=     2.27 sec <<
+
+
+Total Running  Time =     2.27 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/MiddlePhalanxTW_TRAIN_CV1', 6, 75, 'manhattan', 1, 1, './cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_manhattan_normed_CID_tree.txt', './cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 49.333   Correct:37 , Wrong: 38
+
+
+;   == Confusion Matrix ==
+;   real |   3    4    5    6    7    8 
+;   -----+------------------------------------
+;   p  3 |   3    3    1    1    0    0 
+;   p  4 |   5    5    4    0    0    0 
+;   p  5 |   2    6    5    1    3    0 
+;   p  6 |   2    6    0    3    0    0 
+;   p  7 |   0    1    0    0    0    0 
+;   p  8 |   0    1    1    0    1   21 
+
+num_class=6, num_obj=75  distance=manhattan CID=true normalize=true ./cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_manhattan_normed_CID_tree.txt  ./cv_output/MiddlePhalanxTW_CV2/MiddlePhalanxTW_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 112
+

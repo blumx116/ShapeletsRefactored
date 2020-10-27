@@ -1,0 +1,51 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineCorrect_TRAIN_CV2', 2, 300, 40, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/ProximalPhalanxOutlineCorrect_CV2/ProximalPhalanxOutlineCorrect_CV2_manhattan_normed_CID_tree.txt', './cv_output/ProximalPhalanxOutlineCorrect_CV2/ProximalPhalanxOutlineCorrect_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502274235
+num_class=2, num_obj=300, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ProximalPhalanxOutlineCorrect_CV2/ProximalPhalanxOutlineCorrect_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/ProximalPhalanxOutlineCorrect_CV2/ProximalPhalanxOutlineCorrect_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=35   @[102, 29]  d_th= 6.88 gap=0.000208 gain= 0.18865 (78 )==>  20 169  /  77  34 
+
+=== Node 2 ===
+..................
+Len=11   @[  0, 40]  d_th= 0.15 gap=0.002041 gain= 0.07612 (177)==>   6   0  /  14 169 
+
+=== Node 3 ===
+..................
+Len=11   @[  0,  1]  d_th= 0.47 gap=0.002512 gain= 0.11009 (55 )==>  49  34  /  28   0 
+
+=== Node 6 ===
+..................
+Len=15   @[ 12, 25]  d_th= 1.34 gap=0.012714 gain= 0.16835 (29 )==>  23  33  /  26   1 
+
+=== Node 12 ===
+..................
+Len=11   @[  5, 25]  d_th= 0.55 gap=0.000217 gain= 0.26067 (30 )==>  13   0  /  10  33 
+
+num_class=2, num_obj=56, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.20 sec
+  Time Rand Project =     0.82 sec
+  Time Score Matrix =     0.11 sec
+  Time Compute Gain =     3.12 sec
+Running  Time for this Shapelet=     4.34 sec <<
+
+
+Total Running  Time =     4.34 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineCorrect_TRAIN_CV1', 2, 300, 'manhattan', 1, 1, './cv_output/ProximalPhalanxOutlineCorrect_CV2/ProximalPhalanxOutlineCorrect_CV2_manhattan_normed_CID_tree.txt', './cv_output/ProximalPhalanxOutlineCorrect_CV2/ProximalPhalanxOutlineCorrect_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 70.667   Correct:212 , Wrong: 88
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |   9    0 
+;   p  1 |  88  203 
+
+num_class=2, num_obj=300  distance=manhattan CID=true normalize=true ./cv_output/ProximalPhalanxOutlineCorrect_CV2/ProximalPhalanxOutlineCorrect_CV2_manhattan_normed_CID_tree.txt  ./cv_output/ProximalPhalanxOutlineCorrect_CV2/ProximalPhalanxOutlineCorrect_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 26
+

@@ -1,0 +1,58 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Worms_TRAIN_CV1', 5, 37, 450, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/Worms_CV1/Worms_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/Worms_CV1/Worms_CV1_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502541273
+num_class=5, num_obj=37, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Worms_CV1/Worms_CV1_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/Worms_CV1/Worms_CV1_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................................................................................................
+Len=93   @[  0, 40]  d_th=22.80 gap=0.185626 gain= 0.52899 (13 )==>  15   0   0   6   4  /   1   6   5   0   0 
+
+=== Node 2 ===
+...............................................................................................................................................................................................................................
+Len=269  @[  7,307]  d_th=95.61 gap=0.123999 gain= 0.45674 (1  )==>   2   0   0   6   4  /  13   0   0   0   0 
+
+=== Node 3 ===
+...............................................................................................................................................................................................................................
+Len=231  @[  7,  0]  d_th=134.33 gap=0.329885 gain= 0.69315 (0  )==>   1   0   5   0   0  /   0   6   0   0   0 
+
+=== Node 4 ===
+...............................................................................................................................................................................................................................
+Len=287  @[  0,433]  d_th=90.78 gap=0.294427 gain= 0.69315 (0  )==>   2   0   0   0   4  /   0   0   0   6   0 
+
+=== Node 6 ===
+...............................................................................................................................................................................................................................
+Len=391  @[  0,466]  d_th=108.76 gap=5.500218 gain= 0.45056 (4  )==>   1   0   0   0   0  /   0   0   5   0   0 
+
+=== Node 8 ===
+...............................................................................................................................................................................................................................
+Len=243  @[  1,389]  d_th=70.06 gap=0.495483 gain= 0.63651 (2  )==>   2   0   0   0   0  /   0   0   0   0   4 
+
+num_class=5, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.71 sec
+  Time Rand Project =    18.35 sec
+  Time Score Matrix =     1.55 sec
+  Time Compute Gain =   168.21 sec
+Running  Time for this Shapelet=   193.20 sec <<
+
+
+Total Running  Time =   193.20 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Worms_TRAIN_CV2', 5, 40, 'manhattan', 0, 1, './cv_output/Worms_CV1/Worms_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/Worms_CV1/Worms_CV1_manhattan_normed_NOCID_acc.txt']
+; accuracy= 60.000   Correct:24 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |  14    1    2    4    1 
+;   p  2 |   2    5    0    0    0 
+;   p  3 |   0    1    1    0    0 
+;   p  4 |   1    0    2    2    1 
+;   p  5 |   0    0    0    1    2 
+
+num_class=5, num_obj=40  distance=manhattan CID=false normalize=true ./cv_output/Worms_CV1/Worms_CV1_manhattan_normed_NOCID_tree.txt  ./cv_output/Worms_CV1/Worms_CV1_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 18
+

@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN', 2, 50, 75, 1, 2, 10, 'euclidean', 1, 1, 10, './replications/Gun_Point/Gun_Point_euclidean_normed_CID_REP08_tree.txt', './replications/Gun_Point/Gun_Point_euclidean_normed_CID_REP08_time.txt']
+
+rand seed=1502942421
+num_class=2, num_obj=50, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Gun_Point/Gun_Point_euclidean_normed_CID_REP08_tree.txt  time_file=./replications/Gun_Point/Gun_Point_euclidean_normed_CID_REP08_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,2]  
+
+=== Node 1 ===
+....................................
+Len=37   @[  9,  3]  d_th= 3.27 gap=0.008661 gain= 0.60837 (0  )==>   1  24  /  25   0 
+
+num_class=2, num_obj=50, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.07 sec
+  Time Rand Project =     0.34 sec
+  Time Score Matrix =     0.04 sec
+  Time Compute Gain =     1.16 sec
+Running  Time for this Shapelet=     1.65 sec <<
+
+
+Total Running  Time =     1.65 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TEST', 2, 150, 'euclidean', 1, 1, './replications/Gun_Point/Gun_Point_euclidean_normed_CID_REP08_tree.txt', './replications/Gun_Point/Gun_Point_euclidean_normed_CID_REP08_acc.txt']
+; accuracy= 84.667   Correct:127 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  67   14 
+;   p  2 |   9   60 
+
+num_class=2, num_obj=150  distance=euclidean CID=true normalize=true ./replications/Gun_Point/Gun_Point_euclidean_normed_CID_REP08_tree.txt  ./replications/Gun_Point/Gun_Point_euclidean_normed_CID_REP08_acc.txt
+
+==> Tree Size = 4
+

@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2', 2, 34, 12, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503460945
+num_class=2, num_obj=34, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=11   @[ 19,  3]  d_th= 0.03 gap=0.000303 gain= 0.23221 (16 )==>   0   9  /  17   8 
+
+=== Node 3 ===
+....
+Len=5    @[  5, 18]  d_th= 0.05 gap=0.000707 gain= 0.24444 (3  )==>  11   0  /   6   8 
+
+=== Node 7 ===
+....
+Len=11   @[  7,  8]  d_th= 0.37 gap=0.017866 gain= 0.45866 (4  )==>   1   8  /   5   0 
+
+=== Node 14 ===
+....
+Len=11   @[  0,  9]  d_th= 0.03 gap=0.009904 gain= 0.34883 (7  )==>   1   0  /   0   8 
+
+num_class=2, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.01 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.03 sec <<
+
+
+Total Running  Time =     0.03 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1', 2, 33, 'correlation', 0, 0, './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 78.788   Correct:26 , Wrong: 7
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  10    0 
+;   p  2 |   7   16 
+
+num_class=2, num_obj=33  distance=correlation CID=false normalize=false ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_tree.txt  ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 30
+

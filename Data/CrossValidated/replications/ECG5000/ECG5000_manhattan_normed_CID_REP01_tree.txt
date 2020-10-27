@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1501829401, rand()=1349568181, rand()=470138453
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 manhattan 1 1 10 ./output/ECG5000/ECG5000_manhattan_normed_CID_REP01_tree.txt ./output/ECG5000/ECG5000_manhattan_normed_CID_REP01_time.txt 
+
+;Local Class:   0  1  2  3  4 
+;Real  Class:   1  2  3  4  5 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --    325    7   41   7.8486 ==>   0 162   3  16   0  / 292  15   7   3   2 
+NonL  2    --      2    1   59  29.0941 ==>   0 162   0  15   0  /   0   0   3   1   0 
+Leaf  3     1    
+Leaf  4     2    
+Leaf  5     3    
+
+;Shapelet id   <data>
+Shapelet   1  -1.763600 -1.300700 -0.798890 -0.472750 -0.401040 -0.301930 -0.093508  0.227740  0.524810  0.620290  0.595500  0.536060  0.493870  0.516180  0.496020  0.479150  0.530340  0.552770  0.568530  0.573610  0.552840  0.606310  0.637220  0.544190  0.461200  0.458020  0.485420  0.493560  0.464000  0.456980  0.515320  0.537000  0.466120  0.410270  0.415640  0.413730  0.419590  0.440700  0.376700  0.279210  0.268910 
+Shapelet   2  -0.222260 -0.754770 -1.415600 -1.775900 -2.162300 -2.467500 -2.331400 -1.993500 -1.611700 -1.046700 -0.564310 -0.446320 -0.438640 -0.159670  0.194230  0.324410  0.242550  0.243230  0.262020  0.221720  0.210140  0.307670  0.243140  0.205260  0.210580  0.240820  0.245580  0.219570  0.299720  0.224710  0.188660  0.229920  0.211860  0.210530  0.163810  0.179110  0.166820  0.163470  0.163020  0.171800  0.119470  0.115760  0.166270  0.081258  0.096828  0.131570  0.120080  0.125250  0.078788  0.082758  0.049107  0.051442  0.035746  0.035145  0.022598  0.015558  0.061641  0.116220  0.036974 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 manhattan 1 1 10 ./output/ECG5000/ECG5000_manhattan_normed_CID_REP01_tree.txt ./output/ECG5000/ECG5000_manhattan_normed_CID_REP01_time.txt
+; time =>   47.180   1.371  18.351   4.670  19.276 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ECG5000_TEST 5 4500 manhattan 1 1 ./output/ECG5000/ECG5000_manhattan_normed_CID_REP01_tree.txt ./output/ECG5000/ECG5000_manhattan_normed_CID_REP01_acc.txt
+; accuracy= 88.244   Correct:3971 , Wrong: 529
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2588  212   58   22   16 
+;   p  2 |  20 1371   16  148    6 
+;   p  3 |  19    7   12    5    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+

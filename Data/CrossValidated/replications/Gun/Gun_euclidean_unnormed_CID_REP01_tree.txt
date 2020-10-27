@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1501837404, rand()=1169962120, rand()=319402511
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 euclidean 1 0 10 ./output/Gun/Gun_euclidean_unnormed_CID_REP01_tree.txt ./output/Gun/Gun_euclidean_unnormed_CID_REP01_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   2  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      2  100   15   0.7314 ==>   0  18  /  26   6 
+Leaf  2     1    
+NonL  3    --      8   23   59   1.2594 ==>   0   6  /  26   0 
+Leaf  6     1    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1   0.187740  0.039058 -0.078698 -0.208210 -0.312640 -0.389000 -0.451820 -0.499660 -0.533070 -0.557150 -0.562840 -0.577440 -0.598070 -0.620100 -0.637170 
+Shapelet   3  -1.027100 -0.940230 -0.874550 -0.846780 -0.826900 -0.820560 -0.817710 -0.814080 -0.821730 -0.820910 -0.812850 -0.796440 -0.796440 -0.790570 -0.778240 -0.758930 -0.738220 -0.708850 -0.660990 -0.549090 -0.411350 -0.253370 -0.075609  0.093548  0.259840  0.396340  0.519880  0.622460  0.727770  0.812150  0.889510  0.945450  0.994670  1.028800  1.067000  1.082400  1.088400  1.097900  1.098500  1.094200  1.092700  1.108500  1.104200  1.102100  1.099700  1.098500  1.096800  1.097600  1.096700  1.095500  1.091300  1.086500  1.084500  1.084500  1.085800  1.083800  1.079200  1.084900  1.081800 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 euclidean 1 0 10 ./output/Gun/Gun_euclidean_unnormed_CID_REP01_tree.txt ./output/Gun/Gun_euclidean_unnormed_CID_REP01_time.txt
+; time =>    2.687   0.134   0.738   0.090   1.654 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/Gun_Point_TEST 2 150 euclidean 1 0 ./output/Gun/Gun_euclidean_unnormed_CID_REP01_tree.txt ./output/Gun/Gun_euclidean_unnormed_CID_REP01_acc.txt
+; accuracy= 90.000   Correct:135 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  75   14 
+;   p  2 |   1   60 
+

@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2', 2, 34, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502274202
+num_class=2, num_obj=34, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=7    @[  2, 12]  d_th= 1.83 gap=0.081208 gain= 0.34635 (10 )==>  12   0  /   5  17 
+
+=== Node 3 ===
+....
+Len=7    @[  1, 12]  d_th= 2.16 gap=0.000191 gain= 0.53596 (12 )==>   5   0  /   0  17 
+
+num_class=2, num_obj=22, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.01 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.00 sec
+Running  Time for this Shapelet=     0.02 sec <<
+
+
+Total Running  Time =     0.02 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1', 2, 33, 'manhattan', 0, 0, './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 90.909   Correct:30 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  14    0 
+;   p  2 |   3   16 
+
+num_class=2, num_obj=33  distance=manhattan CID=false normalize=false ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_NOCID_tree.txt  ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 8
+

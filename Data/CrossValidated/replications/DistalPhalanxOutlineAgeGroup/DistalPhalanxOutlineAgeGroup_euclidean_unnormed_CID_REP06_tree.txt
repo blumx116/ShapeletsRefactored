@@ -1,0 +1,52 @@
+;Shapelet Tree 
+
+;random seed:1501823673, rand()=1594302727, rand()=1489116827
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TRAIN 3 139 40 1 2 10 euclidean 1 0 10 ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_CID_REP06_tree.txt ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_CID_REP06_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   2  3  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 46 
+NonL  1    --      0   13   21   1.5043 ==>  58  27  15  /   1  38   0 
+NonL  2    --      6   56   13   0.8725 ==>   4   0  12  /  54  27   3 
+Leaf  3     3    
+NonL  4    --      0   40   31   1.5477 ==>   1   0  12  /   3   0   0 
+NonL  5    --      1   38   39   1.1818 ==>   2  13   1  /  52  14   2 
+Leaf  8     1    
+Leaf  9     2    
+NonL 10    --      0    5    7   0.1929 ==>   2   1   1  /   0  12   0 
+NonL 11    --      0   22    7   0.3196 ==>  23  13   0  /  29   1   2 
+NonL 20    --      1   43   17   0.4864 ==>   2   0   0  /   0   1   1 
+Leaf 21     3    
+NonL 22    --      0   56   11   0.6144 ==>  21   4   0  /   2   9   0 
+Leaf 23     2    
+Leaf 40     2    
+Leaf 41     3    
+Leaf 44     2    
+Leaf 45     3    
+
+;Shapelet id   <data>
+Shapelet   1   1.341100  1.173000  0.953170  0.673320  0.582900  0.299100  0.030086 -0.127690 -0.445840 -0.763090 -0.931560 -1.009000 -0.809310 -0.492130 -0.202430  0.106320  0.425890  0.748650  1.077400  1.410200  1.542900 
+Shapelet   2  -1.226500 -1.221200 -1.276200 -1.238900 -1.101100 -0.977060 -0.911640 -0.830990 -0.668070 -0.496450 -0.658100 -0.799150 -0.847220 
+Shapelet   4   1.609900  1.620700  1.414200  1.034000  0.739780  0.375100  0.084831 -0.142810 -0.403810 -0.642320 -0.790480 -0.819260 -0.853740 -0.932710 -1.048300 -1.190100 -1.226500 -1.221200 -1.276200 -1.238900 -1.101100 -0.977060 -0.911640 -0.830990 -0.668070 -0.496450 -0.658100 -0.799150 -0.847220 -0.948260 -1.072300 
+Shapelet   5   1.415100  1.547500  1.700300  1.612700  1.310100  0.951050  0.629770  0.272800 -0.081916 -0.444490 -0.746160 -0.884770  0.030128  0.114580  0.013788 -0.286010 -0.493930 -0.725830 -1.025900 -1.306700 -1.490300 -1.482300 -1.382200 -1.256800 -1.008400 -0.773230 -0.512220 -0.338770 -0.235340 -0.409260 -0.610350 -0.910440 -1.194100 -1.395300 -1.537000 -1.468600 -1.277800 -1.030900 -0.856200 
+Shapelet  10   0.270470  0.606860  0.775430  1.146500  1.370500  1.462600  1.539900 
+Shapelet  11  -0.763090 -0.931560 -1.009000 -0.809310 -0.492130 -0.202430  0.106320 
+Shapelet  20   1.063400  0.773340  0.380570 -0.054382 -0.431320 -0.763750 -0.938310 -0.103380  0.045236 -0.137420 -0.424460 -0.708010 -1.052900 -1.243200 -1.460200 -1.561100 -1.416400 
+Shapelet  22  -1.467900 -1.570300 -1.484300 -1.237700 -0.972340 -0.739300 -0.473590 -0.247680 -0.086920 -0.169570 -0.374340 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TRAIN 3 139 40 1 2 10 euclidean 1 0 10 ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_CID_REP06_tree.txt ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_CID_REP06_time.txt
+; time =>    3.619   0.260   1.355   0.179   1.684 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineAgeGroup_TEST 3 400 euclidean 1 0 ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_CID_REP06_tree.txt ./output/DistalPhalanxOutlineAgeGroup/DistalPhalanxOutlineAgeGroup_euclidean_unnormed_CID_REP06_acc.txt
+; accuracy= 79.750   Correct:319 , Wrong: 81
+
+
+;   == Confusion Matrix ==
+;   real |   2    3    1 
+;   -----+------------------
+;   p  2 |  78   31   12 
+;   p  3 |  34  226    3 
+;   p  1 |   1    0   15 
+

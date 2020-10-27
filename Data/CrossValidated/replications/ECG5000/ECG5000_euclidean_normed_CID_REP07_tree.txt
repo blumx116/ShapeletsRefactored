@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1501828856, rand()=1104688170, rand()=1497944875
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 euclidean 1 1 10 ./output/ECG5000/ECG5000_euclidean_normed_CID_REP07_tree.txt ./output/ECG5000/ECG5000_euclidean_normed_CID_REP07_time.txt 
+
+;Local Class:   0  1  2  3  4 
+;Real  Class:   1  2  3  4  5 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --    325    7   41   1.6876 ==>   0 165   3  16   0  / 292  12   7   3   2 
+NonL  2    --    161    5   45   4.0594 ==>   0 165   0  15   0  /   0   0   3   1   0 
+Leaf  3     1    
+Leaf  4     2    
+Leaf  5     3    
+
+;Shapelet id   <data>
+Shapelet   1  -1.763600 -1.300700 -0.798890 -0.472750 -0.401040 -0.301930 -0.093508  0.227740  0.524810  0.620290  0.595500  0.536060  0.493870  0.516180  0.496020  0.479150  0.530340  0.552770  0.568530  0.573610  0.552840  0.606310  0.637220  0.544190  0.461200  0.458020  0.485420  0.493560  0.464000  0.456980  0.515320  0.537000  0.466120  0.410270  0.415640  0.413730  0.419590  0.440700  0.376700  0.279210  0.268910 
+Shapelet   2  -1.117600 -1.340900 -1.714800 -2.029800 -2.107400 -2.030400 -1.646500 -1.262000 -0.968140 -0.704680 -0.621410 -0.644740 -0.399800  0.050363  0.187770  0.193010  0.242750  0.198690  0.239020  0.192960  0.126380  0.223030  0.285330  0.248720  0.144030  0.238220  0.370650  0.302640  0.283250  0.303270  0.323830  0.279100  0.190040  0.195630  0.213780  0.246170  0.214040  0.147660  0.198280  0.260760  0.251060  0.177700  0.163520  0.197590  0.140730 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 euclidean 1 1 10 ./output/ECG5000/ECG5000_euclidean_normed_CID_REP07_tree.txt ./output/ECG5000/ECG5000_euclidean_normed_CID_REP07_time.txt
+; time =>   45.908   1.395  18.265   4.819  17.878 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ECG5000_TEST 5 4500 euclidean 1 1 ./output/ECG5000/ECG5000_euclidean_normed_CID_REP07_tree.txt ./output/ECG5000/ECG5000_euclidean_normed_CID_REP07_acc.txt
+; accuracy= 89.600   Correct:4032 , Wrong: 468
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2597  160   56   19   16 
+;   p  2 |  17 1426   21  153    6 
+;   p  3 |  13    4    9    3    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+

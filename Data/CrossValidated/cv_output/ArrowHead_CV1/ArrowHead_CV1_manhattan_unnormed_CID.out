@@ -1,0 +1,44 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV1', 3, 18, 126, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/ArrowHead_CV1/ArrowHead_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/ArrowHead_CV1/ArrowHead_CV1_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502275357
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ArrowHead_CV1/ArrowHead_CV1_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/ArrowHead_CV1/ArrowHead_CV1_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=89   @[ 13, 84]  d_th=41.60 gap=0.674893 gain= 0.63651 (6  )==>   0   6   6  /   6   0   0 
+
+=== Node 2 ===
+.............................................................
+Len=23   @[  0, 94]  d_th= 1.74 gap=0.049241 gain= 0.45391 (2  )==>   0   5   0  /   0   1   6 
+
+=== Node 5 ===
+.............................................................
+Len=109  @[  0,  0]  d_th= 9.34 gap=0.894905 gain= 0.41012 (5  )==>   0   1   0  /   0   0   6 
+
+num_class=3, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.14 sec
+  Time Rand Project =     0.57 sec
+  Time Score Matrix =     0.06 sec
+  Time Compute Gain =     2.34 sec
+Running  Time for this Shapelet=     3.19 sec <<
+
+
+Total Running  Time =     3.19 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV2', 3, 18, 'manhattan', 1, 0, './cv_output/ArrowHead_CV1/ArrowHead_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/ArrowHead_CV1/ArrowHead_CV1_manhattan_unnormed_CID_acc.txt']
+; accuracy= 72.222   Correct:13 , Wrong: 5
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |   4    0    2 
+;   p  1 |   0    5    0 
+;   p  2 |   2    1    4 
+
+num_class=3, num_obj=18  distance=manhattan CID=true normalize=false ./cv_output/ArrowHead_CV1/ArrowHead_CV1_manhattan_unnormed_CID_tree.txt  ./cv_output/ArrowHead_CV1/ArrowHead_CV1_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 12
+

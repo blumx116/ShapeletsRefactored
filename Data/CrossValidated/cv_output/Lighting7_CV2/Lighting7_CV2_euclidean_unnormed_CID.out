@@ -1,0 +1,68 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Lighting7_TRAIN_CV2', 7, 36, 160, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/Lighting7_CV2/Lighting7_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/Lighting7_CV2/Lighting7_CV2_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502278143
+num_class=7, num_obj=36, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Lighting7_CV2/Lighting7_CV2_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/Lighting7_CV2/Lighting7_CV2_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [6,6]  [5,5]  [4,4]  [3,3]  [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................
+Len=81   @[  3, 74]  d_th=14.83 gap=0.015851 gain= 0.56234 (18 )==>   4   4   4   0   0  10   5  /   0   0   0   6   3   0   0 
+
+=== Node 2 ===
+..............................................................................
+Len=115  @[  0,122]  d_th= 8.08 gap=0.012304 gain= 0.49057 (5  )==>   4   4   0   0   0   8   0  /   0   0   4   0   0   2   5 
+
+=== Node 3 ===
+..............................................................................
+Len=129  @[  4, 90]  d_th=15.71 gap=0.399372 gain= 0.63651 (3  )==>   0   0   0   6   0   0   0  /   0   0   0   0   3   0   0 
+
+=== Node 4 ===
+..............................................................................
+Len=7    @[  0,256]  d_th= 0.68 gap=0.033591 gain= 0.56234 (8  )==>   4   0   0   0   0   0   0  /   0   4   0   0   0   8   0 
+
+=== Node 5 ===
+..............................................................................
+Len=9    @[  7,219]  d_th= 1.90 gap=0.028493 gain= 0.65548 (3  )==>   0   0   0   0   0   2   5  /   0   0   4   0   0   0   0 
+
+=== Node 9 ===
+..............................................................................
+Len=23   @[  0,258]  d_th= 9.48 gap=0.028484 gain= 0.42801 (2  )==>   0   4   0   0   0   1   0  /   0   0   0   0   0   7   0 
+
+=== Node 10 ===
+..............................................................................
+Len=89   @[  1, 86]  d_th= 6.67 gap=0.090346 gain= 0.59827 (3  )==>   0   0   0   0   0   2   0  /   0   0   0   0   0   0   5 
+
+=== Node 18 ===
+..............................................................................
+Len=61   @[  0,255]  d_th=22.44 gap=0.872819 gain= 0.50040 (3  )==>   0   4   0   0   0   0   0  /   0   0   0   0   0   1   0 
+
+num_class=7, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.20 sec
+  Time Rand Project =     7.97 sec
+  Time Score Matrix =     0.66 sec
+  Time Compute Gain =    11.99 sec
+Running  Time for this Shapelet=    22.59 sec <<
+
+
+Total Running  Time =    22.59 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Lighting7_TRAIN_CV1', 7, 34, 'euclidean', 1, 0, './cv_output/Lighting7_CV2/Lighting7_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/Lighting7_CV2/Lighting7_CV2_euclidean_unnormed_CID_acc.txt']
+; accuracy= 52.941   Correct:18 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2    3    4    5    6 
+;   -----+------------------------------------------
+;   p  0 |   0    0    0    0    0    2    0 
+;   p  1 |   0    2    0    0    0    0    0 
+;   p  2 |   1    1    1    0    0    0    0 
+;   p  3 |   0    0    0    5    1    0    0 
+;   p  4 |   0    0    0    1    1    0    1 
+;   p  5 |   1    1    0    0    0    7    2 
+;   p  6 |   2    0    3    0    0    0    2 
+
+num_class=7, num_obj=34  distance=euclidean CID=true normalize=false ./cv_output/Lighting7_CV2/Lighting7_CV2_euclidean_unnormed_CID_tree.txt  ./cv_output/Lighting7_CV2/Lighting7_CV2_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 38
+

@@ -1,0 +1,560 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP01_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP01_time.txt']
+
+rand seed=1502489790
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP01_tree.txt  time_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP01_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=67   @[ 17,225]  d_th= 7.24 gap=0.000836 gain= 0.09851 (61 )==>  39   0  /  65  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=129  @[  4,314]  d_th=14.02 gap=0.000121 gain= 0.08287 (6  )==>  44   9  /  21  26 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=99   @[ 20,403]  d_th= 9.98 gap=0.001559 gain= 0.17279 (23 )==>   7   8  /  37   1 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=9    @[  3,371]  d_th= 1.48 gap=0.003390 gain= 0.22314 (11 )==>   1  17  /  20   9 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=27   @[  1,277]  d_th= 3.47 gap=0.023470 gain= 0.48998 (1  )==>   7   1  /   0   7 
+
+=== Node 15 ===
+..............................................................................................................................
+Len=11   @[  1,486]  d_th= 2.43 gap=0.000397 gain= 0.27127 (1  )==>  14   0  /   6   9 
+
+num_class=2, num_obj=29, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    12.97 sec
+  Time Rand Project =   162.34 sec
+  Time Score Matrix =    10.08 sec
+  Time Compute Gain =   170.33 sec
+Running  Time for this Shapelet=   364.93 sec <<
+
+
+Total Running  Time =   364.93 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'euclidean', 1, 0, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP01_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP01_acc.txt']
+0
+num_class=2, num_obj=322  distance=euclidean CID=true normalize=false ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP01_tree.txt  ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP01_acc.txt
+
+==> Tree Size = 32
+
+; accuracy= 65.839   Correct:212 , Wrong: 110
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  17   69 
+;   p  0 |  41  195 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP02_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP02_time.txt']
+
+rand seed=1502490172
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP02_tree.txt  time_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP02_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=9    @[  0, 13]  d_th= 0.62 gap=0.003188 gain= 0.07772 (75 )==>  32   0  /  72  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=141  @[  5,302]  d_th=14.69 gap=0.000213 gain= 0.07623 (7  )==>  48   9  /  24  26 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=47   @[ 19,364]  d_th= 5.65 gap=0.002952 gain= 0.13466 (3  )==>  18   9  /  30   0 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=15   @[  3,244]  d_th= 1.20 gap=0.051868 gain= 0.19218 (26 )==>   0  12  /  24  14 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=15   @[  0,159]  d_th= 0.90 gap=0.031557 gain= 0.26262 (3  )==>  12   0  /   6   9 
+
+=== Node 15 ===
+..............................................................................................................................
+Len=249  @[ 17,188]  d_th=19.60 gap=0.001176 gain= 0.19483 (8  )==>   4  11  /  20   3 
+
+num_class=2, num_obj=38, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    14.13 sec
+  Time Rand Project =   182.04 sec
+  Time Score Matrix =    11.02 sec
+  Time Compute Gain =   185.94 sec
+Running  Time for this Shapelet=   403.24 sec <<
+
+
+Total Running  Time =   403.24 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'euclidean', 1, 0, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP02_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP02_acc.txt']
+0
+num_class=2, num_obj=322  distance=euclidean CID=true normalize=false ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP02_tree.txt  ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP02_acc.txt
+
+==> Tree Size = 32
+
+; accuracy= 66.149   Correct:213 , Wrong: 109
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  21   72 
+;   p  0 |  37  192 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP03_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP03_time.txt']
+
+rand seed=1502490591
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP03_tree.txt  time_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP03_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=67   @[ 17,225]  d_th= 7.24 gap=0.000836 gain= 0.09851 (61 )==>  39   0  /  65  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=91   @[ 20, 21]  d_th=10.51 gap=0.002831 gain= 0.08788 (64 )==>  18   0  /  47  35 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=143  @[ 22,148]  d_th=15.45 gap=0.001055 gain= 0.09397 (32 )==>  22   3  /  25  32 
+
+=== Node 14 ===
+..............................................................................................................................
+Len=95   @[  0,298]  d_th=11.26 gap=0.005886 gain= 0.36692 (19 )==>   0   3  /  22   0 
+
+=== Node 15 ===
+..............................................................................................................................
+Len=179  @[  8,235]  d_th=17.21 gap=0.000674 gain= 0.17573 (29 )==>  12  31  /  13   1 
+
+num_class=2, num_obj=57, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    13.82 sec
+  Time Rand Project =   180.97 sec
+  Time Score Matrix =    11.05 sec
+  Time Compute Gain =   179.51 sec
+Running  Time for this Shapelet=   395.38 sec <<
+
+
+Total Running  Time =   395.38 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'euclidean', 1, 0, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP03_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP03_acc.txt']
+0
+num_class=2, num_obj=322  distance=euclidean CID=true normalize=false ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP03_tree.txt  ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP03_acc.txt
+
+==> Tree Size = 32
+
+; accuracy= 66.460   Correct:214 , Wrong: 108
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  20   70 
+;   p  0 |  38  194 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_time.txt']
+
+rand seed=1502491004
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_tree.txt  time_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=15   @[  0, 11]  d_th= 0.94 gap=0.024904 gain= 0.07772 (75 )==>  32   0  /  72  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=45   @[ 12, 81]  d_th= 3.59 gap=0.001816 gain= 0.06617 (95 )==>   0   6  /  72  29 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=9    @[  0,326]  d_th= 0.33 gap=0.000392 gain= 0.08993 (55 )==>  23   0  /  49  29 
+
+=== Node 15 ===
+..............................................................................................................................
+Len=107  @[  6,178]  d_th=13.15 gap=0.000490 gain= 0.12507 (2  )==>  33   5  /  16  24 
+
+num_class=2, num_obj=78, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    14.89 sec
+  Time Rand Project =   198.51 sec
+  Time Score Matrix =    12.11 sec
+  Time Compute Gain =   189.77 sec
+Running  Time for this Shapelet=   426.46 sec <<
+
+
+Total Running  Time =   426.46 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'euclidean', 1, 0, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_acc.txt']
+0
+num_class=2, num_obj=322  distance=euclidean CID=true normalize=false ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_tree.txt  ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP04_acc.txt
+
+==> Tree Size = 32
+
+; accuracy= 69.255   Correct:223 , Wrong: 99
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  21   62 
+;   p  0 |  37  202 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP05_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP05_time.txt']
+
+rand seed=1502491446
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP05_tree.txt  time_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP05_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=15   @[  0, 11]  d_th= 0.94 gap=0.024904 gain= 0.07772 (75 )==>  32   0  /  72  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=143  @[  6,302]  d_th=14.85 gap=0.000215 gain= 0.07125 (23 )==>  53  12  /  19  23 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=123  @[ 29, 41]  d_th=11.21 gap=0.012635 gain= 0.14580 (55 )==>   0   5  /  53   7 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=13   @[  2,  9]  d_th= 1.53 gap=0.095769 gain= 0.17397 (22 )==>   0  10  /  19  13 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=35   @[  0, 10]  d_th= 4.24 gap=0.044871 gain= 0.13073 (44 )==>   3   5  /  50   2 
+
+=== Node 15 ===
+..............................................................................................................................
+Len=15   @[  1,257]  d_th= 2.75 gap=0.001661 gain= 0.37535 (4  )==>   2  12  /  17   1 
+
+num_class=2, num_obj=32, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    15.30 sec
+  Time Rand Project =   198.34 sec
+  Time Score Matrix =    12.11 sec
+  Time Compute Gain =   199.33 sec
+Running  Time for this Shapelet=   435.92 sec <<
+
+
+Total Running  Time =   435.92 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'euclidean', 1, 0, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP05_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP05_acc.txt']
+0
+num_class=2, num_obj=322  distance=euclidean CID=true normalize=false ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP05_tree.txt  ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP05_acc.txt
+
+==> Tree Size = 32
+
+; accuracy= 72.050   Correct:232 , Wrong: 90
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |   8   40 
+;   p  0 |  50  224 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP06_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP06_time.txt']
+
+rand seed=1502491900
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP06_tree.txt  time_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP06_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=67   @[ 17,225]  d_th= 7.24 gap=0.000836 gain= 0.09851 (61 )==>  39   0  /  65  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=245  @[ 24, 21]  d_th=24.00 gap=0.001143 gain= 0.07321 (30 )==>  31   4  /  34  31 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=59   @[  0, 59]  d_th= 8.97 gap=0.021015 gain= 0.35538 (27 )==>   0   4  /  31   0 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=55   @[  4,446]  d_th= 5.70 gap=0.003248 gain= 0.13871 (41 )==>  12   0  /  22  31 
+
+=== Node 15 ===
+..............................................................................................................................
+Len=197  @[  8,268]  d_th=16.84 gap=0.000218 gain= 0.17476 (35 )==>   9   0  /  13  31 
+
+num_class=2, num_obj=53, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    13.35 sec
+  Time Rand Project =   169.48 sec
+  Time Score Matrix =    10.54 sec
+  Time Compute Gain =   176.22 sec
+Running  Time for this Shapelet=   378.95 sec <<
+
+
+Total Running  Time =   378.95 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'euclidean', 1, 0, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP06_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP06_acc.txt']
+0
+num_class=2, num_obj=322  distance=euclidean CID=true normalize=false ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP06_tree.txt  ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP06_acc.txt
+
+==> Tree Size = 32
+
+; accuracy= 65.528   Correct:211 , Wrong: 111
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  27   80 
+;   p  0 |  31  184 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP07_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP07_time.txt']
+
+rand seed=1502492293
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP07_tree.txt  time_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP07_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=9    @[  0, 13]  d_th= 0.62 gap=0.003188 gain= 0.07772 (75 )==>  32   0  /  72  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=155  @[ 79,293]  d_th=15.04 gap=0.000259 gain= 0.08996 (91 )==>   0   8  /  72  27 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=103  @[ 63,324]  d_th=12.36 gap=0.000441 gain= 0.10864 (11 )==>  50   5  /  22  22 
+
+=== Node 15 ===
+..............................................................................................................................
+Len=213  @[ 29,264]  d_th=18.90 gap=0.003181 gain= 0.24145 (20 )==>  12   0  /  10  22 
+
+num_class=2, num_obj=44, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    13.08 sec
+  Time Rand Project =   169.59 sec
+  Time Score Matrix =    10.75 sec
+  Time Compute Gain =   173.36 sec
+Running  Time for this Shapelet=   376.67 sec <<
+
+
+Total Running  Time =   376.67 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'euclidean', 1, 0, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP07_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP07_acc.txt']
+0
+num_class=2, num_obj=322  distance=euclidean CID=true normalize=false ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP07_tree.txt  ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP07_acc.txt
+
+==> Tree Size = 32
+
+; accuracy= 64.286   Correct:207 , Wrong: 115
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  18   75 
+;   p  0 |  40  189 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP08_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP08_time.txt']
+
+rand seed=1502492682
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP08_tree.txt  time_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP08_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=9    @[  0, 13]  d_th= 0.62 gap=0.003188 gain= 0.07772 (75 )==>  32   0  /  72  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=95   @[ 83,402]  d_th=13.40 gap=0.002760 gain= 0.08414 (67 )==>  20   0  /  52  35 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=65   @[ 76,  3]  d_th= 8.62 gap=0.000757 gain= 0.07931 (17 )==>  23  29  /  29   6 
+
+=== Node 14 ===
+..............................................................................................................................
+Len=225  @[ 19,263]  d_th=19.36 gap=0.001165 gain= 0.16468 (34 )==>   9   0  /  14  29 
+
+=== Node 15 ===
+..............................................................................................................................
+Len=141  @[ 28,  6]  d_th=14.84 gap=0.006581 gain= 0.24627 (27 )==>   0   4  /  29   2 
+
+num_class=2, num_obj=35, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    14.50 sec
+  Time Rand Project =   186.85 sec
+  Time Score Matrix =    11.57 sec
+  Time Compute Gain =   188.41 sec
+Running  Time for this Shapelet=   411.78 sec <<
+
+
+Total Running  Time =   411.78 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'euclidean', 1, 0, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP08_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP08_acc.txt']
+0
+num_class=2, num_obj=322  distance=euclidean CID=true normalize=false ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP08_tree.txt  ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP08_acc.txt
+
+==> Tree Size = 32
+
+; accuracy= 68.323   Correct:220 , Wrong: 102
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  23   67 
+;   p  0 |  35  197 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP09_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP09_time.txt']
+
+rand seed=1502493110
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP09_tree.txt  time_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP09_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=9    @[  0, 13]  d_th= 0.62 gap=0.003188 gain= 0.07772 (75 )==>  32   0  /  72  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=181  @[  3,219]  d_th=16.51 gap=0.000023 gain= 0.08414 (67 )==>  20   0  /  52  35 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=33   @[ 77,122]  d_th= 7.22 gap=0.001764 gain= 0.11604 (67 )==>  52  25  /   0  10 
+
+=== Node 14 ===
+..............................................................................................................................
+Len=125  @[  8,264]  d_th=12.74 gap=0.001951 gain= 0.11212 (63 )==>   0   7  /  52  18 
+
+num_class=2, num_obj=77, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    14.08 sec
+  Time Rand Project =   186.73 sec
+  Time Score Matrix =    11.54 sec
+  Time Compute Gain =   183.98 sec
+Running  Time for this Shapelet=   406.81 sec <<
+
+
+Total Running  Time =   406.81 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'euclidean', 1, 0, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP09_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP09_acc.txt']
+0
+num_class=2, num_obj=322  distance=euclidean CID=true normalize=false ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP09_tree.txt  ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP09_acc.txt
+
+==> Tree Size = 30
+
+; accuracy= 74.534   Correct:240 , Wrong: 82
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |   4   28 
+;   p  0 |  54  236 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'euclidean', 1, 0, 10, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP10_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP10_time.txt']
+
+rand seed=1502493533
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP10_tree.txt  time_file=./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP10_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=9    @[  0, 13]  d_th= 0.62 gap=0.003188 gain= 0.07772 (75 )==>  32   0  /  72  35 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=81   @[ 19,202]  d_th=10.22 gap=0.000175 gain= 0.06832 (59 )==>  23   1  /  49  34 
+
+=== Node 7 ===
+..............................................................................................................................
+Len=81   @[ 71, 93]  d_th= 8.83 gap=0.001187 gain= 0.10584 (47 )==>   3  15  /  46  19 
+
+=== Node 14 ===
+..............................................................................................................................
+Len=113  @[  1, 73]  d_th=10.70 gap=0.007780 gain= 0.45056 (12 )==>   3   0  /   0  15 
+
+=== Node 15 ===
+..............................................................................................................................
+Len=89   @[ 10,114]  d_th=11.74 gap=0.001370 gain= 0.15014 (21 )==>  24  19  /  22   0 
+
+num_class=2, num_obj=65, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    14.33 sec
+  Time Rand Project =   184.89 sec
+  Time Score Matrix =    11.44 sec
+  Time Compute Gain =   184.70 sec
+Running  Time for this Shapelet=   405.68 sec <<
+
+
+Total Running  Time =   405.68 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'euclidean', 1, 0, './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP10_tree.txt', './output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP10_acc.txt']
+0
+num_class=2, num_obj=322  distance=euclidean CID=true normalize=false ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP10_tree.txt  ./output/Earthquakes/Earthquakes_euclidean_unnormed_CID_REP10_acc.txt
+
+==> Tree Size = 32
+
+; accuracy= 76.398   Correct:246 , Wrong: 76
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |   1   19 
+;   p  0 |  57  245 
+
+
+================ Replication:  10 Finished ================

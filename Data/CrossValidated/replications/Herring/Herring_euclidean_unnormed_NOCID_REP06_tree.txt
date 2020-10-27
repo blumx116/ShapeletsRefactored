@@ -1,0 +1,42 @@
+;Shapelet Tree 
+
+;random seed:1502330236, rand()=1995767487, rand()=871013469
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Herring_TRAIN 2 64 256 1 2 10 euclidean 0 0 10 ./output/Herring/Herring_euclidean_unnormed_NOCID_REP06_tree.txt ./output/Herring/Herring_euclidean_unnormed_NOCID_REP06_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 26 
+NonL  1    --     13  142   43   0.5650 ==>   2  12  /  37  13 
+NonL  2    --      0  209   21   0.0795 ==>   2   0  /   0  12 
+NonL  3    --      0  127   41   0.8336 ==>  21  13  /  16   0 
+Leaf  4     1    
+Leaf  5     2    
+NonL  6    --      1   89   21   0.3464 ==>  11  13  /  10   0 
+Leaf  7     1    
+NonL 12    --      0  328   27   0.8186 ==>  11   5  /   0   8 
+Leaf 13     1    
+Leaf 24     1    
+Leaf 25     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.930680 -0.929700 -0.949530 -0.960710 -0.979210 -0.979080 -0.970670 -0.941230 -0.909680 -0.891510 -0.859390 -0.826530 -0.798290 -0.783240 -0.772020 -0.761580 -0.766280 -0.779330 -0.800960 -0.799890 -0.793600 -0.763820 -0.742310 -0.719460 -0.705250 -0.693460 -0.673340 -0.655680 -0.630710 -0.641510 -0.661680 -0.701550 -0.750990 -0.768820 -0.737430 -0.688240 -0.634170 -0.589140 -0.540170 -0.490790 -0.473430 -0.455180 -0.425670 
+Shapelet   2   0.711430  0.737950  0.767550  0.786660  0.811770  0.837390  0.855270  0.876240  0.900830  0.914600  0.934570  0.960810  0.960050  0.957750  0.956210  0.957430  0.971020  0.981290  1.005700  1.022900  1.033100 
+Shapelet   3  -1.294100 -1.322000 -1.347900 -1.358200 -1.360500 -1.339200 -1.308700 -1.257200 -1.205300 -1.153000 -1.100400 -1.033800 -0.973340 -0.933190 -0.892450 -0.857610 -0.815680 -0.785800 -0.761240 -0.717510 -0.685320 -0.646450 -0.618990 -0.595950 -0.577250 -0.568620 -0.547840 -0.504490 -0.495170 -0.494630 -0.485190 -0.463500 -0.416860 -0.402500 -0.411020 -0.402850 -0.418790 -0.455570 -0.475800 -0.445730 -0.406410 
+Shapelet   6  -0.676120 -0.628980 -0.579640 -0.528040 -0.484050 -0.435450 -0.397500 -0.359860 -0.324520 -0.301710 -0.285640 -0.287290 -0.293350 -0.306640 -0.327270 -0.339030 -0.374500 -0.409330 -0.427030 -0.447370 -0.476580 
+Shapelet  12  -0.142300 -0.198420 -0.259340 -0.306920 -0.354320 -0.398800 -0.443080 -0.487130 -0.528570 -0.577630 -0.624190 -0.673800 -0.721100 -0.780230 -0.806560 -0.795350 -0.777770 -0.764110 -0.751680 -0.719530 -0.676070 -0.634850 -0.597860 -0.558290 -0.533980 -0.533420 -0.548510 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Herring_TRAIN 2 64 256 1 2 10 euclidean 0 0 10 ./output/Herring/Herring_euclidean_unnormed_NOCID_REP06_tree.txt ./output/Herring/Herring_euclidean_unnormed_NOCID_REP06_time.txt
+; time =>   38.715   3.401  12.866   1.447  19.924 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/Herring_TEST 2 64 euclidean 0 0 ./output/Herring/Herring_euclidean_unnormed_NOCID_REP06_tree.txt ./output/Herring/Herring_euclidean_unnormed_NOCID_REP06_acc.txt
+; accuracy= 64.062   Correct:41 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  28   13 
+;   p  2 |  10   13 
+

@@ -1,0 +1,51 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/Ham/Ham_euclidean_unnormed_NOCID_REP19_tree.txt', './replications/Ham/Ham_euclidean_unnormed_NOCID_REP19_time.txt']
+
+rand seed=1508264440
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Ham/Ham_euclidean_unnormed_NOCID_REP19_tree.txt  time_file=./replications/Ham/Ham_euclidean_unnormed_NOCID_REP19_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=133  @[ 17, 57]  d_th= 7.46 gap=0.005417 gain= 0.09740 (67 )==>  33  55  /  19   2 
+
+=== Node 2 ===
+..........................................................................................................
+Len=117  @[ 30,116]  d_th= 3.72 gap=0.002827 gain= 0.13808 (66 )==>  11   0  /  22  55 
+
+=== Node 5 ===
+..........................................................................................................
+Len=43   @[ 10,346]  d_th= 1.19 gap=0.000845 gain= 0.10848 (59 )==>   8   1  /  14  54 
+
+=== Node 10 ===
+..........................................................................................................
+Len=41   @[  8,292]  d_th= 1.44 gap=0.224115 gain= 0.34883 (7  )==>   0   1  /   8   0 
+
+=== Node 11 ===
+..........................................................................................................
+Len=77   @[  4,175]  d_th= 4.38 gap=0.001465 gain= 0.09276 (24 )==>  14  32  /   0  22 
+
+num_class=2, num_obj=68, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.65 sec
+  Time Rand Project =    91.16 sec
+  Time Score Matrix =     5.27 sec
+  Time Compute Gain =    20.29 sec
+Running  Time for this Shapelet=   129.70 sec <<
+
+
+Total Running  Time =   129.70 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'euclidean', 0, 0, './replications/Ham/Ham_euclidean_unnormed_NOCID_REP19_tree.txt', './replications/Ham/Ham_euclidean_unnormed_NOCID_REP19_acc.txt']
+; accuracy= 61.905   Correct:65 , Wrong: 40
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  31   20 
+;   p  2 |  20   34 
+
+num_class=2, num_obj=105  distance=euclidean CID=false normalize=false ./replications/Ham/Ham_euclidean_unnormed_NOCID_REP19_tree.txt  ./replications/Ham/Ham_euclidean_unnormed_NOCID_REP19_acc.txt
+
+==> Tree Size = 24
+

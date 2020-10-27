@@ -1,0 +1,584 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './output/Herring/Herring_euclidean_unnormed_NOCID_REP01_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP01_time.txt']
+
+rand seed=1502330039
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP01_tree.txt  time_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP01_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=155  @[  2,  3]  d_th= 1.48 gap=0.000734 gain= 0.17113 (32 )==>   2  14  /  37  11 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=35   @[  0,191]  d_th= 0.19 gap=0.006967 gain= 0.25742 (10 )==>   2   1  /   0  13 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=103  @[ 38,264]  d_th= 1.87 gap=0.001272 gain= 0.18101 (2  )==>  14  11  /  23   0 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=27   @[  0,232]  d_th= 0.44 gap=0.085339 gain= 0.63651 (1  )==>   0   1  /   2   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=87   @[  3, 83]  d_th= 1.77 gap=0.000050 gain= 0.21686 (3  )==>   4  10  /  10   1 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=9    @[  0,  3]  d_th= 0.05 gap=0.001282 gain= 0.41955 (4  )==>   4   1  /   0   9 
+
+num_class=2, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.95 sec
+  Time Rand Project =    10.89 sec
+  Time Score Matrix =     1.28 sec
+  Time Compute Gain =    18.08 sec
+Running  Time for this Shapelet=    34.13 sec <<
+
+
+Total Running  Time =    34.13 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 0, './output/Herring/Herring_euclidean_unnormed_NOCID_REP01_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP01_acc.txt']
+0
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=false ./output/Herring/Herring_euclidean_unnormed_NOCID_REP01_tree.txt  ./output/Herring/Herring_euclidean_unnormed_NOCID_REP01_acc.txt
+
+==> Tree Size = 26
+
+; accuracy= 53.125   Correct:34 , Wrong: 30
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  22   14 
+;   p  2 |  16   12 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './output/Herring/Herring_euclidean_unnormed_NOCID_REP02_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP02_time.txt']
+
+rand seed=1502330074
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP02_tree.txt  time_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP02_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=153  @[ 19,  0]  d_th= 1.92 gap=0.001182 gain= 0.14423 (22 )==>   5  16  /  34   9 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=11   @[  0,142]  d_th= 0.08 gap=0.000198 gain= 0.25446 (3  )==>   0  12  /   5   4 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=209  @[  5,120]  d_th= 2.39 gap=0.001336 gain= 0.17952 (1  )==>  12   9  /  22   0 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=87   @[  4,275]  d_th= 1.39 gap=0.007401 gain= 0.68696 (1  )==>   0   4  /   5   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=49   @[  6,217]  d_th= 0.54 gap=0.001766 gain= 0.27361 (5  )==>   1   7  /  11   2 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=97   @[  4,331]  d_th= 0.82 gap=0.083022 gain= 0.37677 (6  )==>   1   0  /   0   7 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=39   @[  0, 38]  d_th= 2.58 gap=0.006540 gain= 0.42932 (9  )==>  11   0  /   0   2 
+
+num_class=2, num_obj=13, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.33 sec
+  Time Rand Project =    13.62 sec
+  Time Score Matrix =     1.48 sec
+  Time Compute Gain =    19.18 sec
+Running  Time for this Shapelet=    38.68 sec <<
+
+
+Total Running  Time =    38.68 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 0, './output/Herring/Herring_euclidean_unnormed_NOCID_REP02_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP02_acc.txt']
+0
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=false ./output/Herring/Herring_euclidean_unnormed_NOCID_REP02_tree.txt  ./output/Herring/Herring_euclidean_unnormed_NOCID_REP02_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 43.750   Correct:28 , Wrong: 36
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  21   19 
+;   p  2 |  17    7 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './output/Herring/Herring_euclidean_unnormed_NOCID_REP03_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP03_time.txt']
+
+rand seed=1502330114
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP03_tree.txt  time_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP03_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=155  @[  2,  3]  d_th= 1.48 gap=0.000734 gain= 0.17113 (32 )==>   2  14  /  37  11 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=127  @[  7,299]  d_th= 1.28 gap=0.000906 gain= 0.37677 (12 )==>   2   0  /   0  14 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=105  @[ 38,281]  d_th= 1.83 gap=0.000008 gain= 0.14743 (8  )==>  17  11  /  20   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=35   @[  0,329]  d_th= 0.84 gap=0.003587 gain= 0.24890 (16 )==>  17   5  /   0   6 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=37   @[  0,179]  d_th= 0.38 gap=0.000724 gain= 0.41308 (10 )==>   1   5  /  16   0 
+
+num_class=2, num_obj=22, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.39 sec
+  Time Rand Project =    13.61 sec
+  Time Score Matrix =     1.55 sec
+  Time Compute Gain =    19.03 sec
+Running  Time for this Shapelet=    38.68 sec <<
+
+
+Total Running  Time =    38.68 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 0, './output/Herring/Herring_euclidean_unnormed_NOCID_REP03_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP03_acc.txt']
+0
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=false ./output/Herring/Herring_euclidean_unnormed_NOCID_REP03_tree.txt  ./output/Herring/Herring_euclidean_unnormed_NOCID_REP03_acc.txt
+
+==> Tree Size = 26
+
+; accuracy= 46.875   Correct:30 , Wrong: 34
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  24   20 
+;   p  2 |  14    6 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './output/Herring/Herring_euclidean_unnormed_NOCID_REP04_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP04_time.txt']
+
+rand seed=1502330155
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP04_tree.txt  time_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP04_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=43   @[ 13,142]  d_th= 0.56 gap=0.000796 gain= 0.13161 (36 )==>   2  12  /  37  13 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=41   @[  0,168]  d_th= 0.30 gap=0.003550 gain= 0.41012 (10 )==>   2   0  /   0  12 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=41   @[  0,127]  d_th= 0.83 gap=0.000290 gain= 0.12072 (18 )==>  21  13  /  16   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=83   @[  7,171]  d_th= 0.99 gap=0.000180 gain= 0.20210 (22 )==>   0   6  /  21   7 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=63   @[  4,106]  d_th= 1.00 gap=0.000986 gain= 0.17073 (4  )==>   9   7  /  12   0 
+
+num_class=2, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.41 sec
+  Time Rand Project =    13.35 sec
+  Time Score Matrix =     1.53 sec
+  Time Compute Gain =    20.32 sec
+Running  Time for this Shapelet=    39.72 sec <<
+
+
+Total Running  Time =    39.72 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 0, './output/Herring/Herring_euclidean_unnormed_NOCID_REP04_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP04_acc.txt']
+0
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=false ./output/Herring/Herring_euclidean_unnormed_NOCID_REP04_tree.txt  ./output/Herring/Herring_euclidean_unnormed_NOCID_REP04_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 57.812   Correct:37 , Wrong: 27
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  27   16 
+;   p  2 |  11   10 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './output/Herring/Herring_euclidean_unnormed_NOCID_REP05_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP05_time.txt']
+
+rand seed=1502330197
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP05_tree.txt  time_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP05_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=43   @[ 13,142]  d_th= 0.56 gap=0.000796 gain= 0.13161 (36 )==>   2  12  /  37  13 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=41   @[  0,168]  d_th= 0.30 gap=0.003550 gain= 0.41012 (10 )==>   2   0  /   0  12 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=19   @[  0,110]  d_th= 0.34 gap=0.001449 gain= 0.13054 (16 )==>  20  13  /  17   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=23   @[  5, 91]  d_th= 0.43 gap=0.006492 gain= 0.24760 (9  )==>   8  13  /  12   0 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=231  @[  0, 74]  d_th= 1.91 gap=0.000171 gain= 0.29685 (11 )==>   5   0  /   3  13 
+
+num_class=2, num_obj=21, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.18 sec
+  Time Rand Project =    12.02 sec
+  Time Score Matrix =     1.39 sec
+  Time Compute Gain =    19.38 sec
+Running  Time for this Shapelet=    36.98 sec <<
+
+
+Total Running  Time =    36.98 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 0, './output/Herring/Herring_euclidean_unnormed_NOCID_REP05_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP05_acc.txt']
+0
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=false ./output/Herring/Herring_euclidean_unnormed_NOCID_REP05_tree.txt  ./output/Herring/Herring_euclidean_unnormed_NOCID_REP05_acc.txt
+
+==> Tree Size = 26
+
+; accuracy= 54.688   Correct:35 , Wrong: 29
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  16    7 
+;   p  2 |  22   19 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './output/Herring/Herring_euclidean_unnormed_NOCID_REP06_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP06_time.txt']
+
+rand seed=1502330236
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP06_tree.txt  time_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP06_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=43   @[ 13,142]  d_th= 0.56 gap=0.000796 gain= 0.13161 (36 )==>   2  12  /  37  13 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=21   @[  0,209]  d_th= 0.08 gap=0.003470 gain= 0.41012 (10 )==>   2   0  /   0  12 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=41   @[  0,127]  d_th= 0.83 gap=0.000290 gain= 0.12072 (18 )==>  21  13  /  16   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=21   @[  1, 89]  d_th= 0.35 gap=0.002350 gain= 0.17838 (14 )==>  11  13  /  10   0 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=27   @[  0,328]  d_th= 0.82 gap=0.000042 gain= 0.27561 (8  )==>  11   5  /   0   8 
+
+num_class=2, num_obj=24, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.40 sec
+  Time Rand Project =    12.87 sec
+  Time Score Matrix =     1.45 sec
+  Time Compute Gain =    19.92 sec
+Running  Time for this Shapelet=    38.71 sec <<
+
+
+Total Running  Time =    38.71 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 0, './output/Herring/Herring_euclidean_unnormed_NOCID_REP06_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP06_acc.txt']
+0
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=false ./output/Herring/Herring_euclidean_unnormed_NOCID_REP06_tree.txt  ./output/Herring/Herring_euclidean_unnormed_NOCID_REP06_acc.txt
+
+==> Tree Size = 26
+
+; accuracy= 64.062   Correct:41 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  28   13 
+;   p  2 |  10   13 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './output/Herring/Herring_euclidean_unnormed_NOCID_REP07_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP07_time.txt']
+
+rand seed=1502330278
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP07_tree.txt  time_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP07_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=163  @[  2,  3]  d_th= 1.68 gap=0.001116 gain= 0.16434 (24 )==>   4  16  /  35   9 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=7    @[  0, 99]  d_th= 0.06 gap=0.003874 gain= 0.26138 (6  )==>   0  13  /   4   3 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=107  @[ 34,261]  d_th= 1.90 gap=0.001945 gain= 0.16838 (0  )==>  13   9  /  22   0 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=73   @[  0, 72]  d_th= 0.90 gap=0.009130 gain= 0.68291 (1  )==>   4   0  /   0   3 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=59   @[  3, 82]  d_th= 1.62 gap=0.002130 gain= 0.31179 (4  )==>   4   9  /   9   0 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=27   @[ 12, 59]  d_th= 0.54 gap=0.013881 gain= 0.42478 (3  )==>   4   1  /   0   8 
+
+num_class=2, num_obj=13, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.07 sec
+  Time Rand Project =    11.75 sec
+  Time Score Matrix =     1.35 sec
+  Time Compute Gain =    18.22 sec
+Running  Time for this Shapelet=    35.36 sec <<
+
+
+Total Running  Time =    35.36 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 0, './output/Herring/Herring_euclidean_unnormed_NOCID_REP07_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP07_acc.txt']
+0
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=false ./output/Herring/Herring_euclidean_unnormed_NOCID_REP07_tree.txt  ./output/Herring/Herring_euclidean_unnormed_NOCID_REP07_acc.txt
+
+==> Tree Size = 26
+
+; accuracy= 59.375   Correct:38 , Wrong: 26
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  26   14 
+;   p  2 |  12   12 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './output/Herring/Herring_euclidean_unnormed_NOCID_REP08_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP08_time.txt']
+
+rand seed=1502330315
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP08_tree.txt  time_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP08_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=43   @[ 13,142]  d_th= 0.56 gap=0.000796 gain= 0.13161 (36 )==>   2  12  /  37  13 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=21   @[  0,209]  d_th= 0.08 gap=0.003470 gain= 0.41012 (10 )==>   2   0  /   0  12 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=41   @[  0,127]  d_th= 0.83 gap=0.000290 gain= 0.12072 (18 )==>  21  13  /  16   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=83   @[  7,171]  d_th= 0.99 gap=0.000180 gain= 0.20210 (22 )==>   0   6  /  21   7 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=157  @[  1,  3]  d_th= 1.55 gap=0.000216 gain= 0.17690 (14 )==>   2   5  /  19   2 
+
+num_class=2, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.45 sec
+  Time Rand Project =    13.33 sec
+  Time Score Matrix =     1.55 sec
+  Time Compute Gain =    20.28 sec
+Running  Time for this Shapelet=    39.76 sec <<
+
+
+Total Running  Time =    39.76 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 0, './output/Herring/Herring_euclidean_unnormed_NOCID_REP08_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP08_acc.txt']
+0
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=false ./output/Herring/Herring_euclidean_unnormed_NOCID_REP08_tree.txt  ./output/Herring/Herring_euclidean_unnormed_NOCID_REP08_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 51.562   Correct:33 , Wrong: 31
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  20   13 
+;   p  2 |  18   13 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './output/Herring/Herring_euclidean_unnormed_NOCID_REP09_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1502330357
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP09_tree.txt  time_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP09_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=157  @[  2,  3]  d_th= 1.52 gap=0.000636 gain= 0.17113 (32 )==>   2  14  /  37  11 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=85   @[  6,332]  d_th= 0.84 gap=0.002596 gain= 0.37677 (12 )==>   2   0  /   0  14 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=137  @[ 38,267]  d_th= 2.07 gap=0.000032 gain= 0.15807 (6  )==>  16  11  /  21   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=57   @[ 13,313]  d_th= 0.87 gap=0.000244 gain= 0.25946 (5  )==>  14   2  /   2   9 
+
+=== Node 12 ===
+..............................................................................................................................
+Len=27   @[  0,141]  d_th= 0.37 gap=0.007647 gain= 0.25742 (10 )==>  13   0  /   1   2 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=17   @[  0, 67]  d_th= 0.71 gap=0.017756 gain= 0.47414 (7  )==>   0   9  /   2   0 
+
+num_class=2, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.40 sec
+  Time Rand Project =    13.44 sec
+  Time Score Matrix =     1.52 sec
+  Time Compute Gain =    19.69 sec
+Running  Time for this Shapelet=    39.15 sec <<
+
+
+Total Running  Time =    39.15 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 0, './output/Herring/Herring_euclidean_unnormed_NOCID_REP09_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP09_acc.txt']
+0
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=false ./output/Herring/Herring_euclidean_unnormed_NOCID_REP09_tree.txt  ./output/Herring/Herring_euclidean_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 64.062   Correct:41 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  25   10 
+;   p  2 |  13   16 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './output/Herring/Herring_euclidean_unnormed_NOCID_REP10_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP10_time.txt']
+
+rand seed=1502330397
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP10_tree.txt  time_file=./output/Herring/Herring_euclidean_unnormed_NOCID_REP10_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=57   @[ 13, 58]  d_th= 1.89 gap=0.001056 gain= 0.12751 (36 )==>  25  25  /  14   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=11   @[  1,286]  d_th= 0.19 gap=0.000417 gain= 0.16661 (2  )==>   5  19  /  20   6 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=7    @[  0, 99]  d_th= 0.09 gap=0.008326 gain= 0.29122 (8  )==>   0  16  /   5   3 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=47   @[  3,141]  d_th= 0.80 gap=0.001459 gain= 0.22029 (2  )==>   6   6  /  14   0 
+
+=== Node 9 ===
+..............................................................................................................................
+Len=9    @[  3,398]  d_th= 0.09 gap=0.003298 gain= 0.66156 (2  )==>   0   3  /   5   0 
+
+=== Node 10 ===
+..............................................................................................................................
+Len=25   @[  0, 48]  d_th= 0.61 gap=0.006687 gain= 0.45391 (2  )==>   6   1  /   0   5 
+
+num_class=2, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.38 sec
+  Time Rand Project =    13.30 sec
+  Time Score Matrix =     1.51 sec
+  Time Compute Gain =    19.78 sec
+Running  Time for this Shapelet=    39.07 sec <<
+
+
+Total Running  Time =    39.07 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'euclidean', 0, 0, './output/Herring/Herring_euclidean_unnormed_NOCID_REP10_tree.txt', './output/Herring/Herring_euclidean_unnormed_NOCID_REP10_acc.txt']
+0
+num_class=2, num_obj=64  distance=euclidean CID=false normalize=false ./output/Herring/Herring_euclidean_unnormed_NOCID_REP10_tree.txt  ./output/Herring/Herring_euclidean_unnormed_NOCID_REP10_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 51.562   Correct:33 , Wrong: 31
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  21   14 
+;   p  2 |  17   12 
+
+
+================ Replication:  10 Finished ================

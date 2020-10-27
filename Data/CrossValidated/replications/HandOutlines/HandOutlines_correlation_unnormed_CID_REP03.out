@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TRAIN', 2, 370, 1355, 1, 2, 10, 'correlation', 1, 0, 10, './replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP03_tree.txt', './replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP03_time.txt']
+
+rand seed=1503576205
+num_class=2, num_obj=370, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP03_tree.txt  time_file=./replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP03_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,0]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=627  @[  0, 60]  d_th= 0.00 gap=0.000000 gain= 0.34009 (130)==> 226  24  /  11 109 
+
+num_class=2, num_obj=370, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    89.65 sec
+  Time Rand Project =   122.80 sec
+  Time Score Matrix =    14.37 sec
+  Time Compute Gain = 27890.94 sec
+Running  Time for this Shapelet= 28133.35 sec <<
+
+
+Total Running  Time = 28133.35 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TEST', 2, 1000, 'correlation', 1, 0, './replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP03_tree.txt', './replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP03_acc.txt']
+; accuracy= 86.100   Correct:861 , Wrong: 139
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 | 241   18 
+;   p  1 | 121  620 
+
+num_class=2, num_obj=1000  distance=correlation CID=true normalize=false ./replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP03_tree.txt  ./replications/HandOutlines/HandOutlines_correlation_unnormed_CID_REP03_acc.txt
+
+==> Tree Size = 4
+

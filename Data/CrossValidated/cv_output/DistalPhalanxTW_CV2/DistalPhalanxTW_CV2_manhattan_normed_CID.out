@@ -1,0 +1,75 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxTW_TRAIN_CV2', 6, 71, 40, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/DistalPhalanxTW_CV2/DistalPhalanxTW_CV2_manhattan_normed_CID_tree.txt', './cv_output/DistalPhalanxTW_CV2/DistalPhalanxTW_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502274207
+num_class=6, num_obj=71, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/DistalPhalanxTW_CV2/DistalPhalanxTW_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/DistalPhalanxTW_CV2/DistalPhalanxTW_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [5,8]  [4,7]  [3,6]  [2,5]  [1,4]  [0,3]  
+
+=== Node 1 ===
+..................
+Len=35   @[ 47, 31]  d_th= 4.67 gap=0.222566 gain= 0.59076 (25 )==>   0   0   0   0   2  21  /   9  10  20   7   2   0 
+
+=== Node 3 ===
+..................
+Len=33   @[  0, 38]  d_th=11.28 gap=0.013469 gain= 0.41990 (4  )==>   9  10   7   0   0   0  /   0   0  13   7   2   0 
+
+=== Node 6 ===
+..................
+Len=37   @[  0, 36]  d_th= 5.38 gap=0.112522 gain= 0.39913 (12 )==>   7   0   0   0   0   0  /   2  10   7   0   0   0 
+
+=== Node 7 ===
+..................
+Len=11   @[  0, 25]  d_th= 0.67 gap=0.000548 gain= 0.26177 (6  )==>   0   0   8   0   0   0  /   0   0   5   7   2   0 
+
+=== Node 13 ===
+..................
+Len=19   @[  0,  5]  d_th= 1.65 gap=0.018159 gain= 0.37206 (7  )==>   2   0   4   0   0   0  /   0  10   3   0   0   0 
+
+=== Node 15 ===
+..................
+Len=5    @[  0, 10]  d_th= 0.84 gap=0.010068 gain= 0.41955 (6  )==>   0   0   1   7   2   0  /   0   0   4   0   0   0 
+
+=== Node 26 ===
+..................
+Len=13   @[  0, 63]  d_th= 1.77 gap=0.180946 gain= 0.63651 (2  )==>   2   0   0   0   0   0  /   0   0   4   0   0   0 
+
+=== Node 27 ===
+..................
+Len=31   @[ 10, 35]  d_th= 3.20 gap=0.054590 gain= 0.28244 (9  )==>   0   0   2   0   0   0  /   0  10   1   0   0   0 
+
+=== Node 30 ===
+..................
+Len=37   @[  0, 37]  d_th= 3.03 gap=0.033274 gain= 0.61086 (4  )==>   0   0   1   0   2   0  /   0   0   0   7   0   0 
+
+=== Node 60 ===
+..................
+Len=25   @[  0, 19]  d_th= 1.73 gap=0.345219 gain= 0.63651 (1  )==>   0   0   1   0   0   0  /   0   0   0   0   2   0 
+
+num_class=6, num_obj=3, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.08 sec
+  Time Rand Project =     0.42 sec
+  Time Score Matrix =     0.05 sec
+  Time Compute Gain =     1.02 sec
+Running  Time for this Shapelet=     1.62 sec <<
+
+
+Total Running  Time =     1.62 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxTW_TRAIN_CV1', 6, 68, 'manhattan', 1, 1, './cv_output/DistalPhalanxTW_CV2/DistalPhalanxTW_CV2_manhattan_normed_CID_tree.txt', './cv_output/DistalPhalanxTW_CV2/DistalPhalanxTW_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 57.353   Correct:39 , Wrong: 29
+
+
+;   == Confusion Matrix ==
+;   real |   3    4    5    6    7    8 
+;   -----+------------------------------------
+;   p  3 |   4    0    0    0    0    0 
+;   p  4 |   4    6    6    1    0    0 
+;   p  5 |   1    1    5    3    1    0 
+;   p  6 |   0    2    8    2    1    0 
+;   p  7 |   0    0    0    0    1    0 
+;   p  8 |   0    0    0    0    1   21 
+
+num_class=6, num_obj=68  distance=manhattan CID=true normalize=true ./cv_output/DistalPhalanxTW_CV2/DistalPhalanxTW_CV2_manhattan_normed_CID_tree.txt  ./cv_output/DistalPhalanxTW_CV2/DistalPhalanxTW_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 122
+

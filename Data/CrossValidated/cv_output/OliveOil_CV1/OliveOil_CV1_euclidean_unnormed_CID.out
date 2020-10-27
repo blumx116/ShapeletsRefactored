@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV1', 4, 14, 285, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/OliveOil_CV1/OliveOil_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/OliveOil_CV1/OliveOil_CV1_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502279774
+num_class=4, num_obj=14, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/OliveOil_CV1/OliveOil_CV1_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/OliveOil_CV1/OliveOil_CV1_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.............................................................................................................................................
+Len=29   @[  2,411]  d_th= 0.04 gap=0.003007 gain= 0.68291 (2  )==>   0   4   2   0  /   2   0   0   6 
+
+=== Node 2 ===
+.............................................................................................................................................
+Len=21   @[  0,328]  d_th= 0.02 gap=0.002857 gain= 0.63651 (2  )==>   0   4   0   0  /   0   0   2   0 
+
+=== Node 3 ===
+.............................................................................................................................................
+Len=29   @[  0,470]  d_th= 0.22 gap=0.008324 gain= 0.56234 (4  )==>   2   0   0   0  /   0   0   0   6 
+
+num_class=4, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.42 sec
+  Time Rand Project =     1.12 sec
+  Time Score Matrix =     0.08 sec
+  Time Compute Gain =    13.74 sec
+Running  Time for this Shapelet=    15.47 sec <<
+
+
+Total Running  Time =    15.47 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV2', 4, 16, 'euclidean', 1, 0, './cv_output/OliveOil_CV1/OliveOil_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/OliveOil_CV1/OliveOil_CV1_euclidean_unnormed_CID_acc.txt']
+; accuracy= 62.500   Correct:10 , Wrong: 6
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   3    0    0    0 
+;   p  2 |   0    1    0    1 
+;   p  3 |   0    2    0    0 
+;   p  4 |   0    1    2    6 
+
+num_class=4, num_obj=16  distance=euclidean CID=true normalize=false ./cv_output/OliveOil_CV1/OliveOil_CV1_euclidean_unnormed_CID_tree.txt  ./cv_output/OliveOil_CV1/OliveOil_CV1_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 8
+

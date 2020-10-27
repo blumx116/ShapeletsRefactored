@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TRAIN', 2, 100, 48, 1, 2, 10, 'correlation', 0, 0, 10, './replications/ECG200/ECG200_correlation_unnormed_NOCID_REP09_tree.txt', './replications/ECG200/ECG200_correlation_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1503374088
+num_class=2, num_obj=100, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/ECG200/ECG200_correlation_unnormed_NOCID_REP09_tree.txt  time_file=./replications/ECG200/ECG200_correlation_unnormed_NOCID_REP09_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+......................
+Len=47   @[  4,  9]  d_th= 0.04 gap=0.000075 gain= 0.31768 (6  )==>   0  53  /  31  16 
+
+=== Node 3 ===
+......................
+Len=27   @[ 10,  1]  d_th= 0.06 gap=0.000200 gain= 0.31629 (1  )==>  23   0  /   8  16 
+
+=== Node 7 ===
+......................
+Len=9    @[ 11, 11]  d_th= 0.05 gap=0.000770 gain= 0.21951 (16 )==>   4   0  /   4  16 
+
+=== Node 15 ===
+......................
+Len=9    @[ 17, 83]  d_th= 0.05 gap=0.000216 gain= 0.37530 (10 )==>   4   1  /   0  15 
+
+num_class=2, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.14 sec
+  Time Rand Project =     0.94 sec
+  Time Score Matrix =     0.11 sec
+  Time Compute Gain =     0.76 sec
+Running  Time for this Shapelet=     2.06 sec <<
+
+
+Total Running  Time =     2.06 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TEST', 2, 100, 'correlation', 0, 0, './replications/ECG200/ECG200_correlation_unnormed_NOCID_REP09_tree.txt', './replications/ECG200/ECG200_correlation_unnormed_NOCID_REP09_acc.txt']
+; accuracy= 78.000   Correct:78 , Wrong: 22
+
+
+;   == Confusion Matrix ==
+;   real |   1   -1 
+;   -----+------------
+;   p  1 |  55   13 
+;   p -1 |   9   23 
+
+num_class=2, num_obj=100  distance=correlation CID=false normalize=false ./replications/ECG200/ECG200_correlation_unnormed_NOCID_REP09_tree.txt  ./replications/ECG200/ECG200_correlation_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 32
+

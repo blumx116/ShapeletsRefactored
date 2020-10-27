@@ -1,0 +1,56 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV2', 3, 201, 40, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502274261
+num_class=3, num_obj=201, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................
+Len=31   @[101, 47]  d_th= 2.58 gap=0.228539 gain= 0.60352 (1  )==>   0   5  95  /  36  65   0 
+
+=== Node 3 ===
+..................
+Len=35   @[ 11, 35]  d_th= 3.01 gap=0.007956 gain= 0.22248 (29 )==>  28   8   0  /   8  57   0 
+
+=== Node 6 ===
+..................
+Len=9    @[  0,  0]  d_th= 0.34 gap=0.000623 gain= 0.24182 (6  )==>   7   8   0  /  21   0   0 
+
+=== Node 7 ===
+..................
+Len=13   @[  0, 66]  d_th= 0.55 gap=0.004949 gain= 0.10561 (59 )==>   3   0   0  /   5  57   0 
+
+=== Node 12 ===
+..................
+Len=39   @[  1, 38]  d_th= 2.35 gap=0.008843 gain= 0.28368 (5  )==>   7   3   0  /   0   5   0 
+
+=== Node 24 ===
+..................
+Len=7    @[  0, 14]  d_th= 0.43 gap=0.002785 gain= 0.38593 (2  )==>   1   3   0  /   6   0   0 
+
+num_class=3, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.13 sec
+  Time Rand Project =     0.54 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     1.15 sec
+Running  Time for this Shapelet=     1.94 sec <<
+
+
+Total Running  Time =     1.94 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV1', 3, 199, 'manhattan', 1, 0, './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 73.367   Correct:146 , Wrong: 53
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  22   15    0 
+;   p  2 |  14   54   24 
+;   p  3 |   0    0   70 
+
+num_class=3, num_obj=199  distance=manhattan CID=true normalize=false ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 50
+

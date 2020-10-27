@@ -1,0 +1,52 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV2', 3, 201, 40, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502274268
+num_class=3, num_obj=201, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................
+Len=13   @[101, 49]  d_th= 3.94 gap=1.091785 gain= 0.60352 (1  )==>   0   5  95  /  36  65   0 
+
+=== Node 3 ===
+..................
+Len=37   @[ 85, 29]  d_th= 3.53 gap=0.002542 gain= 0.19018 (13 )==>   2  42   0  /  34  23   0 
+
+=== Node 7 ===
+..................
+Len=17   @[  0, 11]  d_th= 1.06 gap=0.000214 gain= 0.14358 (13 )==>  20   2   0  /  14  21   0 
+
+=== Node 15 ===
+..................
+Len=27   @[  1, 14]  d_th= 1.57 gap=0.000249 gain= 0.18498 (23 )==>   6   0   0  /   8  21   0 
+
+=== Node 31 ===
+..................
+Len=17   @[  0, 11]  d_th= 0.89 gap=0.003052 gain= 0.16727 (11 )==>   6   3   0  /   2  18   0 
+
+num_class=3, num_obj=29, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.14 sec
+  Time Rand Project =     0.62 sec
+  Time Score Matrix =     0.08 sec
+  Time Compute Gain =     0.92 sec
+Running  Time for this Shapelet=     1.83 sec <<
+
+
+Total Running  Time =     1.83 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV1', 3, 199, 'manhattan', 0, 1, './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_acc.txt']
+; accuracy= 75.377   Correct:150 , Wrong: 49
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  22   11    0 
+;   p  2 |  14   58   24 
+;   p  3 |   0    0   70 
+
+num_class=3, num_obj=199  distance=manhattan CID=false normalize=true ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_tree.txt  ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 64
+

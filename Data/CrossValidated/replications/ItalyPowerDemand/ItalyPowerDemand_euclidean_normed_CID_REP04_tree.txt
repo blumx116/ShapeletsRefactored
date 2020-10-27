@@ -1,0 +1,42 @@
+;Shapelet Tree 
+
+;random seed:1501824716, rand()=265796369, rand()=473588023
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 1 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP04_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP04_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --      0   17    5   1.0627 ==>  29   4  /   5  29 
+NonL  2    --     23   13    9   2.8582 ==>  27   0  /   2   4 
+NonL  3    --      1    4    9   0.7184 ==>   0  20  /   5   9 
+Leaf  4     1    
+NonL  5    --      1    1    7   0.4489 ==>   2   0  /   0   4 
+Leaf  6     2    
+NonL  7    --      1    7   11   2.2434 ==>   1   9  /   4   0 
+Leaf 10     1    
+Leaf 11     2    
+Leaf 14     2    
+Leaf 15     1    
+
+;Shapelet id   <data>
+Shapelet   1   0.613330  1.369800  1.464400  1.054600  0.581810 
+Shapelet   2   0.325600  0.345480  0.385250  0.524440  0.743160  1.220400  1.140800  0.544320  0.265950 
+Shapelet   3  -1.502700 -1.416400 -1.646500 -0.467340  0.654270  1.056900  1.344500  1.200700  0.999380 
+Shapelet   5  -1.381600 -1.557500 -1.607700 -1.657900 -1.431900 -1.080200  0.226080 
+Shapelet   7  -0.600420 -1.084300 -0.277810  0.367420  0.474960  0.528730  0.098577 -0.277810 -0.385350 -0.600420 -0.546650 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 1 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP04_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP04_time.txt
+; time =>    0.139   0.005   0.066   0.012   0.045 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST 2 1029 euclidean 1 1 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP04_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP04_acc.txt
+; accuracy= 74.830   Correct:770 , Wrong: 259
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 392  135 
+;   p  1 | 124  378 
+

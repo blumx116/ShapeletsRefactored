@@ -1,0 +1,42 @@
+;Shapelet Tree 
+
+;random seed:1501835631, rand()=1106351608, rand()=1224909130
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 manhattan 1 0 10 ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP02_tree.txt ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP02_time.txt 
+
+;Local Class:   0  1  2  3  4 
+;Real  Class:   1  2  3  4  5 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 32 
+NonL  1    --      0   95   11   7.1775 ==> 292  19   2   9   2  /   0 158   8  10   0 
+Leaf  2     1    
+NonL  3    --    139    3   49  28.8688 ==>   0 150   0  10   0  /   0   8   8   0   0 
+Leaf  6     2    
+NonL  7    --      9  102   13   1.2500 ==>   0   0   7   0   0  /   0   8   1   0   0 
+Leaf 14     3    
+NonL 15    --      8    0   61   4.1537 ==>   0   0   1   0   0  /   0   8   0   0   0 
+Leaf 30     3    
+Leaf 31     2    
+
+;Shapelet id   <data>
+Shapelet   1   0.263560  0.342560  0.419510  0.586610  0.860620  1.173300  1.258200  1.433800  1.700500  1.999000  2.125300 
+Shapelet   3  -1.371400 -2.019500 -2.583400 -2.974200 -2.908500 -2.658600 -2.341400 -1.802800 -1.310900 -0.946250 -0.675040 -0.595370 -0.499640 -0.206980  0.190520  0.491160  0.519430  0.434070  0.462980  0.429570  0.444870  0.585880  0.490350  0.447920  0.577710  0.549180  0.497890  0.475970  0.485430  0.510360  0.474730  0.460890  0.423810  0.388390  0.371330  0.320590  0.347000  0.388300  0.339030  0.316390  0.336480  0.331930  0.346990  0.324440  0.226980  0.203700  0.257230  0.277260  0.211390 
+Shapelet   7   0.376070  0.458340  0.491610  0.571420  0.648920  0.683880  0.766220  0.907830  0.986750  1.012100  0.985610  0.919180  0.843990 
+Shapelet  15  -0.165210 -0.572660 -0.905730 -1.364000 -1.434700 -1.226700 -0.786150 -0.397500 -0.305690 -0.138030  0.148290  0.238490  0.236650  0.209230  0.208410  0.231810  0.226440  0.221020  0.219650  0.207110  0.220780  0.193050  0.193610  0.161700  0.162160  0.156810  0.131860  0.117830  0.102690  0.077247  0.067670  0.079092  0.053839  0.038226  0.022060  0.014527 -0.012490  0.009600  0.013683  0.009875  0.051148  0.044139  0.045818  0.069599  0.126890  0.132100  0.146210  0.183290  0.170710  0.224940  0.251850  0.257520  0.303180  0.294380  0.288650  0.293380  0.289800  0.310210  0.273380  0.312810  0.300320 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ECG5000_TRAIN 5 500 70 1 2 10 manhattan 1 0 10 ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP02_tree.txt ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP02_time.txt
+; time =>   28.821   1.445  13.702   1.557  10.945 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ECG5000_TEST 5 4500 manhattan 1 0 ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP02_tree.txt ./output/ECG5000/ECG5000_manhattan_unnormed_CID_REP02_acc.txt
+; accuracy= 88.200   Correct:3969 , Wrong: 531
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2598  224   63   94   17 
+;   p  2 |  29 1364   16   81    5 
+;   p  3 |   0    2    7    0    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+

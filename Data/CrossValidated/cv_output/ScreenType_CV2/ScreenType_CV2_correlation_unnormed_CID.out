@@ -1,0 +1,64 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ScreenType_TRAIN_CV2', 3, 189, 360, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/ScreenType_CV2/ScreenType_CV2_correlation_unnormed_CID_tree.txt', './cv_output/ScreenType_CV2/ScreenType_CV2_correlation_unnormed_CID_time.txt']
+
+rand seed=1503462987
+num_class=3, num_obj=189, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ScreenType_CV2/ScreenType_CV2_correlation_unnormed_CID_tree.txt  time_file=./cv_output/ScreenType_CV2/ScreenType_CV2_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=11   @[  3,  0]  d_th= 1.00 gap=0.000000 gain= 0.46213 (1  )==>   0  32  63  /  63  31   0 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=9    @[  4,501]  d_th= 1.00 gap=0.000000 gain= 0.46213 (1  )==>   0  32  63  /  63  31   0 
+
+=== Node 3 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=3 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=11   @[  3,  0]  d_th= 1.00 gap=0.000000 gain= 0.46213 (1  )==>   0  32  63  /  63  31   0 
+
+=== Node 5 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 8 ===
+..................................................................................................................................................................................
+Len=11   @[  3,  0]  d_th= 1.00 gap=0.000000 gain= 0.46213 (1  )==>   0  32  63  /  63  31   0 
+
+=== Node 9 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 16 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  4]  d_th= 0.32 gap=0.006620 gain= 0.24970 (15 )==>  40  46   1  /  23  17  62 
+
+=== Node 17 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=17 
+
+num_class=3, num_obj=0, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    28.33 sec
+  Time Rand Project =   151.47 sec
+  Time Score Matrix =    13.43 sec
+  Time Compute Gain =  1734.46 sec
+Running  Time for this Shapelet=  1938.84 sec <<
+
+
+Total Running  Time =  1938.84 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ScreenType_TRAIN_CV1', 3, 186, 'correlation', 1, 0, './cv_output/ScreenType_CV2/ScreenType_CV2_correlation_unnormed_CID_tree.txt', './cv_output/ScreenType_CV2/ScreenType_CV2_correlation_unnormed_CID_acc.txt']
+; accuracy= 43.011   Correct:80 , Wrong: 106
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   0    0    0 
+;   p  2 |  32   32   14 
+;   p  3 |  30   30   48 
+
+num_class=3, num_obj=186  distance=correlation CID=true normalize=false ./cv_output/ScreenType_CV2/ScreenType_CV2_correlation_unnormed_CID_tree.txt  ./cv_output/ScreenType_CV2/ScreenType_CV2_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 34
+

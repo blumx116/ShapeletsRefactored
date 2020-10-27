@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV1', 2, 54, 216, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/Ham_CV1/Ham_CV1_manhattan_normed_CID_tree.txt', './cv_output/Ham_CV1/Ham_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502280017
+num_class=2, num_obj=54, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Ham_CV1/Ham_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/Ham_CV1/Ham_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=207  @[ 49, 32]  d_th=59.35 gap=0.054030 gain= 0.27549 (20 )==>   0  17  /  26  11 
+
+=== Node 3 ===
+..........................................................................................................
+Len=13   @[  0, 22]  d_th= 3.22 gap=0.002689 gain= 0.23840 (25 )==>  26   5  /   0   6 
+
+=== Node 6 ===
+..........................................................................................................
+Len=117  @[ 27, 60]  d_th=47.40 gap=0.061696 gain= 0.30671 (17 )==>   2   5  /  24   0 
+
+=== Node 12 ===
+..........................................................................................................
+Len=141  @[  1, 71]  d_th=32.06 gap=0.303822 gain= 0.59827 (3  )==>   2   0  /   0   5 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.52 sec
+  Time Rand Project =    21.60 sec
+  Time Score Matrix =     1.63 sec
+  Time Compute Gain =    55.00 sec
+Running  Time for this Shapelet=    82.54 sec <<
+
+
+Total Running  Time =    82.54 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV2', 2, 55, 'manhattan', 1, 1, './cv_output/Ham_CV1/Ham_CV1_manhattan_normed_CID_tree.txt', './cv_output/Ham_CV1/Ham_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 43.636   Correct:24 , Wrong: 31
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  11   16 
+;   p  2 |  15   13 
+
+num_class=2, num_obj=55  distance=manhattan CID=true normalize=true ./cv_output/Ham_CV1/Ham_CV1_manhattan_normed_CID_tree.txt  ./cv_output/Ham_CV1/Ham_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 26
+

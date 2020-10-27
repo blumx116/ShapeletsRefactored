@@ -1,0 +1,50 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Beef_TRAIN_CV2', 5, 15, 235, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/Beef_CV2/Beef_CV2_correlation_unnormed_CID_tree.txt', './cv_output/Beef_CV2/Beef_CV2_correlation_unnormed_CID_time.txt']
+
+rand seed=1503462423
+num_class=5, num_obj=15, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Beef_CV2/Beef_CV2_correlation_unnormed_CID_tree.txt  time_file=./cv_output/Beef_CV2/Beef_CV2_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=41   @[  3,257]  d_th= 0.01 gap=0.000012 gain= 0.67301 (3  )==>   0   3   0   3   3  /   3   0   3   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=23   @[  0,414]  d_th= 0.03 gap=0.001894 gain= 0.63651 (3  )==>   0   3   0   0   3  /   0   0   0   3   0 
+
+=== Node 3 ===
+....................................................................................................................
+Len=151  @[  4,162]  d_th= 0.14 gap=0.003715 gain= 0.69315 (0  )==>   0   0   3   0   0  /   3   0   0   0   0 
+
+=== Node 4 ===
+....................................................................................................................
+Len=17   @[  0,274]  d_th= 0.02 gap=0.000452 gain= 0.69315 (0  )==>   0   3   0   0   0  /   0   0   0   0   3 
+
+num_class=5, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.55 sec
+  Time Rand Project =     2.64 sec
+  Time Score Matrix =     0.28 sec
+  Time Compute Gain =    20.53 sec
+Running  Time for this Shapelet=    24.35 sec <<
+
+
+Total Running  Time =    24.35 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Beef_TRAIN_CV1', 5, 15, 'correlation', 1, 0, './cv_output/Beef_CV2/Beef_CV2_correlation_unnormed_CID_tree.txt', './cv_output/Beef_CV2/Beef_CV2_correlation_unnormed_CID_acc.txt']
+; accuracy= 60.000   Correct:9 , Wrong: 6
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   2    1    0    0    0 
+;   p  2 |   0    0    0    0    0 
+;   p  3 |   0    1    2    0    0 
+;   p  4 |   1    1    0    2    0 
+;   p  5 |   0    0    1    1    3 
+
+num_class=5, num_obj=15  distance=correlation CID=true normalize=false ./cv_output/Beef_CV2/Beef_CV2_correlation_unnormed_CID_tree.txt  ./cv_output/Beef_CV2/Beef_CV2_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 10
+

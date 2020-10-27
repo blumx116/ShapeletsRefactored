@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1501824722, rand()=1313826360, rand()=1052774066
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/CBF_TRAIN 3 30 64 1 2 10 manhattan 1 1 10 ./output/CBF/CBF_manhattan_normed_CID_REP03_tree.txt ./output/CBF/CBF_manhattan_normed_CID_REP03_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  3  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --      2   11   27  17.8227 ==>  10   8   0  /   0   0  12 
+NonL  2    --      5    8   63  47.6271 ==>   0   8   0  /  10   0   0 
+Leaf  3     2    
+Leaf  4     3    
+Leaf  5     1    
+
+;Shapelet id   <data>
+Shapelet   1  -0.962130 -1.420700 -0.783430 -0.462390 -1.176200 -0.501640 -0.584870 -0.579160 -0.921300 -0.716380 -0.547790 -0.990840 -0.146470 -0.720030  1.159000  0.676720  1.428700  1.445400  1.320600  1.435800  1.694000  1.480400  1.402800  1.801500  1.581500  1.537700  1.330400 
+Shapelet   2  -0.584500 -1.057900 -1.273400 -0.543570 -0.713430 -0.703030 -0.744430  1.981600  1.626900  1.875000  2.437900  1.425700  1.673000  1.606500  1.918000  1.670800  2.587000  2.883500  1.635500  0.874740  1.921300  1.005600  1.594700  1.727500  1.502500  1.956100  1.055200  1.024700  0.652570  0.596140  1.641200  0.455290  1.668100  1.489200  0.572770  1.041500  0.500320  0.338900  0.528440 -0.618520  0.141360  0.961120  0.425390  0.248020  0.926850 -0.070188  0.364520 -0.476550  0.629050  0.906960 -0.096149 -0.771960 -0.048605 -0.340200 -0.461020 -0.772810 -0.242580  0.155490 -0.251790 -0.303660  0.434180 -0.699340 -0.618020 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/CBF_TRAIN 3 30 64 1 2 10 manhattan 1 1 10 ./output/CBF/CBF_manhattan_normed_CID_REP03_tree.txt ./output/CBF/CBF_manhattan_normed_CID_REP03_time.txt
+; time =>    2.718   0.099   1.180   0.187   1.109 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/CBF_TEST 3 900 manhattan 1 1 ./output/CBF/CBF_manhattan_normed_CID_REP03_tree.txt ./output/CBF/CBF_manhattan_normed_CID_REP03_acc.txt
+; accuracy= 94.000   Correct:846 , Wrong: 54
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 290    0    6 
+;   p  1 |   7  280   20 
+;   p  3 |   1   20  276 
+

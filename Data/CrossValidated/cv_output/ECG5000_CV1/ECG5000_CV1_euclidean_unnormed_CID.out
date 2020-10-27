@@ -1,0 +1,50 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV1', 5, 249, 70, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/ECG5000_CV1/ECG5000_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/ECG5000_CV1/ECG5000_CV1_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502274280
+num_class=5, num_obj=249, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ECG5000_CV1/ECG5000_CV1_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/ECG5000_CV1/ECG5000_CV1_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=31   @[169,  6]  d_th= 3.70 gap=0.001936 gain= 0.52461 (37 )==>   7  87   4   8   0  / 139   1   1   1   1 
+
+=== Node 2 ===
+.................................
+Len=21   @[  0,  6]  d_th= 2.96 gap=0.019519 gain= 0.24880 (86 )==>   7   0   1   2   0  /   0  87   3   6   0 
+
+=== Node 4 ===
+.................................
+Len=67   @[  8, 72]  d_th= 4.89 gap=0.276019 gain= 0.61086 (4  )==>   0   0   1   2   0  /   7   0   0   0   0 
+
+=== Node 8 ===
+.................................
+Len=23   @[  0,116]  d_th= 1.15 gap=0.239950 gain= 0.63651 (1  )==>   0   0   1   0   0  /   0   0   0   2   0 
+
+num_class=5, num_obj=3, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.65 sec
+  Time Rand Project =     5.62 sec
+  Time Score Matrix =     0.61 sec
+  Time Compute Gain =     4.12 sec
+Running  Time for this Shapelet=    11.47 sec <<
+
+
+Total Running  Time =    11.47 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2', 5, 251, 'euclidean', 1, 0, './cv_output/ECG5000_CV1/ECG5000_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/ECG5000_CV1/ECG5000_CV1_euclidean_unnormed_CID_acc.txt']
+; accuracy= 91.633   Correct:230 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 | 144    3    1    0    1 
+;   p  2 |   2   85    4    9    0 
+;   p  3 |   0    0    0    0    0 
+;   p  4 |   0    1    0    1    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=251  distance=euclidean CID=true normalize=false ./cv_output/ECG5000_CV1/ECG5000_CV1_euclidean_unnormed_CID_tree.txt  ./cv_output/ECG5000_CV1/ECG5000_CV1_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 18
+

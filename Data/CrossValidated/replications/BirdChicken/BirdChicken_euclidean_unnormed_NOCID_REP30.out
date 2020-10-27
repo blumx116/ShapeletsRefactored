@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/BirdChicken_TRAIN', 2, 20, 256, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/BirdChicken/BirdChicken_euclidean_unnormed_NOCID_REP30_tree.txt', './replications/BirdChicken/BirdChicken_euclidean_unnormed_NOCID_REP30_time.txt']
+
+rand seed=1508198926
+num_class=2, num_obj=20, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/BirdChicken/BirdChicken_euclidean_unnormed_NOCID_REP30_tree.txt  time_file=./replications/BirdChicken/BirdChicken_euclidean_unnormed_NOCID_REP30_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=31   @[  0,129]  d_th= 0.55 gap=0.000627 gain= 0.69315 (0  )==>  10   0  /   0  10 
+
+num_class=2, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.36 sec
+  Time Rand Project =     1.28 sec
+  Time Score Matrix =     0.12 sec
+  Time Compute Gain =     1.94 sec
+Running  Time for this Shapelet=     3.84 sec <<
+
+
+Total Running  Time =     3.84 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/BirdChicken_TEST', 2, 20, 'euclidean', 0, 0, './replications/BirdChicken/BirdChicken_euclidean_unnormed_NOCID_REP30_tree.txt', './replications/BirdChicken/BirdChicken_euclidean_unnormed_NOCID_REP30_acc.txt']
+; accuracy= 95.000   Correct:19 , Wrong: 1
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  10    1 
+;   p  2 |   0    9 
+
+num_class=2, num_obj=20  distance=euclidean CID=false normalize=false ./replications/BirdChicken/BirdChicken_euclidean_unnormed_NOCID_REP30_tree.txt  ./replications/BirdChicken/BirdChicken_euclidean_unnormed_NOCID_REP30_acc.txt
+
+==> Tree Size = 4
+

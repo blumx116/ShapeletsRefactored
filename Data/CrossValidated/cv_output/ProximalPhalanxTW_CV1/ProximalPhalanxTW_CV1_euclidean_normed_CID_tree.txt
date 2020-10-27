@@ -1,0 +1,52 @@
+;Shapelet Tree 
+
+;random seed:1502274221, rand()=579554035, rand()=1013796445
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxTW_TRAIN_CV1 6 102 40 1 2 10 euclidean 1 1 10 ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_euclidean_normed_CID_tree.txt ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_euclidean_normed_CID_time.txt 
+
+;Local Class:   0  1  2  3  4  5 
+;Real  Class:   3  4  5  6  7  8 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 24 
+NonL  1    --      0   31   35   0.8056 ==>   1  33  20   4   0   0  /   0   0   0   1   7  36 
+NonL  2    --      0    0   15   0.2677 ==>   1  28   1   1   0   0  /   0   5  19   3   0   0 
+NonL  3    --      2   22   33   0.9297 ==>   0   0   0   0   4  36  /   0   0   0   1   3   0 
+Leaf  4     4    
+NonL  5    --      0    6   21   0.4230 ==>   0   5   1   0   0   0  /   0   0  18   3   0   0 
+Leaf  6     8    
+NonL  7    --      0   34    7   0.6089 ==>   0   0   0   1   0   0  /   0   0   0   0   3   0 
+NonL 10    --      5   55   13   0.2071 ==>   0   0   1   0   0   0  /   0   5   0   0   0   0 
+NonL 11    --      0   64    5   0.3394 ==>   0   0  18   1   0   0  /   0   0   0   2   0   0 
+Leaf 14     6    
+Leaf 15     7    
+Leaf 20     5    
+Leaf 21     4    
+Leaf 22     5    
+Leaf 23     6    
+
+;Shapelet id   <data>
+Shapelet   1   1.185700  1.499000  1.613600  1.566000  1.576200  1.488100  1.477100  1.633400  1.654400  1.651800  1.488800  1.203200  0.908610  0.638560  0.332220  0.032839 -0.257080 -0.510680 -0.707430 -0.630930 -0.676130 -0.738100 -0.855020 -0.999140 -1.115400 -1.245900 -1.319800 -1.260300 -1.154900 -1.043900 -0.917380 -0.801370 -0.798430 -0.745270 -0.680290 
+Shapelet   2  -0.762460 -0.725880 -0.562660 -0.300430 -0.035500  0.236820  0.510930  0.772090  1.009000  1.261900  1.405400  1.529400  1.538000  1.444600  1.252500 
+Shapelet   3  -0.511240 -0.544660 -0.417730 -0.221410  0.000676  0.230890  0.467110  0.703900  0.932510  1.142700  1.349900  1.495400  1.616900  1.604500  1.483300  1.399600  1.371500  1.438500  1.531400  1.357300  1.119300  0.893970  0.644680  0.406630  0.163820 -0.075432 -0.282140 -0.444170 -1.052500 -1.052500 -1.052500 -1.052500 -1.052500 
+Shapelet   5   0.588340  0.917680  1.142400  1.371300  1.507900  1.513800  1.476300  1.319500  1.142600  0.885250  0.588070  0.364470  0.168600 -0.088001 -0.358390 -0.608780 -0.772640 -0.790720 -0.652450 -0.414470 -0.138790 
+Shapelet   7   1.458300  1.470600  1.542800  1.589800  1.565600  1.587000  1.737500 
+Shapelet  10  -1.237300 -1.246900 -1.258500 -1.164000 -1.012700 -0.920710 -0.838890 -0.724850 -0.642360 -0.646570 -0.718820 -0.813860 -0.943430 
+Shapelet  11  -0.586500 -0.563670 -0.615420 -0.711150 -0.842510 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxTW_TRAIN_CV1 6 102 40 1 2 10 euclidean 1 1 10 ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_euclidean_normed_CID_tree.txt ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_euclidean_normed_CID_time.txt
+; time =>    1.392   0.077   0.314   0.037   0.931 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxTW_TRAIN_CV2 6 103 euclidean 1 1 ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_euclidean_normed_CID_tree.txt ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_euclidean_normed_CID_acc.txt
+; accuracy= 71.845   Correct:74 , Wrong: 29
+
+
+;   == Confusion Matrix ==
+;   real |   3    4    5    6    7    8 
+;   -----+------------------------------------
+;   p  3 |   0    0    0    0    0    0 
+;   p  4 |   1   28    9    0    0    0 
+;   p  5 |   0    5    8    2    0    0 
+;   p  6 |   0    1    1    0    0    0 
+;   p  7 |   0    0    2    3    2    0 
+;   p  8 |   0    0    0    0    5   36 
+

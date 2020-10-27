@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Coffee_TRAIN', 2, 28, 143, 1, 2, 10, 'correlation', 1, 0, 10, './replications/Coffee/Coffee_correlation_unnormed_CID_REP06_tree.txt', './replications/Coffee/Coffee_correlation_unnormed_CID_REP06_time.txt']
+
+rand seed=1503368414
+num_class=2, num_obj=28, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Coffee/Coffee_correlation_unnormed_CID_REP06_tree.txt  time_file=./replications/Coffee/Coffee_correlation_unnormed_CID_REP06_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+......................................................................
+Len=17   @[  0, 37]  d_th= 0.02 gap=0.000996 gain= 0.69315 (0  )==>  14   0  /   0  14 
+
+num_class=2, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.16 sec
+  Time Rand Project =     0.78 sec
+  Time Score Matrix =     0.08 sec
+  Time Compute Gain =     4.03 sec
+Running  Time for this Shapelet=     5.15 sec <<
+
+
+Total Running  Time =     5.15 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Coffee_TEST', 2, 28, 'correlation', 1, 0, './replications/Coffee/Coffee_correlation_unnormed_CID_REP06_tree.txt', './replications/Coffee/Coffee_correlation_unnormed_CID_REP06_acc.txt']
+; accuracy= 89.286   Correct:25 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  15    3 
+;   p  1 |   0   10 
+
+num_class=2, num_obj=28  distance=correlation CID=true normalize=false ./replications/Coffee/Coffee_correlation_unnormed_CID_REP06_tree.txt  ./replications/Coffee/Coffee_correlation_unnormed_CID_REP06_acc.txt
+
+==> Tree Size = 4
+

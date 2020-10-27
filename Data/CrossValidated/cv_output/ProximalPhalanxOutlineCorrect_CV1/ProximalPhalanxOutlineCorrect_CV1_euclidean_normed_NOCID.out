@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineCorrect_TRAIN_CV1', 2, 300, 40, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502274201
+num_class=2, num_obj=300, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=25   @[ 11, 38]  d_th= 0.54 gap=0.000378 gain= 0.28361 (144)==>  71   7  /  26 196 
+
+=== Node 3 ===
+..................
+Len=13   @[151, 63]  d_th= 0.96 gap=0.000186 gain= 0.09051 (170)==>  11 185  /  15  11 
+
+=== Node 7 ===
+..................
+Len=17   @[ 19, 39]  d_th= 0.52 gap=0.003768 gain= 0.34670 (4  )==>   4  11  /  11   0 
+
+=== Node 14 ===
+..................
+Len=23   @[  0, 21]  d_th= 0.50 gap=0.008339 gain= 0.41311 (5  )==>   4   1  /   0  10 
+
+num_class=2, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.20 sec
+  Time Rand Project =     1.02 sec
+  Time Score Matrix =     0.15 sec
+  Time Compute Gain =     1.22 sec
+Running  Time for this Shapelet=     2.70 sec <<
+
+
+Total Running  Time =     2.70 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineCorrect_TRAIN_CV2', 2, 300, 'euclidean', 0, 1, './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_NOCID_acc.txt']
+; accuracy= 40.667   Correct:122 , Wrong: 178
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  96  177 
+;   p  1 |   1   26 
+
+num_class=2, num_obj=300  distance=euclidean CID=false normalize=true ./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_NOCID_tree.txt  ./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 30
+

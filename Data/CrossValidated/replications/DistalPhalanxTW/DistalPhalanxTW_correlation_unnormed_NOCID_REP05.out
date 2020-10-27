@@ -1,0 +1,95 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'correlation', 0, 0, 10, './replications/DistalPhalanxTW/DistalPhalanxTW_correlation_unnormed_NOCID_REP05_tree.txt', './replications/DistalPhalanxTW/DistalPhalanxTW_correlation_unnormed_NOCID_REP05_time.txt']
+
+rand seed=1503366546
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/DistalPhalanxTW/DistalPhalanxTW_correlation_unnormed_NOCID_REP05_tree.txt  time_file=./replications/DistalPhalanxTW/DistalPhalanxTW_correlation_unnormed_NOCID_REP05_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [3,5]  [2,8]  [1,6]  [0,4]  
+
+=== Node 1 ===
+..................
+Len=39   @[ 66, 31]  d_th= 0.06 gap=0.000086 gain= 0.59187 (51 )==>  19  13   0  39  18   6  /   0   0  42   0   0   2 
+
+=== Node 2 ===
+..................
+Len=35   @[ 19, 33]  d_th= 0.02 gap=0.000106 gain= 0.29476 (47 )==>   8   0   0   1  15   0  /  11  13   0  38   3   6 
+
+=== Node 4 ===
+..................
+Len=15   @[  0, 42]  d_th= 0.01 gap=0.000112 gain= 0.44425 (2  )==>   0   0   0   0  13   0  /   8   0   0   1   2   0 
+
+=== Node 5 ===
+..................
+Len=19   @[  0, 39]  d_th= 0.04 gap=0.000021 gain= 0.21354 (41 )==>  11   8   0  34   3   0  /   0   5   0   4   0   6 
+
+=== Node 9 ===
+..................
+Len=5    @[  0, 13]  d_th= 0.00 gap=0.000366 gain= 0.47414 (7  )==>   8   0   0   1   0   0  /   0   0   0   0   2   0 
+
+=== Node 10 ===
+..................
+Len=11   @[  0,  0]  d_th= 0.01 gap=0.000008 gain= 0.23586 (18 )==>  11   1   0  25   0   0  /   0   7   0   9   3   0 
+
+=== Node 11 ===
+..................
+Len=37   @[  1, 23]  d_th= 0.01 gap=0.000003 gain= 0.63651 (5  )==>   0   5   0   0   0   0  /   0   0   0   4   0   6 
+
+=== Node 18 ===
+..................
+Len=39   @[  2,  7]  d_th= 0.00 gap=0.000800 gain= 0.34883 (7  )==>   0   0   0   1   0   0  /   8   0   0   0   0   0 
+
+=== Node 20 ===
+..................
+Len=27   @[  2,  7]  d_th= 0.01 gap=0.000011 gain= 0.24249 (5  )==>   0   0   0  16   0   0  /  11   1   0   9   0   0 
+
+=== Node 21 ===
+..................
+Len=27   @[  0,  2]  d_th= 0.02 gap=0.000401 gain= 0.39025 (1  )==>   0   7   0   3   0   0  /   0   0   0   6   3   0 
+
+=== Node 23 ===
+..................
+Len=23   @[  2, 40]  d_th= 0.01 gap=0.000387 gain= 0.42281 (0  )==>   0   0   0   0   0   5  /   0   0   0   4   0   1 
+
+=== Node 41 ===
+..................
+Len=27   @[  0, 23]  d_th= 0.02 gap=0.000120 gain= 0.29415 (1  )==>   9   0   0   1   0   0  /   2   1   0   8   0   0 
+
+=== Node 42 ===
+..................
+Len=11   @[  0, 20]  d_th= 0.01 gap=0.000284 gain= 0.38593 (2  )==>   0   6   0   0   0   0  /   0   1   0   3   0   0 
+
+=== Node 43 ===
+..................
+Len=11   @[  0, 67]  d_th= 0.01 gap=0.000800 gain= 0.63651 (3  )==>   0   0   0   0   3   0  /   0   0   0   6   0   0 
+
+=== Node 47 ===
+..................
+Len=31   @[  1, 23]  d_th= 0.12 gap=0.012357 gain= 0.50040 (3  )==>   0   0   0   4   0   0  /   0   0   0   0   0   1 
+
+num_class=6, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.21 sec
+  Time Rand Project =     1.13 sec
+  Time Score Matrix =     0.15 sec
+  Time Compute Gain =     1.35 sec
+Running  Time for this Shapelet=     2.96 sec <<
+
+
+Total Running  Time =     2.96 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'correlation', 0, 0, './replications/DistalPhalanxTW/DistalPhalanxTW_correlation_unnormed_NOCID_REP05_tree.txt', './replications/DistalPhalanxTW/DistalPhalanxTW_correlation_unnormed_NOCID_REP05_acc.txt']
+; accuracy= 74.000   Correct:296 , Wrong: 104
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 211    0    0    1    4    0 
+;   p  5 |   0   47   18   13    5    2 
+;   p  6 |   0   17    6    4    3    2 
+;   p  4 |   0   14    5    6    1    4 
+;   p  7 |   2    0    1    0    5    0 
+;   p  3 |   0    4    0    4    0   21 
+
+num_class=6, num_obj=400  distance=correlation CID=false normalize=false ./replications/DistalPhalanxTW/DistalPhalanxTW_correlation_unnormed_NOCID_REP05_tree.txt  ./replications/DistalPhalanxTW/DistalPhalanxTW_correlation_unnormed_NOCID_REP05_acc.txt
+
+==> Tree Size = 96
+

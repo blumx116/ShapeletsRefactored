@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/StarLightCurves_TRAIN_CV2', 3, 501, 512, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/StarLightCurves_CV2/StarLightCurves_CV2_euclidean_normed_CID_tree.txt', './cv_output/StarLightCurves_CV2/StarLightCurves_CV2_euclidean_normed_CID_time.txt']
+
+rand seed=1502309138
+num_class=3, num_obj=501, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/StarLightCurves_CV2/StarLightCurves_CV2_euclidean_normed_CID_tree.txt  time_file=./cv_output/StarLightCurves_CV2/StarLightCurves_CV2_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................................................................................................................................................
+Len=481  @[227,105]  d_th=12.88 gap=0.004054 gain= 0.57990 (223)==>  75   0 287  /   1 138   0 
+
+=== Node 2 ===
+..............................................................................................................................................................................................................................................................
+Len=267  @[231, 14]  d_th=14.82 gap=0.000573 gain= 0.24671 (258)==>  25   0 285  /  50   0   2 
+
+num_class=3, num_obj=362, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    43.39 sec
+  Time Rand Project =   159.23 sec
+  Time Score Matrix =    15.16 sec
+  Time Compute Gain =  3997.97 sec
+Running  Time for this Shapelet=  4229.99 sec <<
+
+
+Total Running  Time =  4229.99 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/StarLightCurves_TRAIN_CV1', 3, 499, 'euclidean', 1, 1, './cv_output/StarLightCurves_CV2/StarLightCurves_CV2_euclidean_normed_CID_tree.txt', './cv_output/StarLightCurves_CV2/StarLightCurves_CV2_euclidean_normed_CID_acc.txt']
+; accuracy= 92.385   Correct:461 , Wrong: 38
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  53    1   10 
+;   p  2 |   2  134    2 
+;   p  3 |  21    2  274 
+
+num_class=3, num_obj=499  distance=euclidean CID=true normalize=true ./cv_output/StarLightCurves_CV2/StarLightCurves_CV2_euclidean_normed_CID_tree.txt  ./cv_output/StarLightCurves_CV2/StarLightCurves_CV2_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 6
+

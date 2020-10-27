@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV1', 2, 149, 213, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/yoga_CV1/yoga_CV1_correlation_unnormed_CID_tree.txt', './cv_output/yoga_CV1/yoga_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503461840
+num_class=2, num_obj=149, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/yoga_CV1/yoga_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/yoga_CV1/yoga_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................................................................
+Len=179  @[  1, 32]  d_th= 0.02 gap=0.000082 gain= 0.09835 (115)==>  17   0  /  51  81 
+
+=== Node 3 ===
+.........................................................................................................
+Len=91   @[  0,169]  d_th= 0.01 gap=0.000003 gain= 0.09841 (72 )==>   1  29  /  50  52 
+
+=== Node 7 ===
+.........................................................................................................
+Len=57   @[  2, 22]  d_th= 0.01 gap=0.000008 gain= 0.09207 (78 )==>  38  52  /  12   0 
+
+=== Node 14 ===
+.........................................................................................................
+Len=27   @[ 32,265]  d_th= 0.06 gap=0.000105 gain= 0.12376 (48 )==>  20  49  /  18   3 
+
+num_class=2, num_obj=90, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     5.25 sec
+  Time Rand Project =    25.11 sec
+  Time Score Matrix =     2.74 sec
+  Time Compute Gain =   197.91 sec
+Running  Time for this Shapelet=   233.35 sec <<
+
+
+Total Running  Time =   233.35 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV2', 2, 151, 'correlation', 1, 0, './cv_output/yoga_CV1/yoga_CV1_correlation_unnormed_CID_tree.txt', './cv_output/yoga_CV1/yoga_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 58.940   Correct:89 , Wrong: 62
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  30   23 
+;   p  2 |  39   59 
+
+num_class=2, num_obj=151  distance=correlation CID=true normalize=false ./cv_output/yoga_CV1/yoga_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/yoga_CV1/yoga_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 30
+

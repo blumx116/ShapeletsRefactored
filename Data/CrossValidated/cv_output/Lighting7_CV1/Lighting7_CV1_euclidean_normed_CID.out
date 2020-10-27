@@ -1,0 +1,86 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Lighting7_TRAIN_CV1', 7, 34, 160, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/Lighting7_CV1/Lighting7_CV1_euclidean_normed_CID_tree.txt', './cv_output/Lighting7_CV1/Lighting7_CV1_euclidean_normed_CID_time.txt']
+
+rand seed=1502278447
+num_class=7, num_obj=34, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Lighting7_CV1/Lighting7_CV1_euclidean_normed_CID_tree.txt  time_file=./cv_output/Lighting7_CV1/Lighting7_CV1_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [6,6]  [5,5]  [4,4]  [3,3]  [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................
+Len=85   @[  0, 59]  d_th= 5.94 gap=0.002137 gain= 0.58622 (0  )==>   3   4   0   0   1   9   0  /   1   0   4   6   1   0   5 
+
+=== Node 2 ===
+..............................................................................
+Len=29   @[  1,  0]  d_th= 5.39 gap=0.000000 gain= 0.60580 (7  )==>   3   0   0   0   0   9   0  /   0   4   0   0   1   0   0 
+
+=== Node 3 ===
+..............................................................................
+Len=25   @[  9,203]  d_th= 2.72 gap=0.034463 gain= 0.69142 (1  )==>   1   0   0   6   1   0   0  /   0   0   4   0   0   0   5 
+
+=== Node 4 ===
+..............................................................................
+Len=29   @[  1,  0]  d_th= 5.39 gap=0.000000 gain= 0.60580 (7  )==>   3   0   0   0   0   9   0  /   0   4   0   0   1   0   0 
+
+=== Node 5 ===
+..............................................................................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 6 ===
+..............................................................................
+Len=155  @[  1, 37]  d_th=12.47 gap=0.366207 gain= 0.56234 (4  )==>   0   0   0   6   0   0   0  /   1   0   0   0   1   0   0 
+
+=== Node 7 ===
+..............................................................................
+Len=101  @[  0, 11]  d_th= 3.35 gap=0.010134 gain= 0.68696 (1  )==>   0   0   4   0   0   0   0  /   0   0   0   0   0   0   5 
+
+=== Node 8 ===
+..............................................................................
+Len=129  @[  3,  9]  d_th= 9.60 gap=0.061129 gain= 0.54559 (9  )==>   0   4   0   0   0   9   0  /   3   0   0   0   1   0   0 
+
+=== Node 9 ===
+..............................................................................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 13 ===
+..............................................................................
+Len=153  @[  0,110]  d_th=11.90 gap=0.961927 gain= 0.69315 (0  )==>   1   0   0   0   0   0   0  /   0   0   0   0   1   0   0 
+
+=== Node 16 ===
+..............................................................................
+Len=21   @[  0, 45]  d_th= 1.12 gap=0.021228 gain= 0.42478 (3  )==>   0   4   0   0   0   1   0  /   0   0   0   0   0   8   0 
+
+=== Node 17 ===
+..............................................................................
+Len=125  @[  3, 26]  d_th= 5.35 gap=0.478201 gain= 0.56234 (2  )==>   0   0   0   0   1   0   0  /   3   0   0   0   0   0   0 
+
+=== Node 32 ===
+..............................................................................
+Len=139  @[  4,133]  d_th= 4.89 gap=0.414904 gain= 0.50040 (3  )==>   0   0   0   0   0   1   0  /   0   4   0   0   0   0   0 
+
+num_class=7, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.08 sec
+  Time Rand Project =     6.39 sec
+  Time Score Matrix =     0.58 sec
+  Time Compute Gain =    19.54 sec
+Running  Time for this Shapelet=    28.27 sec <<
+
+
+Total Running  Time =    28.27 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Lighting7_TRAIN_CV2', 7, 36, 'euclidean', 1, 1, './cv_output/Lighting7_CV1/Lighting7_CV1_euclidean_normed_CID_tree.txt', './cv_output/Lighting7_CV1/Lighting7_CV1_euclidean_normed_CID_acc.txt']
+; accuracy= 41.667   Correct:15 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2    3    4    5    6 
+;   -----+------------------------------------------
+;   p  0 |   1    2    0    0    1    0    0 
+;   p  1 |   0    0    0    0    0    1    1 
+;   p  2 |   0    0    0    0    1    0    1 
+;   p  3 |   0    0    0    4    0    0    0 
+;   p  4 |   0    0    1    1    1    0    0 
+;   p  5 |   3    2    0    0    0    7    1 
+;   p  6 |   0    0    3    1    0    2    2 
+
+num_class=7, num_obj=36  distance=euclidean CID=true normalize=true ./cv_output/Lighting7_CV1/Lighting7_CV1_euclidean_normed_CID_tree.txt  ./cv_output/Lighting7_CV1/Lighting7_CV1_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 66
+

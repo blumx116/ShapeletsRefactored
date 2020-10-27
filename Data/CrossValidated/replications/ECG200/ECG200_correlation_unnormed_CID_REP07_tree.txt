@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1503374061, rand()=991749264, rand()=1280048838
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TRAIN 2 100 48 1 2 10 correlation 1 0 10 ./replications/ECG200/ECG200_correlation_unnormed_CID_REP07_tree.txt ./replications/ECG200/ECG200_correlation_unnormed_CID_REP07_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:  -1  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 32 
+NonL  1    --      4    4   33   0.1262 ==>   1  50  /  30  19 
+Leaf  2     1    
+NonL  3    --     13    8   43   0.0295 ==>   0   9  /  30  10 
+Leaf  6     1    
+NonL  7    --     15   37   17   0.4192 ==>   0   6  /  30   4 
+Leaf 14     1    
+NonL 15    --     15   36   21   0.0965 ==>   1   3  /  29   1 
+Leaf 30     1    
+Leaf 31    -1    
+
+;Shapelet id   <data>
+Shapelet   1   2.118200  0.520620 -0.188630  0.780820  0.933770  0.701400  1.006100  0.395780 -0.369700 -0.738200 -0.729080 -0.906940 -0.870960 -1.060200 -1.198000 -0.981600 -1.272500 -1.287400 -1.276700 -1.539700 -1.346600 -1.535200 -1.763400 -1.688800 -1.809400 -1.863900 -1.994500 -1.889800 -1.925700 -1.833600 -1.661800 -1.342500 -1.011300 
+Shapelet   3  -0.896490 -0.994850 -0.810960 -0.742450 -1.015100 -1.073100 -0.856380 -1.093100 -1.514500 -1.394200 -1.190900 -1.541100 -1.886700 -1.760800 -1.916600 -2.076800 -1.735500 -1.918500 -2.197400 -1.757900 -1.519000 -1.585500 -1.394500 -1.003300 -0.690670 -0.488880 -0.117400  0.252050  0.153350  0.139850  0.550460  0.547320  0.319100  0.508510  0.624500  0.597340  0.614820  0.479710  0.469210  0.639210  0.490670  0.338890  0.511690 
+Shapelet   7   0.904540  0.841330  0.999120  0.706540  0.649850  0.780870  0.814870  0.873600  0.239490  0.978860  0.848520  0.279160  0.469470  0.553900  0.745720  0.540180  0.667070 
+Shapelet  15   0.211900 -0.007419  0.387760  0.140100  0.210250  0.322630  0.445220  0.387080  0.478910  0.621070  0.579220  0.699610  0.916710  0.690360  0.788680  0.876300  0.831140  0.798400  0.748930  0.550550  0.563240 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TRAIN 2 100 48 1 2 10 correlation 1 0 10 ./replications/ECG200/ECG200_correlation_unnormed_CID_REP07_tree.txt ./replications/ECG200/ECG200_correlation_unnormed_CID_REP07_time.txt
+; time =>    3.207   0.175   1.105   0.124   1.683 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TEST 2 100 correlation 1 0 ./replications/ECG200/ECG200_correlation_unnormed_CID_REP07_tree.txt ./replications/ECG200/ECG200_correlation_unnormed_CID_REP07_acc.txt
+; accuracy= 77.000   Correct:77 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   1   -1 
+;   -----+------------
+;   p  1 |  53   12 
+;   p -1 |  11   24 
+

@@ -1,0 +1,55 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Symbols_TRAIN_CV2', 6, 15, 199, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/Symbols_CV2/Symbols_CV2_euclidean_normed_CID_tree.txt', './cv_output/Symbols_CV2/Symbols_CV2_euclidean_normed_CID_time.txt']
+
+rand seed=1502276215
+num_class=6, num_obj=15, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Symbols_CV2/Symbols_CV2_euclidean_normed_CID_tree.txt  time_file=./cv_output/Symbols_CV2/Symbols_CV2_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................
+Len=161  @[  0, 54]  d_th= 5.22 gap=0.163807 gain= 0.69092 (1  )==>   4   0   2   0   0   2  /   0   3   0   2   2   0 
+
+=== Node 2 ===
+..................................................................................................
+Len=181  @[  5,216]  d_th=15.33 gap=0.814395 gain= 0.69315 (0  )==>   0   0   2   0   0   2  /   4   0   0   0   0   0 
+
+=== Node 3 ===
+..................................................................................................
+Len=197  @[  0, 80]  d_th=12.68 gap=0.738648 gain= 0.68291 (1  )==>   0   3   0   0   0   0  /   0   0   0   2   2   0 
+
+=== Node 4 ===
+..................................................................................................
+Len=195  @[  0,131]  d_th=15.32 gap=0.867885 gain= 0.69315 (0  )==>   0   0   2   0   0   0  /   0   0   0   0   0   2 
+
+=== Node 7 ===
+..................................................................................................
+Len=199  @[  0,162]  d_th= 5.71 gap=0.289322 gain= 0.69315 (0  )==>   0   0   0   2   0   0  /   0   0   0   0   2   0 
+
+num_class=6, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.27 sec
+  Time Rand Project =     0.76 sec
+  Time Score Matrix =     0.08 sec
+  Time Compute Gain =    12.29 sec
+Running  Time for this Shapelet=    13.52 sec <<
+
+
+Total Running  Time =    13.52 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Symbols_TRAIN_CV1', 6, 10, 'euclidean', 1, 1, './cv_output/Symbols_CV2/Symbols_CV2_euclidean_normed_CID_tree.txt', './cv_output/Symbols_CV2/Symbols_CV2_euclidean_normed_CID_acc.txt']
+; accuracy= 90.000   Correct:9 , Wrong: 1
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6 
+;   -----+------------------------------------
+;   p  1 |   4    0    0    0    0    0 
+;   p  2 |   0    2    0    0    0    0 
+;   p  3 |   0    0    1    0    0    0 
+;   p  4 |   0    0    0    0    0    0 
+;   p  5 |   0    0    0    1    1    0 
+;   p  6 |   0    0    0    0    0    1 
+
+num_class=6, num_obj=10  distance=euclidean CID=true normalize=true ./cv_output/Symbols_CV2/Symbols_CV2_euclidean_normed_CID_tree.txt  ./cv_output/Symbols_CV2/Symbols_CV2_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 16
+

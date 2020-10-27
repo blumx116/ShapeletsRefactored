@@ -1,0 +1,64 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineAgeGroup_TRAIN_CV1', 3, 68, 40, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/DistalPhalanxOutlineAgeGroup_CV1/DistalPhalanxOutlineAgeGroup_CV1_correlation_unnormed_CID_tree.txt', './cv_output/DistalPhalanxOutlineAgeGroup_CV1/DistalPhalanxOutlineAgeGroup_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503460966
+num_class=3, num_obj=68, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/DistalPhalanxOutlineAgeGroup_CV1/DistalPhalanxOutlineAgeGroup_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/DistalPhalanxOutlineAgeGroup_CV1/DistalPhalanxOutlineAgeGroup_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................
+Len=35   @[  2, 37]  d_th= 0.02 gap=0.000248 gain= 0.22531 (54 )==>   6   1   0  /   1  28  32 
+
+=== Node 2 ===
+..................
+Len=39   @[  6,  5]  d_th= 0.01 gap=0.001190 gain= 0.41012 (5  )==>   0   1   0  /   6   0   0 
+
+=== Node 3 ===
+..................
+Len=33   @[  4, 33]  d_th= 0.04 gap=0.000191 gain= 0.14877 (37 )==>   1  28  20  /   0   0  12 
+
+=== Node 6 ===
+..................
+Len=13   @[ 36, 27]  d_th= 0.01 gap=0.000012 gain= 0.21672 (3  )==>   0   8  18  /   1  20   2 
+
+=== Node 12 ===
+..................
+Len=5    @[  1, 36]  d_th= 0.03 gap=0.000006 gain= 0.35277 (10 )==>   0   7   1  /   0   1  17 
+
+=== Node 13 ===
+..................
+Len=11   @[  0, 13]  d_th= 0.00 gap=0.000428 gain= 0.23517 (19 )==>   1   0   1  /   0  20   1 
+
+=== Node 24 ===
+..................
+Len=33   @[  7, 34]  d_th= 0.00 gap=0.000345 gain= 0.37677 (6  )==>   0   0   1  /   0   7   0 
+
+=== Node 26 ===
+..................
+Len=27   @[  0, 26]  d_th= 0.09 gap=0.017844 gain= 0.69315 (0  )==>   1   0   0  /   0   0   1 
+
+num_class=3, num_obj=2, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.10 sec
+  Time Rand Project =     0.51 sec
+  Time Score Matrix =     0.06 sec
+  Time Compute Gain =     1.15 sec
+Running  Time for this Shapelet=     1.88 sec <<
+
+
+Total Running  Time =     1.88 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineAgeGroup_TRAIN_CV2', 3, 71, 'correlation', 1, 0, './cv_output/DistalPhalanxOutlineAgeGroup_CV1/DistalPhalanxOutlineAgeGroup_CV1_correlation_unnormed_CID_tree.txt', './cv_output/DistalPhalanxOutlineAgeGroup_CV1/DistalPhalanxOutlineAgeGroup_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 74.648   Correct:53 , Wrong: 18
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   5    2    0 
+;   p  2 |   0   15    0 
+;   p  3 |   3   13   33 
+
+num_class=3, num_obj=71  distance=correlation CID=true normalize=false ./cv_output/DistalPhalanxOutlineAgeGroup_CV1/DistalPhalanxOutlineAgeGroup_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/DistalPhalanxOutlineAgeGroup_CV1/DistalPhalanxOutlineAgeGroup_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 54
+

@@ -1,0 +1,75 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FordA_TRAIN_CV2', 2, 661, 250, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/FordA_CV2/FordA_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/FordA_CV2/FordA_CV2_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502288106
+num_class=2, num_obj=661, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/FordA_CV2/FordA_CV2_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/FordA_CV2/FordA_CV2_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=33   @[ 12,  1]  d_th=10.32 gap=0.001421 gain= 0.11717 (97 )==>  68 214  / 273 106 
+
+=== Node 2 ===
+...........................................................................................................................
+Len=87   @[ 10,373]  d_th=36.02 gap=0.002150 gain= 0.14377 (170)==>  41  15  /  27 199 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=9    @[  0, 36]  d_th= 3.38 gap=0.015578 gain= 0.09901 (149)==> 113   2  / 160 104 
+
+=== Node 4 ===
+...........................................................................................................................
+Len=143  @[ 46,336]  d_th=114.69 gap=0.027785 gain= 0.20638 (32 )==>  39   5  /   2  10 
+
+=== Node 5 ===
+...........................................................................................................................
+Len=15   @[  0, 77]  d_th=11.53 gap=0.003974 gain= 0.08804 (182)==>  13 191  /  14   8 
+
+=== Node 7 ===
+...........................................................................................................................
+Len=203  @[ 16,102]  d_th=127.64 gap=0.016691 gain= 0.21481 (18 )==> 126  15  /  34  89 
+
+=== Node 8 ===
+...........................................................................................................................
+Len=73   @[ 40,  3]  d_th=25.39 gap=0.001767 gain= 0.19652 (24 )==>   5   5  /  34   0 
+
+=== Node 9 ===
+...........................................................................................................................
+Len=189  @[  1,168]  d_th=94.89 gap=0.251803 gain= 0.45056 (8  )==>   2   0  /   0  10 
+
+=== Node 11 ===
+...........................................................................................................................
+Len=177  @[ 14,315]  d_th=116.28 gap=0.054600 gain= 0.51278 (4  )==>   1   8  /  13   0 
+
+=== Node 14 ===
+...........................................................................................................................
+Len=213  @[ 10, 71]  d_th=155.02 gap=0.001723 gain= 0.07217 (63 )==>  99   3  /  27  12 
+
+=== Node 15 ===
+...........................................................................................................................
+Len=35   @[ 37,314]  d_th=16.36 gap=0.020513 gain= 0.10647 (7  )==>   4  54  /  30  35 
+
+num_class=2, num_obj=123, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    62.73 sec
+  Time Rand Project =   838.43 sec
+  Time Score Matrix =    53.34 sec
+  Time Compute Gain =   296.87 sec
+Running  Time for this Shapelet=  1302.53 sec <<
+
+
+Total Running  Time =  1302.53 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FordA_TRAIN_CV1', 2, 659, 'manhattan', 0, 0, './cv_output/FordA_CV2/FordA_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/FordA_CV2/FordA_CV2_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 80.577   Correct:531 , Wrong: 128
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 | 268   56 
+;   p  1 |  72  263 
+
+num_class=2, num_obj=659  distance=manhattan CID=false normalize=false ./cv_output/FordA_CV2/FordA_CV2_manhattan_unnormed_NOCID_tree.txt  ./cv_output/FordA_CV2/FordA_CV2_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 32
+

@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1501837463, rand()=2007529188, rand()=1594780998
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 manhattan 1 0 10 ./output/Gun/Gun_manhattan_unnormed_CID_REP04_tree.txt ./output/Gun/Gun_manhattan_unnormed_CID_REP04_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   2  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      2   93   15   1.4597 ==>   0  18  /  26   6 
+Leaf  2     1    
+NonL  3    --      9    2   39   9.3680 ==>   0   6  /  26   0 
+Leaf  6     1    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.281200  1.139200  0.979360  0.809060  0.646920  0.471690  0.302690  0.187740  0.039058 -0.078698 -0.208210 -0.312640 -0.389000 -0.451820 -0.499660 
+Shapelet   3  -1.206500 -1.203100 -1.181000 -1.165600 -1.164300 -1.168600 -1.163700 -1.164100 -1.161500 -1.157500 -1.158100 -1.157100 -1.162900 -1.162100 -1.161000 -1.155500 -1.131400 -1.086900 -1.005000 -0.885800 -0.781880 -0.718220 -0.675150 -0.666500 -0.667790 -0.663010 -0.653380 -0.646230 -0.637460 -0.618900 -0.591110 -0.551690 -0.529200 -0.486900 -0.383850 -0.223620 -0.040890  0.105140  0.293760 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 manhattan 1 0 10 ./output/Gun/Gun_manhattan_unnormed_CID_REP04_tree.txt ./output/Gun/Gun_manhattan_unnormed_CID_REP04_time.txt
+; time =>    2.860   0.145   0.760   0.092   1.789 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/Gun_Point_TEST 2 150 manhattan 1 0 ./output/Gun/Gun_manhattan_unnormed_CID_REP04_tree.txt ./output/Gun/Gun_manhattan_unnormed_CID_REP04_acc.txt
+; accuracy= 89.333   Correct:134 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  72   12 
+;   p  2 |   4   62 
+

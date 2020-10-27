@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1', 2, 185, 118, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/Strawberry_CV1/Strawberry_CV1_correlation_unnormed_CID_tree.txt', './cv_output/Strawberry_CV1/Strawberry_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503461163
+num_class=2, num_obj=185, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Strawberry_CV1/Strawberry_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/Strawberry_CV1/Strawberry_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................
+Len=27   @[  2,104]  d_th= 0.02 gap=0.000084 gain= 0.47535 (53 )==>  62   4  /   4 115 
+
+num_class=2, num_obj=185, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.81 sec
+  Time Rand Project =     4.91 sec
+  Time Score Matrix =     0.57 sec
+  Time Compute Gain =    15.33 sec
+Running  Time for this Shapelet=    22.08 sec <<
+
+
+Total Running  Time =    22.08 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV2', 2, 185, 'correlation', 1, 0, './cv_output/Strawberry_CV1/Strawberry_CV1_correlation_unnormed_CID_tree.txt', './cv_output/Strawberry_CV1/Strawberry_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 75.135   Correct:139 , Wrong: 46
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  42   22 
+;   p  2 |  24   97 
+
+num_class=2, num_obj=185  distance=correlation CID=true normalize=false ./cv_output/Strawberry_CV1/Strawberry_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/Strawberry_CV1/Strawberry_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 4
+

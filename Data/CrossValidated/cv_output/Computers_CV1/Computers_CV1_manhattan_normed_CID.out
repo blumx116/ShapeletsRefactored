@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Computers_TRAIN_CV1', 2, 124, 360, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/Computers_CV1/Computers_CV1_manhattan_normed_CID_tree.txt', './cv_output/Computers_CV1/Computers_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502317455
+num_class=2, num_obj=124, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Computers_CV1/Computers_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/Computers_CV1/Computers_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=61   @[ 15,294]  d_th=30.93 gap=0.009294 gain= 0.18993 (68 )==>  34  62  /  28   0 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.26593 (4  )==>   1  45  /  33  17 
+
+=== Node 5 ===
+..................................................................................................................................................................................
+Len=7    @[  0, 27]  d_th= 1.73 gap=0.654654 gain= 0.68291 (1  )==>   3   0  /   0   4 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     6.00 sec
+  Time Rand Project =    21.59 sec
+  Time Score Matrix =     2.12 sec
+  Time Compute Gain =   393.27 sec
+Running  Time for this Shapelet=   425.11 sec <<
+
+
+Total Running  Time =   425.11 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Computers_TRAIN_CV2', 2, 126, 'manhattan', 1, 1, './cv_output/Computers_CV1/Computers_CV1_manhattan_normed_CID_tree.txt', './cv_output/Computers_CV1/Computers_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 62.698   Correct:79 , Wrong: 47
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  36   20 
+;   p  2 |  27   43 
+
+num_class=2, num_obj=126  distance=manhattan CID=true normalize=true ./cv_output/Computers_CV1/Computers_CV1_manhattan_normed_CID_tree.txt  ./cv_output/Computers_CV1/Computers_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 12
+

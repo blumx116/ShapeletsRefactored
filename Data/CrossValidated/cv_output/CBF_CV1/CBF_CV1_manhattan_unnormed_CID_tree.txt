@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1502275915, rand()=2089478451, rand()=1935272492
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/CBF_TRAIN_CV1 3 15 64 1 2 10 manhattan 1 0 10 ./cv_output/CBF_CV1/CBF_CV1_manhattan_unnormed_CID_tree.txt ./cv_output/CBF_CV1/CBF_CV1_manhattan_unnormed_CID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --     11   24   35  30.8986 ==>   5   0   4  /   0   6   0 
+NonL  2    --      5   14   55  41.7486 ==>   0   0   4  /   5   0   0 
+Leaf  3     2    
+Leaf  4     3    
+Leaf  5     1    
+
+;Shapelet id   <data>
+Shapelet   1   2.395800  1.421500  1.977200  2.577800  1.798000  2.081000  2.428300  2.055600  1.896700  1.543200  1.444600  1.811600  1.995700  1.282500  1.162200  0.637540  1.170600  1.963100  0.771100  1.356400  1.068900  0.966220  0.631510  1.324300  0.577550  0.619250  0.709730  0.716860  0.064235  0.786080  0.429360 -0.129290  0.266930 -0.222920 -0.522560 
+Shapelet   2   0.064062 -1.253600 -0.788990 -0.934220 -1.093600 -0.607900 -0.702730  0.018323  2.975600  2.677300  2.395800  1.421500  1.977200  2.577800  1.798000  2.081000  2.428300  2.055600  1.896700  1.543200  1.444600  1.811600  1.995700  1.282500  1.162200  0.637540  1.170600  1.963100  0.771100  1.356400  1.068900  0.966220  0.631510  1.324300  0.577550  0.619250  0.709730  0.716860  0.064235  0.786080  0.429360 -0.129290  0.266930 -0.222920 -0.522560 -0.155780 -0.983390 -0.173290 -0.112990  0.068610  0.062064 -0.987380 -0.157820 -0.875310 -0.667750 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/CBF_TRAIN_CV1 3 15 64 1 2 10 manhattan 1 0 10 ./cv_output/CBF_CV1/CBF_CV1_manhattan_unnormed_CID_tree.txt ./cv_output/CBF_CV1/CBF_CV1_manhattan_unnormed_CID_time.txt
+; time =>    0.618   0.036   0.234   0.022   0.304 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/CBF_TRAIN_CV2 3 15 manhattan 1 0 ./cv_output/CBF_CV1/CBF_CV1_manhattan_unnormed_CID_tree.txt ./cv_output/CBF_CV1/CBF_CV1_manhattan_unnormed_CID_acc.txt
+; accuracy= 93.333   Correct:14 , Wrong: 1
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   4    0    0 
+;   p  2 |   1    6    0 
+;   p  3 |   0    0    4 
+

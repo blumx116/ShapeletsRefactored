@@ -1,0 +1,58 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP14_tree.txt', './replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP14_time.txt']
+
+rand seed=1508180435
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP14_tree.txt  time_file=./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP14_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=15   @[477, 24]  d_th= 4.45 gap=0.002224 gain= 0.53046 (122)==>   1 165   9  12   2  / 291  12   1   7   0 
+
+=== Node 2 ===
+.................................
+Len=65   @[125,  3]  d_th= 3.68 gap=0.001432 gain= 0.14154 (133)==>   0 149   0  12   0  /   1  16   9   0   2 
+
+=== Node 5 ===
+.................................
+Len=17   @[  0,112]  d_th= 2.72 gap=0.035983 gain= 0.49980 (4  )==>   1   1   9   0   1  /   0  15   0   0   1 
+
+=== Node 10 ===
+.................................
+Len=63   @[ 11, 30]  d_th= 1.68 gap=0.001443 gain= 0.56234 (6  )==>   1   1   0   0   1  /   0   0   9   0   0 
+
+=== Node 20 ===
+.................................
+Len=37   @[  0, 97]  d_th= 5.16 gap=0.341466 gain= 0.63651 (1  )==>   1   0   0   0   1  /   0   1   0   0   0 
+
+=== Node 40 ===
+.................................
+Len=11   @[  0,119]  d_th= 1.22 gap=0.366587 gain= 0.69315 (0  )==>   1   0   0   0   0  /   0   0   0   0   1 
+
+num_class=5, num_obj=2, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.39 sec
+  Time Rand Project =    15.67 sec
+  Time Score Matrix =     1.48 sec
+  Time Compute Gain =     2.54 sec
+Running  Time for this Shapelet=    22.40 sec <<
+
+
+Total Running  Time =    22.40 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'euclidean', 0, 0, './replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP14_tree.txt', './replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP14_acc.txt']
+; accuracy= 89.689   Correct:4036 , Wrong: 464
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2619  187   26   89   10 
+;   p  2 |   8 1392   34   86   11 
+;   p  3 |   0   11   25    0    1 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    1    0    0 
+
+num_class=5, num_obj=4500  distance=euclidean CID=false normalize=false ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP14_tree.txt  ./replications/ECG5000/ECG5000_euclidean_unnormed_NOCID_REP14_acc.txt
+
+==> Tree Size = 82
+

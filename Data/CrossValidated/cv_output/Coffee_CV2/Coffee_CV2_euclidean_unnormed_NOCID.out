@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Coffee_TRAIN_CV2', 2, 14, 143, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/Coffee_CV2/Coffee_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/Coffee_CV2/Coffee_CV2_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502275712
+num_class=2, num_obj=14, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Coffee_CV2/Coffee_CV2_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/Coffee_CV2/Coffee_CV2_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+......................................................................
+Len=11   @[  7,226]  d_th= 0.68 gap=0.072135 gain= 0.69315 (0  )==>   0   7  /   7   0 
+
+num_class=2, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.08 sec
+  Time Rand Project =     0.36 sec
+  Time Score Matrix =     0.04 sec
+  Time Compute Gain =     0.26 sec
+Running  Time for this Shapelet=     0.76 sec <<
+
+
+Total Running  Time =     0.76 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Coffee_TRAIN_CV1', 2, 14, 'euclidean', 0, 0, './cv_output/Coffee_CV2/Coffee_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/Coffee_CV2/Coffee_CV2_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 92.857   Correct:13 , Wrong: 1
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |   7    1 
+;   p  1 |   0    6 
+
+num_class=2, num_obj=14  distance=euclidean CID=false normalize=false ./cv_output/Coffee_CV2/Coffee_CV2_euclidean_unnormed_NOCID_tree.txt  ./cv_output/Coffee_CV2/Coffee_CV2_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 4
+

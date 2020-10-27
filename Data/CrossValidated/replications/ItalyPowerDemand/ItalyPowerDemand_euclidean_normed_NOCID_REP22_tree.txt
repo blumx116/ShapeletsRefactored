@@ -1,0 +1,42 @@
+;Shapelet Tree 
+
+;random seed:1508180089, rand()=1258274085, rand()=1690753305
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 0 1 10 ./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP22_tree.txt ./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP22_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 22 
+NonL  1    --      0   17    5   1.0468 ==>  31   7  /   3  26 
+NonL  2    --      0   10    5   0.4884 ==>  29   2  /   2   5 
+NonL  3    --      0   10    9   1.9838 ==>   1  26  /   2   0 
+Leaf  4     1    
+NonL  5    --      0    7    9   0.9220 ==>   2   1  /   0   4 
+Leaf  6     2    
+Leaf  7     1    
+NonL 10    --      1    1    9   0.4142 ==>   0   1  /   2   0 
+Leaf 11     2    
+Leaf 20     2    
+Leaf 21     1    
+
+;Shapelet id   <data>
+Shapelet   1   0.613330  1.369800  1.464400  1.054600  0.581810 
+Shapelet   2   1.275300  0.960050  0.613330  0.014447 -0.647480 
+Shapelet   3   0.007805 -0.085856  0.007805 -0.460500 -0.554160 -0.741490 -0.741490 -0.741490 -1.116100 
+Shapelet   5  -0.600420 -1.084300 -0.277810  0.367420  0.474960  0.528730  0.098577 -0.277810 -0.385350 
+Shapelet  10  -0.325420 -0.713150 -0.934710 -1.100900 -1.100900 -0.879320 -0.546980 -0.990100 -0.325420 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 0 1 10 ./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP22_tree.txt ./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP22_time.txt
+; time =>    0.048   0.003   0.023   0.003   0.016 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST 2 1029 euclidean 0 1 ./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP22_tree.txt ./replications/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP22_acc.txt
+; accuracy= 79.300   Correct:816 , Wrong: 213
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 409  106 
+;   p  1 | 107  407 
+

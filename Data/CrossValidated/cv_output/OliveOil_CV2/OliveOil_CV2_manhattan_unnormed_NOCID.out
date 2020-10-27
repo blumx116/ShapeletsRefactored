@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV2', 4, 16, 285, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502280038
+num_class=4, num_obj=16, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.............................................................................................................................................
+Len=133  @[  0,433]  d_th= 1.25 gap=0.015420 gain= 0.68531 (2  )==>   3   4   0   0  /   0   0   2   7 
+
+=== Node 2 ===
+.............................................................................................................................................
+Len=53   @[  0,419]  d_th= 0.41 gap=0.014935 gain= 0.68291 (1  )==>   3   0   0   0  /   0   4   0   0 
+
+=== Node 3 ===
+.............................................................................................................................................
+Len=53   @[  0,433]  d_th= 1.74 gap=0.128405 gain= 0.52971 (5  )==>   0   0   2   0  /   0   0   0   7 
+
+num_class=4, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.40 sec
+  Time Rand Project =     0.91 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     4.34 sec
+Running  Time for this Shapelet=     5.81 sec <<
+
+
+Total Running  Time =     5.81 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV1', 4, 14, 'manhattan', 0, 0, './cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 64.286   Correct:9 , Wrong: 5
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   2    0    0    1 
+;   p  2 |   0    2    0    0 
+;   p  3 |   0    0    0    0 
+;   p  4 |   0    2    2    5 
+
+num_class=4, num_obj=14  distance=manhattan CID=false normalize=false ./cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_unnormed_NOCID_tree.txt  ./cv_output/OliveOil_CV2/OliveOil_CV2_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 8
+

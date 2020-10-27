@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Coffee_TRAIN_CV2', 2, 14, 143, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/Coffee_CV2/Coffee_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/Coffee_CV2/Coffee_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502275717
+num_class=2, num_obj=14, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Coffee_CV2/Coffee_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/Coffee_CV2/Coffee_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+......................................................................
+Len=107  @[  7,143]  d_th=12.52 gap=0.388520 gain= 0.69315 (0  )==>   0   7  /   7   0 
+
+num_class=2, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.09 sec
+  Time Rand Project =     0.41 sec
+  Time Score Matrix =     0.04 sec
+  Time Compute Gain =     1.18 sec
+Running  Time for this Shapelet=     1.76 sec <<
+
+
+Total Running  Time =     1.76 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Coffee_TRAIN_CV1', 2, 14, 'manhattan', 1, 0, './cv_output/Coffee_CV2/Coffee_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/Coffee_CV2/Coffee_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 100.000   Correct:14 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |   7    0 
+;   p  1 |   0    7 
+
+num_class=2, num_obj=14  distance=manhattan CID=true normalize=false ./cv_output/Coffee_CV2/Coffee_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/Coffee_CV2/Coffee_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 4
+

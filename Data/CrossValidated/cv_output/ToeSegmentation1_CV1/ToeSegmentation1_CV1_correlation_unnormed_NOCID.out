@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ToeSegmentation1_TRAIN_CV1', 2, 20, 139, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/ToeSegmentation1_CV1/ToeSegmentation1_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/ToeSegmentation1_CV1/ToeSegmentation1_CV1_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503461797
+num_class=2, num_obj=20, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ToeSegmentation1_CV1/ToeSegmentation1_CV1_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/ToeSegmentation1_CV1/ToeSegmentation1_CV1_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+....................................................................
+Len=107  @[  2,166]  d_th= 0.11 gap=0.000622 gain= 0.69315 (0  )==>  10   0  /   0  10 
+
+num_class=2, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.13 sec
+  Time Rand Project =     0.75 sec
+  Time Score Matrix =     0.07 sec
+  Time Compute Gain =     1.55 sec
+Running  Time for this Shapelet=     2.59 sec <<
+
+
+Total Running  Time =     2.59 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ToeSegmentation1_TRAIN_CV2', 2, 20, 'correlation', 0, 0, './cv_output/ToeSegmentation1_CV1/ToeSegmentation1_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/ToeSegmentation1_CV1/ToeSegmentation1_CV1_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 80.000   Correct:16 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |   8    2 
+;   p  1 |   2    8 
+
+num_class=2, num_obj=20  distance=correlation CID=false normalize=false ./cv_output/ToeSegmentation1_CV1/ToeSegmentation1_CV1_correlation_unnormed_NOCID_tree.txt  ./cv_output/ToeSegmentation1_CV1/ToeSegmentation1_CV1_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 4
+

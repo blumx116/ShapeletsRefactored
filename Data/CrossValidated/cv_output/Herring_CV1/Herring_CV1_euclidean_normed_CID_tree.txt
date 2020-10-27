@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1502279551, rand()=1418400248, rand()=1081665221
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1 2 31 256 1 2 10 euclidean 1 1 10 ./cv_output/Herring_CV1/Herring_CV1_euclidean_normed_CID_tree.txt ./cv_output/Herring_CV1/Herring_CV1_euclidean_normed_CID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --      0  505    5   1.2167 ==>  18   3  /   1   9 
+NonL  2    --      0  146   49   1.0293 ==>  18   0  /   0   3 
+Leaf  3     2    
+Leaf  4     1    
+Leaf  5     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.921500  1.932000  1.920800  1.904600  1.909900 
+Shapelet   2  -0.717510 -0.685320 -0.646450 -0.618990 -0.595950 -0.577250 -0.568620 -0.547840 -0.504490 -0.495170 -0.494630 -0.485190 -0.463500 -0.416860 -0.402500 -0.411020 -0.402850 -0.418790 -0.455570 -0.475800 -0.445730 -0.406410 -0.367560 -0.322490 -0.282940 -0.248010 -0.214780 -0.180280 -0.180650 -0.149970 -0.100390 -0.048378 -0.015978  0.004943  0.045958  0.096196  0.146870  0.195760  0.250770  0.286490  0.313300  0.324700  0.332060  0.336240  0.362680  0.389980  0.418120  0.438320  0.446240 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1 2 31 256 1 2 10 euclidean 1 1 10 ./cv_output/Herring_CV1/Herring_CV1_euclidean_normed_CID_tree.txt ./cv_output/Herring_CV1/Herring_CV1_euclidean_normed_CID_time.txt
+; time =>   36.020   0.756   2.414   0.268  32.290 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV2 2 33 euclidean 1 1 ./cv_output/Herring_CV1/Herring_CV1_euclidean_normed_CID_tree.txt ./cv_output/Herring_CV1/Herring_CV1_euclidean_normed_CID_acc.txt
+; accuracy= 27.273   Correct:9 , Wrong: 24
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   5    9 
+;   p  2 |  15    4 
+

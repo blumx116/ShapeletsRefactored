@@ -1,0 +1,45 @@
+;Shapelet Tree 
+
+;random seed:1508180270, rand()=542754589, rand()=1098062156
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TRAIN 2 276 40 1 2 10 euclidean 0 1 10 ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_normed_NOCID_REP26_tree.txt ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_normed_NOCID_REP26_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  0 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 20 
+NonL  1    --      0   10   31   1.1311 ==> 149  55  /  12  60 
+NonL  2    --     93   16   39   3.1343 ==> 149  41  /   0  14 
+NonL  3    --     58   46    7   1.1781 ==>   5  58  /   7   2 
+NonL  4    --      4   38   39   0.9484 ==>  64   2  /  85  39 
+Leaf  5     0    
+Leaf  6     0    
+NonL  7    --      0   47   23   2.0304 ==>   0   2  /   7   0 
+Leaf  8     1    
+NonL  9    --      9   27   39   1.3794 ==>  27  30  /  58   9 
+Leaf 14     0    
+Leaf 15     1    
+Leaf 18     0    
+Leaf 19     1    
+
+;Shapelet id   <data>
+Shapelet   1   1.132200  1.267200  1.432100  1.484500  1.275700  1.158900  1.005300  0.817360  0.504390  0.378850  0.145810 -0.209470 -0.578720 -0.674810 -0.799990 -0.935040 -0.788160 -0.577440 -0.271910  0.061242  0.410370  0.760720  1.134800  1.504600  1.669600  1.699900  1.553100  1.393700  1.470400  1.587700  1.690200 
+Shapelet   2   0.810660  0.586440  0.364670  0.270020 -0.103400 -0.434460 -0.767120 -0.785480 -0.839700 -0.847320 -0.662730 -0.423920 -0.058990  0.266640  0.594260  0.987500  1.330600  1.528100  1.451200  1.405700  1.263400  1.394100  1.357800  1.382500  1.483600  1.545100  1.648600  1.277400  0.926580  0.577290  0.177160 -0.172130 -0.493050 -0.770300  0.141040  0.132950 -0.195060 -0.519040 -0.770960 
+Shapelet   3   1.635800  1.818100  1.915200  1.935300 -1.092900 -1.092900 -1.092900 
+Shapelet   4   1.459300  1.551000  1.573300  1.566600  1.323900  1.051400  0.683250  0.368980  0.106880 -0.226880 -0.556680 -0.837570  0.014293 -0.108250 -0.265930 -0.587360 -0.847150 -1.165100 -1.442400 -1.642200 -1.731200 -1.494000 -1.231300 -0.930760 -0.685500 -0.442670 -0.188880 -0.057416 -0.229310 -0.503590 -0.723670 -0.994040 -1.189700 -1.376700 -1.488900 -1.624200 -1.502600 -1.280300 -0.997450 
+Shapelet   7  -0.167530 -0.403140 -0.577830 -0.623410 -0.726360 -0.824950 -0.916960 -0.999020 -1.107900 -1.215200 -1.308500 -1.367000 -1.278400 -1.143300 -0.996040 -0.844420 -0.750900 -0.595100 -0.600910 -0.703900 -0.802610 -0.895080 -1.045600 
+Shapelet   9   0.007799  0.240610  0.543580  0.849160  1.156500  1.487700  1.549000  1.487900  1.284600  1.236200  1.336300  1.562900  1.655400  1.772800  1.682300  1.592200  1.338100  0.942360  0.603780  0.220750 -0.103490 -0.434170 -0.692970 -0.381730 -0.470020 -0.574490 -0.807020 -0.952850 -1.040100 -1.153400 -1.257400 -1.352900 -1.300100 -1.262600 -1.111800 -0.956820 -0.815520 -0.744990 -0.709850 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TRAIN 2 276 40 1 2 10 euclidean 0 1 10 ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_normed_NOCID_REP26_tree.txt ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_normed_NOCID_REP26_time.txt
+; time =>    5.312   0.396   2.398   0.344   1.945 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TEST 2 600 euclidean 0 1 ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_normed_NOCID_REP26_tree.txt ./replications/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_normed_NOCID_REP26_acc.txt
+; accuracy= 75.167   Correct:451 , Wrong: 149
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 | 265   36 
+;   p  0 | 113  186 
+

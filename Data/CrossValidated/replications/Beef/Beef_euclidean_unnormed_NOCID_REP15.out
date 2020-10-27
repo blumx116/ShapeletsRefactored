@@ -1,0 +1,62 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Beef_TRAIN', 5, 30, 235, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/Beef/Beef_euclidean_unnormed_NOCID_REP15_tree.txt', './replications/Beef/Beef_euclidean_unnormed_NOCID_REP15_time.txt']
+
+rand seed=1508197121
+num_class=5, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/Beef/Beef_euclidean_unnormed_NOCID_REP15_tree.txt  time_file=./replications/Beef/Beef_euclidean_unnormed_NOCID_REP15_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................
+Len=147  @[  6,140]  d_th= 3.21 gap=0.037302 gain= 0.50040 (18 )==>   0   6   6   6   6  /   6   0   0   0   0 
+
+=== Node 2 ===
+....................................................................................................................
+Len=29   @[  0, 84]  d_th= 0.69 gap=0.002123 gain= 0.38979 (6  )==>   0   2   1   6   0  /   0   4   5   0   6 
+
+=== Node 4 ===
+....................................................................................................................
+Len=35   @[  0, 68]  d_th= 0.71 gap=0.013816 gain= 0.63651 (3  )==>   0   2   1   0   0  /   0   0   0   6   0 
+
+=== Node 5 ===
+....................................................................................................................
+Len=7    @[  0, 47]  d_th= 0.06 gap=0.000006 gain= 0.52412 (1  )==>   0   4   4   0   0  /   0   0   1   0   6 
+
+=== Node 8 ===
+....................................................................................................................
+Len=157  @[  2,  0]  d_th= 0.86 gap=0.069008 gain= 0.63651 (1  )==>   0   0   1   0   0  /   0   2   0   0   0 
+
+=== Node 10 ===
+....................................................................................................................
+Len=9    @[  0,284]  d_th= 0.46 gap=0.009907 gain= 0.69315 (0  )==>   0   4   0   0   0  /   0   0   4   0   0 
+
+=== Node 11 ===
+....................................................................................................................
+Len=49   @[  0,360]  d_th= 0.33 gap=0.047211 gain= 0.41012 (5  )==>   0   0   1   0   0  /   0   0   0   0   6 
+
+num_class=5, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.70 sec
+  Time Rand Project =     8.54 sec
+  Time Score Matrix =     0.78 sec
+  Time Compute Gain =     6.85 sec
+Running  Time for this Shapelet=    18.77 sec <<
+
+
+Total Running  Time =    18.77 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Beef_TEST', 5, 30, 'euclidean', 0, 0, './replications/Beef/Beef_euclidean_unnormed_NOCID_REP15_tree.txt', './replications/Beef/Beef_euclidean_unnormed_NOCID_REP15_acc.txt']
+; accuracy= 36.667   Correct:11 , Wrong: 19
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |   5    0    0    0    0 
+;   p  2 |   1    2    2    3    3 
+;   p  3 |   0    1    1    2    1 
+;   p  4 |   0    1    1    1    0 
+;   p  5 |   0    2    2    0    2 
+
+num_class=5, num_obj=30  distance=euclidean CID=false normalize=false ./replications/Beef/Beef_euclidean_unnormed_NOCID_REP15_tree.txt  ./replications/Beef/Beef_euclidean_unnormed_NOCID_REP15_acc.txt
+
+==> Tree Size = 24
+

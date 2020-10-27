@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1501824718, rand()=26182892, rand()=1969201856
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 0 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP02_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP02_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 12 
+NonL  1    --      0   17    5   1.0468 ==>  31   7  /   3  26 
+NonL  2    --      0   10    5   0.4884 ==>  29   2  /   2   5 
+NonL  3    --      9    9    9   2.2079 ==>   1  26  /   2   0 
+Leaf  4     1    
+NonL  5    --      0    2    5   0.4610 ==>   2   0  /   0   5 
+Leaf  6     2    
+Leaf  7     1    
+Leaf 10     1    
+Leaf 11     2    
+
+;Shapelet id   <data>
+Shapelet   1   0.613330  1.369800  1.464400  1.054600  0.581810 
+Shapelet   2   1.275300  0.960050  0.613330  0.014447 -0.647480 
+Shapelet   3   1.382200  1.328600  1.275100  0.900240  0.659280  0.712830  0.712830  0.632510  0.364780 
+Shapelet   5  -0.761730 -0.869270 -1.138100 -1.084300 -1.138100 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 0 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP02_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP02_time.txt
+; time =>    0.098   0.005   0.057   0.012   0.016 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST 2 1029 euclidean 0 1 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP02_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_NOCID_REP02_acc.txt
+; accuracy= 77.843   Correct:801 , Wrong: 228
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 401  113 
+;   p  1 | 115  400 
+

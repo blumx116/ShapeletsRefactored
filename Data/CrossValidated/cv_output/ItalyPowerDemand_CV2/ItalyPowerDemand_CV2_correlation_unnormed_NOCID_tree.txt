@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1503460945, rand()=1834297069, rand()=1610719019
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2 2 34 12 1 2 10 correlation 0 0 10 ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 30 
+NonL  1    --     19    3   11   0.0302 ==>   0   9  /  17   8 
+Leaf  2     2    
+NonL  3    --      5   18    5   0.0510 ==>  11   0  /   6   8 
+Leaf  6     1    
+NonL  7    --      7    8   11   0.3663 ==>   1   8  /   5   0 
+NonL 14    --      0    9   11   0.0328 ==>   1   0  /   0   8 
+Leaf 15     1    
+Leaf 28     1    
+Leaf 29     2    
+
+;Shapelet id   <data>
+Shapelet   1  -1.597900 -1.459300 -1.228300 -1.782700 -1.228300  0.342680  1.359200  1.682600  1.544000  0.897130  0.435090 
+Shapelet   3   0.314250  1.336100  1.117100  0.703510  0.070960 
+Shapelet   7  -0.255630  1.151500  1.714400  1.489200  1.151500  1.095200  0.082083 -0.199340 -0.030488 -0.030488 -0.086774 
+Shapelet  14   1.143800  1.119800  1.095900  0.975990  0.352640  0.424560  0.448540  0.448540  0.304690  0.448540  1.215700 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2 2 34 12 1 2 10 correlation 0 0 10 ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_time.txt
+; time =>    0.028   0.002   0.013   0.002   0.009 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1 2 33 correlation 0 0 ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_tree.txt ./cv_output/ItalyPowerDemand_CV2/ItalyPowerDemand_CV2_correlation_unnormed_NOCID_acc.txt
+; accuracy= 78.788   Correct:26 , Wrong: 7
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  10    0 
+;   p  2 |   7   16 
+

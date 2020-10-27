@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Car_TRAIN_CV2', 4, 31, 289, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/Car_CV2/Car_CV2_correlation_unnormed_CID_tree.txt', './cv_output/Car_CV2/Car_CV2_correlation_unnormed_CID_time.txt']
+
+rand seed=1503462436
+num_class=4, num_obj=31, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Car_CV2/Car_CV2_correlation_unnormed_CID_tree.txt  time_file=./cv_output/Car_CV2/Car_CV2_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=153  @[  0, 34]  d_th= 0.02 gap=0.000106 gain= 0.57102 (15 )==>   8   0   6   9  /   0   8   0   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=135  @[  0,321]  d_th= 0.00 gap=0.000013 gain= 0.64609 (7  )==>   8   0   0   0  /   0   0   6   9 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=73   @[  0, 29]  d_th= 0.01 gap=0.000251 gain= 0.67301 (3  )==>   0   0   6   0  /   0   0   0   9 
+
+num_class=4, num_obj=15, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.08 sec
+  Time Rand Project =     2.93 sec
+  Time Score Matrix =     0.34 sec
+  Time Compute Gain =    69.12 sec
+Running  Time for this Shapelet=    73.87 sec <<
+
+
+Total Running  Time =    73.87 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Car_TRAIN_CV1', 4, 29, 'correlation', 1, 0, './cv_output/Car_CV2/Car_CV2_correlation_unnormed_CID_tree.txt', './cv_output/Car_CV2/Car_CV2_correlation_unnormed_CID_acc.txt']
+; accuracy= 68.966   Correct:20 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   5    0    0    2 
+;   p  2 |   0    8    0    0 
+;   p  3 |   1    0    1    0 
+;   p  4 |   2    0    4    6 
+
+num_class=4, num_obj=29  distance=correlation CID=true normalize=false ./cv_output/Car_CV2/Car_CV2_correlation_unnormed_CID_tree.txt  ./cv_output/Car_CV2/Car_CV2_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 12
+

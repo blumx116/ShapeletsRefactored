@@ -1,0 +1,55 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV2', 2, 151, 213, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/yoga_CV2/yoga_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/yoga_CV2/yoga_CV2_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503461674
+num_class=2, num_obj=151, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/yoga_CV2/yoga_CV2_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/yoga_CV2/yoga_CV2_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................................................................
+Len=169  @[ 10, 30]  d_th= 0.07 gap=0.000036 gain= 0.10388 (81 )==>  39  77  /  30   5 
+
+=== Node 2 ===
+.........................................................................................................
+Len=39   @[  0, 15]  d_th= 0.00 gap=0.000001 gain= 0.12507 (92 )==>  12   0  /  27  77 
+
+=== Node 3 ===
+.........................................................................................................
+Len=35   @[  0,225]  d_th= 0.01 gap=0.000032 gain= 0.23347 (17 )==>  26   0  /   4   5 
+
+=== Node 5 ===
+.........................................................................................................
+Len=79   @[  0,108]  d_th= 0.00 gap=0.000001 gain= 0.14542 (84 )==>  10   0  /  17  77 
+
+=== Node 7 ===
+.........................................................................................................
+Len=5    @[  6,214]  d_th= 0.03 gap=0.001348 gain= 0.68696 (1  )==>   0   5  /   4   0 
+
+=== Node 11 ===
+.........................................................................................................
+Len=13   @[  0, 69]  d_th= 0.00 gap=0.000002 gain= 0.11996 (82 )==>   6   0  /  11  77 
+
+num_class=2, num_obj=94, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     5.45 sec
+  Time Rand Project =    23.03 sec
+  Time Score Matrix =     2.66 sec
+  Time Compute Gain =   131.34 sec
+Running  Time for this Shapelet=   164.62 sec <<
+
+
+Total Running  Time =   164.62 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV1', 2, 149, 'correlation', 0, 0, './cv_output/yoga_CV2/yoga_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/yoga_CV2/yoga_CV2_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 57.047   Correct:85 , Wrong: 64
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  31   27 
+;   p  2 |  37   54 
+
+num_class=2, num_obj=149  distance=correlation CID=false normalize=false ./cv_output/yoga_CV2/yoga_CV2_correlation_unnormed_NOCID_tree.txt  ./cv_output/yoga_CV2/yoga_CV2_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 24
+

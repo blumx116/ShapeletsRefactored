@@ -1,0 +1,77 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/uWaveGestureLibrary_Z_TRAIN_CV1', 8, 447, 158, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/uWaveGestureLibrary_Z_CV1/uWaveGestureLibrary_Z_CV1_euclidean_normed_CID_tree.txt', './cv_output/uWaveGestureLibrary_Z_CV1/uWaveGestureLibrary_Z_CV1_euclidean_normed_CID_time.txt']
+
+rand seed=1502277706
+num_class=8, num_obj=447, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/uWaveGestureLibrary_Z_CV1/uWaveGestureLibrary_Z_CV1_euclidean_normed_CID_tree.txt  time_file=./cv_output/uWaveGestureLibrary_Z_CV1/uWaveGestureLibrary_Z_CV1_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [7,8]  [6,7]  [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.............................................................................
+Len=5    @[  0, 55]  d_th= 0.00 gap=0.000000 gain= 0.69314 (1  )==>   0   0   0   0  63  55  56  50  /  61  54  53  55   0   0   0   0 
+
+=== Node 2 ===
+.............................................................................
+Len=5    @[  0, 55]  d_th= 0.00 gap=0.000000 gain= 0.66586 (0  )==>   0   0   0   0  60  55  56  50  /  59  51  53  55   3   0   0   0 
+
+=== Node 3 ===
+.............................................................................
+Len=151  @[  1, 43]  d_th=13.10 gap=0.723016 gain= 0.67301 (1  )==>   2   0   0   0   0   0   0   0  /   0   3   0   0   0   0   0   0 
+
+=== Node 4 ===
+.............................................................................
+Len=5    @[  0, 55]  d_th= 0.00 gap=0.000000 gain= 0.66586 (0  )==>   0   0   0   0  60  55  56  50  /  59  51  53  55   3   0   0   0 
+
+=== Node 5 ===
+.............................................................................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 8 ===
+.............................................................................
+Len=5    @[  0, 55]  d_th= 0.00 gap=0.000000 gain= 0.66586 (0  )==>   0   0   0   0  60  55  56  50  /  59  51  53  55   3   0   0   0 
+
+=== Node 9 ===
+.............................................................................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 16 ===
+.............................................................................
+Len=5    @[  0, 55]  d_th= 0.00 gap=0.000000 gain= 0.66586 (0  )==>   0   0   0   0  60  55  56  50  /  59  51  53  55   3   0   0   0 
+
+=== Node 17 ===
+.............................................................................Error!! bsf_sh is empty  at node_id=17 
+
+=== Node 32 ===
+.............................................................................
+Len=5    @[  0, 55]  d_th= 0.00 gap=0.000000 gain= 0.66586 (0  )==>   0   0   0   0  60  55  56  50  /  59  51  53  55   3   0   0   0 
+
+=== Node 33 ===
+.............................................................................Error!! bsf_sh is empty  at node_id=33 
+
+num_class=8, num_obj=0, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    18.51 sec
+  Time Rand Project =   156.80 sec
+  Time Score Matrix =    13.79 sec
+  Time Compute Gain =   420.67 sec
+Running  Time for this Shapelet=   622.02 sec <<
+
+
+Total Running  Time =   622.02 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/uWaveGestureLibrary_Z_TRAIN_CV2', 8, 449, 'euclidean', 1, 1, './cv_output/uWaveGestureLibrary_Z_CV1/uWaveGestureLibrary_Z_CV1_euclidean_normed_CID_tree.txt', './cv_output/uWaveGestureLibrary_Z_CV1/uWaveGestureLibrary_Z_CV1_euclidean_normed_CID_acc.txt']
+; accuracy= 14.477   Correct:65 , Wrong: 384
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6    7    8 
+;   -----+------------------------------------------------
+;   p  1 |   0    0    0    1    0    0    0    1 
+;   p  2 |   0    1    0    0    0    0    0    0 
+;   p  3 |   0    0    0    0    0    0    0    0 
+;   p  4 |   0    0    0    0    0    0    0    0 
+;   p  5 |  61   53   53   54   64   56   56   49 
+;   p  6 |   0    0    0    0    0    0    0    0 
+;   p  7 |   0    0    0    0    0    0    0    0 
+;   p  8 |   0    0    0    0    0    0    0    0 
+
+num_class=8, num_obj=449  distance=euclidean CID=true normalize=true ./cv_output/uWaveGestureLibrary_Z_CV1/uWaveGestureLibrary_Z_CV1_euclidean_normed_CID_tree.txt  ./cv_output/uWaveGestureLibrary_Z_CV1/uWaveGestureLibrary_Z_CV1_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 66
+

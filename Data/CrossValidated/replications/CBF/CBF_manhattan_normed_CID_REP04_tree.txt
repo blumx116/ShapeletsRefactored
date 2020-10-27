@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1501824725, rand()=1152171165, rand()=680725156
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/CBF_TRAIN 3 30 64 1 2 10 manhattan 1 1 10 ./output/CBF/CBF_manhattan_normed_CID_REP04_tree.txt ./output/CBF/CBF_manhattan_normed_CID_REP04_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  3  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --      2   12   31  22.0139 ==>  10   8   0  /   0   0  12 
+NonL  2    --     14   13   55  33.9015 ==>   0   8   0  /  10   0   0 
+Leaf  3     2    
+Leaf  4     3    
+Leaf  5     1    
+
+;Shapelet id   <data>
+Shapelet   1  -1.420700 -0.783430 -0.462390 -1.176200 -0.501640 -0.584870 -0.579160 -0.921300 -0.716380 -0.547790 -0.990840 -0.146470 -0.720030  1.159000  0.676720  1.428700  1.445400  1.320600  1.435800  1.694000  1.480400  1.402800  1.801500  1.581500  1.537700  1.330400  1.016200  1.484100  1.532800  1.045800  1.424200 
+Shapelet   2  -0.358790 -0.813040 -0.707090 -0.387880  0.107340 -0.445720 -1.167300 -0.548070 -1.171000 -1.563100 -0.481560 -1.172200 -1.686600 -0.884730 -0.010229  2.898500  2.216200  2.018000  2.418500  1.400300  1.799400  1.697000  2.286500  1.608000  1.980500  1.597200  2.108400  2.630900  0.324310  2.003900  1.375600  1.606600  1.563000  1.094200  1.998900  0.636830  1.177200  1.131700  0.381040  0.728330  0.612780  0.721840  1.151000  0.746540  0.269990  0.685200  0.914110 -0.150110  0.233200  0.762620 -0.281500 -0.168970 -0.065267  0.557900 -0.492770 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/CBF_TRAIN 3 30 64 1 2 10 manhattan 1 1 10 ./output/CBF/CBF_manhattan_normed_CID_REP04_tree.txt ./output/CBF/CBF_manhattan_normed_CID_REP04_time.txt
+; time =>    2.710   0.096   1.162   0.187   1.122 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/CBF_TEST 3 900 manhattan 1 1 ./output/CBF/CBF_manhattan_normed_CID_REP04_tree.txt ./output/CBF/CBF_manhattan_normed_CID_REP04_acc.txt
+; accuracy= 95.222   Correct:857 , Wrong: 43
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 288    0    8 
+;   p  1 |  10  293   18 
+;   p  3 |   0    7  276 
+

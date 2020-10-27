@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1503460947, rand()=518360567, rand()=864719931
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 48 1 2 10 correlation 1 0 10 ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_CID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_CID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:  -1  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 10 
+NonL  1    --     19   14   37   0.0500 ==>   4  35  /  12   0 
+NonL  2    --      3   59   21   0.0934 ==>   4   4  /   0  31 
+Leaf  3    -1    
+NonL  4    --      0    0   15   0.0818 ==>   4   0  /   0   4 
+Leaf  5     1    
+Leaf  8    -1    
+Leaf  9     1    
+
+;Shapelet id   <data>
+Shapelet   1  -0.675760 -0.926150 -0.943130 -0.998040 -1.025500 -1.109400 -1.270800 -1.180200 -1.413300 -1.529000 -1.471200 -1.698800 -1.661700 -1.745700 -1.947300 -1.937500 -2.097400 -2.095400 -1.855400 -1.846100 -1.777900 -1.202600 -0.752340 -0.499880 -0.037613  0.319370  0.616180  0.749580  0.874240  1.004600  0.894850  0.981500  0.894020  0.691730  0.647980  0.588250  0.668330 
+Shapelet   2   0.434150  0.434440  0.468850  0.437880  0.464740  0.529420  0.505020  0.595800  0.606650  0.578330  0.657460  0.660660  0.804210  0.950170  0.866320  1.001500  1.266800  1.261300  1.262200  1.199600  0.943060 
+Shapelet   4   2.039400  1.883200  1.909300  2.471500  1.118100  0.044439  0.023782 -0.185460 -0.841230 -1.210800 -1.165000 -1.330600 -1.450500 -1.621400 -1.528600 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2 2 51 48 1 2 10 correlation 1 0 10 ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_CID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_CID_time.txt
+; time =>    1.459   0.068   0.474   0.054   0.806 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1 2 49 correlation 1 0 ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_CID_tree.txt ./cv_output/ECG200_CV2/ECG200_CV2_correlation_unnormed_CID_acc.txt
+; accuracy= 73.469   Correct:36 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |  11    9 
+;   p  1 |   4   25 
+

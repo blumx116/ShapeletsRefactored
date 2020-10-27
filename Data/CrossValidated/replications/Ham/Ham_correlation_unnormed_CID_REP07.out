@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'correlation', 1, 0, 10, './replications/Ham/Ham_correlation_unnormed_CID_REP07_tree.txt', './replications/Ham/Ham_correlation_unnormed_CID_REP07_time.txt']
+
+rand seed=1503385053
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Ham/Ham_correlation_unnormed_CID_REP07_tree.txt  time_file=./replications/Ham/Ham_correlation_unnormed_CID_REP07_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=91   @[  8,235]  d_th= 0.31 gap=0.001974 gain= 0.11400 (79 )==>  37  57  /  15   0 
+
+=== Node 2 ===
+..........................................................................................................
+Len=43   @[  3,213]  d_th= 0.08 gap=0.000170 gain= 0.15979 (66 )==>  14   0  /  23  57 
+
+=== Node 5 ===
+..........................................................................................................
+Len=43   @[  8,348]  d_th= 0.02 gap=0.000483 gain= 0.13933 (64 )==>   8   0  /  15  57 
+
+=== Node 11 ===
+..........................................................................................................
+Len=39   @[  9,340]  d_th= 0.21 gap=0.002179 gain= 0.12032 (50 )==>   8   3  /   7  54 
+
+num_class=2, num_obj=72, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.01 sec
+  Time Rand Project =    69.25 sec
+  Time Score Matrix =     4.87 sec
+  Time Compute Gain =   152.22 sec
+Running  Time for this Shapelet=   238.26 sec <<
+
+
+Total Running  Time =   238.26 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'correlation', 1, 0, './replications/Ham/Ham_correlation_unnormed_CID_REP07_tree.txt', './replications/Ham/Ham_correlation_unnormed_CID_REP07_acc.txt']
+; accuracy= 63.810   Correct:67 , Wrong: 38
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  34   21 
+;   p  2 |  17   33 
+
+num_class=2, num_obj=105  distance=correlation CID=true normalize=false ./replications/Ham/Ham_correlation_unnormed_CID_REP07_tree.txt  ./replications/Ham/Ham_correlation_unnormed_CID_REP07_acc.txt
+
+==> Tree Size = 24
+

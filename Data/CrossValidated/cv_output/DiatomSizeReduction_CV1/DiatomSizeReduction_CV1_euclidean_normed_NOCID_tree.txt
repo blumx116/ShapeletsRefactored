@@ -1,0 +1,35 @@
+;Shapelet Tree 
+
+;random seed:1502278733, rand()=1894839156, rand()=359338952
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV1 3 7 173 1 2 10 euclidean 0 1 10 ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_normed_NOCID_tree.txt ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_normed_NOCID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   2  3  4 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --      3  163    7   1.0213 ==>   0   2   2  /   3   0   0 
+NonL  2    --      0   96   15   0.2572 ==>   0   2   0  /   0   0   2 
+Leaf  3     2    
+Leaf  4     3    
+Leaf  5     4    
+
+;Shapelet id   <data>
+Shapelet   1   1.617400  1.615700  1.615000  1.615000  1.615600  1.617200  1.619200 
+Shapelet   2  -1.102800 -1.072900 -1.042000 -1.009900 -1.007900 -1.020000 -0.985520 -0.947650 -0.908420 -0.868500 -0.827750 -0.814050 -0.811290 -0.767840 -0.722890 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV1 3 7 173 1 2 10 euclidean 0 1 10 ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_normed_NOCID_tree.txt ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_normed_NOCID_time.txt
+; time =>    1.481   0.054   0.122   0.012   1.280 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV2 4 9 euclidean 0 1 ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_normed_NOCID_tree.txt ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_normed_NOCID_acc.txt
+; accuracy= 44.444   Correct:4 , Wrong: 5
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   0    0    0    0 
+;   p  2 |   0    2    0    0 
+;   p  3 |   0    0    0    0 
+;   p  4 |   1    1    3    2 
+

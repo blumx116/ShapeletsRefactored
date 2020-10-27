@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1501857218, rand()=1288728418, rand()=59165079
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/CBF_TRAIN 3 30 64 1 2 10 manhattan 1 0 10 ./output/CBF/CBF_manhattan_unnormed_CID_REP07_tree.txt ./output/CBF/CBF_manhattan_unnormed_CID_REP07_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  3  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      8   32   63  47.5873 ==>   0   0  12  /  10   8   0 
+Leaf  2     2    
+NonL  3    --      9    5   63  53.5302 ==>  10   0   0  /   0   8   0 
+Leaf  6     1    
+Leaf  7     3    
+
+;Shapelet id   <data>
+Shapelet   1  -0.638980  0.058172  0.394660  0.142870 -0.721240 -0.470940 -0.509150  0.621080  0.312060 -0.640090  0.123000 -0.370040  0.225410 -0.333740 -0.231950  0.192400  0.834950  0.807220  0.412900  0.531960  0.066785  0.477710  0.844420 -0.116780  1.685800 -0.092233  1.462000  0.583200  0.760250  0.896150  1.044900  1.522600  0.133180  0.850290  1.127800  0.571580  1.233400  0.935370  0.104850  1.656900  1.480600  1.217900  1.688100  1.316100  1.176800  0.751550  1.696100  1.203000  2.268900  1.561800  1.180200  1.507700  1.574200  2.219600  1.952700  1.584800  1.400500  2.422000  1.979100  1.574600  1.839300 -0.392150 -0.625510 
+Shapelet   3  -1.528800 -1.648400 -1.231500 -1.451600 -1.335600 -1.612600 -1.336200 -1.887300 -1.675800 -0.840460 -1.336800 -1.463700 -1.309000 -1.124400 -1.246200 -1.636000 -1.476000 -1.277800 -1.144200 -1.399300 -0.867510 -1.446200 -1.902200 -1.530200  0.325360  0.469050  0.565200  0.714420  1.104200  0.617420  0.739110  0.819780  0.371760  0.794090  0.649090  0.804620  0.750050  0.797110  0.594780  1.001000  0.686370  0.880110  0.619190  0.516980  0.753270  0.519820  0.434100  0.720320  0.534270  0.393260  0.824020  0.749280  0.411380  0.736750  0.692750  0.397410  0.237330  0.912440  0.624720  0.134600  1.388200  0.506180  0.698480 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/CBF_TRAIN 3 30 64 1 2 10 manhattan 1 0 10 ./output/CBF/CBF_manhattan_unnormed_CID_REP07_tree.txt ./output/CBF/CBF_manhattan_unnormed_CID_REP07_time.txt
+; time =>    1.320   0.070   0.575   0.056   0.573 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/CBF_TEST 3 900 manhattan 1 0 ./output/CBF/CBF_manhattan_unnormed_CID_REP07_tree.txt ./output/CBF/CBF_manhattan_unnormed_CID_REP07_acc.txt
+; accuracy= 92.222   Correct:830 , Wrong: 70
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 293   22    1 
+;   p  1 |   0  247   11 
+;   p  3 |   5   31  290 
+

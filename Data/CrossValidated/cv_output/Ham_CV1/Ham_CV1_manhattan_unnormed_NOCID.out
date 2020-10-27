@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV1', 2, 54, 216, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_tree.txt', './cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502279979
+num_class=2, num_obj=54, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=65   @[ 49,183]  d_th=20.16 gap=0.008043 gain= 0.27549 (20 )==>   0  17  /  26  11 
+
+=== Node 3 ===
+..........................................................................................................
+Len=31   @[  0,368]  d_th=23.97 gap=0.025710 gain= 0.25904 (1  )==>  18   0  /   8  11 
+
+=== Node 7 ===
+..........................................................................................................
+Len=35   @[  9,208]  d_th=17.76 gap=0.071369 gain= 0.29778 (9  )==>   3  11  /   5   0 
+
+=== Node 14 ===
+..........................................................................................................
+Len=19   @[  1,381]  d_th= 2.34 gap=0.020130 gain= 0.35891 (6  )==>   3   1  /   0  10 
+
+num_class=2, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.51 sec
+  Time Rand Project =    20.65 sec
+  Time Score Matrix =     1.51 sec
+  Time Compute Gain =    11.44 sec
+Running  Time for this Shapelet=    37.73 sec <<
+
+
+Total Running  Time =    37.73 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV2', 2, 55, 'manhattan', 0, 0, './cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_tree.txt', './cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 50.909   Correct:28 , Wrong: 27
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  12   13 
+;   p  2 |  14   16 
+
+num_class=2, num_obj=55  distance=manhattan CID=false normalize=false ./cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_tree.txt  ./cv_output/Ham_CV1/Ham_CV1_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 30
+

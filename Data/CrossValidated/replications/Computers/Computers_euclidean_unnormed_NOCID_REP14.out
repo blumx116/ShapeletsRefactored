@@ -1,0 +1,67 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Computers_TRAIN', 2, 250, 360, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/Computers/Computers_euclidean_unnormed_NOCID_REP14_tree.txt', './replications/Computers/Computers_euclidean_unnormed_NOCID_REP14_time.txt']
+
+rand seed=1508366839
+num_class=2, num_obj=250, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Computers/Computers_euclidean_unnormed_NOCID_REP14_tree.txt  time_file=./replications/Computers/Computers_euclidean_unnormed_NOCID_REP14_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=29   @[231,321]  d_th=14.07 gap=0.004165 gain= 0.10659 (116)==>  67 116  /  58   9 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=13   @[128,479]  d_th= 2.81 gap=0.000683 gain= 0.06923 (73 )==>   6  49  /  61  67 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=277  @[ 21,273]  d_th=16.02 gap=0.000782 gain= 0.11434 (25 )==>  13   8  /  45   1 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=201  @[  3,400]  d_th=15.55 gap=0.006326 gain= 0.13607 (49 )==>   3  49  /   3   0 
+
+=== Node 5 ===
+..................................................................................................................................................................................
+Len=35   @[ 33,326]  d_th= 8.39 gap=0.000015 gain= 0.10513 (48 )==>  55  33  /   6  34 
+
+=== Node 6 ===
+..................................................................................................................................................................................
+Len=81   @[  1,515]  d_th= 5.99 gap=0.023661 gain= 0.30081 (3  )==>   9   0  /   4   8 
+
+=== Node 10 ===
+..................................................................................................................................................................................
+Len=307  @[ 32,294]  d_th=17.09 gap=0.009602 gain= 0.10432 (54 )==>  17   0  /  38  33 
+
+=== Node 11 ===
+..................................................................................................................................................................................
+Len=41   @[  1,171]  d_th= 0.90 gap=0.015008 gain= 0.16241 (34 )==>   3   0  /   3  34 
+
+=== Node 13 ===
+..................................................................................................................................................................................
+Len=189  @[  1,323]  d_th=26.92 gap=0.004559 gain= 0.37489 (6  )==>   1   8  /   3   0 
+
+num_class=2, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    26.89 sec
+  Time Rand Project =   118.75 sec
+  Time Score Matrix =    10.02 sec
+  Time Compute Gain =   196.80 sec
+Running  Time for this Shapelet=   361.81 sec <<
+
+
+Total Running  Time =   361.81 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Computers_TEST', 2, 250, 'euclidean', 0, 0, './replications/Computers/Computers_euclidean_unnormed_NOCID_REP14_tree.txt', './replications/Computers/Computers_euclidean_unnormed_NOCID_REP14_acc.txt']
+; accuracy= 62.000   Correct:155 , Wrong: 95
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  86   56 
+;   p  2 |  39   69 
+
+num_class=2, num_obj=250  distance=euclidean CID=false normalize=false ./replications/Computers/Computers_euclidean_unnormed_NOCID_REP14_tree.txt  ./replications/Computers/Computers_euclidean_unnormed_NOCID_REP14_acc.txt
+
+==> Tree Size = 28
+

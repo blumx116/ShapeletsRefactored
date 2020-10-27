@@ -1,0 +1,64 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/LargeKitchenAppliances_TRAIN', 3, 375, 360, 1, 2, 10, 'correlation', 0, 0, 10, './replications/LargeKitchenAppliances/LargeKitchenAppliances_correlation_unnormed_NOCID_REP10_tree.txt', './replications/LargeKitchenAppliances/LargeKitchenAppliances_correlation_unnormed_NOCID_REP10_time.txt']
+
+rand seed=1503398273
+num_class=3, num_obj=375, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/LargeKitchenAppliances/LargeKitchenAppliances_correlation_unnormed_NOCID_REP10_tree.txt  time_file=./replications/LargeKitchenAppliances/LargeKitchenAppliances_correlation_unnormed_NOCID_REP10_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.46211 (1  )==>   0  63 125  / 125  62   0 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.46211 (1  )==>   0  63 125  / 125  62   0 
+
+=== Node 3 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=3 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.46211 (1  )==>   0  63 125  / 125  62   0 
+
+=== Node 5 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 8 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.46211 (1  )==>   0  63 125  / 125  62   0 
+
+=== Node 9 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 16 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.46211 (1  )==>   0  63 125  / 125  62   0 
+
+=== Node 17 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=17 
+
+num_class=3, num_obj=0, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    42.69 sec
+  Time Rand Project =   138.24 sec
+  Time Score Matrix =    17.77 sec
+  Time Compute Gain =  2178.86 sec
+Running  Time for this Shapelet=  2389.95 sec <<
+
+
+Total Running  Time =  2389.95 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/LargeKitchenAppliances_TEST', 3, 375, 'correlation', 0, 0, './replications/LargeKitchenAppliances/LargeKitchenAppliances_correlation_unnormed_NOCID_REP10_tree.txt', './replications/LargeKitchenAppliances/LargeKitchenAppliances_correlation_unnormed_NOCID_REP10_acc.txt']
+; accuracy= 33.333   Correct:125 , Wrong: 250
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   0    0    0 
+;   p  2 |   0    0    0 
+;   p  3 | 125  125  125 
+
+num_class=3, num_obj=375  distance=correlation CID=false normalize=false ./replications/LargeKitchenAppliances/LargeKitchenAppliances_correlation_unnormed_NOCID_REP10_tree.txt  ./replications/LargeKitchenAppliances/LargeKitchenAppliances_correlation_unnormed_NOCID_REP10_acc.txt
+
+==> Tree Size = 34
+

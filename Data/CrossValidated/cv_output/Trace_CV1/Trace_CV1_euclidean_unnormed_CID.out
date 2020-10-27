@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Trace_TRAIN_CV1', 4, 49, 138, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/Trace_CV1/Trace_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/Trace_CV1/Trace_CV1_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502275390
+num_class=4, num_obj=49, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Trace_CV1/Trace_CV1_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/Trace_CV1/Trace_CV1_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+...................................................................
+Len=5    @[  0, 54]  d_th=32.90 gap=9.976811 gain= 0.69127 (3  )==>  13  10   0   0  /   0   0  11  15 
+
+=== Node 2 ===
+...................................................................
+Len=7    @[  0, 49]  d_th= 5.31 gap=1.303317 gain= 0.68462 (3  )==>  13   0   0   0  /   0  10   0   0 
+
+=== Node 3 ===
+...................................................................
+Len=19   @[  8,172]  d_th= 0.92 gap=0.011674 gain= 0.68127 (4  )==>   0   0  11   0  /   0   0   0  15 
+
+num_class=4, num_obj=26, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.63 sec
+  Time Rand Project =     4.16 sec
+  Time Score Matrix =     0.35 sec
+  Time Compute Gain =     7.15 sec
+Running  Time for this Shapelet=    12.62 sec <<
+
+
+Total Running  Time =    12.62 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Trace_TRAIN_CV2', 4, 51, 'euclidean', 1, 0, './cv_output/Trace_CV1/Trace_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/Trace_CV1/Trace_CV1_euclidean_unnormed_CID_acc.txt']
+; accuracy= 100.000   Correct:51 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |  13    0    0    0 
+;   p  2 |   0   11    0    0 
+;   p  3 |   0    0   11    0 
+;   p  4 |   0    0    0   16 
+
+num_class=4, num_obj=51  distance=euclidean CID=true normalize=false ./cv_output/Trace_CV1/Trace_CV1_euclidean_unnormed_CID_tree.txt  ./cv_output/Trace_CV1/Trace_CV1_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 8
+

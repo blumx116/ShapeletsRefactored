@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1', 2, 31, 256, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/Herring_CV1/Herring_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Herring_CV1/Herring_CV1_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502279587
+num_class=2, num_obj=31, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Herring_CV1/Herring_CV1_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/Herring_CV1/Herring_CV1_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=51   @[  0, 62]  d_th= 1.03 gap=0.002571 gain= 0.26407 (7  )==>   7  12  /  12   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=31   @[  0,120]  d_th= 0.64 gap=0.001153 gain= 0.40720 (1  )==>   7   2  /   0  10 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=95   @[  7, 73]  d_th= 3.81 gap=0.025973 gain= 0.52971 (5  )==>   0   2  /   7   0 
+
+num_class=2, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.80 sec
+  Time Rand Project =     2.59 sec
+  Time Score Matrix =     0.28 sec
+  Time Compute Gain =    21.14 sec
+Running  Time for this Shapelet=    25.13 sec <<
+
+
+Total Running  Time =    25.13 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV2', 2, 33, 'euclidean', 0, 1, './cv_output/Herring_CV1/Herring_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Herring_CV1/Herring_CV1_euclidean_normed_NOCID_acc.txt']
+; accuracy= 57.576   Correct:19 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  11    5 
+;   p  2 |   9    8 
+
+num_class=2, num_obj=33  distance=euclidean CID=false normalize=true ./cv_output/Herring_CV1/Herring_CV1_euclidean_normed_NOCID_tree.txt  ./cv_output/Herring_CV1/Herring_CV1_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 10
+

@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV1', 3, 30, 224, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/Meat_CV1/Meat_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/Meat_CV1/Meat_CV1_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502280572
+num_class=3, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Meat_CV1/Meat_CV1_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/Meat_CV1/Meat_CV1_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................
+Len=189  @[  0,192]  d_th= 8.58 gap=0.124827 gain= 0.63651 (10 )==>  10   0  10  /   0  10   0 
+
+=== Node 2 ===
+..............................................................................................................
+Len=31   @[  0, 83]  d_th= 3.32 gap=0.079412 gain= 0.69315 (0  )==>  10   0   0  /   0   0  10 
+
+num_class=3, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.57 sec
+  Time Rand Project =     1.98 sec
+  Time Score Matrix =     0.18 sec
+  Time Compute Gain =    14.49 sec
+Running  Time for this Shapelet=    17.44 sec <<
+
+
+Total Running  Time =    17.44 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Meat_TRAIN_CV2', 3, 30, 'manhattan', 0, 1, './cv_output/Meat_CV1/Meat_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/Meat_CV1/Meat_CV1_manhattan_normed_NOCID_acc.txt']
+; accuracy= 93.333   Correct:28 , Wrong: 2
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  10    0    2 
+;   p  2 |   0   10    0 
+;   p  3 |   0    0    8 
+
+num_class=3, num_obj=30  distance=manhattan CID=false normalize=true ./cv_output/Meat_CV1/Meat_CV1_manhattan_normed_NOCID_tree.txt  ./cv_output/Meat_CV1/Meat_CV1_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 6
+

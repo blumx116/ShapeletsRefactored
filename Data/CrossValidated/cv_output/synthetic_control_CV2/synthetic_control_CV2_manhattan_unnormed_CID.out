@@ -1,0 +1,79 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV2', 6, 150, 30, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/synthetic_control_CV2/synthetic_control_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/synthetic_control_CV2/synthetic_control_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502274230
+num_class=6, num_obj=150, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/synthetic_control_CV2/synthetic_control_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/synthetic_control_CV2/synthetic_control_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.............
+Len=29   @[145, 22]  d_th=27.37 gap=0.001149 gain= 0.58053 (50 )==>   0   1   0  24   0  25  /  25  24  25   1  25   0 
+
+=== Node 2 ===
+.............
+Len=11   @[ 38, 15]  d_th= 8.44 gap=0.010239 gain= 0.42575 (2  )==>   0   1   0   1   0  22  /   0   0   0  23   0   3 
+
+=== Node 3 ===
+.............
+Len=21   @[ 61, 35]  d_th=21.39 gap=0.072915 gain= 0.58147 (0  )==>   1   0  25   1  23   0  /  24  24   0   0   2   0 
+
+=== Node 5 ===
+.............
+Len=15   @[  7, 29]  d_th= 8.68 gap=0.011068 gain= 0.27111 (18 )==>   0   0   0  22   0   0  /   0   0   0   1   0   3 
+
+=== Node 6 ===
+.............
+Len=21   @[ 29,  8]  d_th=14.21 gap=0.030705 gain= 0.45153 (12 )==>   0   0   0   0  19   0  /   1   0  25   1   4   0 
+
+=== Node 7 ===
+.............
+Len=13   @[ 33,  8]  d_th= 9.94 gap=0.692579 gain= 0.69235 (2  )==>   0  24   0   0   0   0  /  24   0   0   0   2   0 
+
+=== Node 11 ===
+.............
+Len=19   @[  0, 24]  d_th= 5.52 gap=1.267387 gain= 0.56234 (2  )==>   0   0   0   1   0   0  /   0   0   0   0   0   3 
+
+=== Node 13 ===
+.............
+Len=29   @[ 22, 16]  d_th=19.88 gap=0.074860 gain= 0.30653 (13 )==>   0   0  22   0   0   0  /   1   0   3   1   4   0 
+
+=== Node 27 ===
+.............
+Len=19   @[  2, 30]  d_th=13.83 gap=0.134869 gain= 0.68696 (1  )==>   0   0   3   1   0   0  /   1   0   0   0   4   0 
+
+=== Node 54 ===
+.............
+Len=9    @[  3, 27]  d_th= 2.28 gap=0.760896 gain= 0.56234 (2  )==>   0   0   0   1   0   0  /   0   0   3   0   0   0 
+
+=== Node 55 ===
+.............
+Len=5    @[  0, 20]  d_th= 2.24 gap=1.003853 gain= 0.50040 (3  )==>   1   0   0   0   0   0  /   0   0   0   0   4   0 
+
+num_class=6, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.13 sec
+  Time Rand Project =     0.99 sec
+  Time Score Matrix =     0.10 sec
+  Time Compute Gain =     0.75 sec
+Running  Time for this Shapelet=     2.07 sec <<
+
+
+Total Running  Time =     2.07 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV1', 6, 150, 'manhattan', 1, 0, './cv_output/synthetic_control_CV2/synthetic_control_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/synthetic_control_CV2/synthetic_control_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 88.667   Correct:133 , Wrong: 17
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6 
+;   -----+------------------------------------
+;   p  1 |  25    0    0    1    0    0 
+;   p  2 |   0   24    0    0    0    0 
+;   p  3 |   0    0   22    0    5    0 
+;   p  4 |   0    0    0   17    0    0 
+;   p  5 |   0    1    3    0   20    0 
+;   p  6 |   0    0    0    7    0   25 
+
+num_class=6, num_obj=150  distance=manhattan CID=true normalize=false ./cv_output/synthetic_control_CV2/synthetic_control_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/synthetic_control_CV2/synthetic_control_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 112
+

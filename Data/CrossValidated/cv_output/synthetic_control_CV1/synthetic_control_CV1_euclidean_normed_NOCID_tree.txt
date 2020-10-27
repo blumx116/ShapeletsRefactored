@@ -1,0 +1,52 @@
+;Shapelet Tree 
+
+;random seed:1502274208, rand()=2102340044, rand()=2113625932
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV1 6 150 30 1 2 10 euclidean 0 1 10 ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_NOCID_tree.txt ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_NOCID_time.txt 
+
+;Local Class:   0  1  2  3  4  5 
+;Real  Class:   1  2  3  4  5  6 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 18 
+NonL  1    --     98   19   27   4.7855 ==>   0   0   0  25   0  25  /  25  25  25   0  25   0 
+NonL  2    --     37   15   29   3.8522 ==>   0   0   0   4   0  25  /   0   0   0  21   0   0 
+NonL  3    --     95   16   23   4.3916 ==>   0   0  25   0  25   0  /  25  25   0   0   0   0 
+NonL  4    --      0   39   17   3.2105 ==>   0   0   0   4   0   1  /   0   0   0   0   0  24 
+Leaf  5     4    
+NonL  6    --     37   22   19   3.2113 ==>   0   0   1   0  23   0  /   0   0  24   0   2   0 
+NonL  7    --     37   10   19   3.2041 ==>   0  25   0   0   0   0  /  25   0   0   0   0   0 
+NonL  8    --      4   37   17   1.9790 ==>   0   0   0   0   0   1  /   0   0   0   4   0   0 
+Leaf  9     6    
+Leaf 12     5    
+Leaf 13     3    
+Leaf 14     2    
+Leaf 15     1    
+Leaf 16     6    
+Leaf 17     4    
+
+;Shapelet id   <data>
+Shapelet   1   1.077100  1.015700  0.600560  0.788690  0.789990  0.041704  0.539810  0.746250  0.214270  0.650110  0.087984 -0.557950  0.364880 -0.851020  0.058658  0.097553 -0.284630 -0.607840 -1.037000 -0.786520 -1.077900 -0.496320 -0.004171 -0.469780 -0.550140 -0.230100 -0.976410 
+Shapelet   2   0.583520  0.502780  1.330600  0.640590  0.950560  1.264800  0.631910  1.263500  1.080000  0.904810  0.930680  1.074700  0.708980  1.274200 -1.420500 -1.242900 -1.414300 -0.387080 -0.490730 -0.948960 -1.285800 -1.076700 -0.725500 -1.057800 -1.406500 -0.640550 -0.935490 -0.240710 -1.217600 
+Shapelet   3  -1.699900 -0.703510 -1.054400 -0.468970 -0.932300 -1.073500 -1.076200 -1.574400 -0.616940 -0.425620  0.094857  0.495340  1.081200  1.088500  0.669470  1.227400  1.258300  0.599020  0.741270  0.930370  0.385980  1.054800  1.259300 
+Shapelet   4  -0.885830 -0.262660 -0.822110 -0.108340 -0.209960 -0.825910 -1.065400 -1.222900 -1.098400 -1.026300 -0.852140 -1.037200 -0.679790 -0.964730 -1.768500 -0.611660 -1.964600 
+Shapelet   6  -0.718770 -0.549900 -0.666690 -1.143300 -0.197990 -1.081200 -1.265000 -0.642320 -1.339600 -1.100500 -0.593310 -1.186200 -1.141500 -1.167200  0.836830  0.708440  1.128500  0.676590  1.390900 
+Shapelet   7  -1.883800 -1.562000 -1.405400  0.006710  0.147170  1.283700  1.260100  1.045800  1.115800  0.097631  0.308080 -0.725190 -1.308500 -1.649900 -0.703140 -0.649620 -0.524170  0.526750  0.519820 
+Shapelet   8  -0.089218 -1.472800 -0.092572 -0.800370 -1.221100 -1.409000 -0.885260 -1.166000 -0.070868 -0.122800 -0.915490 -1.220100 -0.765280 -0.323610 -0.718010 -0.644700 -1.490900 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV1 6 150 30 1 2 10 euclidean 0 1 10 ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_NOCID_tree.txt ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_NOCID_time.txt
+; time =>    1.785   0.123   0.986   0.102   0.484 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV2 6 150 euclidean 0 1 ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_NOCID_tree.txt ./cv_output/synthetic_control_CV1/synthetic_control_CV1_euclidean_normed_NOCID_acc.txt
+; accuracy= 82.667   Correct:124 , Wrong: 26
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6 
+;   -----+------------------------------------
+;   p  1 |  22    0    1    1    0    0 
+;   p  2 |   1   25    0    0    0    0 
+;   p  3 |   2    0   17    0    4    0 
+;   p  4 |   0    0    0   21    0    7 
+;   p  5 |   0    0    7    0   21    0 
+;   p  6 |   0    0    0    3    0   18 
+

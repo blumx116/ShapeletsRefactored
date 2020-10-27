@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1501828096, rand()=874288689, rand()=1086883249
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN 3 36 126 1 2 10 manhattan 0 1 10 ./output/ArrowHead/ArrowHead_manhattan_normed_NOCID_REP03_tree.txt ./output/ArrowHead/ArrowHead_manhattan_normed_NOCID_REP03_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   0  1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0  152   25   3.2409 ==>  11   0   0  /   1  12  12 
+Leaf  2     0    
+NonL  3    --      4   47   51   6.8403 ==>   1  11   0  /   0   1  12 
+Leaf  6     1    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.630020 -0.579310 -0.575520 -0.609440 -0.547790 -0.512060 -0.481970 -0.443310 -0.424900 -0.380350 -0.324260 -0.254110 -0.150450 -0.139310 -0.046800  0.042720  0.226620  0.423620  0.555570  0.560900  0.574360  0.539410  0.505610  0.494510  0.496040 
+Shapelet   3   1.251900  1.285000  1.325700  1.357000  1.461200  1.448500  1.476600  1.483000  1.484100  1.478700  1.468000  1.465500  1.450100  1.462700  1.442500  1.399800  1.401200  1.370200  1.277100  1.184800  1.070700  1.044500  1.019400  0.968560  0.889060  0.837490  0.805960  0.724590  0.672570  0.592690  0.571410  0.524880  0.529010  0.474730  0.457360  0.463780  0.431670  0.416360  0.419550  0.405450  0.350690  0.310250  0.265460  0.131120  0.072897 -0.052504 -0.112490 -0.208020 -0.270610 -0.396530 -0.459550 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN 3 36 126 1 2 10 manhattan 0 1 10 ./output/ArrowHead/ArrowHead_manhattan_normed_NOCID_REP03_tree.txt ./output/ArrowHead/ArrowHead_manhattan_normed_NOCID_REP03_time.txt
+; time =>    7.086   0.306   2.479   0.484   3.456 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ArrowHead_TEST 3 175 manhattan 0 1 ./output/ArrowHead/ArrowHead_manhattan_normed_NOCID_REP03_tree.txt ./output/ArrowHead/ArrowHead_manhattan_normed_NOCID_REP03_acc.txt
+; accuracy= 65.714   Correct:115 , Wrong: 60
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  51    4   16 
+;   p  1 |  13   32    5 
+;   p  2 |   5   17   32 
+

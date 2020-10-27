@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TRAIN', 2, 370, 1355, 1, 2, 10, 'manhattan', 1, 0, 10, './replications/HandOutlines/HandOutlines_manhattan_unnormed_CID_REP07_tree.txt', './replications/HandOutlines/HandOutlines_manhattan_unnormed_CID_REP07_time.txt']
+
+rand seed=1504178515
+num_class=2, num_obj=370, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/HandOutlines/HandOutlines_manhattan_unnormed_CID_REP07_tree.txt  time_file=./replications/HandOutlines/HandOutlines_manhattan_unnormed_CID_REP07_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,0]  [0,1]  
+
+=== Node 1 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=863  @[  4,148]  d_th=132.15 gap=0.002235 gain= 0.37955 (134)==> 230  22  /   7 111 
+
+num_class=2, num_obj=370, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =   115.14 sec
+  Time Rand Project =   159.12 sec
+  Time Score Matrix =    17.40 sec
+  Time Compute Gain = 16473.11 sec
+Running  Time for this Shapelet= 16781.77 sec <<
+
+
+Total Running  Time = 16781.77 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/HandOutlines_TEST', 2, 1000, 'manhattan', 1, 0, './replications/HandOutlines/HandOutlines_manhattan_unnormed_CID_REP07_tree.txt', './replications/HandOutlines/HandOutlines_manhattan_unnormed_CID_REP07_acc.txt']
+; accuracy= 87.200   Correct:872 , Wrong: 128
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 | 261   27 
+;   p  1 | 101  611 
+
+num_class=2, num_obj=1000  distance=manhattan CID=true normalize=false ./replications/HandOutlines/HandOutlines_manhattan_unnormed_CID_REP07_tree.txt  ./replications/HandOutlines/HandOutlines_manhattan_unnormed_CID_REP07_acc.txt
+
+==> Tree Size = 4
+

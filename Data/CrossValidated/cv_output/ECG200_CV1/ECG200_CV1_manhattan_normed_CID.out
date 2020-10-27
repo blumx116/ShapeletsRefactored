@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1', 2, 49, 48, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/ECG200_CV1/ECG200_CV1_manhattan_normed_CID_tree.txt', './cv_output/ECG200_CV1/ECG200_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502276821
+num_class=2, num_obj=49, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ECG200_CV1/ECG200_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/ECG200_CV1/ECG200_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+......................
+Len=47   @[ 16,  9]  d_th=12.80 gap=0.061840 gain= 0.31270 (3  )==>   0  26  /  15   8 
+
+=== Node 3 ===
+......................
+Len=23   @[  5,  4]  d_th= 7.06 gap=0.015568 gain= 0.42852 (3  )==>  13   0  /   2   8 
+
+=== Node 7 ===
+......................
+Len=5    @[  2, 61]  d_th= 1.55 gap=0.106510 gain= 0.50040 (6  )==>   0   8  /   2   0 
+
+num_class=2, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.06 sec
+  Time Rand Project =     0.35 sec
+  Time Score Matrix =     0.04 sec
+  Time Compute Gain =     0.63 sec
+Running  Time for this Shapelet=     1.13 sec <<
+
+
+Total Running  Time =     1.13 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2', 2, 51, 'manhattan', 1, 1, './cv_output/ECG200_CV1/ECG200_CV1_manhattan_normed_CID_tree.txt', './cv_output/ECG200_CV1/ECG200_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 74.510   Correct:38 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   9    6 
+;   p  1 |   7   29 
+
+num_class=2, num_obj=51  distance=manhattan CID=true normalize=true ./cv_output/ECG200_CV1/ECG200_CV1_manhattan_normed_CID_tree.txt  ./cv_output/ECG200_CV1/ECG200_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 16
+

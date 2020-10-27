@@ -1,0 +1,63 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/PhalangesOutlinesCorrect_TRAIN_CV2', 2, 900, 40, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_normed_CID_tree.txt', './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502274409
+num_class=2, num_obj=900, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=39   @[584, 28]  d_th=10.59 gap=0.000104 gain= 0.07432 (704)==> 228 574  /  86  12 
+
+=== Node 2 ===
+..................
+Len=35   @[  4, 35]  d_th= 2.33 gap=0.000124 gain= 0.05233 (688)==>  48   9  / 180 565 
+
+=== Node 3 ===
+..................
+Len=31   @[  0, 25]  d_th= 4.16 gap=0.002765 gain= 0.15017 (62 )==>   8  10  /  78   2 
+
+=== Node 4 ===
+..................
+Len=25   @[  0, 28]  d_th= 2.84 gap=0.003808 gain= 0.16608 (11 )==>  34   0  /  14   9 
+
+=== Node 5 ===
+..................
+Len=37   @[ 70, 29]  d_th= 4.19 gap=0.003229 gain= 0.03793 (331)==>  14 193  / 166 372 
+
+=== Node 6 ===
+..................
+Len=5    @[  7, 50]  d_th= 0.00 gap=0.000000 gain= 0.68696 (2  )==>   0  10  /   8   0 
+
+=== Node 9 ===
+..................
+Len=15   @[ 18, 43]  d_th= 0.25 gap=0.014112 gain= 0.32489 (11 )==>   0   6  /  14   3 
+
+=== Node 11 ===
+..................
+Len=5    @[ 11, 35]  d_th= 0.70 gap=0.000392 gain= 0.03516 (330)==> 107 327  /  59  45 
+
+num_class=2, num_obj=538, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.87 sec
+  Time Rand Project =     5.19 sec
+  Time Score Matrix =     0.73 sec
+  Time Compute Gain =    10.71 sec
+Running  Time for this Shapelet=    18.10 sec <<
+
+
+Total Running  Time =    18.10 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/PhalangesOutlinesCorrect_TRAIN_CV1', 2, 900, 'manhattan', 1, 1, './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_normed_CID_tree.txt', './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 50.222   Correct:452 , Wrong: 448
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 | 227  361 
+;   p  1 |  87  225 
+
+num_class=2, num_obj=900  distance=manhattan CID=true normalize=true ./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_normed_CID_tree.txt  ./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 24
+

@@ -1,0 +1,468 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP01_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP01_time.txt']
+
+rand seed=1501821838
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP01_tree.txt  time_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP01_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 1.24 gap=0.024297 gain= 0.40889 (7  )==>  29   1  /   5  32 
+
+=== Node 3 ===
+....
+Len=9    @[  8,  6]  d_th= 1.95 gap=0.006638 gain= 0.39603 (27 )==>   5   0  /   0  32 
+
+num_class=2, num_obj=37, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.04 sec <<
+
+
+Total Running  Time =     0.04 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'manhattan', 0, 0, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP01_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP01_acc.txt']
+0
+num_class=2, num_obj=1029  distance=manhattan CID=false normalize=false ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP01_tree.txt  ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP01_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 85.714   Correct:882 , Wrong: 147
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 423   54 
+;   p  1 |  93  459 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP02_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP02_time.txt']
+
+rand seed=1501821838
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP02_tree.txt  time_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP02_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 1.24 gap=0.024297 gain= 0.40889 (7  )==>  29   1  /   5  32 
+
+=== Node 3 ===
+....
+Len=9    @[  8,  6]  d_th= 1.95 gap=0.006638 gain= 0.39603 (27 )==>   5   0  /   0  32 
+
+num_class=2, num_obj=37, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.04 sec <<
+
+
+Total Running  Time =     0.04 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'manhattan', 0, 0, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP02_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP02_acc.txt']
+0
+num_class=2, num_obj=1029  distance=manhattan CID=false normalize=false ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP02_tree.txt  ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP02_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 85.714   Correct:882 , Wrong: 147
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 423   54 
+;   p  1 |  93  459 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_time.txt']
+
+rand seed=1501821838
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_tree.txt  time_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 1.24 gap=0.024297 gain= 0.40889 (7  )==>  29   1  /   5  32 
+
+=== Node 3 ===
+....
+Len=9    @[  8,  6]  d_th= 1.95 gap=0.006638 gain= 0.39603 (27 )==>   5   0  /   0  32 
+
+num_class=2, num_obj=37, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.04 sec <<
+
+
+Total Running  Time =     0.04 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'manhattan', 0, 0, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_acc.txt']
+0
+num_class=2, num_obj=1029  distance=manhattan CID=false normalize=false ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_tree.txt  ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP03_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 85.714   Correct:882 , Wrong: 147
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 423   54 
+;   p  1 |  93  459 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP04_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP04_time.txt']
+
+rand seed=1501821842
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP04_tree.txt  time_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP04_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 1.24 gap=0.024297 gain= 0.40889 (7  )==>  29   1  /   5  32 
+
+=== Node 3 ===
+....
+Len=9    @[  3,  3]  d_th= 5.13 gap=0.002177 gain= 0.28285 (23 )==>   0  30  /   5   2 
+
+=== Node 7 ===
+....
+Len=11   @[  3,  3]  d_th= 3.24 gap=0.206347 gain= 0.59827 (3  )==>   5   0  /   0   2 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.03 sec <<
+
+
+Total Running  Time =     0.03 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'manhattan', 0, 0, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP04_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP04_acc.txt']
+0
+num_class=2, num_obj=1029  distance=manhattan CID=false normalize=false ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP04_tree.txt  ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP04_acc.txt
+
+==> Tree Size = 16
+
+; accuracy= 86.200   Correct:887 , Wrong: 142
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 423   49 
+;   p  1 |  93  464 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP05_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP05_time.txt']
+
+rand seed=1501821842
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP05_tree.txt  time_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP05_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 1.24 gap=0.024297 gain= 0.40889 (7  )==>  29   1  /   5  32 
+
+=== Node 3 ===
+....
+Len=9    @[  3,  3]  d_th= 5.13 gap=0.002177 gain= 0.28285 (23 )==>   0  30  /   5   2 
+
+=== Node 7 ===
+....
+Len=11   @[  3,  3]  d_th= 3.24 gap=0.206347 gain= 0.59827 (3  )==>   5   0  /   0   2 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.03 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.04 sec <<
+
+
+Total Running  Time =     0.04 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'manhattan', 0, 0, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP05_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP05_acc.txt']
+0
+num_class=2, num_obj=1029  distance=manhattan CID=false normalize=false ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP05_tree.txt  ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP05_acc.txt
+
+==> Tree Size = 16
+
+; accuracy= 86.200   Correct:887 , Wrong: 142
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 423   49 
+;   p  1 |  93  464 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP06_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP06_time.txt']
+
+rand seed=1501821842
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP06_tree.txt  time_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP06_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 1.24 gap=0.024297 gain= 0.40889 (7  )==>  29   1  /   5  32 
+
+=== Node 3 ===
+....
+Len=9    @[  3,  3]  d_th= 5.13 gap=0.002177 gain= 0.28285 (23 )==>   0  30  /   5   2 
+
+=== Node 7 ===
+....
+Len=11   @[  3,  3]  d_th= 3.24 gap=0.206347 gain= 0.59827 (3  )==>   5   0  /   0   2 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.03 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.04 sec <<
+
+
+Total Running  Time =     0.04 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'manhattan', 0, 0, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP06_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP06_acc.txt']
+0
+num_class=2, num_obj=1029  distance=manhattan CID=false normalize=false ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP06_tree.txt  ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP06_acc.txt
+
+==> Tree Size = 16
+
+; accuracy= 86.200   Correct:887 , Wrong: 142
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 423   49 
+;   p  1 |  93  464 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP07_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP07_time.txt']
+
+rand seed=1501821842
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP07_tree.txt  time_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP07_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 1.24 gap=0.024297 gain= 0.40889 (7  )==>  29   1  /   5  32 
+
+=== Node 3 ===
+....
+Len=9    @[  3,  3]  d_th= 5.13 gap=0.002177 gain= 0.28285 (23 )==>   0  30  /   5   2 
+
+=== Node 7 ===
+....
+Len=11   @[  3,  3]  d_th= 3.24 gap=0.206347 gain= 0.59827 (3  )==>   5   0  /   0   2 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.04 sec <<
+
+
+Total Running  Time =     0.04 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'manhattan', 0, 0, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP07_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP07_acc.txt']
+0
+num_class=2, num_obj=1029  distance=manhattan CID=false normalize=false ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP07_tree.txt  ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP07_acc.txt
+
+==> Tree Size = 16
+
+; accuracy= 86.200   Correct:887 , Wrong: 142
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 423   49 
+;   p  1 |  93  464 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_time.txt']
+
+rand seed=1501821842
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_tree.txt  time_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 1.24 gap=0.024297 gain= 0.40889 (7  )==>  29   1  /   5  32 
+
+=== Node 3 ===
+....
+Len=9    @[  3,  3]  d_th= 5.13 gap=0.002177 gain= 0.28285 (23 )==>   0  30  /   5   2 
+
+=== Node 7 ===
+....
+Len=11   @[  3,  3]  d_th= 3.24 gap=0.206347 gain= 0.59827 (3  )==>   5   0  /   0   2 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.03 sec <<
+
+
+Total Running  Time =     0.03 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'manhattan', 0, 0, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_acc.txt']
+0
+num_class=2, num_obj=1029  distance=manhattan CID=false normalize=false ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_tree.txt  ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP08_acc.txt
+
+==> Tree Size = 16
+
+; accuracy= 86.200   Correct:887 , Wrong: 142
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 423   49 
+;   p  1 |  93  464 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP09_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1501821843
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP09_tree.txt  time_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP09_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 1.24 gap=0.024297 gain= 0.40889 (7  )==>  29   1  /   5  32 
+
+=== Node 3 ===
+....
+Len=11   @[  8,  2]  d_th= 3.67 gap=0.015801 gain= 0.32297 (25 )==>   5   1  /   0  31 
+
+=== Node 6 ===
+....
+Len=11   @[  3,  2]  d_th= 0.43 gap=0.131150 gain= 0.45056 (4  )==>   0   1  /   5   0 
+
+num_class=2, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.03 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.04 sec <<
+
+
+Total Running  Time =     0.04 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'manhattan', 0, 0, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP09_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP09_acc.txt']
+0
+num_class=2, num_obj=1029  distance=manhattan CID=false normalize=false ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP09_tree.txt  ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 14
+
+; accuracy= 86.978   Correct:895 , Wrong: 134
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 410   28 
+;   p  1 | 106  485 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN', 2, 67, 12, 1, 2, 10, 'manhattan', 0, 0, 10, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP10_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP10_time.txt']
+
+rand seed=1501821843
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP10_tree.txt  time_file=./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP10_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=5    @[  0, 10]  d_th= 1.24 gap=0.024297 gain= 0.40889 (7  )==>  29   1  /   5  32 
+
+=== Node 3 ===
+....
+Len=11   @[  8,  2]  d_th= 3.67 gap=0.015801 gain= 0.32297 (25 )==>   5   1  /   0  31 
+
+=== Node 6 ===
+....
+Len=11   @[  3,  2]  d_th= 0.43 gap=0.131150 gain= 0.45056 (4  )==>   0   1  /   5   0 
+
+num_class=2, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.01 sec
+Running  Time for this Shapelet=     0.04 sec <<
+
+
+Total Running  Time =     0.04 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST', 2, 1029, 'manhattan', 0, 0, './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP10_tree.txt', './output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP10_acc.txt']
+0
+num_class=2, num_obj=1029  distance=manhattan CID=false normalize=false ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP10_tree.txt  ./output/ItalyPowerDemand/ItalyPowerDemand_manhattan_unnormed_NOCID_REP10_acc.txt
+
+==> Tree Size = 14
+
+; accuracy= 86.978   Correct:895 , Wrong: 134
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 410   28 
+;   p  1 | 106  485 
+
+
+================ Replication:  10 Finished ================

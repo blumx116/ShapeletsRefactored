@@ -1,0 +1,42 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2', 5, 251, 70, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502274460
+num_class=5, num_obj=251, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=9    @[  0,124]  d_th= 5.14 gap=0.054060 gain= 0.52263 (67 )==> 146   7   1   4   1  /   0  82   4   6   0 
+
+=== Node 3 ===
+.................................
+Len=55   @[ 82,  0]  d_th=10.51 gap=0.031676 gain= 0.17884 (84 )==>   0   0   4   0   0  /   0  82   0   6   0 
+
+num_class=5, num_obj=92, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.56 sec
+  Time Rand Project =     4.29 sec
+  Time Score Matrix =     0.46 sec
+  Time Compute Gain =     3.54 sec
+Running  Time for this Shapelet=     9.25 sec <<
+
+
+Total Running  Time =     9.25 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV1', 5, 249, 'manhattan', 1, 0, './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_tree.txt', './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_acc.txt']
+; accuracy= 90.763   Correct:226 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 | 144    8    1    4    1 
+;   p  2 |   2   80    2    5    0 
+;   p  3 |   0    0    2    0    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=249  distance=manhattan CID=true normalize=false ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_tree.txt  ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 8
+

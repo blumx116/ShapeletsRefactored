@@ -1,0 +1,38 @@
+;Shapelet Tree 
+
+;random seed:1502275531, rand()=1473509235, rand()=1354848670
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Trace_TRAIN_CV2 4 51 138 1 2 10 euclidean 0 0 10 ./cv_output/Trace_CV2/Trace_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/Trace_CV2/Trace_CV2_euclidean_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1  2  3 
+;Real  Class:   1  2  3  4 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0   17  109  11.2829 ==>  13  11   0   0  /   0   0  11  16 
+NonL  2    --      0   59    5   2.8340 ==>  13   0   0   0  /   0  11   0   0 
+NonL  3    --      1  196    5   0.4960 ==>   0   0  11   0  /   0   0   0  16 
+Leaf  4     1    
+Leaf  5     2    
+Leaf  6     3    
+Leaf  7     4    
+
+;Shapelet id   <data>
+Shapelet   1   0.560780  0.572560  0.597880  0.524390  0.531600  0.549880  0.589270  0.577330  0.555220  0.617520  0.544160  0.585910  0.566040  0.572290  0.589560  0.558990  0.582830  0.635780  0.594760  0.623760  0.619110  0.643140  0.609570  0.534030  0.523860  0.535440  0.559500  0.575140  0.592780  0.637630  0.584130  0.634650  0.627240  0.655440  0.633280  0.591930  0.595330  0.602590  0.638960  0.587430  0.633900  0.696450  1.044500  2.294500  3.447100  3.799800  3.787700  3.215300  0.872290 -1.251400 -1.794700 -1.909600 -1.948100 -1.898800 -1.889400 -1.902700 -1.890500 -1.919800 -1.908700 -1.984400 -1.913600 -1.896900 -1.862000 -1.867400 -1.900300 -1.869100 -1.838500 -1.893000 -1.778100 -1.819300 -1.760700 -1.819200 -1.784500 -1.780200 -1.751700 -1.670500 -1.680200 -1.767300 -1.741700 -1.648100 -1.640100 -1.690700 -1.676100 -1.621800 -1.519800 -1.619800 -1.557700 -1.586200 -1.651700 -1.528100 -1.428100 -1.484300 -1.464600 -1.437900 -1.436700 -1.344600 -1.301700 -1.300200 -1.215300 -1.248700 -1.148400 -1.178300 -1.161000 -1.098700 -1.043000 -1.021500 -1.039700 -0.945970 -0.972690 
+Shapelet   2   1.044500  2.294500  3.447100  3.799800  3.787700 
+Shapelet   3   1.023700  1.097400  1.230700  1.217600  1.215100 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Trace_TRAIN_CV2 4 51 138 1 2 10 euclidean 0 0 10 ./cv_output/Trace_CV2/Trace_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/Trace_CV2/Trace_CV2_euclidean_unnormed_NOCID_time.txt
+; time =>    7.451   0.671   4.170   0.367   1.895 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Trace_TRAIN_CV1 4 49 euclidean 0 0 ./cv_output/Trace_CV2/Trace_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/Trace_CV2/Trace_CV2_euclidean_unnormed_NOCID_acc.txt
+; accuracy= 100.000   Correct:49 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |  13    0    0    0 
+;   p  2 |   0   10    0    0 
+;   p  3 |   0    0   11    0 
+;   p  4 |   0    0    0   15 
+

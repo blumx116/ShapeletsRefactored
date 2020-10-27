@@ -1,0 +1,55 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Computers_TRAIN', 2, 250, 360, 1, 2, 10, 'manhattan', 0, 1, 10, './replications/Computers/Computers_manhattan_normed_NOCID_REP06_tree.txt', './replications/Computers/Computers_manhattan_normed_NOCID_REP06_time.txt']
+
+rand seed=1503368872
+num_class=2, num_obj=250, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Computers/Computers_manhattan_normed_NOCID_REP06_tree.txt  time_file=./replications/Computers/Computers_manhattan_normed_NOCID_REP06_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=55   @[ 65,162]  d_th=14.97 gap=0.000000 gain= 0.14935 (48 )==>  18  83  / 107  42 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=5    @[  0,313]  d_th= 0.00 gap=0.000000 gain= 0.14084 (1  )==>   0  50  /  18  33 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=5    @[  0,247]  d_th= 0.00 gap=0.000000 gain= 0.06355 (27 )==>  52  36  /  55   6 
+
+=== Node 5 ===
+..................................................................................................................................................................................
+Len=275  @[  1,  0]  d_th=137.50 gap=8.291562 gain= 0.56234 (2  )==>   0   3  /   1   0 
+
+=== Node 6 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.25528 (3  )==>  21  35  /  58   1 
+
+=== Node 12 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 0.00 gap=0.000000 gain= 0.29775 (0  )==>  20  35  /  55   0 
+
+num_class=2, num_obj=110, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    24.97 sec
+  Time Rand Project =   174.40 sec
+  Time Score Matrix =    11.54 sec
+  Time Compute Gain =   815.79 sec
+Running  Time for this Shapelet=  1038.15 sec <<
+
+
+Total Running  Time =  1038.15 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Computers_TEST', 2, 250, 'manhattan', 0, 1, './replications/Computers/Computers_manhattan_normed_NOCID_REP06_tree.txt', './replications/Computers/Computers_manhattan_normed_NOCID_REP06_acc.txt']
+; accuracy= 48.400   Correct:121 , Wrong: 129
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 | 119  123 
+;   p  2 |   6    2 
+
+num_class=2, num_obj=250  distance=manhattan CID=false normalize=true ./replications/Computers/Computers_manhattan_normed_NOCID_REP06_tree.txt  ./replications/Computers/Computers_manhattan_normed_NOCID_REP06_acc.txt
+
+==> Tree Size = 26
+

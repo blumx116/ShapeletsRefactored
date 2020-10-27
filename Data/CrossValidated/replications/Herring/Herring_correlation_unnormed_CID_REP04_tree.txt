@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1503427990, rand()=921358943, rand()=686794423
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Herring_TRAIN 2 64 256 1 2 10 correlation 1 0 10 ./replications/Herring/Herring_correlation_unnormed_CID_REP04_tree.txt ./replications/Herring/Herring_correlation_unnormed_CID_REP04_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --     13   59   29   0.0021 ==>   0   9  /  39  16 
+Leaf  2     2    
+NonL  3    --      0    0   25   0.0011 ==>  28   2  /  11  14 
+Leaf  6     1    
+NonL  7    --      0  408    9   0.0132 ==>   1  13  /  10   1 
+Leaf 14     2    
+Leaf 15     1    
+
+;Shapelet id   <data>
+Shapelet   1  -1.148800 -1.210800 -1.266800 -1.327000 -1.391400 -1.451500 -1.510100 -1.574000 -1.615400 -1.590900 -1.541800 -1.492600 -1.443300 -1.380800 -1.331400 -1.291800 -1.238800 -1.192000 -1.150700 -1.108600 -1.072000 -1.043100 -0.998560 -0.951490 -0.904080 -0.858050 -0.811470 -0.768820 -0.721310 
+Shapelet   3   1.930500  1.912500  1.891000  1.864000  1.832300  1.801100  1.764800  1.729000  1.682900  1.625100  1.567500  1.504200  1.446700  1.395400  1.337500  1.292200  1.235100  1.183900  1.127000  1.082000  1.043200  1.005000  0.960870  0.910900  0.854970 
+Shapelet   7  -1.279300 -1.292100 -1.310000 -1.319900 -1.315600 -1.286400 -1.254200 -1.209900 -1.176600 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Herring_TRAIN 2 64 256 1 2 10 correlation 1 0 10 ./replications/Herring/Herring_correlation_unnormed_CID_REP04_tree.txt ./replications/Herring/Herring_correlation_unnormed_CID_REP04_time.txt
+; time =>  111.728   2.051   6.602   0.757 101.496 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Herring_TEST 2 64 correlation 1 0 ./replications/Herring/Herring_correlation_unnormed_CID_REP04_tree.txt ./replications/Herring/Herring_correlation_unnormed_CID_REP04_acc.txt
+; accuracy= 54.688   Correct:35 , Wrong: 29
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  23   14 
+;   p  2 |  15   12 
+

@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV1', 2, 149, 213, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/yoga_CV1/yoga_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/yoga_CV1/yoga_CV1_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502278260
+num_class=2, num_obj=149, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/yoga_CV1/yoga_CV1_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/yoga_CV1/yoga_CV1_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................................................................
+Len=139  @[  0,118]  d_th= 1.19 gap=0.001269 gain= 0.12455 (107)==>  21   0  /  47  81 
+
+=== Node 3 ===
+.........................................................................................................
+Len=43   @[  0,  2]  d_th= 0.67 gap=0.000372 gain= 0.08658 (100)==>  34  80  /  13   1 
+
+=== Node 6 ===
+.........................................................................................................
+Len=75   @[ 39,106]  d_th= 1.40 gap=0.000013 gain= 0.08521 (20 )==>  30  37  /   4  43 
+
+=== Node 12 ===
+.........................................................................................................
+Len=181  @[  0,126]  d_th= 3.58 gap=0.001588 gain= 0.17542 (25 )==>   1  20  /  29  17 
+
+num_class=2, num_obj=67, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     4.87 sec
+  Time Rand Project =    20.96 sec
+  Time Score Matrix =     2.38 sec
+  Time Compute Gain =    99.12 sec
+Running  Time for this Shapelet=   129.36 sec <<
+
+
+Total Running  Time =   129.36 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/yoga_TRAIN_CV2', 2, 151, 'euclidean', 0, 1, './cv_output/yoga_CV1/yoga_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/yoga_CV1/yoga_CV1_euclidean_normed_NOCID_acc.txt']
+; accuracy= 56.291   Correct:85 , Wrong: 66
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  51   48 
+;   p  2 |  18   34 
+
+num_class=2, num_obj=151  distance=euclidean CID=false normalize=true ./cv_output/yoga_CV1/yoga_CV1_euclidean_normed_NOCID_tree.txt  ./cv_output/yoga_CV1/yoga_CV1_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 26
+

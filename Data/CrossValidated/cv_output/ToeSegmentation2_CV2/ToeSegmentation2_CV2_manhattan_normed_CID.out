@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ToeSegmentation2_TRAIN_CV2', 2, 18, 172, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/ToeSegmentation2_CV2/ToeSegmentation2_CV2_manhattan_normed_CID_tree.txt', './cv_output/ToeSegmentation2_CV2/ToeSegmentation2_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502278680
+num_class=2, num_obj=18, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ToeSegmentation2_CV2/ToeSegmentation2_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/ToeSegmentation2_CV2/ToeSegmentation2_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+....................................................................................
+Len=161  @[  0,129]  d_th=70.93 gap=0.557659 gain= 0.69315 (0  )==>   9   0  /   0   9 
+
+num_class=2, num_obj=18, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.19 sec
+  Time Rand Project =     1.01 sec
+  Time Score Matrix =     0.09 sec
+  Time Compute Gain =     4.28 sec
+Running  Time for this Shapelet=     5.69 sec <<
+
+
+Total Running  Time =     5.69 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ToeSegmentation2_TRAIN_CV1', 2, 18, 'manhattan', 1, 1, './cv_output/ToeSegmentation2_CV2/ToeSegmentation2_CV2_manhattan_normed_CID_tree.txt', './cv_output/ToeSegmentation2_CV2/ToeSegmentation2_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 83.333   Correct:15 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |   7    1 
+;   p  1 |   2    8 
+
+num_class=2, num_obj=18  distance=manhattan CID=true normalize=true ./cv_output/ToeSegmentation2_CV2/ToeSegmentation2_CV2_manhattan_normed_CID_tree.txt  ./cv_output/ToeSegmentation2_CV2/ToeSegmentation2_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 4
+

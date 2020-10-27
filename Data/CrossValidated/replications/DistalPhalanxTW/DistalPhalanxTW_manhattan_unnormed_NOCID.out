@@ -1,0 +1,1068 @@
+================ Replication:  1 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP01_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP01_time.txt']
+
+rand seed=1501824042
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP01_tree.txt  time_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP01_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [0,4]  [1,6]  [2,8]  [3,5]  
+
+=== Node 1 ===
+..................
+Len=39   @[ 39, 33]  d_th=17.82 gap=0.007386 gain= 0.59690 (53 )==>  19  13   0  39  18   7  /   0   0  42   0   0   1 
+
+=== Node 2 ===
+..................
+Len=37   @[  9, 32]  d_th=11.26 gap=0.000141 gain= 0.30398 (48 )==>   7   0   0   0  15   2  /  12  13   0  39   3   5 
+
+=== Node 4 ===
+..................
+Len=9    @[  0, 21]  d_th= 1.89 gap=0.001731 gain= 0.48343 (8  )==>   0   0   0   0  14   2  /   7   0   0   0   1   0 
+
+=== Node 5 ===
+..................
+Len=21   @[  0, 36]  d_th= 4.93 gap=0.003578 gain= 0.20477 (26 )==>  12   5   0  31   1   0  /   0   8   0   8   2   5 
+
+=== Node 8 ===
+..................
+Len=39   @[  1, 31]  d_th= 4.43 gap=0.342399 gain= 0.37677 (12 )==>   0   0   0   0   0   2  /   0   0   0   0  14   0 
+
+=== Node 9 ===
+..................
+Len=35   @[  0,  0]  d_th= 1.70 gap=0.287478 gain= 0.37677 (6  )==>   0   0   0   0   1   0  /   7   0   0   0   0   0 
+
+=== Node 10 ===
+..................
+Len=19   @[  0,  9]  d_th= 1.65 gap=0.005051 gain= 0.18278 (27 )==>   1   5   0   5   0   0  /  11   0   0  26   1   0 
+
+=== Node 11 ===
+..................
+Len=37   @[  1,  0]  d_th= 5.69 gap=0.006226 gain= 0.45451 (3  )==>   0   8   0   5   0   0  /   0   0   0   3   2   5 
+
+=== Node 20 ===
+..................
+Len=23   @[  1,  9]  d_th= 2.51 gap=0.003497 gain= 0.68901 (1  )==>   1   5   0   0   0   0  /   0   0   0   5   0   0 
+
+=== Node 21 ===
+..................
+Len=7    @[  0, 44]  d_th= 1.24 gap=0.002694 gain= 0.18993 (28 )==>   6   0   0  26   1   0  /   5   0   0   0   0   0 
+
+=== Node 22 ===
+..................
+Len=15   @[  1, 39]  d_th= 1.70 gap=0.034718 gain= 0.42478 (5  )==>   0   8   0   1   0   0  /   0   0   0   4   0   0 
+
+=== Node 23 ===
+..................
+Len=39   @[  1, 31]  d_th= 6.32 gap=0.077426 gain= 0.69315 (0  )==>   0   0   0   0   0   5  /   0   0   0   3   2   0 
+
+=== Node 40 ===
+..................
+Len=33   @[  0, 30]  d_th= 2.23 gap=0.388032 gain= 0.45056 (4  )==>   1   0   0   0   0   0  /   0   5   0   0   0   0 
+
+=== Node 42 ===
+..................
+Len=7    @[  0, 19]  d_th= 0.61 gap=0.000808 gain= 0.18448 (1  )==>   0   0   0  17   0   0  /   6   0   0   9   1   0 
+
+=== Node 44 ===
+..................
+Len=15   @[  5, 39]  d_th= 0.48 gap=0.124553 gain= 0.34883 (7  )==>   0   0   0   1   0   0  /   0   8   0   0   0   0 
+
+=== Node 47 ===
+..................
+Len=23   @[  0, 12]  d_th= 4.28 gap=0.139271 gain= 0.67301 (1  )==>   0   0   0   3   0   0  /   0   0   0   0   2   0 
+
+num_class=6, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.27 sec
+  Time Rand Project =     1.54 sec
+  Time Score Matrix =     0.20 sec
+  Time Compute Gain =     0.63 sec
+Running  Time for this Shapelet=     2.77 sec <<
+
+
+Total Running  Time =     2.77 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'manhattan', 0, 0, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP01_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP01_acc.txt']
+0
+num_class=6, num_obj=400  distance=manhattan CID=false normalize=false ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP01_tree.txt  ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP01_acc.txt
+
+==> Tree Size = 96
+
+; accuracy= 68.000   Correct:272 , Wrong: 128
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 197    0    0    0    4    0 
+;   p  5 |   0   44   18   18    5    2 
+;   p  6 |   0   12    8    1    5    0 
+;   p  4 |   0   20    3    5    2   11 
+;   p  7 |  16    2    0    0    2    0 
+;   p  3 |   0    4    1    4    0   16 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP02_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP02_time.txt']
+
+rand seed=1501824049
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP02_tree.txt  time_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP02_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [0,4]  [1,6]  [2,8]  [3,5]  
+
+=== Node 1 ===
+..................
+Len=13   @[  2, 44]  d_th= 0.71 gap=0.016648 gain= 0.59690 (53 )==>   0   0  42   0   0   1  /  19  13   0  39  18   7 
+
+=== Node 3 ===
+..................
+Len=15   @[ 94, 55]  d_th= 3.32 gap=0.009930 gain= 0.30064 (28 )==>  11   0   0   6  17   0  /   8  13   0  33   1   7 
+
+=== Node 6 ===
+..................
+Len=25   @[  1,  8]  d_th= 4.53 gap=0.003356 gain= 0.44449 (6  )==>  11   0   0   6   3   0  /   0   0   0   0  14   0 
+
+=== Node 7 ===
+..................
+Len=15   @[  0, 40]  d_th= 4.03 gap=0.002374 gain= 0.21725 (44 )==>   8   9   0  33   1   2  /   0   4   0   0   0   5 
+
+=== Node 12 ===
+..................
+Len=35   @[ 19, 34]  d_th= 6.62 gap=0.003935 gain= 0.36586 (2  )==>   8   0   0   0   3   0  /   3   0   0   6   0   0 
+
+=== Node 14 ===
+..................
+Len=27   @[ 27, 33]  d_th= 5.17 gap=0.004658 gain= 0.17879 (3  )==>   4   9   0  12   1   2  /   4   0   0  21   0   0 
+
+=== Node 15 ===
+..................
+Len=5    @[  0, 21]  d_th= 0.28 gap=0.015803 gain= 0.68696 (1  )==>   0   4   0   0   0   0  /   0   0   0   0   0   5 
+
+=== Node 24 ===
+..................
+Len=23   @[  0,  6]  d_th= 3.03 gap=0.021106 gain= 0.38147 (3  )==>   1   0   0   0   3   0  /   7   0   0   0   0   0 
+
+=== Node 25 ===
+..................
+Len=35   @[  3,  7]  d_th= 3.76 gap=0.055226 gain= 0.38659 (1  )==>   0   0   0   5   0   0  /   3   0   0   1   0   0 
+
+=== Node 28 ===
+..................
+Len=7    @[  0, 43]  d_th= 0.29 gap=0.007204 gain= 0.39207 (14 )==>   4   2   0   0   1   0  /   0   7   0  12   0   2 
+
+=== Node 29 ===
+..................
+Len=35   @[  0, 26]  d_th= 4.82 gap=0.035704 gain= 0.33959 (15 )==>   4   0   0   1   0   0  /   0   0   0  20   0   0 
+
+=== Node 48 ===
+..................
+Len=39   @[  0, 13]  d_th= 2.26 gap=0.361214 gain= 0.56234 (2  )==>   1   0   0   0   0   0  /   0   0   0   0   3   0 
+
+=== Node 51 ===
+..................
+Len=39   @[  0, 30]  d_th= 2.75 gap=0.439742 gain= 0.56234 (2  )==>   0   0   0   1   0   0  /   3   0   0   0   0   0 
+
+=== Node 56 ===
+..................
+Len=33   @[  3, 20]  d_th= 4.05 gap=0.032520 gain= 0.68291 (1  )==>   4   0   0   0   0   0  /   0   2   0   0   1   0 
+
+=== Node 57 ===
+..................
+Len=7    @[  0, 24]  d_th= 0.38 gap=0.004117 gain= 0.25928 (13 )==>   0   4   0   0   0   0  /   0   3   0  12   0   2 
+
+=== Node 58 ===
+..................
+Len=35   @[  2, 22]  d_th= 2.28 gap=0.386004 gain= 0.50040 (3  )==>   0   0   0   1   0   0  /   4   0   0   0   0   0 
+
+num_class=6, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.24 sec
+  Time Rand Project =     1.26 sec
+  Time Score Matrix =     0.17 sec
+  Time Compute Gain =     0.55 sec
+Running  Time for this Shapelet=     2.32 sec <<
+
+
+Total Running  Time =     2.32 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'manhattan', 0, 0, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP02_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP02_acc.txt']
+0
+num_class=6, num_obj=400  distance=manhattan CID=false normalize=false ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP02_tree.txt  ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP02_acc.txt
+
+==> Tree Size = 118
+
+; accuracy= 70.250   Correct:281 , Wrong: 119
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 199    0    0    0    3    0 
+;   p  5 |   0   44   15   11    5    1 
+;   p  6 |   0   20    8    2    6    0 
+;   p  4 |   0   11    4    6    2    5 
+;   p  7 |  12    0    3    0    1    0 
+;   p  3 |   2    7    0    9    1   23 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP03_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP03_time.txt']
+
+rand seed=1501824051
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP03_tree.txt  time_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP03_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [0,4]  [1,6]  [2,8]  [3,5]  
+
+=== Node 1 ===
+..................
+Len=13   @[  2, 44]  d_th= 0.71 gap=0.016648 gain= 0.59690 (53 )==>   0   0  42   0   0   1  /  19  13   0  39  18   7 
+
+=== Node 3 ===
+..................
+Len=39   @[ 94, 31]  d_th= 7.49 gap=0.005063 gain= 0.25891 (46 )==>   9   0   0   1  14   1  /  10  13   0  38   4   6 
+
+=== Node 6 ===
+..................
+Len=17   @[ 23, 45]  d_th= 3.23 gap=0.013145 gain= 0.40333 (5  )==>   1   0   0   0  13   1  /   8   0   0   1   1   0 
+
+=== Node 7 ===
+..................
+Len=21   @[  0, 36]  d_th= 4.93 gap=0.003578 gain= 0.21962 (21 )==>  10   5   0  30   1   0  /   0   8   0   8   3   6 
+
+=== Node 12 ===
+..................
+Len=35   @[  0, 37]  d_th= 6.51 gap=0.089766 gain= 0.39267 (11 )==>   0   0   0   0  13   0  /   1   0   0   0   0   1 
+
+=== Node 13 ===
+..................
+Len=31   @[  6, 10]  d_th= 1.62 gap=0.291302 gain= 0.32508 (8  )==>   0   0   0   0   1   0  /   8   0   0   1   0   0 
+
+=== Node 14 ===
+..................
+Len=19   @[  0,  9]  d_th= 1.65 gap=0.005051 gain= 0.18556 (24 )==>   1   5   0   5   0   0  /   9   0   0  25   1   0 
+
+=== Node 15 ===
+..................
+Len=37   @[  2,  0]  d_th= 5.69 gap=0.006226 gain= 0.48065 (1  )==>   0   8   0   5   0   0  /   0   0   0   3   3   6 
+
+=== Node 25 ===
+..................
+Len=39   @[  1, 13]  d_th= 4.70 gap=0.752596 gain= 0.69315 (0  )==>   0   0   0   0   0   1  /   1   0   0   0   0   0 
+
+=== Node 27 ===
+..................
+Len=29   @[  6, 37]  d_th= 1.03 gap=0.191211 gain= 0.34883 (7  )==>   0   0   0   1   0   0  /   8   0   0   0   0   0 
+
+=== Node 28 ===
+..................
+Len=23   @[  1,  9]  d_th= 2.51 gap=0.003497 gain= 0.68901 (1  )==>   1   5   0   0   0   0  /   0   0   0   5   0   0 
+
+=== Node 29 ===
+..................
+Len=13   @[  0, 37]  d_th= 2.12 gap=0.007150 gain= 0.28150 (23 )==>   4   0   0  25   0   0  /   5   0   0   0   1   0 
+
+=== Node 30 ===
+..................
+Len=15   @[  1, 39]  d_th= 1.70 gap=0.034718 gain= 0.42478 (5  )==>   0   8   0   1   0   0  /   0   0   0   4   0   0 
+
+=== Node 31 ===
+..................
+Len=11   @[  0, 55]  d_th= 1.65 gap=0.058436 gain= 0.56234 (6  )==>   0   0   0   0   3   0  /   0   0   0   3   0   6 
+
+=== Node 56 ===
+..................
+Len=39   @[  0, 31]  d_th= 2.87 gap=0.459004 gain= 0.45056 (4  )==>   1   0   0   0   0   0  /   0   5   0   0   0   0 
+
+=== Node 58 ===
+..................
+Len=17   @[  8, 16]  d_th= 2.26 gap=0.002666 gain= 0.12450 (3  )==>   4   0   0   9   0   0  /   0   0   0  16   0   0 
+
+=== Node 59 ===
+..................
+Len=39   @[  0, 22]  d_th= 2.77 gap=0.443109 gain= 0.45056 (4  )==>   0   0   0   0   1   0  /   5   0   0   0   0   0 
+
+=== Node 60 ===
+..................
+Len=39   @[  5, 15]  d_th= 1.39 gap=0.222345 gain= 0.34883 (7  )==>   0   0   0   1   0   0  /   0   8   0   0   0   0 
+
+=== Node 63 ===
+..................
+Len=9    @[  0, 16]  d_th= 0.73 gap=0.035871 gain= 0.63651 (3  )==>   0   0   0   3   0   0  /   0   0   0   0   0   6 
+
+num_class=6, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.26 sec
+  Time Rand Project =     1.42 sec
+  Time Score Matrix =     0.18 sec
+  Time Compute Gain =     0.60 sec
+Running  Time for this Shapelet=     2.58 sec <<
+
+
+Total Running  Time =     2.58 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'manhattan', 0, 0, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP03_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP03_acc.txt']
+0
+num_class=6, num_obj=400  distance=manhattan CID=false normalize=false ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP03_tree.txt  ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP03_acc.txt
+
+==> Tree Size = 128
+
+; accuracy= 71.250   Correct:285 , Wrong: 115
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 199    0    0    0    3    0 
+;   p  5 |   0   40   18    8    4    2 
+;   p  6 |   0   10    8    0    5    0 
+;   p  4 |   1   27    3   14    2    7 
+;   p  7 |  13    3    1    2    4    0 
+;   p  3 |   0    2    0    4    0   20 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP04_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP04_time.txt']
+
+rand seed=1501824054
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP04_tree.txt  time_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP04_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [0,4]  [1,6]  [2,8]  [3,5]  
+
+=== Node 1 ===
+..................
+Len=13   @[  2, 44]  d_th= 0.71 gap=0.016648 gain= 0.59690 (53 )==>   0   0  42   0   0   1  /  19  13   0  39  18   7 
+
+=== Node 3 ===
+..................
+Len=13   @[ 54, 65]  d_th= 2.40 gap=0.003832 gain= 0.36131 (40 )==>   7   0   0   2  18   1  /  12  13   0  37   0   6 
+
+=== Node 6 ===
+..................
+Len=9    @[  0, 21]  d_th= 1.18 gap=0.010404 gain= 0.51383 (8  )==>   7   0   0   2   1   0  /   0   0   0   0  17   1 
+
+=== Node 7 ===
+..................
+Len=33   @[  0,  8]  d_th= 4.45 gap=0.000191 gain= 0.18495 (30 )==>   3  11   0   4   0   1  /   9   2   0  33   0   5 
+
+=== Node 12 ===
+..................
+Len=7    @[  0, 19]  d_th= 0.58 gap=0.003463 gain= 0.61086 (4  )==>   0   0   0   2   1   0  /   7   0   0   0   0   0 
+
+=== Node 14 ===
+..................
+Len=37   @[  3, 34]  d_th= 5.23 gap=0.007709 gain= 0.50527 (7  )==>   0  11   0   1   0   1  /   3   0   0   3   0   0 
+
+=== Node 15 ===
+..................
+Len=15   @[ 42, 41]  d_th= 3.40 gap=0.000350 gain= 0.25025 (21 )==>   9   0   0  26   0   0  /   0   2   0   7   0   5 
+
+=== Node 24 ===
+..................
+Len=39   @[  1, 24]  d_th= 2.54 gap=0.407518 gain= 0.63651 (1  )==>   0   0   0   0   1   0  /   0   0   0   2   0   0 
+
+=== Node 28 ===
+..................
+Len=23   @[  4,  4]  d_th= 1.59 gap=0.034291 gain= 0.28244 (7  )==>   0   1   0   1   0   1  /   0  10   0   0   0   0 
+
+=== Node 29 ===
+..................
+Len=39   @[  2, 14]  d_th= 4.62 gap=0.047203 gain= 0.69315 (0  )==>   0   0   0   3   0   0  /   3   0   0   0   0   0 
+
+=== Node 30 ===
+..................
+Len=15   @[ 10, 38]  d_th= 2.80 gap=0.001634 gain= 0.14480 (9  )==>   9   0   0  13   0   0  /   0   0   0  13   0   0 
+
+=== Node 31 ===
+..................
+Len=35   @[  1, 18]  d_th= 5.62 gap=0.006494 gain= 0.58389 (2  )==>   0   1   0   7   0   0  /   0   1   0   0   0   5 
+
+=== Node 56 ===
+..................
+Len=37   @[  0, 30]  d_th= 2.83 gap=0.105776 gain= 0.63651 (1  )==>   0   1   0   1   0   0  /   0   0   0   0   0   1 
+
+=== Node 60 ===
+..................
+Len=5    @[  0, 11]  d_th= 0.21 gap=0.003122 gain= 0.36980 (2  )==>   0   0   0  10   0   0  /   9   0   0   3   0   0 
+
+=== Node 62 ===
+..................
+Len=39   @[  1, 24]  d_th= 2.57 gap=0.412042 gain= 0.37677 (6  )==>   0   1   0   0   0   0  /   0   0   0   7   0   0 
+
+=== Node 63 ===
+..................
+Len=35   @[  0, 15]  d_th= 2.30 gap=0.389173 gain= 0.45056 (4  )==>   0   1   0   0   0   0  /   0   0   0   0   0   5 
+
+num_class=6, num_obj=6, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.27 sec
+  Time Rand Project =     1.65 sec
+  Time Score Matrix =     0.20 sec
+  Time Compute Gain =     0.61 sec
+Running  Time for this Shapelet=     2.86 sec <<
+
+
+Total Running  Time =     2.86 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'manhattan', 0, 0, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP04_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP04_acc.txt']
+0
+num_class=6, num_obj=400  distance=manhattan CID=false normalize=false ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP04_tree.txt  ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP04_acc.txt
+
+==> Tree Size = 128
+
+; accuracy= 68.000   Correct:272 , Wrong: 128
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 199    0    0    0    3    0 
+;   p  5 |   0   34   11    7    4    3 
+;   p  6 |   0    7    5    1    2    0 
+;   p  4 |   0   28    7   11    4    8 
+;   p  7 |  13    7    7    1    5    0 
+;   p  3 |   1    6    0    8    0   18 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP05_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP05_time.txt']
+
+rand seed=1501824057
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP05_tree.txt  time_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP05_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [0,4]  [1,6]  [2,8]  [3,5]  
+
+=== Node 1 ===
+..................
+Len=21   @[  2, 41]  d_th= 1.37 gap=0.003998 gain= 0.59690 (53 )==>   0   0  42   0   0   1  /  19  13   0  39  18   7 
+
+=== Node 3 ===
+..................
+Len=15   @[ 94, 55]  d_th= 3.32 gap=0.009930 gain= 0.30064 (28 )==>  11   0   0   6  17   0  /   8  13   0  33   1   7 
+
+=== Node 6 ===
+..................
+Len=9    @[  0, 18]  d_th= 1.48 gap=0.001210 gain= 0.50511 (4  )==>   0   0   0   0  15   0  /  11   0   0   6   2   0 
+
+=== Node 7 ===
+..................
+Len=33   @[  0,  8]  d_th= 4.45 gap=0.000191 gain= 0.19698 (26 )==>   2  11   0   4   0   1  /   6   2   0  29   1   6 
+
+=== Node 13 ===
+..................
+Len=11   @[  0, 17]  d_th= 1.43 gap=0.011840 gain= 0.31365 (11 )==>   0   0   0   4   0   0  /  11   0   0   2   2   0 
+
+=== Node 14 ===
+..................
+Len=35   @[  3, 31]  d_th= 6.34 gap=0.005176 gain= 0.37567 (10 )==>   0  11   0   2   0   1  /   2   0   0   2   0   0 
+
+=== Node 15 ===
+..................
+Len=33   @[ 28, 37]  d_th= 5.01 gap=0.000341 gain= 0.25195 (8  )==>   6   0   0  19   1   0  /   0   2   0  10   0   6 
+
+=== Node 27 ===
+..................
+Len=7    @[  0,  0]  d_th= 0.83 gap=0.016865 gain= 0.39267 (11 )==>  11   0   0   2   0   0  /   0   0   0   0   2   0 
+
+=== Node 28 ===
+..................
+Len=7    @[  0,  1]  d_th= 0.89 gap=0.001378 gain= 0.41012 (10 )==>   0  11   0   0   0   1  /   0   0   0   2   0   0 
+
+=== Node 29 ===
+..................
+Len=27   @[  0, 23]  d_th= 3.45 gap=0.107440 gain= 0.69315 (0  )==>   2   0   0   0   0   0  /   0   0   0   2   0   0 
+
+=== Node 30 ===
+..................
+Len=29   @[  0, 32]  d_th= 2.90 gap=0.003007 gain= 0.26937 (18 )==>   3   0   0   0   1   0  /   3   0   0  19   0   0 
+
+=== Node 31 ===
+..................
+Len=31   @[ 10, 32]  d_th= 3.62 gap=0.009017 gain= 0.35979 (8  )==>   0   2   0   0   0   3  /   0   0   0  10   0   3 
+
+=== Node 54 ===
+..................
+Len=37   @[  3,  1]  d_th= 3.96 gap=0.043095 gain= 0.28244 (7  )==>   1   0   0   2   0   0  /  10   0   0   0   0   0 
+
+=== Node 60 ===
+..................
+Len=35   @[  0, 17]  d_th= 2.82 gap=0.477474 gain= 0.56234 (2  )==>   0   0   0   0   1   0  /   3   0   0   0   0   0 
+
+=== Node 61 ===
+..................
+Len=15   @[ 10, 38]  d_th= 2.43 gap=0.016651 gain= 0.24535 (12 )==>   0   0   0  17   0   0  /   3   0   0   2   0   0 
+
+=== Node 62 ===
+..................
+Len=17   @[  0,  6]  d_th= 2.16 gap=0.053343 gain= 0.67301 (1  )==>   0   2   0   0   0   0  /   0   0   0   0   0   3 
+
+=== Node 63 ===
+..................
+Len=33   @[ 11, 31]  d_th= 5.50 gap=0.502411 gain= 0.28244 (9  )==>   0   0   0   0   0   2  /   0   0   0  10   0   1 
+
+num_class=6, num_obj=13, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.27 sec
+  Time Rand Project =     1.53 sec
+  Time Score Matrix =     0.20 sec
+  Time Compute Gain =     0.61 sec
+Running  Time for this Shapelet=     2.74 sec <<
+
+
+Total Running  Time =     2.74 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'manhattan', 0, 0, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP05_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP05_acc.txt']
+0
+num_class=6, num_obj=400  distance=manhattan CID=false normalize=false ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP05_tree.txt  ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP05_acc.txt
+
+==> Tree Size = 128
+
+; accuracy= 73.000   Correct:292 , Wrong: 108
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 204    0    0    0    3    0 
+;   p  5 |   1   47   16    7    6    0 
+;   p  6 |   0   10    9    1    6    0 
+;   p  4 |   0   16    3   12    1   11 
+;   p  7 |   7    2    1    0    2    0 
+;   p  3 |   1    7    1    8    0   18 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP06_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP06_time.txt']
+
+rand seed=1501824063
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP06_tree.txt  time_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP06_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [0,4]  [1,6]  [2,8]  [3,5]  
+
+=== Node 1 ===
+..................
+Len=13   @[  2, 44]  d_th= 0.71 gap=0.016648 gain= 0.59690 (53 )==>   0   0  42   0   0   1  /  19  13   0  39  18   7 
+
+=== Node 3 ===
+..................
+Len=13   @[ 94, 56]  d_th= 3.13 gap=0.001378 gain= 0.29990 (24 )==>  12   0   0   7  17   0  /   7  13   0  32   1   7 
+
+=== Node 6 ===
+..................
+Len=7    @[  0, 23]  d_th= 0.76 gap=0.000932 gain= 0.59754 (0  )==>  11   0   0   7   0   0  /   1   0   0   0  17   0 
+
+=== Node 7 ===
+..................
+Len=5    @[  0, 20]  d_th= 0.30 gap=0.001675 gain= 0.19966 (4  )==>   0  12   0  12   1   3  /   7   1   0  20   0   4 
+
+=== Node 12 ===
+..................
+Len=37   @[  1, 10]  d_th= 3.75 gap=0.022252 gain= 0.35818 (8  )==>   0   0   0   5   0   0  /  11   0   0   2   0   0 
+
+=== Node 14 ===
+..................
+Len=7    @[  0, 23]  d_th= 0.52 gap=0.002998 gain= 0.26866 (10 )==>   0   7   0   0   0   2  /   0   5   0  12   1   1 
+
+=== Node 15 ===
+..................
+Len=39   @[  6, 31]  d_th=10.06 gap=0.030518 gain= 0.39286 (20 )==>   6   0   0  20   0   0  /   1   1   0   0   0   4 
+
+=== Node 25 ===
+..................
+Len=25   @[  1, 16]  d_th= 3.05 gap=0.084135 gain= 0.42932 (9  )==>   0   0   0   2   0   0  /  11   0   0   0   0   0 
+
+=== Node 28 ===
+..................
+Len=39   @[  3, 12]  d_th= 2.64 gap=0.058224 gain= 0.52971 (5  )==>   0   0   0   0   0   2  /   0   7   0   0   0   0 
+
+=== Node 29 ===
+..................
+Len=13   @[  5, 22]  d_th= 1.66 gap=0.002620 gain= 0.33660 (1  )==>   0   5   0   3   0   1  /   0   0   0   9   1   0 
+
+=== Node 30 ===
+..................
+Len=19   @[  0,  2]  d_th= 6.14 gap=0.020877 gain= 0.19511 (0  )==>   0   0   0  13   0   0  /   6   0   0   7   0   0 
+
+=== Node 31 ===
+..................
+Len=31   @[  0, 10]  d_th= 2.76 gap=0.251729 gain= 0.63651 (2  )==>   1   1   0   0   0   0  /   0   0   0   0   0   4 
+
+=== Node 58 ===
+..................
+Len=31   @[  1, 26]  d_th= 3.96 gap=0.006520 gain= 0.68696 (1  )==>   0   5   0   0   0   0  /   0   0   0   3   0   1 
+
+=== Node 61 ===
+..................
+Len=33   @[  0, 14]  d_th= 5.29 gap=0.019439 gain= 0.34413 (3  )==>   6   0   0   2   0   0  /   0   0   0   5   0   0 
+
+=== Node 62 ===
+..................
+Len=39   @[  0, 27]  d_th= 2.75 gap=0.439882 gain= 0.69315 (0  )==>   0   1   0   0   0   0  /   1   0   0   0   0   0 
+
+num_class=6, num_obj=2, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.24 sec
+  Time Rand Project =     1.37 sec
+  Time Score Matrix =     0.18 sec
+  Time Compute Gain =     0.56 sec
+Running  Time for this Shapelet=     2.47 sec <<
+
+
+Total Running  Time =     2.47 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'manhattan', 0, 0, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP06_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP06_acc.txt']
+0
+num_class=6, num_obj=400  distance=manhattan CID=false normalize=false ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP06_tree.txt  ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP06_acc.txt
+
+==> Tree Size = 126
+
+; accuracy= 70.000   Correct:280 , Wrong: 120
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 199    0    0    0    3    0 
+;   p  5 |   0   52   22   12    9    0 
+;   p  6 |   0    8    3    1    2    0 
+;   p  4 |   0   19    4    7    2   11 
+;   p  7 |  11    1    1    1    1    0 
+;   p  3 |   3    2    0    7    1   18 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP07_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP07_time.txt']
+
+rand seed=1501824066
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP07_tree.txt  time_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP07_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [0,4]  [1,6]  [2,8]  [3,5]  
+
+=== Node 1 ===
+..................
+Len=15   @[ 58, 42]  d_th= 1.44 gap=0.026617 gain= 0.59187 (51 )==>   0   0  42   0   0   2  /  19  13   0  39  18   6 
+
+=== Node 3 ===
+..................
+Len=33   @[ 91, 36]  d_th=10.74 gap=0.005954 gain= 0.30805 (49 )==>   7   0   0   0  15   1  /  12  13   0  39   3   5 
+
+=== Node 6 ===
+..................
+Len=9    @[  0, 21]  d_th= 1.89 gap=0.001731 gain= 0.48635 (7  )==>   0   0   0   0  14   1  /   7   0   0   0   1   0 
+
+=== Node 7 ===
+..................
+Len=21   @[  0, 36]  d_th= 4.93 gap=0.003578 gain= 0.20477 (26 )==>  12   5   0  31   1   0  /   0   8   0   8   2   5 
+
+=== Node 13 ===
+..................
+Len=35   @[  0,  0]  d_th= 1.70 gap=0.287478 gain= 0.37677 (6  )==>   0   0   0   0   1   0  /   7   0   0   0   0   0 
+
+=== Node 14 ===
+..................
+Len=19   @[  0,  9]  d_th= 1.65 gap=0.005051 gain= 0.18278 (27 )==>   1   5   0   5   0   0  /  11   0   0  26   1   0 
+
+=== Node 15 ===
+..................
+Len=37   @[  1,  0]  d_th= 5.69 gap=0.006226 gain= 0.45451 (3  )==>   0   8   0   5   0   0  /   0   0   0   3   2   5 
+
+=== Node 28 ===
+..................
+Len=23   @[  1,  9]  d_th= 2.51 gap=0.003497 gain= 0.68901 (1  )==>   1   5   0   0   0   0  /   0   0   0   5   0   0 
+
+=== Node 29 ===
+..................
+Len=7    @[  0, 44]  d_th= 1.24 gap=0.002694 gain= 0.18993 (28 )==>   6   0   0  26   1   0  /   5   0   0   0   0   0 
+
+=== Node 30 ===
+..................
+Len=15   @[  1, 39]  d_th= 1.70 gap=0.034718 gain= 0.42478 (5  )==>   0   8   0   1   0   0  /   0   0   0   4   0   0 
+
+=== Node 31 ===
+..................
+Len=39   @[  1, 31]  d_th= 6.32 gap=0.077426 gain= 0.69315 (0  )==>   0   0   0   0   0   5  /   0   0   0   3   2   0 
+
+=== Node 56 ===
+..................
+Len=37   @[  0, 29]  d_th= 2.52 gap=0.414338 gain= 0.45056 (4  )==>   1   0   0   0   0   0  /   0   5   0   0   0   0 
+
+=== Node 58 ===
+..................
+Len=7    @[  0, 19]  d_th= 0.61 gap=0.000808 gain= 0.18448 (1  )==>   0   0   0  17   0   0  /   6   0   0   9   1   0 
+
+=== Node 60 ===
+..................
+Len=39   @[  5, 15]  d_th= 1.39 gap=0.222345 gain= 0.34883 (7  )==>   0   0   0   1   0   0  /   0   8   0   0   0   0 
+
+=== Node 63 ===
+..................
+Len=23   @[  0, 12]  d_th= 4.28 gap=0.139271 gain= 0.67301 (1  )==>   0   0   0   3   0   0  /   0   0   0   0   2   0 
+
+num_class=6, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.29 sec
+  Time Rand Project =     1.71 sec
+  Time Score Matrix =     0.22 sec
+  Time Compute Gain =     0.65 sec
+Running  Time for this Shapelet=     3.01 sec <<
+
+
+Total Running  Time =     3.01 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'manhattan', 0, 0, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP07_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP07_acc.txt']
+0
+num_class=6, num_obj=400  distance=manhattan CID=false normalize=false ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP07_tree.txt  ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP07_acc.txt
+
+==> Tree Size = 128
+
+; accuracy= 71.000   Correct:284 , Wrong: 116
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 207    0    0    0    4    0 
+;   p  5 |   0   44   18   18    5    1 
+;   p  6 |   0   12    8    1    5    0 
+;   p  4 |   0   19    3    6    2   11 
+;   p  7 |   0    2    0    0    2    0 
+;   p  3 |   6    5    1    3    0   17 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP08_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP08_time.txt']
+
+rand seed=1501824069
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP08_tree.txt  time_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP08_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [0,4]  [1,6]  [2,8]  [3,5]  
+
+=== Node 1 ===
+..................
+Len=13   @[  2, 44]  d_th= 0.71 gap=0.016648 gain= 0.59690 (53 )==>   0   0  42   0   0   1  /  19  13   0  39  18   7 
+
+=== Node 3 ===
+..................
+Len=35   @[ 19, 35]  d_th= 6.49 gap=0.004673 gain= 0.27596 (38 )==>   9   0   0   4  16   0  /  10  13   0  35   2   7 
+
+=== Node 6 ===
+..................
+Len=9    @[  0, 21]  d_th= 1.89 gap=0.001731 gain= 0.56356 (1  )==>   0   0   0   0  15   0  /   9   0   0   4   1   0 
+
+=== Node 7 ===
+..................
+Len=23   @[  0, 33]  d_th= 5.38 gap=0.002958 gain= 0.20778 (21 )==>  10   6   0  27   1   0  /   0   7   0   8   1   7 
+
+=== Node 13 ===
+..................
+Len=7    @[  0, 44]  d_th= 0.49 gap=0.007631 gain= 0.42751 (4  )==>   1   0   0   4   0   0  /   8   0   0   0   1   0 
+
+=== Node 14 ===
+..................
+Len=19   @[  0,  9]  d_th= 1.65 gap=0.005051 gain= 0.21804 (20 )==>   1   6   0   5   0   0  /   9   0   0  22   1   0 
+
+=== Node 15 ===
+..................
+Len=37   @[  1,  0]  d_th= 5.69 gap=0.006226 gain= 0.45111 (1  )==>   0   7   0   4   0   0  /   0   0   0   4   1   7 
+
+=== Node 26 ===
+..................
+Len=39   @[  0,  4]  d_th= 2.04 gap=0.326783 gain= 0.50040 (3  )==>   1   0   0   0   0   0  /   0   0   0   4   0   0 
+
+=== Node 27 ===
+..................
+Len=39   @[  0,  2]  d_th= 1.81 gap=0.290567 gain= 0.34883 (7  )==>   0   0   0   0   1   0  /   8   0   0   0   0   0 
+
+=== Node 28 ===
+..................
+Len=19   @[  0, 12]  d_th= 1.85 gap=0.016269 gain= 0.46787 (0  )==>   1   5   0   0   0   0  /   0   1   0   5   0   0 
+
+=== Node 29 ===
+..................
+Len=11   @[  2, 17]  d_th= 1.62 gap=0.011665 gain= 0.26117 (2  )==>   0   0   0  15   0   0  /   9   0   0   7   1   0 
+
+=== Node 30 ===
+..................
+Len=19   @[  0, 16]  d_th= 1.89 gap=0.004027 gain= 0.42803 (1  )==>   0   1   0   4   0   0  /   0   6   0   0   0   0 
+
+=== Node 31 ===
+..................
+Len=15   @[  2, 18]  d_th= 2.86 gap=0.018105 gain= 0.67919 (2  )==>   0   0   0   4   1   0  /   0   0   0   0   0   7 
+
+=== Node 56 ===
+..................
+Len=35   @[  0, 36]  d_th= 2.43 gap=0.409995 gain= 0.45056 (4  )==>   1   0   0   0   0   0  /   0   5   0   0   0   0 
+
+=== Node 57 ===
+..................
+Len=33   @[  0, 29]  d_th= 2.64 gap=0.458802 gain= 0.45056 (4  )==>   0   1   0   0   0   0  /   0   0   0   5   0   0 
+
+=== Node 59 ===
+..................
+Len=37   @[  0, 25]  d_th= 5.16 gap=0.001361 gain= 0.40290 (5  )==>   0   0   0   5   1   0  /   9   0   0   2   0   0 
+
+=== Node 60 ===
+..................
+Len=37   @[  4, 16]  d_th= 2.33 gap=0.383617 gain= 0.50040 (3  )==>   0   1   0   0   0   0  /   0   0   0   4   0   0 
+
+=== Node 62 ===
+..................
+Len=29   @[  1, 28]  d_th= 3.38 gap=0.628287 gain= 0.50040 (3  )==>   0   0   0   0   1   0  /   0   0   0   4   0   0 
+
+num_class=6, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.27 sec
+  Time Rand Project =     1.60 sec
+  Time Score Matrix =     0.20 sec
+  Time Compute Gain =     0.62 sec
+Running  Time for this Shapelet=     2.83 sec <<
+
+
+Total Running  Time =     2.83 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'manhattan', 0, 0, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP08_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP08_acc.txt']
+0
+num_class=6, num_obj=400  distance=manhattan CID=false normalize=false ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP08_tree.txt  ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP08_acc.txt
+
+==> Tree Size = 126
+
+; accuracy= 67.750   Correct:271 , Wrong: 129
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 199    0    0    0    3    0 
+;   p  5 |   1   34   21    6    8    3 
+;   p  6 |   0   10    5    0    1    0 
+;   p  4 |   0   31    4   13    3    9 
+;   p  7 |  13    3    0    2    3    0 
+;   p  3 |   0    4    0    7    0   17 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP09_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP09_time.txt']
+
+rand seed=1501824072
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP09_tree.txt  time_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP09_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [0,4]  [1,6]  [2,8]  [3,5]  
+
+=== Node 1 ===
+..................
+Len=17   @[  2, 43]  d_th= 0.96 gap=0.029010 gain= 0.59690 (53 )==>   0   0  42   0   0   1  /  19  13   0  39  18   7 
+
+=== Node 3 ===
+..................
+Len=21   @[ 55, 47]  d_th= 4.62 gap=0.030923 gain= 0.26501 (10 )==>  16   2   0  17  18   0  /   3  11   0  22   0   7 
+
+=== Node 6 ===
+..................
+Len=7    @[  0, 23]  d_th= 0.76 gap=0.000932 gain= 0.37664 (3  )==>  14   1   0  13   0   0  /   2   1   0   4  18   0 
+
+=== Node 7 ===
+..................
+Len=13   @[ 11, 26]  d_th= 1.67 gap=0.001508 gain= 0.21038 (11 )==>   3   8   0  16   0   0  /   0   3   0   6   0   7 
+
+=== Node 12 ===
+..................
+Len=13   @[  2, 14]  d_th= 0.89 gap=0.000347 gain= 0.24189 (14 )==>   0   1   0   6   0   0  /  14   0   0   7   0   0 
+
+=== Node 13 ===
+..................
+Len=13   @[ 23, 56]  d_th= 3.16 gap=0.015215 gain= 0.38302 (11 )==>   1   0   0   0  17   0  /   1   1   0   4   1   0 
+
+=== Node 14 ===
+..................
+Len=7    @[  0, 44]  d_th= 0.40 gap=0.016889 gain= 0.28094 (19 )==>   3   0   0   1   0   0  /   0   8   0  15   0   0 
+
+=== Node 15 ===
+..................
+Len=39   @[  1,  2]  d_th= 4.40 gap=0.020916 gain= 0.48258 (10 )==>   0   3   0   0   0   0  /   0   0   0   6   0   7 
+
+=== Node 24 ===
+..................
+Len=35   @[  0, 23]  d_th= 1.43 gap=0.241591 gain= 0.41012 (5  )==>   0   1   0   0   0   0  /   0   0   0   6   0   0 
+
+=== Node 25 ===
+..................
+Len=29   @[  0, 22]  d_th= 4.45 gap=0.005019 gain= 0.17442 (7  )==>   7   0   0   0   0   0  /   7   0   0   7   0   0 
+
+=== Node 27 ===
+..................
+Len=7    @[  0, 22]  d_th= 0.44 gap=0.002010 gain= 0.68291 (1  )==>   1   1   0   0   1   0  /   0   0   0   4   0   0 
+
+=== Node 28 ===
+..................
+Len=39   @[  0,  0]  d_th= 1.46 gap=0.233233 gain= 0.56234 (2  )==>   0   0   0   1   0   0  /   3   0   0   0   0   0 
+
+=== Node 29 ===
+..................
+Len=5    @[  0, 12]  d_th= 0.31 gap=0.001402 gain= 0.22722 (3  )==>   0   1   0  12   0   0  /   0   7   0   3   0   0 
+
+=== Node 31 ===
+..................
+Len=25   @[  1, 35]  d_th= 4.11 gap=0.027870 gain= 0.45833 (3  )==>   0   0   0   5   0   0  /   0   0   0   1   0   7 
+
+=== Node 51 ===
+..................
+Len=33   @[  9, 35]  d_th= 5.53 gap=0.001887 gain= 0.28303 (0  )==>   6   0   0   1   0   0  /   1   0   0   6   0   0 
+
+=== Node 54 ===
+..................
+Len=35   @[  0,  2]  d_th= 5.28 gap=0.238544 gain= 0.63651 (1  )==>   0   1   0   0   1   0  /   1   0   0   0   0   0 
+
+=== Node 59 ===
+..................
+Len=33   @[  4, 13]  d_th= 4.50 gap=0.018907 gain= 0.38593 (2  )==>   0   6   0   0   0   0  /   0   1   0   3   0   0 
+
+=== Node 63 ===
+..................
+Len=39   @[  0, 13]  d_th= 2.95 gap=0.472951 gain= 0.37677 (6  )==>   0   0   0   1   0   0  /   0   0   0   0   0   7 
+
+num_class=6, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.25 sec
+  Time Rand Project =     1.38 sec
+  Time Score Matrix =     0.17 sec
+  Time Compute Gain =     0.57 sec
+Running  Time for this Shapelet=     2.48 sec <<
+
+
+Total Running  Time =     2.48 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'manhattan', 0, 0, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP09_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP09_acc.txt']
+0
+num_class=6, num_obj=400  distance=manhattan CID=false normalize=false ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP09_tree.txt  ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP09_acc.txt
+
+==> Tree Size = 128
+
+; accuracy= 69.250   Correct:277 , Wrong: 123
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 202    0    0    0    4    0 
+;   p  5 |   0   46   13   11    8    5 
+;   p  6 |   0   12    1    3    1    0 
+;   p  4 |   0   19    8    6    1    6 
+;   p  7 |  11    4    8    1    4    0 
+;   p  3 |   0    1    0    7    0   18 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TRAIN', 6, 139, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP10_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP10_time.txt']
+
+rand seed=1501824074
+num_class=6, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP10_tree.txt  time_file=./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP10_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [5,7]  [4,3]  [0,4]  [1,6]  [2,8]  [3,5]  
+
+=== Node 1 ===
+..................
+Len=17   @[  1, 50]  d_th= 5.69 gap=0.200235 gain= 0.59158 (49 )==>  19  13   0  39  18   5  /   0   0  42   0   0   3 
+
+=== Node 2 ===
+..................
+Len=19   @[ 92, 49]  d_th= 4.51 gap=0.000991 gain= 0.28764 (48 )==>   7   0   0   1  15   0  /  12  13   0  38   3   5 
+
+=== Node 4 ===
+..................
+Len=9    @[  0, 19]  d_th= 1.24 gap=0.001628 gain= 0.42852 (3  )==>   7   0   0   1   2   0  /   0   0   0   0  13   0 
+
+=== Node 5 ===
+..................
+Len=21   @[  0, 36]  d_th= 4.93 gap=0.003578 gain= 0.20547 (25 )==>  12   5   0  30   1   0  /   0   8   0   8   2   5 
+
+=== Node 8 ===
+..................
+Len=19   @[  0,  3]  d_th= 1.97 gap=0.046963 gain= 0.61086 (4  )==>   0   0   0   1   2   0  /   7   0   0   0   0   0 
+
+=== Node 10 ===
+..................
+Len=19   @[  0,  9]  d_th= 1.65 gap=0.005051 gain= 0.18496 (26 )==>   1   5   0   5   0   0  /  11   0   0  25   1   0 
+
+=== Node 11 ===
+..................
+Len=37   @[  1,  0]  d_th= 5.69 gap=0.006226 gain= 0.45451 (3  )==>   0   8   0   5   0   0  /   0   0   0   3   2   5 
+
+=== Node 16 ===
+..................
+Len=37   @[  0, 19]  d_th= 2.30 gap=0.377622 gain= 0.63651 (1  )==>   0   0   0   1   0   0  /   0   0   0   0   2   0 
+
+=== Node 20 ===
+..................
+Len=23   @[  1,  9]  d_th= 2.51 gap=0.003497 gain= 0.68901 (1  )==>   1   5   0   0   0   0  /   0   0   0   5   0   0 
+
+=== Node 21 ===
+..................
+Len=9    @[  0, 39]  d_th= 0.66 gap=0.012532 gain= 0.20116 (27 )==>   4   0   0   0   1   0  /   7   0   0  25   0   0 
+
+=== Node 22 ===
+..................
+Len=15   @[  1, 39]  d_th= 1.70 gap=0.034718 gain= 0.42478 (5  )==>   0   8   0   1   0   0  /   0   0   0   4   0   0 
+
+=== Node 23 ===
+..................
+Len=39   @[  1, 31]  d_th= 6.32 gap=0.077426 gain= 0.69315 (0  )==>   0   0   0   0   0   5  /   0   0   0   3   2   0 
+
+=== Node 40 ===
+..................
+Len=31   @[  0, 34]  d_th= 2.11 gap=0.378578 gain= 0.45056 (4  )==>   1   0   0   0   0   0  /   0   5   0   0   0   0 
+
+=== Node 42 ===
+..................
+Len=31   @[  0,  1]  d_th= 2.15 gap=0.386603 gain= 0.50040 (3  )==>   0   0   0   0   1   0  /   4   0   0   0   0   0 
+
+=== Node 43 ===
+..................
+Len=11   @[  0, 12]  d_th= 1.97 gap=0.007090 gain= 0.18266 (0  )==>   0   0   0  16   0   0  /   7   0   0   9   0   0 
+
+=== Node 44 ===
+..................
+Len=39   @[  5, 28]  d_th= 1.35 gap=0.216203 gain= 0.34883 (7  )==>   0   0   0   1   0   0  /   0   8   0   0   0   0 
+
+=== Node 47 ===
+..................
+Len=13   @[  0, 61]  d_th= 1.89 gap=0.082503 gain= 0.67301 (1  )==>   0   0   0   3   0   0  /   0   0   0   0   2   0 
+
+num_class=6, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.29 sec
+  Time Rand Project =     1.66 sec
+  Time Score Matrix =     0.22 sec
+  Time Compute Gain =     0.66 sec
+Running  Time for this Shapelet=     2.98 sec <<
+
+
+Total Running  Time =     2.98 sec <<
+
+
+['/home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/DistalPhalanxTW_TEST', 6, 400, 'manhattan', 0, 0, './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP10_tree.txt', './output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP10_acc.txt']
+0
+num_class=6, num_obj=400  distance=manhattan CID=false normalize=false ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP10_tree.txt  ./output/DistalPhalanxTW/DistalPhalanxTW_manhattan_unnormed_NOCID_REP10_acc.txt
+
+==> Tree Size = 96
+
+; accuracy= 75.250   Correct:301 , Wrong: 99
+
+
+;   == Confusion Matrix ==
+;   real |   8    5    6    4    7    3 
+;   -----+------------------------------------
+;   p  8 | 213    0    0    0    4    0 
+;   p  5 |   0   48   16   13    6    2 
+;   p  6 |   0   12    8    1    5    0 
+;   p  4 |   0   15    5    7    1    4 
+;   p  7 |   0    2    0    0    2    0 
+;   p  3 |   0    5    1    7    0   23 
+
+
+================ Replication:  10 Finished ================

@@ -1,0 +1,69 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/RefrigerationDevices_TRAIN_CV1', 3, 186, 360, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_euclidean_normed_CID_tree.txt', './cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_euclidean_normed_CID_time.txt']
+
+rand seed=1502304187
+num_class=3, num_obj=186, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_euclidean_normed_CID_tree.txt  time_file=./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=5    @[  0, 48]  d_th= 0.00 gap=0.000000 gain= 0.31579 (10 )==>   1  32  55  /  61  30   7 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=5    @[  0, 48]  d_th= 0.00 gap=0.000000 gain= 0.45117 (0  )==>   0  28  55  /  53  30   0 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=7    @[  9,  2]  d_th= 1.50 gap=0.568527 gain= 0.68814 (2  )==>   0   4   7  /   9   0   0 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=5    @[  0, 48]  d_th= 0.00 gap=0.000000 gain= 0.45117 (0  )==>   0  28  55  /  53  30   0 
+
+=== Node 5 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 6 ===
+..................................................................................................................................................................................
+Len=11   @[  4,  2]  d_th= 1.16 gap=0.350390 gain= 0.65548 (3  )==>   0   0   7  /   0   4   0 
+
+=== Node 8 ===
+..................................................................................................................................................................................
+Len=5    @[  0, 48]  d_th= 0.00 gap=0.000000 gain= 0.45117 (0  )==>   0  28  55  /  53  30   0 
+
+=== Node 9 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 16 ===
+..................................................................................................................................................................................
+Len=5    @[  0, 48]  d_th= 0.00 gap=0.000000 gain= 0.45117 (0  )==>   0  28  55  /  53  30   0 
+
+=== Node 17 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=17 
+
+num_class=3, num_obj=0, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    36.41 sec
+  Time Rand Project =   269.22 sec
+  Time Score Matrix =    17.69 sec
+  Time Compute Gain =  1437.16 sec
+Running  Time for this Shapelet=  1778.04 sec <<
+
+
+Total Running  Time =  1778.04 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/RefrigerationDevices_TRAIN_CV2', 3, 189, 'euclidean', 1, 1, './cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_euclidean_normed_CID_tree.txt', './cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_euclidean_normed_CID_acc.txt']
+; accuracy= 35.979   Correct:68 , Wrong: 121
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  10    0    3 
+;   p  2 |   6    0    2 
+;   p  3 |  47   63   58 
+
+num_class=3, num_obj=189  distance=euclidean CID=true normalize=true ./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_euclidean_normed_CID_tree.txt  ./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 34
+

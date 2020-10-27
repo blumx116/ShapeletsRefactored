@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV1', 2, 28, 117, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/Wine_CV1/Wine_CV1_manhattan_normed_CID_tree.txt', './cv_output/Wine_CV1/Wine_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502274829
+num_class=2, num_obj=28, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Wine_CV1/Wine_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/Wine_CV1/Wine_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................
+Len=11   @[ 15, 65]  d_th= 0.31 gap=0.000231 gain= 0.56193 (0  )==>   1  13  /  14   0 
+
+num_class=2, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.08 sec
+  Time Rand Project =     0.28 sec
+  Time Score Matrix =     0.02 sec
+  Time Compute Gain =     2.27 sec
+Running  Time for this Shapelet=     2.68 sec <<
+
+
+Total Running  Time =     2.68 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV2', 2, 29, 'manhattan', 1, 1, './cv_output/Wine_CV1/Wine_CV1_manhattan_normed_CID_tree.txt', './cv_output/Wine_CV1/Wine_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 79.310   Correct:23 , Wrong: 6
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  13    4 
+;   p  2 |   2   10 
+
+num_class=2, num_obj=29  distance=manhattan CID=true normalize=true ./cv_output/Wine_CV1/Wine_CV1_manhattan_normed_CID_tree.txt  ./cv_output/Wine_CV1/Wine_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 4
+

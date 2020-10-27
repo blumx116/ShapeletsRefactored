@@ -1,0 +1,76 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ChlorineConcentration_TRAIN_CV1', 3, 233, 83, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502275060
+num_class=3, num_obj=233, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+........................................
+Len=39   @[152,126]  d_th=16.53 gap=0.011699 gain= 0.06939 (201)==>  43  45 129  /  14   0   2 
+
+=== Node 2 ===
+........................................
+Len=9    @[145,123]  d_th= 2.96 gap=0.001736 gain= 0.05267 (147)==>   4   0  31  /  39  45  98 
+
+=== Node 3 ===
+........................................
+Len=67   @[  0,  3]  d_th=26.01 gap=0.029905 gain= 0.20348 (8  )==>  12   0   0  /   2   0   2 
+
+=== Node 4 ===
+........................................
+Len=51   @[  2, 97]  d_th= 5.84 gap=0.195194 gain= 0.13982 (31 )==>   2   0   0  /   2   0  31 
+
+=== Node 5 ===
+........................................
+Len=13   @[ 23, 92]  d_th= 1.53 gap=0.004852 gain= 0.05210 (138)==>  11   0  11  /  28  45  87 
+
+=== Node 7 ===
+........................................
+Len=9    @[  0,  7]  d_th= 1.12 gap=0.030048 gain= 0.69315 (0  )==>   2   0   0  /   0   0   2 
+
+=== Node 10 ===
+........................................
+Len=5    @[  0, 69]  d_th= 0.07 gap=0.002387 gain= 0.19146 (12 )==>   5   0   0  /   6   0  11 
+
+=== Node 11 ===
+........................................
+Len=11   @[ 12,  2]  d_th= 1.66 gap=0.000116 gain= 0.06817 (16 )==>   5  32  51  /  23  13  36 
+
+=== Node 21 ===
+........................................
+Len=35   @[  2,126]  d_th= 2.96 gap=0.029773 gain= 0.22136 (11 )==>   3   0   0  /   3   0  11 
+
+=== Node 22 ===
+........................................
+Len=15   @[ 18, 49]  d_th= 2.86 gap=0.001508 gain= 0.10873 (30 )==>   0  28  31  /   5   4  20 
+
+=== Node 23 ===
+........................................
+Len=17   @[ 61,119]  d_th= 7.34 gap=0.003893 gain= 0.13564 (12 )==>   5   9  28  /  18   4   8 
+
+num_class=3, num_obj=72, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.94 sec
+  Time Rand Project =    26.89 sec
+  Time Score Matrix =     2.05 sec
+  Time Compute Gain =    18.39 sec
+Running  Time for this Shapelet=    52.12 sec <<
+
+
+Total Running  Time =    52.12 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ChlorineConcentration_TRAIN_CV2', 3, 234, 'manhattan', 0, 1, './cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_NOCID_tree.txt', './cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_NOCID_acc.txt']
+; accuracy= 54.701   Correct:128 , Wrong: 106
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  15    6   18 
+;   p  2 |   0    0    0 
+;   p  3 |  42   40  113 
+
+num_class=3, num_obj=234  distance=manhattan CID=false normalize=true ./cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_NOCID_tree.txt  ./cv_output/ChlorineConcentration_CV1/ChlorineConcentration_CV1_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 48
+

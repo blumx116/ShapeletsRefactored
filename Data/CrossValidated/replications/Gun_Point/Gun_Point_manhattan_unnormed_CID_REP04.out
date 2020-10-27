@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN', 2, 50, 75, 1, 2, 10, 'manhattan', 1, 0, 10, './replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP04_tree.txt', './replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP04_time.txt']
+
+rand seed=1502942390
+num_class=2, num_obj=50, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP04_tree.txt  time_file=./replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP04_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,2]  
+
+=== Node 1 ===
+....................................
+Len=15   @[  2,100]  d_th= 2.44 gap=0.001923 gain= 0.38350 (14 )==>   0  18  /  26   6 
+
+=== Node 3 ===
+....................................
+Len=75   @[  7,  6]  d_th=19.61 gap=0.187108 gain= 0.48258 (20 )==>   0   6  /  26   0 
+
+num_class=2, num_obj=32, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.11 sec
+  Time Rand Project =     0.54 sec
+  Time Score Matrix =     0.06 sec
+  Time Compute Gain =     1.38 sec
+Running  Time for this Shapelet=     2.17 sec <<
+
+
+Total Running  Time =     2.17 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TEST', 2, 150, 'manhattan', 1, 0, './replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP04_tree.txt', './replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP04_acc.txt']
+; accuracy= 90.000   Correct:135 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  75   14 
+;   p  2 |   1   60 
+
+num_class=2, num_obj=150  distance=manhattan CID=true normalize=false ./replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP04_tree.txt  ./replications/Gun_Point/Gun_Point_manhattan_unnormed_CID_REP04_acc.txt
+
+==> Tree Size = 8
+

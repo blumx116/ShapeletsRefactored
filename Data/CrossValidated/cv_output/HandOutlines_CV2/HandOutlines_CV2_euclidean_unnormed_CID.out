@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/HandOutlines_TRAIN_CV2', 2, 186, 1355, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/HandOutlines_CV2/HandOutlines_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/HandOutlines_CV2/HandOutlines_CV2_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502371360
+num_class=2, num_obj=186, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/HandOutlines_CV2/HandOutlines_CV2_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/HandOutlines_CV2/HandOutlines_CV2_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=739  @[121,263]  d_th= 5.78 gap=0.001247 gain= 0.36371 (72 )==>  13 116  /  54   3 
+
+=== Node 2 ===
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Len=73   @[  0,449]  d_th= 0.13 gap=0.000134 gain= 0.11856 (117)==>   6   0  /   7 116 
+
+num_class=2, num_obj=129, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    70.53 sec
+  Time Rand Project =    75.99 sec
+  Time Score Matrix =     8.74 sec
+  Time Compute Gain =  8358.21 sec
+Running  Time for this Shapelet=  8522.18 sec <<
+
+
+Total Running  Time =  8522.18 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/HandOutlines_TRAIN_CV1', 2, 184, 'euclidean', 1, 0, './cv_output/HandOutlines_CV2/HandOutlines_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/HandOutlines_CV2/HandOutlines_CV2_euclidean_unnormed_CID_acc.txt']
+; accuracy= 90.761   Correct:167 , Wrong: 17
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  55    6 
+;   p  1 |  11  112 
+
+num_class=2, num_obj=184  distance=euclidean CID=true normalize=false ./cv_output/HandOutlines_CV2/HandOutlines_CV2_euclidean_unnormed_CID_tree.txt  ./cv_output/HandOutlines_CV2/HandOutlines_CV2_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 6
+

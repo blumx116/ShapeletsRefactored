@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1', 2, 185, 118, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_normed_CID_tree.txt', './cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502275271
+num_class=2, num_obj=185, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................
+Len=35   @[  0, 99]  d_th= 6.02 gap=0.002926 gain= 0.45339 (45 )==>  63   7  /   3 112 
+
+num_class=2, num_obj=185, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.74 sec
+  Time Rand Project =     4.79 sec
+  Time Score Matrix =     0.54 sec
+  Time Compute Gain =    14.12 sec
+Running  Time for this Shapelet=    20.60 sec <<
+
+
+Total Running  Time =    20.60 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV2', 2, 185, 'manhattan', 1, 1, './cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_normed_CID_tree.txt', './cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 66.486   Correct:123 , Wrong: 62
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  45   41 
+;   p  2 |  21   78 
+
+num_class=2, num_obj=185  distance=manhattan CID=true normalize=true ./cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_normed_CID_tree.txt  ./cv_output/Strawberry_CV1/Strawberry_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 4
+

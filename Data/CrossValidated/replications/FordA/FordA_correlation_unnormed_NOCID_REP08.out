@@ -1,0 +1,83 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FordA_TRAIN', 2, 1320, 250, 1, 2, 10, 'correlation', 0, 0, 10, './replications/FordA/FordA_correlation_unnormed_NOCID_REP08_tree.txt', './replications/FordA/FordA_correlation_unnormed_NOCID_REP08_time.txt']
+
+rand seed=1503409133
+num_class=2, num_obj=1320, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/FordA/FordA_correlation_unnormed_NOCID_REP08_tree.txt  time_file=./replications/FordA/FordA_correlation_unnormed_NOCID_REP08_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=23   @[  2,390]  d_th= 0.04 gap=0.000002 gain= 0.13521 (220)==> 233 537  / 448 102 
+
+=== Node 2 ===
+...........................................................................................................................
+Len=45   @[203,184]  d_th= 0.11 gap=0.000018 gain= 0.13853 (326)==>  80 468  / 153  69 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=185  @[546,279]  d_th= 0.36 gap=0.000108 gain= 0.09201 (414)==>  21  47  / 427  55 
+
+=== Node 4 ===
+...........................................................................................................................
+Len=173  @[ 55,113]  d_th= 0.29 gap=0.000002 gain= 0.08436 (264)==>  58  84  /  22 384 
+
+=== Node 5 ===
+...........................................................................................................................
+Len=201  @[ 25,  0]  d_th= 0.42 gap=0.000012 gain= 0.11006 (114)==>  16  38  / 137  31 
+
+=== Node 6 ===
+...........................................................................................................................
+Len=63   @[  4,249]  d_th= 0.02 gap=0.000075 gain= 0.20169 (34 )==>  14   3  /   7  44 
+
+=== Node 7 ===
+...........................................................................................................................
+Len=19   @[  0,144]  d_th= 0.01 gap=0.000001 gain= 0.05977 (112)==> 242  55  / 185   0 
+
+=== Node 8 ===
+...........................................................................................................................
+Len=99   @[104, 80]  d_th= 0.08 gap=0.000034 gain= 0.12310 (72 )==>  29   6  /  29  78 
+
+=== Node 10 ===
+...........................................................................................................................
+Len=49   @[ 14,157]  d_th= 0.25 gap=0.000141 gain= 0.19047 (34 )==>   7  37  /   9   1 
+
+=== Node 11 ===
+...........................................................................................................................
+Len=29   @[162, 88]  d_th= 0.05 gap=0.000137 gain= 0.11635 (60 )==>  29  25  / 108   6 
+
+=== Node 12 ===
+...........................................................................................................................
+Len=33   @[  1, 10]  d_th= 0.01 gap=0.000295 gain= 0.46600 (11 )==>  14   0  /   0   3 
+
+=== Node 13 ===
+...........................................................................................................................
+Len=245  @[ 27, 16]  d_th= 0.39 gap=0.000776 gain= 0.30647 (33 )==>   0  42  /   7   2 
+
+=== Node 14 ===
+...........................................................................................................................
+Len=153  @[ 28,136]  d_th= 0.19 gap=0.000002 gain= 0.08231 (21 )==> 152   7  /  90  48 
+
+num_class=2, num_obj=297, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =   136.49 sec
+  Time Rand Project =  1898.48 sec
+  Time Score Matrix =   129.90 sec
+  Time Compute Gain =  1916.87 sec
+Running  Time for this Shapelet=  4203.89 sec <<
+
+
+Total Running  Time =  4203.89 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FordA_TEST', 2, 3601, 'correlation', 0, 0, './replications/FordA/FordA_correlation_unnormed_NOCID_REP08_tree.txt', './replications/FordA/FordA_correlation_unnormed_NOCID_REP08_acc.txt']
+; accuracy= 82.338   Correct:2965 , Wrong: 636
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |1576  366 
+;   p  1 | 270 1389 
+
+num_class=2, num_obj=3601  distance=correlation CID=false normalize=false ./replications/FordA/FordA_correlation_unnormed_NOCID_REP08_tree.txt  ./replications/FordA/FordA_correlation_unnormed_NOCID_REP08_acc.txt
+
+==> Tree Size = 30
+

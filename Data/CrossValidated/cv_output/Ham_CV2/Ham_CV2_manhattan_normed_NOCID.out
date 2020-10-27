@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV2', 2, 55, 216, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/Ham_CV2/Ham_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/Ham_CV2/Ham_CV2_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502279569
+num_class=2, num_obj=55, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Ham_CV2/Ham_CV2_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/Ham_CV2/Ham_CV2_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=183  @[ 42, 75]  d_th=54.99 gap=0.021530 gain= 0.28227 (19 )==>   0  18  /  26  11 
+
+=== Node 3 ===
+..........................................................................................................
+Len=29   @[  3,286]  d_th= 6.81 gap=0.016235 gain= 0.34787 (21 )==>  26   3  /   0   8 
+
+=== Node 6 ===
+..........................................................................................................
+Len=205  @[ 26, 68]  d_th=54.95 gap=0.090511 gain= 0.33259 (23 )==>   0   3  /  26   0 
+
+num_class=2, num_obj=29, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.22 sec
+  Time Rand Project =    18.80 sec
+  Time Score Matrix =     1.43 sec
+  Time Compute Gain =    32.02 sec
+Running  Time for this Shapelet=    55.92 sec <<
+
+
+Total Running  Time =    55.92 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV1', 2, 54, 'manhattan', 0, 1, './cv_output/Ham_CV2/Ham_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/Ham_CV2/Ham_CV2_manhattan_normed_NOCID_acc.txt']
+; accuracy= 53.704   Correct:29 , Wrong: 25
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  13   12 
+;   p  2 |  13   16 
+
+num_class=2, num_obj=54  distance=manhattan CID=false normalize=true ./cv_output/Ham_CV2/Ham_CV2_manhattan_normed_NOCID_tree.txt  ./cv_output/Ham_CV2/Ham_CV2_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 14
+

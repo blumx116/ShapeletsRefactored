@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1502274201, rand()=2090138692, rand()=489307814
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1 2 33 12 1 2 10 euclidean 1 0 10 ./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_CID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 30 
+NonL  1    --      1   17    5   0.8586 ==>  13   0  /   4  16 
+Leaf  2     1    
+NonL  3    --      6    5    9   1.8545 ==>   0  12  /   4   4 
+Leaf  6     2    
+NonL  7    --      2   13    7   2.0049 ==>   4   1  /   0   3 
+NonL 14    --      4   14    7   0.7070 ==>   0   1  /   4   0 
+Leaf 15     2    
+Leaf 28     2    
+Leaf 29     1    
+
+;Shapelet id   <data>
+Shapelet   1   0.308320  0.257290  1.099300  1.048300  0.691070 
+Shapelet   3  -1.291200 -1.750600 -0.729610  0.342470  1.720900  1.823000  1.771900  1.159300  0.801930 
+Shapelet   7  -0.100260 -0.218610 -0.297510 -0.258060  0.885940  1.517100  1.714400 
+Shapelet  14  -0.081568 -0.311880 -0.542190 -0.254300 -0.023991  0.379050  0.954830 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1 2 33 12 1 2 10 euclidean 1 0 10 ./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_CID_time.txt
+; time =>    0.025   0.002   0.010   0.001   0.011 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2 2 34 euclidean 1 0 ./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_CID_acc.txt
+; accuracy= 76.471   Correct:26 , Wrong: 8
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  14    5 
+;   p  2 |   3   12 
+

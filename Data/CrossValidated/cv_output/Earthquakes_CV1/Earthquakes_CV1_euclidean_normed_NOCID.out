@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Earthquakes_TRAIN_CV1', 2, 69, 256, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502323586
+num_class=2, num_obj=69, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=9    @[  0, 13]  d_th= 0.00 gap=0.000000 gain= 0.20693 (1  )==>  18  17  /  34   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=9    @[  0, 13]  d_th= 0.00 gap=0.000000 gain= 0.21576 (0  )==>  17  17  /  34   0 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=9    @[  0, 13]  d_th= 0.00 gap=0.000000 gain= 0.21576 (0  )==>  17  17  /  34   0 
+
+=== Node 8 ===
+..............................................................................................................................
+Len=7    @[  0,  1]  d_th= 0.00 gap=0.000000 gain= 0.21576 (0  )==>  17  17  /  34   0 
+
+num_class=2, num_obj=68, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.56 sec
+  Time Rand Project =    73.69 sec
+  Time Score Matrix =     4.84 sec
+  Time Compute Gain =   100.41 sec
+Running  Time for this Shapelet=   191.77 sec <<
+
+
+Total Running  Time =   191.77 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Earthquakes_TRAIN_CV2', 2, 70, 'euclidean', 0, 1, './cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_normed_NOCID_acc.txt']
+; accuracy= 74.286   Correct:52 , Wrong: 18
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  52   18 
+;   p  1 |   0    0 
+
+num_class=2, num_obj=70  distance=euclidean CID=false normalize=true ./cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_normed_NOCID_tree.txt  ./cv_output/Earthquakes_CV1/Earthquakes_CV1_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 18
+

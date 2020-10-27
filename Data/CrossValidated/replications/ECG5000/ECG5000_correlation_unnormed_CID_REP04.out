@@ -1,0 +1,46 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'correlation', 1, 0, 10, './replications/ECG5000/ECG5000_correlation_unnormed_CID_REP04_tree.txt', './replications/ECG5000/ECG5000_correlation_unnormed_CID_REP04_time.txt']
+
+rand seed=1503365679
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/ECG5000/ECG5000_correlation_unnormed_CID_REP04_tree.txt  time_file=./replications/ECG5000/ECG5000_correlation_unnormed_CID_REP04_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=49   @[300, 10]  d_th= 0.10 gap=0.000423 gain= 0.56742 (110)==>   1 169   8  17   0  / 291   8   2   2   2 
+
+=== Node 2 ===
+.................................
+Len=55   @[  5,  6]  d_th= 0.07 gap=0.000204 gain= 0.18703 (177)==>   0 169   0  17   0  /   1   0   8   0   0 
+
+=== Node 5 ===
+.................................
+Len=61   @[  1, 35]  d_th= 1.22 gap=0.122457 gain= 0.34883 (7  )==>   0   0   8   0   0  /   1   0   0   0   0 
+
+num_class=5, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.30 sec
+  Time Rand Project =    13.19 sec
+  Time Score Matrix =     1.41 sec
+  Time Compute Gain =    15.24 sec
+Running  Time for this Shapelet=    32.30 sec <<
+
+
+Total Running  Time =    32.30 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'correlation', 1, 0, './replications/ECG5000/ECG5000_correlation_unnormed_CID_REP04_tree.txt', './replications/ECG5000/ECG5000_correlation_unnormed_CID_REP04_acc.txt']
+; accuracy= 91.756   Correct:4129 , Wrong: 371
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2612   68   36   14   14 
+;   p  2 |   8 1483   16  153    8 
+;   p  3 |   7   39   34    8    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=4500  distance=correlation CID=true normalize=false ./replications/ECG5000/ECG5000_correlation_unnormed_CID_REP04_tree.txt  ./replications/ECG5000/ECG5000_correlation_unnormed_CID_REP04_acc.txt
+
+==> Tree Size = 12
+

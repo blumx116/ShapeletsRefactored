@@ -1,0 +1,60 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Plane_TRAIN_CV1', 7, 51, 72, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/Plane_CV1/Plane_CV1_manhattan_normed_CID_tree.txt', './cv_output/Plane_CV1/Plane_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502274560
+num_class=7, num_obj=51, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Plane_CV1/Plane_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/Plane_CV1/Plane_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [6,7]  [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................
+Len=63   @[ 41,  0]  d_th=30.17 gap=0.415338 gain= 0.69295 (1  )==>   0   0   0   0   6   9  10  /   7   7   4   8   0   0   0 
+
+=== Node 2 ===
+..................................
+Len=65   @[  0, 25]  d_th=92.60 gap=1.008934 gain= 0.67301 (5  )==>   0   0   0   0   6   9   0  /   0   0   0   0   0   0  10 
+
+=== Node 3 ===
+..................................
+Len=57   @[  8, 67]  d_th=30.64 gap=0.786939 gain= 0.69019 (2  )==>   7   7   0   0   0   0   0  /   0   0   4   8   0   0   0 
+
+=== Node 4 ===
+..................................
+Len=71   @[  0, 15]  d_th=48.10 gap=4.495535 gain= 0.67301 (3  )==>   0   0   0   0   6   0   0  /   0   0   0   0   0   9   0 
+
+=== Node 6 ===
+..................................
+Len=67   @[  1,  5]  d_th=17.61 gap=0.476281 gain= 0.69315 (0  )==>   7   0   0   0   0   0   0  /   0   7   0   0   0   0   0 
+
+=== Node 7 ===
+..................................
+Len=63   @[  0, 79]  d_th=40.80 gap=3.856417 gain= 0.63651 (4  )==>   0   0   4   0   0   0   0  /   0   0   0   8   0   0   0 
+
+num_class=7, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.15 sec
+  Time Rand Project =     0.77 sec
+  Time Score Matrix =     0.08 sec
+  Time Compute Gain =     2.20 sec
+Running  Time for this Shapelet=     3.31 sec <<
+
+
+Total Running  Time =     3.31 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Plane_TRAIN_CV2', 7, 54, 'manhattan', 1, 1, './cv_output/Plane_CV1/Plane_CV1_manhattan_normed_CID_tree.txt', './cv_output/Plane_CV1/Plane_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 94.444   Correct:51 , Wrong: 3
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6    7 
+;   -----+------------------------------------------
+;   p  1 |   6    0    0    0    0    0    0 
+;   p  2 |   1    6    0    0    0    0    0 
+;   p  3 |   1    0    5    0    0    0    0 
+;   p  4 |   0    0    0    8    0    0    0 
+;   p  5 |   0    0    0    0    7    0    0 
+;   p  6 |   0    1    0    0    0    9    0 
+;   p  7 |   0    0    0    0    0    0   10 
+
+num_class=7, num_obj=54  distance=manhattan CID=true normalize=true ./cv_output/Plane_CV1/Plane_CV1_manhattan_normed_CID_tree.txt  ./cv_output/Plane_CV1/Plane_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 16
+

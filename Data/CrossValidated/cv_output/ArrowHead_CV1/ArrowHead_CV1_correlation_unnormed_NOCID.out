@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV1', 3, 18, 126, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503461015
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=81   @[  6, 81]  d_th= 0.09 gap=0.005614 gain= 0.63651 (6  )==>   0   6   6  /   6   0   0 
+
+=== Node 2 ===
+.............................................................
+Len=19   @[  0, 97]  d_th= 0.00 gap=0.000050 gain= 0.69315 (0  )==>   0   6   0  /   0   0   6 
+
+num_class=3, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.11 sec
+  Time Rand Project =     0.46 sec
+  Time Score Matrix =     0.05 sec
+  Time Compute Gain =     1.72 sec
+Running  Time for this Shapelet=     2.40 sec <<
+
+
+Total Running  Time =     2.40 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV2', 3, 18, 'correlation', 0, 0, './cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 61.111   Correct:11 , Wrong: 7
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |   5    0    3 
+;   p  1 |   0    3    0 
+;   p  2 |   1    3    3 
+
+num_class=3, num_obj=18  distance=correlation CID=false normalize=false ./cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_NOCID_tree.txt  ./cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 6
+

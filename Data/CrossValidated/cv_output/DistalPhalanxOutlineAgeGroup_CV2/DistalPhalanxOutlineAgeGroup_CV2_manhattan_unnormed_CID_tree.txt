@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1502274307, rand()=1960599953, rand()=1389592213
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineAgeGroup_TRAIN_CV2 3 71 40 1 2 10 manhattan 1 0 10 ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --      0   19   17   5.8213 ==>   8  29   0  /   0   1  33 
+NonL  2    --      0   58    7   0.6239 ==>   6   0   0  /   2  29   0 
+Leaf  3     3    
+Leaf  4     1    
+Leaf  5     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.211850 -0.590430 -0.864630 -1.044200 -0.869540 -0.656850 -0.315930 -0.002252  0.318590  0.653480  0.895900  1.230400  1.607300  1.784500  1.782800  1.528200  1.341600 
+Shapelet   2  -1.204600 -1.329700 -1.260200 -1.130600 -0.969310 -0.853610 -0.597900 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineAgeGroup_TRAIN_CV2 3 71 40 1 2 10 manhattan 1 0 10 ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_time.txt
+; time =>    0.408   0.029   0.133   0.016   0.213 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineAgeGroup_TRAIN_CV1 3 68 manhattan 1 0 ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_CID_acc.txt
+; accuracy= 51.471   Correct:35 , Wrong: 33
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   2    1    0 
+;   p  2 |   4   28   27 
+;   p  3 |   1    0    5 
+

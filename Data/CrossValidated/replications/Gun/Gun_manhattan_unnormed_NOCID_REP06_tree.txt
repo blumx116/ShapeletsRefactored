@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1501837491, rand()=2089820, rand()=1891555029
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 manhattan 0 0 10 ./output/Gun/Gun_manhattan_unnormed_NOCID_REP06_tree.txt ./output/Gun/Gun_manhattan_unnormed_NOCID_REP06_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   2  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      2   93   15   1.4286 ==>   0  21  /  26   3 
+Leaf  2     1    
+NonL  3    --      7    2   37   6.9118 ==>   0   3  /  26   0 
+Leaf  6     1    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.281200  1.139200  0.979360  0.809060  0.646920  0.471690  0.302690  0.187740  0.039058 -0.078698 -0.208210 -0.312640 -0.389000 -0.451820 -0.499660 
+Shapelet   3  -1.173200 -1.170900 -1.169500 -1.166300 -1.165900 -1.167600 -1.166900 -1.168400 -1.168700 -1.169900 -1.172000 -1.174500 -1.172200 -1.151000 -1.111200 -1.038100 -0.963580 -0.879190 -0.817760 -0.778330 -0.763750 -0.758160 -0.760060 -0.744710 -0.721350 -0.701090 -0.688570 -0.681300 -0.674620 -0.673100 -0.672520 -0.654700 -0.607990 -0.540510 -0.412170 -0.253200 -0.098128 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 manhattan 0 0 10 ./output/Gun/Gun_manhattan_unnormed_NOCID_REP06_tree.txt ./output/Gun/Gun_manhattan_unnormed_NOCID_REP06_time.txt
+; time =>    1.269   0.122   0.604   0.071   0.425 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/Gun_Point_TEST 2 150 manhattan 0 0 ./output/Gun/Gun_manhattan_unnormed_NOCID_REP06_tree.txt ./output/Gun/Gun_manhattan_unnormed_NOCID_REP06_acc.txt
+; accuracy= 90.000   Correct:135 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  74   13 
+;   p  2 |   2   61 
+

@@ -1,0 +1,500 @@
+================ Replication:  1 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 1, 1, 10, './output/FaceFour/FaceFour_euclidean_normed_CID_REP01_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP01_time.txt']
+
+rand seed=1501841524
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP01_tree.txt  time_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP01_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=161  @[  8, 37]  d_th=13.36 gap=0.128199 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=137  @[  2, 66]  d_th= 8.69 gap=0.240651 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=75   @[  1,151]  d_th= 7.01 gap=0.228970 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.71 sec
+  Time Rand Project =     7.72 sec
+  Time Score Matrix =     1.20 sec
+  Time Compute Gain =    13.78 sec
+Running  Time for this Shapelet=    24.36 sec <<
+
+
+Total Running  Time =    24.36 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 1, 1, './output/FaceFour/FaceFour_euclidean_normed_CID_REP01_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP01_acc.txt']
+0
+num_class=4, num_obj=88  distance=euclidean CID=true normalize=true ./output/FaceFour/FaceFour_euclidean_normed_CID_REP01_tree.txt  ./output/FaceFour/FaceFour_euclidean_normed_CID_REP01_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 90.909   Correct:80 , Wrong: 8
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  24    0    0    5 
+;   p  1 |   1   14    0    1 
+;   p  2 |   1    0   26    0 
+;   p  4 |   0    0    0   16 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 1, 1, 10, './output/FaceFour/FaceFour_euclidean_normed_CID_REP02_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP02_time.txt']
+
+rand seed=1501841549
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP02_tree.txt  time_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP02_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=161  @[  8, 37]  d_th=13.36 gap=0.128199 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=137  @[  2, 66]  d_th= 8.69 gap=0.240651 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=63   @[  1, 46]  d_th= 6.43 gap=0.367871 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.71 sec
+  Time Rand Project =     7.81 sec
+  Time Score Matrix =     1.22 sec
+  Time Compute Gain =    13.71 sec
+Running  Time for this Shapelet=    24.41 sec <<
+
+
+Total Running  Time =    24.41 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 1, 1, './output/FaceFour/FaceFour_euclidean_normed_CID_REP02_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP02_acc.txt']
+0
+num_class=4, num_obj=88  distance=euclidean CID=true normalize=true ./output/FaceFour/FaceFour_euclidean_normed_CID_REP02_tree.txt  ./output/FaceFour/FaceFour_euclidean_normed_CID_REP02_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 89.773   Correct:79 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  24    0    1    2 
+;   p  1 |   1   14    0    1 
+;   p  2 |   1    0   25    3 
+;   p  4 |   0    0    0   16 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 1, 1, 10, './output/FaceFour/FaceFour_euclidean_normed_CID_REP03_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP03_time.txt']
+
+rand seed=1501841574
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP03_tree.txt  time_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP03_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=145  @[ 23, 12]  d_th=10.22 gap=0.140207 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=137  @[  2, 66]  d_th= 8.69 gap=0.240651 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=85   @[  0, 44]  d_th= 7.82 gap=0.321291 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     7.96 sec
+  Time Score Matrix =     1.18 sec
+  Time Compute Gain =    13.81 sec
+Running  Time for this Shapelet=    24.65 sec <<
+
+
+Total Running  Time =    24.65 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 1, 1, './output/FaceFour/FaceFour_euclidean_normed_CID_REP03_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP03_acc.txt']
+0
+num_class=4, num_obj=88  distance=euclidean CID=true normalize=true ./output/FaceFour/FaceFour_euclidean_normed_CID_REP03_tree.txt  ./output/FaceFour/FaceFour_euclidean_normed_CID_REP03_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 90.909   Correct:80 , Wrong: 8
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  26    0    3    2 
+;   p  1 |   0   14    0    1 
+;   p  2 |   0    0   23    2 
+;   p  4 |   0    0    0   17 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 1, 1, 10, './output/FaceFour/FaceFour_euclidean_normed_CID_REP04_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP04_time.txt']
+
+rand seed=1501841600
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP04_tree.txt  time_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP04_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=159  @[  8, 37]  d_th=13.25 gap=0.127868 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=145  @[  2, 66]  d_th= 8.84 gap=0.215431 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=87   @[  0, 46]  d_th= 7.62 gap=0.260891 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     7.92 sec
+  Time Score Matrix =     1.21 sec
+  Time Compute Gain =    13.85 sec
+Running  Time for this Shapelet=    24.65 sec <<
+
+
+Total Running  Time =    24.65 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 1, 1, './output/FaceFour/FaceFour_euclidean_normed_CID_REP04_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP04_acc.txt']
+0
+num_class=4, num_obj=88  distance=euclidean CID=true normalize=true ./output/FaceFour/FaceFour_euclidean_normed_CID_REP04_tree.txt  ./output/FaceFour/FaceFour_euclidean_normed_CID_REP04_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 87.500   Correct:77 , Wrong: 11
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  25    0    4    5 
+;   p  1 |   1   14    0    1 
+;   p  2 |   0    0   22    0 
+;   p  4 |   0    0    0   16 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 1, 1, 10, './output/FaceFour/FaceFour_euclidean_normed_CID_REP05_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP05_time.txt']
+
+rand seed=1501841625
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP05_tree.txt  time_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP05_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=161  @[  8, 37]  d_th=13.36 gap=0.128199 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=143  @[  2, 66]  d_th= 8.85 gap=0.221977 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=85   @[  0, 44]  d_th= 7.82 gap=0.321291 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.73 sec
+  Time Rand Project =     7.96 sec
+  Time Score Matrix =     1.19 sec
+  Time Compute Gain =    13.82 sec
+Running  Time for this Shapelet=    24.67 sec <<
+
+
+Total Running  Time =    24.67 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 1, 1, './output/FaceFour/FaceFour_euclidean_normed_CID_REP05_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP05_acc.txt']
+0
+num_class=4, num_obj=88  distance=euclidean CID=true normalize=true ./output/FaceFour/FaceFour_euclidean_normed_CID_REP05_tree.txt  ./output/FaceFour/FaceFour_euclidean_normed_CID_REP05_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 88.636   Correct:78 , Wrong: 10
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  25    0    3    4 
+;   p  1 |   1   14    0    1 
+;   p  2 |   0    0   23    1 
+;   p  4 |   0    0    0   16 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 1, 1, 10, './output/FaceFour/FaceFour_euclidean_normed_CID_REP06_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP06_time.txt']
+
+rand seed=1501841650
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP06_tree.txt  time_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP06_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=169  @[  8, 15]  d_th=14.03 gap=0.148183 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=137  @[  2, 66]  d_th= 8.69 gap=0.240651 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=73   @[  0, 46]  d_th= 7.02 gap=0.349374 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     7.89 sec
+  Time Score Matrix =     1.21 sec
+  Time Compute Gain =    13.84 sec
+Running  Time for this Shapelet=    24.62 sec <<
+
+
+Total Running  Time =    24.62 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 1, 1, './output/FaceFour/FaceFour_euclidean_normed_CID_REP06_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP06_acc.txt']
+0
+num_class=4, num_obj=88  distance=euclidean CID=true normalize=true ./output/FaceFour/FaceFour_euclidean_normed_CID_REP06_tree.txt  ./output/FaceFour/FaceFour_euclidean_normed_CID_REP06_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 89.773   Correct:79 , Wrong: 9
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  24    0    2    2 
+;   p  1 |   1   14    0    1 
+;   p  2 |   1    0   24    2 
+;   p  4 |   0    0    0   17 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 1, 1, 10, './output/FaceFour/FaceFour_euclidean_normed_CID_REP07_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP07_time.txt']
+
+rand seed=1501841676
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP07_tree.txt  time_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP07_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=151  @[  8, 66]  d_th=14.47 gap=0.129045 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=145  @[  2, 66]  d_th= 8.84 gap=0.215431 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=83   @[  0, 46]  d_th= 8.06 gap=0.346401 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     7.98 sec
+  Time Score Matrix =     1.17 sec
+  Time Compute Gain =    13.79 sec
+Running  Time for this Shapelet=    24.63 sec <<
+
+
+Total Running  Time =    24.63 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 1, 1, './output/FaceFour/FaceFour_euclidean_normed_CID_REP07_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP07_acc.txt']
+0
+num_class=4, num_obj=88  distance=euclidean CID=true normalize=true ./output/FaceFour/FaceFour_euclidean_normed_CID_REP07_tree.txt  ./output/FaceFour/FaceFour_euclidean_normed_CID_REP07_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.182   Correct:82 , Wrong: 6
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  25    0    3    1 
+;   p  1 |   1   14    0    1 
+;   p  2 |   0    0   23    0 
+;   p  4 |   0    0    0   20 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 1, 1, 10, './output/FaceFour/FaceFour_euclidean_normed_CID_REP08_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP08_time.txt']
+
+rand seed=1501841701
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP08_tree.txt  time_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP08_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=161  @[  8, 37]  d_th=13.36 gap=0.128199 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=113  @[  2, 63]  d_th= 8.23 gap=0.206236 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=85   @[  0, 44]  d_th= 7.82 gap=0.321291 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.71 sec
+  Time Rand Project =     7.87 sec
+  Time Score Matrix =     1.23 sec
+  Time Compute Gain =    13.74 sec
+Running  Time for this Shapelet=    24.55 sec <<
+
+
+Total Running  Time =    24.55 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 1, 1, './output/FaceFour/FaceFour_euclidean_normed_CID_REP08_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP08_acc.txt']
+0
+num_class=4, num_obj=88  distance=euclidean CID=true normalize=true ./output/FaceFour/FaceFour_euclidean_normed_CID_REP08_tree.txt  ./output/FaceFour/FaceFour_euclidean_normed_CID_REP08_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 88.636   Correct:78 , Wrong: 10
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  25    0    3    4 
+;   p  1 |   1   14    0    1 
+;   p  2 |   0    0   23    1 
+;   p  4 |   0    0    0   16 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 1, 1, 10, './output/FaceFour/FaceFour_euclidean_normed_CID_REP09_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP09_time.txt']
+
+rand seed=1501841726
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP09_tree.txt  time_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP09_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=151  @[  8, 66]  d_th=14.47 gap=0.129045 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=139  @[  2, 66]  d_th= 8.72 gap=0.238672 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=85   @[  0, 44]  d_th= 7.82 gap=0.321291 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.72 sec
+  Time Rand Project =     7.88 sec
+  Time Score Matrix =     1.20 sec
+  Time Compute Gain =    13.90 sec
+Running  Time for this Shapelet=    24.66 sec <<
+
+
+Total Running  Time =    24.66 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 1, 1, './output/FaceFour/FaceFour_euclidean_normed_CID_REP09_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP09_acc.txt']
+0
+num_class=4, num_obj=88  distance=euclidean CID=true normalize=true ./output/FaceFour/FaceFour_euclidean_normed_CID_REP09_tree.txt  ./output/FaceFour/FaceFour_euclidean_normed_CID_REP09_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 93.182   Correct:82 , Wrong: 6
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  25    0    3    1 
+;   p  1 |   1   14    0    1 
+;   p  2 |   0    0   23    0 
+;   p  4 |   0    0    0   20 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/FaceFour_TRAIN', 4, 24, 175, 1, 2, 10, 'euclidean', 1, 1, 10, './output/FaceFour/FaceFour_euclidean_normed_CID_REP10_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP10_time.txt']
+
+rand seed=1501841752
+num_class=4, num_obj=24, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP10_tree.txt  time_file=./output/FaceFour/FaceFour_euclidean_normed_CID_REP10_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [3,3]  [2,4]  [1,1]  [0,2]  
+
+=== Node 1 ===
+......................................................................................
+Len=151  @[  8, 66]  d_th=14.47 gap=0.129045 gain= 0.68967 (2  )==>   0   8   5   0  /   8   0   0   3 
+
+=== Node 2 ===
+......................................................................................
+Len=143  @[  2, 66]  d_th= 8.85 gap=0.221977 gain= 0.66628 (3  )==>   0   0   5   0  /   0   8   0   0 
+
+=== Node 3 ===
+......................................................................................
+Len=69   @[  0, 46]  d_th= 6.72 gap=0.325828 gain= 0.58595 (5  )==>   8   0   0   0  /   0   0   0   3 
+
+num_class=4, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.70 sec
+  Time Rand Project =     7.80 sec
+  Time Score Matrix =     1.20 sec
+  Time Compute Gain =    13.81 sec
+Running  Time for this Shapelet=    24.46 sec <<
+
+
+Total Running  Time =    24.46 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/FaceFour_TEST', 4, 88, 'euclidean', 1, 1, './output/FaceFour/FaceFour_euclidean_normed_CID_REP10_tree.txt', './output/FaceFour/FaceFour_euclidean_normed_CID_REP10_acc.txt']
+0
+num_class=4, num_obj=88  distance=euclidean CID=true normalize=true ./output/FaceFour/FaceFour_euclidean_normed_CID_REP10_tree.txt  ./output/FaceFour/FaceFour_euclidean_normed_CID_REP10_acc.txt
+
+==> Tree Size = 8
+
+; accuracy= 92.045   Correct:81 , Wrong: 7
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  23    0    2    1 
+;   p  1 |   1   14    0    1 
+;   p  2 |   2    0   24    0 
+;   p  4 |   0    0    0   20 
+
+
+================ Replication:  10 Finished ================

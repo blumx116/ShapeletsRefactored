@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1502274347, rand()=118070364, rand()=421265780
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/CBF_TRAIN_CV2 3 15 64 1 2 10 manhattan 1 0 10 ./cv_output/CBF_CV2/CBF_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/CBF_CV2/CBF_CV2_manhattan_unnormed_CID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --     10   29   41  32.4058 ==>   0   6   0  /   5   0   4 
+Leaf  2     2    
+NonL  3    --      6    8   43  41.6638 ==>   0   0   4  /   5   0   0 
+Leaf  6     3    
+Leaf  7     1    
+
+;Shapelet id   <data>
+Shapelet   1   0.672180  0.300280 -0.223920  0.061306  0.272730  0.760570 -0.421870  1.059000  0.725790  0.790490 -0.032118  0.351300  1.141500  0.157050  0.897590  0.057408  1.002400  0.166780  0.571250  1.361400  0.827470  0.731930  1.154700  2.041400  1.627200  0.917010  0.798490  0.775500  2.189200  1.679700  1.602800  1.587100  1.970500  2.649600  2.754100  2.825900  1.283700  1.438100  2.680000  2.131800  2.874200 
+Shapelet   3   0.002155 -0.783630 -0.610900  0.106580 -0.812040 -0.358790 -0.813040 -0.707090 -0.387880  0.107340 -0.445720 -1.167300 -0.548070 -1.171000 -1.563100 -0.481560 -1.172200 -1.686600 -0.884730 -0.010229  2.898500  2.216200  2.018000  2.418500  1.400300  1.799400  1.697000  2.286500  1.608000  1.980500  1.597200  2.108400  2.630900  0.324310  2.003900  1.375600  1.606600  1.563000  1.094200  1.998900  0.636830  1.177200  1.131700 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/CBF_TRAIN_CV2 3 15 64 1 2 10 manhattan 1 0 10 ./cv_output/CBF_CV2/CBF_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/CBF_CV2/CBF_CV2_manhattan_unnormed_CID_time.txt
+; time =>    0.630   0.037   0.241   0.024   0.298 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/CBF_TRAIN_CV1 3 15 manhattan 1 0 ./cv_output/CBF_CV2/CBF_CV2_manhattan_unnormed_CID_tree.txt ./cv_output/CBF_CV2/CBF_CV2_manhattan_unnormed_CID_acc.txt
+; accuracy= 86.667   Correct:13 , Wrong: 2
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   4    0    1 
+;   p  2 |   0    6    0 
+;   p  3 |   1    0    3 
+

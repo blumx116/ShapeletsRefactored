@@ -1,0 +1,52 @@
+;Shapelet Tree 
+
+;random seed:1502274226, rand()=1080102815, rand()=1021883583
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxTW_TRAIN_CV1 6 102 40 1 2 10 manhattan 1 1 10 ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_CID_tree.txt ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_CID_time.txt 
+
+;Local Class:   0  1  2  3  4  5 
+;Real  Class:   3  4  5  6  7  8 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 48 
+NonL  1    --      0   41   31   3.9039 ==>   1  33  20   5   0   0  /   0   0   0   0   7  36 
+NonL  2    --      3   34   37   2.4518 ==>   1  27   0   0   0   0  /   0   6  20   5   0   0 
+NonL  3    --      0   29   33   5.9968 ==>   0   0   0   0   3   0  /   0   0   0   0   4  36 
+Leaf  4     4    
+NonL  5    --      0   13   21   1.0163 ==>   0   4   0   2   0   0  /   0   2  20   3   0   0 
+Leaf  6     7    
+Leaf  7     8    
+NonL 10    --      0    4    7   0.1910 ==>   0   4   0   0   0   0  /   0   0   0   2   0   0 
+NonL 11    --      0   40   17   0.5213 ==>   0   2   0   0   0   0  /   0   0  20   3   0   0 
+Leaf 20     4    
+Leaf 21     6    
+Leaf 22     4    
+NonL 23    --      0   14    7   0.1965 ==>   0   0  20   1   0   0  /   0   0   0   2   0   0 
+Leaf 46     5    
+Leaf 47     6    
+
+;Shapelet id   <data>
+Shapelet   1   1.488800  1.203200  0.908610  0.638560  0.332220  0.032839 -0.257080 -0.510680 -0.707430 -0.630930 -0.676130 -0.738100 -0.855020 -0.999140 -1.115400 -1.245900 -1.319800 -1.260300 -1.154900 -1.043900 -0.917380 -0.801370 -0.798430 -0.745270 -0.680290 -0.657700 -0.699160 -0.757360 -0.836850 -0.975320 -1.091100 
+Shapelet   2   1.613700  1.510900  1.488100  1.569500  1.683400  1.793800  1.710100  1.410800  1.136700  0.860520  0.563070  0.267710  0.005546 -0.295700 -0.565380 -0.756690 -0.638020 -0.671390 -0.790550 -0.868300 -0.990690 -1.069700 -1.135300 -1.154700 -1.160000 -1.099500 -1.013700 -0.955460 -0.912630 -0.883360 -0.808530 -0.758110 -0.724820 -0.790030 -0.892090 -0.999600 -1.105000 
+Shapelet   3   0.360180  0.617130  0.856080  1.155700  1.352200  1.516400  1.486100  1.527800  1.579500  1.594900  1.746600  1.697900  1.471300  1.183700  0.890670  0.587350  0.285460 -0.004967 -0.322390 -0.610500 -0.838960 -0.351390 -0.495150 -0.654190 -0.767220 -0.958720 -1.151800 -1.250800 -1.349300 -1.258500 -1.104400 -0.949980 -0.783290 
+Shapelet   5   1.593100  1.469900  1.248800  0.999780  0.744310  0.438910  0.139340 -0.169110 -0.476520 -0.761110 -0.938480 -0.931920 -0.728160 -0.473830 -0.182070  0.084028  0.380940  0.661160  0.949660  1.227700  1.519300 
+Shapelet  10  -0.064515  0.233540  0.525560  0.873310  1.155000  1.404500  1.626100 
+Shapelet  11   1.717700  1.542100  1.237600  0.946020  0.631440  0.349900  0.025573 -0.276640 -0.541930 -0.732530 -0.584520 -0.687970 -0.780560 -0.893270 -1.053200 -1.189000 -1.300100 
+Shapelet  23   1.471500  1.155900  0.831580  0.577230  0.262410 -0.027293 -0.322630 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxTW_TRAIN_CV1 6 102 40 1 2 10 manhattan 1 1 10 ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_CID_tree.txt ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_CID_time.txt
+; time =>    1.739   0.086   0.374   0.044   1.188 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxTW_TRAIN_CV2 6 103 manhattan 1 1 ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_CID_tree.txt ./cv_output/ProximalPhalanxTW_CV1/ProximalPhalanxTW_CV1_manhattan_normed_CID_acc.txt
+; accuracy= 66.990   Correct:69 , Wrong: 34
+
+
+;   == Confusion Matrix ==
+;   real |   3    4    5    6    7    8 
+;   -----+------------------------------------
+;   p  3 |   0    0    0    0    0    0 
+;   p  4 |   0   25    4    1    0    0 
+;   p  5 |   0    7    9    4    2    0 
+;   p  6 |   0    1    2    0    0    0 
+;   p  7 |   1    1    5    0    0    1 
+;   p  8 |   0    0    0    0    5   35 
+

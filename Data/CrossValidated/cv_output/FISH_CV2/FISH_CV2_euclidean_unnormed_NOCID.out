@@ -1,0 +1,80 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FISH_TRAIN_CV2', 7, 89, 232, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/FISH_CV2/FISH_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/FISH_CV2/FISH_CV2_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502280025
+num_class=7, num_obj=89, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/FISH_CV2/FISH_CV2_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/FISH_CV2/FISH_CV2_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [6,7]  [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................
+Len=231  @[  0, 16]  d_th= 4.08 gap=0.000284 gain= 0.44326 (27 )==>   7   1  14  11   0  11  14  /   6  12   0   0  11   2   0 
+
+=== Node 2 ===
+..................................................................................................................
+Len=177  @[ 28,145]  d_th= 2.51 gap=0.000588 gain= 0.48406 (12 )==>   0   0  11  11   0   0   1  /   7   1   3   0   0  11  13 
+
+=== Node 3 ===
+..................................................................................................................
+Len=105  @[  0,318]  d_th= 2.03 gap=0.000095 gain= 0.65039 (9  )==>   6  12   0   0   0   2   0  /   0   0   0   0  11   0   0 
+
+=== Node 4 ===
+..................................................................................................................
+Len=55   @[  0,349]  d_th= 0.76 gap=0.002451 gain= 0.54651 (1  )==>   0   0  11   1   0   0   0  /   0   0   0  10   0   0   1 
+
+=== Node 5 ===
+..................................................................................................................
+Len=41   @[  0,147]  d_th= 0.47 gap=0.001162 gain= 0.60515 (9  )==>   7   1   1   0   0   0  13  /   0   0   2   0   0  11   0 
+
+=== Node 6 ===
+..................................................................................................................
+Len=135  @[  1, 95]  d_th= 1.86 gap=0.004919 gain= 0.67301 (4  )==>   6   0   0   0   0   2   0  /   0  12   0   0   0   0   0 
+
+=== Node 10 ===
+..................................................................................................................
+Len=19   @[  0, 62]  d_th= 0.15 gap=0.000740 gain= 0.52876 (2  )==>   7   1   1   0   0   0   1  /   0   0   0   0   0   0  12 
+
+=== Node 11 ===
+..................................................................................................................
+Len=95   @[  0,318]  d_th= 0.85 gap=0.029460 gain= 0.42932 (9  )==>   0   0   2   0   0   0   0  /   0   0   0   0   0  11   0 
+
+=== Node 12 ===
+..................................................................................................................
+Len=207  @[  6,125]  d_th= 1.81 gap=0.042962 gain= 0.56234 (4  )==>   0   0   0   0   0   2   0  /   6   0   0   0   0   0   0 
+
+=== Node 20 ===
+..................................................................................................................
+Len=219  @[  0,124]  d_th= 2.61 gap=0.013197 gain= 0.61086 (4  )==>   7   0   0   0   0   0   0  /   0   1   1   0   0   0   1 
+
+=== Node 41 ===
+..................................................................................................................
+Len=33   @[  0,220]  d_th= 1.13 gap=0.116993 gain= 0.63651 (1  )==>   0   1   1   0   0   0   0  /   0   0   0   0   0   0   1 
+
+num_class=7, num_obj=3, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.43 sec
+  Time Rand Project =     9.62 sec
+  Time Score Matrix =     1.08 sec
+  Time Compute Gain =    21.78 sec
+Running  Time for this Shapelet=    36.92 sec <<
+
+
+Total Running  Time =    36.92 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FISH_TRAIN_CV1', 7, 86, 'euclidean', 0, 0, './cv_output/FISH_CV2/FISH_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/FISH_CV2/FISH_CV2_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 54.651   Correct:47 , Wrong: 39
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6    7 
+;   -----+------------------------------------------
+;   p  1 |   9    0    2    0    5    3    4 
+;   p  2 |   0   11    3    0    3    0    0 
+;   p  3 |   1    0    7    4    0    2    2 
+;   p  4 |   1    0    2    5    0    0    0 
+;   p  5 |   0    1    0    0    3    0    0 
+;   p  6 |   1    0    0    1    0    7    3 
+;   p  7 |   1    0    0    0    0    0    5 
+
+num_class=7, num_obj=86  distance=euclidean CID=false normalize=false ./cv_output/FISH_CV2/FISH_CV2_euclidean_unnormed_NOCID_tree.txt  ./cv_output/FISH_CV2/FISH_CV2_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 84
+

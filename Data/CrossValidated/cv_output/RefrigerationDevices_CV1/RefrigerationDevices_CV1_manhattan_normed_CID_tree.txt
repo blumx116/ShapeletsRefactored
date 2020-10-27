@@ -1,0 +1,45 @@
+;Shapelet Tree 
+
+;random seed:1502308797, rand()=1619512660, rand()=50565530
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/RefrigerationDevices_TRAIN_CV1 3 186 360 1 2 10 manhattan 1 1 10 ./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_tree.txt ./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 34 
+NonL  1    --      0   48    5   0.0000 ==>   1  32  55  /  61  30   7 
+NonL  2    --      0   48    5   0.0000 ==>   0  28  55  /  53  30   0 
+NonL  3    --      9    2    7   3.8228 ==>   0   4   7  /   9   0   0 
+NonL  4    --      0   48    5   0.0000 ==>   0  28  55  /  53  30   0 
+NonL  6    --      4  249    9   1.9764 ==>   0   0   7  /   0   4   0 
+Leaf  7     1    
+NonL  8    --      0   48    5   0.0000 ==>   0  28  55  /  53  30   0 
+Leaf 12     3    
+Leaf 13     2    
+NonL 16    --      0   48    5   0.0000 ==>   0  28  55  /  53  30   0 
+Leaf 32     3    
+
+;Shapelet id   <data>
+Shapelet   1  -0.897940 -0.897940 -0.897940 -0.897940 -0.829140 
+Shapelet   2  -0.897940 -0.897940 -0.897940 -0.897940 -0.829140 
+Shapelet   3  -0.315610 -0.315610 -0.315610  2.524900 -0.315610 -0.315610 -0.315610 
+Shapelet   4  -0.897940 -0.897940 -0.897940 -0.897940 -0.829140 
+Shapelet   6   0.206350  0.206350  0.777220  0.206350  0.206350  0.777220  0.206350  0.206350  0.206350 
+Shapelet   8  -0.897940 -0.897940 -0.897940 -0.897940 -0.829140 
+Shapelet  16  -0.897940 -0.897940 -0.897940 -0.897940 -0.829140 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/RefrigerationDevices_TRAIN_CV1 3 186 360 1 2 10 manhattan 1 1 10 ./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_tree.txt ./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_time.txt
+; time =>  1886.086  36.951 280.090  17.539 1533.243 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/RefrigerationDevices_TRAIN_CV2 3 189 manhattan 1 1 ./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_tree.txt ./cv_output/RefrigerationDevices_CV1/RefrigerationDevices_CV1_manhattan_normed_CID_acc.txt
+; accuracy= 36.508   Correct:69 , Wrong: 120
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  10    0    3 
+;   p  2 |   6    0    1 
+;   p  3 |  47   63   59 
+

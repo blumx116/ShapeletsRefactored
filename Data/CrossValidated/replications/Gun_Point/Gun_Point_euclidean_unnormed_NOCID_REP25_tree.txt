@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1508180581, rand()=644615457, rand()=1011978024
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 euclidean 0 0 10 ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_tree.txt ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   2  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 12 
+NonL  1    --      9   10   31   1.4674 ==>   3  22  /  23   2 
+NonL  2    --      0   95   13   0.3790 ==>   0  21  /   3   1 
+Leaf  3     2    
+Leaf  4     1    
+NonL  5    --      1   61   15   1.9466 ==>   3   0  /   0   1 
+Leaf 10     2    
+Leaf 11     1    
+
+;Shapelet id   <data>
+Shapelet   1  -1.168700 -1.169900 -1.172000 -1.174500 -1.172200 -1.151000 -1.111200 -1.038100 -0.963580 -0.879190 -0.817760 -0.778330 -0.763750 -0.758160 -0.760060 -0.744710 -0.721350 -0.701090 -0.688570 -0.681300 -0.674620 -0.673100 -0.672520 -0.654700 -0.607990 -0.540510 -0.412170 -0.253200 -0.098128  0.079075  0.226020 
+Shapelet   2   0.979360  0.809060  0.646920  0.471690  0.302690  0.187740  0.039058 -0.078698 -0.208210 -0.312640 -0.389000 -0.451820 -0.499660 
+Shapelet   5   1.133700  1.369800  1.508200  1.678400  1.743000  1.798100  1.810800  1.836900  1.842200  1.847200  1.848500  1.853300  1.851400  1.861900  1.862400 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 euclidean 0 0 10 ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_tree.txt ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_time.txt
+; time =>    1.137   0.110   0.579   0.063   0.323 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TEST 2 150 euclidean 0 0 ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_tree.txt ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP25_acc.txt
+; accuracy= 86.667   Correct:130 , Wrong: 20
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  58    2 
+;   p  2 |  18   72 
+

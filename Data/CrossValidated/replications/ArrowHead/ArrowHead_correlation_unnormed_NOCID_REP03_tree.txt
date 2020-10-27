@@ -1,0 +1,37 @@
+;Shapelet Tree 
+
+;random seed:1503367206, rand()=182655982, rand()=1932086254
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN 3 36 126 1 2 10 correlation 0 0 10 ./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_tree.txt ./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   0  1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 10 
+NonL  1    --      2  187   39   0.0156 ==>   0  12  11  /  12   0   1 
+NonL  2    --      0   88   29   0.0024 ==>   0  12   2  /   0   0   9 
+Leaf  3     0    
+NonL  4    --      0   39   15   0.0127 ==>   0  12   0  /   0   0   2 
+Leaf  5     2    
+Leaf  8     1    
+Leaf  9     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.197700  1.200100  1.242400  1.244000  1.245700  1.247600  1.290300  1.273300  1.294700  1.297100  1.299700  1.302400  1.326500  1.369100  1.350700  1.314500  1.309700  1.265600  1.272300  1.217800  1.228900  1.172800  1.104200  1.071700  0.998200  1.001900  0.954610  0.912350  0.864550  0.772620  0.695680  0.592850  0.531940  0.456860  0.375110  0.234660  0.141910  0.015738 -0.044183 
+Shapelet   2   0.222850  0.190080  0.144650  0.118380  0.076166  0.046068  0.032005 -0.046298 -0.110640 -0.160190 -0.246350 -0.322250 -0.412200 -0.457790 -0.550510 -0.623050 -0.651510 -0.762090 -0.847730 -0.922190 -0.965050 -1.020800 -1.092900 -1.155600 -1.166200 -1.186900 -1.154600 -1.172600 -1.181300 
+Shapelet   4   0.831410  0.909860  0.932830  0.967860  1.052100  1.098500  1.117300  1.170500  1.182300  1.162600  1.194000  1.192300  1.224400  1.240600  1.240600 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TRAIN 3 36 126 1 2 10 correlation 0 0 10 ./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_tree.txt ./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_time.txt
+; time =>    5.810   0.269   1.149   0.130   4.120 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ArrowHead_TEST 3 175 correlation 0 0 ./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_tree.txt ./replications/ArrowHead/ArrowHead_correlation_unnormed_NOCID_REP03_acc.txt
+; accuracy= 43.429   Correct:76 , Wrong: 99
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |  34   11    4 
+;   p  1 |  16   22   29 
+;   p  2 |  19   20   20 
+

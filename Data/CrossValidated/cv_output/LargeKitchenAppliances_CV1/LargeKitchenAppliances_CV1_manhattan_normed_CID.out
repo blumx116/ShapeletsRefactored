@@ -1,0 +1,64 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/LargeKitchenAppliances_TRAIN_CV1', 3, 186, 360, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_manhattan_normed_CID_tree.txt', './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502290300
+num_class=3, num_obj=186, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=45   @[  1,259]  d_th=13.10 gap=0.010227 gain= 0.37706 (54 )==>  55   0  11  /   7  62  51 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=133  @[ 61,557]  d_th=52.67 gap=0.058586 gain= 0.22492 (48 )==>   1   0   8  /  54   0   3 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=243  @[  1, 62]  d_th= 0.00 gap=0.000000 gain= 0.24545 (50 )==>   2   1  32  /   5  61  19 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=123  @[  0,269]  d_th=24.58 gap=2.216534 gain= 0.34883 (7  )==>   1   0   0  /   0   0   8 
+
+=== Node 7 ===
+..................................................................................................................................................................................
+Len=131  @[ 68,507]  d_th=99.84 gap=0.071671 gain= 0.22304 (55 )==>   0   2  13  /   5  59   6 
+
+=== Node 14 ===
+..................................................................................................................................................................................
+Len=59   @[  2,607]  d_th=23.08 gap=0.388450 gain= 0.39267 (11 )==>   0   0  13  /   0   2   0 
+
+=== Node 15 ===
+..................................................................................................................................................................................
+Len=101  @[ 66,297]  d_th=68.88 gap=0.001807 gain= 0.23839 (56 )==>   2   0   5  /   3  59   1 
+
+=== Node 30 ===
+..................................................................................................................................................................................
+Len=135  @[  0,404]  d_th=21.09 gap=0.511441 gain= 0.59827 (3  )==>   2   0   0  /   0   0   5 
+
+num_class=3, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    13.11 sec
+  Time Rand Project =    29.97 sec
+  Time Score Matrix =     3.68 sec
+  Time Compute Gain =  1009.26 sec
+Running  Time for this Shapelet=  1059.36 sec <<
+
+
+Total Running  Time =  1059.36 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/LargeKitchenAppliances_TRAIN_CV2', 3, 189, 'manhattan', 1, 1, './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_manhattan_normed_CID_tree.txt', './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 76.190   Correct:144 , Wrong: 45
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  54    8    2 
+;   p  2 |   5   53   24 
+;   p  3 |   4    2   37 
+
+num_class=3, num_obj=189  distance=manhattan CID=true normalize=true ./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_manhattan_normed_CID_tree.txt  ./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 62
+

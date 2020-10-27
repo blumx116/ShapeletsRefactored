@@ -1,0 +1,75 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FordB_TRAIN', 2, 810, 250, 1, 2, 10, 'correlation', 1, 0, 10, './replications/FordB/FordB_correlation_unnormed_CID_REP04_tree.txt', './replications/FordB/FordB_correlation_unnormed_CID_REP04_time.txt']
+
+rand seed=1503383657
+num_class=2, num_obj=810, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/FordB/FordB_correlation_unnormed_CID_REP04_tree.txt  time_file=./replications/FordB/FordB_correlation_unnormed_CID_REP04_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,-1]  [0,1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=187  @[ 47,290]  d_th= 0.58 gap=0.000013 gain= 0.08121 (32 )==> 293 128  / 116 273 
+
+=== Node 2 ===
+...........................................................................................................................
+Len=31   @[378, 21]  d_th= 0.27 gap=0.000038 gain= 0.10258 (143)==> 238  44  /  55  84 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=209  @[215,179]  d_th= 0.52 gap=0.000202 gain= 0.06296 (337)==>  24   2  /  92 271 
+
+=== Node 4 ===
+...........................................................................................................................
+Len=33   @[  2,372]  d_th= 0.07 gap=0.000100 gain= 0.08894 (240)==> 234  27  /   4  17 
+
+=== Node 5 ===
+...........................................................................................................................
+Len=153  @[ 81,187]  d_th= 0.26 gap=0.000328 gain= 0.10664 (57 )==>   3  38  /  52  46 
+
+=== Node 7 ===
+...........................................................................................................................
+Len=39   @[ 35, 27]  d_th= 0.04 gap=0.000013 gain= 0.05798 (317)==>  20   3  /  72 268 
+
+=== Node 8 ===
+...........................................................................................................................
+Len=239  @[ 82,143]  d_th= 0.59 gap=0.000026 gain= 0.05709 (21 )==> 139   2  /  95  25 
+
+=== Node 9 ===
+...........................................................................................................................
+Len=221  @[ 10,220]  d_th= 0.37 gap=0.001147 gain= 0.48691 (13 )==>   4   0  /   0  17 
+
+=== Node 11 ===
+...........................................................................................................................
+Len=67   @[ 16,139]  d_th= 0.09 gap=0.000208 gain= 0.10650 (52 )==>  49  26  /   3  20 
+
+=== Node 14 ===
+...........................................................................................................................
+Len=75   @[  9,143]  d_th= 0.08 gap=0.000171 gain= 0.38721 (17 )==>   0   3  /  20   0 
+
+=== Node 15 ===
+...........................................................................................................................
+Len=91   @[ 59,154]  d_th= 0.40 gap=0.000106 gain= 0.05215 (208)==>  72 202  /   0  66 
+
+num_class=2, num_obj=340, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    93.03 sec
+  Time Rand Project =  1303.77 sec
+  Time Score Matrix =    80.92 sec
+  Time Compute Gain =  2051.16 sec
+Running  Time for this Shapelet=  3609.28 sec <<
+
+
+Total Running  Time =  3609.28 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FordB_TEST', 2, 3636, 'correlation', 1, 0, './replications/FordB/FordB_correlation_unnormed_CID_REP04_tree.txt', './replications/FordB/FordB_correlation_unnormed_CID_REP04_acc.txt']
+; accuracy= 73.872   Correct:2686 , Wrong: 950
+
+
+;   == Confusion Matrix ==
+;   real |   1   -1 
+;   -----+------------
+;   p  1 |1265  439 
+;   p -1 | 511 1421 
+
+num_class=2, num_obj=3636  distance=correlation CID=true normalize=false ./replications/FordB/FordB_correlation_unnormed_CID_REP04_tree.txt  ./replications/FordB/FordB_correlation_unnormed_CID_REP04_acc.txt
+
+==> Tree Size = 32
+

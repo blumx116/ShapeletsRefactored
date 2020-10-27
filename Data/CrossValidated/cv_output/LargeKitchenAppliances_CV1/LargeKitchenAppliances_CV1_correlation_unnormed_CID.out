@@ -1,0 +1,67 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/LargeKitchenAppliances_TRAIN_CV1', 3, 186, 360, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_CID_tree.txt', './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503470869
+num_class=3, num_obj=186, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.46210 (0  )==>   0  31  62  /  62  31   0 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=45   @[  0,275]  d_th= 0.79 gap=0.003019 gain= 0.37138 (2  )==>  57   0  35  /   5  62  27 
+
+=== Node 3 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=3 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.38924 (0  )==>  11   0  35  /  46   0   0 
+
+=== Node 5 ===
+..................................................................................................................................................................................
+Len=21   @[ 71,591]  d_th= 0.12 gap=0.000510 gain= 0.38819 (26 )==>   3   5  26  /   2  57   1 
+
+=== Node 8 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.38924 (0  )==>  11   0  35  /  46   0   0 
+
+=== Node 10 ===
+..................................................................................................................................................................................
+Len=353  @[ 24,182]  d_th= 0.81 gap=0.001263 gain= 0.45229 (20 )==>   1   0  26  /   2   5   0 
+
+=== Node 16 ===
+..................................................................................................................................................................................
+Len=5    @[  0,  0]  d_th= 1.00 gap=0.000000 gain= 0.38924 (0  )==>  11   0  35  /  46   0   0 
+
+=== Node 21 ===
+..................................................................................................................................................................................
+Len=11   @[  2,421]  d_th= 0.34 gap=0.097306 gain= 0.59827 (3  )==>   0   5   0  /   2   0   0 
+
+num_class=3, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    16.93 sec
+  Time Rand Project =    37.60 sec
+  Time Score Matrix =     4.91 sec
+  Time Compute Gain =  1421.54 sec
+Running  Time for this Shapelet=  1484.96 sec <<
+
+
+Total Running  Time =  1484.96 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/LargeKitchenAppliances_TRAIN_CV2', 3, 189, 'correlation', 1, 0, './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_CID_tree.txt', './cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 52.910   Correct:100 , Wrong: 89
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   0    2    0 
+;   p  2 |   1   50   13 
+;   p  3 |  62   11   50 
+
+num_class=3, num_obj=189  distance=correlation CID=true normalize=false ./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/LargeKitchenAppliances_CV1/LargeKitchenAppliances_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 44
+

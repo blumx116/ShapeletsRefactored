@@ -1,0 +1,38 @@
+;Shapelet Tree 
+
+;random seed:1502279964, rand()=439963466, rand()=283579231
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV2 4 16 285 1 2 10 euclidean 0 0 10 ./cv_output/OliveOil_CV2/OliveOil_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/OliveOil_CV2/OliveOil_CV2_euclidean_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1  2  3 
+;Real  Class:   1  2  3  4 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0  174   19   0.0665 ==>   3   4   0   0  /   0   0   2   7 
+NonL  2    --      0  288   17   0.0150 ==>   3   0   0   0  /   0   4   0   0 
+NonL  3    --      0  477   33   0.2120 ==>   0   0   2   0  /   0   0   0   7 
+Leaf  4     1    
+Leaf  5     2    
+Leaf  6     3    
+Leaf  7     4    
+
+;Shapelet id   <data>
+Shapelet   1   1.689600  1.951500  2.208700  2.423600  2.582400  2.687600  2.758400  2.821800  2.889600  2.967400  3.050400  3.123600  3.181900  3.218700  3.229800  3.198700  3.122500  3.025000  2.917100 
+Shapelet   2   0.086662  0.087085  0.090499  0.097572  0.105940  0.110490  0.117190  0.124810  0.129120  0.137490  0.160700  0.217850  0.268470  0.231540  0.116940 -0.007336 -0.105810 
+Shapelet   3  -0.140840 -0.060633  0.043498  0.197900  0.386550  0.614280  0.929310  1.282500  1.635800  2.422500  2.845900  3.244700  3.501700  3.718800  3.658700  3.487900  3.039100  2.650800  2.178000  1.760800  1.147800  0.708190  0.368830  0.025676 -0.172280 -0.309330 -0.436220 -0.510650 -0.586750 -0.645760 -0.683760 -0.716470 -0.743520 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV2 4 16 285 1 2 10 euclidean 0 0 10 ./cv_output/OliveOil_CV2/OliveOil_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/OliveOil_CV2/OliveOil_CV2_euclidean_unnormed_NOCID_time.txt
+; time =>    4.442   0.423   0.990   0.072   2.877 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/OliveOil_TRAIN_CV1 4 14 euclidean 0 0 ./cv_output/OliveOil_CV2/OliveOil_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/OliveOil_CV2/OliveOil_CV2_euclidean_unnormed_NOCID_acc.txt
+; accuracy= 71.429   Correct:10 , Wrong: 4
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   2    0    1    1 
+;   p  2 |   0    3    1    0 
+;   p  3 |   0    0    0    0 
+;   p  4 |   0    1    0    5 
+

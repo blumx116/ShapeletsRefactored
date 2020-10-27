@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV1', 3, 18, 126, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_CID_tree.txt', './cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503461011
+num_class=3, num_obj=18, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [2,2]  [1,1]  [0,0]  
+
+=== Node 1 ===
+.............................................................
+Len=87   @[  6, 82]  d_th= 0.13 gap=0.006877 gain= 0.63651 (6  )==>   0   6   6  /   6   0   0 
+
+=== Node 2 ===
+.............................................................
+Len=29   @[  0, 88]  d_th= 0.00 gap=0.000156 gain= 0.69315 (0  )==>   0   6   0  /   0   0   6 
+
+num_class=3, num_obj=12, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.11 sec
+  Time Rand Project =     0.46 sec
+  Time Score Matrix =     0.05 sec
+  Time Compute Gain =     3.10 sec
+Running  Time for this Shapelet=     3.79 sec <<
+
+
+Total Running  Time =     3.79 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ArrowHead_TRAIN_CV2', 3, 18, 'correlation', 1, 0, './cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_CID_tree.txt', './cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 66.667   Correct:12 , Wrong: 6
+
+
+;   == Confusion Matrix ==
+;   real |   0    1    2 
+;   -----+------------------
+;   p  0 |   5    0    3 
+;   p  1 |   0    5    1 
+;   p  2 |   1    1    2 
+
+num_class=3, num_obj=18  distance=correlation CID=true normalize=false ./cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/ArrowHead_CV1/ArrowHead_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 6
+

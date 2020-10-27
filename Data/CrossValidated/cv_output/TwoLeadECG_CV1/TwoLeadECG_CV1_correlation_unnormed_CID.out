@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/TwoLeadECG_TRAIN_CV1', 2, 11, 41, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/TwoLeadECG_CV1/TwoLeadECG_CV1_correlation_unnormed_CID_tree.txt', './cv_output/TwoLeadECG_CV1/TwoLeadECG_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503460946
+num_class=2, num_obj=11, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/TwoLeadECG_CV1/TwoLeadECG_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/TwoLeadECG_CV1/TwoLeadECG_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+...................
+Len=41   @[  1,  7]  d_th= 0.02 gap=0.001363 gain= 0.68901 (1  )==>   6   0  /   0   5 
+
+num_class=2, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.02 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.06 sec
+Running  Time for this Shapelet=     0.10 sec <<
+
+
+Total Running  Time =     0.10 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/TwoLeadECG_TRAIN_CV2', 2, 12, 'correlation', 1, 0, './cv_output/TwoLeadECG_CV1/TwoLeadECG_CV1_correlation_unnormed_CID_tree.txt', './cv_output/TwoLeadECG_CV1/TwoLeadECG_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 100.000   Correct:12 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   6    0 
+;   p  2 |   0    6 
+
+num_class=2, num_obj=12  distance=correlation CID=true normalize=false ./cv_output/TwoLeadECG_CV1/TwoLeadECG_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/TwoLeadECG_CV1/TwoLeadECG_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 4
+

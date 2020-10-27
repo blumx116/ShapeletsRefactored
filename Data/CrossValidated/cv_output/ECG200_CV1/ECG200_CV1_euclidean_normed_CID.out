@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1', 2, 49, 48, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/ECG200_CV1/ECG200_CV1_euclidean_normed_CID_tree.txt', './cv_output/ECG200_CV1/ECG200_CV1_euclidean_normed_CID_time.txt']
+
+rand seed=1502276817
+num_class=2, num_obj=49, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ECG200_CV1/ECG200_CV1_euclidean_normed_CID_tree.txt  time_file=./cv_output/ECG200_CV1/ECG200_CV1_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+......................
+Len=45   @[ 16,  8]  d_th= 2.38 gap=0.012892 gain= 0.27259 (1  )==>   0  24  /  15  10 
+
+=== Node 3 ===
+......................
+Len=23   @[  5,  4]  d_th= 2.20 gap=0.000121 gain= 0.52339 (7  )==>  15   1  /   0   9 
+
+num_class=2, num_obj=25, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.06 sec
+  Time Rand Project =     0.36 sec
+  Time Score Matrix =     0.04 sec
+  Time Compute Gain =     0.55 sec
+Running  Time for this Shapelet=     1.05 sec <<
+
+
+Total Running  Time =     1.05 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2', 2, 51, 'euclidean', 1, 1, './cv_output/ECG200_CV1/ECG200_CV1_euclidean_normed_CID_tree.txt', './cv_output/ECG200_CV1/ECG200_CV1_euclidean_normed_CID_acc.txt']
+; accuracy= 76.471   Correct:39 , Wrong: 12
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |  10    6 
+;   p  1 |   6   29 
+
+num_class=2, num_obj=51  distance=euclidean CID=true normalize=true ./cv_output/ECG200_CV1/ECG200_CV1_euclidean_normed_CID_tree.txt  ./cv_output/ECG200_CV1/ECG200_CV1_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 8
+

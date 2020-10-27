@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineCorrect_TRAIN_CV1', 2, 300, 40, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502274204
+num_class=2, num_obj=300, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=27   @[ 70, 41]  d_th= 3.98 gap=0.000710 gain= 0.28361 (144)==>  71   7  /  26 196 
+
+=== Node 3 ===
+..................
+Len=15   @[  0, 10]  d_th= 0.70 gap=0.000182 gain= 0.05117 (204)==>   7   2  /  19 194 
+
+num_class=2, num_obj=222, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.18 sec
+  Time Rand Project =     1.00 sec
+  Time Score Matrix =     0.15 sec
+  Time Compute Gain =     1.93 sec
+Running  Time for this Shapelet=     3.37 sec <<
+
+
+Total Running  Time =     3.37 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineCorrect_TRAIN_CV2', 2, 300, 'manhattan', 1, 0, './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_manhattan_unnormed_CID_acc.txt']
+; accuracy= 40.333   Correct:121 , Wrong: 179
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  97  179 
+;   p  1 |   0   24 
+
+num_class=2, num_obj=300  distance=manhattan CID=true normalize=false ./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_manhattan_unnormed_CID_tree.txt  ./cv_output/ProximalPhalanxOutlineCorrect_CV1/ProximalPhalanxOutlineCorrect_CV1_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 8
+

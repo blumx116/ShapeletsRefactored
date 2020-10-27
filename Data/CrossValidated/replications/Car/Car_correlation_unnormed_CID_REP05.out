@@ -1,0 +1,49 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Car_TRAIN', 4, 60, 289, 1, 2, 10, 'correlation', 1, 0, 10, './replications/Car/Car_correlation_unnormed_CID_REP05_tree.txt', './replications/Car/Car_correlation_unnormed_CID_REP05_time.txt']
+
+rand seed=1503391025
+num_class=4, num_obj=60, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./replications/Car/Car_correlation_unnormed_CID_REP05_tree.txt  time_file=./replications/Car/Car_correlation_unnormed_CID_REP05_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [3,3]  [2,2]  [1,4]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................
+Len=151  @[  0, 40]  d_th= 0.01 gap=0.000008 gain= 0.57992 (28 )==>  16  17   0  11  /   0   0  16   0 
+
+=== Node 2 ===
+...............................................................................................................................................
+Len=281  @[ 12,294]  d_th= 0.07 gap=0.000010 gain= 0.45806 (2  )==>  16   5   0   0  /   0  12   0  11 
+
+=== Node 4 ===
+...............................................................................................................................................
+Len=125  @[  0,162]  d_th= 0.00 gap=0.000020 gain= 0.54887 (11 )==>  16   0   0   0  /   0   5   0   0 
+
+=== Node 5 ===
+...............................................................................................................................................
+Len=11   @[  0,195]  d_th= 0.00 gap=0.000005 gain= 0.53892 (3  )==>   0  12   0   1  /   0   0   0  10 
+
+num_class=4, num_obj=23, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.35 sec
+  Time Rand Project =     6.10 sec
+  Time Score Matrix =     0.70 sec
+  Time Compute Gain =   149.44 sec
+Running  Time for this Shapelet=   159.41 sec <<
+
+
+Total Running  Time =   159.41 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Car_TEST', 4, 60, 'correlation', 1, 0, './replications/Car/Car_correlation_unnormed_CID_REP05_tree.txt', './replications/Car/Car_correlation_unnormed_CID_REP05_acc.txt']
+; accuracy= 75.000   Correct:45 , Wrong: 15
+
+
+;   == Confusion Matrix ==
+;   real |   4    3    2    1 
+;   -----+------------------------
+;   p  4 |  11   10    0    2 
+;   p  3 |   2    8    0    0 
+;   p  2 |   0    1   14    0 
+;   p  1 |   0    0    0   12 
+
+num_class=4, num_obj=60  distance=correlation CID=true normalize=false ./replications/Car/Car_correlation_unnormed_CID_REP05_tree.txt  ./replications/Car/Car_correlation_unnormed_CID_REP05_acc.txt
+
+==> Tree Size = 12
+

@@ -1,0 +1,62 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2', 5, 251, 70, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_CID_tree.txt', './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502274484
+num_class=5, num_obj=251, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=39   @[  1, 85]  d_th=16.17 gap=0.007013 gain= 0.54274 (27 )==> 137   0   1   0   1  /   9  89   4  10   0 
+
+=== Node 3 ===
+.................................
+Len=31   @[ 96,  4]  d_th= 6.57 gap=0.037148 gain= 0.25912 (74 )==>   0  83   0  10   0  /   9   6   4   0   0 
+
+=== Node 6 ===
+.................................
+Len=17   @[  0,104]  d_th= 6.00 gap=0.109630 gain= 0.10648 (81 )==>   0  82   0   5   0  /   0   1   0   5   0 
+
+=== Node 7 ===
+.................................
+Len=53   @[  9, 39]  d_th=17.05 gap=0.071713 gain= 0.47963 (3  )==>   0   4   4   0   0  /   9   2   0   0   0 
+
+=== Node 13 ===
+.................................
+Len=57   @[  0, 22]  d_th= 9.22 gap=1.220616 gain= 0.45056 (4  )==>   0   1   0   0   0  /   0   0   0   5   0 
+
+=== Node 14 ===
+.................................
+Len=53   @[  0, 16]  d_th=27.78 gap=0.856588 gain= 0.69315 (0  )==>   0   4   0   0   0  /   0   0   4   0   0 
+
+=== Node 15 ===
+.................................
+Len=45   @[ 10,  1]  d_th=20.25 gap=0.121373 gain= 0.47414 (7  )==>   0   2   0   0   0  /   9   0   0   0   0 
+
+num_class=5, num_obj=11, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.70 sec
+  Time Rand Project =     5.46 sec
+  Time Score Matrix =     0.58 sec
+  Time Compute Gain =     7.37 sec
+Running  Time for this Shapelet=    14.62 sec <<
+
+
+Total Running  Time =    14.62 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV1', 5, 249, 'manhattan', 1, 1, './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_CID_tree.txt', './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 91.165   Correct:227 , Wrong: 22
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 | 139    2    4    2    1 
+;   p  2 |   1   86    0    6    0 
+;   p  3 |   4    0    1    0    0 
+;   p  4 |   2    0    0    1    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=249  distance=manhattan CID=true normalize=true ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_CID_tree.txt  ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 32
+

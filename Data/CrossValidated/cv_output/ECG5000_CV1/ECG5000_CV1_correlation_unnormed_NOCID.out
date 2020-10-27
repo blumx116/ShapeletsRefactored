@@ -1,0 +1,38 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV1', 5, 249, 70, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503460966
+num_class=5, num_obj=249, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=29   @[146,  9]  d_th= 0.03 gap=0.000115 gain= 0.53386 (63 )==>   2  84   0   7   0  / 144   4   5   2   1 
+
+num_class=5, num_obj=249, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.47 sec
+  Time Rand Project =     4.58 sec
+  Time Score Matrix =     0.47 sec
+  Time Compute Gain =     2.79 sec
+Running  Time for this Shapelet=     8.67 sec <<
+
+
+Total Running  Time =     8.67 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2', 5, 251, 'correlation', 0, 0, './cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 90.837   Correct:228 , Wrong: 23
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 | 143    4    4    0    1 
+;   p  2 |   3   85    1   10    0 
+;   p  3 |   0    0    0    0    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=251  distance=correlation CID=false normalize=false ./cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_NOCID_tree.txt  ./cv_output/ECG5000_CV1/ECG5000_CV1_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 4
+

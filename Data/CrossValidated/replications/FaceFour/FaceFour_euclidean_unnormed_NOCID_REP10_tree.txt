@@ -1,0 +1,38 @@
+;Shapelet Tree 
+
+;random seed:1502025601, rand()=166723660, rand()=798980507
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/FaceFour_TRAIN 4 24 175 1 2 10 euclidean 0 0 10 ./output/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP10_tree.txt ./output/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP10_time.txt 
+
+;Local Class:   0  1  2  3 
+;Real  Class:   2  1  4  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --     12  151   47   1.3422 ==>   0   8   5   0  /   8   0   0   3 
+NonL  2    --      0   53   95   3.8326 ==>   0   8   0   0  /   0   0   5   0 
+NonL  3    --      7  211   29   2.6172 ==>   0   0   0   3  /   8   0   0   0 
+Leaf  4     1    
+Leaf  5     4    
+Leaf  6     3    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1   0.059933  0.059933  0.343420  0.343420  0.578190  0.578190  0.479730  0.479730  0.329850  0.329850  0.433250  0.433250  0.092341  0.092341 -0.091652 -0.091652 -0.298030 -0.298030 -0.298030 -0.298030 -0.296500 -0.296500 -0.296500 -0.296500 -0.401430 -0.401430 -0.190520 -0.190520 -0.084020 -0.084020 -0.188950 -0.188950 -0.082449 -0.082449  0.023526  0.023526  0.022484  0.022484 -0.084020 -0.084020  0.120830  0.120830  0.113410  0.113410  0.007432  0.007432 -0.001102 
+Shapelet   2   1.056400  1.407400  1.407400  1.069200  1.069200  0.875050  0.875050  0.440200  0.440200  0.143090  0.143090 -0.405600 -0.405600 -0.616800 -0.616800 -0.620400 -0.620400 -0.620400 -0.620400 -0.512220 -0.512220 -0.298990 -0.298990 -0.194400 -0.194400 -0.510190 -0.510190 -0.612350 -0.612350 -0.510190 -0.510190 -0.818350 -0.818350 -0.914690 -0.914690 -0.607150 -0.607150 -0.504990 -0.504990 -0.607150 -0.607150 -0.306210 -0.306210 -0.003128 -0.003128 -0.099469 -0.099469  0.007146  0.007146  0.007146  0.007146 -0.092243 -0.092243 -0.298990 -0.298990 -0.190800 -0.190800 -0.188150 -0.188150 -0.297410 -0.297410  0.031463  0.031463  0.031463  0.248910  0.248910  0.140720  0.140720  0.242660  0.242660  0.742890  0.742890  0.503680  0.503680  0.372380  0.372380  0.609500  0.609500  0.594290  0.594290  0.133860  0.133860  0.113660  0.113660  0.215450  0.215450 -0.021676 -0.021676 -0.146780 -0.146780  0.051069  0.051069  0.133820  0.133820 -0.054116 
+Shapelet   3   0.073154  0.073154  0.312470  0.240030  0.240030  0.223340  0.223340  0.153360  0.311980  0.311980  0.631780  0.631780  0.813540  0.813540  0.960550  0.997280  0.997280  0.949130  0.949130  0.760000  0.776550  0.776550  0.919600  0.919600  1.116900  1.156400  1.156400  0.915250  0.915250 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/FaceFour_TRAIN 4 24 175 1 2 10 euclidean 0 0 10 ./output/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP10_tree.txt ./output/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP10_time.txt
+; time =>    8.085   0.635   4.825   0.467   1.809 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/FaceFour_TEST 4 88 euclidean 0 0 ./output/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP10_tree.txt ./output/FaceFour/FaceFour_euclidean_unnormed_NOCID_REP10_acc.txt
+; accuracy= 84.091   Correct:74 , Wrong: 14
+
+
+;   == Confusion Matrix ==
+;   real |   3    1    2    4 
+;   -----+------------------------
+;   p  3 |  22    0    1    6 
+;   p  1 |   0   14    0    0 
+;   p  2 |   2    0   24    2 
+;   p  4 |   2    0    1   14 
+

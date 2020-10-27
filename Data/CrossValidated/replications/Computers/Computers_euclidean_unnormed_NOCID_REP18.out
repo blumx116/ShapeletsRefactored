@@ -1,0 +1,51 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Computers_TRAIN', 2, 250, 360, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/Computers/Computers_euclidean_unnormed_NOCID_REP18_tree.txt', './replications/Computers/Computers_euclidean_unnormed_NOCID_REP18_time.txt']
+
+rand seed=1508368244
+num_class=2, num_obj=250, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Computers/Computers_euclidean_unnormed_NOCID_REP18_tree.txt  time_file=./replications/Computers/Computers_euclidean_unnormed_NOCID_REP18_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=139  @[ 42,413]  d_th= 6.96 gap=0.000016 gain= 0.10989 (138)==>  74 120  /  51   5 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=9    @[130,335]  d_th= 0.97 gap=0.001428 gain= 0.06131 (134)==>   1  29  /  73  91 
+
+=== Node 5 ===
+..................................................................................................................................................................................
+Len=131  @[ 76,422]  d_th= 0.93 gap=0.001005 gain= 0.06628 (70 )==>   8  39  /  65  52 
+
+=== Node 10 ===
+..................................................................................................................................................................................
+Len=45   @[  0,664]  d_th= 5.02 gap=0.002112 gain= 0.19313 (11 )==>   8  10  /   0  29 
+
+=== Node 11 ===
+..................................................................................................................................................................................
+Len=271  @[ 50, 45]  d_th=14.62 gap=0.000381 gain= 0.07933 (17 )==>  39  11  /  26  41 
+
+num_class=2, num_obj=117, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    23.16 sec
+  Time Rand Project =   105.60 sec
+  Time Score Matrix =     8.97 sec
+  Time Compute Gain =   176.60 sec
+Running  Time for this Shapelet=   322.46 sec <<
+
+
+Total Running  Time =   322.46 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Computers_TEST', 2, 250, 'euclidean', 0, 0, './replications/Computers/Computers_euclidean_unnormed_NOCID_REP18_tree.txt', './replications/Computers/Computers_euclidean_unnormed_NOCID_REP18_acc.txt']
+; accuracy= 67.600   Correct:169 , Wrong: 81
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  88   44 
+;   p  2 |  37   81 
+
+num_class=2, num_obj=250  distance=euclidean CID=false normalize=false ./replications/Computers/Computers_euclidean_unnormed_NOCID_REP18_tree.txt  ./replications/Computers/Computers_euclidean_unnormed_NOCID_REP18_acc.txt
+
+==> Tree Size = 24
+

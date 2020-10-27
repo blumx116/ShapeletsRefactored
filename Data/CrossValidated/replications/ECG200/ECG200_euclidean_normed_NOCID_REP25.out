@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TRAIN', 2, 100, 48, 1, 2, 10, 'euclidean', 0, 1, 10, './replications/ECG200/ECG200_euclidean_normed_NOCID_REP25_tree.txt', './replications/ECG200/ECG200_euclidean_normed_NOCID_REP25_time.txt']
+
+rand seed=1508196733
+num_class=2, num_obj=100, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/ECG200/ECG200_euclidean_normed_NOCID_REP25_tree.txt  time_file=./replications/ECG200/ECG200_euclidean_normed_NOCID_REP25_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+......................
+Len=39   @[ 34, 16]  d_th= 1.35 gap=0.000703 gain= 0.23073 (22 )==>   4  57  /  27  12 
+
+=== Node 3 ===
+......................
+Len=27   @[  8,  1]  d_th= 1.81 gap=0.002980 gain= 0.29662 (1  )==>  20   0  /   7  12 
+
+=== Node 7 ===
+......................
+Len=5    @[  1, 24]  d_th= 0.68 gap=0.004869 gain= 0.33660 (1  )==>   0   9  /   7   3 
+
+=== Node 15 ===
+......................
+Len=17   @[  0, 64]  d_th= 1.55 gap=0.035593 gain= 0.61086 (4  )==>   0   3  /   7   0 
+
+num_class=2, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.14 sec
+  Time Rand Project =     0.90 sec
+  Time Score Matrix =     0.10 sec
+  Time Compute Gain =     0.63 sec
+Running  Time for this Shapelet=     1.88 sec <<
+
+
+Total Running  Time =     1.88 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG200_TEST', 2, 100, 'euclidean', 0, 1, './replications/ECG200/ECG200_euclidean_normed_NOCID_REP25_tree.txt', './replications/ECG200/ECG200_euclidean_normed_NOCID_REP25_acc.txt']
+; accuracy= 78.000   Correct:78 , Wrong: 22
+
+
+;   == Confusion Matrix ==
+;   real |   1   -1 
+;   -----+------------
+;   p  1 |  59   17 
+;   p -1 |   5   19 
+
+num_class=2, num_obj=100  distance=euclidean CID=false normalize=true ./replications/ECG200/ECG200_euclidean_normed_NOCID_REP25_tree.txt  ./replications/ECG200/ECG200_euclidean_normed_NOCID_REP25_acc.txt
+
+==> Tree Size = 32
+

@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1502279656, rand()=1807875101, rand()=1679203800
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1 2 31 256 1 2 10 manhattan 1 1 10 ./cv_output/Herring_CV1/Herring_CV1_manhattan_normed_CID_tree.txt ./cv_output/Herring_CV1/Herring_CV1_manhattan_normed_CID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 12 
+NonL  1    --      0   60   53   7.3765 ==>   8  12  /  11   0 
+NonL  2    --      0  142   63   5.2851 ==>   5   0  /   3  12 
+Leaf  3     1    
+Leaf  4     1    
+NonL  5    --      0  227   13   0.8768 ==>   3   0  /   0  12 
+Leaf 10     1    
+Leaf 11     2    
+
+;Shapelet id   <data>
+Shapelet   1  -1.135000 -1.196900 -1.242900 -1.237200 -1.195300 -1.152700 -1.118400 -1.080600 -1.035400 -0.992200 -0.940080 -0.890590 -0.840760 -0.793230 -0.742690 -0.694290 -0.643100 -0.592450 -0.536370 -0.480250 -0.424100 -0.371050 -0.309520 -0.253300 -0.206610 -0.189900 -0.189220 -0.182430 -0.188480 -0.219530 -0.249780 -0.244460 -0.246850 -0.252240 -0.261540 -0.304860 -0.364390 -0.388570 -0.376770 -0.359600 -0.385220 -0.441090 -0.491430 -0.509930 -0.518640 -0.539800 -0.563810 -0.586650 -0.608290 -0.656130 -0.694280 -0.709030 -0.725900 
+Shapelet   2  -0.857610 -0.815680 -0.785800 -0.761240 -0.717510 -0.685320 -0.646450 -0.618990 -0.595950 -0.577250 -0.568620 -0.547840 -0.504490 -0.495170 -0.494630 -0.485190 -0.463500 -0.416860 -0.402500 -0.411020 -0.402850 -0.418790 -0.455570 -0.475800 -0.445730 -0.406410 -0.367560 -0.322490 -0.282940 -0.248010 -0.214780 -0.180280 -0.180650 -0.149970 -0.100390 -0.048378 -0.015978  0.004943  0.045958  0.096196  0.146870  0.195760  0.250770  0.286490  0.313300  0.324700  0.332060  0.336240  0.362680  0.389980  0.418120  0.438320  0.446240  0.463620  0.464240  0.474550  0.520340  0.580120  0.631220  0.687500  0.731630  0.758990  0.787010 
+Shapelet   5   0.824650  0.876900  0.907690  0.938930  0.947210  0.956180  0.969380  0.989400  1.003700  1.024900  1.046700  1.072300  1.095200 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV1 2 31 256 1 2 10 manhattan 1 1 10 ./cv_output/Herring_CV1/Herring_CV1_manhattan_normed_CID_tree.txt ./cv_output/Herring_CV1/Herring_CV1_manhattan_normed_CID_time.txt
+; time =>   48.361   0.948   3.000   0.322  43.698 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Herring_TRAIN_CV2 2 33 manhattan 1 1 ./cv_output/Herring_CV1/Herring_CV1_manhattan_normed_CID_tree.txt ./cv_output/Herring_CV1/Herring_CV1_manhattan_normed_CID_acc.txt
+; accuracy= 51.515   Correct:17 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  11    7 
+;   p  2 |   9    6 
+

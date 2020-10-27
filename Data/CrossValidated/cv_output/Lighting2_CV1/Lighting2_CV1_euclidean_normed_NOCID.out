@@ -1,0 +1,39 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV1', 2, 30, 319, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502281309
+num_class=2, num_obj=30, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+..............................................................................................................................................................
+Len=57   @[  0, 85]  d_th= 3.12 gap=0.001486 gain= 0.27607 (18 )==>   4  20  /   6   0 
+
+=== Node 2 ===
+..............................................................................................................................................................
+Len=131  @[  3,128]  d_th= 9.10 gap=0.016237 gain= 0.28305 (18 )==>   1  20  /   3   0 
+
+num_class=2, num_obj=24, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.94 sec
+  Time Rand Project =    14.34 sec
+  Time Score Matrix =     1.05 sec
+  Time Compute Gain =    37.47 sec
+Running  Time for this Shapelet=    56.03 sec <<
+
+
+Total Running  Time =    56.03 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Lighting2_TRAIN_CV2', 2, 30, 'euclidean', 0, 1, './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_NOCID_tree.txt', './cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_NOCID_acc.txt']
+; accuracy= 66.667   Correct:20 , Wrong: 10
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   2    2 
+;   p  1 |   8   18 
+
+num_class=2, num_obj=30  distance=euclidean CID=false normalize=true ./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_NOCID_tree.txt  ./cv_output/Lighting2_CV1/Lighting2_CV1_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 6
+

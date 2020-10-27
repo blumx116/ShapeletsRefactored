@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV1', 2, 33, 12, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_NOCID_tree.txt', './cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502274201
+num_class=2, num_obj=33, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+....
+Len=9    @[ 14, 14]  d_th= 1.52 gap=0.003929 gain= 0.44156 (5  )==>  14   0  /   3  16 
+
+=== Node 3 ===
+....
+Len=7    @[  2, 15]  d_th= 1.73 gap=0.013299 gain= 0.18456 (5  )==>   3   4  /   0  12 
+
+=== Node 6 ===
+....
+Len=11   @[  0,  1]  d_th= 1.81 gap=0.062617 gain= 0.32548 (3  )==>   1   4  /   2   0 
+
+=== Node 12 ===
+....
+Len=5    @[  0,  2]  d_th= 0.14 gap=0.061347 gain= 0.50040 (3  )==>   1   0  /   0   4 
+
+num_class=2, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.00 sec
+  Time Rand Project =     0.01 sec
+  Time Score Matrix =     0.00 sec
+  Time Compute Gain =     0.00 sec
+Running  Time for this Shapelet=     0.01 sec <<
+
+
+Total Running  Time =     0.01 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ItalyPowerDemand_TRAIN_CV2', 2, 34, 'euclidean', 0, 0, './cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_NOCID_tree.txt', './cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 94.118   Correct:32 , Wrong: 2
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  17    2 
+;   p  2 |   0   15 
+
+num_class=2, num_obj=34  distance=euclidean CID=false normalize=false ./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_NOCID_tree.txt  ./cv_output/ItalyPowerDemand_CV1/ItalyPowerDemand_CV1_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 26
+

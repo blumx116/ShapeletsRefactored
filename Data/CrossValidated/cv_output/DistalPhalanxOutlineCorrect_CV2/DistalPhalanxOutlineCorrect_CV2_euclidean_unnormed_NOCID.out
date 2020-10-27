@@ -1,0 +1,51 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineCorrect_TRAIN_CV2', 2, 139, 40, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/DistalPhalanxOutlineCorrect_CV2/DistalPhalanxOutlineCorrect_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/DistalPhalanxOutlineCorrect_CV2/DistalPhalanxOutlineCorrect_CV2_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502274215
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/DistalPhalanxOutlineCorrect_CV2/DistalPhalanxOutlineCorrect_CV2_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/DistalPhalanxOutlineCorrect_CV2/DistalPhalanxOutlineCorrect_CV2_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=31   @[  2, 11]  d_th= 1.33 gap=0.000511 gain= 0.21159 (69 )==>  25  79  /  33   2 
+
+=== Node 2 ===
+..................
+Len=11   @[ 52, 66]  d_th= 0.87 gap=0.000801 gain= 0.08810 (92 )==>  19  79  /   6   0 
+
+=== Node 4 ===
+..................
+Len=17   @[  0,  6]  d_th= 1.13 gap=0.002363 gain= 0.06665 (82 )==>  13  77  /   6   2 
+
+=== Node 8 ===
+..................
+Len=11   @[ 22, 12]  d_th= 0.38 gap=0.000109 gain= 0.07289 (24 )==>   0  33  /  13  44 
+
+=== Node 9 ===
+..................
+Len=11   @[  6,  1]  d_th= 0.40 gap=0.009645 gain= 0.32364 (2  )==>   1   2  /   5   0 
+
+num_class=2, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.17 sec
+  Time Rand Project =     0.80 sec
+  Time Score Matrix =     0.11 sec
+  Time Compute Gain =     0.41 sec
+Running  Time for this Shapelet=     1.57 sec <<
+
+
+Total Running  Time =     1.57 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineCorrect_TRAIN_CV1', 2, 137, 'euclidean', 0, 0, './cv_output/DistalPhalanxOutlineCorrect_CV2/DistalPhalanxOutlineCorrect_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/DistalPhalanxOutlineCorrect_CV2/DistalPhalanxOutlineCorrect_CV2_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 71.533   Correct:98 , Wrong: 39
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 |  31   13 
+;   p  1 |  26   67 
+
+num_class=2, num_obj=137  distance=euclidean CID=false normalize=false ./cv_output/DistalPhalanxOutlineCorrect_CV2/DistalPhalanxOutlineCorrect_CV2_euclidean_unnormed_NOCID_tree.txt  ./cv_output/DistalPhalanxOutlineCorrect_CV2/DistalPhalanxOutlineCorrect_CV2_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 20
+

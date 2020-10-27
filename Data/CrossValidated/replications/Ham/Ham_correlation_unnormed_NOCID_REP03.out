@@ -1,0 +1,59 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Ham_TRAIN', 2, 109, 216, 1, 2, 10, 'correlation', 0, 0, 10, './replications/Ham/Ham_correlation_unnormed_NOCID_REP03_tree.txt', './replications/Ham/Ham_correlation_unnormed_NOCID_REP03_time.txt']
+
+rand seed=1503386272
+num_class=2, num_obj=109, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Ham/Ham_correlation_unnormed_NOCID_REP03_tree.txt  time_file=./replications/Ham/Ham_correlation_unnormed_NOCID_REP03_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=167  @[ 45, 40]  d_th= 0.21 gap=0.000091 gain= 0.11406 (57 )==>  29  54  /  23   3 
+
+=== Node 2 ===
+..........................................................................................................
+Len=45   @[ 12,337]  d_th= 0.04 gap=0.000069 gain= 0.19412 (41 )==>  18   3  /  11  51 
+
+=== Node 3 ===
+..........................................................................................................
+Len=23   @[  0,323]  d_th= 0.05 gap=0.000256 gain= 0.22820 (16 )==>  21   0  /   2   3 
+
+=== Node 4 ===
+..........................................................................................................
+Len=77   @[ 12,123]  d_th= 0.10 gap=0.000182 gain= 0.41012 (15 )==>  18   0  /   0   3 
+
+=== Node 5 ===
+..........................................................................................................
+Len=161  @[  5, 66]  d_th= 0.04 gap=0.000038 gain= 0.13225 (34 )==>   8   6  /   3  45 
+
+=== Node 7 ===
+..........................................................................................................
+Len=27   @[  0,329]  d_th= 0.03 gap=0.004004 gain= 0.67301 (1  )==>   2   0  /   0   3 
+
+=== Node 10 ===
+..........................................................................................................
+Len=17   @[  1,335]  d_th= 0.01 gap=0.000120 gain= 0.68291 (2  )==>   8   0  /   0   6 
+
+num_class=2, num_obj=14, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     6.13 sec
+  Time Rand Project =    60.64 sec
+  Time Score Matrix =     4.15 sec
+  Time Compute Gain =    85.44 sec
+Running  Time for this Shapelet=   160.66 sec <<
+
+
+Total Running  Time =   160.66 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Ham_TEST', 2, 105, 'correlation', 0, 0, './replications/Ham/Ham_correlation_unnormed_NOCID_REP03_tree.txt', './replications/Ham/Ham_correlation_unnormed_NOCID_REP03_acc.txt']
+; accuracy= 64.762   Correct:68 , Wrong: 37
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  31   17 
+;   p  2 |  20   37 
+
+num_class=2, num_obj=105  distance=correlation CID=false normalize=false ./replications/Ham/Ham_correlation_unnormed_NOCID_REP03_tree.txt  ./replications/Ham/Ham_correlation_unnormed_NOCID_REP03_acc.txt
+
+==> Tree Size = 22
+

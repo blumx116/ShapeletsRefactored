@@ -1,0 +1,40 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineAgeGroup_TRAIN_CV2', 3, 71, 40, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502274307
+num_class=3, num_obj=71, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................
+Len=13   @[  0, 20]  d_th= 3.23 gap=0.046678 gain= 0.63050 (3  )==>   8  29   0  /   0   1  33 
+
+=== Node 2 ===
+..................
+Len=7    @[  0, 58]  d_th= 0.57 gap=0.014238 gain= 0.32165 (25 )==>   6   0   0  /   2  29   0 
+
+num_class=3, num_obj=37, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.04 sec
+  Time Rand Project =     0.20 sec
+  Time Score Matrix =     0.03 sec
+  Time Compute Gain =     0.12 sec
+Running  Time for this Shapelet=     0.40 sec <<
+
+
+Total Running  Time =     0.40 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/DistalPhalanxOutlineAgeGroup_TRAIN_CV1', 3, 68, 'manhattan', 0, 0, './cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 52.941   Correct:36 , Wrong: 32
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   4    2    0 
+;   p  2 |   3   27   27 
+;   p  3 |   0    0    5 
+
+num_class=3, num_obj=68  distance=manhattan CID=false normalize=false ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_NOCID_tree.txt  ./cv_output/DistalPhalanxOutlineAgeGroup_CV2/DistalPhalanxOutlineAgeGroup_CV2_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 6
+

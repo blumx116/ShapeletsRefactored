@@ -1,0 +1,35 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1', 2, 185, 118, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_normed_CID_tree.txt', './cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_normed_CID_time.txt']
+
+rand seed=1502275191
+num_class=2, num_obj=185, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_normed_CID_tree.txt  time_file=./cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+.........................................................
+Len=51   @[  0,103]  d_th= 0.68 gap=0.000159 gain= 0.49102 (55 )==>  62   3  /   4 116 
+
+num_class=2, num_obj=185, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.78 sec
+  Time Rand Project =     5.03 sec
+  Time Score Matrix =     0.58 sec
+  Time Compute Gain =    14.01 sec
+Running  Time for this Shapelet=    20.87 sec <<
+
+
+Total Running  Time =    20.87 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV2', 2, 185, 'euclidean', 1, 1, './cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_normed_CID_tree.txt', './cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_normed_CID_acc.txt']
+; accuracy= 71.351   Correct:132 , Wrong: 53
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  51   38 
+;   p  2 |  15   81 
+
+num_class=2, num_obj=185  distance=euclidean CID=true normalize=true ./cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_normed_CID_tree.txt  ./cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 4
+

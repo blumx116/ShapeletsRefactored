@@ -1,0 +1,43 @@
+;Shapelet Tree 
+
+;random seed:1502274254, rand()=595946801, rand()=1128544659
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV2 3 201 40 1 2 10 euclidean 0 0 10 ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  2  3 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 36 
+NonL  1    --      0   51    7   0.5054 ==>  36  66   0  /   0   4  95 
+NonL  2    --     10   62   15   0.3062 ==>  31  18   0  /   5  48   0 
+Leaf  3     3    
+NonL  4    --      0   49    7   0.1581 ==>  18  18   0  /  13   0   0 
+Leaf  5     2    
+NonL  8    --      0    6    7   0.1056 ==>   9   0   0  /   9  18   0 
+Leaf  9     1    
+Leaf 16     1    
+NonL 17    --      0   65    9   0.1306 ==>   9   5   0  /   0  13   0 
+Leaf 34     1    
+Leaf 35     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.659060 -0.749830 -0.845270 -0.979690 -1.151100 -1.226500 -1.313800 
+Shapelet   2  -0.847600 -0.781690 -0.689310 -0.746690 -0.816390 -0.882540 -0.968570 -1.087800 -1.177300 -1.240200 -1.238300 -1.178800 -1.120100 -0.969340 -0.863430 
+Shapelet   4  -0.711260 -0.558870 -0.659060 -0.749830 -0.845270 -0.979690 -1.151100 
+Shapelet   8   0.608490  0.866490  1.132500  1.341700  1.524800  1.608200  1.552500 
+Shapelet  17  -0.689500 -0.766860 -0.860760 -0.974760 -1.139900 -1.254200 -1.319600 -1.319200 -1.211400 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV2 3 201 40 1 2 10 euclidean 0 0 10 ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_NOCID_time.txt
+; time =>    1.323   0.140   0.642   0.086   0.396 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/ProximalPhalanxOutlineAgeGroup_TRAIN_CV1 3 199 euclidean 0 0 ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_NOCID_tree.txt ./cv_output/ProximalPhalanxOutlineAgeGroup_CV2/ProximalPhalanxOutlineAgeGroup_CV2_euclidean_unnormed_NOCID_acc.txt
+; accuracy= 73.367   Correct:146 , Wrong: 53
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  19   11    0 
+;   p  2 |  17   58   25 
+;   p  3 |   0    0   69 
+

@@ -1,0 +1,75 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FordB_TRAIN_CV2', 2, 406, 250, 1, 2, 10, 'euclidean', 0, 0, 10, './cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_NOCID_time.txt']
+
+rand seed=1502282438
+num_class=2, num_obj=406, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_NOCID_tree.txt  time_file=./cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_NOCID_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=157  @[267,199]  d_th=12.18 gap=0.000056 gain= 0.05429 (150)==> 107 171  /  94  34 
+
+=== Node 2 ===
+...........................................................................................................................
+Len=249  @[ 73,  7]  d_th=13.80 gap=0.000155 gain= 0.09311 (16 )==>  85  62  /  22 109 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=85   @[ 74,  2]  d_th= 5.62 gap=0.002759 gain= 0.10540 (56 )==>  58  34  /  36   0 
+
+=== Node 4 ===
+...........................................................................................................................
+Len=109  @[  7,261]  d_th= 6.76 gap=0.000324 gain= 0.08706 (49 )==>  42   7  /  43  55 
+
+=== Node 5 ===
+...........................................................................................................................
+Len=17   @[  0,103]  d_th= 2.27 gap=0.001534 gain= 0.10119 (31 )==>   3  78  /  19  31 
+
+=== Node 6 ===
+...........................................................................................................................
+Len=143  @[ 39,280]  d_th=10.51 gap=0.001237 gain= 0.16126 (12 )==>  45   7  /  13  27 
+
+=== Node 8 ===
+...........................................................................................................................
+Len=37   @[ 42, 13]  d_th= 1.92 gap=0.002083 gain= 0.19861 (19 )==>   8   7  /  34   0 
+
+=== Node 9 ===
+...........................................................................................................................
+Len=9    @[  1,104]  d_th= 0.86 gap=0.001541 gain= 0.09175 (70 )==>  43  41  /   0  14 
+
+=== Node 11 ===
+...........................................................................................................................
+Len=105  @[  3,175]  d_th= 8.08 gap=0.012327 gain= 0.15488 (36 )==>  12  31  /   7   0 
+
+=== Node 12 ===
+...........................................................................................................................
+Len=45   @[ 47,219]  d_th= 2.65 gap=0.000874 gain= 0.14605 (12 )==>  13   7  /  32   0 
+
+=== Node 13 ===
+...........................................................................................................................
+Len=175  @[  3, 41]  d_th=13.19 gap=0.001037 gain= 0.21747 (2  )==>  12   7  /   1  20 
+
+num_class=2, num_obj=40, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    39.61 sec
+  Time Rand Project =   512.61 sec
+  Time Score Matrix =    30.87 sec
+  Time Compute Gain =   116.87 sec
+Running  Time for this Shapelet=   729.85 sec <<
+
+
+Total Running  Time =   729.85 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FordB_TRAIN_CV1', 2, 404, 'euclidean', 0, 0, './cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_NOCID_tree.txt', './cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_NOCID_acc.txt']
+; accuracy= 65.347   Correct:264 , Wrong: 140
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 | 145   85 
+;   p  1 |  55  119 
+
+num_class=2, num_obj=404  distance=euclidean CID=false normalize=false ./cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_NOCID_tree.txt  ./cv_output/FordB_CV2/FordB_CV2_euclidean_unnormed_NOCID_acc.txt
+
+==> Tree Size = 28
+

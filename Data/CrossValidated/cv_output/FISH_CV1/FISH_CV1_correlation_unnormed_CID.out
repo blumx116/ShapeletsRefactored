@@ -1,0 +1,76 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/FISH_TRAIN_CV1', 7, 86, 232, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/FISH_CV1/FISH_CV1_correlation_unnormed_CID_tree.txt', './cv_output/FISH_CV1/FISH_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503461775
+num_class=7, num_obj=86, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/FISH_CV1/FISH_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/FISH_CV1/FISH_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [6,7]  [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................
+Len=227  @[ 75,104]  d_th= 0.04 gap=0.000005 gain= 0.48060 (20 )==>  11   0   0   0   0   9  13  /   2  12  14  10  11   3   1 
+
+=== Node 2 ===
+..................................................................................................................
+Len=33   @[  0,167]  d_th= 0.02 gap=0.000030 gain= 0.58595 (15 )==>  11   0   0   0   0   0  13  /   0   0   0   0   0   9   0 
+
+=== Node 3 ===
+..................................................................................................................
+Len=231  @[  0, 15]  d_th= 0.02 gap=0.000003 gain= 0.62735 (5  )==>   2   0  14   9   0   3   1  /   0  12   0   1  11   0   0 
+
+=== Node 4 ===
+..................................................................................................................
+Len=25   @[  0,128]  d_th= 0.00 gap=0.000048 gain= 0.53957 (4  )==>   1   0   0   0   0   0  13  /  10   0   0   0   0   0   0 
+
+=== Node 6 ===
+..................................................................................................................
+Len=35   @[  0, 43]  d_th= 0.00 gap=0.000012 gain= 0.53950 (7  )==>   2   0  13   0   0   3   0  /   0   0   1   9   0   0   1 
+
+=== Node 7 ===
+..................................................................................................................
+Len=163  @[ 13,107]  d_th= 0.05 gap=0.001009 gain= 0.69315 (0  )==>   0   0   0   1  11   0   0  /   0  12   0   0   0   0   0 
+
+=== Node 12 ===
+..................................................................................................................
+Len=179  @[  2,149]  d_th= 0.02 gap=0.000037 gain= 0.59084 (8  )==>   0   0  13   0   0   0   0  /   2   0   0   0   0   3   0 
+
+=== Node 13 ===
+..................................................................................................................
+Len=211  @[  1,216]  d_th= 0.03 gap=0.001146 gain= 0.47414 (7  )==>   0   0   0   9   0   0   0  /   0   0   1   0   0   0   1 
+
+=== Node 25 ===
+..................................................................................................................
+Len=7    @[  0,115]  d_th= 0.01 gap=0.001015 gain= 0.67301 (1  )==>   2   0   0   0   0   0   0  /   0   0   0   0   0   3   0 
+
+=== Node 27 ===
+..................................................................................................................
+Len=5    @[  0,248]  d_th= 0.02 gap=0.010994 gain= 0.69315 (0  )==>   0   0   1   0   0   0   0  /   0   0   0   0   0   0   1 
+
+num_class=7, num_obj=2, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.03 sec
+  Time Rand Project =     9.02 sec
+  Time Score Matrix =     1.03 sec
+  Time Compute Gain =   152.66 sec
+Running  Time for this Shapelet=   166.87 sec <<
+
+
+Total Running  Time =   166.87 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/FISH_TRAIN_CV2', 7, 89, 'correlation', 1, 0, './cv_output/FISH_CV1/FISH_CV1_correlation_unnormed_CID_tree.txt', './cv_output/FISH_CV1/FISH_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 61.798   Correct:55 , Wrong: 34
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6    7 
+;   -----+------------------------------------------
+;   p  1 |   7    0    0    1    5    2    0 
+;   p  2 |   1   12    0    1    1    1    0 
+;   p  3 |   0    0    7    0    0    1    0 
+;   p  4 |   0    0    3    4    0    0    0 
+;   p  5 |   2    1    2    5    5    1    0 
+;   p  6 |   2    0    2    0    0    8    2 
+;   p  7 |   1    0    0    0    0    0   12 
+
+num_class=7, num_obj=89  distance=correlation CID=true normalize=false ./cv_output/FISH_CV1/FISH_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/FISH_CV1/FISH_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 56
+

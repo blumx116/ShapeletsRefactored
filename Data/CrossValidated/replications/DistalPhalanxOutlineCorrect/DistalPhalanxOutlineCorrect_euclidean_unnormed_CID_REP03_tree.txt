@@ -1,0 +1,42 @@
+;Shapelet Tree 
+
+;random seed:1501823223, rand()=86111310, rand()=415696962
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TRAIN 2 276 40 1 2 10 euclidean 1 0 10 ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_CID_REP03_tree.txt ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_CID_REP03_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  0 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 24 
+NonL  1    --    161    0   37   2.9377 ==> 159  73  /   2  42 
+NonL  2    --      2   47    5   0.4435 ==>  69   5  /  90  68 
+Leaf  3     0    
+Leaf  4     1    
+NonL  5    --      2   11    9   0.2882 ==>  57  13  /  33  55 
+NonL 10    --     49   34    5   0.3247 ==>  53   6  /   4   7 
+NonL 11    --      4   35   25   1.3229 ==>  13   3  /  20  52 
+Leaf 20     1    
+Leaf 21     0    
+Leaf 22     1    
+Leaf 23     0    
+
+;Shapelet id   <data>
+Shapelet   1  -0.874330 -0.752030 -0.431130 -0.177170 -0.241170  0.094189  0.427520  0.553130  0.787240  1.050400  1.196600  1.272600  1.232200  1.152500  1.013200  0.711160  0.565000  0.250400  0.145290 -0.077348 -0.374440 -0.558260 -0.873020 -1.020800 -0.871190 -0.559330 -0.220620  0.147680  0.531810  0.939080  1.318400  1.629200  1.655100  1.387100  1.084700  1.065600  1.099700 
+Shapelet   2  -0.361300 -0.671250 -0.930630 -0.065291 -0.234340 
+Shapelet   5   1.316600  1.340200  1.284700  1.213700  1.125500  0.920580  0.757840  0.600930  0.282400 
+Shapelet  10   1.336300  1.334200  1.359600  1.411800  1.368000 
+Shapelet  11   1.177000  1.121400  1.124300  1.244800  1.575800  1.756300  1.804800  1.736300  1.341300  0.831280  0.525810  0.101680 -0.281540 -0.680730 -0.870240  0.188200  0.024937 -0.292190 -0.601160 -0.834400 -1.185200 -1.589700 -1.887200 -1.727700 -1.435000 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TRAIN 2 276 40 1 2 10 euclidean 1 0 10 ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_CID_REP03_tree.txt ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_CID_REP03_time.txt
+; time =>    6.556   0.431   2.802   0.373   2.708 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/DistalPhalanxOutlineCorrect_TEST 2 600 euclidean 1 0 ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_CID_REP03_tree.txt ./output/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_euclidean_unnormed_CID_REP03_acc.txt
+; accuracy= 71.167   Correct:427 , Wrong: 173
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 | 254   49 
+;   p  0 | 124  173 
+

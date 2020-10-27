@@ -1,0 +1,54 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Worms_TRAIN_CV2', 5, 40, 450, 1, 2, 10, 'euclidean', 0, 1, 10, './cv_output/Worms_CV2/Worms_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/Worms_CV2/Worms_CV2_euclidean_normed_NOCID_time.txt']
+
+rand seed=1502538765
+num_class=5, num_obj=40, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/Worms_CV2/Worms_CV2_euclidean_normed_NOCID_tree.txt  time_file=./cv_output/Worms_CV2/Worms_CV2_euclidean_normed_NOCID_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+...............................................................................................................................................................................................................................
+Len=77   @[  1,406]  d_th= 1.85 gap=0.000511 gain= 0.46351 (10 )==>  14   0   0   7   4  /   3   7   5   0   0 
+
+=== Node 2 ===
+...............................................................................................................................................................................................................................
+Len=11   @[  0,441]  d_th= 0.34 gap=0.005756 gain= 0.55818 (5  )==>  14   0   0   1   0  /   0   0   0   6   4 
+
+=== Node 3 ===
+...............................................................................................................................................................................................................................
+Len=301  @[ 10,313]  d_th=11.93 gap=0.081754 gain= 0.63651 (5  )==>   0   0   5   0   0  /   3   7   0   0   0 
+
+=== Node 5 ===
+...............................................................................................................................................................................................................................
+Len=153  @[  0,709]  d_th= 3.72 gap=0.030420 gain= 0.67301 (2  )==>   0   0   0   6   0  /   0   0   0   0   4 
+
+=== Node 7 ===
+...............................................................................................................................................................................................................................
+Len=167  @[  7,  2]  d_th=11.44 gap=0.028167 gain= 0.61086 (4  )==>   0   7   0   0   0  /   3   0   0   0   0 
+
+num_class=5, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     3.89 sec
+  Time Rand Project =    18.30 sec
+  Time Score Matrix =     1.62 sec
+  Time Compute Gain =   154.29 sec
+Running  Time for this Shapelet=   179.58 sec <<
+
+
+Total Running  Time =   179.58 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Worms_TRAIN_CV1', 5, 37, 'euclidean', 0, 1, './cv_output/Worms_CV2/Worms_CV2_euclidean_normed_NOCID_tree.txt', './cv_output/Worms_CV2/Worms_CV2_euclidean_normed_NOCID_acc.txt']
+; accuracy= 56.757   Correct:21 , Wrong: 16
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |  11    1    0    2    0 
+;   p  2 |   0    5    3    0    0 
+;   p  3 |   2    0    2    3    2 
+;   p  4 |   0    0    0    1    0 
+;   p  5 |   3    0    0    0    2 
+
+num_class=5, num_obj=37  distance=euclidean CID=false normalize=true ./cv_output/Worms_CV2/Worms_CV2_euclidean_normed_NOCID_tree.txt  ./cv_output/Worms_CV2/Worms_CV2_euclidean_normed_NOCID_acc.txt
+
+==> Tree Size = 16
+

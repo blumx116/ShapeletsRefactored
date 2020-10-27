@@ -1,0 +1,46 @@
+;Shapelet Tree 
+
+;random seed:1502274212, rand()=1028012830, rand()=2057148761
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV1 6 150 30 1 2 10 manhattan 0 0 10 ./cv_output/synthetic_control_CV1/synthetic_control_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/synthetic_control_CV1/synthetic_control_CV1_manhattan_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1  2  3  4  5 
+;Real  Class:   1  2  3  4  5  6 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 16 
+NonL  1    --     64   13   29  18.5740 ==>   0   0  25   0  25   0  /  25  25   0  25   0  25 
+NonL  2    --     18    7   27  14.2560 ==>   0   0  23   0   0   0  /   0   0   2   0  25   0 
+NonL  3    --     54    0   27  20.4018 ==>   0   0   0  25   0  25  /  25  25   0   0   0   0 
+Leaf  4     3    
+Leaf  5     5    
+NonL  6    --     18   20   19  10.0008 ==>   0   0   0  25   0   0  /   0   0   0   0   0  25 
+NonL  7    --     25    2   21  12.0092 ==>   0  25   0   0   0   0  /  25   0   0   0   0   0 
+Leaf 12     4    
+Leaf 13     6    
+Leaf 14     2    
+Leaf 15     1    
+
+;Shapelet id   <data>
+Shapelet   1  -0.420970 -1.099800 -1.358700 -0.489240 -0.195980 -0.700150 -0.974110 -0.725720 -0.477850 -0.645000 -0.553220 -0.857820 -0.013468 -0.492490 -0.094095 -0.229720  0.562090 -0.345080  0.763010  0.585200  0.787850  0.426880  0.399360  0.989500  0.907490  1.095400  0.325720  0.460020  0.412790 
+Shapelet   2  -1.226100 -0.930460 -1.716700 -1.693300 -0.655160 -1.398800 -1.071000 -1.605400 -0.548380 -0.077405 -0.602180  0.071973 -0.138560 -0.854360 -1.034300  0.179250 -0.045845 -0.648300  0.381880 -0.033961 -0.453670  0.087153 -0.181580  0.389470 -0.237240  0.153560 -0.439150 
+Shapelet   3   2.006000  1.310900  0.373760  1.629800  0.796100  1.475000  1.674100  0.542170  1.197800  1.037200  1.204900  0.503380  1.333900  1.212900  0.605130  1.090300  0.494340  0.339260  1.204300 -0.440760  0.521540  0.554800  1.014800  0.090919  0.412860 -0.557520 -0.324670 
+Shapelet   6   0.968860 -0.038617  0.306250  0.825740 -0.013008  0.751160 -0.429630 -0.451310 -0.277880 -0.118620 -0.225740 -0.038802 -0.487940 -0.133690 -0.557010  0.109130  0.011398 -0.240840 -0.938000 
+Shapelet   7   0.390390  1.555200  1.361100  1.006100  0.636930 -0.513740 -0.690510 -1.513400 -1.030600 -0.815900 -0.363210 -0.243020  0.063543  1.228600  1.363500  0.750630  0.077386  0.349700 -0.588860 -0.821100 -1.336000 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV1 6 150 30 1 2 10 manhattan 0 0 10 ./cv_output/synthetic_control_CV1/synthetic_control_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/synthetic_control_CV1/synthetic_control_CV1_manhattan_unnormed_NOCID_time.txt
+; time =>    1.459   0.121   0.922   0.093   0.240 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV2 6 150 manhattan 0 0 ./cv_output/synthetic_control_CV1/synthetic_control_CV1_manhattan_unnormed_NOCID_tree.txt ./cv_output/synthetic_control_CV1/synthetic_control_CV1_manhattan_unnormed_NOCID_acc.txt
+; accuracy= 92.000   Correct:138 , Wrong: 12
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6 
+;   -----+------------------------------------
+;   p  1 |  25    0    1    0    1    0 
+;   p  2 |   0   25    0    0    0    0 
+;   p  3 |   0    0   23    0    3    0 
+;   p  4 |   0    0    0   23    0    3 
+;   p  5 |   0    0    1    0   20    0 
+;   p  6 |   0    0    0    2    1   22 
+

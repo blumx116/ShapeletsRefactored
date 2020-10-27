@@ -1,0 +1,38 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Earthquakes_TRAIN_CV2', 2, 70, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_normed_NOCID_time.txt']
+
+rand seed=1504274661
+num_class=2, num_obj=70, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=5    @[  0, 10]  d_th= 0.00 gap=0.000000 gain= 0.22368 (0  )==>  17  18  /  35   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=5    @[  0, 24]  d_th= 0.00 gap=0.000000 gain= 0.22368 (0  )==>  17  18  /  35   0 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=5    @[  0, 10]  d_th= 0.00 gap=0.000000 gain= 0.22368 (0  )==>  17  18  /  35   0 
+
+=== Node 8 ===
+..............................................................................................................................
+Len=5    @[  0, 10]  d_th= 0.00 gap=0.000000 gain= 0.22368 (0  )==>  17  18  /  35   0 
+
+num_class=2, num_obj=70, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     8.89 sec
+  Time Rand Project =    96.31 sec
+  Time Score Matrix =     5.81 sec
+  Time Compute Gain =   122.60 sec
+Running  Time for this Shapelet=   239.46 sec <<
+
+
+Total Running  Time =   239.46 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Earthquakes_TRAIN_CV1', 2, 69, 'manhattan', 0, 1, './cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_normed_NOCID_acc.txt']
+num_class=2, num_obj=69  distance=manhattan CID=false normalize=true ./cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_normed_NOCID_tree.txt  ./cv_output/Earthquakes_CV2/Earthquakes_CV2_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 18
+

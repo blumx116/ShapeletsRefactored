@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1', 2, 49, 48, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502276819
+num_class=2, num_obj=49, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+......................
+Len=15   @[  7, 47]  d_th= 3.99 gap=0.020539 gain= 0.38644 (9  )==>  15   5  /   0  29 
+
+=== Node 2 ===
+......................
+Len=9    @[ 15, 47]  d_th= 0.58 gap=0.010860 gain= 0.25446 (14 )==>   0   3  /  15   2 
+
+=== Node 5 ===
+......................
+Len=15   @[  4, 36]  d_th= 2.28 gap=0.003506 gain= 0.24988 (11 )==>   1   2  /  14   0 
+
+=== Node 10 ===
+......................
+Len=37   @[  0,  2]  d_th= 5.83 gap=0.958236 gain= 0.63651 (1  )==>   1   0  /   0   2 
+
+num_class=2, num_obj=3, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.06 sec
+  Time Rand Project =     0.39 sec
+  Time Score Matrix =     0.04 sec
+  Time Compute Gain =     0.51 sec
+Running  Time for this Shapelet=     1.04 sec <<
+
+
+Total Running  Time =     1.04 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2', 2, 51, 'manhattan', 1, 0, './cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_acc.txt']
+; accuracy= 80.392   Correct:41 , Wrong: 10
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   9    3 
+;   p  1 |   7   32 
+
+num_class=2, num_obj=51  distance=manhattan CID=true normalize=false ./cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_tree.txt  ./cv_output/ECG200_CV1/ECG200_CV1_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 22
+

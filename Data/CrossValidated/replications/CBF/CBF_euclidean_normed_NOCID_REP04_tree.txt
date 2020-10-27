@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1501861802, rand()=415407870, rand()=290734693
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/CBF_TRAIN 3 30 64 1 2 10 euclidean 0 1 10 ./output/CBF/CBF_euclidean_normed_NOCID_REP04_tree.txt ./output/CBF/CBF_euclidean_normed_NOCID_REP04_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  3  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --     19    4   41   4.7172 ==>  10   8   0  /   0   0  12 
+NonL  2    --      4    5   59   5.0430 ==>  10   0   0  /   0   8   0 
+Leaf  3     2    
+Leaf  4     1    
+Leaf  5     3    
+
+;Shapelet id   <data>
+Shapelet   1   0.110780 -1.410400 -1.046400 -1.234800 -0.505820 -1.250300 -0.463820 -0.118370 -0.164250 -0.468630 -0.656390 -1.173800 -1.273400 -0.214880  2.808600  2.407700  2.110600  2.467000  2.172600  1.023600  1.829400  1.366600  1.608400  2.219500  2.522800  1.331900  1.596800  1.801600  1.633500  2.120200  0.645250  1.211500  1.803800  1.105100  0.857740  1.328000  0.617130  1.427400  0.575860  1.181900  1.725400 
+Shapelet   2  -1.115700 -0.650200 -0.918770 -1.234700 -0.765660 -1.249500 -1.737500 -1.528000 -0.079233 -1.774100 -1.450100 -0.972590 -1.106100 -0.585500  0.656180  0.940890  0.123300  0.944350  0.965440  0.654100  1.169100  1.284600  0.345960  0.738080  0.271790  0.728120  0.794920  1.009200  0.769140  1.129800  1.330600  0.826510  0.372060  0.988910  0.872530  0.739390  0.605150  0.993670  0.933220  1.421700  1.316000  1.206500  1.122800  0.735810  0.512800  0.851480  0.514050  0.201570  1.653800  1.037000  1.157800  0.705340  0.981980  0.678930  0.596660  1.383500  1.010100  0.646040  0.693110 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/CBF_TRAIN 3 30 64 1 2 10 euclidean 0 1 10 ./output/CBF/CBF_euclidean_normed_NOCID_REP04_tree.txt ./output/CBF/CBF_euclidean_normed_NOCID_REP04_time.txt
+; time =>    1.843   0.092   1.074   0.160   0.394 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/CBF_TEST 3 900 euclidean 0 1 ./output/CBF/CBF_euclidean_normed_NOCID_REP04_tree.txt ./output/CBF/CBF_euclidean_normed_NOCID_REP04_acc.txt
+; accuracy= 94.667   Correct:852 , Wrong: 48
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 297    0    0 
+;   p  1 |   0  291   38 
+;   p  3 |   1    9  264 
+

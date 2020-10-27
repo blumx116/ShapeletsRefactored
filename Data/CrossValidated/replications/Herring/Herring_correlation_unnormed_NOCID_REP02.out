@@ -1,0 +1,47 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Herring_TRAIN', 2, 64, 256, 1, 2, 10, 'correlation', 0, 0, 10, './replications/Herring/Herring_correlation_unnormed_NOCID_REP02_tree.txt', './replications/Herring/Herring_correlation_unnormed_NOCID_REP02_time.txt']
+
+rand seed=1503428964
+num_class=2, num_obj=64, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/Herring/Herring_correlation_unnormed_NOCID_REP02_tree.txt  time_file=./replications/Herring/Herring_correlation_unnormed_NOCID_REP02_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=219  @[  9,100]  d_th= 0.01 gap=0.000019 gain= 0.13190 (48 )==>   0   8  /  39  17 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=39   @[  0, 30]  d_th= 0.00 gap=0.000006 gain= 0.15806 (18 )==>  20  17  /  19   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=25   @[ 13,157]  d_th= 0.03 gap=0.000442 gain= 0.20440 (21 )==>   0   8  /  20   9 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=11   @[  1,215]  d_th= 0.00 gap=0.000039 gain= 0.24650 (19 )==>  20   4  /   0   5 
+
+num_class=2, num_obj=29, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     2.68 sec
+  Time Rand Project =     9.10 sec
+  Time Score Matrix =     1.06 sec
+  Time Compute Gain =    81.13 sec
+Running  Time for this Shapelet=    95.05 sec <<
+
+
+Total Running  Time =    95.05 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Herring_TEST', 2, 64, 'correlation', 0, 0, './replications/Herring/Herring_correlation_unnormed_NOCID_REP02_tree.txt', './replications/Herring/Herring_correlation_unnormed_NOCID_REP02_acc.txt']
+; accuracy= 67.188   Correct:43 , Wrong: 21
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  25    8 
+;   p  2 |  13   18 
+
+num_class=2, num_obj=64  distance=correlation CID=false normalize=false ./replications/Herring/Herring_correlation_unnormed_NOCID_REP02_tree.txt  ./replications/Herring/Herring_correlation_unnormed_NOCID_REP02_acc.txt
+
+==> Tree Size = 28
+

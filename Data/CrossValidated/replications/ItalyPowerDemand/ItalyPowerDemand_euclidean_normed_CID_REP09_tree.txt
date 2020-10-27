@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1501824717, rand()=1345232990, rand()=623027314
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 1 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP09_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP09_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 10 
+NonL  1    --      0   17    5   1.0627 ==>  29   4  /   5  29 
+NonL  2    --     21   18    5   1.7938 ==>   1   4  /  28   0 
+NonL  3    --      4    5    5   0.4295 ==>   3   0  /   2  29 
+NonL  4    --      2   17    5   1.7739 ==>   0   4  /   1   0 
+Leaf  5     1    
+Leaf  6     1    
+Leaf  7     2    
+Leaf  8     2    
+Leaf  9     1    
+
+;Shapelet id   <data>
+Shapelet   1   0.613330  1.369800  1.464400  1.054600  0.581810 
+Shapelet   2   0.487320  0.429130  0.225480  0.516410 -0.094555 
+Shapelet   3  -1.449400 -1.090000  0.088196  0.347790  1.066700 
+Shapelet   4   0.578740  0.355610 -0.034864 -0.704250  0.188260 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TRAIN 2 67 12 1 2 10 euclidean 1 1 10 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP09_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP09_time.txt
+; time =>    0.125   0.005   0.060   0.010   0.039 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/ItalyPowerDemand_TEST 2 1029 euclidean 1 1 ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP09_tree.txt ./output/ItalyPowerDemand/ItalyPowerDemand_euclidean_normed_CID_REP09_acc.txt
+; accuracy= 73.275   Correct:754 , Wrong: 275
+
+
+;   == Confusion Matrix ==
+;   real |   2    1 
+;   -----+------------
+;   p  2 | 362  121 
+;   p  1 | 154  392 
+

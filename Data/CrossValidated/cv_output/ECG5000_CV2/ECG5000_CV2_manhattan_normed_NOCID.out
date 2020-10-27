@@ -1,0 +1,46 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2', 5, 251, 70, 1, 2, 10, 'manhattan', 0, 1, 10, './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_NOCID_time.txt']
+
+rand seed=1502274499
+num_class=5, num_obj=251, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_NOCID_tree.txt  time_file=./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_NOCID_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=45   @[152,  7]  d_th= 8.93 gap=0.000737 gain= 0.56026 (61 )==>   0  84   2   9   0  / 146   5   3   1   1 
+
+=== Node 2 ===
+.................................
+Len=65   @[ 85, 72]  d_th=16.67 gap=0.326516 gain= 0.10714 (89 )==>   0   0   2   1   0  /   0  84   0   8   0 
+
+=== Node 4 ===
+.................................
+Len=59   @[  2, 66]  d_th= 8.09 gap=1.052968 gain= 0.63651 (1  )==>   0   0   0   1   0  /   0   0   2   0   0 
+
+num_class=5, num_obj=3, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.64 sec
+  Time Rand Project =     5.47 sec
+  Time Score Matrix =     0.59 sec
+  Time Compute Gain =     3.95 sec
+Running  Time for this Shapelet=    11.13 sec <<
+
+
+Total Running  Time =    11.13 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV1', 5, 249, 'manhattan', 0, 1, './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_NOCID_tree.txt', './cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_NOCID_acc.txt']
+; accuracy= 89.960   Correct:224 , Wrong: 25
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 | 144    9    3    2    1 
+;   p  2 |   2   79    1    6    0 
+;   p  3 |   0    0    1    1    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=249  distance=manhattan CID=false normalize=true ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_NOCID_tree.txt  ./cv_output/ECG5000_CV2/ECG5000_CV2_manhattan_normed_NOCID_acc.txt
+
+==> Tree Size = 10
+

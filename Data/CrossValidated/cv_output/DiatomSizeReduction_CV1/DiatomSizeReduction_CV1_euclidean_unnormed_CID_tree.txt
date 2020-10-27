@@ -1,0 +1,35 @@
+;Shapelet Tree 
+
+;random seed:1502278728, rand()=1035954088, rand()=2041212741
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV1 3 7 173 1 2 10 euclidean 1 0 10 ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_unnormed_CID_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   2  3  4 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0  129   87   1.1975 ==>   3   0   0  /   0   2   2 
+Leaf  2     2    
+NonL  3    --      0  336    7   4.9354 ==>   0   2   0  /   0   0   2 
+Leaf  6     3    
+Leaf  7     4    
+
+;Shapelet id   <data>
+Shapelet   1   0.077310  0.117710  0.166550  0.215730  0.265300  0.284810  0.322690  0.373870  0.424290  0.445400  0.489940  0.529930  0.554690  0.581420  0.610110  0.640360  0.672150  0.705470  0.740830  0.777600  0.792320  0.780360  0.821070  0.863280  0.875580  0.875120  0.920770  0.967960  1.016300  1.069100  1.128200  1.178800  1.236700  1.292800  1.346500  1.406700  1.460900  1.515200  1.570400  1.625000  1.621500  1.663000  1.721600  1.772000  1.771500  1.771900  1.738900  1.696300  1.698800  1.643000  1.586700  1.531200  1.475900  1.415600  1.360800  1.303900  1.243800  1.183600  1.131300  1.074200  1.017700  0.970970  0.981860  0.948300  0.901790  0.866990  0.881700  0.845590  0.804140  0.764000  0.725200  0.688350  0.652960  0.619040  0.586630  0.556110  0.527500  0.500510  0.467510  0.414240  0.390540  0.348070  0.308580  0.286580  0.235930  0.185620  0.153550 
+Shapelet   3   1.514200  1.513200  1.512500  1.513100  1.514100  1.516100  1.518800 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV1 3 7 173 1 2 10 euclidean 1 0 10 ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_unnormed_CID_time.txt
+; time =>    1.527   0.054   0.119   0.012   1.330 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/DiatomSizeReduction_TRAIN_CV2 4 9 euclidean 1 0 ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_unnormed_CID_tree.txt ./cv_output/DiatomSizeReduction_CV1/DiatomSizeReduction_CV1_euclidean_unnormed_CID_acc.txt
+; accuracy= 77.778   Correct:7 , Wrong: 2
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |   0    0    0    0 
+;   p  2 |   0    3    1    0 
+;   p  3 |   1    0    2    0 
+;   p  4 |   0    0    0    2 
+

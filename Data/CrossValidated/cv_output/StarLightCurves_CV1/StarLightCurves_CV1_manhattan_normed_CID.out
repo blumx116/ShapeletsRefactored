@@ -1,0 +1,52 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/StarLightCurves_TRAIN_CV1', 3, 499, 512, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_normed_CID_tree.txt', './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502416489
+num_class=3, num_obj=499, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..............................................................................................................................................................................................................................................................
+Len=465  @[302,193]  d_th=220.43 gap=0.387981 gain= 0.55152 (227)==>  76   2 285  /   0 135   1 
+
+=== Node 2 ===
+..............................................................................................................................................................................................................................................................
+Len=253  @[ 80,597]  d_th=238.28 gap=0.076349 gain= 0.23734 (247)==>  25   0 280  /  51   2   5 
+
+=== Node 5 ===
+..............................................................................................................................................................................................................................................................
+Len=429  @[  6,103]  d_th=95.40 gap=0.171229 gain= 0.28610 (40 )==>  49   0   0  /   2   2   5 
+
+=== Node 11 ===
+..............................................................................................................................................................................................................................................................
+Len=511  @[  0, 20]  d_th=164.35 gap=2.938523 gain= 0.68696 (1  )==>   2   2   0  /   0   0   5 
+
+=== Node 22 ===
+..............................................................................................................................................................................................................................................................
+Len=479  @[  2,132]  d_th=129.63 gap=2.531204 gain= 0.69315 (0  )==>   0   2   0  /   2   0   0 
+
+num_class=3, num_obj=4, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    32.91 sec
+  Time Rand Project =   104.97 sec
+  Time Score Matrix =    11.23 sec
+  Time Compute Gain =  3475.95 sec
+Running  Time for this Shapelet=  3635.58 sec <<
+
+
+Total Running  Time =  3635.58 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/StarLightCurves_TRAIN_CV2', 3, 501, 'manhattan', 1, 1, './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_normed_CID_tree.txt', './cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 94.212   Correct:472 , Wrong: 29
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |  55    0    7 
+;   p  2 |   0  137    0 
+;   p  3 |  21    1  280 
+
+num_class=3, num_obj=501  distance=manhattan CID=true normalize=true ./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_normed_CID_tree.txt  ./cv_output/StarLightCurves_CV1/StarLightCurves_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 46
+

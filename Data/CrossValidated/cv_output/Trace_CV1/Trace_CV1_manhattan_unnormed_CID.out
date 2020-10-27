@@ -1,0 +1,45 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/Trace_TRAIN_CV1', 4, 49, 138, 1, 2, 10, 'manhattan', 1, 0, 10, './cv_output/Trace_CV1/Trace_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/Trace_CV1/Trace_CV1_manhattan_unnormed_CID_time.txt']
+
+rand seed=1502275438
+num_class=4, num_obj=49, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/Trace_CV1/Trace_CV1_manhattan_unnormed_CID_tree.txt  time_file=./cv_output/Trace_CV1/Trace_CV1_manhattan_unnormed_CID_time.txt distance=manhattan CID=true normalize=false
+
+relabel [new,real] => [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+...................................................................
+Len=131  @[  0, 12]  d_th=485.01 gap=35.987817 gain= 0.69127 (3  )==>  13  10   0   0  /   0   0  11  15 
+
+=== Node 2 ===
+...................................................................
+Len=15   @[  2, 49]  d_th=18.12 gap=3.045382 gain= 0.68462 (3  )==>  13   0   0   0  /   0  10   0   0 
+
+=== Node 3 ===
+...................................................................
+Len=11   @[  8,177]  d_th= 1.99 gap=0.123010 gain= 0.68127 (4  )==>   0   0  11   0  /   0   0   0  15 
+
+num_class=4, num_obj=26, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.61 sec
+  Time Rand Project =     3.82 sec
+  Time Score Matrix =     0.33 sec
+  Time Compute Gain =     7.21 sec
+Running  Time for this Shapelet=    12.32 sec <<
+
+
+Total Running  Time =    12.32 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/Trace_TRAIN_CV2', 4, 51, 'manhattan', 1, 0, './cv_output/Trace_CV1/Trace_CV1_manhattan_unnormed_CID_tree.txt', './cv_output/Trace_CV1/Trace_CV1_manhattan_unnormed_CID_acc.txt']
+; accuracy= 100.000   Correct:51 , Wrong: 0
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4 
+;   -----+------------------------
+;   p  1 |  13    0    0    0 
+;   p  2 |   0   11    0    0 
+;   p  3 |   0    0   11    0 
+;   p  4 |   0    0    0   16 
+
+num_class=4, num_obj=51  distance=manhattan CID=true normalize=false ./cv_output/Trace_CV1/Trace_CV1_manhattan_unnormed_CID_tree.txt  ./cv_output/Trace_CV1/Trace_CV1_manhattan_unnormed_CID_acc.txt
+
+==> Tree Size = 8
+

@@ -1,0 +1,42 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2', 5, 251, 70, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502274409
+num_class=5, num_obj=251, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=9    @[  0,124]  d_th= 2.36 gap=0.005667 gain= 0.51091 (69 )==> 146   8   1   4   1  /   0  81   4   6   0 
+
+=== Node 3 ===
+.................................
+Len=53   @[ 81, 24]  d_th= 0.98 gap=0.013508 gain= 0.18032 (83 )==>   0   0   4   0   0  /   0  81   0   6   0 
+
+num_class=5, num_obj=91, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.63 sec
+  Time Rand Project =     5.39 sec
+  Time Score Matrix =     0.58 sec
+  Time Compute Gain =     4.11 sec
+Running  Time for this Shapelet=    11.20 sec <<
+
+
+Total Running  Time =    11.20 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV1', 5, 249, 'euclidean', 1, 0, './cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_unnormed_CID_tree.txt', './cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_unnormed_CID_acc.txt']
+; accuracy= 89.960   Correct:224 , Wrong: 25
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 | 144    9    1    4    1 
+;   p  2 |   2   78    2    4    0 
+;   p  3 |   0    1    2    1    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=249  distance=euclidean CID=true normalize=false ./cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_unnormed_CID_tree.txt  ./cv_output/ECG5000_CV2/ECG5000_CV2_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 8
+

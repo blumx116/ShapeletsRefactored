@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV1', 2, 54, 216, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/Ham_CV1/Ham_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/Ham_CV1/Ham_CV1_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503462174
+num_class=2, num_obj=54, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/Ham_CV1/Ham_CV1_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/Ham_CV1/Ham_CV1_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,2]  [0,1]  
+
+=== Node 1 ===
+..........................................................................................................
+Len=175  @[ 39, 33]  d_th= 0.12 gap=0.000228 gain= 0.27954 (12 )==>   1  20  /  25   8 
+
+=== Node 3 ===
+..........................................................................................................
+Len=9    @[  0, 39]  d_th= 0.01 gap=0.000098 gain= 0.33529 (17 )==>  24   1  /   1   7 
+
+=== Node 7 ===
+..........................................................................................................
+Len=5    @[  1,  1]  d_th= 0.03 gap=0.007778 gain= 0.37677 (6  )==>   0   7  /   1   0 
+
+num_class=2, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.82 sec
+  Time Rand Project =    17.94 sec
+  Time Score Matrix =     1.25 sec
+  Time Compute Gain =    25.44 sec
+Running  Time for this Shapelet=    47.72 sec <<
+
+
+Total Running  Time =    47.72 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/Ham_TRAIN_CV2', 2, 55, 'correlation', 0, 0, './cv_output/Ham_CV1/Ham_CV1_correlation_unnormed_NOCID_tree.txt', './cv_output/Ham_CV1/Ham_CV1_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 50.909   Correct:28 , Wrong: 27
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  14   15 
+;   p  2 |  12   14 
+
+num_class=2, num_obj=55  distance=correlation CID=false normalize=false ./cv_output/Ham_CV1/Ham_CV1_correlation_unnormed_NOCID_tree.txt  ./cv_output/Ham_CV1/Ham_CV1_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 16
+

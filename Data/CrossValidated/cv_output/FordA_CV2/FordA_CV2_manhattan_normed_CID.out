@@ -1,0 +1,63 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FordA_TRAIN_CV2', 2, 661, 250, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/FordA_CV2/FordA_CV2_manhattan_normed_CID_tree.txt', './cv_output/FordA_CV2/FordA_CV2_manhattan_normed_CID_time.txt']
+
+rand seed=1502289410
+num_class=2, num_obj=661, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/FordA_CV2/FordA_CV2_manhattan_normed_CID_tree.txt  time_file=./cv_output/FordA_CV2/FordA_CV2_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=245  @[403,225]  d_th=230.79 gap=0.003971 gain= 0.12658 (89 )==>  67 219  / 274 101 
+
+=== Node 2 ===
+...........................................................................................................................
+Len=39   @[233,150]  d_th=12.25 gap=0.006343 gain= 0.15292 (144)==>  20 195  /  47  24 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=181  @[335,317]  d_th=188.51 gap=0.059480 gain= 0.09294 (165)==> 104   1  / 170 100 
+
+=== Node 5 ===
+...........................................................................................................................
+Len=9    @[  1,320]  d_th= 1.26 gap=0.000523 gain= 0.21757 (5  )==>  32   1  /  15  23 
+
+=== Node 7 ===
+...........................................................................................................................
+Len=173  @[ 43, 91]  d_th=98.53 gap=0.043116 gain= 0.16903 (66 )==> 142  26  /  28  74 
+
+=== Node 11 ===
+...........................................................................................................................
+Len=155  @[ 11, 38]  d_th=89.93 gap=0.016666 gain= 0.32508 (18 )==>  10   0  /   5  23 
+
+=== Node 14 ===
+...........................................................................................................................
+Len=65   @[  0,215]  d_th=17.05 gap=0.000004 gain= 0.07938 (44 )==>  62   0  /  80  26 
+
+=== Node 15 ===
+...........................................................................................................................
+Len=201  @[ 18,167]  d_th=105.94 gap=0.042151 gain= 0.09701 (66 )==>  13   5  /  15  69 
+
+num_class=2, num_obj=102, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    48.58 sec
+  Time Rand Project =   613.15 sec
+  Time Score Matrix =    40.30 sec
+  Time Compute Gain =  1025.93 sec
+Running  Time for this Shapelet=  1767.91 sec <<
+
+
+Total Running  Time =  1767.91 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FordA_TRAIN_CV1', 2, 659, 'manhattan', 1, 1, './cv_output/FordA_CV2/FordA_CV2_manhattan_normed_CID_tree.txt', './cv_output/FordA_CV2/FordA_CV2_manhattan_normed_CID_acc.txt']
+; accuracy= 79.363   Correct:523 , Wrong: 136
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 | 273   69 
+;   p  1 |  67  250 
+
+num_class=2, num_obj=659  distance=manhattan CID=true normalize=true ./cv_output/FordA_CV2/FordA_CV2_manhattan_normed_CID_tree.txt  ./cv_output/FordA_CV2/FordA_CV2_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 32
+

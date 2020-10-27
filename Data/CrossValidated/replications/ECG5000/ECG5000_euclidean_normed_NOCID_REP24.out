@@ -1,0 +1,42 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TRAIN', 5, 500, 70, 1, 2, 10, 'euclidean', 0, 1, 10, './replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP24_tree.txt', './replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP24_time.txt']
+
+rand seed=1508181214
+num_class=5, num_obj=500, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP24_tree.txt  time_file=./replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP24_time.txt distance=euclidean CID=false normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=41   @[325,  7]  d_th= 1.52 gap=0.000661 gain= 0.52303 (138)==>   0 162   3  16   0  / 292  15   7   3   2 
+
+=== Node 2 ===
+.................................
+Len=65   @[122,  3]  d_th= 3.69 gap=0.015707 gain= 0.08543 (173)==>   0 162   0  15   0  /   0   0   3   1   0 
+
+num_class=5, num_obj=181, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     1.33 sec
+  Time Rand Project =    14.20 sec
+  Time Score Matrix =     1.38 sec
+  Time Compute Gain =     6.84 sec
+Running  Time for this Shapelet=    24.95 sec <<
+
+
+Total Running  Time =    24.95 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/ECG5000_TEST', 5, 4500, 'euclidean', 0, 1, './replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP24_tree.txt', './replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP24_acc.txt']
+; accuracy= 89.444   Correct:4025 , Wrong: 475
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 |2615  181   61   23   16 
+;   p  2 |   9 1395   10  147    6 
+;   p  3 |   3   14   15    5    0 
+;   p  4 |   0    0    0    0    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=4500  distance=euclidean CID=false normalize=true ./replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP24_tree.txt  ./replications/ECG5000/ECG5000_euclidean_normed_NOCID_REP24_acc.txt
+
+==> Tree Size = 6
+

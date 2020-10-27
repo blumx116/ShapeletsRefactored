@@ -1,0 +1,84 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FISH_TRAIN', 7, 175, 232, 1, 2, 10, 'correlation', 1, 0, 10, './replications/FISH/FISH_correlation_unnormed_CID_REP08_tree.txt', './replications/FISH/FISH_correlation_unnormed_CID_REP08_time.txt']
+
+rand seed=1503375973
+num_class=7, num_obj=175, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./replications/FISH/FISH_correlation_unnormed_CID_REP08_tree.txt  time_file=./replications/FISH/FISH_correlation_unnormed_CID_REP08_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [6,3]  [5,1]  [4,5]  [3,2]  [2,6]  [1,4]  [0,7]  
+
+=== Node 1 ===
+..................................................................................................................
+Len=213  @[110, 31]  d_th= 0.03 gap=0.000095 gain= 0.46864 (69 )==>  28  21  24   0   1  21  27  /   0   0   1  25  21   5   1 
+
+=== Node 2 ===
+..................................................................................................................
+Len=25   @[  0,114]  d_th= 0.00 gap=0.000001 gain= 0.50136 (62 )==>  28   0   2   0   0   0   0  /   0  21  22   0   1  21  27 
+
+=== Node 3 ===
+..................................................................................................................
+Len=53   @[  0, 51]  d_th= 0.01 gap=0.000051 gain= 0.64576 (1  )==>   0   0   0  25   0   1   0  /   0   0   1   0  21   4   1 
+
+=== Node 5 ===
+..................................................................................................................
+Len=81   @[  1,141]  d_th= 0.00 gap=0.000004 gain= 0.47991 (40 )==>   0   1  22   0   1   2   0  /   0  20   0   0   0  19  27 
+
+=== Node 7 ===
+..................................................................................................................
+Len=109  @[  0,129]  d_th= 0.01 gap=0.000105 gain= 0.47917 (17 )==>   0   0   0   0  21   0   1  /   0   0   1   0   0   4   0 
+
+=== Node 10 ===
+..................................................................................................................
+Len=95   @[  0,331]  d_th= 0.01 gap=0.000017 gain= 0.35763 (20 )==>   0   1  22   0   0   0   0  /   0   0   0   0   1   2   0 
+
+=== Node 11 ===
+..................................................................................................................
+Len=93   @[  0,  7]  d_th= 0.00 gap=0.000007 gain= 0.46059 (4  )==>   0  20   0   0   0  14   1  /   0   0   0   0   0   5  26 
+
+=== Node 15 ===
+..................................................................................................................
+Len=17   @[  0,359]  d_th= 0.09 gap=0.009547 gain= 0.50040 (3  )==>   0   0   0   0   0   4   0  /   0   0   1   0   0   0   0 
+
+=== Node 21 ===
+..................................................................................................................
+Len=21   @[  0,242]  d_th= 0.02 gap=0.005075 gain= 0.63651 (1  )==>   0   0   0   0   1   0   0  /   0   0   0   0   0   2   0 
+
+=== Node 22 ===
+..................................................................................................................
+Len=143  @[  0,218]  d_th= 0.01 gap=0.000038 gain= 0.50698 (1  )==>   0  18   0   0   0   0   0  /   0   2   0   0   0  14   1 
+
+=== Node 23 ===
+..................................................................................................................
+Len=171  @[  0,124]  d_th= 0.01 gap=0.000090 gain= 0.44180 (21 )==>   0   0   0   0   0   5   0  /   0   0   0   0   0   0  26 
+
+=== Node 45 ===
+..................................................................................................................
+Len=23   @[  0,228]  d_th= 0.01 gap=0.000150 gain= 0.46600 (11 )==>   0   0   0   0   0  14   0  /   0   2   0   0   0   0   1 
+
+num_class=7, num_obj=17, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     7.05 sec
+  Time Rand Project =    21.64 sec
+  Time Score Matrix =     2.62 sec
+  Time Compute Gain =   350.04 sec
+Running  Time for this Shapelet=   383.91 sec <<
+
+
+Total Running  Time =   383.91 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FISH_TEST', 7, 175, 'correlation', 1, 0, './replications/FISH/FISH_correlation_unnormed_CID_REP08_tree.txt', './replications/FISH/FISH_correlation_unnormed_CID_REP08_acc.txt']
+; accuracy= 81.714   Correct:143 , Wrong: 32
+
+
+;   == Confusion Matrix ==
+;   real |   5    4    2    7    1    3    6 
+;   -----+------------------------------------------
+;   p  5 |  25    0    0    0    0    1    2 
+;   p  4 |   0   24    0    0    3    0    0 
+;   p  2 |   0    0   24    0    0    1    0 
+;   p  7 |   0    2    0   21    1    0    6 
+;   p  1 |   0    1    0    1   15    1    2 
+;   p  3 |   0    1    0    0    5   19    0 
+;   p  6 |   3    1    1    0    0    0   15 
+
+num_class=7, num_obj=175  distance=correlation CID=true normalize=false ./replications/FISH/FISH_correlation_unnormed_CID_REP08_tree.txt  ./replications/FISH/FISH_correlation_unnormed_CID_REP08_acc.txt
+
+==> Tree Size = 92
+

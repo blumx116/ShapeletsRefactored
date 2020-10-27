@@ -1,0 +1,55 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV1', 6, 150, 30, 1, 2, 10, 'correlation', 1, 0, 10, './cv_output/synthetic_control_CV1/synthetic_control_CV1_correlation_unnormed_CID_tree.txt', './cv_output/synthetic_control_CV1/synthetic_control_CV1_correlation_unnormed_CID_time.txt']
+
+rand seed=1503460945
+num_class=6, num_obj=150, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/synthetic_control_CV1/synthetic_control_CV1_correlation_unnormed_CID_tree.txt  time_file=./cv_output/synthetic_control_CV1/synthetic_control_CV1_correlation_unnormed_CID_time.txt distance=correlation CID=true normalize=false
+
+relabel [new,real] => [5,6]  [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.............
+Len=27   @[126, 16]  d_th= 0.61 gap=0.014770 gain= 0.63651 (50 )==>   0   0   0  25   0  25  /  25  25  25   0  25   0 
+
+=== Node 2 ===
+.............
+Len=17   @[ 42, 32]  d_th= 0.31 gap=0.000007 gain= 0.46899 (2  )==>   0   0   0   1   0  23  /   0   0   0  24   0   2 
+
+=== Node 3 ===
+.............
+Len=29   @[ 90, 24]  d_th= 0.53 gap=0.006796 gain= 0.69315 (0  )==>   0   0  25   0  25   0  /  25  25   0   0   0   0 
+
+=== Node 6 ===
+.............
+Len=19   @[ 46, 12]  d_th= 0.30 gap=0.001389 gain= 0.55056 (4  )==>   0   0   2   0  25   0  /   0   0  23   0   0   0 
+
+=== Node 7 ===
+.............
+Len=15   @[ 40,  9]  d_th= 0.38 gap=0.043500 gain= 0.69315 (0  )==>   0  25   0   0   0   0  /  25   0   0   0   0   0 
+
+num_class=6, num_obj=50, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.12 sec
+  Time Rand Project =     1.07 sec
+  Time Score Matrix =     0.10 sec
+  Time Compute Gain =     0.95 sec
+Running  Time for this Shapelet=     2.35 sec <<
+
+
+Total Running  Time =     2.35 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/synthetic_control_TRAIN_CV2', 6, 150, 'correlation', 1, 0, './cv_output/synthetic_control_CV1/synthetic_control_CV1_correlation_unnormed_CID_tree.txt', './cv_output/synthetic_control_CV1/synthetic_control_CV1_correlation_unnormed_CID_acc.txt']
+; accuracy= 82.000   Correct:123 , Wrong: 27
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5    6 
+;   -----+------------------------------------
+;   p  1 |  23    0    2    0    1    0 
+;   p  2 |   2   25    0    0    0    0 
+;   p  3 |   0    0   14    0    2    0 
+;   p  4 |   0    0    0   19    1    4 
+;   p  5 |   0    0    9    0   21    0 
+;   p  6 |   0    0    0    6    0   21 
+
+num_class=6, num_obj=150  distance=correlation CID=true normalize=false ./cv_output/synthetic_control_CV1/synthetic_control_CV1_correlation_unnormed_CID_tree.txt  ./cv_output/synthetic_control_CV1/synthetic_control_CV1_correlation_unnormed_CID_acc.txt
+
+==> Tree Size = 16
+

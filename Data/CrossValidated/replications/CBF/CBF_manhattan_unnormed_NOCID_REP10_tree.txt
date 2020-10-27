@@ -1,0 +1,34 @@
+;Shapelet Tree 
+
+;random seed:1501857250, rand()=1088260499, rand()=591365807
+;command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/CBF_TRAIN 3 30 64 1 2 10 manhattan 0 0 10 ./output/CBF/CBF_manhattan_unnormed_NOCID_REP10_tree.txt ./output/CBF/CBF_manhattan_unnormed_NOCID_REP10_time.txt 
+
+;Local Class:   0  1  2 
+;Real  Class:   1  3  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --     21   21   53  29.3021 ==>   0   0  12  /  10   8   0 
+Leaf  2     2    
+NonL  3    --     11   14   25  17.8257 ==>  10   0   0  /   0   8   0 
+Leaf  6     1    
+Leaf  7     3    
+
+;Shapelet id   <data>
+Shapelet   1  -0.181790 -1.567900 -1.202600 -0.924860 -0.824550 -0.447950 -0.578590 -0.747280 -0.801740 -0.104170 -0.823880 -1.047800 -1.074800 -0.211620 -0.218330 -0.418800 -0.362160 -0.902410 -0.289020  0.186430 -0.409470 -0.650470 -0.454410 -0.113890 -0.233840 -0.355750  0.042899 -0.332950  0.142980 -0.008987 -0.617310  0.441040 -0.173300  0.723620 -0.096601  0.222790 -0.235020 -0.649200 -0.148620 -0.190670  0.676440  0.454760  0.262640  1.073000  1.434300  0.254120  0.683670  0.351720  0.636160  0.208330  0.955370  0.625060  1.324900 
+Shapelet   3  -1.581600 -1.365100 -1.034400 -1.785500 -1.235200 -1.386400 -1.553200 -1.221500 -1.001100 -1.181600 -1.227700 -1.520000 -1.345700  1.089500  0.924820  0.549540  0.265090  0.974350  1.347100  0.700750  0.482380  0.710890  0.289980  0.413870  1.434900 
+
+
+; cmd = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/CBF_TRAIN 3 30 64 1 2 10 manhattan 0 0 10 ./output/CBF/CBF_manhattan_unnormed_NOCID_REP10_tree.txt ./output/CBF/CBF_manhattan_unnormed_NOCID_REP10_time.txt
+; time =>    0.914   0.070   0.576   0.061   0.169 
+; command = /home/benjamin/datascience-masters/capstone/Shapelet-PMU-Work/FastShapelets/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/CBF_TEST 3 900 manhattan 0 0 ./output/CBF/CBF_manhattan_unnormed_NOCID_REP10_tree.txt ./output/CBF/CBF_manhattan_unnormed_NOCID_REP10_acc.txt
+; accuracy= 87.000   Correct:783 , Wrong: 117
+
+
+;   == Confusion Matrix ==
+;   real |   2    1    3 
+;   -----+------------------
+;   p  2 | 288    1    0 
+;   p  1 |   5  292   99 
+;   p  3 |   5    7  203 
+

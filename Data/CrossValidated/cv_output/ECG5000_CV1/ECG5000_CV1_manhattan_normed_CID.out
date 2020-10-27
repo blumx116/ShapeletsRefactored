@@ -1,0 +1,54 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV1', 5, 249, 70, 1, 2, 10, 'manhattan', 1, 1, 10, './cv_output/ECG5000_CV1/ECG5000_CV1_manhattan_normed_CID_tree.txt', './cv_output/ECG5000_CV1/ECG5000_CV1_manhattan_normed_CID_time.txt']
+
+rand seed=1502274349
+num_class=5, num_obj=249, R=10, top_k=10, percent_mask=0.25, tree_depth=128    tree_file=./cv_output/ECG5000_CV1/ECG5000_CV1_manhattan_normed_CID_tree.txt  time_file=./cv_output/ECG5000_CV1/ECG5000_CV1_manhattan_normed_CID_time.txt distance=manhattan CID=true normalize=true
+
+relabel [new,real] => [4,5]  [3,4]  [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+.................................
+Len=19   @[  0,104]  d_th= 5.61 gap=0.040256 gain= 0.55193 (45 )==> 142   1   1   2   1  /   4  87   4   7   0 
+
+=== Node 3 ===
+.................................
+Len=59   @[ 65,  2]  d_th=25.85 gap=0.023977 gain= 0.26181 (78 )==>   0  86   0   4   0  /   4   1   4   3   0 
+
+=== Node 7 ===
+.................................
+Len=47   @[  5, 92]  d_th=39.84 gap=0.764524 gain= 0.67919 (2  )==>   0   0   4   3   0  /   4   1   0   0   0 
+
+=== Node 14 ===
+.................................
+Len=61   @[  0, 77]  d_th=17.52 gap=0.355053 gain= 0.68291 (1  )==>   0   0   4   0   0  /   0   0   0   3   0 
+
+=== Node 15 ===
+.................................
+Len=69   @[  2,  9]  d_th=164.24 gap=16.764755 gain= 0.50040 (3  )==>   4   0   0   0   0  /   0   1   0   0   0 
+
+num_class=5, num_obj=5, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.71 sec
+  Time Rand Project =     6.56 sec
+  Time Score Matrix =     0.66 sec
+  Time Compute Gain =     7.28 sec
+Running  Time for this Shapelet=    15.79 sec <<
+
+
+Total Running  Time =    15.79 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG5000_TRAIN_CV2', 5, 251, 'manhattan', 1, 1, './cv_output/ECG5000_CV1/ECG5000_CV1_manhattan_normed_CID_tree.txt', './cv_output/ECG5000_CV1/ECG5000_CV1_manhattan_normed_CID_acc.txt']
+; accuracy= 89.641   Correct:225 , Wrong: 26
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3    4    5 
+;   -----+------------------------------
+;   p  1 | 145    8    3    0    1 
+;   p  2 |   1   79    0   10    0 
+;   p  3 |   0    0    1    0    0 
+;   p  4 |   0    2    1    0    0 
+;   p  5 |   0    0    0    0    0 
+
+num_class=5, num_obj=251  distance=manhattan CID=true normalize=true ./cv_output/ECG5000_CV1/ECG5000_CV1_manhattan_normed_CID_tree.txt  ./cv_output/ECG5000_CV1/ECG5000_CV1_manhattan_normed_CID_acc.txt
+
+==> Tree Size = 32
+

@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1502274819, rand()=77684932, rand()=803782431
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV1 2 28 117 1 2 10 euclidean 0 0 10 ./cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_tree.txt ./cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 8 
+NonL  1    --      0   58   39   0.0499 ==>  13   0  /   2  13 
+Leaf  2     1    
+NonL  3    --      0   89   15   0.0148 ==>   2   0  /   0  13 
+Leaf  6     1    
+Leaf  7     2    
+
+;Shapelet id   <data>
+Shapelet   1  -0.382050 -0.399710 -0.418740 -0.441380 -0.465840 -0.488490 -0.504340 -0.513400 -0.519740 -0.527890 -0.540580 -0.555070 -0.565490 -0.570470 -0.573640 -0.575450 -0.575450 -0.574550 -0.572280 -0.567300 -0.560510 -0.552810 -0.545110 -0.538760 -0.533780 -0.528800 -0.523360 -0.517930 -0.511590 -0.505700 -0.500260 -0.496190 -0.491210 -0.484870 -0.475810 -0.462220 -0.444550 -0.423270 -0.399260 
+Shapelet   3  -0.505340 -0.500350 -0.493540 -0.484010 -0.469030 -0.449970 -0.428190 -0.404140 -0.385080 -0.383710 -0.399140 -0.417300 -0.428640 -0.433180 -0.432270 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV1 2 28 117 1 2 10 euclidean 0 0 10 ./cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_tree.txt ./cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_time.txt
+; time =>    0.976   0.108   0.373   0.029   0.438 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Wine_TRAIN_CV2 2 29 euclidean 0 0 ./cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_tree.txt ./cv_output/Wine_CV1/Wine_CV1_euclidean_unnormed_NOCID_acc.txt
+; accuracy= 55.172   Correct:16 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |   9    7 
+;   p  2 |   6    7 
+

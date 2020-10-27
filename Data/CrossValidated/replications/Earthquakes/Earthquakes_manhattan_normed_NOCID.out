@@ -1,0 +1,568 @@
+================ Replication:  1 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP01_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP01_time.txt']
+
+rand seed=1501878890
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP01_tree.txt  time_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP01_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=247  @[ 45, 59]  d_th=199.42 gap=0.001352 gain= 0.10479 (57 )==>  63  35  /  41   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=13   @[  0, 15]  d_th= 0.00 gap=0.000000 gain= 0.11327 (24 )==>  50  11  /  13  24 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=33   @[  2,138]  d_th= 8.16 gap=0.005781 gain= 0.14017 (20 )==>  24   0  /  26  18 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=5    @[  0,190]  d_th= 0.37 gap=0.003140 gain= 0.29630 (8  )==>  10   1  /   3  16 
+
+=== Node 9 ===
+..............................................................................................................................
+Len=113  @[ 15,177]  d_th=74.39 gap=0.012888 gain= 0.19311 (28 )==>  26  10  /   0   8 
+
+=== Node 11 ===
+..............................................................................................................................
+Len=131  @[  5,309]  d_th=96.59 gap=0.105153 gain= 0.43616 (13 )==>   0  16  /   3   0 
+
+num_class=2, num_obj=19, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    13.46 sec
+  Time Rand Project =   159.74 sec
+  Time Score Matrix =    21.98 sec
+  Time Compute Gain =   192.88 sec
+Running  Time for this Shapelet=   407.72 sec <<
+
+
+Total Running  Time =   407.72 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'manhattan', 0, 1, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP01_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP01_acc.txt']
+0
+num_class=2, num_obj=322  distance=manhattan CID=false normalize=true ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP01_tree.txt  ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP01_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 67.391   Correct:217 , Wrong: 105
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  12   59 
+;   p  0 |  46  205 
+
+
+================ Replication:  1 Finished ================
+================ Replication:  2 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP02_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP02_time.txt']
+
+rand seed=1501879308
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP02_tree.txt  time_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP02_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=205  @[112, 64]  d_th=166.81 gap=0.005135 gain= 0.12811 (43 )==>  56  35  /  48   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=31   @[ 20,411]  d_th= 8.35 gap=0.005228 gain= 0.09538 (67 )==>   1  11  /  55  24 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=231  @[ 77,205]  d_th=165.77 gap=0.009360 gain= 0.11592 (65 )==>   0   7  /  55  17 
+
+=== Node 11 ===
+..............................................................................................................................
+Len=179  @[ 10,255]  d_th=133.41 gap=0.001395 gain= 0.15057 (46 )==>   3  10  /  52   7 
+
+num_class=2, num_obj=72, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    13.09 sec
+  Time Rand Project =   159.63 sec
+  Time Score Matrix =    22.14 sec
+  Time Compute Gain =   185.88 sec
+Running  Time for this Shapelet=   400.42 sec <<
+
+
+Total Running  Time =   400.42 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'manhattan', 0, 1, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP02_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP02_acc.txt']
+0
+num_class=2, num_obj=322  distance=manhattan CID=false normalize=true ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP02_tree.txt  ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP02_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 71.429   Correct:230 , Wrong: 92
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  17   51 
+;   p  0 |  41  213 
+
+
+================ Replication:  2 Finished ================
+================ Replication:  3 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP03_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP03_time.txt']
+
+rand seed=1501879719
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP03_tree.txt  time_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP03_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=237  @[112, 59]  d_th=197.12 gap=0.002355 gain= 0.10996 (35 )==>  53  34  /  51   1 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=23   @[  1,232]  d_th= 8.77 gap=0.001579 gain= 0.10457 (43 )==>  32  33  /  21   1 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=11   @[  5,124]  d_th= 3.84 gap=0.000173 gain= 0.11240 (25 )==>  29  16  /   3  17 
+
+=== Node 8 ===
+..............................................................................................................................
+Len=95   @[ 36,241]  d_th=66.84 gap=0.038165 gain= 0.20758 (13 )==>  13  16  /  16   0 
+
+=== Node 9 ===
+..............................................................................................................................
+Len=101  @[ 16,315]  d_th=65.73 gap=0.007853 gain= 0.42271 (14 )==>   3   0  /   0  17 
+
+num_class=2, num_obj=20, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    12.13 sec
+  Time Rand Project =   144.95 sec
+  Time Score Matrix =    19.99 sec
+  Time Compute Gain =   173.27 sec
+Running  Time for this Shapelet=   368.17 sec <<
+
+
+Total Running  Time =   368.17 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'manhattan', 0, 1, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP03_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP03_acc.txt']
+0
+num_class=2, num_obj=322  distance=manhattan CID=false normalize=true ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP03_tree.txt  ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP03_acc.txt
+
+==> Tree Size = 20
+
+; accuracy= 69.876   Correct:225 , Wrong: 97
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  15   54 
+;   p  0 |  43  210 
+
+
+================ Replication:  3 Finished ================
+================ Replication:  4 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP04_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP04_time.txt']
+
+rand seed=1501880097
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP04_tree.txt  time_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP04_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=207  @[ 43,123]  d_th=154.51 gap=0.000332 gain= 0.10425 (31 )==>  27  27  /  77   8 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=117  @[ 52,330]  d_th=81.30 gap=0.004533 gain= 0.14147 (2  )==>  20   6  /   7  21 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=179  @[ 12,318]  d_th=118.16 gap=0.023930 gain= 0.38558 (16 )==>   0   5  /  20   1 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=69   @[ 13, 64]  d_th=36.14 gap=0.028122 gain= 0.34417 (8  )==>   7   3  /   0  18 
+
+=== Node 10 ===
+..............................................................................................................................
+Len=139  @[  2,115]  d_th=101.88 gap=0.055856 gain= 0.61086 (4  )==>   7   0  /   0   3 
+
+num_class=2, num_obj=10, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     8.68 sec
+  Time Rand Project =   101.11 sec
+  Time Score Matrix =    14.07 sec
+  Time Compute Gain =   124.45 sec
+Running  Time for this Shapelet=   260.86 sec <<
+
+
+Total Running  Time =   260.86 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'manhattan', 0, 1, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP04_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP04_acc.txt']
+0
+num_class=2, num_obj=322  distance=manhattan CID=false normalize=true ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP04_tree.txt  ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP04_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 70.497   Correct:227 , Wrong: 95
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  15   52 
+;   p  0 |  43  212 
+
+
+================ Replication:  4 Finished ================
+================ Replication:  5 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP05_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP05_time.txt']
+
+rand seed=1501880365
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP05_tree.txt  time_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP05_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=235  @[112, 59]  d_th=194.47 gap=0.007905 gain= 0.10996 (35 )==>  53  34  /  51   1 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=21   @[  0,232]  d_th= 4.29 gap=0.000023 gain= 0.09381 (71 )==>   0   8  /  53  26 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=13   @[  0,106]  d_th= 0.00 gap=0.000000 gain= 0.11848 (9  )==>  21  23  /  32   3 
+
+=== Node 10 ===
+..............................................................................................................................
+Len=163  @[ 17,155]  d_th=108.61 gap=0.015435 gain= 0.16192 (28 )==>  11   0  /  16  23 
+
+num_class=2, num_obj=50, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    12.44 sec
+  Time Rand Project =   153.99 sec
+  Time Score Matrix =    20.58 sec
+  Time Compute Gain =   172.16 sec
+Running  Time for this Shapelet=   377.42 sec <<
+
+
+Total Running  Time =   377.42 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'manhattan', 0, 1, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP05_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP05_acc.txt']
+0
+num_class=2, num_obj=322  distance=manhattan CID=false normalize=true ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP05_tree.txt  ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP05_acc.txt
+
+==> Tree Size = 22
+
+; accuracy= 78.261   Correct:252 , Wrong: 70
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |   7   19 
+;   p  0 |  51  245 
+
+
+================ Replication:  5 Finished ================
+================ Replication:  6 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP06_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP06_time.txt']
+
+rand seed=1501880752
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP06_tree.txt  time_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP06_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=167  @[ 30,268]  d_th=122.51 gap=0.002708 gain= 0.10113 (91 )==>   7  17  /  97  18 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=9    @[  5,275]  d_th= 2.66 gap=0.144555 gain= 0.44272 (12 )==>   6   0  /   1  17 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=177  @[109,279]  d_th=140.22 gap=0.014747 gain= 0.08687 (25 )==>  52  18  /  45   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=13   @[  0, 27]  d_th= 0.00 gap=0.000000 gain= 0.13234 (4  )==>  35   2  /  17  16 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=25   @[  2,173]  d_th= 5.60 gap=0.001138 gain= 0.29859 (2  )==>   2  12  /  14   2 
+
+num_class=2, num_obj=30, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    12.72 sec
+  Time Rand Project =   150.18 sec
+  Time Score Matrix =    21.19 sec
+  Time Compute Gain =   181.95 sec
+Running  Time for this Shapelet=   384.74 sec <<
+
+
+Total Running  Time =   384.74 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'manhattan', 0, 1, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP06_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP06_acc.txt']
+0
+num_class=2, num_obj=322  distance=manhattan CID=false normalize=true ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP06_tree.txt  ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP06_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 61.491   Correct:198 , Wrong: 124
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  28   94 
+;   p  0 |  30  170 
+
+
+================ Replication:  6 Finished ================
+================ Replication:  7 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP07_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP07_time.txt']
+
+rand seed=1501881147
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP07_tree.txt  time_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP07_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=175  @[135,250]  d_th=127.39 gap=0.001750 gain= 0.13180 (79 )==>   9  21  /  95  14 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=165  @[  3,229]  d_th=135.27 gap=0.000637 gain= 0.31172 (10 )==>   1  19  /   8   2 
+
+=== Node 3 ===
+..............................................................................................................................
+Len=159  @[105,100]  d_th=103.92 gap=0.000004 gain= 0.10411 (77 )==>   7   9  /  88   5 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=55   @[  3,277]  d_th=16.11 gap=0.456737 gain= 0.50040 (6  )==>   0   2  /   8   0 
+
+=== Node 6 ===
+..............................................................................................................................
+Len=13   @[  2,280]  d_th= 3.24 gap=0.000128 gain= 0.49693 (0  )==>   0   8  /   7   1 
+
+=== Node 13 ===
+..............................................................................................................................
+Len=231  @[  1, 27]  d_th=73.28 gap=4.821778 gain= 0.37677 (6  )==>   0   1  /   7   0 
+
+num_class=2, num_obj=8, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    10.42 sec
+  Time Rand Project =   121.85 sec
+  Time Score Matrix =    17.19 sec
+  Time Compute Gain =   149.75 sec
+Running  Time for this Shapelet=   314.56 sec <<
+
+
+Total Running  Time =   314.56 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'manhattan', 0, 1, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP07_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP07_acc.txt']
+0
+num_class=2, num_obj=322  distance=manhattan CID=false normalize=true ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP07_tree.txt  ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP07_acc.txt
+
+==> Tree Size = 28
+
+; accuracy= 75.155   Correct:242 , Wrong: 80
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  13   35 
+;   p  0 |  45  229 
+
+
+================ Replication:  7 Finished ================
+================ Replication:  8 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP08_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP08_time.txt']
+
+rand seed=1501881470
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP08_tree.txt  time_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP08_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=201  @[112, 64]  d_th=162.65 gap=0.021448 gain= 0.10996 (35 )==>  53  34  /  51   1 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=13   @[  0, 15]  d_th= 0.00 gap=0.000000 gain= 0.08637 (19 )==>  29   5  /  24  29 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=181  @[ 33,151]  d_th=119.29 gap=0.010183 gain= 0.25662 (23 )==>   1   5  /  28   1 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=13   @[  7,247]  d_th= 3.76 gap=0.006415 gain= 0.21350 (4  )==>   3  21  /  21   7 
+
+=== Node 8 ===
+..............................................................................................................................
+Len=253  @[  1,166]  d_th=88.24 gap=5.547296 gain= 0.45056 (4  )==>   1   0  /   0   5 
+
+=== Node 10 ===
+..............................................................................................................................
+Len=29   @[ 10,464]  d_th= 7.29 gap=0.080958 gain= 0.28305 (16 )==>   3   1  /   0  20 
+
+=== Node 11 ===
+..............................................................................................................................
+Len=7    @[  0,  5]  d_th= 0.09 gap=0.003496 gain= 0.27125 (4  )==>  16   0  /   5   7 
+
+num_class=2, num_obj=28, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    12.54 sec
+  Time Rand Project =   148.88 sec
+  Time Score Matrix =    20.18 sec
+  Time Compute Gain =   179.66 sec
+Running  Time for this Shapelet=   379.45 sec <<
+
+
+Total Running  Time =   379.45 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'manhattan', 0, 1, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP08_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP08_acc.txt']
+0
+num_class=2, num_obj=322  distance=manhattan CID=false normalize=true ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP08_tree.txt  ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP08_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 68.634   Correct:221 , Wrong: 101
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  21   64 
+;   p  0 |  37  200 
+
+
+================ Replication:  8 Finished ================
+================ Replication:  9 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP09_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP09_time.txt']
+
+rand seed=1501881859
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP09_tree.txt  time_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP09_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=145  @[132,111]  d_th=101.59 gap=0.000390 gain= 0.10799 (55 )==>  62  35  /  42   0 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=139  @[ 92,250]  d_th=85.76 gap=0.001585 gain= 0.07865 (83 )==>   0   7  /  62  28 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=159  @[ 14,325]  d_th=100.73 gap=0.028154 gain= 0.08328 (78 )==>   0   6  /  62  22 
+
+=== Node 11 ===
+..............................................................................................................................
+Len=213  @[ 14,239]  d_th=163.17 gap=0.001750 gain= 0.10789 (66 )==>   1   8  /  61  14 
+
+num_class=2, num_obj=84, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    13.93 sec
+  Time Rand Project =   169.23 sec
+  Time Score Matrix =    23.70 sec
+  Time Compute Gain =   197.81 sec
+Running  Time for this Shapelet=   425.79 sec <<
+
+
+Total Running  Time =   425.79 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'manhattan', 0, 1, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP09_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP09_acc.txt']
+0
+num_class=2, num_obj=322  distance=manhattan CID=false normalize=true ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP09_tree.txt  ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP09_acc.txt
+
+==> Tree Size = 24
+
+; accuracy= 74.534   Correct:240 , Wrong: 82
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |  13   37 
+;   p  0 |  45  227 
+
+
+================ Replication:  9 Finished ================
+================ Replication:  10 Started ================
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_Master/Earthquakes_TRAIN', 2, 139, 256, 1, 2, 10, 'manhattan', 0, 1, 10, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP10_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP10_time.txt']
+
+rand seed=1501882296
+num_class=2, num_obj=139, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP10_tree.txt  time_file=./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP10_time.txt distance=manhattan CID=false normalize=true
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..............................................................................................................................
+Len=195  @[112, 68]  d_th=158.26 gap=0.006274 gain= 0.11692 (31 )==>  51  34  /  53   1 
+
+=== Node 2 ===
+..............................................................................................................................
+Len=97   @[ 21,254]  d_th=70.07 gap=0.001547 gain= 0.09517 (51 )==>  48  20  /   3  14 
+
+=== Node 4 ===
+..............................................................................................................................
+Len=151  @[  7,240]  d_th=113.21 gap=0.014806 gain= 0.17088 (24 )==>   7  15  /  41   5 
+
+=== Node 5 ===
+..............................................................................................................................
+Len=13   @[  0,425]  d_th= 1.89 gap=0.081651 gain= 0.46600 (11 )==>   0  14  /   3   0 
+
+=== Node 8 ===
+..............................................................................................................................
+Len=97   @[  2,183]  d_th=65.57 gap=0.024469 gain= 0.34783 (2  )==>   7   3  /   0  12 
+
+=== Node 9 ===
+..............................................................................................................................
+Len=95   @[ 36, 12]  d_th=64.52 gap=0.006942 gain= 0.19310 (26 )==>   5   5  /  36   0 
+
+num_class=2, num_obj=46, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    12.82 sec
+  Time Rand Project =   152.62 sec
+  Time Score Matrix =    21.22 sec
+  Time Compute Gain =   183.47 sec
+Running  Time for this Shapelet=   388.99 sec <<
+
+
+Total Running  Time =   388.99 sec <<
+
+
+['/Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_Master/Earthquakes_TEST', 2, 322, 'manhattan', 0, 1, './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP10_tree.txt', './output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP10_acc.txt']
+0
+num_class=2, num_obj=322  distance=manhattan CID=false normalize=true ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP10_tree.txt  ./output/Earthquakes/Earthquakes_manhattan_normed_NOCID_REP10_acc.txt
+
+==> Tree Size = 20
+
+; accuracy= 71.739   Correct:231 , Wrong: 91
+
+
+;   == Confusion Matrix ==
+;   real |   1    0 
+;   -----+------------
+;   p  1 |   9   42 
+;   p  0 |  49  222 
+
+
+================ Replication:  10 Finished ================

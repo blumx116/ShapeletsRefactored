@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV2', 2, 51, 48, 1, 2, 10, 'manhattan', 0, 0, 10, './cv_output/ECG200_CV2/ECG200_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/ECG200_CV2/ECG200_CV2_manhattan_unnormed_NOCID_time.txt']
+
+rand seed=1502274207
+num_class=2, num_obj=51, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/ECG200_CV2/ECG200_CV2_manhattan_unnormed_NOCID_tree.txt  time_file=./cv_output/ECG200_CV2/ECG200_CV2_manhattan_unnormed_NOCID_time.txt distance=manhattan CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+......................
+Len=37   @[ 19, 14]  d_th= 8.79 gap=0.016342 gain= 0.26064 (13 )==>   2  30  /  14   5 
+
+=== Node 3 ===
+......................
+Len=45   @[ 17, 26]  d_th=10.49 gap=0.008244 gain= 0.35592 (5  )==>   2   5  /  12   0 
+
+=== Node 6 ===
+......................
+Len=7    @[  0,  4]  d_th= 1.29 gap=0.062986 gain= 0.59827 (3  )==>   2   0  /   0   5 
+
+num_class=2, num_obj=7, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.05 sec
+  Time Rand Project =     0.30 sec
+  Time Score Matrix =     0.03 sec
+  Time Compute Gain =     0.12 sec
+Running  Time for this Shapelet=     0.53 sec <<
+
+
+Total Running  Time =     0.53 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/ECG200_TRAIN_CV1', 2, 49, 'manhattan', 0, 0, './cv_output/ECG200_CV2/ECG200_CV2_manhattan_unnormed_NOCID_tree.txt', './cv_output/ECG200_CV2/ECG200_CV2_manhattan_unnormed_NOCID_acc.txt']
+; accuracy= 73.469   Correct:36 , Wrong: 13
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |   6    4 
+;   p  1 |   9   30 
+
+num_class=2, num_obj=49  distance=manhattan CID=false normalize=false ./cv_output/ECG200_CV2/ECG200_CV2_manhattan_unnormed_NOCID_tree.txt  ./cv_output/ECG200_CV2/ECG200_CV2_manhattan_unnormed_NOCID_acc.txt
+
+==> Tree Size = 14
+

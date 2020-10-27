@@ -1,0 +1,51 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/PhalangesOutlinesCorrect_TRAIN_CV2', 2, 900, 40, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503460972
+num_class=2, num_obj=900, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [1,1]  [0,0]  
+
+=== Node 1 ===
+..................
+Len=15   @[  1, 21]  d_th= 0.01 gap=0.000011 gain= 0.06188 (782)==> 257 584  /  57   2 
+
+=== Node 2 ===
+..................
+Len=39   @[103, 29]  d_th= 0.01 gap=0.000003 gain= 0.05037 (437)==>  14 188  / 243 396 
+
+=== Node 5 ===
+..................
+Len=33   @[ 14, 38]  d_th= 0.04 gap=0.000000 gain= 0.06435 (325)==> 135 347  / 108  49 
+
+=== Node 10 ===
+..................
+Len=31   @[ 12, 35]  d_th= 0.00 gap=0.000000 gain= 0.05902 (300)==>  79 312  /  56  35 
+
+=== Node 11 ===
+..................
+Len=17   @[128, 39]  d_th= 0.01 gap=0.000005 gain= 0.08723 (123)==>   2  15  / 106  34 
+
+num_class=2, num_obj=157, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.97 sec
+  Time Rand Project =     6.41 sec
+  Time Score Matrix =     0.93 sec
+  Time Compute Gain =     7.39 sec
+Running  Time for this Shapelet=    16.42 sec <<
+
+
+Total Running  Time =    16.42 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/PhalangesOutlinesCorrect_TRAIN_CV1', 2, 900, 'correlation', 0, 0, './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 63.222   Correct:569 , Wrong: 331
+
+
+;   == Confusion Matrix ==
+;   real |   0    1 
+;   -----+------------
+;   p  0 | 262  279 
+;   p  1 |  52  307 
+
+num_class=2, num_obj=900  distance=correlation CID=false normalize=false ./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_correlation_unnormed_NOCID_tree.txt  ./cv_output/PhalangesOutlinesCorrect_CV2/PhalangesOutlinesCorrect_CV2_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 24
+

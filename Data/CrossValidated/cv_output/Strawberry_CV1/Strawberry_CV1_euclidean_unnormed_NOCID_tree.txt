@@ -1,0 +1,36 @@
+;Shapelet Tree 
+
+;random seed:1502275179, rand()=1324124283, rand()=583628278
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1 2 185 118 1 2 10 euclidean 0 0 10 ./cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_unnormed_NOCID_tree.txt ./cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_unnormed_NOCID_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 12 
+NonL  1    --      4   26   47   0.8421 ==>  61  11  /   5 108 
+NonL  2    --      0  132   15   0.1560 ==>  59   3  /   2   8 
+Leaf  3     2    
+Leaf  4     1    
+NonL  5    --      0   59   15   0.1647 ==>   2   0  /   0   8 
+Leaf 10     1    
+Leaf 11     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.055700  1.099800  1.208100  1.398900  1.622100  1.788300  1.929500  2.151800  2.436900  2.643500  2.715900  2.717200  2.732200  2.820200  2.984400  3.148000  3.203100  3.126700  2.965400  2.798300  2.713000  2.670300  2.473300  2.071400  1.685100  1.512800  1.546400  1.625200  1.597700  1.439100  1.231100  1.048200  0.913220  0.822290  0.760630  0.713710  0.674840  0.643560  0.616080  0.579000  0.519570  0.430210  0.301750  0.141790 -0.008340 -0.112000 -0.166960 
+Shapelet   2   0.197190  0.209560  0.196140  0.168000  0.158260  0.141170  0.111970  0.078300  0.057783  0.039107 -0.014290 -0.071107 -0.123450 -0.213670 -0.283120 
+Shapelet   5   0.875400  0.813720  0.777920  0.752570  0.723300  0.675210  0.600470  0.500900  0.382250  0.240600  0.078572 -0.067517 -0.163430 -0.203410 -0.205770 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV1 2 185 118 1 2 10 euclidean 0 0 10 ./cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_unnormed_NOCID_tree.txt ./cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_unnormed_NOCID_time.txt
+; time =>   12.265   1.125   6.614   0.728   3.235 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_CV_DATA/Strawberry_TRAIN_CV2 2 185 euclidean 0 0 ./cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_unnormed_NOCID_tree.txt ./cv_output/Strawberry_CV1/Strawberry_CV1_euclidean_unnormed_NOCID_acc.txt
+; accuracy= 71.351   Correct:132 , Wrong: 53
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  40   27 
+;   p  2 |  26   92 
+

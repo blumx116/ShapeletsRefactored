@@ -1,0 +1,63 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FordB_TRAIN', 2, 810, 250, 1, 2, 10, 'euclidean', 0, 0, 10, './replications/FordB/FordB_euclidean_unnormed_NOCID_REP24_tree.txt', './replications/FordB/FordB_euclidean_unnormed_NOCID_REP24_time.txt']
+
+rand seed=1508280618
+num_class=2, num_obj=810, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./replications/FordB/FordB_euclidean_unnormed_NOCID_REP24_tree.txt  time_file=./replications/FordB/FordB_euclidean_unnormed_NOCID_REP24_time.txt distance=euclidean CID=false normalize=false
+
+relabel [new,real] => [1,-1]  [0,1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=33   @[  0,214]  d_th= 4.68 gap=0.000625 gain= 0.10179 (434)==> 168  20  / 241 381 
+
+=== Node 2 ===
+...........................................................................................................................
+Len=91   @[ 22,280]  d_th= 7.26 gap=0.000429 gain= 0.08386 (62 )==> 123   2  /  45  18 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=47   @[  1,450]  d_th= 3.74 gap=0.000952 gain= 0.04691 (510)==> 241 325  /   0  56 
+
+=== Node 5 ===
+...........................................................................................................................
+Len=141  @[ 60, 16]  d_th= 7.02 gap=0.000164 gain= 0.17101 (15 )==>  21  18  /  24   0 
+
+=== Node 6 ===
+...........................................................................................................................
+Len=117  @[103,316]  d_th= 8.61 gap=0.001438 gain= 0.06280 (172)==>  38 159  / 203 166 
+
+=== Node 10 ===
+...........................................................................................................................
+Len=131  @[ 22, 45]  d_th=12.23 gap=0.012055 gain= 0.19665 (19 )==>  11  18  /  10   0 
+
+=== Node 12 ===
+...........................................................................................................................
+Len=131  @[ 50,294]  d_th= 5.83 gap=0.000047 gain= 0.03954 (29 )==>  11 102  /  27  57 
+
+=== Node 13 ===
+...........................................................................................................................
+Len=143  @[162, 79]  d_th=11.35 gap=0.000357 gain= 0.05020 (17 )==> 135  58  /  68 108 
+
+num_class=2, num_obj=369, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    97.37 sec
+  Time Rand Project =  1486.64 sec
+  Time Score Matrix =    87.60 sec
+  Time Compute Gain =   237.52 sec
+Running  Time for this Shapelet=  2001.99 sec <<
+
+
+Total Running  Time =  2001.99 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/FordB_TEST', 2, 3636, 'euclidean', 0, 0, './replications/FordB/FordB_euclidean_unnormed_NOCID_REP24_tree.txt', './replications/FordB/FordB_euclidean_unnormed_NOCID_REP24_acc.txt']
+; accuracy= 78.135   Correct:2841 , Wrong: 795
+
+
+;   == Confusion Matrix ==
+;   real |   1   -1 
+;   -----+------------
+;   p  1 |1333  352 
+;   p -1 | 443 1508 
+
+num_class=2, num_obj=3636  distance=euclidean CID=false normalize=false ./replications/FordB/FordB_euclidean_unnormed_NOCID_REP24_tree.txt  ./replications/FordB/FordB_euclidean_unnormed_NOCID_REP24_acc.txt
+
+==> Tree Size = 28
+

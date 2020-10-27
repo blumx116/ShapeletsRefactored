@@ -1,0 +1,33 @@
+;Shapelet Tree 
+
+;random seed:1508180585, rand()=702781529, rand()=1312643378
+;command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 euclidean 0 0 10 ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP28_tree.txt ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP28_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   2  1 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 6 
+NonL  1    --      2   93   15   0.5386 ==>   4  23  /  22   1 
+NonL  2    --      0   95   13   0.3790 ==>   0  23  /   4   0 
+Leaf  3     2    
+Leaf  4     1    
+Leaf  5     2    
+
+;Shapelet id   <data>
+Shapelet   1   1.281200  1.139200  0.979360  0.809060  0.646920  0.471690  0.302690  0.187740  0.039058 -0.078698 -0.208210 -0.312640 -0.389000 -0.451820 -0.499660 
+Shapelet   2   0.979360  0.809060  0.646920  0.471690  0.302690  0.187740  0.039058 -0.078698 -0.208210 -0.312640 -0.389000 -0.451820 -0.499660 
+
+
+; cmd = /home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TRAIN 2 50 75 1 2 10 euclidean 0 0 10 ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP28_tree.txt ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP28_time.txt
+; time =>    1.140   0.112   0.589   0.064   0.314 
+; command = /home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify /home/grad00/soren885/capstone/Shapelet_Datasets/UCR_Master/Gun_Point_TEST 2 150 euclidean 0 0 ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP28_tree.txt ./replications/Gun_Point/Gun_Point_euclidean_unnormed_NOCID_REP28_acc.txt
+; accuracy= 85.333   Correct:128 , Wrong: 22
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  67   13 
+;   p  2 |   9   61 
+

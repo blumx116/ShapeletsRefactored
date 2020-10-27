@@ -1,0 +1,39 @@
+;Shapelet Tree 
+
+;random seed:1501887936, rand()=981109456, rand()=1127185326
+;command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Herring_TRAIN 2 64 256 1 2 10 manhattan 0 1 10 ./output/Herring/Herring_manhattan_normed_NOCID_REP10_tree.txt ./output/Herring/Herring_manhattan_normed_NOCID_REP10_time.txt 
+
+;Local Class:   0  1 
+;Real  Class:   1  2 
+
+;Node ID class   obj  pos  len  dist_th 
+TreeSize: 30 
+NonL  1    --     13   59   29   1.6813 ==>   1  10  /  38  15 
+Leaf  2     2    
+NonL  3    --      0    0   25   0.8900 ==>  28   1  /  10  14 
+Leaf  6     1    
+NonL  7    --      4  380   71   7.9132 ==>  10   2  /   0  12 
+NonL 14    --      2  112   11   1.7196 ==>   0   2  /  10   0 
+Leaf 15     2    
+Leaf 28     2    
+Leaf 29     1    
+
+;Shapelet id   <data>
+Shapelet   1  -1.148800 -1.210800 -1.266800 -1.327000 -1.391400 -1.451500 -1.510100 -1.574000 -1.615400 -1.590900 -1.541800 -1.492600 -1.443300 -1.380800 -1.331400 -1.291800 -1.238800 -1.192000 -1.150700 -1.108600 -1.072000 -1.043100 -0.998560 -0.951490 -0.904080 -0.858050 -0.811470 -0.768820 -0.721310 
+Shapelet   3   1.930500  1.912500  1.891000  1.864000  1.832300  1.801100  1.764800  1.729000  1.682900  1.625100  1.567500  1.504200  1.446700  1.395400  1.337500  1.292200  1.235100  1.183900  1.127000  1.082000  1.043200  1.005000  0.960870  0.910900  0.854970 
+Shapelet   7  -1.210100 -1.210800 -1.180400 -1.171100 -1.195200 -1.223600 -1.238400 -1.252300 -1.257600 -1.280300 -1.308100 -1.334900 -1.354000 -1.364800 -1.367300 -1.381900 -1.409600 -1.444700 -1.478200 -1.510900 -1.536300 -1.575000 -1.636700 -1.643800 -1.595700 -1.534900 -1.477100 -1.428500 -1.394800 -1.366800 -1.368500 -1.389900 -1.397700 -1.384400 -1.348700 -1.314400 -1.284700 -1.259500 -1.238500 -1.210500 -1.177500 -1.133800 -1.110900 -1.101300 -1.072000 -1.032200 -0.985160 -0.932430 -0.879690 -0.830160 -0.776040 -0.739960 -0.707570 -0.697580 -0.691470 -0.679630 -0.681140 -0.686070 -0.662160 -0.600300 -0.546530 -0.489810 -0.434250 -0.381590 -0.321260 -0.276490 -0.236370 -0.208680 -0.176550 -0.129200 -0.072128 
+Shapelet  14  -0.286890 -0.290530 -0.303100 -0.309320 -0.310400 -0.319600 -0.328950 -0.322300 -0.329960 -0.351480 -0.392110 
+
+
+; cmd = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/FastShapelet ./Shapelet_Datasets/UCR_Master/Herring_TRAIN 2 64 256 1 2 10 manhattan 0 1 10 ./output/Herring/Herring_manhattan_normed_NOCID_REP10_tree.txt ./output/Herring/Herring_manhattan_normed_NOCID_REP10_time.txt
+; time =>   93.839   2.779  17.623   3.438  67.338 
+; command = /Users/jsorenson/BSCapstone/ShapeletResearch/Execs/Classify ./Shapelet_Datasets/UCR_Master/Herring_TEST 2 64 manhattan 0 1 ./output/Herring/Herring_manhattan_normed_NOCID_REP10_tree.txt ./output/Herring/Herring_manhattan_normed_NOCID_REP10_acc.txt
+; accuracy= 62.500   Correct:40 , Wrong: 24
+
+
+;   == Confusion Matrix ==
+;   real |   1    2 
+;   -----+------------
+;   p  1 |  27   13 
+;   p  2 |  11   13 
+

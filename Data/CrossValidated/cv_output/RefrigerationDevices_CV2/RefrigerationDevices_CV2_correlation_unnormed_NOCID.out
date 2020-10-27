@@ -1,0 +1,73 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/RefrigerationDevices_TRAIN_CV2', 3, 189, 360, 1, 2, 10, 'correlation', 0, 0, 10, './cv_output/RefrigerationDevices_CV2/RefrigerationDevices_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/RefrigerationDevices_CV2/RefrigerationDevices_CV2_correlation_unnormed_NOCID_time.txt']
+
+rand seed=1503467866
+num_class=3, num_obj=189, R=10, top_k=10, percent_mask=0.25, tree_depth=64    tree_file=./cv_output/RefrigerationDevices_CV2/RefrigerationDevices_CV2_correlation_unnormed_NOCID_tree.txt  time_file=./cv_output/RefrigerationDevices_CV2/RefrigerationDevices_CV2_correlation_unnormed_NOCID_time.txt distance=correlation CID=false normalize=false
+
+relabel [new,real] => [2,3]  [1,2]  [0,1]  
+
+=== Node 1 ===
+..................................................................................................................................................................................
+Len=9    @[  0,  0]  d_th=-0.00 gap=0.000000 gain= 0.26797 (13 )==>   1  37  50  /  62  26  13 
+
+=== Node 2 ===
+..................................................................................................................................................................................
+Len=9    @[  0,  0]  d_th=-0.00 gap=0.000000 gain= 0.42745 (2  )==>   0  18  50  /  28  42   0 
+
+=== Node 3 ===
+..................................................................................................................................................................................
+Len=31   @[  0, 24]  d_th= 0.34 gap=0.001179 gain= 0.28764 (31 )==>  35   1   5  /   0   2   8 
+
+=== Node 4 ===
+..................................................................................................................................................................................
+Len=9    @[  0,  0]  d_th=-0.00 gap=0.000000 gain= 0.42745 (2  )==>   0  18  50  /  28  42   0 
+
+=== Node 5 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=5 
+
+=== Node 6 ===
+..................................................................................................................................................................................
+Len=53   @[ 36, 32]  d_th= 0.09 gap=0.009386 gain= 0.37079 (31 )==>   0   0   5  /  35   1   0 
+
+=== Node 7 ===
+..................................................................................................................................................................................
+Len=91   @[  1,135]  d_th= 0.16 gap=0.013390 gain= 0.50040 (6  )==>   0   2   0  /   0   0   8 
+
+=== Node 8 ===
+..................................................................................................................................................................................
+Len=9    @[  0,  0]  d_th=-0.00 gap=0.000000 gain= 0.42745 (2  )==>   0  18  50  /  28  42   0 
+
+=== Node 9 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=9 
+
+=== Node 16 ===
+..................................................................................................................................................................................
+Len=9    @[  0,  0]  d_th=-0.00 gap=0.000000 gain= 0.42745 (2  )==>   0  18  50  /  28  42   0 
+
+=== Node 17 ===
+..................................................................................................................................................................................Error!! bsf_sh is empty  at node_id=17 
+
+num_class=3, num_obj=0, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    32.87 sec
+  Time Rand Project =   221.79 sec
+  Time Score Matrix =    15.74 sec
+  Time Compute Gain =   958.90 sec
+Running  Time for this Shapelet=  1244.28 sec <<
+
+
+Total Running  Time =  1244.28 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', '/home/grad00/soren885/capstone/Shapelet_Datasets/UCR_CV_DATA/RefrigerationDevices_TRAIN_CV1', 3, 186, 'correlation', 0, 0, './cv_output/RefrigerationDevices_CV2/RefrigerationDevices_CV2_correlation_unnormed_NOCID_tree.txt', './cv_output/RefrigerationDevices_CV2/RefrigerationDevices_CV2_correlation_unnormed_NOCID_acc.txt']
+; accuracy= 33.333   Correct:62 , Wrong: 124
+
+
+;   == Confusion Matrix ==
+;   real |   1    2    3 
+;   -----+------------------
+;   p  1 |   4    0    5 
+;   p  2 |   0    1    0 
+;   p  3 |  58   61   57 
+
+num_class=3, num_obj=186  distance=correlation CID=false normalize=false ./cv_output/RefrigerationDevices_CV2/RefrigerationDevices_CV2_correlation_unnormed_NOCID_tree.txt  ./cv_output/RefrigerationDevices_CV2/RefrigerationDevices_CV2_correlation_unnormed_NOCID_acc.txt
+
+==> Tree Size = 34
+

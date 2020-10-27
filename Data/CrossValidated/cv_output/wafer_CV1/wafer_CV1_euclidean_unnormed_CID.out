@@ -1,0 +1,43 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/wafer_TRAIN_CV1', 2, 499, 76, 1, 2, 10, 'euclidean', 1, 0, 10, './cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_time.txt']
+
+rand seed=1502274326
+num_class=2, num_obj=499, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_tree.txt  time_file=./cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_time.txt distance=euclidean CID=true normalize=false
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+....................................
+Len=67   @[  2, 40]  d_th=32.83 gap=0.020154 gain= 0.10360 (443)==>  24 447  /  24   4 
+
+=== Node 3 ===
+....................................
+Len=15   @[  2, 31]  d_th= 1.35 gap=0.005754 gain= 0.18931 (10 )==>  19   0  /   5   4 
+
+=== Node 7 ===
+....................................
+Len=13   @[  5,107]  d_th= 0.51 gap=0.050954 gain= 0.68696 (1  )==>   0   4  /   5   0 
+
+num_class=2, num_obj=9, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =     0.92 sec
+  Time Rand Project =     8.98 sec
+  Time Score Matrix =     0.89 sec
+  Time Compute Gain =     9.39 sec
+Running  Time for this Shapelet=    20.94 sec <<
+
+
+Total Running  Time =    20.94 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/wafer_TRAIN_CV2', 2, 501, 'euclidean', 1, 0, './cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_tree.txt', './cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_acc.txt']
+; accuracy= 93.613   Correct:469 , Wrong: 32
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 |  20    3 
+;   p  1 |  29  449 
+
+num_class=2, num_obj=501  distance=euclidean CID=true normalize=false ./cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_tree.txt  ./cv_output/wafer_CV1/wafer_CV1_euclidean_unnormed_CID_acc.txt
+
+==> Tree Size = 16
+

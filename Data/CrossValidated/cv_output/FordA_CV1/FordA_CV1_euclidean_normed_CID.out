@@ -1,0 +1,59 @@
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/FastShapelet', './Shapelet_Datasets/UCR_CV_DATA/FordA_TRAIN_CV1', 2, 659, 250, 1, 2, 10, 'euclidean', 1, 1, 10, './cv_output/FordA_CV1/FordA_CV1_euclidean_normed_CID_tree.txt', './cv_output/FordA_CV1/FordA_CV1_euclidean_normed_CID_time.txt']
+
+rand seed=1502310327
+num_class=2, num_obj=659, R=10, top_k=10, percent_mask=0.25, tree_depth=32    tree_file=./cv_output/FordA_CV1/FordA_CV1_euclidean_normed_CID_tree.txt  time_file=./cv_output/FordA_CV1/FordA_CV1_euclidean_normed_CID_time.txt distance=euclidean CID=true normalize=true
+
+relabel [new,real] => [1,1]  [0,-1]  
+
+=== Node 1 ===
+...........................................................................................................................
+Len=211  @[648,147]  d_th=16.50 gap=0.000613 gain= 0.20330 (31 )==>  77 268  / 263  51 
+
+=== Node 2 ===
+...........................................................................................................................
+Len=43   @[265,206]  d_th= 3.39 gap=0.000795 gain= 0.13280 (179)==>  25 237  /  52  31 
+
+=== Node 3 ===
+...........................................................................................................................
+Len=239  @[193,208]  d_th=19.72 gap=0.000648 gain= 0.09070 (68 )==> 123   0  / 140  51 
+
+=== Node 5 ===
+...........................................................................................................................
+Len=9    @[  0, 60]  d_th= 0.80 gap=0.003986 gain= 0.27261 (15 )==>  34   0  /  18  31 
+
+=== Node 7 ===
+...........................................................................................................................
+Len=215  @[ 95, 27]  d_th= 9.29 gap=0.000684 gain= 0.09599 (35 )==>  74   4  /  66  47 
+
+=== Node 11 ===
+...........................................................................................................................
+Len=19   @[  1, 53]  d_th= 0.55 gap=0.000116 gain= 0.22102 (25 )==>   7  30  /  11   1 
+
+=== Node 15 ===
+...........................................................................................................................
+Len=19   @[ 25,222]  d_th= 0.77 gap=0.002059 gain= 0.09600 (21 )==>  15  31  /  51  16 
+
+num_class=2, num_obj=113, R=10, top_k=10, percent_mask=0.25 
+  Time Create SAX   =    49.01 sec
+  Time Rand Project =   620.00 sec
+  Time Score Matrix =    39.89 sec
+  Time Compute Gain =  1014.61 sec
+Running  Time for this Shapelet=  1762.28 sec <<
+
+
+Total Running  Time =  1762.28 sec <<
+
+['/home/grad00/soren885/capstone/ShapeletResearch/Execs/Classify', './Shapelet_Datasets/UCR_CV_DATA/FordA_TRAIN_CV2', 2, 661, 'euclidean', 1, 1, './cv_output/FordA_CV1/FordA_CV1_euclidean_normed_CID_tree.txt', './cv_output/FordA_CV1/FordA_CV1_euclidean_normed_CID_acc.txt']
+; accuracy= 81.089   Correct:536 , Wrong: 125
+
+
+;   == Confusion Matrix ==
+;   real |  -1    1 
+;   -----+------------
+;   p -1 | 256   40 
+;   p  1 |  85  280 
+
+num_class=2, num_obj=661  distance=euclidean CID=true normalize=true ./cv_output/FordA_CV1/FordA_CV1_euclidean_normed_CID_tree.txt  ./cv_output/FordA_CV1/FordA_CV1_euclidean_normed_CID_acc.txt
+
+==> Tree Size = 32
+
